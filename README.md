@@ -1,4 +1,4 @@
-# Esta versión de THE LOLIBOT-MD no esta terminada. <img src="https://c.tenor.com/QaPEi-tcFXQAAAAC/gato-besando-a-la-camara.gif" height="32px">
+# Esta versión de THE LOLIBOT-MD no esta terminada.
 
 
 [![blog](https://img.shields.io/badge/Grupo-lolibot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
@@ -27,7 +27,7 @@
 ```
 -----
 
-### ACTIVAR EN TERMUX  <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="30px">
+### ACTIVAR EN TERMUX
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 
