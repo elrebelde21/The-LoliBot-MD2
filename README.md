@@ -1,5 +1,4 @@
 # Esta versión de THE LOLIBOT-MD no esta terminada. <img src="https://c.tenor.com/QaPEi-tcFXQAAAAC/gato-besando-a-la-camara.gif" height="32px">
-> #### 🚀 Versión actual: 1.1.5
 
 
 [![blog](https://img.shields.io/badge/Grupo-lolibot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
@@ -40,8 +39,8 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > pkg install ffmpeg -y
 > pkg install imagemagick -y
 > pkg install yarn
-> git clone https://github.com/Subbotsito/THE-LOLIBOT
-> cd THE-LOLIBOT
+> git clone https://github.com/elrebelde21/The-LoliBot-MD
+> cd The-LoliBot-MD
 > npm install
 > yarn install 
 > npm install
@@ -59,7 +58,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > cd 
-> cd GataBot-MD
+> cd The-LoliBot-MD
 > npm start
 ```
 ----
@@ -68,7 +67,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > cd 
-> cd GataBot-MD
+> cd The-LoliBot-MD
 > rm -rf session.data.json
 > npm start
 ```
