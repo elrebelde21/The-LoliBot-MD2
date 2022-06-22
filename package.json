@@ -1,5 +1,5 @@
 {
-    "name": "The Lolibot-MD",
+    "name": "The LoliBot-MD",
     "version": "1.1.5",
     "description": "Super Bot WhatsApp",
     "main": "index.js",
@@ -20,10 +20,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/elrebelde21/The-LoliBot-MD.git"
+        "url": "git+https://github.com/GataNina-Li/GataBot-MD.git"
     },
     "bugs": {
-        "url": "https://github.com/elrebelde21/The-LoliBot-MD/issues"
+        "url": "https://github.com/GataNina-Li/GataBot-MD/issues"
     },
     "license": "MIT",
     "dependencies": {
