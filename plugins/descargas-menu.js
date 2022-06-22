@@ -58,7 +58,7 @@ level, limit, weton, week, date, dateIslamic, time, totalreg, rtotalreg, role,
 readmore: readMore
 }
 text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-  
+  let vn = './media/medescarg.mp3'
 
 /*const sections = [
 {
@@ -130,6 +130,7 @@ conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/elrebelde21/The-Loli
 ['𝙈𝙚𝙣𝙪 𝙙𝙚𝙨𝙥𝙡𝙚𝙜𝙖𝙗𝙡𝙚 🌟', '/menulista'],
 ['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 ⚡', '#menu']
 ], m,)
+conn.sendFile(m.chat, vn, 'medescarg.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true })
 }
 
 handler.help = ['infomenu'].map(v => v + 'able <option>')

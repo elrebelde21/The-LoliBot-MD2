@@ -12,14 +12,16 @@ if (!isY) await conn.sendFile(m.chat, thumbnail, 'thumbnail.jpg', `
 ╭━━❰  ${wm}  ❱━━⬣
 ┃ 🔰 𝙏𝙄𝙏𝙐𝙇𝙊
 ┃ ${title} 
-┃*aqui tiene tu video*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ ✨ 𝙋𝙀𝙎𝙊 
+┃ ${video['480p'].fileSizeH}
 ╰━━━━━━❰ *𓃠 ${vs}* ❱━━━━━⬣`.trim(), m)
   
 await conn.sendFile(m.chat, link, title + '.mp3', `
 ╭━━❰  ${wm}  ❱━━⬣
 ┃ 🔰 𝙏𝙄𝙏𝙐𝙇𝙊
 ┃ ${title}
-┃*aqui tiene tu video*
+┃ *aqui tiene tu video*
 ╰━━━━━━❰ *𓃠 ${vs}* ❱━━━━━⬣`.trim(), m, null, {
   
 asDocument: 0

@@ -27,12 +27,14 @@ await conn.sendFile(m.chat, json.result.nowatermark, 'error.mp4', `${wm}`, m)
 
 let info = `💖 *Infórmate sobre las Novedades y recuerda tener la última versión.*
   `.trim()
+  let vn = './media/descarga.mp3'
   
 await conn.sendHydrated(m.chat, info, wm, null, ig, '', null, null, [
 ['𝙈𝙚𝙣𝙪 𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙨 🌀', '#descargasmenu'],
 ['𝙈𝙚𝙣𝙪 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙤 ✨', '.allmenu'],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu']
 ], m,)   
+conn.sendFile(m.chat, vn, 'descarga.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true })
            
 }
 handler.help = ['tiktok'].map(v => v + ' <link>')

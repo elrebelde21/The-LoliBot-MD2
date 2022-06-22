@@ -30,11 +30,13 @@ await conn.sendHydrated(m.chat, info, wm, null, ig, '', null, null, [
 ['𝙈𝙚𝙣𝙪 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙤 ✨', '.allmenu'],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu']
 ], m,)  
+let vn = './media/descarga.mp3'
   
 conn.sendFile(m.chat, url, filename, '', m, null, { mimetype: ext, asDocument: true })
 } catch (e) { 
 m.reply(`${fg}𝙑𝙐𝙀𝙇𝙑𝘼 𝘼 𝙄𝙉𝙏𝙀𝙉𝙏𝘼𝙍. 𝘿𝙀𝘽𝙀 𝘿𝙀 𝙎𝙀𝙍 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝙑𝘼𝙇𝙄𝘿𝙊 𝘿𝙀 𝙈𝙀𝘿𝙄𝘼𝙁𝙄𝙍𝙀.`)
 console.log(e)
+conn.sendFile(m.chat, vn, 'descarga.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true })
 }}
 handler.help = ['mediafire'].map(v => v + ' <url>')
 handler.tags = ['downloader']

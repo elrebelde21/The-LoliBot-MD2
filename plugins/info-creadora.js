@@ -1,5 +1,6 @@
 import fs from 'fs'
 function handler(m, { conn }) {
+let vn = './media/creador.mp3'
 let text = `
 *𝘾𝙤𝙣𝙩𝙖𝙘𝙩𝙤* 
 *Wa.me/56977774748 (no bot)*
@@ -23,6 +24,7 @@ conn.sendHydrated(m.chat, str, wm, pp, 'https://chat.whatsapp.com/Lus9S60MABnH9l
 ['🎁 𝘿𝙤𝙣𝙖𝙧', '.donar'],
 ['☘ 𝙄𝙧 𝙖𝙡 𝙞𝙣𝙞𝙘𝙞𝙤', '/menu']
 ], m,)
+conn.sendFile(m.chat, vn, 'creador.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true })
 }
 handler.help = ['owner', 'creator']
 handler.tags = ['info']

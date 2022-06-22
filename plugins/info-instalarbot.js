@@ -1,4 +1,5 @@
 import fs from 'fs'
+let vn = './media/instalar.mp3'
 //import fetch from 'node-fetch'
 let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 //let pp = 'https://i.imgur.com/WwxBm8o.jpg' //'./media/menus/Menu1.jpg'
@@ -22,6 +23,9 @@ let text = `
 *solo por tema del bot*
 
 📌 *paso para instalar el bot el termux*
+ 
+📌 *como instalar el bot* *https://youtu.be/8Tml7lGcV-w*
+
 🔸 *necesita 2 celu solo para escanear el QR*
 🔸 *instalar termux de Google*
 
@@ -79,6 +83,7 @@ sourceUrl: `${yt}`}}})
 ['𝙂𝙧𝙪𝙥𝙤𝙨 𝙊𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 🔰', '.grupos'],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu']
 ], m,)
+conn.sendFile(m.chat, vn, 'instalar.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true })
   
   //await conn.sendButton(m.chat, `Infórmate sobre las Novedades y recuerda tener la última versión.\nFind out about what's new and remember to have the latest version.`, author, url, [['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🔄', /${command}], ['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 2 🔄', /${command}]], m)
 }
