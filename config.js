@@ -72,7 +72,7 @@ global.APIKeys = { // APIKey Here
 //⊱ ━━━━━.⋅ Sticker WM ⋅.━━━━ ⊰
 
 global.packname = 'toma tu sticker'
-global.author = 'the Lolibot-MD'
+global.author = 'The Lolibot-MD'
 
 //━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
@@ -85,7 +85,7 @@ global.version = vs
 global.gt = 'The LoliBot-MD'
 global.gatabot = gt
 
-global.yt = 'https://youtube.com/channel/UC9b3UIVnVb5eQt7_Y-Qz-3A'
+global.yt = 'https://youtube.com/channel/UC9b3UIVnVb5eQt7_Y-Qz-3A''
 global.youtube = yt
 
 global.ig = ''
@@ -97,10 +97,10 @@ global.gatabot = md
 global.nn = 'https://chat.whatsapp.com/Lus9S60MABnH9lF4Wf2T7k'
 global.nngrupo = nn
 
-global.nnn = 'https://chat.whatsapp.com/CFSvSOGCnuL3vk4Js1DWI2'
+global.nnn = 'https://chat.whatsapp.com/DCJclB8oBAPIAoleUtNEaN'
 global.nnngrupo = nnn
 
-global.paypal = 'https://www.instagram.com/gata_dios https://paypal.me/OficialGD'
+global.paypal = 'https://www.instagram.com/gata_dios  https://paypal.me/OficialGD'
 global.donar = paypal
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
@@ -110,7 +110,7 @@ global.donar = paypal
 global.rg = '╰⊱✅⊱ *𝙍𝙀𝙎𝙐𝙇𝙏𝘼𝘿𝙊* ⊱✅⊱╮\n\n'
 global.resultado = rg
 
-global.ag = '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄A* ⊱⚠️⊱╮\n\n'
+global.ag = '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n'
 global.advertencia = ag
 
 global.iig = '╰⊱❕⊱ *𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊́𝙉* ⊱❕⊱╮\n\n'
@@ -128,14 +128,14 @@ global.envio = eeg
 global.eg = '╰⊱💚⊱ *𝙀́𝙓𝙄𝙏𝙊* ⊱💚⊱╮\n\n'
 global.exito = eg
 
-//𝙀𝙅𝙀𝙈𝙋𝙇𝙊
+//𝙀𝙅𝙀𝙈𝙋𝙇𝙊 | 𝙀𝙓𝘼𝙈𝙋𝙇𝙀
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
 
 //⊱ ━━━━━.⋅ Información | Information ⋅.━━━━ ⊰
 
-global.wm = 'THE LOLIBOT-MD'
-global.igfg = 'THE lolibot-MD'
+global.wm = 'THE LOLIBOT-𝙈𝘿'
+global.igfg = 'The Lolibot-MD'
 global.wait = '*⌛ _Cargando..._ ▬▬▬▭*'
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
