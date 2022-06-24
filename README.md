@@ -1,6 +1,5 @@
 # Esta versión de THE LOLIBOT-MD no esta terminada. ✨
 
-https://telegra.ph/file/d76203bc9c38483744477.jpg
 
 [![blog](https://img.shields.io/badge/Grupo-lolibot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
 )](https://chat.whatsapp.com/Lus9S60MABnH9lF4Wf2T7k)  <a href="https://chat.whatsapp.com/Lus9S60MABnH9lF4Wf2T7k"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
