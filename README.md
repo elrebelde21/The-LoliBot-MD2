@@ -1,8 +1,7 @@
 # Esta versión de THE LOLIBOT-MD no esta terminada. ✨
 
 ### `—◉ DUDAS SOBRE EL BOT?, CONTACTAME ✨`
-<a href="http://wa.me/56977774748" target="blank"><img src="https://img.shields.io/badge/rebelde |lolibot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
-> NO BOT
+<a href="http://wa.me/56977774748" target="blank"><img src="https://img.shields.io/badge/lolibot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 
 [![blog](https://img.shields.io/badge/Grupo-lolibot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
 )](https://chat.whatsapp.com/Lus9S60MABnH9lF4Wf2T7k)  <a href="https://chat.whatsapp.com/Lus9S60MABnH9lF4Wf2T7k"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
