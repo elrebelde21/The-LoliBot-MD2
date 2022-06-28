@@ -71,7 +71,7 @@ global.APIKeys = { // APIKey Here
 
 //⊱ ━━━━━.⋅ Sticker WM ⋅.━━━━ ⊰
 
-global.packname = 'toma tu sticker'
+global.packname = 'toma tu sticke'
 global.author = 'The Lolibot-MD'
 
 //━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
