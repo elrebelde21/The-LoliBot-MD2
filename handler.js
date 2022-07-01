@@ -641,12 +641,12 @@ export async function participantsUpdate({ id, participants, action }) {
                         pp = await this.profilePictureUrl(user, 'image')
                     } catch (e) {
                     } finally {
-                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝙂𝙧𝙪𝙥𝙤 𝙂𝙚𝙣𝙞𝙖𝙡 🥳*') :
+                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝑮𝒓𝒖𝒑𝒐 𝒈𝒆𝒏𝒊𝒂𝒍 🥳*') :
                             (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
                             let apii = await this.getFile(pp)
-                            this.sendHydrated(id, text, groupMetadata.subject, apii.data,                                                       'https://github.com/elrebelde21/The-LoliBot-MD', 'The LoliBot-MD', null, null, [
-                            [(action == 'add' ? 'bienvenido🥳!!' : '𝙎𝙚 𝙛𝙪𝙚 𝙪𝙣 𝙍𝙖𝙣𝙙𝙤𝙢 🧐'), '.s'],    
-                            ['𝙈𝙚𝙣𝙪', '/menu']
+                            this.sendHydrated(id, text, groupMetadata.subject, apii.data,                                                       'https://github.com/elrebelde21/The-LoliBot-MD', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
+                            [(action == 'add' ? '𝑩𝒊𝒆𝒏𝒗𝒆𝒏𝒊𝒅𝒐🥳!!' : '𝑺𝒆 𝒇𝒖𝒆 𝒖𝒏 𝒓𝒂𝒏𝒅𝒐𝒘 🧐'), '.s'],    
+                            ['𝑴𝒆𝒏𝒖', '/menu']
                             ], '', { mentions: [user]})
                            }
                 }
@@ -719,16 +719,16 @@ export async function deleteUpdate(message) {
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo lo puede usar Mí Creador(a)!!*_',
-        owner: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo puede ser utilizado por Mí Creador(a) de Bot!!*_',
-        mods: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo puede ser utilizado por Moderador(es) y Mí Creador(a)!!*_',
-        premium: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n_*¡¡Este comando es solo para miembros Premium y Mí Creador(a)!!*_',
-        group: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo se puede usar en grupos!!*_',
-        private: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo se puede usar en el chat privado del Bot!!*_',
-        admin: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n_*¡¡Este comando es solo para Administradores!!*_',
-        botAdmin: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n_*¡¡Haz que Yo (Bot) sea Administrador para usar este comando!!*_',
-        unreg: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n_*¡Qué esperas para estar Verificando(a) en The LoliBot-MD! Usa el comando #verificar*_',
-        restrict: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n_*¡¡Esta función está Restringida | disable por Mí Creador(a)!!*_'
+        rowner: '╰⊱⚠️⊱ *𝑨𝒅𝒗𝒆𝒓𝒕𝒆𝒏𝒄𝒊𝒂𝒔* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo lo puede usar Mí Creador(a)!!*_',
+        owner: '╰⊱⚠️⊱ *𝑨𝒅𝒗𝒆𝒓𝒕𝒆𝒏𝒄𝒊𝒂𝒔* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo puede ser utilizado por Mí Creador(a) de Bot!!*_',
+        mods: '╰⊱⚠️⊱ *𝑨𝒅𝒗𝒆𝒓𝒕𝒆𝒏𝒄𝒊𝒂𝒔* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo puede ser utilizado por Moderador(es) y Mí Creador(a)!!*_',
+        premium: '╰⊱⚠️⊱ *𝑨𝒅𝒗𝒆𝒓𝒕𝒆𝒏𝒄𝒊𝒂𝒔* ⊱⚠️⊱╮\n\n_*¡¡Este comando es solo para miembros Premium y Mí Creador(a)!!*_',
+        group: '╰⊱⚠️⊱ *𝑨𝒅𝒗𝒆𝒓𝒕𝒆𝒏𝒄𝒊𝒂𝒔* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo se puede usar en grupos!!*_',
+        private: '╰⊱⚠️⊱ *𝑨𝒅𝒗𝒆𝒓𝒕𝒆𝒏𝒄𝒊𝒂𝒔* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo se puede usar en el chat privado del Bot!!*_',
+        admin: '╰⊱⚠️⊱ *𝑨𝒅𝒗𝒆𝒓𝒕𝒆𝒏𝒄𝒊𝒂𝒔* ⊱⚠️⊱╮\n\n_*¡¡Este comando es solo para Administradores!!*_',
+        botAdmin: '╰⊱⚠️⊱ *𝑨𝒅𝒗𝒆𝒓𝒕𝒆𝒏𝒄𝒊𝒂𝒔* ⊱⚠️⊱╮\n\n_*¡¡Haz que Yo (Bot) sea Administrador para usar este comando!!*_',
+        unreg: '╰⊱⚠️⊱ *𝑨𝒅𝒗𝒆𝒓𝒕𝒆𝒏𝒄𝒊𝒂𝒔* ⊱⚠️⊱╮\n\n_*¡Qué esperas para estar Verificando(a) en The LoliBot-MD! Usa el comando #verificar*_',
+        restrict: '╰⊱⚠️⊱ *𝑨𝒅𝒗𝒆𝒓𝒕𝒆𝒏𝒄𝒊𝒂𝒔* ⊱⚠️⊱╮\n\n_*¡¡Esta función está Restringida | disable por Mí Creador(a)!!*_'
     }[type]
     if (msg) return m.reply(msg) 
 }
