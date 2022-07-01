@@ -2,7 +2,7 @@ import { watchFile, unwatchFile } from 'fs'
 import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 
-//⊱ ━━━━━.⋅ Añada los numeros a ser Propietario/a | Add the numbers to be Owner ⋅.━━━━ ⊰
+//⊱ ━━━━━.⋅ Añada los numeros a ser Propietario/a ⋅.━━━━ ⊰
 global.owner = [
   ['56977774748', 'creador', true],
   ['447441419651'],
@@ -82,7 +82,7 @@ global.author = 'The Lolibot-MD'
 global.vs = '1.1.5'
 global.version = vs
 
-global.gt = 'The LoliBot-MD'
+global.gt = '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫'
 global.gatabot = gt
 
 global.yt = 'https://youtube.com/channel/UC9b3UIVnVb5eQt7_Y-Qz-3A'
@@ -132,15 +132,15 @@ global.exito = eg
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
 
-//⊱ ━━━━━.⋅ Información | Information ⋅.━━━━ ⊰
+//⊱ ━━━━━.⋅ Información ⋅.━━━━ ⊰
 
-global.wm = 'THE LOLIBOT-𝙈𝘿'
+global.wm = '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫'
 global.igfg = 'The Lolibot-MD'
 global.wait = '*⌛ _Cargando..._ ▬▬▬▭*'
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
-global.multiplier = 100 // Cuanto más alto, más difícil subir de nivel | The higher, The harder levelup 
+global.multiplier = 100 // Cuanto más alto, más difícil subir de nivel
 
 global.rpg = {
   emoticon(string) {
