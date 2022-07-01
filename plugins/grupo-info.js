@@ -37,7 +37,7 @@ ${listAdmin}
 ╰━━━━━━❰ *𓃠 ${vs}* ❱━━━━━⬣
 `.trim()
 //conn.sendFile(m.chat, pp, 'error.jpg', text, m, false, { mentions: [...groupAdmins.map(v => v.id), owner] })
-conn.sendHydrated(m.chat, text, wm, pp, md, 'The Lolibot-𝙈𝘿', null, null, [
+conn.sendHydrated(m.chat, text, wm, pp, md, '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu']
 ], m, false, { mentions: [...groupAdmins.map(v => v.id), owner] })
 }

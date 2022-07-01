@@ -27,18 +27,18 @@ let { min, xp, max } = xpRange(level, global.multiplier)
 //let name = await conn.getName(m.sender)
 const sections = [
 {
-title: `𝙇𝙄𝙎𝙏𝘼 𝘿𝙀𝙎𝙋𝙇𝙀𝙂𝘼𝘽𝙇𝙀`,
+title: `𝑳𝒊𝒔𝒕𝒂 𝒅𝒆𝒔𝒑𝒍𝒆𝒈𝒂𝒃𝒍𝒆`,
 rows: [
-      {title: "🙂 𝘾𝙍𝙀𝘼𝘿𝙊𝙍 🙃", description: null, rowId: `${usedPrefix}creadora`},
-      {title: "🚀 𝙑𝙀𝙇𝙊𝘾𝙄𝘿𝘼𝘿 | 𝙎𝙋𝙀𝙀𝘿 🚀", description: null, rowId: `${usedPrefix}ping`},
-      {title: "🎁 𝙈𝙀𝙉𝙐 𝘾𝙊𝙈𝙋𝙇𝙀𝙏𝙊 🎁", description: null, rowId: `${usedPrefix}allmenu`},
-      {title: "🌟 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊𝙉 🌟", description: null, rowId: `${usedPrefix}infomenu`},
-      {title: "🎡 𝙅𝙐𝙀𝙂𝙊𝙎 𝘿𝙄𝙉𝘼𝙈𝙄𝘾𝙊𝙎 🎡", description: null, rowId: `${usedPrefix}juegosmenu`},
-      {title: "🔊 𝙈𝙀𝙉𝙐 𝘿𝙀 𝘼𝙐𝘿𝙄𝙊𝙎 🔊", description: null, rowId: `${usedPrefix}audios`},
-      {title: "🔰 𝙈𝙀𝙉𝙐 𝘿𝙀 𝙂𝙍𝙐𝙋𝙊 🔰", description: null, rowId: `${usedPrefix}grupomenu`},
-      {title: "📲 𝙈𝙀𝙉𝙐 𝘿𝙀 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙎 📲", description: null, rowId: `${usedPrefix}descargasmenu`},
-      {title: "🔍 𝙈𝙀𝙉𝙐 𝘿𝙀 𝘽𝙐𝙎𝙌𝙐𝙀𝘿𝘼𝙎  🔍", description: null, rowId: `${usedPrefix}buscarmenu`},
-      {title: "💎 𝙈𝙀𝙉𝙐 𝙋𝙍𝙊𝙋𝙄𝙀𝙏𝘼𝙍𝙄𝙊(𝘼) 💎", description: null, rowId: `${usedPrefix}ownermenu`},
+      {title: "🙂 𝑪𝒓𝒆𝒂𝒅𝒐𝒓 🙃", description: null, rowId: `${usedPrefix}creadora`},
+      {title: "🚀 𝑽𝒆𝒍𝒐𝒄𝒊𝒅𝒂𝒅 | 𝒔𝒆𝒆𝒅 🚀", description: null, rowId: `${usedPrefix}ping`},
+      {title: "🎁 𝑴𝒆𝒏𝒖 𝒄𝒐𝒎𝒑𝒍𝒆𝒕𝒐 🎁", description: null, rowId: `${usedPrefix}allmenu`},
+      {title: "🌟 𝑰𝒏𝒇𝒐𝒎𝒂𝒄𝒊𝒐𝒏 🌟", description: null, rowId: `${usedPrefix}infomenu`},
+      {title: "🎡 𝑱𝒖𝒆𝒈𝒐𝒔 𝒅𝒊𝒏𝒂𝒎𝒊𝒄𝒐𝒔 🎡", description: null, rowId: `${usedPrefix}juegosmenu`},
+      {title: "🔊 𝑴𝒆𝒏𝒖 𝒅𝒆 𝒂𝒖𝒅𝒊𝒐𝒔 🔊", description: null, rowId: `${usedPrefix}audios`},
+      {title: "🔰 𝑴𝒆𝒏𝒖 𝒅𝒆 𝒈𝒓𝒖𝒑𝒐𝒔 🔰", description: null, rowId: `${usedPrefix}grupomenu`},
+      {title: "📲 𝑴𝒆𝒏𝒖 𝒅𝒆 𝒅𝒆𝒔𝒄𝒂𝒓𝒈𝒂𝒔 📲", description: null, rowId: `${usedPrefix}descargasmenu`},
+      {title: "🔍 𝑴𝒆𝒏𝒖 𝒅𝒆 𝒃𝒖𝒔𝒒𝒖𝒆𝒂𝒅𝒂  🔍", description: null, rowId: `${usedPrefix}buscarmenu`},
+      {title: "💎 𝑴𝒆𝒏𝒖 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐(𝒂) 💎", description: null, rowId: `${usedPrefix}ownermenu`},
       
 
 ]}, ]
@@ -48,29 +48,29 @@ let name = await conn.getName(m.sender)
 const listMessage = {
 text: `╭─────────────────────❀\n│${ucapan()}\n│💖•.¸💝¸.• *${name}* •.¸💝¸.•💖\n╰─────────────────────❀
 ╭━━━〔 *${wm}* 〕━━━⬣
-┃✪ *Tiempo Actual*	    
+┃✪ *𝑻𝒊𝒆𝒎𝒑𝒐 𝒂𝒄𝒕𝒖𝒂𝒍*	    
 ┃➺ ${time}   
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Activa durante* 
+┃✪ *𝑨𝒄𝒕𝒊𝒗𝒐 𝒅𝒖𝒓𝒂𝒏𝒕𝒆* 
 ┃➺ ${uptime} 
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Modo*
+┃✪ *𝑴𝒐𝒅𝒐*
 ┃➺ ${global.opts['self'] ? '𝙋𝙍𝙄𝙑𝘼𝘿𝙊' : '𝙋𝙐𝘽𝙇𝙄𝘾𝙊'}
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Versión de The LoliBot-MD*
+┃✪ *𝑽𝒆𝒓𝒔𝒊𝒐𝒏 𝒅𝒆 𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫*
 ┃➺ ${vs}
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Usuario(s)*
+┃✪ *𝑼𝒔𝒖𝒂𝒓𝒊𝒐(s)*
 ┃➺ ${Object.keys(global.db.data.users).length} 
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Chat(s) Prohibido(s)*
+┃✪ *𝑪𝒉𝒂𝒕(𝒔) 𝑷𝒓𝒐𝒉𝒊𝒃𝒊𝒅𝒐(𝒔)*
 ┃➺ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Usuario(s) Prohibido(s)*
+┃✪ *𝑼𝒔𝒖𝒂𝒓𝒊𝒐(𝒔) 𝑷𝒓𝒐𝒉𝒊𝒃𝒊𝒅𝒐(𝒔)*
 ┃➺ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
 ╰━━━━━━━━━━━━━━━━━━━━━⬣`, footer: `${wm}`, //${name} ${ucapan()}
 title: null,
-buttonText: "𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝙈𝙀𝙉𝙐", 
+buttonText: "𝙇𝙞𝙨𝙩𝙖 𝙙𝙚 𝙢𝙚𝙣𝙪", 
 sections }
 
 await conn.sendMessage(m.chat, listMessage)
@@ -91,18 +91,18 @@ function clockString(ms) {
 
 function ucapan() {
   const time = moment.tz('America/Los_Angeles').format('HH')  //America/Los_Angeles  Asia/Jakarta   America/Toronto
-  let res = "👋 *BIENVENIDO(A) | WELCOME* 👋"
+  let res = "👋 *𝙱𝙸𝙴𝙽𝚅𝙴𝙽𝙸𝙳𝙾(𝙰) | 𝚆𝙴𝙻𝙲𝙾𝙼𝙴* 👋"
   if (time >= 4) {
-    res = "🌇 *Buenos Días* ⛅"
+    res = "🌇 *𝙱𝚞𝚎𝚗𝚘𝚜 𝙳𝚒𝚊𝚜* ⛅"
   }
   if (time >= 11) {
-    res = "🏙️ *Buenas Tardes* 🌤️"
+    res = "🏙️ *𝙱𝚞𝚎𝚗𝚊𝚜 𝚃𝚊𝚛𝚍𝚎𝚜* 🌤️"
   }
   if (time >= 15) {
-    res = "🌆 *Buenas tardes* 🌥️"
+    res = "🌆 *𝙱𝚞𝚎𝚗𝚊𝚜 𝚃𝚊𝚛𝚍𝚎𝚜* 🌥️"
   }
   if (time >= 17) {
-    res = "🌃 *Buenas noches* 💫"
+    res = "🌃 *𝙱𝚞𝚎𝚗𝚊𝚜 𝚗𝚘𝚌𝚑𝚎𝚜* 💫"
   }
   return res
 }

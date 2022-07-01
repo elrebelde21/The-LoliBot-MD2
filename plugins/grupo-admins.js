@@ -15,7 +15,7 @@ ${listAdmin}
 𝙐𝙎𝘼𝙍 𝙀𝙉 𝘾𝘼𝙎𝙊 𝘿𝙀 𝙀𝙈𝙀𝙍𝙂𝙀𝙉𝘾𝙄𝘼
 ╰━━━━━━[ *𓃠 ${vs}* ]━━━━━⬣`.trim()
 
-conn.sendHydrated(m.chat, text, `𝘼𝙙𝙢𝙞𝙣𝙨 | ${wm}`, pp, 'https://github.com/elrebelde21/The-LoliBot-MD', 'The Lolibot-𝙈𝘿', null, null, [
+conn.sendHydrated(m.chat, text, `𝘼𝙙𝙢𝙞𝙣𝙨 | ${wm}`, pp, 'https://github.com/elrebelde21/The-LoliBot-MD', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘', '.menu']
 ], m, false, { mentions: [...groupAdmins.map(v => v.id), owner] })
 

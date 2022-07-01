@@ -14,7 +14,7 @@ let text = `
 *Las funciones #jadibot #bots #serbot #subbot #getcode. No estan disponibles en* ${gt} *si quiere hacerte bot intenta hacerlo vos mismo instalado poner #instalarbot* *y si necesitas ayuda habla con el owner del bot*`.trim()   
 conn.reply(m.chat, text, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
-title: 'The Lolibot-𝙈𝘿',
+title: '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫',
 body: 'Super Bot WhatsApp',         
 previewType: 1, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
 sourceUrl: `${yt}`}}})  
