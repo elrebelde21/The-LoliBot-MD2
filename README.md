@@ -14,12 +14,6 @@
 [![blog](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
 ](https://youtu.be/8Tml7lGcV-w)  <img src="https://github.com/siegrin/siegrin/blob/main/Assets/powerup.gif" height="29px">
 -----
-<p align="hihg">   
-<a href="https://facebook.com/groups/721802642266362/" target="_blank"> <img src="https://img.shields.io/badge/-facebook grupos-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_
-</p>
-
-
------
 ### 🟣 ACTIVAR EN HEROKU 
 #### ☂️ PARA USUARIOS DE HEROKU 
 
