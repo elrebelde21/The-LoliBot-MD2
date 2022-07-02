@@ -2,14 +2,13 @@ import { watchFile, unwatchFile } from 'fs'
 import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 
-//⊱ ━━━━━.⋅ Añada los numeros a ser Propietario/a ⋅.━━━━ ⊰
+//⊱ ━━━━━.⋅ owner/propietario del bot  ⋅.━━━━ ⊰
 global.owner = [
   ['56977774748', 'creador', true],
   ['447441419651'],
-  ['50495745934'],
+  ['50495745934'], //aqui cambia el numero por el tuyo
 ]
-//━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
-
+//aqui poner los numero premium 
 global.mods = [] 
 global.prems = ['56950377550'], 
 
