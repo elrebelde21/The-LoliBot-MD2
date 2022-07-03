@@ -13,7 +13,7 @@ let handler = async (m, { conn, command, args, usedPrefix }) => {
 ┃ *Ha Gastado* :  -${xpperlimit * count} 𝙓𝙋
 ╰━━━━━〔 *𓃠 ${vs}* 〕━━━━⬣`.trim()
     
-await conn.sendHydrated(m.chat, gata, wm, null, md, 'The Lolibot-𝙈𝘿', null, null, [
+await conn.sendHydrated(m.chat, gata, wm, null, md, '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
 ['💵 𝘾𝙤𝙢𝙥𝙧𝙖𝙧 𝙓10', '.buy 10'],
 ['💸 𝘾𝙤𝙢𝙥𝙧𝙖𝙧 𝙓20', '.buy 20'],
 ['🐈 𝘾𝙤𝙢𝙥𝙧𝙖𝙧 𝙘𝙤𝙣 loli𝘾𝙤𝙞𝙣𝙨', '/buy2']

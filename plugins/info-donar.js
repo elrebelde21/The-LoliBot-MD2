@@ -6,7 +6,8 @@ await conn.sendButton(m.chat, `${wm}`, `https://paypal.me/OficialGD`, pp, [['�
   
 let str = `
 💖 𝙃𝙤𝙡𝙖!!  *si quiere apoya al bot. con cosa mucha gracias*
-
+*forma parte grupo asistencia de facebook*
+https://facebook.com/groups/721802642266362/
 *agradecimiento al gatabot-MD*
 esto es alguno dato si quiere  𝘼𝙥𝙤𝙮𝙖𝙨 𝘿𝙤𝙣𝙖𝙣𝙙𝙤🎁 gatabot-MD
 *agracimiento al themystic-bot-MD . 𝙂𝙧𝙖𝙘𝙞𝙖𝙨!

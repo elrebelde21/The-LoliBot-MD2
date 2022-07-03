@@ -212,7 +212,7 @@ await conn.sendHydrated(m.chat, str, wm, pp, md, '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊�
 
 const sections = [
 {
-title: `𝙇𝙄𝙎𝙏𝘼 𝘿𝙀𝙎𝙋𝙇𝙀𝙂𝘼𝘽𝙇𝙀`,
+title: `𝑳𝒊𝒔𝒕𝒂 𝒅𝒆𝒔𝒑𝒍𝒆𝒈𝒂𝒃𝒍𝒆`,
 rows: [
 {title: "❇️ 𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 ❇️", description: null, rowId: `${usedPrefix}menu`},
 {title: "✳️ 𝙈𝙚𝙣𝙪 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙤 ✳️", description: null, rowId: `${usedPrefix}allmenu`},

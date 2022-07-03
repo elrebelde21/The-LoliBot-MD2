@@ -2,16 +2,16 @@ let handler = async m => {
  let old = performance.now()
  let neww = performance.now()
  let speed = neww - old
- let txt = `${eg}*_COMENZANDO PRUEBA DE VELOCIDAD..._*`.trim()
+ let txt = `${eg}*_𝘾𝙊𝙈𝙀𝙉𝙕𝘼𝙉𝘿𝙊 𝙋𝙍𝙐𝙀𝘽𝘼 𝘿𝙀 𝙑𝙀𝙇𝙊𝘾𝙄𝘿𝘼𝘿..._*`.trim()
   m.reply(txt)
 
 await m.reply('🚀')
 await m.reply('🚀🚀')
 await m.reply('🚀🚀🚀')
-await m.reply(`╰⊱✅⊱ *𝙍𝙀𝙎𝙐𝙇𝙏𝘼𝘿𝙊* ⊱✅⊱╮`)
+await m.reply(`╰⊱✅⊱ *𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤* ⊱✅⊱╮`)
  
 let veloz = 
-`🚄 *VELOCIDAD:*\n *${speed}* *Milisegundos*\n\n🚄 *SPEED:*\n *${speed}* *Milliseconds*`
+`🚄 *𝙑𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙:*\n *${speed}* *Milisegundos*\n\n🚄 *SPEED:*\n *${speed}* *Milliseconds*`
 
  const templateButtonsReplyMessage = [
 {index: 1, urlButton: {displayText: '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', url: 'https://github.com/elrebelde21/The-LoliBot-MD'}},

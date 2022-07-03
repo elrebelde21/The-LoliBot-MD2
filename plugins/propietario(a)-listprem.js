@@ -2,13 +2,13 @@ import fs from 'fs'
 let handler = async (m, { conn }) => {
 let prem = global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').filter(v => v != conn.user.jid)
 
-await conn.reply(m.chat, `*╭━[ 𝙐𝙎𝙐𝘼𝙍𝙄𝙊𝙎 𝙋𝙍𝙀𝙈𝙄𝙐𝙈  ]━⬣*\n*┃*\n` + prem.map(v => '*┃* ➥ 💎 @' + v.replace(/@.+/, ' 💎')).join`\n`, m, { contextInfo: { mentionedJid: prem } }) 
+await conn.reply(m.chat, `*╭━[ 𝙐𝙨𝙪𝙖𝙧𝙞𝙤𝙨  𝙥𝙧𝙚𝙢𝙞𝙪𝙢  ]━⬣*\n*┃*\n` + prem.map(v => '*┃* ➥ 💎 @' + v.replace(/@.+/, ' 💎')).join`\n`, m, { contextInfo: { mentionedJid: prem } }) 
    
-  let text = `𝙌𝙐𝙀 𝙋𝙍𝙊!! 😼 !! ✨`.trim()   
+  let text = `𝑸𝒖𝒆 𝒑𝒓𝒐!! 😜 `.trim()   
 await conn.reply(m.chat, text, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
-title: 'The Lolibot-MD',
-body: 'Super Bot WhatsApp',         
+title: '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫',
+body: '𝑺𝒖𝒑𝒆𝒓 𝑩𝒐𝒕 𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑',         
 previewType: 1, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
 sourceUrl: `${yt}`}}})
    

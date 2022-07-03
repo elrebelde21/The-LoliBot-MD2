@@ -1,11 +1,11 @@
 import fs from 'fs'
 import fetch from 'node-fetch'
 let handler = async (m, {command, conn, text, usedPrefix, args}) => {
-if (!text) throw `${mg}𝘿𝙀𝘽𝙀 𝙄𝙉𝙂𝙍𝙀𝙎𝘼𝙍 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀 𝙏𝙄𝙆𝙏𝙊𝙆 𝙋𝘼𝙍𝘼 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙍 𝙀𝙇 𝙑𝙄𝘿𝙀𝙊\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} https://vm.tiktok.com/ZMLEPnruc/?k=1*`
+if (!text) throw `${mg}𝘿𝙚𝙗𝙚𝙧 𝙞𝙣𝙜𝙧𝙚𝙨𝙖 𝙪𝙣 𝙚𝙣𝙡𝙖𝙘𝙚 𝙙𝙚 𝙩𝙞𝙠𝙩𝙤𝙠 𝙥𝙖𝙧𝙖 𝙙𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙧 𝙚𝙡 𝙫𝙞𝙙𝙚𝙤\𝙀𝙟𝙚𝙢𝙥𝙡𝙤\n*${usedPrefix + command} https://vm.tiktok.com/ZMLEPnruc/?k=1*`
 //if (command == 'tiktokaudio') {
 //conn.reply(m.chat, `${eg}PRONTO TENDRA EL VIDEO DE TIKTOK 🔰*`, m, {
 //contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
-//title: 'The Lolibot-MF',
+//title: 'The Lolibot-MD',
 //body: 'Super Bot WhatsApp',         
 //previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
 //sourceUrl: `https://github.com/GataNina-Li/GataBot-MD`}}})
@@ -14,10 +14,10 @@ if (!text) throw `${mg}𝘿𝙀𝘽𝙀 𝙄𝙉𝙂𝙍𝙀𝙎𝘼𝙍 𝙐�
 //let json = await res.json()
 //conn.sendFile(m.chat, json.result.audio, 'error.mp3', null, m, false, { mimetype: 'mp3/mp4' })}
 
-conn.reply(m.chat, `${eg}*ESPERE UNOS SEGUNDOS EL QUE MANDO SUS 𝙑𝙄𝘿𝙀𝙊 𝘿𝙀 𝙏𝙄𝙆𝙏𝙊𝙆 🔰*`, m, {
+conn.reply(m.chat, `${eg}𝙀𝙨𝙥𝙚𝙧𝙚 𝙪𝙣𝙤𝙨 𝙨𝙚𝙜𝙪𝙣𝙙𝙤𝙨 𝙚𝙡 𝙦𝙪𝙚 𝙢𝙖𝙣𝙙𝙤 𝙨𝙪𝙨 𝙫𝙞𝙙𝙚𝙤 𝙙𝙚 𝙩𝙞𝙠𝙩𝙤𝙠 𝙥𝙤𝙧 𝙛𝙖𝙫𝙤𝙧 🔰`, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
-title: 'The Lolibot-MD',
-body: 'Super Bot WhatsApp',         
+title: '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫',
+body: '𝙎𝙪𝙥𝙚𝙧 𝙗𝙤𝙩 𝙒𝙝𝙖𝙩𝙨𝘼𝙥𝙥',         
 previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
 sourceUrl: `https://github.com/elrebelde21/The-LoliBot-MD`}}})
   
@@ -25,7 +25,7 @@ let res = await fetch("https://api.dhamzxploit.my.id/api/tiktod/?url="+args[0])
 let json = await res.json()
 await conn.sendFile(m.chat, json.result.nowatermark, 'error.mp4', `${wm}`, m)
 
-let info = `💖 *Infórmate sobre las Novedades y recuerda tener la última versión.*
+let info = `💖 𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙩𝙚 𝙨𝙤𝙗𝙧𝙚 𝙡𝙖𝙨 𝙉𝙤𝙫𝙚𝙙𝙖𝙙𝙚𝙨 𝙮 𝙧𝙚𝙘𝙪𝙚𝙧𝙙𝙖 𝙩𝙚𝙣𝙚𝙧 𝙡𝙖 𝙪𝙡𝙩𝙞𝙢𝙖 𝙫𝙚𝙧𝙨𝙞𝙤𝙣.
   `.trim()
   let vn = './media/descarga.mp3'
   

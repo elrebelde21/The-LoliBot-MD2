@@ -9,19 +9,19 @@ const res = await conn.groupParticipantsUpdate(m.chat, [user], 'remove')
 kickedUser.concat(res) 
 await delay(1 * 1000)
 if (command == 'kick') { 
-conn.sendHydrated(m.chat, `𝘼𝙃 𝙎𝙄𝘿𝙊 𝙀𝙍𝙍𝘼𝘿𝙄𝘾𝘼𝘿𝙊(𝘼) 𝘿𝙀𝙇 𝙂𝙍𝙐𝙋𝙊 😎`, wm, null, md, 'The Lolibot-𝙈𝘿', null, null, [
+conn.sendHydrated(m.chat, `𝘼𝙃 𝙎𝙄𝘿𝙊 𝙀𝙍𝙍𝘼𝘿𝙄𝘾𝘼𝘿𝙊(𝘼) 𝘿𝙀𝙇 𝙂𝙍𝙐𝙋𝙊 😎`, wm, null, md, '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu']
 ], m,)
 }
 
 if (command == 'sacar') { 
-conn.sendHydrated(m.chat, `𝘼𝙃 𝙎𝙄𝘿𝙊 𝙀𝙍𝙍𝘼𝘿𝙄𝘾𝘼𝘿𝙊(𝘼) 𝘿𝙀𝙇 𝙂𝙍𝙐𝙋𝙊 😎`, wm, null, md, 'The Lolibot-𝙈𝘿', null, null, [
+conn.sendHydrated(m.chat, `𝘼𝙃 𝙎𝙄𝘿𝙊 𝙀𝙍𝙍𝘼𝘿𝙄𝘾𝘼𝘿𝙊(𝘼) 𝘿𝙀𝙇 𝙂𝙍𝙐𝙋𝙊 😎`, wm, null, md, '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu']
 ], m,)
 }
   
 if (command == 'ban') { 
-conn.sendHydrated(m.chat, `𝘼𝙃 𝙎𝙄𝘿𝙊 𝙀𝙍𝙍𝘼𝘿𝙄𝘾𝘼𝘿𝙊(𝘼) 𝘿𝙀𝙇 𝙂𝙍𝙐𝙋𝙊 😎`, wm, null, md, 'The Lolibot-𝙈𝘿', null, null, [
+conn.sendHydrated(m.chat, `𝘼𝙃 𝙎𝙄𝘿𝙊 𝙀𝙍𝙍𝘼𝘿𝙄𝘾𝘼𝘿𝙊(𝘼) 𝘿𝙀𝙇 𝙂𝙍𝙐𝙋𝙊 😎`, wm, null, md, '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu']
 ], m,)
 }

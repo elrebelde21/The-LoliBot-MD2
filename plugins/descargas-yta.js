@@ -2,7 +2,7 @@ let limit = 200
 import fetch from 'node-fetch'
 import { youtubedl, youtubedlv2, youtubedlv3 } from '@bochilteam/scraper';
 let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) => {
-if (!args || !args[0]) throw `${mg}𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙀𝙇 𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀 𝙔𝙊𝙐𝙏𝙐𝘽𝙀 𝙋𝘼𝙍𝘼 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙍 𝙀𝙇 𝘼𝙐𝘿𝙄𝙊\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} https://youtu.be/85xI8WFMIUY*`
+if (!args || !args[0]) throw `${mg}𝙄𝙣𝙜𝙧𝙚𝙨𝙚 𝙚𝙡 𝙚𝙣𝙡𝙖𝙘𝙚 𝙙𝙚 𝙔𝙤𝙪𝙏𝙪𝙗𝙚 𝙥𝙖𝙧𝙖 𝙙𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙧 𝙚𝙡 𝙖𝙪𝙙𝙞𝙤\n𝙀𝙟𝙚𝙢𝙥𝙡𝙤\n*${usedPrefix + command} https://youtu.be/85xI8WFMIUY*`
 try {
 let chat = global.db.data.chats[m.chat]
 const isY = /y(es)/gi.test(args[1])
@@ -25,7 +25,7 @@ audio = link = source = null
 lastError = e
 }}
 conn.sendFile(m.chat, source, title + '.mp3', `
-*🔥 𝚃𝙸𝚃𝚄𝙻𝙾:* ${title}
+*🔥 𝙏𝙞𝙩𝙪𝙡𝙤:* ${title}
 `.trim(), m, null, {
 asDocument: chat.useDocument
 })

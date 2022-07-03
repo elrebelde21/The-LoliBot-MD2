@@ -82,20 +82,20 @@ let username = conn.getName(who)
 //user.registered = false
 
 let menu = `
-💗 *¡HOLA!* ${username}
+💗 *¡𝑯𝒐𝒍𝒂!* ${username}
 ╭━━〔 *${wm}* 〕━━⬣
 ┃🎈🎈🎈🎈🎈🎈🎈🎈🎈
-┃✪ *EXPERIENCIA | EXP ➺ ${exp}*
-┃✪ *NIVEL | LEVEL ➺ ${level}*
-┃✪ *ROL ➺* ${role}
-┃✪ *LOLICOINS ➺ $ ${money}*
+┃✪ *𝑬𝒙𝒑𝒆𝒓𝒊𝒆𝒏𝒄𝒊𝒂 ➺ ${exp}*
+┃✪ *𝑵𝒊𝒗𝒆𝒍 ➺ ${level}*
+┃✪ *𝑹𝒐𝒍 ➺* ${role}
+┃✪ *𝑳𝒐𝒍𝒊𝒄𝒐𝒊𝒏𝒔 ➺ $ ${money}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *FECHA ➺ ${week}, ${date}*
-┃✪ *USUARIOS ➺ ${Object.keys(global.db.data.users).length}* 
+┃✪ *𝑭𝒆𝒄𝒉𝒂 ➺ ${week}, ${date}*
+┃✪ *𝑼𝒔𝒖𝒂𝒓𝒊𝒐𝒔 ➺ ${Object.keys(global.db.data.users).length}* 
 ┃🎈🎈🎈🎈🎈🎈🎈🎈🎈
 ╰━━━━━━〔 𓃠 *${vs}* 〕━━━━━━⬣
 
-╭━〔 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊𝙉 〕━⬣
+╭━〔 𝑰𝒏𝒇𝒐𝒎𝒂𝒄𝒊𝒐𝒏 〕━⬣
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🔍➺ _${usedPrefix}animeinfo *texto*_
 ┃🔍➺ _${usedPrefix}google *texto*_
@@ -103,7 +103,7 @@ let menu = `
 ┃🔍➺ _${usedPrefix}ytsearch | yts *texto*_
 ┃🔍➺ _${usedPrefix}wiki | wikipedia *texto*_
 ╰━━━━━━━━━━━━━━━━━━━⬣`.trim()
-conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/elrebelde21/The-LoliBot-MD', 'THE LOLIBOT-𝙈𝘿', null, null, [
+conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/elrebelde21/The-LoliBot-MD', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
 ['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 💫', '.allmenu'],
 ['𝙈𝙚𝙣𝙪 𝙙𝙚𝙨𝙥𝙡𝙚𝙜𝙖𝙗𝙡𝙚 🌟', '/menulista'],
 ['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 ⚡', '#menu']

@@ -13,7 +13,7 @@ let str = `
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 🔰 *${nnn}*\n
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-😊 ➤ Grupos oficiales del Bot:*
+😊 ➤ 𝙂𝙧𝙪𝙥𝙤𝙨 𝙤𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 𝙙𝙚𝙡 𝘽𝙤𝙩:
 *1.-* https://chat.whatsapp.com/JlomZPEgo3bLmzjGUYPfyJ
 
 *2.-* https://chat.whatsapp.com/DbXBmsydWBE1ZN3EoY0hRs
@@ -38,7 +38,7 @@ let str = `
 
 *12.-* https://chat.whatsapp.com/DZA9djOzBn51ZpsCBj6aAg
 
-*grupo de amistades donde esta el bot*
+ 𝙜𝙧𝙪𝙥𝙤 𝙙𝙚 𝙖𝙢𝙞𝙨𝙩𝙖𝙙𝙚𝙨 𝙙𝙤𝙣𝙙𝙚 𝙚𝙨𝙩𝙖 𝙚𝙡 𝙗𝙤𝙩
 
 *bot princess Kiara* 
 https://chat.whatsapp.com/DRqFS8O6Mgx5oJR8o7XffC
@@ -58,7 +58,7 @@ https://chat.whatsapp.com/FRpx4wNuUqh84QojoGExUn
 *◄≛⁆✤🍒A͍M͍I͍S͍T͍A͍D͍E͍S͍💜✠*
 https://chat.whatsapp.com/LQKjh122sx693mlHyNg25h
 
-*grupos de enlace aca poder encontrar grupo y manda tu enlace*
+ 𝙜𝙧𝙪𝙥𝙤𝙨 𝙙𝙚 𝙚𝙣𝙡𝙖𝙘𝙚 𝙖𝙘𝙖 𝙥𝙤𝙙𝙚𝙧 𝙚𝙣𝙘𝙤𝙣𝙩𝙧𝙖𝙧 𝙜𝙧𝙪𝙥𝙤 𝙮 𝙢𝙖𝙣𝙙𝙖 𝙩𝙪 𝙚𝙣𝙡𝙖𝙘𝙚
 *꧁⃢⃟҉💫🇭🇳🌺ঔENLACES LA JEFA 🇭🇳*
 https://chat.whatsapp.com/CR8piZaPIHYGwKoWrWnMSs
 
@@ -71,7 +71,7 @@ https://chat.whatsapp.com/Dq9v557KgJsLtdkK3CALzL
 *│🌷.ꦿ│𓏲⊹𝐀𝐌𝐈𝐒𝐓𝐀𝐃𝐄𝐒 𖥨⊹*
 https://chat.whatsapp.com/HTeeFKFAHsP1b0YUm5eDRm\n
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-*si quiere que tu grupo aparezca aca habla con el admin ofc del bot.*()
+ 𝙨𝙞 𝙦𝙪𝙞𝙚𝙧𝙚 𝙦𝙪𝙚 𝙩𝙪 𝙜𝙧𝙪𝙥𝙤 𝙖𝙥𝙖𝙧𝙚𝙯𝙘𝙖 𝙖𝙘𝙖 𝙝𝙖𝙗𝙡𝙖 𝙘𝙤𝙣 𝙚𝙡 𝙖𝙙𝙢𝙞𝙣 𝙤𝙛𝙘 𝙙𝙚𝙡 𝙗𝙤𝙩.()
   
 conn.sendHydrated(m.chat, str, wm, media, 'https://github.com/elrebelde21/The-LoliBot-MD', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
 ['𝘾𝙪𝙚𝙣𝙩𝙖𝙨 𝙊𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 ✅', '.cuentasgb'],
