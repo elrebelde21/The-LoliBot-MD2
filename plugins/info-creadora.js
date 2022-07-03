@@ -3,8 +3,8 @@ function handler(m, { conn }) {
 let vn = './media/creador.mp3'
 let text = `
 *𝘾𝙤𝙣𝙩𝙖𝙘𝙩𝙤* 
-*Wa.me/56977774748 (no bot)*
-*Wa.me/447441419651 (bot)*
+*Wa.me/56977774748*
+*Wa.me/5492266613038*
 `.trim()   
 conn.reply(m.chat, text, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
