@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url'
 //⊱ ━━━━━.⋅ owner/propietario del bot  ⋅.━━━━ ⊰
 global.owner = [
   ['56977774748', 'creador', true],
-  ['5492266613038'],
+  ['212614486339'],
   ['50495745934'], //aqui cambia el numero por el tuyo
 ]
 //aqui poner los numero premium 
