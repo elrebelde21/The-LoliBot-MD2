@@ -13,6 +13,10 @@
 -----
 [![blog](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
 ](https://youtu.be/8Tml7lGcV-w)  <img src="https://github.com/siegrin/siegrin/blob/main/Assets/powerup.gif" height="29px">
+
+[![Deploy](http://portal.acidicnodes.com)](https://heroku.com/deploy?template=https://github.com/GataNina-Li/GataBot-MD) <img src="https://c.tenor.com/OIc0cAei3dwAAAAd/gato-baile.gif" height="32px">
+### Añada lo siguente al Buildpack: <img src="https://cdn-0.emojis.wiki/emoji-pics/microsoft/backhand-index-pointing-down-microsoft.png" height="32px">
+```
 -----
 ### 🟣 ACTIVAR EN HEROKU 
 #### ☂️ PARA USUARIOS DE HEROKU 
