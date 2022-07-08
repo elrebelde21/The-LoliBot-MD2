@@ -16,7 +16,7 @@
 
 -----
 [![blog](https://img.shields.io/badge/pagina-acidicnodes-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
-)](http://portal.acidicnodes.com)  <a href="http://portal.acidicnodes.com"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
+)](http://portal.acidicnodes.com)  <a href="http://portal.acidicnodes.com"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/pagina_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
 
 -----
 ### 🟣 ACTIVAR EN HEROKU 
