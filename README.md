@@ -12,11 +12,7 @@
 
 -----
 [![blog](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
-](https://youtu.be/8Tml7lGcV-w)  <img src="https://github.com/siegrin/siegrin/blob/main/Assets/powerup.gif" height="29px">
-
------
-[![blog](https://img.shields.io/badge/pagina-acidicnodes-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
-)](http://portal.acidicnodes.com)  <a href="http://portal.acidicnodes.com"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/pagina_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
+](https://youtu.be/8Tml7lGcV-w)  <img src="https://github.com/siegrin/siegrin/blob/main/Assets/powerup.gif" height="29px"
 
 -----
 ### 🟣 ACTIVAR EN HEROKU 
