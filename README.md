@@ -1,4 +1,4 @@
-# Esta versión de THE LOLIBOT-MD no esta terminada. ✨
+# Esta versión de THE LOLIBOT-MD casi está terminada. ✨
 
 ### `—◉ DUDAS SOBRE EL BOT?, CONTACTAME ✨`
 <a href="http://wa.me/56977774748" target="blank"><img src="https://img.shields.io/badge/creador-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
