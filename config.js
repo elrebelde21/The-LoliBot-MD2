@@ -8,7 +8,7 @@ global.owner = [
   ['212614486339'],
   ['50495745934'], //aqui cambia el numero por el tuyo
 ]
-//aqui poner los numero premium 
+//aqui poner los numero premim 
 global.mods = [] 
 global.prems = ['56950377550'], 
 
