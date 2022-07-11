@@ -6,11 +6,11 @@ import { fileURLToPath } from 'url'
 global.owner = [
   ['56977774748', 'creador', true],
   ['212614486339'],
-  ['50495745934'], //aqui cambia el numero por el tuyo
+  ['+506 6070 8539'], //aqui cambia el numero por el tuyo
 ]
 //aqui poner los numero premium 
 global.mods = [] 
-global.prems = ['56950377550'], 
+global.prems = ['+506 6070 8539'], 
 
 global.APIs = { // API Prefix.
   
