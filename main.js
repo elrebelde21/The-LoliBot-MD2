@@ -109,7 +109,7 @@ global.timestamp.connect = new Date
 if (global.db.data == null) loadDatabase()
 if (connection == 'open') {
 console.log(chalk.yellow('▣─────────────────────────────···\n│\n│❧ 𝙲𝙾𝙽𝙴𝙲𝚃𝙰𝙳𝙾 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙰𝙼𝙴𝙽𝚃𝙴 𝙰𝙻 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 ✅\n│\n▣─────────────────────────────···'))
-await conn.sendHydrated(`56977774748@s.whatsapp.net`, `𝙷𝙾𝙻𝙰 rebelde, 𝚂𝙴 𝙳𝙴𝚃𝙴𝙲𝚃𝙾 𝚀𝚄𝙴 𝙴𝚂𝚃𝙴 𝙽𝚄𝙼𝙴𝚁𝙾 𝙴𝚂 𝚄𝙽 𝙽𝚄𝙴𝚅𝙾 𝙱𝙾𝚃 𝙰𝙲𝚃𝙸𝚅𝙾 ✅`, author, pp, null, null, null, null, [['🌹 𝙾𝚆𝙽𝙴𝚁 🌹', '/owner'], ['👾 𝙼𝙴𝙽𝚄 𝙿𝚁𝙸𝙽𝙲𝙸𝙿𝙰𝙻 👾', '#menu']])
+await conn.sendHydrated(`56977774748@s.whatsapp.net`, `𝑯𝒐𝒍𝒊 𝒓𝒆𝒃𝒆𝒍𝒅𝒆,  𝒔𝒆 𝒅𝒆𝒕𝒆𝒄𝒕𝒐 𝒒𝒖𝒆 𝒆𝒔𝒕𝒆 𝒏𝒖𝒎𝒆𝒓𝒐 𝒆𝒔 𝒖𝒏 𝒏𝒖𝒆𝒗𝒐 𝒃𝒐𝒕 𝒂𝒄𝒕𝒊𝒗𝒐 ✅`, author, pp, null, null, null, null, [['🌹 𝙾𝚆𝙽𝙴𝚁 🌹', '/owner'], ['👾 𝙼𝙴𝙽𝚄 𝙿𝚁𝙸𝙽𝙲𝙸𝙿𝙰𝙻 👾', '#menu']])
 await conn.groupAcceptInvite('Byyrc8RJnUkJw6vvUgsbDF')}}
 
 process.on('uncaughtException', console.error)
@@ -139,8 +139,8 @@ conn.ev.off('connection.update', conn.connectionUpdate)
 conn.ev.off('creds.update', conn.credsUpdate)
 }
   
-conn.welcome = '*╔══════════════*\n╟❧ 𝑩𝒊𝒆𝒏𝒗𝒆𝒏𝒊𝒅𝒐/𝒂 \n*╠══════════════*\n*╟❧ @user*\n*╟❧ 𝘼𝙡 @subject* \n*║*\n*╟❧ 𝑫𝒆𝒔𝒄𝒓𝒊𝒑𝒄𝒊𝒐𝒏 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐:*\n*╟❧* @desc\n*║*\n*╟❧ 𝑫𝒊𝒔𝒇𝒓𝒖𝒕𝒂 𝒅𝒆 𝒕𝒖 𝒆𝒔𝒕𝒂𝒓𝒊𝒂!!*\n*╚══════════════*'
-  conn.bye = '*╔══════════════*\n*╟❧ 𝑺𝒆 𝒇𝒖𝒆 @user*\n*╟❧ 𝑯𝒂𝒔𝒕𝒂 𝒑𝒓𝒐𝒏𝒕𝒐 👋🏻* \n*╚══════════════*'
+conn.welcome = '┏━━━━━━━━━━━━\n┃──〘 𝑩𝒊𝒆𝒏𝒗𝒆𝒏𝒊𝒅𝒐/𝒂 〙──\n┃━━━━━━━━━━━━\n┃ *_✨ @user 𝘼𝙡* \n┃ *_@subject ✨_*\n┃\n┃=> *_𝑬𝒏 𝒆𝒔𝒕𝒆 𝒈𝒓𝒖𝒑𝒐 𝒑𝒐𝒅𝒓𝒂𝒔_*\n┃ *_𝒆𝒏𝒄𝒐𝒏𝒕𝒓𝒂𝒓:_*\n┠⊷ *𝑨𝒎𝒊𝒔𝒕𝒂𝒅𝒆𝒔 🫂* \n┠⊷ *𝑫𝒆𝒔𝒎𝒂𝒅𝒓𝒆 💃🕺* \n┠⊷ *𝑹𝒆𝒍𝒂𝒋𝒐 💅* \n┠⊷ *𝑬𝒏𝒆𝒎𝒊𝒈@𝒔🥵* :\n┠⊷ *𝑼𝒏 𝑩𝒐𝒕 𝑺𝒆𝒙𝒚*\n┃\n┃=> *_𝑷𝒖𝒆𝒅𝒆𝒔 𝒔𝒐𝒍𝒊𝒄𝒊𝒕𝒂𝒓 𝒎𝒊 𝒍𝒊𝒔𝒕𝒂 𝒅𝒆_*\n┃ *_𝒄𝒐𝒎𝒂𝒏𝒅𝒐𝒔 𝒄𝒐𝒏:_*\n┠⊷ *#menu*\n┃\n┃=> *_𝑨𝒒𝒖𝒊 𝒕𝒊𝒆𝒏𝒆𝒔 𝒍𝒂 𝒅𝒆𝒔𝒄𝒓𝒊𝒑𝒄𝒊𝒐𝒏_* \n┃ *_𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐, 𝒍𝒆𝒆𝒍𝒂!!_*\n┃\n\n@desc\n\n┃ \n┃ *_🔰  𝑫𝒊𝒔𝒇𝒓𝒖𝒕𝒂 𝒅𝒆 𝒕𝒖_* \n┃ *_𝒆𝒔𝒕𝒂𝒅𝒊𝒂 𝒆𝒏 𝒆𝒍 𝒈𝒓𝒖𝒑𝒐  🔰_*  \n┃\n┗━━━━━━━━━━━'
+  conn.bye = '┏━━━━━━━━━━━━\n┃──〘 𝑨𝒅𝒊𝒐𝒔 〙───\n┃━━━━━━━━━━━━\n┃ *_☠ 𝑺𝒆 𝒇𝒖𝒆 @user_* \n┃ *_𝑳𝒆 𝒕𝒊𝒆𝒏𝒆 𝒎𝒊𝒆𝒅𝒐 𝒂𝒍 𝒆𝒙𝒊𝒕𝒐🤑_*\n┗━━━━━━━━━━'
   conn.spromote = '*𝒉𝒆𝒚 @user 𝒉𝒐𝒓𝒂 𝒆𝒓𝒆𝒔 𝒂𝒅𝒎𝒊𝒏𝒔 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐😛!!*'
   conn.sdemote = '*𝒉𝒆𝒚 @user 𝒚𝒂 𝒏𝒐 𝒆𝒓𝒆𝒔 𝒂𝒅𝒎𝒊𝒏𝒔😐 !!*'
   conn.sDesc = '*𝑺𝒆 𝒉𝒂 𝒎𝒐𝒅𝒊𝒇𝒊𝒄𝒂𝒅𝒐 𝒍𝒂 𝒅𝒆𝒔𝒄𝒓𝒊𝒑𝒄𝒊𝒐𝒏 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐*\n\n*𝑵𝒖𝒆𝒗𝒐 𝒅𝒆𝒔𝒄𝒓𝒊𝒑𝒄𝒊𝒐𝒏:* @desc'
