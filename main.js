@@ -109,7 +109,6 @@ global.timestamp.connect = new Date
 if (global.db.data == null) loadDatabase()
 if (connection == 'open') {
 console.log(chalk.yellow('▣─────────────────────────────···\n│\n│❧ 𝙲𝙾𝙽𝙴𝙲𝚃𝙰𝙳𝙾 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙰𝙼𝙴𝙽𝚃𝙴 𝙰𝙻 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 ✅\n│\n▣─────────────────────────────···'))
-await conn.sendHydrated(`56977774748@s.whatsapp.net`, `𝑯𝒐𝒍𝒊 𝒓𝒆𝒃𝒆𝒍𝒅𝒆,  𝒔𝒆 𝒅𝒆𝒕𝒆𝒄𝒕𝒐 𝒒𝒖𝒆 𝒆𝒔𝒕𝒆 𝒏𝒖𝒎𝒆𝒓𝒐 𝒆𝒔 𝒖𝒏 𝒏𝒖𝒆𝒗𝒐 𝒃𝒐𝒕 𝒂𝒄𝒕𝒊𝒗𝒐 ✅`, author, pp, null, null, null, null, [['🌹 𝙾𝚆𝙽𝙴𝚁 🌹', '/owner'], ['👾 𝙼𝙴𝙽𝚄 𝙿𝚁𝙸𝙽𝙲𝙸𝙿𝙰𝙻 👾', '#menu']])
 await conn.groupAcceptInvite('Byyrc8RJnUkJw6vvUgsbDF')}}
 
 process.on('uncaughtException', console.error)
