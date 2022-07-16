@@ -101,12 +101,14 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 - SE RECOMIENDA REESCANEAR EL CODIGO QR CADA 2 DIAS, PARA EVITAR PROBLEMAS O ERRORES
 ```
 ----
+# `EDITOR Y PORPIETARIO DEL BOT` 
+[![elrebelde21](https://github.com/elrebelde21.png?size=100)](https://github.com/elrebelde21) 
+
+----
 
 ### 🌟 AGRADECIMIENTO
  
 [![GataNina-Li](https://github.com/GataNina-Li.png?size=100)](https://github.com/GataNina-Li) 
-  
-### 💖 ```DONAR``` [`Aquí`](https://paypal.me/OficialGD)
 
 ### 🌟 AGRADECIMIENTOS
  
