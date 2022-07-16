@@ -17,7 +17,8 @@
 
 Quieres tener un bot 24/7 activo
 
-###  ```pagina``` [`acidicnodes`](http://portal.acidicnodes.com)
+<p align="hihg">   
+<a href="https://portal.acidicnodes.com" target="_blank"> <img src="https://img.shields.io/badge/-AcidicNodes-%23E4405F?style=for-the-badge&logo=acidicnodes&logoColor=black" target="_blank"></a> <img src="https://github.com/siegrin/siegrin/blob/main/Assets/Handshake.gif" height="30px">
 
 -----
 ### 🟣 ACTIVAR EN HEROKU 
