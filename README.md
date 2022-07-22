@@ -1,6 +1,7 @@
 # Esta versión de THE LOLIBOT-MD casi está terminada. ✨
 
-### `—◉ DUDAS SOBRE EL BOT?, CONTACTAME ✨`
+### `—◉ 𝗗𝘂𝗱𝗮 𝘀𝗼𝗯𝗿𝗲 𝗲𝗹 𝗯𝗼𝘁?
+𝗖𝗼𝗻𝘁𝗮𝗰𝘁𝗮𝗺𝗲 ✨`
 <a href="http://wa.me/56977774748" target="blank"><img src="https://img.shields.io/badge/creador-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 
 
@@ -15,14 +16,14 @@
 ](https://youtu.be/8Tml7lGcV-w)  <img src="https://github.com/siegrin/siegrin/blob/main/Assets/powerup.gif" height="29px">
 -----
 
-Quieres tener un bot 24/7 activo
+𝐐𝐮𝐢𝐞𝐫𝐞 𝐭𝐞𝐧𝐞𝐫 𝐮𝐧 𝐛𝐨𝐭 𝟐𝟒/𝟕 𝐚𝐜𝐭𝐢𝐯𝐨
 
 <p align="hihg">   
 <a href="https://portal.acidicnodes.com" target="_blank"> <img src="https://img.shields.io/badge/-AcidicNodes-%23E4405F?style=for-the-badge&logo=acidicnodes&logoColor=black" target="_blank"></a> <img src="https://github.com/siegrin/siegrin/blob/main/Assets/Handshake.gif" height="30px">
 
 -----
-### 🟣 ACTIVAR EN HEROKU 
-#### ☂️ PARA USUARIOS DE HEROKU 
+### 🟣 𝐀𝐂𝐓𝐈𝐕𝐀 𝐄𝐋 𝐇𝐄𝐑𝐎𝐊𝐔
+#### ☂️ 𝐏𝐀𝐑𝐀 𝐔𝐒𝐀𝐑𝐈𝐎𝐒 𝐃𝐄 𝐇𝐄𝐑𝐎𝐊𝐔
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/GataNina-Li/GataBot-MD) <img src="https://c.tenor.com/OIc0cAei3dwAAAAd/gato-baile.gif" height="32px">
 ### Añada lo siguente al Buildpack: <img src="https://cdn-0.emojis.wiki/emoji-pics/microsoft/backhand-index-pointing-down-microsoft.png" height="32px">
@@ -40,9 +41,9 @@ Quieres tener un bot 24/7 activo
 ```
 -----
 
-### ACTIVAR EN TERMUX
+### 𝐀𝐂𝐓𝐈𝐕𝐀 𝐄𝐋 𝐓𝐄𝐑𝐌𝐔𝐗
 ```bash
-ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
+𝐄𝐒𝐂𝐑𝐈𝐁𝐄 𝐋𝐎𝐒 𝐒𝐈𝐆𝐔𝐈𝐄𝐍𝐓𝐄𝐒 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐔𝐍𝐎 𝐏𝐎𝐑 𝐔𝐍𝐎::
 
 > termux-setup-storage
 > apt update 
@@ -63,21 +64,21 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```
 ----    
 ###  AJUSTE <img src="https://i.pinimg.com/originals/98/1b/e2/981be28d3ec7b85bfb797a5f9e6a01c2.png" height="32px">
-- CLONAR EL REPOSITORIO [`Aquí`](https://github.com/elrebelde21/The-LoliBot-MD/fork)
+- 𝐂𝐋𝐎𝐍𝐀𝐑 𝐄𝐋 𝐑𝐄𝐏𝐎𝐒𝐈𝐓𝐎𝐑𝐈𝐎 [`𝐀𝐪𝐮𝐢`](https://github.com/elrebelde21/The-LoliBot-MD/fork)
 ----  
 
-### ACTIVAR EN CASO DE DETENERSE <img src="https://i.pinimg.com/originals/0e/c9/89/0ec989dde8b5fc0deef4e5b09292b605.gif" height="30px">
+### 𝐀𝐂𝐓𝐈𝐕𝐀𝐑 𝐄𝐍 𝐂𝐀𝐒𝐎 𝐃𝐄 𝐃𝐄𝐓𝐄𝐍𝐄𝐑𝐒𝐄 <img src="https://i.pinimg.com/originals/0e/c9/89/0ec989dde8b5fc0deef4e5b09292b605.gif" height="30px">
 ```bash
-ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
+𝐄𝐒𝐂𝐑𝐈𝐁𝐄 𝐋𝐎𝐒 𝐒𝐈𝐆𝐔𝐈𝐄𝐍𝐓𝐄𝐒 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐔𝐍𝐎 𝐏𝐎𝐑 𝐔𝐍𝐎:
 > cd 
 > cd The-LoliBot-MD
 > npm start
 ```
 ----
 
-### OBTENER OTRO CODIGO QR <img src="http://4.bp.blogspot.com/-mFQY5cKLkQ0/U0kwKQn5RzI/AAAAAAAADk0/FDOXxWZ9grU/s1600/QR-code-color.png" height="30px">
+### 𝐎𝐁𝐓𝐄𝐍𝐄𝐑 𝐎𝐓𝐑𝐎 𝐂𝐎𝐃𝐈𝐆𝐎 𝐐𝐑 <img src="http://4.bp.blogspot.com/-mFQY5cKLkQ0/U0kwKQn5RzI/AAAAAAAADk0/FDOXxWZ9grU/s1600/QR-code-color.png" height="30px">
 ```bash
-ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
+𝐄𝐒𝐂𝐑𝐈𝐁𝐄 𝐋𝐎𝐒 𝐒𝐈𝐆𝐔𝐈𝐄𝐍𝐓𝐄𝐒 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐔𝐍𝐎 𝐏𝐎𝐑 𝐔𝐍𝐎:
 > cd 
 > cd The-LoliBot-MD
 > rm -rf session.data.json
@@ -85,31 +86,31 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```
 ----
   
-### NOTA 
+### 𝐍𝐎𝐓𝐀 
 ```bash
-- ESTE REPOSITORIO PÚBLICA LA VERSIÓN ACTUAL|OFICIAL DE The Lolibot-MD  
-- ES POSIBLE QUE EL BOT TENGA ALGUNAS FALLAS, SE IRAN SOLUCIONANDO CONFORME SE VAYAN DETECTANDO
-- ES RECOMENDABLE LEER TODO EL MENU Y VER EL FUNCIONAMIENTO DE CADA UNO DE LOS COMANDOS
-- REPORTA CUALQUIER FALLO CON EL COMANDO DE REPORTE 
-- PARA PODER ESCANEAR EL CODIGO QR DEBES SER PARTICIPANTE DE LA VERSION MULTI-DEVICE (BETA) DE WHATSAPP
-- NO MODIFIQUES NADA QUE NO SEPAS PARA QUE ES, PARA EVITAR PROBLEMAS O ERRORES
-- SI VAS A EDITAR POR COMPLETO DEJA LOS CREDITOS DEL BOT 
-- EL BOT ES COMPARTIBLE CON WHATSAPP NORMAL O BUSINESS
-- ATENTO A LAS ACTUALIZACIONES QUE SE HAGAN EN ESTE REPOSITORIO
-- EL ADD Y EL KICK PUEDEN OCASIONAR QUE EL NUMERO SE VAYA A SOPORTE 
-- EL BOT FUNCIONA AUNQUE EL WHATSAPP NO TENGA CONEXION 
-- SE RECOMIENDA REESCANEAR EL CODIGO QR CADA 2 DIAS, PARA EVITAR PROBLEMAS O ERRORES
+🔸 𝐄𝐒𝐓𝐄 𝐑𝐄𝐏𝐎𝐒𝐈𝐓𝐎𝐑𝐈𝐎 𝐏𝐮𝐁𝐋𝐈𝐂𝐀 𝐋𝐀 𝐕𝐄𝐑𝐒𝐈𝐎́𝐍 𝐀𝐂𝐓𝐔𝐀𝐋|𝐎𝐅𝐈𝐂𝐈𝐀𝐋 𝐃𝐄 𝐓𝐡𝐄 𝐋𝐎𝐋𝐈𝐁𝐎𝐓-𝐌𝐃
+-🔸 𝐄𝐒 𝐏𝐎𝐒𝐈𝐁𝐋𝐄 𝐐𝐔𝐄 𝐄𝐋 𝐁𝐎𝐓 𝐓𝐄𝐍𝐆𝐀 𝐀𝐋𝐆𝐔𝐍𝐀𝐒 𝐅𝐀𝐋𝐋𝐀𝐒, 𝐒𝐄 𝐈𝐑𝐀𝐍 𝐒𝐎𝐋𝐔𝐂𝐈𝐎𝐍𝐀𝐍𝐃𝐎 𝐂𝐎𝐍𝐅𝐎𝐑𝐌𝐄 𝐒𝐄 𝐕𝐀𝐘𝐀𝐍 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐍𝐃𝐎
+🔸 𝐄𝐒 𝐑𝐄𝐂𝐎𝐌𝐄𝐍𝐃𝐀𝐁𝐋𝐄 𝐋𝐄𝐄𝐑 𝐓𝐎𝐃𝐎 𝐄𝐋 𝐌𝐄𝐍𝐔 𝐘 𝐕𝐄𝐑 𝐄𝐋 𝐅𝐔𝐍𝐂𝐈𝐎𝐍𝐀𝐌𝐈𝐄𝐍𝐓𝐎 𝐃𝐄 𝐂𝐀𝐃𝐀 𝐔𝐍𝐎 𝐃𝐄 𝐋𝐎𝐒 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒
+🔸 𝐑𝐄𝐏𝐎𝐑𝐓𝐀 𝐂𝐔𝐀𝐋𝐐𝐔𝐈𝐄𝐑 𝐅𝐀𝐋𝐋𝐎 𝐂𝐎𝐍 𝐄𝐋 𝐂𝐎𝐌𝐀𝐍𝐃𝐎 𝐃𝐄 𝐑𝐄𝐏𝐎𝐑𝐓𝐄 
+🔸 𝐏𝐀𝐑𝐀 𝐏𝐎𝐃𝐄𝐑 𝐄𝐒𝐂𝐀𝐍𝐄𝐀𝐑 𝐄𝐋 𝐂𝐎𝐃𝐈𝐆𝐎 𝐐𝐑 𝐃𝐄𝐁𝐄𝐒 𝐒𝐄𝐑 𝐏𝐀𝐑𝐓𝐈𝐂𝐈𝐏𝐀𝐍𝐓𝐄 𝐃𝐄 𝐋𝐀 𝐕𝐄𝐑𝐒𝐈𝐎𝐍 𝐌𝐔𝐋𝐓𝐈-𝐃𝐄𝐕𝐈𝐂𝐄 (𝐁𝐄𝐓𝐀) 𝐃𝐄 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏
+🔸 𝐍𝐎 𝐌𝐎𝐃𝐈𝐅𝐈𝐐𝐔𝐄𝐒 𝐍𝐀𝐃𝐀 𝐐𝐔𝐄 𝐍𝐎 𝐒𝐄𝐏𝐀𝐒 𝐏𝐀𝐑𝐀 𝐐𝐔𝐄 𝐄𝐒, 𝐏𝐀𝐑𝐀 𝐄𝐕𝐈𝐓𝐀𝐑 𝐏𝐑𝐎𝐁𝐋𝐄𝐌𝐀𝐒 𝐎 𝐄𝐑𝐑𝐎𝐑𝐄𝐒
+🔸 𝐒𝐈 𝐕𝐀𝐒 𝐀 𝐄𝐃𝐈𝐓𝐀𝐑 𝐏𝐎𝐑 𝐂𝐎𝐌𝐏𝐋𝐄𝐓𝐎 𝐃𝐄𝐉𝐀 𝐋𝐎𝐒 𝐂𝐑𝐄𝐃𝐈𝐓𝐎𝐒 𝐃𝐄𝐋 𝐁𝐎𝐓 
+🔸 𝐄𝐋 𝐁𝐎𝐓 𝐄𝐒 𝐂𝐎𝐌𝐏𝐀𝐑𝐓𝐈𝐁𝐋𝐄 𝐂𝐎𝐍 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐍𝐎𝐑𝐌𝐀𝐋 𝐎 𝐁𝐔𝐒𝐈𝐍𝐄𝐒𝐒
+🔸 𝐀𝐓𝐄𝐍𝐓𝐎 𝐀 𝐋𝐀𝐒 𝐀𝐂𝐓𝐔𝐀𝐋𝐈𝐙𝐀𝐂𝐈𝐎𝐍𝐄𝐒 𝐐𝐔𝐄 𝐒𝐄 𝐇𝐀𝐆𝐀𝐍 𝐄𝐍 𝐄𝐒𝐓𝐄 𝐑𝐄𝐏𝐎𝐒𝐈𝐓𝐎𝐑𝐈𝐎
+🔸 𝐄𝐋 𝐀𝐃𝐃 𝐘 𝐄𝐋 𝐊𝐈𝐂𝐊 𝐏𝐔𝐄𝐃𝐄𝐍 𝐎𝐂𝐀𝐒𝐈𝐎𝐍𝐀𝐑 𝐐𝐔𝐄 𝐄𝐋 𝐍𝐔𝐌𝐄𝐑𝐎 𝐒𝐄 𝐕𝐀𝐘𝐀 𝐀 𝐒𝐎𝐏𝐎𝐑𝐓𝐄 
+🔸 𝐄𝐋 𝐁𝐎𝐓 𝐅𝐔𝐍𝐂𝐈𝐎𝐍𝐀 𝐀𝐔𝐍𝐐𝐔𝐄 𝐄𝐋 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐍𝐎 𝐓𝐄𝐍𝐆𝐀 𝐂𝐎𝐍𝐄𝐗𝐈𝐎𝐍 
+🔸 𝐒𝐄 𝐑𝐄𝐂𝐎𝐌𝐈𝐄𝐍𝐃𝐀 𝐑𝐄𝐄𝐒𝐂𝐀𝐍𝐄𝐀𝐑 𝐄𝐋 𝐂𝐎𝐃𝐈𝐆𝐎 𝐐𝐑 𝐂𝐀𝐃𝐀 𝟐 𝐃𝐈𝐀𝐒, 𝐏𝐀𝐑𝐀 𝐄𝐕𝐈𝐓𝐀𝐑 𝐏𝐑𝐎𝐁𝐋𝐄𝐌𝐀𝐒 𝐎 𝐄𝐑𝐑𝐎𝐑𝐄𝐒
 ```
 ----
-# `EDITOR Y PORPIETARIO DEL BOT` 
+# `𝐄𝐃𝐈𝐓𝐎𝐑 𝐘 𝐏𝐎𝐑𝐏𝐈𝐄𝐓𝐀𝐑𝐈𝐎 𝐃𝐄𝐋 𝐁𝐎𝐓` 
 [![elrebelde21](https://github.com/elrebelde21.png?size=100)](https://github.com/elrebelde21) 
 
 ----
 
-### 🌟 AGRADECIMIENTO
+### 🌟 𝐀𝐠𝐫𝐚𝐜𝐢𝐦𝐢𝐞𝐧𝐭𝐨
  
 [![GataNina-Li](https://github.com/GataNina-Li.png?size=100)](https://github.com/GataNina-Li) 
 
-### 🌟 AGRADECIMIENTOS
+### 🌟 𝐀𝐠𝐫𝐚𝐜𝐢𝐦𝐢𝐞𝐧𝐭𝐨
  
 [![TheShadowBrokers1](https://github.com/BrunoSobrino.png?size=100)](https://github.com/BrunoSobrino) 
