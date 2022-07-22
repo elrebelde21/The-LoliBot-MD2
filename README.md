@@ -63,8 +63,8 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```
 ----    
 ###  AJUSTE <img src="https://i.pinimg.com/originals/98/1b/e2/981be28d3ec7b85bfb797a5f9e6a01c2.png" height="32px">
-- CLONAR EL REPOSITORIO [`Aquí`](https://github.com/GataNina-Li/GataBot-MD/fork)
-- CAMBIAR NÚMERO DEL OWNER [`Aquí`](https://github.com/GataNina-Li/GataBot-MD/blob/master/config.js)
+- CLONAR EL REPOSITORIO [`Aquí`](https://github.com/elrebelde21/The-LoliBot-MD/fork)
+- CAMBIAR NÚMERO DEL OWNER [`Aquí`](https://github.com/elrebelde21/The-LoliBot-MD/blob/master/config.js)
 ----  
 
 ### ACTIVAR EN CASO DE DETENERSE <img src="https://i.pinimg.com/originals/0e/c9/89/0ec989dde8b5fc0deef4e5b09292b605.gif" height="30px">
