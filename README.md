@@ -81,9 +81,6 @@
 > https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
 ```
 ```bash
-> https://github.com/clhuang/heroku-buildpack-webp-binaries.git
-```
-```bash
 > https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git
 ```
 -----
