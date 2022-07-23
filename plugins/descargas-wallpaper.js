@@ -5,14 +5,12 @@ const res = await (/2/.test(command) ? wallpaperv2 : wallpaper)(text)
 const img = res[Math.floor(Math.random() * res.length)]
 let link = img
 //conn.sendFile(m.chat, img, 'error.jpg', `*𝚁𝙴𝚂𝚄𝙻𝚃𝙰𝙳𝙾 𝙳𝙴 ${text}*`, m)
-let vn = './media/descarga.mp3'
   
   conn.sendHydrated(m.chat, `💞 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤: ${text}`, `𝙁𝙤𝙣𝙙𝙤 | 𝙒𝙥 | ${wm}`, img, img, '☘️ 𝙐𝙍𝙇', null, null, [
 ['🔄 𝙎𝙞𝙜𝙪𝙞𝙚𝙣𝙩𝙚', `${usedPrefix + command} ${text}`],
 ['🔍 𝙋𝙞𝙣𝙩𝙚𝙧𝙚𝙨𝙩 ', `#pinterest ${text}`],
 ['🔍 𝙂𝙤𝙤𝙜𝙡𝙚 ', `#image ${text}`],
 ], m)
-conn.sendFile(m.chat, vn, 'descarga.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true })
 
 }
 handler.help = ['', '2'].map(v => 'wallpaper' + v + ' <query>')
