@@ -20,7 +20,7 @@ global.db.data.users[m.sender].lastcoins = new Date * 1
 
 }
 handler.help = ['minar2']
-handler.tags = ['gata']
+handler.tags = ['loli']
 handler.command = ['minar2', 'miming2', 'mine2', 'minargatacoins', 'minarcoins', 'minargata'] 
 handler.fail = null
 handler.exp = 0

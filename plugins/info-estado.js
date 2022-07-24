@@ -1,10 +1,7 @@
 /**
-POR FAVOR TENGAN LA AMABILIDAD Y BONDAD DE NO CAMBIAR MÍNIMAMENTE LOS CRÉDITOS DE GATABOT-MD, 
-SI VAS A AÑADIR TUS DATOS O CRÉDITOS, ESTA BIEN. PERO NO QUITEN LOS QUE YA ESTAN DE GATABOT-MD, GRACIAS 
+POR FAVOR TENGAN LA AMABILIDAD Y BONDAD DE NO CAMBIAR MÍNIMAMENTE LOS CRÉDITOS DE LOLIBOT-MD, 
+SI VAS A AÑADIR TUS DATOS O CRÉDITOS, ESTA BIEN. PERO NO QUITEN LOS QUE YA ESTAN DE LOLIBOT-MD, GRACIAS 
 **/
-
-/** PLEASE BE KIND AND KINDNESS NOT TO MINIMALLY CHANGE GATABOT-MD CREDITS, 
-IF YOU ARE GOING TO ADD YOUR DATA OR CREDITS, IT'S OK. BUT DO NOT REMOVE THOSE THAT ARE ALREADY FROM GATABOT-MD, THANK YOU **/
 let handler = async (m, { conn, command, usedPrefix }) => {
 let picture = './media/menus/Menu1.jpg'
 let name = await conn.getName(m.sender)
@@ -16,18 +13,21 @@ setTimeout(resolve, 1000) }) * 1000}
 let uptime = clockString(_uptime)
 let estado =`
 ╭━━━━[ *𝙀𝙎𝙏𝘼𝘿𝙊* ]━━━━━⬣
-┃ *¡𝙃𝙤𝙡𝙖 𝙘𝙤𝙢𝙤 𝙚𝙨𝙩𝙖!* ${name}✨
+┃ *¡𝙃𝙤𝙡𝙖 𝙘𝙤𝙢𝙤 𝙚𝙨𝙩𝙖!* ${name}✨ 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ღ 𝘽𝙤𝙩 𝙪𝙨𝙤 ${global.opts['self'] ? '𝙋𝙍𝙄𝙑𝘼𝘿𝙊' : '𝙋𝙐𝘽𝙇𝙄𝘾𝙊'}
+┃ *ミ🤖 Estado del Bot 🤖彡*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ღ 𝘼𝙘𝙩𝙞𝙫𝙤 𝙙𝙪𝙧𝙖𝙣𝙩𝙚
-┃➥ ${uptime}
+┃ *=> Bot activo ✅*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ *=> Bot uso público ✅️*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃=> 𝘼𝙘𝙩𝙞𝙫𝙤 𝙙𝙪𝙧𝙖𝙣𝙩𝙚
+┃=> ${uptime} ✅
 ╰━━━━━━━━━━━━━━━━━━⬣`.trim()
 
 conn.sendHydrated(m.chat, estado, wm, picture, 'https://github.com/elrebelde21/The-LoliBot-MD', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
 ['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤', '.allmenu'],
-['𝙑𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙', '/ping'],
-['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́', '#menu']
+['menu audioś', '#audios']
 ], m,)}
 
 /*conn.sendHydrated(m.chat, estado, wm, picture, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [

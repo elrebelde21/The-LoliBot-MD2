@@ -18,9 +18,8 @@ if (!isY) await conn.sendFile(m.chat, thumbnail, 'thumbnail.jpg', `
 ╰━━━━━━❰ *𓃠 ${vs}* ❱━━━━━⬣`.trim(), m)
   
 await conn.sendFile(m.chat, link, title + '.mp3', `
-  𝘼𝙦𝙪𝙞 𝙚𝙨𝙩𝙖 𝙩𝙪 𝙫𝙞𝙙𝙚𝙤 🔰
-  
-    𝙏𝙞𝙩𝙪𝙡𝙤 ${title} `.trim(), m, null, {
+ 🔰 𝘼𝙦𝙪𝙞 𝙚𝙨𝙩𝙖 𝙩𝙪 𝙫𝙞𝙙𝙚𝙤 
+🔥 𝙏𝙞𝙩𝙪𝙡𝙤: _*${title}*_ `.trim(), m, null, {
   
 asDocument: 0
 })
