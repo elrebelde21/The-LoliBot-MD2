@@ -27,7 +27,7 @@ let estado =`
 
 conn.sendHydrated(m.chat, estado, wm, picture, 'https://github.com/elrebelde21/The-LoliBot-MD', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
 ['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤', '.allmenu'],
-['menu audioś', '#audios']
+['𝙈𝙚𝙣𝙪 𝘼𝙪𝙙𝙞𝙤𝙨́', '#audios']
 ], m,)}
 
 /*conn.sendHydrated(m.chat, estado, wm, picture, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [

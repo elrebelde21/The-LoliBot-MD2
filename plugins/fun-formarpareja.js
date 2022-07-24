@@ -5,6 +5,8 @@ let a = ps.getRandom()
 let b
 do b = ps.getRandom()
 while (b === a)
+let vn = './media/Vivan.mp3'
+conn.sendFile(m.chat, vn, 'Vivan.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true })
 m.reply(`*${toM(a)}, 𝙔𝙖 𝙚𝙨 𝙝𝙤𝙧𝙖 𝙙𝙚 𝙦𝙪𝙚 𝙩𝙚 💍 𝘾𝙖𝙨𝙚𝙨 𝙘𝙤𝙣 ${toM(b)}, 𝙇𝙞𝙣𝙙𝙖 𝙋𝙖𝙧𝙚𝙟𝙖 😉💓*`, null, {
 mentions: [a, b]
   

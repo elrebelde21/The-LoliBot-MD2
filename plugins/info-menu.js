@@ -105,7 +105,7 @@ let menu = `
 ┃💫➺ _${usedPrefix}listagrupos | grouplist_
 ┃💫➺ _${usedPrefix}estado | status_
 ┃💫➺ _${usedPrefix}infogata | infobot_
-┃💫➺ _${usedPrefix}creadora | owner_
+┃💫➺ _${usedPrefix}creador | owner_
 ┃💫➺ _${usedPrefix}velocidad | ping_
 ┃💫➺ _Bot_ 
 ╰━━━━━━━━━━━━━━━━━━━⬣`.trim()

@@ -1,6 +1,6 @@
 import { wallpaper, wallpaperv2 } from '@bochilteam/scraper'
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) throw `${mg}𝘿𝙀𝘽𝙀 𝙀𝙎𝘾𝙍𝙄𝘽𝙄𝙍 𝙀𝙇 𝙉𝙊𝙈𝘽𝙍𝙀\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} Gata*`
+if (!text) throw `${mg}𝘿𝙀𝘽𝙀 𝙀𝙎𝘾𝙍𝙄𝘽𝙄𝙍 𝙀𝙇 𝙉𝙊𝙈𝘽𝙍𝙀\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} loli*`
 const res = await (/2/.test(command) ? wallpaperv2 : wallpaper)(text)
 const img = res[Math.floor(Math.random() * res.length)]
 let link = img

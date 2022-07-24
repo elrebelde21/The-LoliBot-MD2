@@ -5,7 +5,7 @@ const json = await pinterest(text)
 await conn.sendFile(m.chat, json.getRandom(), 'error.jpg', `
 ╰⊱💚⊱ *𝙀́𝙓𝙄𝙏𝙊* ⊱💚⊱╮`.trim(), m)
   
-  conn.sendHydrated(m.chat, `💞 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤: ${text}`, `𝙋𝙞𝙣𝙩𝙚𝙧𝙚𝙨𝙩 | ${wm}`, null, md, '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
+  conn.sendHydrated(m.chat, `✨ 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤: ${text}`, `𝙋𝙞𝙣𝙩𝙚𝙧𝙚𝙨𝙩 | ${wm}`, null, md, '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
 ['🔄 𝙎𝙞𝙜𝙪𝙞𝙚𝙣𝙩𝙚', `/pinterest ${text}`],
 ['🔍 𝙂𝙤𝙤𝙜𝙡𝙚 ', `#image ${text}`],
 ['🐈 𝙈𝙚𝙣𝙪', `.menu`],  
