@@ -10,7 +10,7 @@ global.owner = [
 ]
 //aqui poner los numero premium 
 global.mods = [] 
-global.prems = ['56950377550'], 
+global.prems = ['972529277448'], 
 
 global.APIs = { // API Prefix.
   
