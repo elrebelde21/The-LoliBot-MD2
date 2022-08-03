@@ -19,6 +19,7 @@ m.reply(`${eg}𝑬𝒔𝒕𝒆 𝒄𝒉𝒂𝒕 𝒇𝒖𝒆 𝒃𝒂𝒏𝒆�
 handler.help = ['banchat']
 handler.tags = ['owner']
 handler.command = /^banchat$/i
+handler.rowner = true
 handler.botAdmin = true
 handler.admin = true 
 export default handler
