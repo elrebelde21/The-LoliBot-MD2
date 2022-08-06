@@ -91,6 +91,7 @@ let str = `
 ┣ ඬ⃟ℹ️ _${usedPrefix}estado_
 ┣ ඬ⃟ℹ️ _${usedPrefix}ping_
 ┣ ඬ⃟ℹ️ _${usedPrefix}infomenu
+┣ ඬ⃟ℹ️ _${usedPrefix}menusimple
 ┣ ඬ⃟ℹ️ _${usedPrefix}juegosmenu
 ┣ ඬ⃟ℹ️ _${usedPrefix}grupomenu
 ┣ ඬ⃟ℹ️ _${usedPrefix}descargasmenu
@@ -98,6 +99,7 @@ let str = `
 ┣ ඬ⃟ℹ️ _${usedPrefix}ownermenu
 ┣ ඬ⃟ℹ️ _Bot_
 ┣ ඬ⃟ℹ️ _¿Qué es un Bot?_
+┣ ඬ⃟ℹ️ _Términos y condiciones_
 ┗━━━━━━━━━━━━━┛
 ┏━━━━━━━━━━━━━┓
 ┃ *<REPORTA FALLOS EN ALGÚN COMANDO/>*
@@ -110,6 +112,7 @@ let str = `
 ┃ *<UNE UN BOT A TU GRUPO/>*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ┣ ඬ⃟🤖 _${usedPrefix}join *link del grupo*_ 
+┣ ඬ⃟🤖 _${usedPrefix}bottemporal *link de grupo*
 ┗━━━━━━━━━━━━━┛
 ┏━━━━━━━━━━━━━┓
 ┃ *<TOPS/>*
@@ -149,7 +152,6 @@ let str = `
 ┣ ඬ⃟🕹 _${usedPrefix}amigorandom_
 ┣ ඬ⃟🎮 _${usedPrefix}slot *cantidad*_
 ┣ ඬ⃟🕹 _${usedPrefix}ppt *piedra / papel / tijera*_
-┣ ඬ⃟🎮 _${usedPrefix}prostituta *@tag / nombre*_
 ┣ ඬ⃟🕹 _${usedPrefix}prostituto *@tag / nombre*_
 ┣ ඬ⃟🎮 _${usedPrefix}doxear *@tag / nombre*_
 ┗━━━━━━━━━━━━━┛
@@ -347,18 +349,13 @@ let str = `
 ┣ ඬ⃟📝️ _${usedPrefix}logotaza *texto*_ 
 ┣ ඬ⃟📝️ _${usedPrefix}logocesped *texto*_ 
 ┣ ඬ⃟📝️ _${usedPrefix}logotaza2 *texto*_ 
-┣ ඬ⃟📝️ _${usedPrefix}flaming *texto*_ 
 ┣ ඬ⃟📝️ _${usedPrefix}logofire *texto*_
-┣ ඬ⃟📝️ _${usedPrefix}logosky *texto*_
 ┣ ඬ⃟📝️ _${usedPrefix}logocorazon *texto*_
 ┣ ඬ⃟📝️ _${usedPrefix}logorandom *texto*_
 ┣ ඬ⃟📝️ _${usedPrefix}neonfire *texto*_ 
 ┣ ඬ⃟📝️ _${usedPrefix}technology *texto*_ 
 ┣ ඬ⃟📝️ _${usedPrefix}playa *texto*_ 
 ┣ ඬ⃟📝️ _${usedPrefix}ytcomment *texto*_ 
-┣ ඬ⃟📝️ _${usedPrefix}lovemessages *texto*_
-┣ ඬ⃟📝️ _${usedPrefix}cementerio *texto*_
-┣ ඬ⃟📝️ _${usedPrefix}romanticdouble *texto*_
 ┣ ඬ⃟📝️ _${usedPrefix}romanticmessages *texto*_
 ┗━━━━━━━━━━━━━┛
 ┏━━━━━━━━━━━━━┓
