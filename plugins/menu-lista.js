@@ -87,20 +87,34 @@ let str = `
 ┣ ↠⚜️ _${usedPrefix}estado_
 ┣ ↠⚜️ _¿Qué es un Bot?_
 ┣ ↠⚜️ _Términos y condiciones_
+┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ┣ ↠🛎 _${usedPrefix}instalarbot_
-┣ ↠🛎 _${usedPrefix}procesobot_
+┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ┣ ↠📮 _${usedPrefix}bug *tal comando con fallas*_
 ┣ ↠📮 _${usedPrefix}report *tal comando con fallas*_
 ┣ ↠📮 _${usedPrefix}reporte *tal comando con fallas*_
-┣ ↠🐈 _${usedPrefix}owner_
-┣ ↠🐈 _${usedPrefix}contacto_
+┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+┣ ↠🔰 _${usedPrefix}owner_
+┣ ↠🔰 _${usedPrefix}contacto_
+┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ┣ ↠🤖 _${usedPrefix}join *enlace del grupo*_ 
 ┣ ↠🤖 _${usedPrefix}bottemporal *link de grupo*
-┣ ↠🎖️ _${usedPrefix}top10gays | topgay_
-┣ ↠🎖️ _${usedPrefix}toplind@s | toplind@_
-┣ ↠🎖️ _${usedPrefix}topput@s | toppt_
-┣ ↠🎖️ _${usedPrefix}toppajer@s | toppajeros_
-┣ ↠🎖️ _${usedPrefix}topotakus | toptakus_
+┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+┣ ↠🎖️ _${usedPrefix}top10gays_
+┣ ↠🎖️ _${usedPrefix}toplind@s_
+┣ ↠🎖️ _${usedPrefix}topput@s_
+┣ ↠🎖️ _${usedPrefix}toppajer@s_
+┣ ↠🎖️ _${usedPrefix}topotakus_
+┣ ↠🎖️ _${usedPrefix}topintegrantes_
+┣ ↠🎖️ _${usedPrefix}toplagrasa_
+┣ ↠🎖️ _${usedPrefix}toppanafrescos_
+┣ ↠🎖️ _${usedPrefix}topshiposters_
+┣ ↠🎖️ _${usedPrefix}toppajeros_
+┣ ↠🎖️ _${usedPrefix}toplind@s_
+┣ ↠🎖️ _${usedPrefix}topfamosos_
+┣ ↠🎖️ _${usedPrefix}topsoltero
+┣ ↠🎖️ _${usedPrefix}topparejas_
+┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ┣ ↠🧩 _${usedPrefix}math | mates | matemáticas *modo*_
 ┣ ↠👾 _${usedPrefix}ttt | tictactoe *nombre del la sala*_
 ┣ ↠🧩 _${usedPrefix}delttt *nombre del la sala*_
@@ -125,6 +139,7 @@ let str = `
 ┣ ↠🧩 _${usedPrefix}ppt *piedra / papel / tijera*_
 ┣ ↠👾 _${usedPrefix}prostituta *@tag / nombre*_
 ┣ ↠🧩 _${usedPrefix}prostituto *@tag / nombre*_
+┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ┣ ↠☀️ _${usedPrefix}imagen | image | gimage *texto*_
 ┣ ↠❄️ _${usedPrefix}ytsearch *texto*_
 ┣ ↠☀️ _${usedPrefix}dlaudio *link yt*_
@@ -146,6 +161,7 @@ let str = `
 ┣ ↠❄️ _${usedPrefix}twittervideo | twvid *link de twitter*_
 ┣ ↠☀️ _${usedPrefix}wikipedia | wiki | internet *texto*_
 ┣ ↠❄️ _${usedPrefix}spotify | spotimusica *autor, cancion*_
+┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ┣ ↠🔐 _${usedPrefix}admins *texto*_ 
 ┣ ↠🔒 _${usedPrefix}añadir *numero*_ (desactivado)
 ┣ ↠🔐 _${usedPrefix}sacar @tag_ (desactivado)
@@ -192,10 +208,13 @@ let str = `
 ┣ ↠🎨 _${usedPrefix}swm *imagen | video | gif*_
 ┣ ↠🎨 _${usedPrefix}tovideo *responde a una nota de voz*_
 ┣ ↠🎨 _${usedPrefix}wanted *Responda a una foto*_
+┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ┣ ↠🪄 _${usedPrefix}style *texto*_
 ┣ ↠🪄 _${usedPrefix}estilo *texto*_
+┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ┣ ↠📸 _${usedPrefix}subirestado *texto / video|imagen*_
 ┣ ↠📸 _${usedPrefix}subirestado *texto / gif*_
+┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ┣ ↠🎯 _${usedPrefix}randomwallpaper_
 ┣ ↠🎲 _${usedPrefix}compartirfoto_
 ┣ ↠🎳 _${usedPrefix}futbol_
@@ -246,32 +265,25 @@ let str = `
 ┣ ↠🎳 _${usedPrefix}spam *numero|texto|cantidad*_ 
 ┣ ↠🎯 _${usedPrefix}spoiler | hidetext *texto1| texto2*_
 ┣ ↠🎲 _${usedPrefix}experiencia | exp
-┣ ↠🔞 _${usedPrefix}labiblia_
-┣ ↠🎤 _${usedPrefix}bass_
-┣ ↠🎤 _${usedPrefix}deep_
-┣ ↠🎤 _${usedPrefix}earrape_
-┣ ↠🎤 _${usedPrefix}fast_
-┣ ↠🎤 _${usedPrefix}fat_
-┣ ↠🎤 _${usedPrefix}nightcore_
-┣ ↠🎤 _${usedPrefix}reverse_
-┣ ↠🎤 _${usedPrefix}robot_
-┣ ↠🎤 _${usedPrefix}slow_
-┣ ↠🎤 _${usedPrefix}tupai
-┣ ↠🎤 _${usedPrefix}smooth_
-┣ ↠🎤 _${usedPrefix}blown_
-┣ ↠🎤 _${usedPrefix}vibracion *cantidad*_
-┣ ↠🎤 _${usedPrefix}tovn *audio a nota de voz*
+┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+┣ ↠🔞 _${usedPrefix}hornymenu_
+┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+┣ ↠🎤 _${usedPrefix}audioefectomenu_
+┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ┣ ↠🔊 _${usedPrefix}menu2_
 ┣ ↠🔊 _${usedPrefix}menuaudios_
 ┣ ↠🔊 _${usedPrefix}audios_
+┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ┣ ↠📦 _${usedPrefix}caja_
 ┣ ↠📦 _${usedPrefix}almacen_
 ┣ ↠📦 _${usedPrefix}cjalmacen_
+┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ┣ ↠👤 _${usedPrefix}chatanonimo | anonimochat_
 ┣ ↠👤 _${usedPrefix}anonimoch_
 ┣ ↠👤 _${usedPrefix}start_
 ┣ ↠👤 _${usedPrefix}next_
 ┣ ↠👤 _${usedPrefix}leave_
+┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ┣ ↠🪅 _${usedPrefix}lolice_
 ┣ ↠🎀 _${usedPrefix}simpcard_
 ┣ ↠🪅 _${usedPrefix}hornycard_ 
@@ -283,6 +295,7 @@ let str = `
 ┣ ↠🪅 _${usedPrefix}lolice *@tag*_
 ┣ ↠🪅 _${usedPrefix}simpcard *@tag*_
 ┣ ↠🔮 _${usedPrefix}logos_ (lista)
+┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ┣ ↠👑 _${usedPrefix}boost | acelerar_
 ┣ ↠💎 _${usedPrefix}restart_
 ┣ ↠👑 _${usedPrefix}banlist_

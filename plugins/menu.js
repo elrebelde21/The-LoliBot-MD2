@@ -122,6 +122,15 @@ let str = `
 ┣ ඬ⃟🎖️ _${usedPrefix}topput@s_
 ┣ ඬ⃟🎖️ _${usedPrefix}toppajer@s_
 ┣ ඬ⃟🎖️ _${usedPrefix}topotakus_
+┣ ඬ⃟🎖️ _${usedPrefix}topintegrantes_
+┣ ඬ⃟🎖️ _${usedPrefix}toplagrasa_
+┣ ඬ⃟🎖️ _${usedPrefix}toppanafrescos_
+┣ ඬ⃟🎖️ _${usedPrefix}topshiposters_
+┣ ඬ⃟🎖️ _${usedPrefix}toppajeros_
+┣ ඬ⃟🎖️ _${usedPrefix}toplind@s_
+┣ ඬ⃟🎖️ _${usedPrefix}topfamosos_
+┣ ඬ⃟🎖️ _${usedPrefix}topsoltero
+┣ ඬ⃟🎖️ _${usedPrefix}topparejas_
 ┗━━━━━━━━━━━━━┛
 ┏━━━━━━━━━━━━━┓
 ┃ *<NUMERO DEL CREADOR/>*
@@ -307,17 +316,7 @@ let str = `
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ┃ Responde a un audio o nota de voz
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-┣ ඬ⃟🎤 _${usedPrefix}bass_
-┣ ඬ⃟🎤 _${usedPrefix}deep_
-┣ ඬ⃟🎤 _${usedPrefix}earrape_
-┣ ඬ⃟🎤 _${usedPrefix}fast_
-┣ ඬ⃟🎤 _${usedPrefix}fat_
-┣ ඬ⃟🎤 _${usedPrefix}nightcore_
-┣ ඬ⃟🎤 _${usedPrefix}reverse_
-┣ ඬ⃟🎤 _${usedPrefix}robot_
-┣ ඬ⃟🎤 _${usedPrefix}slow_
-┣ ඬ⃟🎤 _${usedPrefix}smooth_
-┣ ඬ⃟🎤 _${usedPrefix}vibracion *cantidad*_
+┣ ඬ⃟🎤 _${usedPrefix}audioefectomenu_
 ┗━━━━━━━━━━━━━┛
 ┏━━━━━━━━━━━━━┓
 ┃ *<AUDIOS/>* 
