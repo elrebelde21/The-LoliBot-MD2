@@ -6,7 +6,7 @@ export async function all(m, conn) {
     if (!chats.expired)
         return !0
     if (+new Date() > chats.expired) {
-        let caption = `*${this.user.name}* *SE VA DEL GRUPO!!!, SI QUIERE QUE VUELVA, USE EL COMANDO _#bottemporal_ PARA QUE VUELVA AL GRUPO!!*\n\n✅ *ASISTENCIA PARA USUARIOS*\n*https://facebook.com/groups/721802642266362/*`
+        let caption = `*BUENO ${this.user.name}* *SE VA DEL GRUPO!!!, SI QUIERE QUE VUELVA, USE EL COMANDO _#bottemporal_ PARA QUE VUELVA AL GRUPO!!*\n\n✅ *ASISTENCIA PARA USUARIOS*\n*https://facebook.com/groups/721802642266362/*`
         let pp = './media/menus/Menu2.jpg'
     //await this.sendButton(m.chat, caption, wm, null, [['Eliminar caducado', '/delexpired'], ['Cec caducado', '/cekexpired']], null)
 await this.sendButton(m.chat, caption, wm, pp, [['𝙃𝘼𝙎𝙏𝘼 𝙋𝙍𝙊𝙉𝙏𝙊🤑', '.hastapronto']], null)
