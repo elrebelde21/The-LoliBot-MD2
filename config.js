@@ -93,7 +93,7 @@ global.nngrupo = nn
 global.nnn = 'https://chat.whatsapp.com/Byyrc8RJnUkJw6vvUgsbDF'
 global.nnngrupo = nnn
 
-global.paypal = 'https://www.instagram.com/gata_dios  https://paypal.me/OficialGD'
+global.paypal = 'https://www.instagram.com'
 global.donar = paypal
 
 
