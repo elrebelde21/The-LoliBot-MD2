@@ -78,7 +78,7 @@ global.version = vs
 global.gt = '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫'
 global.gatabot = gt
 
-global.yt = 'https://youtube.com/channel/UC9b3UIVnVb5eQt7_Y-Qz-3A'
+global.yt = 'https://youtube.com/channel/UCPSrzHooOjQMRmUK_2RLcSw'
 global.youtube = yt
 
 global.ig = ''
