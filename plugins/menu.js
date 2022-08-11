@@ -70,7 +70,7 @@ let str = `
 ║➤ *✨𝗛ola como esta, ${name}!!*
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ║➤ *Creador del Bot: el rebelde* 
-║➤ *Numero del creador:* *wa.me/56977774748 (No Bot)*
+║➤ *Numero del creador:* *wa.me/5492266466080 (No Bot)*
 ║➤ *Numero del Bot oficial:* *wa.me/972529277406*
 ║➤ *Numero del Bot ofc²:* *wa.me/972529277448*
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡

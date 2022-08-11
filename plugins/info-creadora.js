@@ -3,15 +3,16 @@ function handler(m, { conn }) {
 let vn = './media/creador.mp3'
 let text = `
 *𝘾𝙤𝙣𝙩𝙖𝙘𝙩𝙤* 
-*Wa.me/56977774748 (no bot)*
+*Wa.me/5492266466080 (no bot)*
 *wa.me/972529277406 (bot)*
+*wa.me/12267789518 (bot)*
 `.trim()   
 conn.reply(m.chat, text, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 title: '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫',
 body: '𝐂𝐫𝐞𝐚𝐝𝐨𝐫',         
 previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
-sourceUrl: `https://wa.me/56977774748`}}})
+sourceUrl: `https://wa.me/5492266466080`}}})
   
 //const data = global.owner.filter(([id, isCreator]) => id && isCreator)
 //this.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)
