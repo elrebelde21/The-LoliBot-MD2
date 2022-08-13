@@ -1,4 +1,4 @@
-# Esta versión de THE LOLIBOT-MD casi está terminada. ✨
+# bienvenido al está versión de The LoliBot-MD ✨
 
 ### —◉ 𝗗𝘂𝗱𝗮 𝘀𝗼𝗯𝗿𝗲 𝗲𝗹 𝗯𝗼𝘁?
 𝗖𝗼𝗻𝘁𝗮𝗰𝘁𝗮𝗺𝗲 ✨ 
