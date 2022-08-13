@@ -5,12 +5,12 @@ import { fileURLToPath } from 'url'
 //⊱ ━━━━━.⋅ owner/propietario del bot  ⋅.━━━━ ⊰
 global.owner = [
   ['5492266466080', 'creador', true],
-  ['972529277406'],
-  ['50495745934'], //numero del owner
+  ['573183650526'],
+  ['972529277479'], //numero del owner
 ]
 //aqui poner los numero premium 
 global.mods = [] 
-global.prems = ['972529277448'], 
+global.prems = ['50495745934'], 
 
 global.APIs = { // API Prefix.
   
@@ -90,7 +90,7 @@ global.gatabot = md
 global.nn = 'https://chat.whatsapp.com/Lus9S60MABnH9lF4Wf2T7k'
 global.nngrupo = nn
 
-global.nnn = 'https://chat.whatsapp.com/Byyrc8RJnUkJw6vvUgsbDF'
+global.nnn = 'https://chat.whatsapp.com/JQ3rJOqDDPG8PvCYPH6EXz'
 global.nnngrupo = nnn
 
 global.paypal = 'https://www.instagram.com'
