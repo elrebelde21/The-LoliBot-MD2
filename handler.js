@@ -671,7 +671,7 @@ export async function participantsUpdate({ id, participants, action }) {
                             (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', await this.getName(user)) //.replace('@user', '@' + user.split('@')[0])
                             let apii = await this.getFile(pp)
                             this.sendHydrated(id, text, groupMetadata.subject, apii.data, 'https://github.com/elrebelde21/The-LoliBot-MD', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
-                            [(action == 'add' ? '𝑩𝒊𝒆𝒏𝒗𝒆𝒏𝒊𝒅𝒐 🥳' : '𝙎𝙚 𝙛𝙪𝙚 𝙪𝙣 𝙍𝙖𝙣𝙙𝙤𝙢 🧐'), '.s'],    
+                            [(action == 'add' ? '𝑩𝒊𝒆𝒏𝒗𝒆𝒏𝒊𝒅𝒐 🥳' : '𝑺𝒆 𝒇𝒖𝒆 𝒖𝒏 𝒓𝒂𝒏𝒅𝒐𝒘🧐'), '.s'],    
                             ['𝑴𝒆𝒏𝒖', '/menu']
                             ], '', { mentions: [user]})
                            }
