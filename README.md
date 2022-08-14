@@ -101,8 +101,10 @@
 🔸 𝐒𝐄 𝐑𝐄𝐂𝐎𝐌𝐈𝐄𝐍𝐃𝐀 𝐑𝐄𝐄𝐒𝐂𝐀𝐍𝐄𝐀𝐑 𝐄𝐋 𝐂𝐎𝐃𝐈𝐆𝐎 𝐐𝐑 𝐂𝐀𝐃𝐀 𝟐 𝐃𝐈𝐀𝐒, 𝐏𝐀𝐑𝐀 𝐄𝐕𝐈𝐓𝐀𝐑 𝐏𝐑𝐎𝐁𝐋𝐄𝐌𝐀𝐒 𝐎 𝐄𝐑𝐑𝐎𝐑𝐄𝐒
 ```
 ----
-# `𝐄𝐃𝐈𝐓𝐎𝐑 𝐘 𝐏𝐎𝐑𝐏𝐈𝐄𝐓𝐀𝐑𝐈𝐎 𝐃𝐄𝐋 𝐁𝐎𝐓` 
-[![elrebelde21](https://github.com/elrebelde21.png?size=100)](https://github.com/elrebelde21) 
+## `𝐄𝐃𝐈𝐓𝐎𝐑 𝐘 𝐏𝐎𝐑𝐏𝐈𝐄𝐓𝐀𝐑𝐈𝐎 𝐃𝐄𝐋 𝐁𝐎𝐓` 
+<a href="https://github.com/elrebelde21"><img src="https://github.com/elrebelde21.png" width="300" height="300" alt="elrebelde21"/></a>
+
+`The LoliBot-MD _ By el rebelde`
 
 ----
 
