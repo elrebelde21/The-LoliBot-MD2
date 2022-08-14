@@ -69,59 +69,59 @@ let username = conn.getName(who)
 //user.registered = false
 
 let menu = `
-╭━━━〔 𝙍𝘼𝙉𝙂𝙊𝙎 | 𝙍𝙊𝙇 〕━━━⬣
-𝙉𝙊𝙈𝘽𝙍𝙀
+╭━━━〔 𝚁𝙰𝙽𝙶𝙾 | 𝚁𝙾𝙻 〕━━━⬣
+𝙽𝙾𝙼𝙱𝚁𝙴
 ${username}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-𝙍𝘼𝙉𝙂𝙊 𝘼𝘾𝙏𝙐𝘼𝙇
+𝚁𝙰𝙽𝙶𝙾 𝙰𝙲𝚃𝚄𝙰𝙻
 ${role}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-👑 *∞ ÉLITE GLOBAL* 💎🏁
-👑 *ÉLITE GLOBAL* 🏁
-*TOP ASTRAL I* ⚜️🔱
-*TOP ASTRAL II* ⚜️🔱
-*TOP ASTRAL III* ⚜️🔱
-*ESTELAR I* ☄️
-*ESTELAR II* ☄️
-*ESTELAR III* ☄️
-*LEYENDA I* 🏆
-*LEYENDA II* 🏆
-*LEYENDA III* 🏆
-*LEGENDARIO(A) I* 🛡️
-*LEGENDARIO(A) II* 🛡️
-*LEGENDARIO(A) III* 🛡️
-*SUPER PRO I* 🎩
-*SUPER PRO II* 🎩
-*SUPER PRO III* 🎩
-*PRO EN THE LOLIBOT I* 😼
-*PRO EN THE LOLIBOT II* 😼
-*PRO EN THE LOLIBOT III* 😼
-*DIAMANTE I* 💎
-*DIAMANTE II* 💎
-*DIAMANTE III* 💎
-*ORO I* 🏅
-*ORO II* 🏅
-*ORO III* 🏅
-*PLATA I* 🔮
-*PLATA II* 🔮
-*PLATA III* 🔮
-*IRON I* 🦾
-*IRON II* 🦾
-*IRON III* 🦾
-*MAESTRO(A) I* ⚒️
-*MAESTRO(A) II* ⚒️
-*MAESTRO(A) III* ⚒️
-*EXPLORADOR(A) I* 🪓
-*EXPLORADOR(A) II* 🪓
-*EXPLORADOR(A) III* 🪓
-*APRENDIS I* 🪚
-*APRENDIS II* 🪚
-*APRENDIS III* 🪚
-*NOVATO(A) I* 🪤
-*NOVATO(A) II* 🪤
-*NOVATO(A) III* 🪤
+👑 *∞ 𝚎𝚕𝚒𝚝𝚎 𝚐𝚕𝚘𝚋𝚊𝚕* 💎🏁
+👑 *𝚎𝚕𝚒𝚝𝚎 𝚐𝚕𝚘𝚋𝚊𝚕* 🏁
+*𝚃𝚘𝚙 𝙰𝚜𝚝𝚛𝚊𝚕 I* ⚜️🔱
+*𝚃𝚘𝚙 𝙰𝚜𝚝𝚛𝚊𝚕 II* ⚜️🔱
+*𝚃𝚘𝚙 𝙰𝚜𝚝𝚛𝚊𝚕 III* ⚜️🔱
+*𝙴𝚜𝚝𝚎𝚕𝚊𝚛 I* ☄️
+*𝙴𝚜𝚝𝚎𝚕𝚊𝚛 II* ☄️
+*𝙴𝚜𝚝𝚎𝚕𝚊𝚛 III* ☄️
+*𝙻𝚎𝚢𝚎𝚗𝚍𝚊 I* 🏆
+*𝙻𝚎𝚢𝚎𝚗𝚍𝚊 II* 🏆
+*𝙻𝚎𝚢𝚎𝚗𝚍𝚊 III* 🏆
+*𝙻𝚎𝚐𝚎𝚗𝚍𝚊𝚛𝚒𝚘(A) I* 🛡️
+*𝙻𝚎𝚐𝚎𝚗𝚍𝚊𝚛𝚒𝚘(A) II* 🛡️
+*𝙻𝚎𝚐𝚎𝚗𝚍𝚊𝚛𝚒𝚘(A) III* 🛡️
+*𝚂𝚞𝚙𝚎𝚛 𝚙𝚛𝚘 I* 🎩
+*𝚂𝚞𝚙𝚎𝚛 𝚙𝚛𝚘 II* 🎩
+*𝚂𝚞𝚙𝚎𝚛 𝚙𝚛𝚘 III* 🎩
+*𝙿𝚛𝚘 𝚎𝚗 𝚃𝚑𝚎 𝙻𝚘𝚕𝚒𝚋𝚘𝚝-𝙼𝙳 I* 😼
+*𝙿𝚛𝚘 𝚎𝚗 𝚃𝚑𝚎 𝙻𝚘𝚕𝚒𝚋𝚘𝚝-𝙼𝙳 II* 😼
+*𝙿𝚛𝚘 𝚎𝚗 𝚃𝚑𝚎 𝙻𝚘𝚕𝚒𝚋𝚘𝚝-𝙼𝙳 III* 😼
+*𝙳𝚒𝚊𝚖𝚊𝚗𝚝𝚎 I* 💎
+*𝙳𝚒𝚊𝚖𝚊𝚗𝚝𝚎 II* 💎
+*𝙳𝚒𝚊𝚖𝚊𝚗𝚝𝚎 III* 💎
+*𝙾𝚛𝚘 I* 🏅
+*𝙾𝚛𝚘 II* 🏅
+*𝙾𝚛𝚘 III* 🏅
+*𝙿𝚕𝚊𝚝𝚊 I* 🔮
+*𝙿𝚕𝚊𝚝𝚊 II* 🔮
+*𝙿𝚕𝚊𝚝𝚊 III* 🔮
+*𝙸𝚛𝚘𝚗 I* 🦾
+*𝙸𝚛𝚘𝚗 II* 🦾
+*𝙸𝚛𝚘𝚗 III* 🦾
+*𝙼𝚊𝚎𝚜𝚝𝚛𝚘(A) I* ⚒️
+*𝙼𝚊𝚎𝚜𝚝𝚛𝚘(A) II* ⚒️
+*𝙼𝚊𝚎𝚜𝚝𝚛𝚘(A) III* ⚒️
+*𝙴𝚡𝚙𝚕𝚘𝚛𝚊𝚍𝚘𝚛(A) I* 🪓
+*𝙴𝚡𝚙𝚕𝚘𝚛𝚊𝚍𝚘𝚛(A) II* 🪓
+*𝙴𝚡𝚙𝚕𝚘𝚛𝚊𝚍𝚘𝚛(A) III* 🪓
+*𝙰𝚙𝚛𝚎𝚗𝚍𝚒𝚜 I* 🪚
+*𝙰𝚙𝚛𝚎𝚗𝚍𝚒𝚜 II* 🪚
+*𝙰𝚙𝚛𝚎𝚗𝚍𝚒𝚜 III* 🪚
+*𝙽𝚘𝚟𝚊𝚝𝚘(A) I* 🪤
+*𝙽𝚘𝚟𝚊𝚝𝚘(A) II* 🪤
+*𝙽𝚘𝚟𝚊𝚝𝚘(A) III* 🪤
 ╰━━━━━━━━━━━━━━━━━━━⬣`.trim()
-conn.sendHydrated(m.chat, menu, `𝙍𝘼𝙉𝙂𝙊𝙎 | ${wm}`, pp, 'https://github.com/Subbotsito/The-LoliBot-MD', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
+conn.sendHydrated(m.chat, menu, `𝚁𝙰𝙽𝙶𝙾 | ${wm}`, pp, 'https://github.com/Subbotsito/The-LoliBot-MD', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
 ['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 💫', '.allmenu'],
 ['𝙏𝙤𝙥𝙨 🏆', `${usedPrefix}top`],
 ['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 ⚡', '#menu']

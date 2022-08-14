@@ -8,18 +8,18 @@ let user = global.db.data.users[m.sender]
     if (!canLevelUp(user.level, user.exp, global.multiplier)) {
         let { min, xp, max } = xpRange(user.level, global.multiplier)
         throw `
-╭━━━[ *𝙉𝙄𝙑𝙀𝙇* ]━━━━⬣
-┃ *NOMBRE*
+╭━━━[ *𝑵𝑰𝑽𝑬𝑳* ]━━━━⬣
+┃ *𝑵𝑶𝑴𝑩𝑹𝑬*
 ┃ ${name}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ *NIVEL:* *${user.level}*
+┃ *𝑵𝑰𝑽𝑬𝑳:* *${user.level}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ *RANGO:* ${role}
+┃ *𝑹𝑨𝑵𝑮𝑶:* ${role}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ *XP:* *${user.exp - min}/${xp}*
+┃ *𝑿𝑷:* *${user.exp - min}/${xp}*
 ╰━━━〔 *𓃠 ${vs}* 〕━━━━━⬣
 
-*Te falta ${max - user.exp} de XP para subir de nivel*
+*𝒕𝒆 𝒇𝒂𝒍𝒕𝒂 ${max - user.exp} 𝒅𝒆 𝑿𝑷 𝒑𝒂𝒓𝒂 𝒔𝒖𝒃𝒊𝒓 𝒅𝒆 𝒏𝒊𝒗𝒆𝒍*
 `.trim()
     }
     let before = user.level * 1
@@ -27,17 +27,17 @@ let user = global.db.data.users[m.sender]
     if (before !== user.level) {
         let teks = `Bien hecho! ${conn.getName(m.sender)} Nivel: ${user.level}`
         let str = `
-╭━━━[ *𝙉𝙄𝙑𝙀𝙇* ]━━━━⬣
-┃ *NIVEL ANTERIOR:* *${before}*
+╭━━━[ *𝑵𝑰𝑽𝑬𝑳* ]━━━━⬣
+┃ *𝑵𝑰𝑽𝑬𝑳 𝑨𝑵𝑻𝑬𝑹𝑰𝑶𝑹:* *${before}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ *NIVEL ACTUAL:* *${user.level}*
+┃ *𝑵𝑰𝑽𝑬𝑳 𝑨𝑪𝑻𝑼𝑨𝑳:* *${user.level}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ *RANGO:* ${role}
+┃ *𝑹𝑨𝑵𝑮𝑶:* ${role}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ *FECHA:* *${new Date().toLocaleString('id-ID')}*
+┃ *𝑭𝑬𝑪𝑯𝑨:* *${new Date().toLocaleString('id-ID')}*
 ╰━━━〔 *𓃠 ${vs}* 〕━━━━━⬣
 
-*_Cuanto más interactúes con The Lolibot-MD, mayor será tu nivel!!_*
+*𝒄𝒖𝒂𝒏𝒕𝒐 𝒎𝒂́𝒔 𝒊𝒏𝒕𝒆𝒓𝒂𝒄𝒕𝒖́𝒆𝒔 𝒄𝒐𝒏 𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝒃𝒐𝒕-𝑴𝑫 𝒎𝒂𝒚𝒐𝒓 𝒔𝒆𝒓𝒂́ 𝒕𝒖 𝒏𝒊𝒗𝒆𝒍!!_*
 `.trim()
         try {
             const img = await levelup(teks, user.level)

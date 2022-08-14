@@ -4,7 +4,7 @@ let handler = async (m, { conn, text, isMods, isOwner, isPrems }) => {
 let link = (m.quoted ? m.quoted.text ? m.quoted.text : text : text) || text
 let [_, code] = link.match(linkRegex) || []
 
-if (!code) throw `${mg}🙌 *𝘿𝙀𝘽𝙀 𝘿𝙀 𝙎𝙀𝙍 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀*\n🔰 𝑰𝒏𝒈𝒓𝒆𝒔𝒆 𝒆𝒍 𝒆𝒏𝒍𝒂𝒄𝒆 𝒅𝒆 𝒖𝒏 𝒈𝒓𝒖𝒑𝒐.\n\n𝑬𝒋𝒆𝒎𝒑𝒍𝒐\n*#unete ${nn}*\n\n*#join ${nnn}*`
+if (!code) throw `${mg}🙌  𝘿𝙚𝙗𝙚 𝙙𝙚 𝙨𝙚𝙧 𝙪𝙣 𝙚𝙣𝙡𝙖𝙘𝙚\n🔰 𝑰𝒏𝒈𝒓𝒆𝒔𝒆 𝒆𝒍 𝒆𝒏𝒍𝒂𝒄𝒆 𝒅𝒆 𝒖𝒏 𝒈𝒓𝒖𝒑𝒐.\n\n𝑬𝒋𝒆𝒎𝒑𝒍𝒐\n*#unete ${nn}*\n\n*#join ${nnn}*`
 
 if ( isPrems || isMods || isOwner || m.fromMe) {
 let res = await conn.groupAcceptInvite(code)

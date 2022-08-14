@@ -18,30 +18,30 @@ let handler = async (m, { conn, args, participants, usedPrefix }) => {
   console.log(participants)
   let len = args[0] && args[0].length > 0 ? Math.min(100, Math.max(parseInt(args[0]), 10)) : Math.min(10, sortedExp.length)
   let text = `
-       🏆 *TABLA DE CLASIFICACION*
+       🏆 𝚃𝚊𝚋𝚕𝚊 𝚍𝚎 𝚌𝚕𝚊𝚜𝚒𝚏𝚒𝚌𝚊𝚌𝚒𝚘́𝚗
     
-💠 *TOP ${len} XP 🎯* 
-Tú : *${usersExp.indexOf(m.sender) + 1}* de *${usersExp.length} Usuarios*
+💠 *𝚃𝙾𝙿 ${len} 𝚇𝙿 🎯* 
+Tú : *${usersExp.indexOf(m.sender) + 1}* de *${usersExp.length} 𝚞𝚜𝚞𝚊𝚛𝚒𝚘𝚜*
 
 ${sortedExp.slice(0, len).map(({ jid, exp }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${exp} Exp*`).join`\n`}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-💠 *TOP ${len} DIAMANTES💎* 
-Tú : *${usersLim.indexOf(m.sender) + 1}* de *${usersLim.length} Usuarios*
+💠 *𝚃𝙾𝙿 ${len} 𝙳𝙸𝙰𝙼𝙰𝙽𝚃𝙴💎* 
+Tú : *${usersLim.indexOf(m.sender) + 1}* de *${usersLim.length} 𝚞𝚜𝚞𝚊𝚛𝚒𝚘𝚜*
 
 ${sortedLim.slice(0, len).map(({ jid, limit }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${limit} Diamantes*`).join`\n`}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-💠 *TOP ${len} NIVEL 💪* 
-Tú : *${usersLevel.indexOf(m.sender) + 1}* de *${usersLevel.length} Usuarios*
+💠 *𝚃𝙾𝙿 ${len} 𝙽𝙸𝚅𝙴𝙻 💪* 
+Tú : *${usersLevel.indexOf(m.sender) + 1}* de *${usersLevel.length} 𝚞𝚜𝚞𝚊𝚛𝚒𝚘𝚜*
 
 ${sortedLevel.slice(0, len).map(({ jid, level }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *Nivel ${level}*`).join`\n`}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-💠 *TOP ${len} ROL 🌟* 
-Tú : *${usersRole.indexOf(m.sender) + 1}* de *${usersRole.length} Usuarios*
+💠 *𝚃𝙾𝙿 ${len} 𝚁𝙾𝙻 🌟* 
+Tú : *${usersRole.indexOf(m.sender) + 1}* de *${usersRole.length} 𝚞𝚜𝚞𝚊𝚛𝚒𝚘𝚜*
 
 ${sortedRole.slice(0, len).map(({ jid, role }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} ${role}`).join`\n`}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-💠 *TOP ${len} LOLICOINS 🐈*
-Tú : *${usersMoney.indexOf(m.sender) + 1}* de *${usersMoney.length} Usuarios*
+💠 *𝚃𝙾𝙿 ${len} 𝙻𝙾𝙻𝙸𝙲𝙾𝙸𝙽𝚂 🐈*
+Tú : *${usersMoney.indexOf(m.sender) + 1}* de *${usersMoney.length} 𝚞𝚜𝚞𝚊𝚛𝚒𝚘𝚜*
 
 ${sortedMoney.slice(0, len).map(({ jid, money }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${money} GataCoins*`).join`\n`}
 `.trim()
@@ -50,7 +50,7 @@ ${sortedMoney.slice(0, len).map(({ jid, money }, i) => `${i + 1}. ${participants
       mentionedJid: [...usersExp.slice(0, len), ...usersLim.slice(0, len), ...usersLevel.slice(0, len), ...usersRole.slice(0, len), ...usersMoney.slice(0, len)].filter(v => !participants.some(p => v === p.jid))
     }
   })
-await conn.sendHydrated(m.chat, wm, `𝘼𝙘𝙩𝙪𝙖𝙡𝙞𝙯𝙖 𝙩𝙪𝙨 𝘿𝙖𝙩𝙤𝙨 𝙘𝙤𝙣 𝙡𝙤𝙨 𝘽𝙤𝙩𝙤𝙣𝙚𝙨 𝙙𝙚 𝘼𝙗𝙖𝙟𝙤 𝙚𝙣 𝙚𝙡 𝙏𝙤𝙥 | 𝙍𝙖𝙣𝙠𝙞𝙣𝙜 𝙤 𝙘𝙤𝙣 𝙚𝙡 𝙘𝙤𝙢𝙖𝙣𝙙𝙤:\n${usedPrefix}nivel\n${usedPrefix}exp\n${usedPrefix}rol`, null, md, '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
+await conn.sendHydrated(m.chat, wm, `𝚊𝚌𝚝𝚞𝚊𝚕𝚒𝚣𝚊𝚛 𝚝𝚞 𝚍𝚊𝚝𝚘𝚜 𝚌𝚘𝚗 𝚕𝚘𝚜 𝚋𝚘𝚝𝚘𝚗𝚎𝚜 𝚍𝚎 𝚊𝚋𝚊𝚓𝚘 | 𝚎𝚗 𝚎𝚕 𝚝𝚘𝚙 𝚛𝚊𝚗𝚔𝚒𝚗𝚐 𝚘 𝚌𝚘𝚗 𝚎𝚕 𝚌𝚘𝚖𝚊𝚗𝚍𝚘:\n${usedPrefix}nivel\n${usedPrefix}exp\n${usedPrefix}rol`, null, md, '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
 ['𝙈𝙚𝙣𝙪 𝙅𝙪𝙚𝙜𝙤𝙨 🎡', '#juegosmenu'],
 ['𝙍𝙖𝙣𝙜𝙤𝙨 🚹', '#rol'],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', `${usedPrefix}menu`]
