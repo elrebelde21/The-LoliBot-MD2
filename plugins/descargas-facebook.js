@@ -1,8 +1,8 @@
 import { facebookdl, facebookdlv2 } from '@bochilteam/scraper'
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-if (!args[0]) throw `${mg}𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 𝙋𝘼𝙍𝘼 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙍 𝙀𝙇 𝙑𝙄𝘿𝙀𝙊\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} https://www.facebook.com/watch?v=636541475139*`
+if (!args[0]) throw `${mg}𝑰𝒏𝒈𝒓𝒆𝒔𝒆 𝒖𝒏 𝒆𝒏𝒍𝒂𝒄𝒆 𝒅𝒆 𝒇𝒂𝒄𝒆𝒃𝒐𝒐𝒌 𝒑𝒂𝒓𝒂 𝒅𝒆𝒔𝒄𝒂𝒓𝒈𝒂𝒓 𝒆𝒍 𝒗𝒊𝒅𝒆𝒐 \𝑬𝒋𝒆𝒎𝒑𝒍𝒐\n*${usedPrefix + command} https://www.facebook.com/watch?v=636541475139*`
 const { result } = await facebookdl(args[0]).catch(async _ => await facebookdlv2(args[0]))
-for (const { url, isVideo } of result.reverse()) conn.sendFile(m.chat, url, `facebook.${!isVideo ? 'bin' : 'mp4'}`, `✨ *ENLACE:* ${url}`, m)
+for (const { url, isVideo } of result.reverse()) conn.sendFile(m.chat, url, `facebook.${!isVideo ? 'bin' : 'mp4'}`, `✨ *𝑬𝒏𝒍𝒂𝒄𝒆:* ${url}`, m)
 /*  let info = `💖 *Infórmate sobre las Novedades y recuerda tener la última versión.*\n\n💝 *Find out about what's new and remember to have the latest version.*
   `.trim()
   

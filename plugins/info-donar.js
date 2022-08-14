@@ -5,15 +5,18 @@ let pp = './src/apoyo.jpg'
 await conn.sendButton(m.chat, `${wm}`, `https://paypal.me/OficialGD`, pp, [['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', `/menu`]], m) //[['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', `/menu`]]
   
 let str = `
-💖 𝙃𝙤𝙡𝙖!!  *si quiere apoya al bot. con cosa mucha gracias*
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-*forma parte grupo asistencia de facebook*
-
-*https://facebook.com/groups/721802642266362/*
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-*agradecimiento al gatabot-MD*
-*agracimiento al themystic-bot-MD* . 𝙂𝙧𝙖𝙘𝙞𝙖𝙨!
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+*┏ ┅ ━━━━━━━━━ ┅ ━*
+*┇💖 𝙃𝙤𝙡𝙖!!  *si quiere apoya al bot. con cosa mucha gracias*
+*┃* ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+*┃*forma parte grupo asistencia de facebook*
+*┃*
+*┃* *https://facebook.com/groups/721802642266362/*
+*┃* ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+*┃* *YouTube*
+*┃*  *https://youtube.com/channel/UCPSrzHooOjQMRmUK_2RLcSw*
+*┃* ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+*┃* *agracimiento al themystic-bot-MD* . 𝙂𝙧𝙖𝙘𝙞𝙖𝙨!
+*┗ ┅ ━━━━━━━━━ ┅ ━*
 `.trim()
   
 await conn.sendHydrated(m.chat, str, wm, media, 'https://paypal.me/OficialGD', '🎁 𝘿𝙤𝙣𝙖𝙧', null, null, [

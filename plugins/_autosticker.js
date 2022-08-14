@@ -16,7 +16,7 @@ let img = await q.download?.()
 if (!img) return
 stiker = await sticker(img, false, packname, author)
 } else if (/video/g.test(mime)) {
-if (/video/g.test(mime)) if ((q.msg || q).seconds > 8) return await this.sendButton(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙻 𝚅𝙸𝙳𝙴𝙾 𝙽𝙾 𝙿𝚄𝙴𝙳𝙴 𝙳𝚄𝚁𝙰𝚁 𝙼𝙰𝚂 𝙳𝙴 𝟽 𝚂𝙴𝙶𝚄𝙽𝙳𝙾𝚂*', wm, [['𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰𝚁 𝙰𝚄𝚃𝙾𝚂𝚃𝙸𝙲𝙺𝙴𝚁', '/disable autosticker']], m)
+if (/video/g.test(mime)) if ((q.msg || q).seconds > 8) return await this.sendButton(m.chat, '*[❗𝙄𝙣𝙛𝙤❗]𝑬𝒍 𝒗𝒊́𝒅𝒆𝒐 𝒏𝒐 𝒑𝒖𝒆𝒅𝒆 𝒅𝒖𝒓𝒂𝒓 𝒎𝒂́𝒔 𝒅𝒆 7 𝒔𝒆𝒈', wm, [['𝑫𝒆𝒔𝒂𝒄𝒕𝒊𝒗𝒂 𝒂𝒖𝒕𝒐𝒔𝒕𝒊𝒄𝒌𝒆𝒓', '/disable autosticker']], m)
 let img = await q.download()
 if (!img) return
 stiker = await sticker(img, false, packname, author)
