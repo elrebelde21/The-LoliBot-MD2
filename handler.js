@@ -44,9 +44,13 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.exp))
                     user.exp = 0
                 if (!isNumber(user.limit))
-                    user.limit = 10
+                    user.limit = 20
+		    if (!isNumber(user.joincount)) 
+			    user.joincount = 1
                 if (!isNumber(user.lastclaim))
                     user.lastclaim = 0
+		if (!isNumber(user.lastcofre))
+                    user.lastcofre = 0
                 if (!('registered' in user))
                     user.registered = false
                 if (!user.registered) {
@@ -56,6 +60,7 @@ export async function handler(chatUpdate) {
                         user.age = -1
                     if (!isNumber(user.regTime))
                         user.regTime = -1
+	            
                 }
                 if (!isNumber(user.afk))
                     user.afk = -1
@@ -69,8 +74,9 @@ export async function handler(chatUpdate) {
                     user.level = 0
                 if (!('role' in user))
                     user.role = 'Novato'
-                if (!('autolevelup' in user))
-                    user.autolevelup = true
+                if (!('autolevelup' in user)) 
+                    user.autolevelup = false
+                
 
                 if (!isNumber(user.money))
                     user.money = 0
@@ -156,6 +162,8 @@ export async function handler(chatUpdate) {
 
                 if (!isNumber(user.lastclaim))
                     user.lastclaim = 0
+		if (!isNumber(user.lastcofre))
+                    user.lastcofre = 0
                 if (!isNumber(user.lastadventure))
                     user.lastadventure = 0
                 if (!isNumber(user.lastfishing))
@@ -175,8 +183,9 @@ export async function handler(chatUpdate) {
             } else
                 global.db.data.users[m.sender] = {
                     exp: 0,
-                    limit: 10,
+                    limit: 20,
                     lastclaim: 0,
+		    joincount: 1,
                     registered: false,
                     name: m.name,
                     age: -1,
@@ -187,11 +196,11 @@ export async function handler(chatUpdate) {
                     warn: 0,
                     level: 0,
                     role: 'Novato',
-                    autolevelup: true,
+                    autolevelup: false,
 
                     money: 0,
                     health: 100,
-                    limit: 10,
+                    limit: 20,
                     potion: 10,
                     trash: 0,
                     wood: 0,
@@ -233,6 +242,7 @@ export async function handler(chatUpdate) {
                     fishingroddurability: 0,
 
                     lastclaim: 0,
+		    lastcofre: 0,
                     lastadventure: 0,
                     lastfishing: 0,
                     lastdungeon: 0,
@@ -263,11 +273,15 @@ export async function handler(chatUpdate) {
                 if (!('delete' in chat))
                     chat.delete = true
                 if (!('modohorny' in chat))
-                    chat.modohorny = false    
+                    chat.modohorny = false
+                if (!('stickers' in chat))
+                    chat.stickers = false
                 if (!('autosticker' in chat))
-                    chat.autosticker = false                    
+                    chat.autosticker = false  
                 if (!('audios' in chat))
-                    chat.audios = false                            
+                    chat.audios = false 
+		if (!('antiver' in chat))
+                    chat.antiver = true
                 if (!('antiLink' in chat))
                     chat.antiLink = false
                 if (!('antiLink2' in chat))
@@ -286,11 +300,13 @@ export async function handler(chatUpdate) {
                     sWelcome: '',
                     sBye: '',
                     sPromote: '',
-                    sDemote: '',
+                    sDemote: '', 
                     delete: true,
                     modohorny: true,
+                    stickers: true,
                     autosticker: false,
                     audios: true,
+		    antiver: true,
                     antiLink: false,
                     antiLink2: false,
                     viewonce: false,
@@ -303,10 +319,12 @@ export async function handler(chatUpdate) {
                 if (!('self' in settings)) settings.self = false
                 if (!('autoread' in settings)) settings.autoread = false
                 if (!('restrict' in settings)) settings.restrict = false
+		if (!('temporal' in settings)) settings.temporal = false
             } else global.db.data.settings[this.user.jid] = {
                 self: false,
                 autoread: false,
-                restrict: false
+                restrict: false,
+		temporal: false
             }
         } catch (e) {
             console.error(e)
@@ -329,7 +347,7 @@ export async function handler(chatUpdate) {
         const isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
         const isPrems = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
 
-        if (opts['queque'] && m.text && !(isMods || isPrems)) {
+       /* if (opts['queque'] && m.text && !(isMods || isPrems)) {
             let queque = this.msgqueque, time = 1000 * 5
             const previousID = queque[queque.length - 1]
             queque.push(m.id || m.key.id)
@@ -337,6 +355,12 @@ export async function handler(chatUpdate) {
                 if (queque.indexOf(previousID) === -1) clearInterval(this)
                 await delay(time)
             }, time)
+        } */
+        
+        if (opts['queque'] && m.text && !m.fromMe && !(isMods || isPrems)) {
+            const id = m.id
+            this.msgqueque.add(id)
+            await this.msgqueque.waitQueue(id)
         }
 
         if (m.isBaileys)
@@ -375,7 +399,7 @@ export async function handler(chatUpdate) {
                     for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
                         let data = (await conn.onWhatsApp(jid))[0] || {}
                         if (data.exists)
-                            m.reply(`*[ ⚠️ 𝙍𝙚𝙥𝙤𝙧𝙩𝙚 𝙙𝙚 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙘𝙤𝙣 𝙛𝙖𝙡𝙡𝙤𝙨 ⚠️ ]*\n\n*—◉ 𝑷𝒍𝒖𝒈𝒊𝒏:* ${name}\n*—◉ 𝑼𝒔𝒖𝒂𝒓𝒊𝒐𝒔:* ${m.sender}\n*—◉ 𝑪𝒐𝒎𝒂𝒏𝒅𝒐:* ${m.text}\n\n*—◉ 𝑬𝒓𝒓𝒐𝒓:*\n\`\`\`${format(e)}\`\`\`\n\n*[❗] 𝑹𝒆𝒑𝒐𝒓𝒕𝒆𝒍𝒐 𝒂𝒍 𝒄𝒓𝒆𝒂𝒅𝒐𝒓 𝒅𝒆𝒍 𝒃𝒐𝒕 𝒑𝒂𝒓𝒂 𝒅𝒂𝒓𝒍𝒆 𝒖𝒏𝒂 𝒔𝒐𝒍𝒖𝒄𝒊𝒐́𝒏, 𝒑𝒖𝒆𝒅𝒆 𝒖𝒔𝒂𝒓 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐  #𝒓𝒆𝒑𝒐𝒓𝒕𝒆*`.trim(), data.jid)
+                            m.reply(`*[ ⚠️ 𝙍𝙚𝙥𝙤𝙧𝙩𝙚 𝙙𝙚 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙘𝙤𝙣 𝙛𝙖𝙡𝙡𝙤𝙨 ⚠️ ]*\n\n*—◉ 𝑷𝒍𝒖𝒈𝒊𝒏:* ${name}\n*—◉ 𝑼𝒔𝒖𝒂𝒓𝒊𝒐𝒔:* ${m.sender}\n*—◉ 𝑪𝒐𝒎𝒂𝒏𝒅𝒐:* ${m.text}\n\n*—◉ 𝑬𝒓𝒓𝒐𝒓:*\n\`\`\`${format(e)}\`\`\`\n\n*[❗] 𝑹𝒆𝒑𝒐𝒓𝒕𝒆𝒍𝒐 𝒂𝒍 𝒄𝒓𝒆𝒂𝒅𝒐𝒓 𝒅𝒆𝒍 𝒃𝒐𝒕 𝒑𝒂𝒓𝒂 𝒅𝒂𝒓𝒍𝒆 𝒖𝒏𝒂 𝒔𝒐𝒍𝒖𝒄𝒊𝒐́𝒏, 𝒑𝒖𝒆𝒅𝒆 𝒖𝒔𝒂𝒓 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 #𝒓𝒆𝒑𝒐𝒓𝒕𝒆*`.trim(), data.jid)
                     }
                 }
             }
@@ -496,11 +520,11 @@ export async function handler(chatUpdate) {
                 else
                     m.exp += xp
                 if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-                    this.reply(m.chat, `${ag}𝑺𝒖𝒔 𝒅𝒊𝒂𝒎𝒂𝒏𝒕𝒆𝒔 💎 𝒔𝒆 𝒉𝒂𝒏 𝒂𝒈𝒐𝒕𝒂𝒅𝒐.  𝒑𝒖𝒆𝒅𝒆 𝒄𝒐𝒎𝒑𝒓𝒂𝒓 𝒎𝒂́𝒔 𝒖𝒔𝒂𝒏𝒅𝒐 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐. *${usedPrefix}buy cantidad*`, m)
+                    this.reply(m.chat, `${ag}𝑺𝒖𝒔 𝒅𝒊𝒂𝒎𝒂𝒏𝒕𝒆𝒔 💎 𝒔𝒆 𝒉𝒂𝒏 𝒂𝒈𝒐𝒕𝒂𝒅𝒐. 𝒑𝒖𝒆𝒅𝒆 𝒄𝒐𝒎𝒑𝒓𝒂𝒓 𝒎𝒂́𝒔 𝒖𝒔𝒂𝒏𝒅𝒐 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐.*${usedPrefix}buy cantidad`, m)
                     continue // Limit habis
                 }
                 if (plugin.level > _user.level) {
-                    this.reply(m.chat, `*[❗𝙄𝙣𝙛𝙤 ❗] 𝑺𝒆 𝒓𝒆𝒒𝒖𝒊𝒆𝒓𝒆 𝒆𝒍 𝒏𝒊𝒗𝒆𝒍  ${plugin.level} 𝑷𝒂𝒓𝒂 𝒖𝒔𝒂𝒓 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐, 𝒕𝒖 𝒏𝒊𝒗𝒆𝒍 𝒆𝒔 ${_user.level}*`, m)
+                    this.reply(m.chat, `[❗𝙄𝙣𝙛𝙤 ❗] 𝑺𝒆 𝒓𝒆𝒒𝒖𝒊𝒆𝒓𝒆 𝒆𝒍 𝒏𝒊𝒗𝒆𝒍   ➡️ *${plugin.level}* 𝑷𝒂𝒓𝒂 𝒖𝒔𝒂𝒓 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐, 𝒕𝒖 𝒏𝒊𝒗𝒆𝒍 𝒆𝒔 ➡️ *${_user.level}*𝑨𝒄𝒕𝒖𝒂𝒍𝒊𝒛𝒂𝒓 𝒕𝒖 𝒏𝒊𝒗𝒆𝒍 𝒄𝒐𝒏 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐*${usedPrefix}nivel*`, m)
                     continue // If the level has not been reached
                 }
                 let extra = {
@@ -555,6 +579,8 @@ export async function handler(chatUpdate) {
                             console.error(e)
                         }
                     }
+                    if (m.limit)
+                        m.reply(+m.limit + ' 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀(𝙎) 💎 𝙐𝙎𝘼𝘿𝙊(𝙎)')
                 }
                 break
             }
@@ -643,11 +669,11 @@ export async function participantsUpdate({ id, participants, action }) {
                         pp = await this.profilePictureUrl(user, 'image')
                     } catch (e) {
                     } finally {
-                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝑮𝒓𝒖𝒑𝒐 𝒈𝒆𝒏𝒊𝒂𝒍 🥳*') :
-                            (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
+                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝙂𝙧𝙪𝙥𝙤 𝙂𝙚𝙣𝙞𝙖𝙡*') :
+                            (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', await this.getName(user)) //.replace('@user', '@' + user.split('@')[0])
                             let apii = await this.getFile(pp)
-                            this.sendHydrated(id, text, groupMetadata.subject, apii.data,                                                       'https://github.com/elrebelde21/The-LoliBot-MD', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
-                            [(action == 'add' ? '𝑩𝒊𝒆𝒏𝒗𝒆𝒏𝒊𝒅𝒐🥳!!' : '𝑺𝒆 𝒇𝒖𝒆 𝒖𝒏 𝒓𝒂𝒏𝒅𝒐𝒘 🧐'), '.s'],    
+                            this.sendHydrated(id, text, groupMetadata.subject, apii.data, 'https://github.com/elrebelde21/The-LoliBot-MD', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
+                            [(action == 'add' ? '𝑩𝒊𝒆𝒏𝒗𝒆𝒏𝒊𝒅𝒐 🥳' : '𝙎𝙚 𝙛𝙪𝙚 𝙪𝙣 𝙍𝙖𝙣𝙙𝙤𝙢 🧐'), '.s'],    
                             ['𝑴𝒆𝒏𝒖', '/menu']
                             ], '', { mentions: [user]})
                            }
@@ -706,7 +732,7 @@ export async function deleteUpdate(message) {
 ━━━━⬣  𝘼𝙣𝙩𝙞 𝙙𝙚𝙡𝙚𝙩𝙚  ⬣━━━━
 *■ 𝑵𝒐𝒎𝒃𝒓𝒆:* @${participant.split`@`[0]}
 *■ 𝑬𝒏𝒗𝒊𝒂𝒅𝒐 𝒆𝒍 𝒎𝒆𝒏𝒔𝒂𝒋𝒆..*
-*■ 𝑷𝒂𝒓𝒂 𝒅𝒆𝒔𝒂𝒄𝒕𝒊𝒗𝒂 𝒆𝒔𝒕𝒂́ 𝒇𝒖𝒏𝒄𝒊𝒐𝒏 𝒆𝒔𝒄𝒓𝒊𝒃𝒂 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 :*
+*■ 𝑷𝒂𝒓𝒂 𝒅𝒆𝒔𝒂𝒄𝒕𝒊𝒗𝒂 𝒆𝒔𝒕𝒂́ 𝒇𝒖𝒏𝒄𝒊𝒐𝒏 𝒆𝒔𝒄𝒓𝒊𝒃𝒂 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐:*
 *—◉ #disable antidelete*
 *—◉ #enable delete*
 ━━━━⬣  𝘼𝙣𝙩𝙞 𝙙𝙚𝙡𝙚𝙩𝙚  ⬣━━━━
@@ -721,16 +747,16 @@ export async function deleteUpdate(message) {
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: '╰⊱⚠️⊱ *𝙄𝙣𝙛𝙤* ⊱⚠️⊱╮\n\n_*¡¡𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒔𝒂𝒅𝒐 𝒑𝒐𝒓 𝒎𝒊 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐/𝒂 (𝒐𝒘𝒏𝒆𝒓) 𝒅𝒆𝒍 𝒃𝒐𝒕!!*_',
-        owner: '╰⊱⚠️⊱ *𝙄𝙣𝙛𝙤* ⊱⚠️⊱╮\n\n_*¡¡𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒔𝒂𝒅𝒐 𝒑𝒐𝒓 𝒎𝒊 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐/𝒂 (𝒐𝒘𝒏𝒆𝒓) 𝒅𝒆𝒍 𝒃𝒐𝒕!!*_',
-        mods: '╰⊱⚠️⊱ *𝙄𝙣𝙛𝙤* ⊱⚠️⊱╮\n\n_*¡¡𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒕𝒊𝒍𝒊𝒛𝒂𝒅𝒐 𝒑𝒐𝒓 𝒎𝒐𝒅𝒆𝒓𝒂𝒅𝒐𝒓𝒆𝒔 𝒚 𝒆𝒍 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐/𝒂 (𝒐𝒘𝒏𝒆𝒓) 𝒅𝒆𝒍 𝒃𝒐𝒕!!*_',
-        premium: '╰⊱⚠️⊱ *𝙄𝙣𝙛𝙤* ⊱⚠️⊱╮\n\n_*¡¡𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒕𝒊𝒍𝒊𝒛𝒂𝒅𝒐 𝒑𝒐𝒓 𝒖𝒔𝒖𝒂𝒓𝒊𝒐 𝒑𝒓𝒆𝒎𝒊𝒖𝒎 𝒚 𝒆𝒍 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐/𝒂 (𝒐𝒘𝒏𝒆𝒓) 𝒅𝒆𝒍 𝒃𝒐𝒕!!*_',
+        rowner: '╰⊱⚠️⊱ *𝙄𝙣𝙛𝙤* ⊱⚠️⊱╮\n\n*¡¡𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒔𝒂𝒅𝒐 𝒑𝒐𝒓 𝒎𝒊 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐/𝒂 (𝒐𝒘𝒏𝒆𝒓) 𝒅𝒆𝒍 𝒃𝒐𝒕!!*',
+        owner: '╰⊱⚠️⊱ *𝙄𝙣𝙛𝙤* ⊱⚠️⊱╮\n\n*¡¡𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒔𝒂𝒅𝒐 𝒑𝒐𝒓 𝒎𝒊 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐/𝒂 (𝒐𝒘𝒏𝒆𝒓) 𝒅𝒆𝒍 𝒃𝒐𝒕!!*',
+        mods: '╰⊱⚠️⊱ *𝙄𝙣𝙛𝙤* ⊱⚠️⊱╮\n\n*¡¡𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒕𝒊𝒍𝒊𝒛𝒂𝒅𝒐 𝒑𝒐𝒓 𝒎𝒐𝒅𝒆𝒓𝒂𝒅𝒐𝒓𝒆𝒔 𝒚 𝒆𝒍 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐/𝒂 (𝒐𝒘𝒏𝒆𝒓) 𝒅𝒆𝒍 𝒃𝒐𝒕!!*',
+        premium: '╰⊱⚠️⊱ *𝙄𝙣𝙛𝙤* ⊱⚠️⊱╮\n\n*¡¡𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒕𝒊𝒍𝒊𝒛𝒂𝒅𝒐 𝒑𝒐𝒓 𝒖𝒔𝒖𝒂𝒓𝒊𝒐 𝒑𝒓𝒆𝒎𝒊𝒖𝒎 𝒚 𝒆𝒍 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐/𝒂 (𝒐𝒘𝒏𝒆𝒓) 𝒅𝒆𝒍 𝒃𝒐𝒕!!*',
         group: '╰⊱⚠️⊱ *𝙄𝙣𝙛𝙤* ⊱⚠️⊱╮\n\n_*¡¡𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒖𝒔𝒂𝒓 𝒆𝒍 𝒈𝒓𝒖𝒑𝒐!!*_',
-        private: '╰⊱⚠️⊱ *𝙄𝙣𝙛𝙤* ⊱⚠️⊱╮\n\n_*¡¡𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒖𝒔𝒂𝒓 𝒆𝒍 𝒄𝒉𝒂𝒕 𝒑𝒓𝒊𝒗𝒂𝒅𝒐 𝒅𝒆𝒍 𝒃𝒐𝒕!!*_',
-        admin: '╰⊱⚠️⊱ *𝙄𝙣𝙛𝙤* ⊱⚠️⊱╮\n\n_*¡¡𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒔𝒆 𝒑𝒖𝒆𝒅𝒆 𝒖𝒔𝒂𝒓 𝒑𝒐𝒓 𝒂𝒅𝒎𝒊𝒏 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐!!*_',
-        botAdmin: '╰⊱⚠️⊱ *𝙄𝙣𝙛𝙤* ⊱⚠️⊱╮\n\n_*¡¡𝑷𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒖𝒔𝒂𝒓 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒆𝒍 𝒃𝒐𝒕 (𝒚𝒐) 𝒏𝒆𝒄𝒆𝒔𝒊𝒕𝒂 𝒂𝒅𝒎𝒊𝒏, 𝒉𝒂𝒈𝒂 𝒒𝒖𝒆 𝒃𝒐𝒕 𝒔𝒆𝒂 𝒂𝒅𝒎𝒊𝒏 𝒑𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒖𝒔𝒂𝒓 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐!!*_',
-        unreg: '╰⊱⚠️⊱ *𝙄𝙣𝙛𝙤* ⊱⚠️⊱╮\n\n_*𝑯𝒆𝒚!!! 𝑨𝒍𝒕𝒐, 𝒏𝒐 𝒆𝒔𝒕𝒂́ 𝒓𝒆𝒈𝒊𝒔𝒕𝒓𝒂𝒅𝒐 𝑷𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒖𝒔𝒂𝒓 𝒆𝒍 𝒃𝒐𝒕 𝒏𝒆𝒄𝒆𝒔𝒊𝒕𝒂 𝒓𝒆𝒈𝒊𝒔𝒕𝒓𝒂𝒓𝒕𝒆, 𝒖𝒔𝒂 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 #𝒗𝒆𝒓𝒊𝒇𝒊𝒄𝒂𝒓_',
-        restrict: '╰⊱⚠️⊱ *𝙄𝙣𝙛𝙤* ⊱⚠️⊱╮\n\n_*¡¡𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒆𝒔𝒕𝒂́ 𝒓𝒆𝒔𝒕𝒓𝒊𝒏𝒈𝒊𝒅𝒐/𝒅𝒆𝒔𝒂𝒄𝒕𝒊𝒗𝒂𝒅𝒐 𝒑𝒐𝒓 𝒅𝒆𝒔𝒊𝒄𝒊𝒐𝒏 𝒅𝒆𝒍 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐/𝒂 (𝒐𝒘𝒏𝒆𝒓) 𝒅𝒆𝒍 𝒃𝒐𝒕!!*_'
+        private: '╰⊱⚠️⊱ *𝙄𝙣𝙛𝙤* ⊱⚠️⊱╮\n\n*¡¡𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒖𝒔𝒂𝒓 𝒆𝒍 𝒄𝒉𝒂𝒕 𝒑𝒓𝒊𝒗𝒂𝒅𝒐 𝒅𝒆𝒍 𝒃𝒐𝒕!!*',
+        admin: '╰⊱⚠️⊱ *𝙄𝙣𝙛𝙤* ⊱⚠️⊱╮\n\n*¡¡𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒔𝒆 𝒑𝒖𝒆𝒅𝒆 𝒖𝒔𝒂𝒓 𝒑𝒐𝒓 𝒂𝒅𝒎𝒊𝒏 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐!!*',
+        botAdmin: '╰⊱⚠️⊱ *𝙄𝙣𝙛𝙤* ⊱⚠️⊱╮\n\n_¡¡𝑷𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒖𝒔𝒂𝒓 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒆𝒍 𝒃𝒐𝒕 (𝒚𝒐) 𝒏𝒆𝒄𝒆𝒔𝒊𝒕𝒂 𝒂𝒅𝒎𝒊𝒏, 𝒉𝒂𝒈𝒂 𝒒𝒖𝒆 𝒃𝒐𝒕 𝒔𝒆𝒂 𝒂𝒅𝒎𝒊𝒏 𝒑𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒖𝒔𝒂𝒓 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐!!*',
+        unreg: '╰⊱⚠️⊱ *𝙄𝙣𝙛𝙤* ⊱⚠️⊱╮\n\n*𝑯𝒆𝒚!!! 𝑨𝒍𝒕𝒐, 𝒏𝒐 𝒆𝒔𝒕𝒂́ 𝒓𝒆𝒈𝒊𝒔𝒕𝒓𝒂𝒅𝒐 𝑷𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒖𝒔𝒂𝒓 𝒆𝒍 𝒃𝒐𝒕 𝒏𝒆𝒄𝒆𝒔𝒊𝒕𝒂 𝒓𝒆𝒈𝒊𝒔𝒕𝒓𝒂𝒓𝒕𝒆, 𝒖𝒔𝒂 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 #𝒗𝒆𝒓𝒊𝒇𝒊𝒄𝒂𝒓',
+        restrict: '╰⊱⚠️⊱ *𝙄𝙣𝙛𝙤* ⊱⚠️⊱╮\n\n*¡¡𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒆𝒔𝒕𝒂́ 𝒓𝒆𝒔𝒕𝒓𝒊𝒏𝒈𝒊𝒅𝒐/𝒅𝒆𝒔𝒂𝒄𝒕𝒊𝒗𝒂𝒅𝒐 𝒑𝒐𝒓 𝒅𝒆𝒔𝒊𝒄𝒊𝒐𝒏 𝒅𝒆𝒍 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐/𝒂 (𝒐𝒘𝒏𝒆𝒓) 𝒅𝒆𝒍 𝒃𝒐𝒕!!*'
     }[type]
     if (msg) return m.reply(msg) 
 }

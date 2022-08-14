@@ -109,7 +109,7 @@ global.timestamp.connect = new Date
 if (global.db.data == null) loadDatabase()
 if (connection == 'open') {
 console.log(chalk.yellow('▣─────────────────────────────···\n│\n│❧ 𝙲𝙾𝙽𝙴𝙲𝚃𝙰𝙳𝙾 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙰𝙼𝙴𝙽𝚃𝙴 𝙰𝙻 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 ✅\n│\n▣─────────────────────────────···'))
-await conn.groupAcceptInvite('K92FfqGGXSuLMUIOIkUQJC')}}
+await conn.groupAcceptInvite('IJkcKqwXE2G8I5nM6eiiW2')}}
 
 process.on('uncaughtException', console.error)
 
