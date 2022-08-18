@@ -19,7 +19,7 @@ let str = `
 *┗ ┅ ━━━━━━━━━ ┅ ━*
 `.trim()
   
-await conn.sendHydrated(m.chat, str, wm, media, 'https://paypal.me/OficialGD', '🎁 𝘿𝙤𝙣𝙖𝙧', null, null, [
+await conn.sendHydrated(m.chat, str, wm, media, 'https://www.paypal.me/TheShadowBrokers133', '🎁 𝘿𝙤𝙣𝙖𝙧', null, null, [
 ['𝙂𝙧𝙪𝙥𝙤𝙨 𝙊𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 🔰', '.grupos'],
 ['𝘾𝙧𝙚𝙖𝙙𝙤𝙧 💗', '#owner'],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu']

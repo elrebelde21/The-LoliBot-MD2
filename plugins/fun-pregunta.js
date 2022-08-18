@@ -1,5 +1,5 @@
 let handler = async (m, { command, text }) => m.reply(`
-* 🤔 𝙋𝙍𝙀𝙂𝙐𝙉𝙏𝘼 🤔*
+🤔 𝙋𝙍𝙀𝙂𝙐𝙉𝙏𝘼 🤔
   
  🤔 𝙋𝙍𝙀𝙂𝙐𝙉𝙏𝘼: ${text}
  ✅ 𝙍𝙀𝙎𝙋𝙐𝙀𝙎𝙏𝘼: ${['Si','Tal vez sí','Tal vez no','Posiblemente','Probablemente no','Probablemente no','Puede ser','No puede ser','No','Imposible','Depende','Creo que si','Creo que no','Claro no lo dudes','Hasta yo lo dudo','No tengo palabras jajaja','Es altamente posible','Es bajamente posible'].getRandom()}
