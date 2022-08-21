@@ -143,6 +143,31 @@ let str = `
 ┃➫🔊 _Buen día grupo | 🙌_
 ┃➫🔊 _mi bebito fiu fiu
 ┃➫🔊 _sabosito
+┃➫🔊 _Freefire 
+┃➫🔊 _Aguanta
+┃➫🔊 _Es viernes
+┃➫🔊 _Que quede vos
+┃➫🔊 _Feriado 
+┃➫🔊 _Me emociono | borracho
+┃➫🔊 _Delivery 
+┃➫🔊 _Tarado | putos
+┃➫🔊 _Bardo
+┃➫🔊 _Saliste del grupo
+┃➫🔊 _No agregué 
+┃➫🔊 _Quiere tener internet gratis
+┃➫🔊 _Donde esta?
+┃➫🔊 _Q onda | 🤪
+┃➫🔊 _La tóxica
+┃➫🔊 _Bebesita
+┃➫🔊 _Tka 
+┃➫🔊 _No la pienso 
+┃➫🔊 _Taka Taka 
+┃➫🔊 _Bot canta 
+┃➫🔊 _Loli conmigo | Loli venir
+┃➫🔊 _Grap | trap 
+┃➫🔊 _Bruno
+┃➫🔊 _Bot dj
+┃➫🔊 _Soy guapo
 ┃➫🔊 _Las reglas del grupo_
 𝑺𝒆 𝒗𝒂𝒏 𝒂𝒈𝒓𝒆𝒈𝒂𝒅𝒐 𝒎𝒂𝒔 𝒂𝒖𝒅𝒊𝒐 𝒅𝒆 𝒑𝒐𝒄𝒐,
 𝑺𝒊 𝒒𝒖𝒊𝒆𝒓𝒆 𝒂𝒈𝒓𝒆𝒈𝒂𝒓 𝒂𝒍𝒈𝒖𝒏 𝒂𝒖𝒅𝒊𝒐 𝒏𝒖𝒆𝒗𝒐, 𝒐 𝒄𝒐𝒔𝒂 𝒏𝒖𝒆𝒗𝒂 𝒉𝒂𝒃𝒍𝒂 𝒄𝒐𝒏 𝒂𝒅𝒎𝒊𝒏 𝒐𝒇𝒄 𝒅𝒆𝒍 𝒃𝒐𝒕
