@@ -1,17 +1,76 @@
 import { createHash } from 'crypto'
-let handler = async function (m, { text, usedPrefix }) {
-let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length
-let user = global.db.data.users[m.sender]
-if (user.registered === true) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝒀𝒂 𝒆𝒔𝒕𝒂́ 𝒓𝒆𝒈𝒊𝒔𝒕𝒓𝒂𝒅𝒐/𝒂!!\n\n𝑺𝒊 𝒒𝒖𝒊𝒆𝒓𝒆 𝒂𝒏𝒖𝒍𝒂𝒓 𝒔𝒖 𝒓𝒆𝒈𝒊𝒔𝒕𝒓𝒐 𝒖𝒔𝒆 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 ${usedPrefix}unreg <numero de serie>*\n\n𝑺𝒊 𝒏𝒐 𝒓𝒆𝒄𝒖𝒆𝒓𝒅𝒂𝒔 𝒔𝒖 𝒏𝒖́𝒎𝒆𝒓𝒐 𝒅𝒆 𝒔𝒆𝒓𝒊𝒆 𝒖𝒔𝒆 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 ${usedPrefix}myns*`
-let name = conn.getName(m.sender)
-let age = Math.floor(Math.random() * 41)
-age = parseInt(age)
-user.name = name.trim()
-user.age = age
-user.regTime = + new Date
-user.registered = true
-let sn = createHash('md5').update(m.sender).digest('hex')
-let caption = `┏┅ ━━━━━━━━━━━━ ┅ ━
+let Reg = /\|?(.*)([.|] *?)([0-9]*)$/i
+let handler = async function (m, { text, usedPrefix, command }) {
+	function pickRandom(list) {
+  return list[Math.floor(Math.random() * list.length)]
+}
+	let namae = conn.getName(m.sender)
+	const sections = [
+	{
+	title: "Selecciona Tu Edad Aqui!",
+	rows: [
+	    {title: "Años Random", rowId: '.reg ' + namae + '.' + pickRandom(['30','29','28','27','26','25','24','23','22','21','20','19','18','17','16','15','14','13','12','11','10','9'])}
+	]
+    },
+    {
+	title: "ADULTO",
+	rows: [
+	    {title: "30 Años", rowId: '.reg ' + namae + '.30 '},
+	    {title: "29 Años", rowId: '.reg ' + namae + '.29 '},
+	    {title: "28 Años", rowId: '.reg ' + namae + '.28 '},
+	{title: "27 Años", rowId: '.reg ' + namae + '.27 '},
+	{title: "26 Años", rowId: '.reg ' + namae + '.26 '},
+	{title: "25 Años", rowId: '.reg ' + namae + '.25 '},
+	{title: "24 Años", rowId: '.reg ' + namae + '.24 '},
+	{title: "23 Años", rowId: '.reg ' + namae + '.23 '},
+	{title: "22 Años", rowId: '.reg ' + namae + '.22 '},
+	{title: "21 Años", rowId: '.reg ' + namae + '.21 '}
+	]
+    },
+    {
+	title: "JOVEN",
+	rows: [
+	    {title: "20 Años", rowId: '.reg ' + namae + '.20 '},
+	    {title: "19 Años", rowId: '.reg ' + namae + '.19 '},
+	    {title: "18 Años", rowId: '.reg ' + namae + '.18 '},
+	{title: "17 Años", rowId: '.reg ' + namae + '.17 '},
+	{title: "16 Años", rowId: '.reg ' + namae + '.16 '},
+	{title: "15 Años", rowId: '.reg ' + namae + '.15 '},
+	{title: "14 Años", rowId: '.reg ' + namae + '.14 '},
+	{title: "13 Años", rowId: '.reg ' + namae + '.13 '},
+	{title: "12 Años", rowId: '.reg ' + namae + '.12 '},
+	{title: "11 Años", rowId: '.reg ' + namae + '.11 '},
+	{title: "10 Años", rowId: '.reg ' + namae + '.10 '},
+	{title: "9 Años", rowId: '.reg ' + namae + '.9 '}
+	]
+    },
+]
+
+const listMessage = {
+  text: `Por favor selecciona tu edad pulsando el boton...\n*Tu nombre:* ${conn.getName(m.sender)}\nQuieres poner otro mombre? Escribe *${usedPrefix + command} TuNombre.TusAños*`,
+  footer: global.wm,
+  title: "━━━━「 Registro 」━━━━",
+  buttonText: "Pulsa Aqui!",
+  sections
+}
+
+  let user = global.db.data.users[m.sender]
+  if (user.registered === true) throw `[💬] Ya estás registrado\nQuieres volver a registrarte? *${usedPrefix}unreg <NUMERO SN>*`
+  if (!Reg.test(text)) return conn.sendMessage(m.chat, listMessage, m)
+  let [_, name, splitter, age] = text.match(Reg)
+  if (!name) throw 'El nombre no puede estar vacío (Letras)'
+  if (!age) throw 'La edad no puede estar vacía (Numeros)'
+  age = parseInt(age)
+  if (age > 30) throw 'Que viejo (。-`ω´-)'
+  if (age < 5) throw 'Los bebes no saben escribir ._.'
+  user.name = name.trim()
+  user.age = age
+  user.regTime = + new Date
+  user.registered = true
+  let sn = createHash('md5').update(m.sender).digest('hex')
+  let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : m.fromMe ? conn.user.jid : m.sender
+  m.reply(`
+┏┅ ━━━━━━━━━━━━ ┅ ━
 ┇「 𝙑𝙚𝙧𝙞𝙛𝙞𝙘𝙖𝙧 」
 ┣┅ ━━━━━━━━━━━━ ┅ ━
 ┃ *𝑵𝑶𝑴𝑩𝑹𝑬:* ${name}
@@ -22,13 +81,12 @@ let caption = `┏┅ ━━━━━━━━━━━━ ┅ ━
 ┃ *$2 𝑫𝑰𝑨𝑴𝑨𝑵𝑻𝑬*
 ┃ *𝙉𝙪́𝙢𝙚𝙧𝙤 𝙙𝙚 𝙨𝙚𝙧𝙞𝙚:* 
 ┃ ${sn}
-┗┅ ━━━━━━━━━━━━ ┅ ━`
-let author = global.author
-conn.sendButton(m.chat, caption, `¡𝒕𝒖 𝒏𝒖́𝒎𝒆𝒓𝒐 𝒅𝒆 𝒔𝒆𝒓𝒊𝒆 𝒕𝒆 𝒔𝒆𝒓𝒗𝒊𝒓𝒂́ 𝒆𝒏 𝒄𝒂𝒔𝒐 𝒒𝒖𝒆 𝒒𝒖𝒊𝒆𝒓𝒂 𝒃𝒐𝒓𝒓𝒂𝒓 𝒔𝒖 𝒓𝒆𝒈𝒊𝒔𝒕𝒓𝒐!\n${author}`, [['¡¡𝑨𝒉𝒐𝒓𝒂 𝒆𝒔𝒕𝒐𝒚 𝒗𝒆𝒓𝒊𝒇𝒊𝒄𝒂𝒅𝒐/𝒂 ✅!!', '/profile']], m)
-global.db.data.users[m.sender].money += 10000
-global.db.data.users[m.sender].exp += 10000
+┗┅ ━━━━━━━━━━━━ ┅ ━
+`.trim())
 }
-handler.help = ['verificar']
+handler.help = ['daftar', 'register'].map(v => v + ' <nama>.<umur>')
 handler.tags = ['xp']
-handler.command = /^(verify|register|verificar|reg|registrar)$/i
+
+handler.command = /^(verify|verificar|registrar|reg(ister)?)$/i
+
 export default handler
