@@ -9,11 +9,11 @@ let str = `
 ➥ ${vs}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ✅ ➤ 𝙂𝙧𝙪𝙥𝙤𝙨 𝙤𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 𝙙𝙚𝙡 𝘽𝙤𝙩:
-🐈 *${nn}*\n
+1) *${nn}*\n
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-🐈 *${nnn}*\n
+2) *${nnn}*\n
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-*https://chat.whatsapp.com/Byyrc8RJnUkJw6vvUgsbDF*
+3) *https://chat.whatsapp.com/Byyrc8RJnUkJw6vvUgsbDF*
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 *grupo del ayuda sobre el bot*
 *https://chat.whatsapp.com/LtVR4yswTiSJwmBxkaWNtY*
