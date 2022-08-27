@@ -8,46 +8,29 @@ let str = `
 𓃠 *Versión de ${gt}*
 ➥ ${vs}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-✅ 𝙂𝙍𝙐𝙋𝙊 𝙊𝙁𝙄𝘾𝙄𝘼𝙇 ${gt}
+✅ ➤ 𝙂𝙧𝙪𝙥𝙤𝙨 𝙤𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 𝙙𝙚𝙡 𝘽𝙤𝙩:
 🐈 *${nn}*\n
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 🐈 *${nnn}*\n
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-😊 ➤ 𝙂𝙧𝙪𝙥𝙤𝙨 𝙤𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 𝙙𝙚𝙡 𝘽𝙤𝙩:
-https://chat.whatsapp.com/CFSvSOGCnuL3vk4Js1DWI2
-
-https://chat.whatsapp.com/DbXBmsydWBE1ZN3EoY0hRs
-
-https://chat.whatsapp.com/GKdDtQKWP5LCgpbzucz6kt
-
+*https://chat.whatsapp.com/Byyrc8RJnUkJw6vvUgsbDF*
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+*grupo del ayuda sobre el bot*
+*https://chat.whatsapp.com/LtVR4yswTiSJwmBxkaWNtY*
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
  𝙜𝙧𝙪𝙥𝙤 𝙙𝙚 𝙖𝙢𝙞𝙨𝙩𝙖𝙙𝙚𝙨 𝙙𝙤𝙣𝙙𝙚 𝙚𝙨𝙩𝙖 𝙚𝙡 𝙗𝙤𝙩
-*bot princess Kiara* 
-https://chat.whatsapp.com/HjXlhWfX1ECG11Lp5gH3Q2
 
-*ஓீ͜ঔৣ͡🍒𝐥𝐚 𝐛𝐨𝐭 𝐜𝐞𝐫𝐞𝐳𝐚ঔৣ͡ஓ*
+*ஓீ͜ঔৣ͡🍒𝑪𝑬̈𝑹𝑬𝒁𝑨̈.𝑩Ø𝑻🔥ঔৣ͡ஓ*
 https://chat.whatsapp.com/DCJclB8oBAPIAoleUtNEaN
 
-*ℂ𝔸𝕊𝕋𝕀ℕ𝔾 𝔻𝔼 𝕍𝕆ℤ (𝔹𝕆𝕋)😎👌*
-https://chat.whatsapp.com/BMqdPDto6Uz5tFMMJVTrlO
-
-*amistad y los q pinte*
-https://chat.whatsapp.com/GPXwomXZIGn9rQsHZtPeAv
-
-*᳄⃢🇦🇴‐⃬⃟ʟɪʟ ᴘΣᵉp🪦⃤⃢🏴‍☠️࿐*
-https://chat.whatsapp.com/LPGubFHHuXuCuMoyQjQ8iZ
-
-*꧁⁣༒𓆩Aᴹᴵᴳᴼˢ Cᴴᴬᵀˢ Y Aᴾᴼᴿᵀᴱs*
+*꧁⁣𓆩Aᴹᴵᴳᴼˢ Cᴴᴬᵀˢ Y Aᴾᴼᴿᵀᴱ*
 https://chat.whatsapp.com/JZaD3sfNoVW4JvaoQ4uVwF
 
-*◄≛⁆✤🍒A͍M͍I͍S͍T͍A͍D͍E͍S͍💜✠*
-https://chat.whatsapp.com/KWlIddXWAsX1z98HqYyfco
+*꧁⃢⃟҉💫🌺ঔঔ𝔼ℕ𝕃𝔸ℂ𝔼𝕊 𝕃𝔸 𝕁𝔼𝔽𝔸✨*
+https://chat.whatsapp.com/FGHNUsZowTFJRAqsogz23o
 
- 𝙜𝙧𝙪𝙥𝙤𝙨 𝙙𝙚 𝙚𝙣𝙡𝙖𝙘𝙚 𝙖𝙘𝙖 𝙥𝙤𝙙𝙚𝙧 𝙚𝙣𝙘𝙤𝙣𝙩𝙧𝙖𝙧 𝙜𝙧𝙪𝙥𝙤 𝙮 𝙢𝙖𝙣𝙙𝙖 𝙩𝙪 𝙚𝙣𝙡𝙖𝙘𝙚
-*꧁⃢⃟҉💫🇭🇳🌺ঔENLACES LA JEFA 🇭🇳*
-https://chat.whatsapp.com/CR8piZaPIHYGwKoWrWnMSs
-
-*│🌷.ꦿ│𓏲⊹𝐀𝐌𝐈𝐒𝐓𝐀𝐃𝐄𝐒 𖥨⊹*
-https://chat.whatsapp.com/HTeeFKFAHsP1b0YUm5eDRm\n
+*℻⃟⚔️𝐿𝑒𝑔𝑖ó𝑛 𝐴𝑛𝑖𝑚𝑒⻝ღ*
+https://chat.whatsapp.com/KbDiJuy4qLAIWSchpj3jCa\n
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
  𝙨𝙞 𝙦𝙪𝙞𝙚𝙧𝙚 𝙦𝙪𝙚 𝙩𝙪 𝙜𝙧𝙪𝙥𝙤 𝙖𝙥𝙖𝙧𝙚𝙯𝙘𝙖 𝙖𝙘𝙖 𝙝𝙖𝙗𝙡𝙖 𝙘𝙤𝙣 𝙚𝙡 𝙖𝙙𝙢𝙞𝙣 𝙤𝙛𝙘 𝙙𝙚𝙡 𝙗𝙤𝙩
 `.trim()
