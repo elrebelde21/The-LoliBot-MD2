@@ -90,7 +90,7 @@ global.gatabot = md
 global.nn = 'https://chat.whatsapp.com/Lus9S60MABnH9lF4Wf2T7k'
 global.nngrupo = nn
 
-global.nnn = 'https://chat.whatsapp.com/JQ3rJOqDDPG8PvCYPH6EXz'
+global.nnn = 'https://chat.whatsapp.com/Ef6oVLqkDQvBZItFFJ0wLh'
 global.nnngrupo = nnn
 
 global.paypal = 'https://www.instagram.com'
