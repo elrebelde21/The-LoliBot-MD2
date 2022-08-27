@@ -47,7 +47,7 @@ let handler = async function (m, { text, usedPrefix, command }) {
 ]
 
 const listMessage = {
-  text: `Por favor selecciona tu edad pulsando el boton...\n*Tu nombre:* ${conn.getName(m.sender)}\nQuieres poner otro mombre? Escribe *${usedPrefix + command} TuNombre.TusAños*`,
+  text: `Por favor selecciona tu edad pulsando el boton...\n*Tu nombre:* ${conn.getName(m.sender)}\nQuieres poner otro mombre? Escribe *${usedPrefix + command} Nombre.edad.*\n\n*ejemplo:* \n *${usedPrefix + command} lolibot.20*\n`,
   footer: global.wm,
   title: "━━━━「 Registro 」━━━━",
   buttonText: "Pulsa Aqui!",

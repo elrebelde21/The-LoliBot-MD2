@@ -12,4 +12,3 @@ handler.command = /^sfp|savep$/i
 
 handler.rowner = true
 export default handler
- 

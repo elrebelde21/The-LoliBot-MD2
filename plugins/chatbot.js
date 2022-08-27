@@ -12,16 +12,6 @@ if (/^e$/i.test(m.text) ) { //sem prefixo
 
 }
 
-if (/^mande porno|porno$/i.test(m.text) ) { //sem prefixo
-    conn.reply(m.chat, `𝑨𝒔𝒊́ 𝒒𝒖𝒆 𝒒𝒖𝒊𝒆𝒓𝒂 𝒉𝒂𝒈𝒂 𝒑𝒖𝒕𝒊𝒕𝒐 🧐`, m) //wm, null, [['Menu', '#menu']], m) botones :V
-
-}
-
-if (/^The lolibot-MD|lolibot$/i.test(m.text) ) { //sem prefixo
-    conn.reply(m.chat, `𝑨𝒒𝒖𝒊́ 𝒆𝒔𝒕𝒐𝒚 😎`, m) //wm, null, [['Menu', '#menu']], m) botones :V
-
-}
-
 if (/^5492266466080|972529277406$/i.test(m.text) ) { //sem prefixo
     conn.reply(m.chat, `[❗] 𝑵𝒐 𝒆𝒕𝒊𝒒𝒖𝒆𝒕𝒆𝒔  [❗] 𝑨 𝒎𝒊 𝒄𝒓𝒆𝒂𝒅𝒐𝒓 𝒔𝒊 𝒕𝒊𝒆𝒏𝒆 𝒂𝒍𝒈𝒖𝒏𝒂 𝒄𝒐𝒏𝒔𝒖𝒍𝒕𝒂 𝒐 𝒅𝒖𝒅𝒂, 𝒉𝒂𝒃𝒍𝒂𝒎𝒆 𝒆𝒍 𝒑𝒗 𝒔𝒐𝒍𝒐 𝒑𝒐𝒓 𝒕𝒆𝒎𝒂 𝒅𝒆 𝒃𝒐𝒕`, m) //wm, null, [['Menu', '#menu']], m) botones :V
 
