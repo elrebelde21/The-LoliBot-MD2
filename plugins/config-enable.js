@@ -15,7 +15,7 @@ rows: [
 {title: "👾 | 𝙰𝚄𝚃𝙾𝚂𝚃𝙸𝙲𝙺𝙴𝚁", description: "𝚃𝙾𝙳𝙰𝚂 𝙻𝙰𝚂 𝙸𝙼𝙰𝙶𝙴𝙽𝙴𝚂, 𝚅𝙸𝙳𝙴𝙾𝚂 𝙾 𝙴𝙽𝙻𝙰𝙲𝙴𝚂 𝙴𝙽𝚅𝙸𝙰𝙳𝙾𝚂 𝚂𝙴 𝙲𝙾𝙽𝚅𝙴𝚁𝚃𝙴𝙽 𝙴𝙽 𝚂𝚃𝙸𝙲𝙺𝙴𝚁", rowId: `${usedPrefix + command} autosticker`},
 {title: "💬 | 𝙿𝙲𝙾𝙽𝙻𝚈", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙲𝙷𝙰𝚃 𝙿𝚁𝙸𝚅𝙰𝙳𝙾", rowId: `${usedPrefix + command} pconly`},
 {title: "🏢 | 𝙶𝙲𝙾𝙽𝙻𝚈", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix + command} gconly`},
-{title: "👽 | Anti Trabas",description: "𝙲𝙾𝙽 𝙴𝚂𝚃𝙰 𝙾𝙿𝙲𝙸𝙾𝙽 𝙰𝙲𝚃𝙸𝚅𝙰𝙳𝙰 𝙲𝚄𝙰𝙽𝙳𝙾 𝙰𝙻𝙶𝚄𝙸𝙴𝙽 𝙼𝙰𝙽𝙳𝙴 𝚃𝚁𝙰𝙱𝙰𝚂 𝚂𝙴𝚁𝙰 𝙴𝚇𝙿𝚄𝙻𝚂𝙰𝙳𝙾 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix + command} antivirtex`},
+{title: "🕸️ | 𝙰𝙽𝚃𝙸𝚃𝚁𝙰𝙱𝙰𝚂", description: "𝙰𝙲𝚃𝙸𝚅𝙰 𝙾 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰 𝙴𝙻 𝙰𝙽𝚃𝙸 𝚃𝚁𝙰𝙱𝙰𝚂", rowId: `${usedPrefix + command} antitraba`},
 {title: "🐈 𝘽𝙊𝙏 𝙏𝙀𝙈𝙋𝙊𝙍𝘼𝙇 ", description: "𝙋𝙖𝙧𝙖 𝙥𝙚𝙧𝙢𝙞𝙩𝙞𝙧 𝙤 𝙣𝙤 𝙦𝙪𝙚 𝙚𝙡 𝙗𝙤𝙩 𝙨𝙚 𝙪𝙣𝙖 𝙩𝙚𝙢𝙥𝙤𝙧𝙖𝙡𝙢𝙚𝙣𝙩𝙚 𝙚𝙣 𝙂𝙧𝙪𝙥𝙤𝙨", rowId: `${usedPrefix + command} temporal`},
 {title: "🆙 𝘼𝙐𝙏𝙊𝙇𝙀𝙑𝙀𝙇𝙐𝙋", description: "𝙎𝙪𝙗𝙚 𝙙𝙚 𝙣𝙞𝙫𝙚𝙡 𝘼𝙪𝙩𝙤𝙢á𝙩𝙞𝙘𝙖𝙢𝙚𝙣𝙩𝙚 𝙚𝙣 𝘾𝙝𝙖𝙩𝙨", rowId: `${usedPrefix + command} autolevelup`},
 {title: "❌ | 𝙰𝙽𝚃𝙸𝚅𝙸𝙴𝚆𝙾𝙽𝙲𝙴", description: "𝙰𝙲𝚃𝙸𝚅𝙰 𝙾 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰 𝙴𝙻 𝙰𝙽𝚃𝙸 𝚅𝙴𝚁 𝚄𝙽𝙰 𝚂𝙾𝙻𝙰 𝚅𝙴𝚉", rowId: `${usedPrefix + command} antiviewonce`},
@@ -220,6 +220,14 @@ break
 //}}
 //chat.temporal = isEnable          
 //break
+case 'antitraba':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.antiTraba = isEnable
+break
 case 'temporal':
 isAll = true
 if (!isOwner) {
@@ -277,7 +285,19 @@ throw false
 }
 bot.antiPrivate = isEnable
 break
-case 'antitoxic':
+case 'anti+212':
+      case 'anti212':
+      case 'antiarab':
+      case 'antiarabes':
+      if (m.isGroup) {
+        if (!(isAdmin || isOwner)) {
+          global.dfail('admin', m, conn)
+          throw false
+        }
+      }
+      chat.antiArab = isEnable
+break
+case 'antitoxic': 
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
