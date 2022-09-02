@@ -288,6 +288,10 @@ export async function handler(chatUpdate) {
                     chat.antiLink2 = false
                 if (!('viewonce' in chat))
                     chat.viewonce = false
+                if (!('antiTraba' in chat))
+                    chat.antiTraba = false
+                if (!isNumber(chat.expired))
+                    chat.expired = 0
                 if (!('antiToxic' in chat))
                     chat.antiToxic = false
                 if (!isNumber(chat.expired))
@@ -310,6 +314,7 @@ export async function handler(chatUpdate) {
                     antiLink: false,
                     antiLink2: false,
                     viewonce: false,
+                    antiTraba: false,
                     antiToxic: false,
                     expired: 0,
                 }
@@ -319,6 +324,7 @@ export async function handler(chatUpdate) {
                 if (!('self' in settings)) settings.self = false
                 if (!('autoread' in settings)) settings.autoread = false
                 if (!('restrict' in settings)) settings.restrict = false
+                if (!('antiCall' in settings)) settings.antiCall = false
 		if (!('temporal' in settings)) settings.temporal = false
             } else global.db.data.settings[this.user.jid] = {
                 self: false,
@@ -667,14 +673,16 @@ export async function participantsUpdate({ id, participants, action }) {
                         pp = await this.profilePictureUrl(user, 'image')
                     } catch (e) {
                     } finally {
-                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝙂𝙧𝙪𝙥𝙤 𝙂𝙚𝙣𝙞𝙖𝙡*') :
-                            (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', await this.getName(user)) //.replace('@user', '@' + user.split('@')[0])
-                            let apii = await this.getFile(pp)
-                            this.sendHydrated(id, text, groupMetadata.subject, apii.data, 'https://github.com/elrebelde21/The-LoliBot-MD', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
-                            [(action == 'add' ? '𝑩𝒊𝒆𝒏𝒗𝒆𝒏𝒊𝒅𝒐 🥳' : '𝑺𝒆 𝒇𝒖𝒆 𝒖𝒏 𝒓𝒂𝒏𝒅𝒐𝒘🧐'), '.s'],    
-                            ['𝑴𝒆𝒏𝒖', '/menu']
-                            ], '', { mentions: [user]})
-                           }
+                    let apii = await this.getFile(pp)
+                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝚂𝙸𝙽 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽*') :
+                              (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
+                        
+let ftroli = { key: { fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "6289523258649-1604595598@g.us" }, "message": { orderMessage: { itemCount: 6546464643, status: 200, thumbnail: imagen1, surface: 200, message: wm, orderTitle: wm, sellerJid: '0@s.whatsapp.net' }}, contextInfo: { "forwardingScore": 999, "isForwarded": true}, sendEphemeral: true}   
+
+this.sendButton(id, text, groupMetadata.subject, apii.data, [[(action == 'add' ? '🥳 𝑩𝒊𝒆𝒏𝒗𝒆𝒏𝒊𝒅𝒐 🥳' : '𝑺𝒆 𝒇𝒖𝒆 𝒖𝒏 𝒓𝒂𝒏𝒅𝒐𝒘 🧐'), (action == 'add' ? '#welcomegc' : '#byegc')], ['♦ 𝑴𝒆𝒏𝒖 ♦', `#menu`]], ftroli, {mentions: this.parseMention(text)})
+                
+/* this.sendFile(id, apii.data, 'pp.jpg', text, null, false, { mentions: [user] }) */
+                   }
                 }
             }
             break
@@ -712,6 +720,21 @@ export async function groupsUpdate(groupsUpdate) {
         if (groupUpdate.revoke) text = (chats.sRevoke || this.sRevoke || conn.sRevoke || '```Group link has been changed to```\n@revoke').replace('@revoke', groupUpdate.revoke)
         if (!text) continue
         await this.sendMessage(id, { text, mentions: this.parseMention(text) })
+    }
+}
+
+export async function callUpdate(callUpdate) {
+    let isAnticall = global.db.data.settings[this.user.jid].antiCall
+    if (!isAnticall) return
+    for (let nk of callUpdate) {
+    if (nk.isGroup == false) {
+    if (nk.status == "offer") {
+    let callmsg = await this.reply(nk.from, `Hola *@${nk.from.split('@')[0]}*, las ${nk.isVideo ? 'videollamadas' : 'llamadas'} no están permitidas, serás bloqueado.\n-\nSi accidentalmente llamaste póngase en contacto con mi creador para que te desbloquee!`, false, { mentions: [nk.from] })
+    //let data = global.owner.filter(([id, isCreator]) => id && isCreator)
+    //await this.sendContact(nk.from, data.map(([id, name]) => [id, name]), false, { quoted: callmsg })
+    await this.updateBlockStatus(nk.from, 'block')
+    }
+    }
     }
 }
 
