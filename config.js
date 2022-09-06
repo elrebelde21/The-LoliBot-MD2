@@ -89,7 +89,7 @@ global.gatabot = md
 global.nn = 'https://chat.whatsapp.com/Lus9S60MABnH9lF4Wf2T7k'
 global.nngrupo = nn
 
-global.nnn = 'https://chat.whatsapp.com/JQ3rJOqDDPG8PvCYPH6EXz'
+global.nnn = 'https://chat.whatsapp.com/Ef6oVLqkDQvBZItFFJ0wLh'
 global.nnngrupo = nnn
 
 global.paypal = 'https://www.instagram.com'
@@ -153,6 +153,6 @@ global.rpg = {
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => {
   unwatchFile(file)
-  console.log(chalk.redBright("Update 'config.js'"))
-  import(`${file}?update=${Date.now()}`)
+  console.log(chalk.redBright("se actualizo 'config.js'"))
+  import(`${file}?actualizo=${Date.now()}`)
 })
