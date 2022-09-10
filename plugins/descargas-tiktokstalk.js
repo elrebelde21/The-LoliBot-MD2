@@ -1,0 +1,52 @@
+import fetch from 'node-fetch'
+let handler = async(m, { conn, text, command, usedPrefix }) => {
+if (!text) return conn.reply(m.chat, `${mg}𝙀𝙎𝘾𝙍𝙄𝘽𝘼 𝙀𝙇 𝙉𝙊𝙈𝘽𝙍𝙀 𝘿𝙀 𝙐𝙎𝙐𝘼𝙍𝙄𝙊 𝘿𝙀 𝙏𝙄𝙆𝙏𝙊𝙆 𝙎𝙄𝙉 𝙐𝙎𝘼𝙍 "@"\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} mundo_dos_animes81*`, m)
+try {
+let res = await fetch(`https://api.lolhuman.xyz/api/stalktiktok/${text}?apikey=9b817532fadff8fc7cb86862`)
+let res2 = `https://api.lolhuman.xyz/api/pptiktok/${text}?apikey=9b817532fadff8fc7cb86862`
+let json = await res.json()
+if (res.status !== 200) throw await res.text()
+if (!json.status) throw json
+let thumb = await (await fetch(json.result.user_picture)).buffer()
+let gata = `
+👤 𝙐𝙎𝙐𝘼𝙍𝙄𝙊(𝘼)
+${json.result.username}
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+✨ 𝙉𝙊𝙈𝘽𝙍𝙀
+${json.result.nickname}
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+✅ 𝙎𝙀𝙂𝙐𝙄𝘿𝙊𝙍𝙀𝙎
+${json.result.followers}
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+❇️ 𝙎𝙀𝙂𝙐𝙄𝘿𝙊𝙎
+${json.result.followings}
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+❤️ 𝙈𝙀 𝙂𝙐𝙎𝙏𝘼
+${json.result.likes}
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+🎁 𝙋𝙐𝘽𝙇𝙄𝘾𝘼𝘾𝙄𝙊𝙉𝙀𝙎
+${json.result.video}
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+👀 𝘽𝙄𝙊𝙂𝙍𝘼𝙁Í𝘼 | 𝘿𝙀𝙎𝘾𝙍𝙄𝙋𝙏𝙄𝙊𝙉
+${json.result.bio}
+`.trim()
+await conn.sendFile(m.chat, res2, 'error.jpg', gata, m, false)
+} catch (e) {
+throw `${fg}𝙉𝙊 𝙎𝙀 𝙀𝙉𝘾𝙊𝙉𝙏𝙍𝙊 𝙀𝙇 𝙉𝙊𝙈𝘽𝙍𝙀 𝘿𝙀 𝙐𝙎𝙐𝘼𝙍𝙄𝙊.`
+}
+/*
+let info = `💖 𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙩𝙚 𝙨𝙤𝙗𝙧𝙚 𝙡𝙖𝙨 𝙉𝙤𝙫𝙚𝙙𝙖𝙙𝙚𝙨 𝙮 𝙧𝙚𝙘𝙪𝙚𝙧𝙙𝙖 𝙩𝙚𝙣𝙚𝙧 𝙡𝙖 𝙪𝙡𝙩𝙞𝙢𝙖 𝙫𝙚𝙧𝙨𝙞𝙤𝙣.
+  `.trim()
+  
+await conn.sendHydrated(m.chat, info, wm, null, ig, '', null, null, [
+['𝙈𝙚𝙣𝙪 𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙨 🌀', '#descargasmenu'],
+['𝙈𝙚𝙣𝙪 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙤 ✨', '.allmenu'],
+['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu']
+], m,)  
+*/
+}
+handler.help = ['tiktokstalk'].map(v => v + ' <username>')
+handler.tags = ['stalk']
+handler.command = /^(tiktokstalk|ttstalk)$/i
+handler.exp = 48
+export default handler
