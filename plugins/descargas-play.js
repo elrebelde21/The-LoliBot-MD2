@@ -12,9 +12,9 @@ conn.sendHydrated(m.chat, `
 📆 *𝗣𝘂𝗯𝗹𝗶𝗰𝗮𝗰𝗶𝗼𝗻:* ${publishedTime}
 ⌚ *𝗗𝘂𝗿𝗮𝗰𝗶𝗼𝗻:* ${durationH}
 👀 *𝗩𝗶𝘀𝘁𝗮𝘀:* ${viewH}
-`.trim(), author, thumbnail, `${url}`, '𝚄𝚁𝙻', null, null, [
-['𝐀𝐔𝐃𝐈𝐎', `${usedPrefix}yta ${url} yes`],
-['𝐕𝐈𝐃𝐄𝐎', `${usedPrefix}ytv ${url} yes`]
+`.trim(), author, thumbnail, '', '', null, null, [
+    ['𝐀𝐔𝐃𝐈𝐎', `${usedPrefix}yta ${url}`],
+    ['𝐕𝐈𝐃𝐄𝐎', `${usedPrefix}ytv ${url}`],
 ], m)
 }catch(e){
 m.reply('*[❗𝙄𝙣𝙛𝙤❗] 𝑬𝒓𝒓𝒐𝒓, 𝒑𝒐𝒓 𝒇𝒂𝒗𝒐𝒓 𝒗𝒖𝒆𝒍𝒗𝒂 𝒂 𝒊𝒏𝒕𝒆𝒏𝒕𝒂𝒓𝒍𝒐')
