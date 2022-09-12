@@ -24,7 +24,8 @@ rows: [
 {title: "🎠 𝙎𝙩𝙞𝙘𝙠𝙚𝙧𝙨", description: "𝑷𝒂𝒓𝒂 𝑨𝒄𝒕𝒊𝒗𝒂/𝒅𝒆𝒔𝒂𝒄𝒕𝒊𝒗𝒂 𝑳𝒐𝒔 𝒔𝒕𝒊𝒄𝒌𝒆𝒓𝒔", rowId: `${usedPrefix + command} stickers`},
 {title: "🤬 | 𝙰𝙽𝚃𝙸𝚃𝙾𝚇𝙸𝙲", description: "𝙰𝙲𝚃𝙸𝚅𝙰 𝙾 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰 𝙴𝙻 𝙰𝙽𝚃𝙸 𝙼𝙰𝙻𝙰 𝙿𝙰𝙻𝙰𝙱𝚁𝙰", rowId: `${usedPrefix + command} antitoxic`},
 {title: "🕸️ | 𝙰𝙽𝚃𝙸𝚃𝚁𝙰𝙱𝙰𝚂", description: "𝙰𝙲𝚃𝙸𝚅𝙰 𝙾 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰 𝙴𝙻 𝙰𝙽𝚃𝙸 𝚃𝚁𝙰𝙱𝙰𝚂", rowId: `${usedPrefix + command} antitraba`},
-{title: "👎🏻 | 𝙰𝙽𝚃𝙸𝙰𝚁𝙰𝙱𝙴𝚂", description: "𝙰𝙻 𝙴𝙽𝚅𝙸𝙰𝚁 𝙼𝙴𝙽𝚂𝙰𝙹𝙴 𝚄𝙽 𝙽𝚄𝙼𝙴𝚁𝙾 𝙰𝚁𝙰𝙱𝙴, 𝙴𝙻 𝙱𝙾𝚃 𝙻𝙾 𝚂𝙰𝙲𝙰", rowId: `${usedPrefix + command} antifakes`},  
+{title: "🤑 | chatbot", description: "para habla conmigo", rowId: `${usedPrefix + command} simi`},
+{title: "👎🏻 | 𝙰𝙽𝚃𝙸fakes", description: "𝙰𝙻 𝙴𝙽𝚅𝙸𝙰𝚁 𝙼𝙴𝙽𝚂𝙰𝙹𝙴 𝚄𝙽 𝙽𝚄𝙼𝙴𝚁𝙾 𝙰𝚁𝙰𝙱𝙴, 𝙴𝙻 𝙱𝙾𝚃 𝙻𝙾 𝚂𝙰𝙲𝙰", rowId: `${usedPrefix + command} antifakes`},  
 ]}, ]
 //let name = await conn.getName(m.sender)
 const listMessage = {
@@ -279,6 +280,14 @@ global.dfail('admin', m, conn)
 throw false
 }}
 chat.antiTraba = isEnable
+break
+case 'simi':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.simi = isEnable
 break
 case 'antifakes':
 if (m.isGroup) {
