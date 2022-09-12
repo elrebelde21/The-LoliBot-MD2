@@ -91,7 +91,6 @@ let str = `
 ┣ ඬ⃟ℹ️ _${usedPrefix}estado_
 ┣ ඬ⃟ℹ️ _${usedPrefix}ping_
 ┣ ඬ⃟ℹ️ _${usedPrefix}infomenu
-┣ ඬ⃟ℹ️ _${usedPrefix}menusimple
 ┣ ඬ⃟ℹ️ _${usedPrefix}juegosmenu
 ┣ ඬ⃟ℹ️ _${usedPrefix}grupomenu
 ┣ ඬ⃟ℹ️ _${usedPrefix}descargasmenu
@@ -112,7 +111,7 @@ let str = `
 ┃ *<UNE UN BOT A TU GRUPO/>*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ┣ ඬ⃟🤖 _${usedPrefix}join *link del grupo*_ 
-┣ ඬ⃟🤖 _${usedPrefix}bottemporal *link de grupo*
+┣ ඬ⃟🤖 _${usedPrefix}botemporal *link de grupo*
 ┗━━━━━━━━━━━━━┛
 ┏━━━━━━━━━━━━━┓
 ┃ *<TOPS/>*
