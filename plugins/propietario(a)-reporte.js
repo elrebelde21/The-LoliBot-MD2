@@ -3,11 +3,11 @@ if (!text) throw `${mg}*𝙀𝙨𝙘𝙧𝙞𝙗𝙖 𝙚𝙡 𝙧𝙚𝙥𝙤�
 if (text.length < 8) throw `${fg} ✨ *Mínimo 10 caracteres para hacer El Reporte..*`
 if (text.length > 1000) throw `${fg} 😼 *Máximo 1000 caracteres para hacer El Reporte.*`
 let teks = `*╭━━[ 𝙍𝙀𝙋𝙊𝙍𝙏𝙀 ]━━━⬣*\n*┃*\n*┃* *𝙉𝙐𝙈𝙀𝙍𝙊*\n┃ ✦ Wa.me/${m.sender.split`@`[0]}\n*┃*\n*┃* *𝙈𝙀𝙉𝙎𝘼𝙅𝙀*\n*┃* ✦ ${text}\n*┃*\n*╰━━━━━━━━━━━━━━━━━━⬣*`
-conn.reply('593968585383@s.whatsapp.net', m.quoted ? teks + m.quoted.text : teks, null, {
+conn.reply('5492266466080@s.whatsapp.net', m.quoted ? teks + m.quoted.text : teks, null, {
 contextInfo: {
 mentionedJid: [m.sender]
 }})
-  m.reply(`╰⊱💚⊱ *𝙀́𝙓𝙄𝙏𝙊* ⊱💚⊱╮\n\n*El reporte ha sido enviado a mí Creadora. Tendrá una respuesta pronto. De ser Falso será Ignorado el reporte.*`)
+  m.reply(`╰⊱💚⊱ *𝙀́𝙓𝙄𝙏𝙊* ⊱💚⊱╮\n\n*El reporte ha sido enviado a mí Creador. Tendrá una respuesta pronto. De ser Falso será Ignorado el reporte.*`)
 
 }
 
