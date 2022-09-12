@@ -38,7 +38,7 @@ rows: [
       {title: "🔊 𝙈𝙚𝙣𝙪 𝙙𝙚 𝙖𝙪𝙙𝙞𝙤𝙨 🔊", description: null, rowId: `${usedPrefix}audios`},
       {title: "🧰 𝙈𝙚𝙣𝙪 𝙢𝙤𝙙𝙞𝙛𝙞𝙘𝙖𝙧 𝙙𝙚 𝙖𝙪𝙙𝙞𝙤 🧰", description: null, rowId: `${usedPrefix}audioefectomenu`},
       {title: "🔰 𝙈𝙚𝙣𝙪 𝙙𝙚 𝙜𝙧𝙪𝙥𝙤 🔰", description: null, rowId: `${usedPrefix}grupomenu`},
-      {title: "⚙️ 𝘾𝙚𝙣𝙩𝙧𝙤 𝙙𝙚 𝙘𝙤𝙣𝙛𝙞𝙜𝙪𝙧𝙖𝙘𝙞𝙤́𝙣 ⚙️", description: null, rowId: `${usedPrefix}on`}, 
+      {title: "⚙️ 𝘾𝙚𝙣𝙩𝙧𝙤 𝙙𝙚 𝙘𝙤𝙣𝙛𝙞𝙜𝙪𝙧𝙖𝙘𝙞𝙤́𝙣 ⚙️", description: null, rowId: `${usedPrefix}enable`}, 
       {title: "🎈 𝙈𝙚𝙣𝙪 𝙨𝙩𝙞𝙘𝙠𝙚𝙧𝙨 𝙮 𝙛𝙞𝙡𝙩𝙧𝙤 🎈", description: null, rowId: `${usedPrefix}stickermenu`},
       {title: "🛰️ 𝙈𝙚𝙣𝙪 𝙘𝙤𝙣𝙫𝙚𝙧𝙩𝙞𝙙𝙤 🛰️", description: null, rowId: `${usedPrefix}convertidormenu`},
       {title: "✨ 𝙈𝙚𝙣𝙪 𝙚𝙛𝙚𝙘𝙩𝙤 𝙮 𝙡𝙤𝙜𝙤𝙨 ✨", description: null, rowId: `${usedPrefix}makermenu`}, 
