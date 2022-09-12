@@ -898,6 +898,7 @@ export async function handler(chatUpdate) {
 		if (!('antiTraba' in chat))
                     chat.antiTraba = false   
                 if (!('antifakes' in chat)) chat.antifakes = false
+                if (!('simi' in chat)) chat.simi = false
                 if (!('viewonce' in chat)) chat.viewonce = false                    
                 if (!('antitoxic' in chat)) chat.antitoxic = true                    
                 if (!isNumber(chat.expired)) chat.expired = 0
@@ -923,6 +924,7 @@ export async function handler(chatUpdate) {
                     viewonce: false,
                     antiTraba: false,
                     antifakes: false,
+                    simi: false,
                     antitoxic: true,
                     expired: 0,
                 }
