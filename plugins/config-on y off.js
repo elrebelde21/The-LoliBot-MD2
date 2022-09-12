@@ -289,6 +289,14 @@ throw false
 }}
 chat.simi = isEnable
 break
+case 'stickers':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.stickers = isEnable          
+break
 case 'antifakes':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
