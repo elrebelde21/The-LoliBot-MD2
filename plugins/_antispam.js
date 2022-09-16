@@ -16,7 +16,7 @@ this.spam[m.sender].spam = 0
 this.spam[m.sender].lastspam = new Date * 1
 //global.DATABASE._data.users[m.sender].Banneduser = true
 m.reply('No hagas Spam, anda hacer spam a la concha de tu hermana 🤨!!')
-conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
+await this.updateBlockStatus(m.chat, 'block')
 } else {
 this.spam[m.sender].spam = 0
 this.spam[m.sender].lastspam = new Date * 1
