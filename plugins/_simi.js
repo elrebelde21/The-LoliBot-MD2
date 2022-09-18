@@ -6,7 +6,7 @@ handler.before = async (m) => {
     if (chat.simi) {
         if (/^.*false|disnable|(turn)?off|0/i.test(m.text)) return
         if (!m.text) return
-        let res = await fetch(global.API('https://api.simsimi.net', '/v2/', { text: encodeURIComponent(m.text), lc: "es" }, ''))
+        let res = await fetch(global.API('https://api.simsimi.net/v2/?text=${encodeURIComponent(m.text)}&lc=es" }, ''))
         if (!res.ok) throw error
         let json = await res.json()
         if (json.success == 'botsito :v') return m.reply('no hablado taka taka')
