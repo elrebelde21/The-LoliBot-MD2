@@ -15,7 +15,7 @@ const fkontak = {
 }  
 if (!db.data.chats[m.chat].antitoxic && m.isGroup) return conn.reply(m.chat, `${ag}𝙇𝘼 𝙁𝙐𝙉𝘾𝙄𝙊𝙉 *#on antitoxicos* 𝙀𝙎𝙏𝘼 𝘿𝙀𝙎𝘼𝘾𝙏𝙄𝙑𝘼𝘿𝘼, 𝘿𝙀𝘽𝙀 𝘿𝙀 𝘼𝘾𝙏𝙄𝙑𝘼𝙍 𝘿𝙄𝘾𝙃𝘼 𝙁𝙐𝙉𝘾𝙄𝙊𝙉 𝙋𝘼𝙍𝘼 𝘿𝙀𝙎𝘽𝙇𝙊𝙌𝙐𝙀𝘼𝙍 𝙀𝙎𝙏𝙀 𝘾𝙊𝙈𝘼𝙉𝘿𝙊`, fkontak, m) 
 let who
-let img = 'https://i.imgur.com/DvHoMc3.jpg'
+let img = 'https://telegra.ph/file/635b82df8d7abb4792eab.jpg'
 if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text
 else who = m.chat
 let user = global.db.data.users[who]
@@ -41,4 +41,5 @@ handler.command = /^(advertir|advertencia|warn|warning)$/i
 handler.group = true
 handler.admin = true
 handler.botAdmin = true
+handler.register = true
 export default handler
