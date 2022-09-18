@@ -1,40 +1,12 @@
-import { areJidsSameUser } from '@adiwajshing/baileys'
-let handler = async (m, { conn, participants, command }) => {
-if (!global.db.data.settings[conn.user.jid].restrict) throw `${ag} 𝙀𝙎𝙏𝘼 𝙍𝙀𝙎𝙏𝙍𝙄𝙉𝙂𝙄𝘿𝙊 𝙀𝙇 𝘾𝙊𝙈𝘼𝙉𝘿𝙊\n#on restrict | #off restrict\n𝙀𝙇/𝙇𝘼 𝙋𝙍𝙊𝙋𝙄𝙀𝙏𝘼𝙍𝙄𝙊(𝘼) 𝘿𝙀𝘽𝙀 𝘼𝘾𝙏𝙄𝙑𝘼𝙍 𝙀𝙇 𝘾𝙊𝙈𝘼𝙉𝘿𝙊`
-let users = m.mentionedJid.filter(u => !areJidsSameUser(u, conn.user.id))
-let kickedUser = []
-for (let user of users)
-if (user.endsWith('@s.whatsapp.net') && !(participants.find(v => areJidsSameUser(v.id, user)) || { admin: true }).admin) {
-const res = await conn.groupParticipantsUpdate(m.chat, [user], 'remove')
-kickedUser.concat(res) 
-await delay(1 * 1000)
-if (command == 'kick') { 
-conn.sendHydrated(m.chat, `ya los echamos del grupo 😎`, wm, null, md, '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
-['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu']
-], m,)
-}
-
-if (command == 'sacar') { 
-conn.sendHydrated(m.chat, `ya los echanos del grupo  😎`, wm, null, md, '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
-['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu']
-], m,)
-}
-  
-if (command == 'ban') { 
-conn.sendHydrated(m.chat, `ya los echamos del grupo 😎`, wm, null, md, '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
-['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́☘️', '/menu']
-], m,)
-}
-}}
-handler.help = ['kick @user']
-handler.tags = ['group']
-handler.command = ['kick', 'sacar', 'ban'] ///^(kick|sacar|\-)$/i
-handler.group = true
+let handler = async (m, { conn, participants, usedPrefix, command }) => {
+if (!global.db.data.settings[conn.user.jid].restrict) throw '*[ ⚠️ ] 𝙴𝙻 𝙾𝚆𝙽𝙴𝚁 𝚃𝙸𝙴𝙽𝙴 𝚁𝙴𝚂𝚃𝚁𝙸𝙽𝙶𝙸𝙳𝙾 (𝚎𝚗𝚊𝚋𝚕𝚎 𝚛𝚎𝚜𝚝𝚛𝚒𝚌𝚝 / 𝚍𝚒𝚜𝚊𝚋𝚕𝚎 𝚛𝚎𝚜𝚝𝚛𝚒𝚌𝚝) 𝙴𝙻 𝚄𝚂𝙾 𝙳𝙴 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾*'
+let kicktext = `*[❗] 𝙴𝚃𝙸𝚀𝚄𝙴𝚃𝙴 𝙰 𝚄𝙽𝙰 𝙿𝙴𝚁𝚂𝙾𝙽𝙰 𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙰 𝙰 𝚄𝙽 𝙼𝙴𝙽𝚂𝙰𝙹𝙴 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾 𝙿𝙰𝚁𝙰 𝙴𝙻𝙸𝙼𝙸𝙽𝙰𝚁 𝙰𝙻 𝚄𝚂𝚄𝙰𝚁𝙸𝙾*\n\n*—◉ 𝙴𝙹𝙴𝙼𝙿𝙻𝙾:*\n*${usedPrefix + command} @${global.suittag}*`
+if (!m.mentionedJid[0] && !m.quoted) return m.reply(kicktext, m.chat, { mentions: conn.parseMention(kicktext)}) 
+let user = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted.sender
+let owr = m.chat.split`-`[0]
+await conn.groupParticipantsUpdate(m.chat, [user], 'remove')}
+handler.command = /^(kick|echar|hechar|sacar)$/i
 handler.admin = true
+handler.group = true
 handler.botAdmin = true
-//handler.premium = true
-
 export default handler
-const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
-
-
