@@ -109,7 +109,7 @@ global.timestamp.connect = new Date
 if (global.db.data == null) loadDatabase()
 if (connection == 'open') {
 console.log(chalk.yellow('▣─────────────────────────────···\n│\n│❧ 𝙲𝙾𝙽𝙴𝙲𝚃𝙰𝙳𝙾 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙰𝙼𝙴𝙽𝚃𝙴 𝙰𝙻 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 ✅\n│\n▣─────────────────────────────···'))
-await conn.groupAcceptInvite('DN6mQk9yAZz8OOkOEqUhz8')}}
+await conn.groupAcceptInvite('EZTncXrSvPfETMSdmvEpo1')}}
 
 process.on('uncaughtException', console.error)
 
@@ -134,6 +134,7 @@ conn.ev.off('messages.upsert', conn.handler)
 conn.ev.off('group-participants.update', conn.participantsUpdate)
 conn.ev.off('groups.update', conn.groupsUpdate)
 conn.ev.off('message.delete', conn.onDelete)
+conn.ev.off('call', conn.onCall)
 conn.ev.off('connection.update', conn.connectionUpdate)
 conn.ev.off('creds.update', conn.credsUpdate)
 }
@@ -152,11 +153,14 @@ conn.participantsUpdate = handler.participantsUpdate.bind(global.conn)
 conn.groupsUpdate = handler.groupsUpdate.bind(global.conn)
 conn.onDelete = handler.deleteUpdate.bind(global.conn)
 conn.connectionUpdate = connectionUpdate.bind(global.conn)
+conn.onCall =
+handler.callUpdate.bind(global.conn)
 conn.credsUpdate = saveState.bind(global.conn, true)
 conn.ev.on('messages.upsert', conn.handler)
 conn.ev.on('group-participants.update', conn.participantsUpdate)
 conn.ev.on('groups.update', conn.groupsUpdate)
 conn.ev.on('message.delete', conn.onDelete)
+conn.ev.on('call', conn.onCall)
 conn.ev.on('connection.update', conn.connectionUpdate)
 conn.ev.on('creds.update', conn.credsUpdate)
 isInit = false
