@@ -1,4 +1,4 @@
-const toxicRegex = /pinga|joto|sape|nmms|calladito|calladita|mames|mamar|chigadamadre|hijueputa|chupa|kaka|caca|bobo|boba|loco|loca|chupapolla|estupido|estupida|estupidos|polla|pollas|idiota|maricon|chucha|verga|vrga|naco|zorra|zorro|zorras|zorros|pito|huevon|huevona|huevones|rctmre|mrd|ctm|csm|cp|hldv|ptm|baboso|babosa|babosos|babosas|feo|fea|feos|feas|webo|webos|mamawebos|calla|callese|cállate|callate|chupame|bolas|qliao|imbecil|embeciles|kbrones|cabron|capullo|carajo|gore|gorre|gorreo|sapo|sapa|mierda|cerdo|cerda|puerco|puerca|perra|perro|dumb|fuck|shit|bullshit|cunt|cum|semen|bitch|motherfucker|foker|fucking/i
+const toxicRegex = /pinga|joto|sape|nmms|calladito|calladita|mames|mamar|chigadamadre|hijueputa|chupa|kaka|caca|bobo|boba|loco|loca|chupapolla|estupido|estupida|estupidos|polla|pollas|idiota|maricon|chucha|verga|vrga|naco|zorra|zorro|zorras|zorros|pito|huevon|huevona|huevones|rctmre|mrd|ctm|csm|cp|hldv|ptm|baboso|babosa|babosos|babosas|webo|webos|mamawebos|calla|callese|cállate|callate|chupame|bolas|qliao|imbecil|embeciles|kbrones|cabron|capullo|carajo|gore|gorre|gorreo|sapo|sapa|mierda|cerdo|cerda|puerco|puerca|perra|perro|dumb|fuck|shit|bullshit|cunt|cum|semen|bitch|motherfucker|foker|fucking/i
 
 export async function before(m, { conn, isAdmin, isBotAdmin, isOwner }) {
  
@@ -9,7 +9,7 @@ return !1
   let user = global.db.data.users[m.sender]
   let chat = global.db.data.chats[m.chat]
   let bot = global.db.data.settings[this.user.jid] || {}
-  let img = 'https://i.imgur.com/5Q1MqGD.jpg'
+  let img = 'https://telegra.ph/file/635b82df8d7abb4792eab.jpg'
  const isToxic = toxicRegex.exec(m.text)
     
 if (isToxic && chat.antitoxic && !isOwner && !isAdmin) {
