@@ -1,18 +1,14 @@
-import fetch from 'node-fetch'
-let handler = m => m
-
-handler.before = async (m) => {
-    let chat = global.db.data.chats[m.chat]
-    if (chat.simi) {
-        if (/^.*false|disnable|(turn)?off|0/i.test(m.text)) return
+export async function before(m) {
+    let chat = db.data.chats[m.chat]
+    if (chat.simi && !chat.isBanned && !m.fromMe) {
+    	if (/^.*false|disnable|(turn)?off|0/i.test(m.text)) return
         if (!m.text) return
-        let res = await fetch(global.API('https://api.simsimi.net/v2/?text=${encodeURIComponent(m.text)}&lc=es" }, ''))
-        if (!res.ok) throw error
-        let json = await res.json()
-        if (json.success == 'botsito :v') return m.reply('no hablado taka taka')
-        await m.reply(`${json.success}`)
+        let ressimi = await fetch(`https://api.simsimi.net/v2/?text=${encodeURIComponent(m.text)}&lc=es`)
+        if (!ressimi.ok) throw 'no entendi :v'
+        let data = await ressimi.json();
+        if (data.success == 'No s\u00e9 lo qu\u00e9 est\u00e1s diciendo. Por favor ense\u00f1ame.') await m.reply("No habla taka taka xd")
+        await m.reply(data.success)
         return !0
     }
     return true
 }
-export default handler
