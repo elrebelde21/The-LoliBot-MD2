@@ -4,7 +4,7 @@ let handler = async(m, { conn }) => {
 if (!db.data.chats[m.chat].stickers && m.isGroup) throw 0
  
 let nombre = '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫'
-let nombre2 = '7w7'
+let nombre2 = 'uwu'
  
 const s = [
 'https://i.gifer.com/3OO52.gif'

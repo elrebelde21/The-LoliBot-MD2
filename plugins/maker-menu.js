@@ -68,21 +68,18 @@ let username = conn.getName(who)
 //user.registered = false
 
 let menu = `
-💗 *¡HOLA | HI!* ${username}
 ╭━〔 *${wm}* 〕━⬣
-┃✨✨✨✨✨✨✨✨✨
-┃✪ *EXPERIENCIA | EXP ➺ ${exp}*
-┃✪ *NIVEL | LEVEL ➺ ${level}*
-┃✪ *ROL ➺* ${role}
-┃✪ *GATACOINS ➺ $ ${money}*
+┃💗 *¡HOLA!* ${username}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *FECHA*
-┃➺ *${week}, ${date}*
-┃✪ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
 ┃✨✨✨✨✨✨✨✨✨
-╰━━━━〔 𓃠 *${vs}* 〕━━━━⬣
-
-╭━〔 𝙈𝙀𝙉𝙐 𝙀𝙁𝙀𝘾𝙏𝙊𝙎 𝙔 𝙇𝙊𝙂𝙊𝙎  〕━⬣
+┃✪ *EXPERIENCIA ➺ ${exp}*
+┃✪ *NIVEL ➺ ${level}*
+┃✪ *ROL ➺* ${role}
+┃✪ *LOLICOINS ➺ $ ${money}*
+┃✪ *USUARIOS  ➺ ${Object.keys(global.db.data.users).length}* 
+┃✨✨✨✨✨✨✨✨✨
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃〔 𝙈𝙀𝙉𝙐 𝙀𝙁𝙀𝘾𝙏𝙊𝙎 𝙔 𝙇𝙊𝙂𝙊𝙎  〕
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🔆 _${usedPrefix}logos *efecto texto*_
 ┃⛺ _${usedPrefix}simpcard *@tag*_
@@ -93,7 +90,7 @@ let menu = `
 ┃⛺ _${usedPrefix}pixelar_
 ┃⛺ _${usedPrefix}blur_
 ╰━━━━━━━━━━━━━━━━⬣`.trim()
-conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/elrebelde21/The-LoliBot-MD', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
 ['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 💫', '.allmenu'],
 ['infobot 🔰', '/infobot'],
 ['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 ⚡', '#menu']

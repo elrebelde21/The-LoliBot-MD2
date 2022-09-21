@@ -16,10 +16,13 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
   user.age = age
   user.regTime = + new Date
   user.registered = true
+global.db.data.users[m.sender].money += 200
+global.db.data.users[m.sender].limit += 2
+global.db.data.users[m.sender].exp += 350
   let sn = createHash('md5').update(m.sender).digest('hex')
   m.reply(`
 ┏┅ ━━━━━━━━━━━━ ┅ ━
-┇「 𝙑𝙚𝙧𝙞𝙛𝙞𝙘𝙖𝙧 」
+┇「 Registro Completado  」
 ┣┅ ━━━━━━━━━━━━ ┅ ━
 ┃ *𝑵𝑶𝑴𝑩𝑹𝑬:* ${name}
 ┃ *𝑬𝑫𝑨𝑫:* ${age} años
@@ -27,10 +30,11 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
 ┃ *$350 XP*
 ┃ *$200 𝑳𝑶𝑳𝑰𝑪𝑶𝑰𝑵𝑺*
 ┃ *$2 𝑫𝑰𝑨𝑴𝑨𝑵𝑻𝑬*
-┃ *𝙉𝙪́𝙢𝙚𝙧𝙤 𝙙𝙚 𝙨𝙚𝙧𝙞𝙚:* 
-┃ ${sn}
 ┗┅ ━━━━━━━━━━━━ ┅ ━
 `.trim())
+//let author = global.author
+await m.reply(`𝙏𝙐 𝙉𝙐𝙈𝙀𝙍𝙊 𝘿𝙀 𝙎𝙀𝙍𝙄𝙀 𝙏𝙀 𝙎𝙀𝙍𝙑𝙄𝙍𝘼 𝙀𝙉 𝘾𝘼𝙎𝙊 𝙌𝙐𝙀 𝙌𝙐𝙄𝙀𝙍𝘼 𝘽𝙊𝙍𝙍𝘼𝙍 𝙎𝙐 𝙍𝙀𝙂𝙄𝙎𝙏𝙍𝙊 👇👇👇`)
+await m.reply(`${sn}`) 
 }
 handler.help = ['daftar', 'register'].map(v => v + ' <nama>.<umur>')
 handler.tags = ['xp']

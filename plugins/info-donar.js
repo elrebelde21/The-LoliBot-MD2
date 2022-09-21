@@ -12,7 +12,8 @@ let str = `
 *┃*
 *┃* *https://facebook.com/groups/721802642266362/*
 *┃* ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-*┃* *YouTube*
+*┃* *canal del YouTube oficial del bot*
+*┃* *suscribete 🔕* *con eso me ayudaría mucho*
 *┃*  *https://youtube.com/channel/UCPSrzHooOjQMRmUK_2RLcSw*
 *┃* ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 *┃* *agracimiento al themystic-bot-MD* . 𝙂𝙧𝙖𝙘𝙞𝙖𝙨!
