@@ -91,7 +91,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 1870,
+      "exp": 2222,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -277,7 +277,7 @@
       "mana": 20,
       "mangga": 0,
       "misi": "",
-      "money": 1650,
+      "money": 1850,
       "monyet": 0,
       "mythic": 0,
       "naga": 0,
@@ -2612,10 +2612,10 @@
   },
   "stats": {
     "config-on y off.js": {
-      "total": 9,
-      "success": 9,
-      "last": 1663460723838,
-      "lastSuccess": 1663460723838
+      "total": 14,
+      "success": 14,
+      "last": 1664027837998,
+      "lastSuccess": 1664027837998
     },
     "cmd-add.js": {
       "total": 6,
@@ -2676,6 +2676,12 @@
       "success": 2,
       "last": 1664027547169,
       "lastSuccess": 1664027547169
+    },
+    "info-infobot.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1664027785432,
+      "lastSuccess": 1664027785432
     }
   },
   "msgs": {},
@@ -2728,8 +2734,8 @@
       "self": false,
       "autoread": false,
       "restrict": false,
-      "temporal": false,
-      "antiCall": false
+      "temporal": true,
+      "antiCall": true
     }
   }
 }
