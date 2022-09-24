@@ -16,6 +16,11 @@ global.db.data.users[m.sender].banned = true
 await m.reply(' Antifake activado en este grupo, lo siento seras expulsado.. tu numero parece algo fake 😯 ')
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
 
+if (m.sender.startsWith('31' || '31')) {
+global.db.data.users[m.sender].banned = true
+await m.reply(' Antifake activado en este grupo, lo siento seras expulsado.. tu numero parece algo fake 😯 ')
+await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
+
 if (m.sender.startsWith('93' || '93')) {
 global.db.data.users[m.sender].banned = true
 await m.reply(' Antifake activado en este grupo, lo siento seras expulsado.. tu numero parece algo fake 😯 ')
