@@ -8,7 +8,7 @@ handler.before = async (m) => {
         if (!m.text) return
         let ressimi = await fetch(`https://api.simsimi.net/v2/?text=${encodeURIComponent(m.text)}&lc=es`)
         let data = await ressimi.json();
-        if (data.success == 'No s\u00e9 lo qu\u00e9 est\u00e1s diciendo. Por favor ense\u00f1ame.') await m.reply("No habla taka taka x'd")
+        if (data.success == 'No s\u00e9 lo qu\u00e9 est\u00e1s diciendo. Por favor ense\u00f1ame.') await m.reply("que xd")
         await m.reply(data.success)
         return !0
     }
