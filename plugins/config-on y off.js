@@ -25,7 +25,7 @@ rows: [
 {title: "🤬 | 𝘼𝙣𝙩𝙞𝙩𝙤𝙭𝙞𝙘", description: "𝙰𝙲𝚃𝙸𝚅𝙰 𝙾 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰 𝙴𝙻 𝙰𝙽𝚃𝙸 𝙼𝙰𝙻𝙰 𝙿𝙰𝙻𝙰𝙱𝚁𝙰", rowId: `${usedPrefix + command} antitoxic`},
 {title: "🕸️ | 𝘼𝙣𝙩𝙞𝙩𝙧𝙖𝙗𝙖", description: "𝙰𝙲𝚃𝙸𝚅𝙰 𝙾 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰 𝙴𝙻 𝙰𝙽𝚃𝙸 𝚃𝚁𝙰𝙱𝙰𝚂", rowId: `${usedPrefix + command} antitraba`},
 {title: "🤑 | 𝘾𝙝𝙖𝙩𝙗𝙤𝙩", description: "𝙿𝚊𝚛𝚊 𝚙𝚘𝚍𝚎𝚛 𝚑𝚊𝚋𝚕𝚊 𝚌𝚘𝚗𝚖𝚒𝚐𝚘", rowId: `${usedPrefix + command} simi`},
-{title: "👎🏻 | 𝘼𝙣𝙩𝙞𝙛𝙖𝙠𝙚𝙨", description: "𝙰𝙻 𝙴𝙽𝚅𝙸𝙰𝚁 𝙼𝙴𝙽𝚂𝙰𝙹𝙴 𝚄𝙽 𝙽𝚄𝙼𝙴𝚁𝙾 𝙰𝚁𝙰𝙱𝙴, 𝙴𝙻 𝙱𝙾𝚃 𝙻𝙾 𝚂𝙰𝙲𝙰", rowId: `${usedPrefix + command} antifakes`},  
+{title: "👎🏻 | 𝘼𝙣𝙩𝙞𝙛𝙖𝙠𝙚𝙨", description: "𝙰𝙻 𝙴𝙽𝚅𝙸𝙰𝚁 𝙼𝙴𝙽𝚂𝙰𝙹𝙴 𝚄𝙽 𝙽𝚄𝙼𝙴𝚁𝙾 𝙰𝚁𝙰𝙱𝙴, 𝙴𝙻 𝙱𝙾𝚃 𝙻𝙾 𝚂𝙰𝙲𝙰", rowId: `${usedPrefix + command} antifake`},  
 ]}, ]
 //let name = await conn.getName(m.sender)
 const listMessage = {
@@ -280,7 +280,7 @@ if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
 throw false
 }}
-chat.antiToxic = isEnable
+chat.antitoxic = isEnable
 break
 case 'antitrabas':
 case 'antitraba':
@@ -307,13 +307,13 @@ throw false
 }}
 chat.stickers = isEnable          
 break
-case 'antifakes':
+case 'antifake':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
 throw false
 }}
-chat.antifakes = isEnable  
+chat.antifake = isEnable  
 break
 default:
 if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, listMessage)
