@@ -897,10 +897,10 @@ export async function handler(chatUpdate) {
 		if (!('reaction' in chat)) chat.reaction = true 
 		if (!('antiTraba' in chat))
                     chat.antiTraba = false   
-                if (!('antifakes' in chat)) chat.antifakes = false
+                if (!('antifake' in chat)) chat.antifake = false
                 if (!('simi' in chat)) chat.simi = false
                 if (!('viewonce' in chat)) chat.viewonce = false                    
-                if (!('antitoxic' in chat)) chat.antitoxic = true                    
+               if (!('antitoxic' in chat)) chat.antitoxic = true                     
                 if (!isNumber(chat.expired)) chat.expired = 0
                     
             } else
@@ -923,7 +923,7 @@ export async function handler(chatUpdate) {
 		    reaction: true,
                     viewonce: false,
                     antiTraba: false,
-                    antifakes: false,
+                    antifake: false,
                     simi: false,
                     antitoxic: true,
                     expired: 0,
