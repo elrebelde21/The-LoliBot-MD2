@@ -632,6 +632,11 @@ let vn = './media/dj bot.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
 
+if (!chat.isBanned && chat.audios && m.text.match(/(quevedo quedate|quedate|bot poner un temazo|quevedo)/gi)) {
+let vn = './media/quedate.mp3'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
+
 if (chat.audios && m.text.match(/(vetealavrg|vete a la vrg|vete a la verga)/gi)) {    
 let vn = './media/vete a la verga.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
