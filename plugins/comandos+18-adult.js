@@ -1,6 +1,6 @@
 import axios from "axios" 
 let handler = async (m, {command, conn}) => {
-if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `${ag}𝙇𝙊𝙎 𝘾𝙊𝙈𝘼𝙉𝘿𝙊𝙎 +18 𝙀𝙎𝙏𝘼𝙉 𝘿𝙀𝙎𝘼𝘾𝙏𝙄𝙑𝘼𝘿𝙊𝙎 𝙐𝙎𝙀 #𝙤𝙣 𝙢𝙤𝙙𝙤𝙝𝙤𝙧𝙣𝙮 𝙋𝘼𝙍𝘼 𝘼𝘾𝙏𝙄𝙑𝘼𝙍`   
+if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `𝙇𝙤𝙨 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 +18 𝙚𝙨𝙩𝙖́𝙣 𝙙𝙚𝙨𝙖𝙘𝙩𝙞𝙫𝙖𝙙𝙤𝙨 𝙪𝙨𝙚 #𝙤𝙣 𝙢𝙤𝙙𝙤𝙝𝙤𝙧𝙣𝙮 𝙥𝙖𝙧𝙖 𝙖𝙘𝙩𝙞𝙫𝙖𝙧`   
 if (command == 'nsfwloli') {
 let haha = await conn.getFile(`https://server-api-rey.herokuapp.com/api/wallpaper/nsfwloli?apikey=apirey`) 
 conn.sendButton(m.chat, `_${command}_`.trim(), wm, haha.data, [['🥵 𝑺𝒊𝒈𝒖𝒊𝒆𝒏𝒕𝒆🥵', `/${command}`]], m)}

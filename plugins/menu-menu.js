@@ -71,7 +71,7 @@ let str = `
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ║➤ *Creador del Bot: el rebelde* 
 ║➤ *Numero del creador:* *wa.me/5492266466080 (No Bot)*
-║➤ *Numero del Bot oficial:* *wa.me/972529277479*
+║➤ *Numero del Bot oficial:* *wa.me/12267784150*
 ║➤ *Numero del Bot ofc²:* *wa.me/972529277406*
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ║➤ 𝙩𝙞𝙚𝙢𝙥𝙤 𝙖𝙘𝙩𝙞𝙫𝙤𝙨: ${uptime}
@@ -80,8 +80,6 @@ let str = `
 ┏━━━━━━━━━━━━━┓
 ┃ *<𝑰𝒏𝒇𝒐𝒓𝒎𝒂𝒄𝒊𝒐𝒏 𝒅𝒆𝒍 𝒃𝒐𝒕//>*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-┣ ඬ⃟ℹ️️ _${usedPrefix}sc_
-┣ ඬ⃟ℹ️️ _${usedPrefix}donar_
 ┣ ඬ⃟ℹ️️ _${usedPrefix}infobot_
 ┣ ඬ⃟ℹ️️ _${usedPrefix}grupos_
 ┣ ඬ⃟ℹ️ _${usedPrefix}instalarbot_
@@ -89,6 +87,7 @@ let str = `
 ┣ ඬ⃟ℹ️️ _${usedPrefix}menuaudios_
 ┣ ඬ⃟ℹ️️ _${usedPrefix}menu2_
 ┣ ඬ⃟ℹ️ _${usedPrefix}estado_
+┣ ඬ⃟ℹ️️ _${usedPrefix}sc_
 ┣ ඬ⃟ℹ️ _${usedPrefix}ping_
 ┣ ඬ⃟ℹ️ _${usedPrefix}infomenu
 ┣ ඬ⃟ℹ️ _${usedPrefix}juegosmenu
@@ -142,7 +141,6 @@ let str = `
 ┣ ඬ⃟🕹 _${usedPrefix}math *modo*_
 ┣ ඬ⃟🎮 _${usedPrefix}ttt *nombre del la sala*_
 ┣ ඬ⃟🕹 _${usedPrefix}delttt *nombre del la sala*_
-┣ ඬ⃟🎮 _${usedPrefix}2gay *@tag*_
 ┣ ඬ⃟🕹 _${usedPrefix}gay *@tag / nombre*_
 ┣ ඬ⃟🎮 _${usedPrefix}lesbi *@tag / nombre*_
 ┣ ඬ⃟🕹 _${usedPrefix}pajero *@tag / nombre*_
@@ -168,33 +166,23 @@ let str = `
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ┣ ඬ⃟📥 _${usedPrefix}imagen *texto*_
 ┣ ඬ⃟📥 _${usedPrefix}ytsearch *texto*_
-┣ ඬ⃟📥 _${usedPrefix}dlaudio *link yt*_
-┣ ඬ⃟📥 _${usedPrefix}dlvid *link yt*_
 ┣ ඬ⃟📥 _${usedPrefix}ytmp3 *link yt*_
 ┣ ඬ⃟📥 _${usedPrefix}ytmp4 *link yt*_
-┣ ඬ⃟📥 _${usedPrefix}ytmp3.2 *link yt*_
-┣ ඬ⃟📥 _${usedPrefix}ytmp4.2 *link yt*_
 ┣ ඬ⃟📥 _${usedPrefix}play *titulo del audio*_
-┣ ඬ⃟📥 _${usedPrefix}play.1 *titulo del audio*_
-┣ ඬ⃟📥 _${usedPrefix}play2 *titulo del video*_
+┣ ඬ⃟📥 _${usedPrefix}play2 *titulo del audio*_
+┣ ඬ⃟📥 _${usedPrefix}play.1 *titulo del video*_
 ┣ ඬ⃟📥 _${usedPrefix}play.2 *titulo del video*_
-┣ ඬ⃟📥 _${usedPrefix}play3 *titulo del audio/video*_
 ┣ ඬ⃟📥 _${usedPrefix}play4 *titulo del video*_
 ┣ ඬ⃟📥 _${usedPrefix}letra *nombredelacanción*_
 ┣ ඬ⃟📥 _${usedPrefix}google *texto*_
-┣ ඬ⃟📥 _${usedPrefix}googlef *texto*_
-┣ ඬ⃟📥 _${usedPrefix}wikipedia *palabra clave*_
 ┣ ඬ⃟📥 _${usedPrefix}pinterestvideo *link de pinterest*_
 ┣ ඬ⃟📥 _${usedPrefix}tiktok *link*_
-┣ ඬ⃟📥 _${usedPrefix}acortar *link*_
 ┣ ඬ⃟📥 _${usedPrefix}pinterest *texto*_
-┣ ඬ⃟📥 _${usedPrefix}xnxx *link de xnxx*_
 ┣ ඬ⃟📥 _${usedPrefix}xnxxsearch *texto*_
 ┣ ඬ⃟📥 _${usedPrefix}ssweb *link*_
 ┣ ඬ⃟📥 _${usedPrefix}igstory *username*_
 ┣ ඬ⃟📥 _${usedPrefix}igstalk *username*_
 ┣ ඬ⃟📥 _${usedPrefix}animeinfo *nombre del anime*_
-┣ ඬ⃟📥 _${usedPrefix}twvid *link de video de twitter*_
 ┗━━━━━━━━━━━━━┛
 ┏━━━━━━━━━━━━━┓
 ┃ *<GESTION DE GRUPOS/>* 
@@ -202,27 +190,17 @@ let str = `
 ┣ ඬ⃟💎 _${usedPrefix}admins *texto*_ 
 ┣ ඬ⃟💎 _${usedPrefix}añadir *numero*_ 
 ┣ ඬ⃟💎 _${usedPrefix}sacar @tag_
-┣ ඬ⃟💎 _${usedPrefix}save *@tag + nombre de contacto*_
 ┣ ඬ⃟💎 _${usedPrefix}daradmin *@tag*_
 ┣ ඬ⃟💎 _${usedPrefix}quitaradmin *@tag*_
 ┣ ඬ⃟💎 _${usedPrefix}grupo *abrir / cerrar*_
-┣ ඬ⃟💎 _${usedPrefix}enable nsfw_
-┣ ඬ⃟💎 _${usedPrefix}disable nsfw_
-┣ ඬ⃟💎 _${usedPrefix}enable welcome_
-┣ ඬ⃟💎 _${usedPrefix}disable welcome_
-┣ ඬ⃟💎 _${usedPrefix}enable antilink_
-┣ ඬ⃟💎 _${usedPrefix}disable antilink_
-┣ ඬ⃟💎 _${usedPrefix}enable antilink2_
-┣ ඬ⃟💎 _${usedPrefix}disable antilink2_
-┣ ඬ⃟💎 _${usedPrefix}enable delete_
-┣ ඬ⃟💎 _${usedPrefix}disable  delete_ 
+┣ ඬ⃟💎 _${usedPrefix}enable
 ┣ ඬ⃟💎 _${usedPrefix}link_
 ┣ ඬ⃟💎 _${usedPrefix}notificar *texto*_
 ┣ ඬ⃟💎 _${usedPrefix}setname *Nuevo nombre del grupo*_
 ┣ ඬ⃟💎 _${usedPrefix}setdesc *Nueva descripción del grupo*_
 ┣ ඬ⃟💎 _${usedPrefix}infogrupo_
-┣ ඬ⃟💎 _${usedPrefix}invocar *texto*_
-┣ ඬ⃟💎 _${usedPrefix}del *responder a un mensaje del bot*_
+┣ ඬ⃟💎 _${usedPrefix}tagall *texto*_
+┣ ඬ⃟💎 _${usedPrefix}del *responder a un mensaje*_
 ┣ ඬ⃟💎 _${usedPrefix}fantasmas_
 ┣ ඬ⃟💎 _${usedPrefix}banchat_
 ┣ ඬ⃟💎 _${usedPrefix}unbanchat_
@@ -232,22 +210,15 @@ let str = `
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ┣ ඬ⃟🧧 _${usedPrefix}s_
 ┣ ඬ⃟🧧 _${usedPrefix}sticker_
+┣ ඬ⃟🧧 _${usedPrefix}robar_
+┣ ඬ⃟🧧 _${usedPrefix}wm_
 ┣ ඬ⃟🧧 _${usedPrefix}semoji_
-┣ ඬ⃟🧧 _${usedPrefix}wasted_
-┣ ඬ⃟🧧 _${usedPrefix}stonks_
-┣ ඬ⃟🧧 _${usedPrefix}trash_
-┣ ඬ⃟🧧 _${usedPrefix}rainbow_
-┣ ඬ⃟🧧 _${usedPrefix}circle_
-┣ ඬ⃟🧧 _${usedPrefix}trigger_
 ┣ ඬ⃟🧧 _${usedPrefix}stickermaker_
 ┣ ඬ⃟🧧 _${usedPrefix}attp *texto*_
-┣ ඬ⃟🧧 _${usedPrefix}style *texto*_
 ┣ ඬ⃟🧧 _${usedPrefix}attp2 *texto*_
 ┣ ඬ⃟🧧 _${usedPrefix}stickerfilter_
-┣ ඬ⃟🧧 _${usedPrefix}trigger *@tag*_
 ┣ ඬ⃟🧧 _${usedPrefix}mp3 *responde a un video*_
 ┣ ඬ⃟🧧 _${usedPrefix}img *responde a un sticker*_
-┣ ඬ⃟🧧 _${usedPrefix}blur *responde a una imagen*_
 ┣ ඬ⃟🧧 _${usedPrefix}swm *link de imagen de google*_
 ┣ ඬ⃟🧧 _${usedPrefix}gif *responde a un sticker/video*_
 ┣ ඬ⃟🧧 _${usedPrefix}tovideo *responde a una nota de voz*_
@@ -261,19 +232,14 @@ let str = `
 ┣ ඬ⃟👾 _${usedPrefix}animal_
 ┣ ඬ⃟👾 _${usedPrefix}meme_
 ┣ ඬ⃟👾 _${usedPrefix}meme2_
-┣ ඬ⃟👾 _${usedPrefix}meme3_
 ┣ ඬ⃟👾 _${usedPrefix}cat_
-┣ ඬ⃟👾 _${usedPrefix}dog_
 ┣ ඬ⃟👾 _${usedPrefix}pikachu_
 ┣ ඬ⃟👾 _${usedPrefix}waifu_
 ┣ ඬ⃟👾 _${usedPrefix}blackpink_
 ┣ ඬ⃟👾 _${usedPrefix}reto_
 ┣ ඬ⃟👾 _${usedPrefix}verdad_
-┣ ඬ⃟👾 _${usedPrefix}imagenrandom_
 ┣ ඬ⃟👾 _${usedPrefix}neko_
 ┣ ඬ⃟👾 _${usedPrefix}lolivid_
-┣ ඬ⃟👾 _${usedPrefix}iqtest_
-┣ ඬ⃟👾 _${usedPrefix}kpopitzy_
 ┣ ඬ⃟👾 _${usedPrefix}navidad_
 ┣ ඬ⃟👾 _${usedPrefix}loli_
 ┣ ඬ⃟👾 _${usedPrefix}gawrgura_
@@ -293,10 +259,8 @@ let str = `
 ┣ ඬ⃟👾 _${usedPrefix}mention *texto*_
 ┣ ඬ⃟👾 _${usedPrefix}spamchat *texto*_
 ┣ ඬ⃟👾 _${usedPrefix}traducir es *texto*_
-┣ ඬ⃟👾 _${usedPrefix}zodiac *AAAA MM DD*_
 ┣ ඬ⃟👾 _${usedPrefix}readmore *texto1| texto2*_
 ┣ ඬ⃟👾 _${usedPrefix}calc *expresión matemática*_ 
-┣ ඬ⃟👾 _${usedPrefix}spamwa *numero|texto|cantidad*_
 ┣ ඬ⃟👾 _${usedPrefix}readqr *responde a un código QR*_
 ┣ ඬ⃟👾 _${usedPrefix}anime *random / waifu / husbu /neko*_
 ┣ ඬ⃟👾 _${usedPrefix}subirestado *texto / responder video, imagen o gif*_
@@ -338,15 +302,10 @@ let str = `
 ┣ ඬ⃟📝️ _${usedPrefix}simpcard_
 ┣ ඬ⃟📝️ _${usedPrefix}hornycard_ 
 ┣ ඬ⃟📝️ _${usedPrefix}lblackpink_
-┣ ඬ⃟📝️ _${usedPrefix}coffe *texto*_
-┣ ඬ⃟📝️ _${usedPrefix}tahta *texto*_
 ┣ ඬ⃟📝️ _${usedPrefix}nulis *texto*_
-┣ ඬ⃟📝️ _${usedPrefix}nulis2 *texto*_
 ┣ ඬ⃟📝️ _${usedPrefix}lolice *@tag*_
 ┣ ඬ⃟📝️ _${usedPrefix}simpcard *@tag*_
 ┣ ඬ⃟📝️ _${usedPrefix}logotaza *texto*_ 
-┣ ඬ⃟📝️ _${usedPrefix}logocesped *texto*_ 
-┣ ඬ⃟📝️ _${usedPrefix}logotaza2 *texto*_ 
 ┣ ඬ⃟📝️ _${usedPrefix}logofire *texto*_
 ┣ ඬ⃟📝️ _${usedPrefix}logocorazon *texto*_
 ┣ ඬ⃟📝️ _${usedPrefix}logorandom *texto*_
@@ -367,15 +326,10 @@ let str = `
 ┣ ඬ⃟👑 _${usedPrefix}CajaFuerte_
 ┣ ඬ⃟👑 _${usedPrefix}bc *texto*_
 ┣ ඬ⃟👑 _${usedPrefix}deletechat_
-┣ ඬ⃟👑 _${usedPrefix}mutechat_
 ┣ ඬ⃟👑 _${usedPrefix}bcgc *texto*_
 ┣ ඬ⃟👑 _${usedPrefix}bcbot *texto*_
-┣ ඬ⃟👑 _${usedPrefix}mutechat *all*_
-┣ ඬ⃟👑 _${usedPrefix}setbye *@tag*_
 ┣ ඬ⃟👑 _${usedPrefix}banuser *@tag*_
 ┣ ඬ⃟👑 _${usedPrefix}deletechat *all*_
-┣ ඬ⃟👑 _${usedPrefix}mutechat *chat*_
-┣ ඬ⃟👑 _${usedPrefix}mutechat *group*_
 ┣ ඬ⃟👑 _${usedPrefix}enable *public*_
 ┣ ඬ⃟👑 _${usedPrefix}disable *public*_
 ┣ ඬ⃟👑 _${usedPrefix}deletechat *chat*_

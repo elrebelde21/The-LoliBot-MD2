@@ -3,7 +3,7 @@ let handler = async (m, { conn, command, args, usedPrefix }) => {
 const fetch = (await import('node-fetch')).default
 let full = /f$/i.test(command)
 let text = args.join` `
-if (!text) return conn.reply(m.chat, `${mg}𝙀𝙎𝘾𝙍𝙄𝘽𝘼 𝙇𝙊 𝙌𝙐𝙀 𝙌𝙐𝙄𝙀𝙍𝙀 𝘽𝙐𝙎𝘾𝘼𝙍\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} loli*`, m)
+if (!text) return conn.reply(m.chat, `𝙌𝙪𝙚 𝙚𝙨𝙩𝙖́ 𝙗𝙪𝙨𝙘𝙖𝙣𝙙𝙤?🤔\n𝙀𝙨𝙘𝙧𝙞𝙗𝙖 𝙡𝙤 𝙦𝙪𝙚 𝙦𝙪𝙞𝙚𝙧𝙖 𝙗𝙪𝙨𝙘𝙖𝙧\n𝙀𝙟𝙚𝙢𝙥𝙡𝙤\n*${usedPrefix + command} loli*`, m)
 let pp = './media/menus/Menu1.jpg'
 let url = 'https://google.com/search?q=' + encodeURIComponent(text)
 let search = await googleIt(text)

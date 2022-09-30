@@ -1,9 +1,9 @@
 import fs from 'fs'
 import fetch from 'node-fetch'
 let handler = async (m, {command, conn, text, usedPrefix }) => {
-if (!text) throw `${mg}🤔𝙦𝙪𝙚 𝙚𝙨𝙩𝙖 𝙗𝙪𝙨𝙘𝙖𝙙𝙤?🤔 𝙄𝙣𝙜𝙧𝙚𝙨𝙚 𝙚𝙡 𝙣𝙤𝙢𝙗𝙧𝙚/𝙩𝙞𝙩𝙪𝙡𝙤 𝙙𝙚 𝙘𝙖𝙣𝙘𝙞𝙤𝙣\𝙀𝙟𝙚𝙢𝙥𝙡𝙤\n*${usedPrefix + command} Bad Bunny - am*`
+if (!text) throw `🤔𝙦𝙪𝙚 𝙚𝙨𝙩𝙖 𝙗𝙪𝙨𝙘𝙖𝙙𝙤?🤔 𝙄𝙣𝙜𝙧𝙚𝙨𝙚 𝙚𝙡 𝙣𝙤𝙢𝙗𝙧𝙚/𝙩𝙞𝙩𝙪𝙡𝙤 𝙙𝙚 𝙘𝙖𝙣𝙘𝙞𝙤𝙣\n𝙀𝙟𝙚𝙢𝙥𝙡𝙤\n*${usedPrefix + command} Bad Bunny - am*`
 try {
-if (command == 'play') {
+if (command == 'play.1') {
 conn.reply(m.chat, `${eg}⏳Procesando⏳`, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 title: 'The Lolibot-MD',
@@ -16,7 +16,7 @@ let res = await fetch("https://api.dhamzxploit.my.id/api/ytplaymp3?text="+text)
   //("https://api.dhamzxploit.my.id/api/ytplaymp3?text="+text)
 let json = await res.json()
 conn.sendFile(m.chat, json.result.url, 'error.mp3', null, m, false, { mimetype: 'audio/mp4' })}
-if (command == 'play2') {
+if (command == 'play.2') {
 conn.reply(m.chat, `${eg}⏳Procesando⏳`, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 title: '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫',

@@ -30,7 +30,12 @@ rows: [
 //let name = await conn.getName(m.sender)
 const listMessage = {
 text: ' ',
-footer: `┏━━━━━━━━━━━━━┓
+footer: `╭━━━[ *𝘼𝙅𝙐𝙎𝙏𝙀𝙎* ]━━━⬣
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃🌟 *¡Hola!* selecciona aqui para activa o desactivar esta opciones!
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+╰━━━━━━━━━━━━━⬣
+┏━━━━━━━━━━━━━┓
 ┣ ඬ⃟ℹ️ _${usedPrefix}enable *welcome*_
 ┣ ඬ⃟ℹ️ _${usedPrefix}disable *welcome*_
 ┣ ඬ⃟ℹ️ _${usedPrefix}enable *public*_

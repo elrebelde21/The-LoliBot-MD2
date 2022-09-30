@@ -97,7 +97,7 @@ let menu = `
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🔍➺ _${usedPrefix}animeinfo *texto*_
 ┃🔍➺ _${usedPrefix}google *texto*_
-┃🔍➺ _${usedPrefix}letra | lirik *texto*_
+┃🔍➺ _${usedPrefix}letra *texto*_
 ┃🔍➺ _${usedPrefix}ytsearch | yts *texto*_
 ┃🔍➺ _${usedPrefix}wiki | wikipedia *texto*_
 ╰━━━━━━━━━━━━━━━━━━━⬣`.trim()

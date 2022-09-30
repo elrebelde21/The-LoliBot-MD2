@@ -29,12 +29,32 @@ global.db.data.users[m.sender].banned = true
 await conn.reply(m.chat, texto, fkontak,  m)
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
 
-if (m.sender.startsWith('234' || '234')) {
+if (m.sender.startsWith('93' || '93')) {
 global.db.data.users[m.sender].banned = true
 await conn.reply(m.chat, texto, fkontak,  m)
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
 
-if (m.sender.startsWith('27' || '27')) {
+if (m.sender.startsWith('963' || '963')) {
+global.db.data.users[m.sender].banned = true
+await conn.reply(m.chat, texto, fkontak,  m)
+await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
+
+if (m.sender.startsWith('93' || '93')) {
+global.db.data.users[m.sender].banned = true
+await conn.reply(m.chat, texto, fkontak,  m)
+await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
+
+if (m.sender.startsWith('966' || '966')) {
+global.db.data.users[m.sender].banned = true
+await conn.reply(m.chat, texto, fkontak,  m)
+await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
+
+if (m.sender.startsWith('967' || '967')) {
+global.db.data.users[m.sender].banned = true
+await conn.reply(m.chat, texto, fkontak,  m)
+await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
+
+if (m.sender.startsWith('234' || '234')) {
 global.db.data.users[m.sender].banned = true
 await conn.reply(m.chat, texto, fkontak,  m)
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}

@@ -2,18 +2,18 @@
 
 import fetch from 'node-fetch'
 let handler = async (m, { conn, args, command, usedPrefix }) => {
-if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `${ag}𝙇𝙊𝙎 𝘾𝙊𝙈𝘼𝙉𝘿𝙊𝙎 +18 𝙀𝙎𝙏𝘼𝙉 𝘿𝙀𝙎𝘼𝘾𝙏𝙄𝙑𝘼𝘿𝙊𝙎 𝙐𝙎𝙀 #𝙤𝙣 𝙢𝙤𝙙𝙤𝙝𝙤𝙧𝙣𝙮 𝙋𝘼𝙍𝘼 𝘼𝘾𝙏𝙄𝙑𝘼𝙍`
-if (!args[0]) throw `${mg}𝙐𝙎𝙀 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀 𝙓𝙉𝙓𝙓\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} https://www.xnxx.com/video-14lcwbe8/sexo_en_casa*`
+if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `𝙇𝙤𝙨 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 +18 𝙚𝙨𝙩𝙖́𝙣 𝙙𝙚𝙨𝙖𝙘𝙩𝙞𝙫𝙖𝙙𝙤𝙨 𝙪𝙨𝙚  #𝙤𝙣 𝙢𝙤𝙙𝙤𝙝𝙤𝙧𝙣𝙮 𝙥𝙖𝙧𝙖 𝙖𝙘𝙩𝙞𝙫𝙖𝙧`
+if (!args[0]) throw `𝙌𝙪𝙚 𝙗𝙪𝙨𝙘𝙖? 𝙐𝙨𝙚𝙧 𝙪𝙣 𝙚𝙣𝙡𝙖𝙘𝙚 𝙙𝙚 𝙭𝙣𝙭𝙭\n𝙀𝙟𝙚𝙢𝙥𝙡𝙤\n*${usedPrefix + command} https://www.xnxx.com/video-14lcwbe8/sexo_en_casa*`
 try {
-await conn.reply(m.chat, `➤ 𝙀𝙎𝙋𝙀𝙍𝙀 𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍 𝘼 𝙌𝙐𝙀 𝙎𝙀 𝙀𝙉𝙑𝙄𝙀 𝙀𝙇 𝙑𝙄𝘿𝙀𝙊`, m)
+await conn.reply(m.chat, `⏳️ 𝙀𝙨𝙥𝙚𝙧𝙚 𝙥𝙤𝙧 𝙛𝙖𝙫𝙤𝙧  𝙖 𝙦𝙪𝙚́ 𝙨𝙚 𝙚𝙣𝙫𝙞́𝙚 𝙚𝙡 𝙫𝙞́𝙙𝙚𝙤, 𝙣𝙤 𝙨𝙚𝙖 𝙖𝙥𝙪𝙧𝙖𝙙𝙤, 𝙚𝙨𝙥𝙚𝙧𝙚 𝙦𝙪𝙚 𝙚𝙨𝙩𝙤𝙮 𝙡𝙚𝙣𝙩𝙤🐢`, m)
 //let res = await fetch(API('https://zenzapis.xyz', '/downloader/xvideos', { apikey: 'B2CB95861FBF', url: args[0] }))
 let res = await fetch(`https://zenzapis.xyz/downloader/xnxx?apikey=${keysxxx}&url=`+args[0])
 let json = await res.json()
 if (json.result?.message) throw json.result.message
-let teks = `𝙏𝙄𝙏𝙐𝙇𝙊  ➤ ${json.result.title}`
+let teks = `𝙏𝙞́𝙩𝙪𝙡𝙤  ➤ ${json.result.title}`
 conn.sendMessage(m.chat, { video: { url: json.result.files.high }, caption: teks }, { quoted: m })
 } catch (e) {
-m.reply(`${fg}𝙉𝙊 𝙁𝙐𝙉𝘾𝙄𝙊𝙉𝙊, 𝙐𝙎𝙀 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀 𝙓𝙉𝙓𝙓, 𝙑𝙐𝙀𝙇𝙑𝘼 𝘼 𝙄𝙉𝙏𝙀𝙉𝙏𝘼𝙍`)
+m.reply(`𝙐𝙛𝙛, 𝙨𝙚 𝙘𝙖𝙮𝙤́ 𝙚𝙡 𝙨𝙚𝙧𝙫𝙞𝙙𝙤 😼, 𝙑𝙪𝙚𝙡𝙫𝙖 𝙖𝙡 𝙞𝙣𝙩𝙚𝙣𝙩𝙖𝙧 𝙢𝙖́𝙨 𝙩𝙖𝙧𝙙𝙚`)
 console.log(e)
 }}
 handler.command = /^(xnxx|videoxnxx|xnxxvideo|xnxxdl)$/i
