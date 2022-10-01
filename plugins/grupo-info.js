@@ -1,45 +1,41 @@
 let handler = async (m, { conn, participants, groupMetadata }) => {
-const pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './src/grupos.jpg' 
-const { isBanned, welcome, detect, sWelcome, sBye, sPromote, sDemote, antiLink, antiLink2, modohorny, autosticker, audios, delete: del } = global.db.data.chats[m.chat]
-const groupAdmins = participants.filter(p => p.admin) 
+const pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './src/avatar_contact.png'
+const { antiToxic, antiTraba, antiviewonce, isBanned, welcome, detect, sWelcome, sBye, sPromote, sDemote, antiLink, antiLink2, modohorny, autosticker, audios, delete: del } = global.db.data.chats[m.chat]
+const groupAdmins = participants.filter(p => p.admin)
 const listAdmin = groupAdmins.map((v, i) => `${i + 1}. @${v.id.split('@')[0]}`).join('\n')
 const owner = groupMetadata.owner || groupAdmins.find(p => p.admin === 'superadmin')?.id || m.chat.split`-`[0] + '@s.whatsapp.net'
-let text = 
-`╭━━━[ *𝙄𝙉𝙁𝙊 𝘿𝙀𝙇 𝙂𝙍𝙐𝙋𝙊* ]━━━━⬣
-
-✨ 𝙄𝘿𝙀𝙉𝙏𝙄𝙁𝙄𝘾𝘼𝘾𝙄𝙊𝙉 𝘿𝙀𝙇 𝙂𝙍𝙐𝙋𝙊
+let text = `*「 𝙄𝙣𝙛𝙤 𝙙𝙚𝙡 𝙜𝙧𝙪𝙥𝙤 」*\n
+*𝙄𝙙𝙚𝙣𝙩𝙞𝙛𝙞𝙘𝙖𝙘𝙞𝙤́𝙣 𝙙𝙚𝙡 𝙜𝙧𝙪𝙥𝙤:* 
 ${groupMetadata.id}
 
-✨ 𝙉𝙊𝙈𝘽𝙍𝙀 𝘿𝙀𝙇 𝙂𝙍𝙐𝙋𝙊
+*𝙉𝙤𝙢𝙗𝙧𝙚:* 
 ${groupMetadata.subject}
 
-✨ 𝘿𝙀𝙎𝘾𝙍𝙄𝙋𝘾𝙄𝙊𝙉
-${groupMetadata.desc?.toString() || '𝙉𝙊 𝙃𝘼𝙔 𝘿𝙀𝙎𝘾𝙍𝙄𝙋𝘾𝙄𝙊𝙉'}
-
-✨ 𝙉𝙐𝙈𝙀𝙍𝙊 𝘿𝙀 𝙐𝙎𝙐𝘼𝙍𝙄𝙊𝙎
-${participants.length} Participantes
-
-✨ 𝘾𝙍𝙀𝘼𝘿𝙊𝙍(𝘼) 𝘿𝙀𝙇 𝙂𝙍𝙐𝙋𝙊
+*𝘾𝙧𝙚𝙖𝙙𝙤𝙧 𝙙𝙚𝙡 𝙜𝙧𝙪𝙥𝙤:* 
 @${owner.split('@')[0]}
 
-✨ 𝘼𝘿𝙈𝙄𝙉𝙎 𝘿𝙀𝙇 𝙂𝙍𝙐𝙋𝙊
+*𝘿𝙚𝙨𝙘𝙧𝙞𝙥𝙘𝙞𝙤́𝙣:* 
+${groupMetadata.desc?.toString() || '𝚂𝙸𝙽 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽'}
+
+*𝙏𝙤𝙩𝙖𝙡 𝙙𝙚𝙡 𝙥𝙖𝙧𝙩𝙞𝙘𝙞𝙥𝙖𝙣𝙩𝙚:*
+${participants.length} Participantes
+
+*𝘼𝙙𝙢𝙞𝙣𝙨:*
 ${listAdmin}
 
-✨ 𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝘾𝙄𝙊𝙉 𝙊𝙉/𝙊𝙁𝙁
-𝙒𝙀𝙇𝘾𝙊𝙈𝙀 ${welcome ? '✅' : '❌'}
-𝘿𝙀𝙏𝙀𝘾𝙏 ${detect ? '✅' : '❌'} 
-𝘼𝙉𝙏𝙄𝙇𝙄𝙉𝙆 ${antiLink ? '✅' : '❌'} 
-𝘼𝙉𝙏𝙄𝙇𝙄𝙉𝙆 *2* ${antiLink2 ? '✅' : '❌'} 
-𝙈𝙊𝘿𝙊 𝙃𝙊𝙍𝙉𝙔 ${modohorny ? '✅' : '❌'} 
-𝘼𝙐𝙏𝙊𝙎𝙏𝙄𝘾𝙆𝙀𝙍 ${autosticker ? '✅' : '❌'} 
-𝘼𝙐𝘿𝙄𝙊𝙎 ${audios ? '✅' : '❌'} 
-
-╰━━━━━━❰ *𓃠 ${vs}* ❱━━━━━⬣
+*𝙊𝙥𝙘𝙞𝙤𝙣𝙚𝙨 𝙖𝙪𝙩𝙤𝙢𝙖́𝙩𝙞𝙘𝙖:*
+—◉ 𝙒𝙚𝙡𝙘𝙤𝙢𝙚: ${welcome ? '✅' : '❌'}
+—◉ 𝘼𝙣𝙩𝙞𝙡𝙞𝙣𝙠: ${antiLink ? '✅' : '❌'} 
+—◉ 𝘼𝙣𝙩𝙞𝙡𝙞𝙣𝙠 𝟸: ${antiLink2 ? '✅' : '❌'} 
+—◉ 𝘼𝙣𝙩𝙞𝙩𝙧𝙖𝙗𝙖: ${antiTraba ? '✅' : '❌'} 
+—◉ 𝘼𝙪𝙩𝙤𝙨𝙩𝙞𝙘𝙠𝙚𝙧: ${autosticker ? '✅' : '❌'} 
+—◉ 𝘿𝙚𝙩𝙚𝙘𝙩: ${detect ? '✅' : '❌'} 
+—◉ 𝙈𝙤𝙙𝙤 𝙝𝙤𝙧𝙣𝙮 (+18): ${modohorny ? '✅' : '❌'} 
+—◉ 𝘼𝙪𝙙𝙞𝙤𝙨: ${audios ? '✅' : '❌'} 
+—◉ 𝙖𝙣𝙩𝙞𝙫𝙞𝙚𝙬𝙤𝙣𝙘𝙚: ${antiviewonce ? '✅' : '❌'} 
+—◉ 𝘼𝙣𝙩𝙞𝙩𝙤𝙭𝙞𝙘: ${antiToxic ? '✅' : '❌'} 
 `.trim()
-//conn.sendFile(m.chat, pp, 'error.jpg', text, m, false, { mentions: [...groupAdmins.map(v => v.id), owner] })
-conn.sendHydrated(m.chat, text, wm, pp, md, '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
-['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu']
-], m, false, { mentions: [...groupAdmins.map(v => v.id), owner] })
+conn.sendFile(m.chat, pp, 'error.jpg', text, m, false, { mentions: [...groupAdmins.map(v => v.id), owner] })
 }
 handler.help = ['infogrup']
 handler.tags = ['group']
