@@ -84,34 +84,31 @@ let username = conn.getName(who)
 //user.registered = false
 
 let menu = `
-╭━━━[  *${wm}* ]━━━⬣
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ *¡Hola!* ${username}* 🌟
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+╭━━〔 *${wm}* 〕━━⬣
+┃💗 *¡𝙃𝙤𝙡𝙖!* ${username}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🌟🌟🌟🌟🌟🌟🌟🌟🌟
 ┃➤ *𝙀𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖 ➺ ${exp}*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃➤ *𝙉𝙞𝙫𝙚𝙡 ➺ ${level}*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃➤ *𝙍𝙤𝙡 ➺* ${role}
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃➤ *𝙡𝙤𝙡𝙞𝙘𝙤𝙞𝙣𝙨 ➺ $ ${money}*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃➤ *𝙐𝙨𝙪𝙖𝙧𝙞𝙤𝙨 ➺ ${Object.keys(global.db.data.users).length}* 
+┃➤ *𝘼𝙘𝙩𝙞𝙫𝙤𝙨 ➺ ${uptime}*
 ┃🌟🌟🌟🌟🌟🌟🌟🌟🌟
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ *❏ informenu*
+┃ 〔 𝙄𝙣𝙛𝙤𝙢𝙚𝙣𝙪 〕
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ ❏ ${usedPrefix}cuentaslolibot
-┃ ❏ ${usedPrefix}donar
-┃ ❏ ${usedPrefix}listagrupos
-┃ ❏ ${usedPrefix}estado
-┃ ❏ ${usedPrefix}infobot_
-┃ ❏ ${usedPrefix}sc
-┃ ❏ ${usedPrefix}creador | owner_
-┃ ❏ ${usedPrefix}velocidad | ping_
-┃ ❏ Bot_
-┃ ❏ ${usedPrefix}enable (activa y Desactiva)
+┃❏ ➺ _${usedPrefix}cuentaslolibot
+┃❏ ➺ _${usedPrefix}gruposgrupos
+┃❏ ➺ _${usedPrefix}donar
+┃❏ ➺ _${usedPrefix}listagrupos
+┃❏ ➺ _${usedPrefix}grouplist_
+┃❏ ➺ _${usedPrefix}estado
+┃❏ ➺ _${usedPrefix}infobot_
+┃❏ ➺ _${usedPrefix}creador | owner_
+┃❏ ➺ _${usedPrefix}velocidad | ping_
+┃❏ ➺ _Bot_ 
+┃❏ ➺ _${usedPrefix}enable_
 ╰━━━━━━━━━━━━━━━━━━━⬣
   `.trim()
 conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/elrebelde21/The-LoliBot-MD', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
