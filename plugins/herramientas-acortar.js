@@ -1,10 +1,10 @@
 import axiostal from "axios"
 import fetch from 'node-fetch'
 let handler = async(m, { conn, text, xteamkey }) => {
-if (!text) throw `${mg}𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝙋𝘼𝙍𝘼 𝘼𝘾𝙊𝙍𝙏𝘼𝙍`
+if (!text) throw `${mg} 𝙔 𝙚𝙡 𝙚𝙣𝙡𝙖𝙘𝙚?\n 𝙞𝙣𝙜𝙧𝙚𝙨𝙚 𝙚𝙣𝙡𝙖𝙘𝙚 𝙥𝙖𝙧𝙖 𝙖𝙘𝙤𝙧𝙩𝙖`
 let json = await (await fetch(`https://api.xteam.xyz/shorturl/tinyurl?url=${text}&apikey=cb15ed422c71a2fb`)).json()
 if (!json.status) throw json
-let hasil = `✅ 𝙎𝙀 𝙍𝙀𝘼𝙇𝙄𝙕𝙊 𝘾𝙊𝙉 𝙀𝙓𝙄𝙏𝙊\n\n𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀 𝘼𝙉𝙏𝙀𝙎\n*${json.result}*`.trim()   
+let hasil = `✅ 𝑺𝒆 𝒓𝒆𝒂𝒍𝒊𝒛𝒐  𝒄𝒐𝒏 𝒆́𝒙𝒊𝒕𝒐\n\n𝑬𝒏𝒍𝒂𝒄𝒆𝒔 𝒅𝒆 𝒂𝒏𝒕𝒆𝒔\n*${json.result}*`.trim()   
 m.reply(hasil)
 }
 handler.help = ['tinyurl','acortar'].map(v => v + ' <link>')

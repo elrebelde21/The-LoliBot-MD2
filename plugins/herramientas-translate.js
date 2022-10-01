@@ -2,7 +2,7 @@ import translate from 'translate-google-api'
 const defaultLang = 'es'
 const tld = 'cn'
 let handler = async (m, { args, usedPrefix, command }) => {
-let msg = `${mg}𝙀𝙇 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 𝙎𝙀 𝙐𝙎𝘼 𝘿𝙀 𝙀𝙎𝙏𝘼 𝙈𝘼𝙉𝙀𝙍𝘼\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} (idioma) (texto)*\n*${usedPrefix + command} es hello*\n\n𝙄𝘿𝙄𝙊𝙈𝘼𝙎 𝘼𝘿𝙈𝙄𝙏𝙄𝘿𝙊𝙎\n*https://cloud.google.com/translate/docs/languages*`
+let msg = `${mg}𝙔 𝙚𝙡 𝙩𝙚𝙭𝙩𝙤🤔 𝙌𝙪𝙚 𝙦𝙪𝙞𝙚𝙧𝙚 𝙩𝙧𝙖𝙙𝙪𝙘𝙞𝙧\n 𝙐𝙨𝙚𝙧 𝙙𝙚 𝙚𝙨𝙩𝙖 𝙛𝙤𝙧𝙢𝙖\n𝙀𝙟𝙚𝙢𝙥𝙡𝙤\n*${usedPrefix + command} (idioma) (texto)*\n*${usedPrefix + command} es hello*\n\n𝑰𝒅𝒊𝒐𝒎𝒂 𝒂𝒅𝒎𝒊𝒕𝒊𝒅𝒐𝒔\n*https://cloud.google.com/translate/docs/languages*`
 if (!args || !args[0]) return m.reply(msg)
 let lang = args[0]
 let text = args.slice(1).join(' ')
