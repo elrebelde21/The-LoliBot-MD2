@@ -1,18 +1,18 @@
 import axios from 'axios'
 let split = '|'
 let handler = async (m, { conn, args: [effect], text: txt, usedPrefix, command, name }) => {
-if (!effect) throw `${mg}𝙐𝙎𝘼𝙍 𝙀𝙇 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 𝘿𝙀 𝙎𝙄𝙂𝙐𝙄𝙀𝙉𝙏𝙀 𝙈𝘼𝙉𝙀𝙍𝘼\n💫 *${usedPrefix + command} efecto texto*\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n💫 *${usedPrefix + command} American-flag-3D Loli*\n\n𝙀𝙉 𝘾𝘼𝙎𝙊 𝘿𝙀 𝙌𝙐𝙀 𝘿𝙄𝙂𝘼 𝙌𝙐𝙀 𝙁𝘼𝙇𝙏𝘼 𝙏𝙀𝙓𝙏𝙊 𝙐𝙎𝘼𝙍 𝘿𝙀 𝙀𝙎𝙏𝘼 𝙁𝙊𝙍𝙈𝘼\n💫 *${usedPrefix + command} efecto texto1|texto2*\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n💫 *${usedPrefix + command} Wolf-Logo-Galaxy loli|lolibot*\n\n*✨ 𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝙇𝙊𝙂𝙊𝙎*\n\n🤍 ${usedPrefix + command} ` + effects.map(v => v.title).join(`\n💜 ${usedPrefix + command} `)
+if (!effect) throw `𝙐𝙨𝙖𝙧 𝙚𝙡 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙙𝙚 𝙨𝙞𝙜𝙪𝙞𝙚𝙣𝙩𝙚 𝙢𝙖𝙣𝙚𝙧𝙖\n💫 *${usedPrefix + command} efecto texto*\n𝙀𝙟𝙚𝙢𝙥𝙡𝙤\n💫 *${usedPrefix + command} American-flag-3D Loli*\n\n𝙀𝙣 𝙘𝙖𝙨𝙤 𝙙𝙚 𝙦𝙪𝙚 𝙙𝙞𝙜𝙖 𝙦𝙪𝙚 𝙛𝙖𝙡𝙩𝙖 𝙩𝙚𝙭𝙩𝙤 𝙪𝙨𝙖𝙧 𝙙𝙚 𝙚𝙨𝙩𝙖 𝙛𝙤𝙧𝙢𝙖\n💫 *${usedPrefix + command} efecto texto1|texto2*\n𝙀𝙟𝙚𝙢𝙥𝙡𝙤\n💫 *${usedPrefix + command} Wolf-Logo-Galaxy loli|lolibot*\n\n*✨ 𝒍𝒊𝒔𝒕𝒂 𝒅𝒆 𝒍𝒐𝒈𝒐*\n\n🤍 ${usedPrefix + command} ` + effects.map(v => v.title).join(`\n💜 ${usedPrefix + command} `)
 effect = effect.toLowerCase()
-if (!effects.find(v => (new RegExp(v.title, 'gi')).test(effect))) throw `${mg}𝙀𝙇 𝙇𝙊𝙂𝙊 ${effect}𝙉𝙊 𝙎𝙀 𝙀𝙉𝘾𝙐𝙀𝙉𝙏𝙍𝘼 𝙀𝙉 𝙇𝘼 𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝙇𝙊𝙂𝙊𝙎`
+if (!effects.find(v => (new RegExp(v.title, 'gi')).test(effect))) throw `𝑼𝒇 𝒆𝒍 𝒍𝒐𝒈𝒐 ${effect} 𝒏𝒐 𝒔𝒆 𝒆𝒏𝒄𝒖𝒆𝒏𝒕𝒓𝒂 𝒆𝒏 𝒍𝒂 𝒍𝒊𝒔𝒕𝒂 𝒅𝒆 𝒍𝒐𝒈𝒐𝒔`
 let text = txt.replace(new RegExp(effect, 'gi'), '').trimStart()
 if (text.includes(split)) text = text.split(split)
 text = Array.isArray(text) ? text : [text]
 let res = await textpro(effect, ...text)
-if (typeof res == 'number') throw res == -1 ? `${mg}𝙀𝙇 𝙇𝙊𝙂𝙊 ${effect} 𝙉𝙊 𝙎𝙀 𝙀𝙉𝘾𝙐𝙀𝙉𝙏𝙍𝘼 𝙀𝙉 𝙇𝘼 𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝙇𝙊𝙂𝙊𝙎` : `𝙐𝙎𝘼𝙍 𝙀𝙇 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 𝘿𝙀 𝙎𝙄𝙂𝙐𝙄𝙀𝙉𝙏𝙀 𝙈𝘼𝙉𝙀𝙍𝘼\n\n${usedPrefix + command} ${effect} ${new Array(res).fill('texto').map((v, i) => v + (i ? i + 1 : '')).join('|')}*`
+if (typeof res == 'number') throw res == -1 ? `${mg}𝑼𝒇 𝒆𝒍 𝒍𝒐𝒈𝒐 ${effect} 𝒏𝒐 𝒔𝒆 𝒆𝒏𝒄𝒖𝒆𝒏𝒕𝒓𝒂 𝒆𝒏 𝒍𝒂 𝒍𝒊𝒔𝒕𝒂 𝒅𝒆 𝒍𝒐𝒈𝒐𝒔` : `𝑼𝒔𝒂𝒓 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒅𝒆𝒍 𝒍𝒂 𝒔𝒊𝒈𝒖𝒊𝒆𝒏𝒕𝒆 𝒎𝒂𝒏𝒆𝒓𝒂\n\n${usedPrefix + command} ${effect} ${new Array(res).fill('texto').map((v, i) => v + (i ? i + 1 : '')).join('|')}*`
 let result = await axios.get(res, {
 responseType: 'arraybuffer'
 })
-await conn.sendFile(m.chat, result.data, 'Error.jpg', `✅ *AQUÍ ESTA TÚ LOGO!!*\n\n🔆 *EFECTO: ${effect}*\n${wm}`, m)
+await conn.sendFile(m.chat, result.data, 'Error.jpg', `✅ *𝑨𝒒𝒖𝒊́ 𝒆𝒔𝒕𝒂 𝒕𝒖 𝒍𝒐𝒈𝒐!!*\n\n🔆 *𝑬𝒇𝒆𝒄𝒕𝒐: ${effect}*\n${wm}`, m)
 }
 handler.help = ['logos']
 handler.tags = ['nulis']

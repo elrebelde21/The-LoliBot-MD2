@@ -82,20 +82,17 @@ let username = conn.getName(who)
 //user.registered = false
 //menu de ephotho360
 let menu = `
-💗 *¡HOLA | HI!* ${username}
 ╭━〔 *${wm}* 〕━⬣
+┃💗 *¡𝙃𝙤𝙡𝙖!* ${username}
 ┃⛲⛲⛲⛲⛲⛲⛲⛲⛲⛲
-┃✪ *EXPERIENCIA | EXP ➺ ${exp}*
-┃✪ *NIVEL | LEVEL ➺ ${level}*
-┃✪ *ROL ➺* ${role}
-┃✪ *GATACOINS ➺ $ ${money}*
+┃❏ *𝙀𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖  ➺ ${exp}*
+┃❏ *𝙉𝙞𝙫𝙚𝙡 ➺ ${level}*
+┃❏ *𝙍𝙤𝙡 ➺* ${role}
+┃❏ *𝙇𝙤𝙡𝙞𝙘𝙤𝙞𝙣𝙨 ➺ $ ${money}*
+┃❏ *𝙐𝙨𝙪𝙖𝙧𝙞𝙤 ➺ ${Object.keys(global.db.data.users).length}* 
+┃⛲⛲⛲⛲⛲⛲⛲⛲⛲⛲
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *FECHA*
-┃➺ *${week}, ${date}*
-┃✪ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
-┃⛲⛲⛲⛲⛲⛲⛲⛲⛲⛲
-╰━━━━〔 𓃠 *${vs}* 〕━━━━⬣
-╭━〔 𝙈𝙀𝙉𝙐 𝙇𝙊𝙂𝙊 *2* 〕━━⬣
+┃〔 𝙈𝙚𝙣𝙪 𝙡𝙤𝙜𝙤𝙨 〕
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🌅 ${usedPrefix}logocorazon *Texto*
 ┃🌅 ${usedPrefix}3dtext *Texto*
@@ -123,10 +120,9 @@ let menu = `
 ┃🌅 ${usedPrefix}pikachu *Texto*
 ┃🌅 ${usedPrefix}logochristmas *Texto*
 ╰━━━━━━━━━━━━━━━━⬣`.trim()
-conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
-['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
-['𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 | 𝙄𝙣𝙫𝙚𝙣𝙩𝙤𝙧𝙮 🎒', '/inventario'],
-['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 | 𝙈𝙖𝙞𝙣 𝙢𝙚𝙣𝙪 ⚡', '#menu']
+conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/elrebelde21/The-LoliBot-MD', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
+['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 💫', '.allmenu'],
+['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 ⚡', '#menu']
 ], m,)
 }
 
