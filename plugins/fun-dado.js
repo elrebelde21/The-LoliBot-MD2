@@ -1,5 +1,5 @@
 let handler = async(m, { conn, text, args, usedPrefix, command }) => {
-await conn.reply(m.chat, '𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍 𝙀𝙎𝙋𝙀𝙍𝙀, 𝙎𝙐 𝘿𝘼𝘿𝙊 𝙎𝙀 𝙀𝙎𝙏𝘼 𝘾𝙍𝙀𝘼𝙉𝘿𝙊', m)
+await conn.reply(m.chat, '🕧 𝑷𝒐𝒓 𝒇𝒂𝒗𝒐𝒓 𝒆𝒔𝒑𝒆𝒓𝒆... 𝒔𝒐𝒚 𝒍𝒆𝒏𝒕𝒐🐢,  𝒔𝒖𝒔 𝒅𝒂𝒅𝒐𝒔 𝒔𝒆 𝒆𝒔𝒕𝒂 𝒄𝒓𝒆𝒂𝒏𝒅𝒐', m)
 await conn.sendFile(m.chat, `https://violetics.pw/api/random/dadu?apikey=${Key360}`, 'sticker.webp', '', m, { asSticker: true })}
 handler.help = ['dado']
 handler.tags = ['game'] 

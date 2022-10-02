@@ -73,7 +73,7 @@ if (command == 'multijuegos') {
             //let s = `Bienvenido al Multijuegos Aleeatorios`
 
  const templateButtonsReplyMessage = [
-{index: 1, urlButton: {displayText: 'The Lolibot-𝙈𝘿', url: 'https://github.com/elrebelde21/The-LoliBot-MD'}},
+{index: 1, urlButton: {displayText: '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝒃𝒐𝒕-𝑴𝑫', url: 'https://github.com/elrebelde21/The-LoliBot-MD'}},
 {index: 2, urlButton: {displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', url: 'https://www.instagram.com/gata_dios/'}},
 {index: 3, quickReplyButton: {displayText: '𝙄𝙣𝙞𝙘𝙞𝙖𝙧 ✨', id: '.juegos'}},
 {index: 4, quickReplyButton: {displayText: '𝙈𝙚𝙣𝙪 𝙅𝙪𝙚𝙜𝙤𝙨 🎡', id: '#juegosmenu'}},
@@ -82,7 +82,7 @@ if (command == 'multijuegos') {
  
 let t = {
 text: global.wm,
-footer: `𝘽𝙞𝙚𝙣𝙫𝙚𝙣𝙞𝙙𝙤(𝙖) ${username}\n𝙅𝙪𝙚𝙜𝙖 𝙪𝙣𝙖 𝙂𝙧𝙖𝙣 𝙫𝙖𝙧𝙞𝙚𝙙𝙖𝙙 𝙙𝙚 𝙟𝙪𝙚𝙜𝙤𝙨!!`,
+footer: `𝘽𝙞𝙚𝙣𝙫𝙚𝙣𝙞𝙙𝙤(𝙖) ${username}\n𝙅𝙪𝙚𝙜𝙖𝙨 𝙪𝙣𝙖 𝙜𝙧𝙖𝙣 𝙫𝙖𝙧𝙞𝙚𝙙𝙖𝙙 𝙙𝙚 𝙟𝙪𝙚𝙜𝙤𝙨!!`,
 templateButtons: templateButtonsReplyMessage
   }
 conn.sendMessage(m.chat, t, m)
@@ -101,11 +101,11 @@ conn.sendMessage(m.chat, t, m)
                    let emojis3 = `${pickRandom([`🛸`,`🚁`,`🚀`,`🧠`,`✈️`,`🚤`,`🚢`,`🚗`])}`
               
 
-              let ss = await `The Lolibot-MD`
+              let ss = await `𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝒃𝒐𝒕-𝑴𝑫`
 
  const templateButtonsReplyMessage = [
-{index: 1, urlButton: {displayText: 'The Lolibot-MD', url: 'https://github.com/elrebelde21/The-LoliBot-MD'}},
-{index: 2, urlButton: {displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', url: 'https://www.instagram.com/gata_dios/'}},
+{index: 1, urlButton: {displayText: '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝒃𝒐𝒕-𝑴𝑫', url: 'https://github.com/elrebelde21/The-LoliBot-MD'}},
+{index: 2, urlButton: {displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', url: ''}},
 {index: 3, quickReplyButton: {displayText: `𝙅𝙪𝙜𝙖𝙧 ${emojis1}`, id: juegos}},
 {index: 4, quickReplyButton: {displayText: `𝙅𝙪𝙜𝙖𝙧 ${emojis2}`, id: juegos2}},
 {index: 5, quickReplyButton: {displayText: `𝙅𝙪𝙜𝙖𝙧 ${emojis3}`, id: juegos3}},
@@ -131,10 +131,10 @@ conn.sendMessage(m.chat, tt, m)
                  let emojis2 = `${pickRandom([`🕵🏻‍♀️`,`🕵🏽‍♀️`,`🕵🏻‍♂️`,`🕵🏾‍♂️`,`👩🏿‍⚕️`,`🧑🏿‍⚕️`,`👩🏻‍⚕️`,`🧑🏻‍⚕️`,`👩🏼‍⚕️`,`🧑🏼‍⚕️`,`👩🏻‍🍳`,`🧑🏽‍🍳`,`👩🏾‍🍳`,`🧑🏿‍🍳`,`👩🏻‍🎓`,`👩🏼‍🎓`,`🧑🏾‍🎓`,`🧑🏻‍🎓`,`👩🏿‍🚀`,`🧑🏾‍🚀`,`👩🏽‍🚀`,`🧑🏽‍🚀`,`👩🏻‍⚖️`,`🧑🏻‍⚖️`,`👩🏽‍⚖️`,`🧑🏾‍⚖️`,`👩🏼‍⚖️`,`🧑🏼‍⚖️`,`🧙🏾‍♀️`,`🧙🏾‍♂️`,`🧙🏻‍♀️`,`🧙🏻‍♂️`,`🧚🏻‍♀️`,`🧚🏻‍♂️`,`🧚🏿‍♀️`,`🧚🏿‍♂️`,`🧚🏽‍♀️`,`🧚🏽‍♂️`,`🧞‍♀️`,`🧞‍♂️`,`👩🏻‍🎨`,`👩🏼‍🎨`,`👩🏿‍🎨`,`🧑🏻‍🎨`,`🧑🏼‍🎨`,`🧑🏿‍🎨`])}`
                   let emojis3 = `${pickRandom([`🍑`,`🍒`,`🍕`,`🍡`,`🍨`,`🥧`,`🍜`,`🍛`,`🍫`,`🫒`,`🍆`,`🍩`,`🍪`,`🍿`])}`
 
-           let sss = await `The Lolibot-MD`
+           let sss = await `𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝒃𝒐𝒕-𝑴𝑫`
 
  const templateButtonsReplyMessage = [
-{index: 1, urlButton: {displayText: 'The Lolibo𝙩-𝙈𝘿', url: 'https://github.com/elrebelde21/The-LoliBot-MD'}},
+{index: 1, urlButton: {displayText: '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝒃𝒐𝒕-𝑴𝑫', url: 'https://github.com/elrebelde21/The-LoliBot-MD'}},
 {index: 2, urlButton: {displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', url: 'https://www.instagram.com/gata_dios/'}},
 {index: 3, quickReplyButton: {displayText: `𝙅𝙪𝙜𝙖𝙧 ${emojis1}`, id: juegos}},
 {index: 4, quickReplyButton: {displayText: `𝙅𝙪𝙜𝙖𝙧 ${emojis2}`, id: juegos2}},
@@ -159,7 +159,7 @@ conn.sendMessage(m.chat, ttt, m)
                       let emojis2 = `${pickRandom([`❤️`,`🧡`,`💛`,`💚`,`💙`,`💜`,`🖤`,`💔`,`❤️‍🔥`,`❤️‍🩹`,`❣️`,`💕`,`💞`,`💓`,`💗`,`💖`,`💘`,`💝`])}`
                        let emojis3 = `${pickRandom([`🥊`,`🥋`,`🎣`,`🎊`,`🎉`,`🎈`,`✨`,`⭐`,`💫`,`🌟`,`🌈`,`🔥`,`💥`,`☃️`,`❄️`,`⛱️`,`🗿`,`🔮`])}`
          
-                 let ssss = await `The Lolibot-MD`
+                 let ssss = await `𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝒃𝒐𝒕-𝑴𝑫`
 
  const templateButtonsReplyMessage = [
 {index: 1, urlButton: {displayText: null, url: null}},
@@ -187,7 +187,7 @@ conn.sendMessage(m.chat, tttt, m)
                     let emojis1 = `${pickRandom([`🏳️`,`🏴`,`🏴‍☠️`,`🏁`,`🚩`,`🏳️‍🌈`,`🏳‍⚧`,`🇧🇷`,`🇨🇱`,`🇦🇷`,`🇧🇴`,`🇻🇪`,`🇭🇳`,`🇺🇾`,`🇨🇴`,`🇵🇪`,`🇵🇦`,`🇳🇮`,`🇬🇹`,`🇨🇺`,`🇨🇷`,`🇭🇹`,`🇩🇴`,`🇲🇽`,`🇸🇻`,`🇬🇾`,`🇺🇸`,`🇨🇦`,`🇱🇨`,`🇪🇨`])}`
                      let emojis2 = `${pickRandom([`🌁`,`🌉`,`🌌`,`🌃`,`🏙️`,`🌆`,`🌇`,`🎆`,`🎇`,`🌠`,`🌄`,`🌅`,`🏞️`,`🎑`,`🗾`,`🏜️`,`🏝️`,`🏖️`,`🗼`,`🗽`,`🗺️`,`🏗️`])}`
          
-                 let ssss = await `The Lolibot-MD`
+                 let ssss = await `𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝒃𝒐𝒕-𝑴𝑫`
 
  const templateButtonsReplyMessage = [
 {index: 1, urlButton: {displayText: null, url: null}},

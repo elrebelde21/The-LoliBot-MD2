@@ -78,7 +78,7 @@ let expp2 = Math.floor(Math.random() * 2500)
 
 let winner = isSurrender ? room.game.currentTurn : room.game.winner
 let str = `
-🫂 𝙅𝙐𝙂𝘼𝘿𝙊𝙍𝙀𝙎:
+🫂 𝙅𝙪𝙜𝙖𝙙𝙤𝙧𝙚𝙨:
 *┈┈┈┈┈┈┈┈┈*
 ❎ = @${room.game.playerX.split('@')[0]}
 ⭕ = @${room.game.playerO.split('@')[0]}
@@ -87,7 +87,7 @@ let str = `
      ${arr.slice(3, 6).join('')}
      ${arr.slice(6).join('')}
 *┈┈┈┈┈┈┈┈┈*
-${isWin ? `@${(isSurrender ? room.game.currentTurn : room.game.winner).split('@')[0]} 😎🏆 *GANASTE!!*\n*POR HABER GANADO OBTIENES*\n\n💎 *${dia2} Diamantes*\n🪙 *${tok2} Tokens*\n🐈 *${gata2} loliCoins*\n⚡ *${expp2} Exp*` : isTie ? `*EMPATE!!* 🤨\n*POR TERMINAR EN EMPATE AMBOS OBTIENEN*\n\n💎 *${dia} Diamantes*\n🪙 *${tok} Tokens*\n🐈 *${gata} loliCoins*\n⚡ *${expp} Exp*` : `🪄 *TURNO DE* @${room.game.currentTurn.split('@')[0]}`}
+${isWin ? `@${(isSurrender ? room.game.currentTurn : room.game.winner).split('@')[0]} 😎🏆 *𝙂𝙖𝙣𝙖𝙧𝙩𝙚!!*\n*𝙋𝙤𝙧 𝙝𝙖𝙗𝙚𝙧 𝙜𝙖𝙣𝙖𝙙𝙤𝙨 𝙤𝙗𝙩𝙞𝙚𝙣𝙚*\n\n💎 *${dia2} 𝘿𝙞𝙖𝙢𝙖𝙣𝙩𝙚𝙨*\n🪙 *${tok2} 𝙏𝙤𝙠𝙚𝙣𝙨*\n🐈 *${gata2} 𝙇𝙤𝙡𝙞𝙘𝙤𝙞𝙣𝙨*\n⚡ *${expp2} 𝙀𝙭𝙥*` : isTie ? `*𝙀𝙢𝙥𝙖𝙩𝙚!!* 🤨\n*𝙋𝙤𝙧 𝙩𝙚𝙧𝙢𝙞𝙣𝙖 𝙚𝙡 𝙚𝙢𝙥𝙖𝙩𝙚 𝙖𝙢𝙗𝙤𝙨 𝙩𝙞𝙚𝙣𝙚*\n\n💎 *${dia} 𝘿𝙞𝙖𝙢𝙖𝙣𝙩𝙚𝙨*\n🪙 *${tok} 𝙏𝙤𝙠𝙚𝙣𝙨*\n🐈 *${gata} 𝙇𝙤𝙡𝙞𝙘𝙤𝙞𝙣𝙨*\n⚡ *${expp} 𝙀𝙭𝙥*` : `🪄 *𝙏𝙪𝙧𝙣𝙤 𝙙𝙚* @${room.game.currentTurn.split('@')[0]}`}
 `.trim()
 let users = global.db.data.users
 if ((room.game._currentTurn ^ isSurrender ? room.x : room.o) !== m.chat)
