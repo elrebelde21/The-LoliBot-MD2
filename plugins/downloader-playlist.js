@@ -1,33 +1,29 @@
-/* Created by https://github.com/BrunoSobrino */
-       /* Diseño by Yameko-Bot V1*/
-
-import yts from "yt-search"
 let handler = async (m, { text, conn, args, command, usedPrefix }) => {
-if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴 𝙻𝙰 𝙲𝙰𝙽𝙲𝙸𝙾𝙽 𝙵𝙰𝙻𝚃𝙰𝙽𝚃𝙴, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙼𝙰𝚂 𝙴𝙻 𝙽𝙾𝙼𝙱𝚁𝙴/𝚃𝙸𝚃𝚄𝙻𝙾 𝙳𝙴 𝚄𝙽𝙰 𝙲𝙰𝙽𝙲𝙸𝙾𝙽*\n\n*—◉ 𝙴𝙹𝙴𝙼𝙿𝙻𝙾:*\n*${usedPrefix + command} Begin you*`    
+if (!text) throw `*𝙌𝙪𝙚 𝙚𝙨𝙩𝙖 𝙗𝙪𝙨𝙘𝙖𝙙𝙤?𝙄𝙣𝙜𝙧𝙚𝙨𝙚 𝙚𝙡 𝙣𝙤𝙢𝙗𝙧𝙚 /𝙩𝙞́𝙩𝙪𝙡𝙤𝙨 𝙙𝙚𝙡 𝙡𝙖 𝙘𝙖𝙣𝙘𝙞𝙤́𝙣*\n\n*—◉ 𝙀𝙟𝙚𝙢𝙥𝙡𝙤:*\n*${usedPrefix + command} bad bunny*`    
 try {
 let search = await yts(args.join(" "))
 let listSerch = []
 let listSerch2 = []
 let listSerch3 = []
 let listSerch4 = []
-let teskd = `𝐌𝐮𝐬𝐢𝐜𝐚 𝐫𝐞𝐥𝐚𝐜𝐢𝐨𝐧𝐚𝐝𝐚 𝐜𝐨𝐧: ${args.join(" ")}`
+let teskd = `𝑴𝒖́𝒔𝒊𝒄𝒂 𝒓𝒆𝒍𝒂𝒄𝒊𝒐𝒏𝒂𝒅𝒂 𝒄𝒐𝒏: ${args.join(" ")}`
 const sections = [{
-title: `|－－－－－{ ＡＵＤＩＯ }－－－－－|`,
+title: `|－－－－－{ 𝑨𝒖𝒅𝒊𝒐 }－－－－－|`,
 rows: listSerch },
 {              
-title: `|－－－－－{ ＶＩＤＥＯ }－－－－－|`,
+title: `|－－－－－{ 𝑽𝒊𝒅𝒆𝒐 }－－－－－|`,
 rows: listSerch2 },
 {              
-title: `|－－{ ＤＯＣＵＭＥＮＴＯ  ＭＰ３ }－－|`,
+title: `|－－{ 𝑫𝒐𝒄𝒖𝒎𝒆𝒏𝒕𝒐𝒔  ＭＰ３ }－－|`,
 rows: listSerch3 },
 {              
-title: `|－－{ ＤＯＣＵＭＥＮＴＯ  ＭＰ４ }－－|`,
+title: `|－－{ 𝑫𝒐𝒄𝒖𝒎𝒆𝒏𝒕𝒐𝒔  ＭＰ４ }－－|`,
 rows: listSerch4 }]
 const listMessage = {
 text: teskd,
-footer: '𝐄𝐥𝐢𝐣𝐚 𝐮𝐧𝐚 𝐨𝐩𝐜𝐢𝐨𝐧 𝐲 𝐩𝐫𝐞𝐜𝐢𝐨𝐧𝐞 𝐄𝐧𝐯𝐢𝐚𝐫',
-title: " 『 𝗠𝗨𝗦𝗜𝗖𝗔 𝗥𝗘𝗟𝗔𝗖𝗜𝗢𝗡𝗔𝗗𝗔 』",
-buttonText: "[♦ 𝐑𝐄𝐒𝐔𝐋𝐓𝐀𝐃𝐎𝐒 ♦]",
+footer: '𝑬𝒍𝒊𝒋𝒂 𝒖𝒏𝒂 𝒐𝒑𝒄𝒊𝒐́𝒏 𝒚 𝒑𝒓𝒆𝒔𝒊𝒐𝒏𝒆 𝒆𝒏𝒗𝒊𝒂𝒓',
+title: " 『 𝑴𝒖́𝒔𝒊𝒄𝒂 𝒓𝒆𝒍𝒂𝒄𝒊𝒐𝒏𝒂𝒅𝒂 』",
+buttonText: "[♦ 𝑹𝒆𝒔𝒖𝒍𝒕𝒂𝒅𝒐𝒔 ♦]",
 sections}
 for (let i of search.all) {
 listSerch.push({title: i.title, description: `Autor: ${i.author.name} / ${i.timestamp}`, rowId: `${usedPrefix}ytmp3 ${i.url}`})
@@ -36,7 +32,7 @@ listSerch3.push({title: i.title, description: `Autor: ${i.author.name} / ${i.tim
 listSerch4.push({title: i.title, description: `Autor: ${i.author.name} / ${i.timestamp}`, rowId: `${usedPrefix}ytmp4doc ${i.url}`})}
 conn.sendMessage(m.chat, listMessage, { quoted: m })
 } catch (e) {
-m.reply('*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾 𝙲𝙾𝙽 𝙾𝚃𝚁𝙾 𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴 𝚄𝙽𝙰 𝙲𝙰𝙽𝙲𝙸𝙾𝙽*')
+m.reply('*𝑼𝒇𝒇, 𝒆𝒓𝒓𝒐, 𝒗𝒖𝒆𝒍𝒗𝒆 𝒂𝒍 𝒊𝒏𝒕𝒆𝒏𝒕𝒂 𝒄𝒐𝒏 𝒐𝒕𝒓𝒐𝒔 𝒏𝒐𝒎𝒃𝒓𝒆𝒔*')
 }}
 handler.command = /^playlist|playlist2$/i
 export default handler
