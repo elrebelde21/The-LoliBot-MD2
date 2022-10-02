@@ -34,7 +34,7 @@ if (new Date - user.lastadventure <= cooldown) return conn.sendButton(m.chat, `$
 `𝙔𝘼 𝘼𝙑𝙀𝙉𝙏𝙐𝙍𝘼𝙎𝙏𝙀!! 𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍 𝙀𝙎𝙋𝙀𝙍𝘼 𝙃𝘼𝙎𝙏𝘼 𝙌𝙐𝙀 𝙏𝙀𝙍𝙈𝙄𝙉𝙀 𝙀𝙇 𝙏𝙄𝙀𝙈𝙋𝙊 𝘿𝙀 𝘿𝙀𝙎𝘾𝘼𝙉𝙎𝙊
 
 ⏱️ ${timers.toTimeString()}`.trim(), imgr + 'DESCANSANDO', [
-[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 | 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `${usedPrefix}inventory`],
+[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊`, `${usedPrefix}inventory`],
 [`🔔 𝙍𝙀𝘾𝙇𝘼𝙈𝙊 𝘿𝙄𝘼𝙍𝙄𝙊`, `${usedPrefix}daily`]], fkontak, m) 
     
     const rewards = reward(user)
@@ -64,7 +64,7 @@ ${cmenua}`
     conn.sendButton(m.chat, 
      `${htki} 𝘼𝙑𝙀𝙉𝙏𝙐𝙍𝘼 ${htka}`, 
      text.trim(), `https://static-maps.yandex.ru/1.x/?lang=id-ID&ll=${kt[1][0].longitude},${kt[1][0].latitude}&z=12&l=map&size=600,300`, [
-[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 | 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `${usedPrefix}inventory`],
+[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊`, `${usedPrefix}inventory`],
 [`🔔 𝙍𝙀𝘾𝙇𝘼𝙈𝙊 𝘿𝙄𝘼𝙍𝙄𝙊`, `${usedPrefix}daily`]
 ], fkontak, m)
     user.lastadventure = new Date * 1

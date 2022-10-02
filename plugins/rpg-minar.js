@@ -8,7 +8,7 @@ global.db.data.users[m.sender].exp += xp * 1
 let time = global.db.data.users[m.sender].lastmiming + 600000
 if (new Date - global.db.data.users[m.sender].lastmiming < 600000) throw `*💟 Vuelva en ${msToTime(time - new Date())} para continuar minando ⛏️*`  
 
-conn.sendHydrated(m.chat, `*${minar} ${xp} 𝙓𝙋*`, wm, pp, md, 'The Lolibot-𝙈𝘿', null, null, [
+conn.sendHydrated(m.chat, `*${minar} ${xp} 𝙓𝙋*`, wm, pp, md, '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝒃𝒐𝒕-𝑴𝑫', null, null, [
 ['𝙈𝙞𝙣𝙖𝙧 𝘿𝙞𝙖𝙢𝙖𝙣𝙩𝙚𝙨 💎', `.minar3`],
 ['𝙈𝙞𝙣𝙖𝙧 Loli𝘾𝙤𝙞𝙣𝙨 🐈', `.minar2`],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', `.menu`]

@@ -263,7 +263,6 @@ let str = `
 👤» *${name}* ( @${who.split("@")[0]} )\n
 ╭━━━━━━━━━⬣
 ┃ *𝗜𝗡𝗩𝗘𝗡𝗧𝗔𝗥𝗜𝗢 𝗗𝗘 𝗔𝗥𝗧𝗜𝗖𝗨𝗟𝗢𝗦* 
-┃ *𝙄𝙏𝙀𝙈 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
 ┃ *${rpg.emoticon('health')} » ${healt}* 
 ┃ ${rpgg.emoticon('level')} *Nivel : Level » ${level}*
@@ -277,7 +276,6 @@ let str = `
 ┃
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╮
 ┃ 𝗣𝗥𝗢𝗗𝗨𝗖𝗧𝗢𝗦 𝗩𝗔𝗟𝗜𝗢𝗦𝗢𝗦
-┃ 𝗩𝗔𝗟𝗨𝗔𝗕𝗟𝗘 𝗣𝗥𝗢𝗗𝗨𝗖𝗧𝗦
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╯
 ┃ ${rpgg.emoticon('exp')} *Exp » ${exp}*
 ┃ ${rpgg.emoticon('limit')} *Diamante : Diamond » ${dia}*
@@ -294,7 +292,6 @@ let str = `
 ┃
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╮
 ┃ 𝗦𝗨𝗣𝗘𝗥𝗩𝗜𝗩𝗘𝗡𝗖𝗜𝗔
-┃ 𝗦𝗨𝗥𝗩𝗜𝗩𝗔𝗟 𝗜𝗧𝗘𝗠
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╯
 ┃ *${rpgshop.emoticon('potion')} » ${member.potion}*
 ┃ *${rpgshop.emoticon('aqua')} » ${member.aqua}*
@@ -311,7 +308,6 @@ let str = `
 ┃
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╮
 ┃ 𝗢𝗕𝗝𝗘𝗧𝗢𝗦 𝗠𝗜𝗦𝗧𝗘𝗥𝗜𝗢𝗦𝗢𝗦
-┃ 𝗠𝗬𝗦𝗧𝗘𝗥𝗜𝗢𝗨𝗦 𝗢𝗕𝗝𝗘𝗖𝗧𝗦
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╯
 ┃ *${rpgshop.emoticon('eleksirb')} » ${member.eleksirb}*
 ┃ *${rpgshop.emoticon('emasbatang')} » ${member.emasbatang}*
@@ -332,10 +328,9 @@ let str = `
 ╰━━━━━━━━━⬣
 
 🏆 *RESUMEN EN LOS TOPS* 🏆 
-🚀 *SUMMARY IN THE TOPS* 🚀
 👤» *${name}* ( @${who.split("@")[0]} )\n
 _1.Top Nivel_ *${userslevel.indexOf(m.sender) + 1}* _de_ *${userslevel.length}*
-_2.Top GataCoins_ *${usersmoney.indexOf(m.sender) + 1}* _de_ *${usersmoney.length}*
+_2.Top loliCoins_ *${usersmoney.indexOf(m.sender) + 1}* _de_ *${usersmoney.length}*
 _3.Top Diamantes+_ *${usersdiamond.indexOf(m.sender) + 1}* _de_ *${usersdiamond.length}*
 _4.Top Poción_ *${userspotion.indexOf(m.sender) + 1}* _de_ *${userspotion.length}*
 _5.Top Basura_ *${userssampah.indexOf(m.sender) + 1}* _de_ *${userssampah.length}*
@@ -370,8 +365,8 @@ const fkontak = {
 //conn.reply(m.chat, str, m)
 await conn.sendButton(m.chat, str, `*𝗣𝗥𝗘𝗠𝗜𝗨𝗠 ${member.premium ? "✅": "❌"}*\n${wm}`, imgr + `Inventario : Inventory`, [
 [`🤺 𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 𝙙𝙚 𝘾𝙤𝙢𝙗𝙖𝙩𝙚`, `${usedPrefix}inventario 2`],
-[`🏕️ 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖𝙧 | 𝙑𝙚𝙣𝙩𝙪𝙧𝙚`, `${usedPrefix}adventure`],
-['💗 𝙈𝙚𝙣𝙪 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖 | 𝙍𝙋𝙂', '.rpgmenu']], fkontak, m, { mentions: conn.parseMention(str) })
+[`🏕️ 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖𝙧`, `${usedPrefix}adventure`],
+['💗 𝙈𝙚𝙣𝙪 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖', '.rpgmenu']], fkontak, m, { mentions: conn.parseMention(str) })
 	
 } else if (args[0] == '2') { // Inventario 2
 
@@ -432,41 +427,38 @@ const cooldowns = Object.entries(inventory.cooldowns).map(([cd, { name, time }])
  const caption = `
 👤» *${name}* ( @${who.split("@")[0]} )\n
 🛣️ 𝗘𝗦𝗧𝗥𝗔𝗧𝗘𝗚𝗜𝗔𝗦 | 𝗔𝗡𝗜𝗠𝗔𝗟𝗘𝗦
-🌄 𝗦𝗧𝗥𝗔𝗧𝗘𝗚𝗜𝗘𝗦 | 𝗔𝗡𝗜𝗠𝗔𝗟𝗦
 
 ╭━━━━━━━━━⬣
 ┃ *𝗘𝗦𝗧𝗔𝗗𝗢 𝗗𝗘 𝗖𝗢𝗠𝗕𝗔𝗧𝗘*
-┃ *𝗖𝗢𝗠𝗕𝗔𝗧 𝗦𝗧𝗔𝗧𝗨𝗦*
 ┃
 ┃ *${rpg.emoticon('health')}* 
 ┃ *» ${healt}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
 ┃ *${rpg.emoticon('pickaxe')}* 
-┃ *» ${pickaxe == 0 ? 'No tengo | I do not have' : '' || pickaxe == 1 ? 'Nivel | Level ✦ 1' : '' || pickaxe == 2 ? 'Nivel | Level ✦ 2' : '' || pickaxe == 3 ? 'Nivel | Level ✦ 3' : '' || pickaxe == 4 ? 'Nivel | Level ✦ 4' : '' || pickaxe == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
+┃ *» ${pickaxe == 0 ? 'No tengo' : '' || pickaxe == 1 ? 'Nivel ✦ 1' : '' || pickaxe == 2 ? 'Nivel ✦ 2' : '' || pickaxe == 3 ? 'Nivel | Level ✦ 3' : '' || pickaxe == 4 ? 'Nivel ✦ 4' : '' || pickaxe == 5 ? 'Nivel  ✦ 5 ǁ MAX' : ''}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
 ┃ ${rpgshopp.emoticon('sword')} *Espada | Sword*
-┃ *» ${sword == 0 ? 'No tengo | I do not have' : '' || sword == 1 ? 'Espada de Cuero ✦ Leather Sword' : '' || sword == 2 ? 'Espada de Hierro ✦ Iron Sword' : '' || sword == 3 ? 'Espada de Oro ✦ Gold Sword' : '' || sword == 4 ? 'Espada de Energía ✦ Energy Sword' : '' || sword == 5 ? 'Espada Galáctica ✦ Galactic Sword ǁ MAX' : ''}*
+┃ *» ${sword == 0 ? 'No tengo' : '' || sword == 1 ? 'Espada de Cuero ✦ Leather Sword' : '' || sword == 2 ? 'Espada de Hierro ✦ Iron Sword' : '' || sword == 3 ? 'Espada de Oro ✦ Gold Sword' : '' || sword == 4 ? 'Espada de Energía ✦ Energy Sword' : '' || sword == 5 ? 'Espada Galáctica ✦ Galactic Sword ǁ MAX' : ''}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
 ┃ ${rpgg.emoticon('armor')} *Armadura | Armor* 
-┃ *» ${armor == 0 ? 'No tengo | I do not have' : '' || armor == 1 ? '✦ Armadura de Cuero : Leather Armor' : '' || armor == 2 ? '✦ Armadura de Hierro : Iron Armor' : '' || armor == 3 ? '✦ Armadura Mágica : Magic Armor' : '' || armor == 4 ? '✦ Armadura Robótica : Robotic Armor' : '' || armor == 5 ? 'Armadura Cyborg Estelar : Cyborg Armor ǁ MAX' : ''}*
+┃ *» ${armor == 0 ? 'No tengo' : '' || armor == 1 ? '✦ Armadura de Cuero : Leather Armor' : '' || armor == 2 ? '✦ Armadura de Hierro : Iron Armor' : '' || armor == 3 ? '✦ Armadura Mágica : Magic Armor' : '' || armor == 4 ? '✦ Armadura Robótica : Robotic Armor' : '' || armor == 5 ? 'Armadura Cyborg Estelar : Cyborg Armor ǁ MAX' : ''}*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-┃ 🎣 *Caña de Pescar | FishingRod* 
+┃ 🎣 *Caña de Pescar
 ┃ *» ${fishingrod}* 
 ╰━━━━━━━━━⬣
 
 *╭───━• ESTRATEGIAS*
-*╭────━• STRATEGIES*
 *│🥼 Armadura : Armor:* 
-*│➠ ${armor == 0 ? 'No tengo | I do not have' : '' || armor == 1 ? '✦ Armadura de Cuero : Leather Armor' : '' || armor == 2 ? '✦ Armadura de Hierro : Iron Armor' : '' || armor == 3 ? '✦ Armadura Mágica : Magic Armor' : '' || armor == 4 ? '✦ Armadura Robótica : Robotic Armor' : '' || armor == 5 ? 'Armadura Cyborg Estelar : Cyborg Armor ǁ MAX' : ''}*
-*│🥼⇡ Durabilidad : Durability:* 
+*│➠ ${armor == 0 ? 'No tengo' : '' || armor == 1 ? '✦ Armadura de Cuero : Leather Armor' : '' || armor == 2 ? '✦ Armadura de Hierro : Iron Armor' : '' || armor == 3 ? '✦ Armadura Mágica : Magic Armor' : '' || armor == 4 ? '✦ Armadura Robótica : Robotic Armor' : '' || armor == 5 ? 'Armadura Cyborg Estelar : Cyborg Armor ǁ MAX' : ''}*
+*│🥼⇡ Durabilidad
 *│↸ ${adurability}*
 *│┈┈┈┈┈┈┈┈┈┈┈┈┈*
-*│⚔️ Espada : Sword* 
+*│⚔️ Espada
 *│➠ ${sword == 0 ? 'No tengo | I do not have' : '' || sword == 1 ? 'Espada de Cuero ✦ Leather Sword' : '' || sword == 2 ? 'Espada de Hierro ✦ Iron Sword' : '' || sword == 3 ? 'Espada de Oro ✦ Gold Sword' : '' || sword == 4 ? 'Espada de Energía ✦ Energy Sword' : '' || sword > 0 && sword < 5 ? `Ketahanan (*${sword}* / *${sword *100}*)` : '' || sword == 5 ? 'Espada Galáctica ✦ Galactic Sword ǁ MAX' : ''}*
-*│⚔️⇡ Durabilidad : Durability:* 
+*│⚔️⇡ Durabilidad
 *│↸ ${sdurability}*
 *│┈┈┈┈┈┈┈┈┈┈┈┈┈*
-*│⛏️ Pico : Peak* 
+*│⛏️ Pico
 *│➠ ${pickaxe == 0 ? 'No tengo | I do not have' : '' || pickaxe == 1 ? 'Nivel | Level ✦ 1' : '' || pickaxe == 2 ? 'Nivel | Level ✦ 2' : '' || pickaxe == 3 ? 'Nivel | Level ✦ 3' : '' || pickaxe == 4 ? 'Nivel | Level ✦ 4' : '' || pickaxe == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
 *│⛏️⇡ Durabilidad : Durability:* 
 *│↸ ${pdurability}*
@@ -484,7 +476,6 @@ const cooldowns = Object.entries(inventory.cooldowns).map(([cd, { name, time }])
 
 ╭━━━━━━━━━⬣
 ┃ *𝗖𝗔𝗝𝗔𝗦 𝗘𝗡𝗖𝗢𝗡𝗧𝗥𝗔𝗗𝗔𝗦*
-┃ *𝗕𝗢𝗫𝗘𝗦 𝗙𝗢𝗨𝗡𝗗*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
 ┃ *${rpgshop.emoticon('common')}*
 ┃ *» ${user.common}*
@@ -509,7 +500,7 @@ const cooldowns = Object.entries(inventory.cooldowns).map(([cd, { name, time }])
 ╰━━━━━━━━━⬣
 
 ╭━━━━━━━━━⬣
-┃ *𝗠𝗔𝗦𝗖𝗢𝗧𝗔𝗦 : 𝗣𝗘𝗧𝗦*
+┃ *𝗠𝗔𝗦𝗖𝗢𝗧𝗔𝗦:*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
 ┃ *${rpgshop.emoticon('kuda')}*
 ┃ *${kuda == 0 ? 'No tengo Mascota : I do not have pet' : '' || kuda == 1 ? 'Nivel | Level ✦ 1' : '' || kuda == 2 ? 'Nivel | Level ✦ 2' : '' || kuda == 3 ? 'Nivel | Level ✦ 3' : '' || kuda == 4 ? 'Nivel | Level ✦ 4' : '' || kuda == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
@@ -524,7 +515,7 @@ const cooldowns = Object.entries(inventory.cooldowns).map(([cd, { name, time }])
 ┃ *${anjing == 0 ? 'No tengo Mascota : I do not have pet' : '' || anjing == 1 ? 'Nivel | Level ✦ 1' : '' || anjing == 2 ? 'Nivel | Level ✦ 2' : '' || anjing == 3 ? 'Nivel | Level ✦ 3' : '' || anjing == 4 ? 'Nivel | Level ✦ 4' : '' || anjing == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
 ╰━━━━━━━━━⬣
 
-*PROGRESO : PROGRESS*
+*PROGRESO:*
 *╭────────────┄⸙*
 *│ ${rpg.emoticon('level')} » ${user.level}*
 *│ ${rpg.emoticon('role')}*
@@ -548,7 +539,6 @@ const cooldowns = Object.entries(inventory.cooldowns).map(([cd, { name, time }])
 *╰────┄⸙*
 
 *╭─━• MASCOTAS EN COMBATE*
-*╭━• PET COMBAT*
 *│${rpg.emoticon('horse')} » ${kuda == 0 ? '❌' : '' || kuda == 1 ? 'Nivel | Level ✦ 1' : '' || kuda == 2 ? 'Nivel | Level ✦ 2' : '' || kuda == 3 ? 'Nivel | Level ✦ 3' : '' || kuda == 4 ? 'Nivel | Level ✦ 4' : '' || kuda == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
 *│${rpg.emoticon('fox')} » ${rubah == 0 ? '❌' : '' || rubah == 1 ? 'Nivel | Level ✦ 1' : '' || rubah == 2 ? 'Nivel | Level ✦ 2' : '' || rubah == 3 ? 'Nivel | Level ✦ 3' : '' || rubah == 4 ? 'Nivel | Level ✦ 4' : '' || rubah == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
 *│${rpg.emoticon('cat')} » ${kucing == 0 ? '❌' : '' || kucing == 1 ? 'Nivel | Level ✦ 1' : '' || kucing == 2 ? 'Nivel | Level ✦ 2' : '' || kucing == 3 ? 'Nivel | Level ✦ 3' : '' || kucing == 4 ? 'Nivel | Level ✦ 4' : '' || kucing == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
@@ -591,12 +581,11 @@ const cooldowns = Object.entries(inventory.cooldowns).map(([cd, { name, time }])
 *╰────────────┄⸙*
 
 🤺 *${name}* ( @${who.split("@")[0]} )\n
-*✅ » MISIÓN DISPONIBLE : MISSION AVAILABLE*
+*✅ » MISIÓN DISPONIBLE :
 
-*❌ » MISIÓN NO DISPONIBLE : MISSION NOT AVAILABLE*
+*❌ » MISIÓN NO DISPONIBLE : 
 
 *╭──━• MISIONES*
-*╭──━• MISSIONS*
 *│ ⛏️⚡ Minar EXP » ${new Date - user.lastmiming < 600000 ? '❌' : '✅'}*
 *│ ⛏️🐱 Minar GataCoins » ${new Date - user.lastcoins < 600000 ? '❌' : '✅'}*
 *│ ⛏️💎 Minar Diamantes » ${new Date - user.lastdiamantes < 900000 ? '❌' : '✅'}* 
@@ -624,9 +613,9 @@ const fkontak = {
 	"participant": "0@s.whatsapp.net"
 }
 await conn.sendButton(m.chat, caption, `*𝗣𝗥𝗘𝗠𝗜𝗨𝗠 ${user.premium ? "✅": "❌"}*\n${wm}`, imgr + 'Inventario : Inventory', [
-[`⚜️ 𝙇𝙞𝙨𝙩𝙖 𝙙𝙚 𝙈𝙞𝙨𝙞𝙤𝙣𝙚𝙨 | 𝙈𝙞𝙨𝙨𝙞𝙤𝙣𝙨`, `${usedPrefix}inventario 3`],	
-[`🏕️ 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖𝙧 | 𝙑𝙚𝙣𝙩𝙪𝙧𝙚`, `${usedPrefix}adventure`],
-['💗 𝙈𝙚𝙣𝙪 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖 | 𝙍𝙋𝙂', '.rpgmenu']], fkontak, m, { mentions: conn.parseMention(caption) })
+[`⚜️ 𝙇𝙞𝙨𝙩𝙖 𝙙𝙚 𝙈𝙞𝙨𝙞𝙤𝙣𝙚𝙨`, `${usedPrefix}inventario 3`],	
+[`🏕️ 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖𝙧`, `${usedPrefix}adventure`],
+['💗 𝙈𝙚𝙣𝙪 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖', '.rpgmenu']], fkontak, m, { mentions: conn.parseMention(caption) })
 	
 } else if (args[0] == '4') { // Inventario 3
 
@@ -785,11 +774,9 @@ let bibitpisang = user.bibitpisang
     let pp = pepe + 'Inventario : Inventory'
     let str = `
 🎒 *𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 𝙏𝙊𝙏𝘼𝙇*
-🎒 *𝙏𝙊𝙏𝘼𝙇 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔*
 ${readMore}
 ╭━━━━━━━━━⬣
 ┃ *𝗜𝗡𝗩𝗘𝗡𝗧𝗔𝗥𝗜𝗢 𝗗𝗘 𝗔𝗥𝗧𝗜𝗖𝗨𝗟𝗢𝗦* 
-┃ *𝙄𝙏𝙀𝙈 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
 ┃ *${rpg.emoticon('health')} » ${healt}* 
 ┃ ${rpgg.emoticon('level')} *Nivel : Level » ${level}*
@@ -803,7 +790,6 @@ ${readMore}
 ┃
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╮
 ┃ 𝗣𝗥𝗢𝗗𝗨𝗖𝗧𝗢𝗦 𝗩𝗔𝗟𝗜𝗢𝗦𝗢𝗦
-┃ 𝗩𝗔𝗟𝗨𝗔𝗕𝗟𝗘 𝗣𝗥𝗢𝗗𝗨𝗖𝗧𝗦
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╯
 ┃ ${rpgg.emoticon('exp')} *Exp » ${exp}*
 ┃ ${rpgg.emoticon('limit')} *Diamante : Diamond » ${dia}*
@@ -820,7 +806,6 @@ ${readMore}
 ┃
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╮
 ┃ 𝗦𝗨𝗣𝗘𝗥𝗩𝗜𝗩𝗘𝗡𝗖𝗜𝗔
-┃ 𝗦𝗨𝗥𝗩𝗜𝗩𝗔𝗟 𝗜𝗧𝗘𝗠
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╯
 ┃ *${rpgshop.emoticon('potion')} » ${member.potion}*
 ┃ *${rpgshop.emoticon('aqua')} » ${member.aqua}*
@@ -837,7 +822,6 @@ ${readMore}
 ┃
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╮
 ┃ 𝗢𝗕𝗝𝗘𝗧𝗢𝗦 𝗠𝗜𝗦𝗧𝗘𝗥𝗜𝗢𝗦𝗢𝗦
-┃ 𝗠𝗬𝗦𝗧𝗘𝗥𝗜𝗢𝗨𝗦 𝗢𝗕𝗝𝗘𝗖𝗧𝗦
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╯
 ┃ *${rpgshop.emoticon('eleksirb')} » ${member.eleksirb}*
 ┃ *${rpgshop.emoticon('emasbatang')} » ${member.emasbatang}*
@@ -858,10 +842,9 @@ ${readMore}
 ╰━━━━━━━━━⬣
 
 🏆 *RESUMEN EN LOS TOPS* 🏆 
-🚀 *SUMMARY IN THE TOPS* 🚀
 👤» *${name}* ( @${who.split("@")[0]} )\n
 _1.Top Nivel_ *${userslevel.indexOf(m.sender) + 1}* _de_ *${userslevel.length}*
-_2.Top GataCoins_ *${usersmoney.indexOf(m.sender) + 1}* _de_ *${usersmoney.length}*
+_2.Top LoliCoins_ *${usersmoney.indexOf(m.sender) + 1}* _de_ *${usersmoney.length}*
 _3.Top Diamantes+_ *${usersdiamond.indexOf(m.sender) + 1}* _de_ *${usersdiamond.length}*
 _4.Top Poción_ *${userspotion.indexOf(m.sender) + 1}* _de_ *${userspotion.length}*
 _5.Top Basura_ *${userssampah.indexOf(m.sender) + 1}* _de_ *${userssampah.length}*
@@ -878,11 +861,9 @@ _16.Top Caja para Mascota_ *${userspet.indexOf(m.sender) + 1}* _de_ *${userspet.
 
 👤» *${name}* ( @${who.split("@")[0]} )\n
 🛣️ 𝗘𝗦𝗧𝗥𝗔𝗧𝗘𝗚𝗜𝗔𝗦 | 𝗔𝗡𝗜𝗠𝗔𝗟𝗘𝗦
-🌄 𝗦𝗧𝗥𝗔𝗧𝗘𝗚𝗜𝗘𝗦 | 𝗔𝗡𝗜𝗠𝗔𝗟𝗦
 
 ╭━━━━━━━━━⬣
 ┃ *𝗘𝗦𝗧𝗔𝗗𝗢 𝗗𝗘 𝗖𝗢𝗠𝗕𝗔𝗧𝗘*
-┃ *𝗖𝗢𝗠𝗕𝗔𝗧 𝗦𝗧𝗔𝗧𝗨𝗦*
 ┃
 ┃ *${rpg.emoticon('health')}* 
 ┃ *» ${healt}*
@@ -901,7 +882,6 @@ _16.Top Caja para Mascota_ *${userspet.indexOf(m.sender) + 1}* _de_ *${userspet.
 ╰━━━━━━━━━⬣
 
 *╭───━• ESTRATEGIAS*
-*╭────━• STRATEGIES*
 *│🥼 Armadura : Armor:* 
 *│➠ ${armor == 0 ? 'No tengo | I do not have' : '' || armor == 1 ? '✦ Armadura de Cuero : Leather Armor' : '' || armor == 2 ? '✦ Armadura de Hierro : Iron Armor' : '' || armor == 3 ? '✦ Armadura Mágica : Magic Armor' : '' || armor == 4 ? '✦ Armadura Robótica : Robotic Armor' : '' || armor == 5 ? 'Armadura Cyborg Estelar : Cyborg Armor ǁ MAX' : ''}*
 *│🥼⇡ Durabilidad : Durability:* 
@@ -930,7 +910,6 @@ _16.Top Caja para Mascota_ *${userspet.indexOf(m.sender) + 1}* _de_ *${userspet.
 
 ╭━━━━━━━━━⬣
 ┃ *𝗖𝗔𝗝𝗔𝗦 𝗘𝗡𝗖𝗢𝗡𝗧𝗥𝗔𝗗𝗔𝗦*
-┃ *𝗕𝗢𝗫𝗘𝗦 𝗙𝗢𝗨𝗡𝗗*
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
 ┃ *${rpgshop.emoticon('common')}*
 ┃ *» ${user.common}*
@@ -955,7 +934,7 @@ _16.Top Caja para Mascota_ *${userspet.indexOf(m.sender) + 1}* _de_ *${userspet.
 ╰━━━━━━━━━⬣
 
 ╭━━━━━━━━━⬣
-┃ *𝗠𝗔𝗦𝗖𝗢𝗧𝗔𝗦 : 𝗣𝗘𝗧𝗦*
+┃ *𝗠𝗔𝗦𝗖𝗢𝗧𝗔𝗦
 ┃ ╸╸╸╸╸╸╸╸╸╸╸╸╸╸
 ┃ *${rpgshop.emoticon('kuda')}*
 ┃ *${kuda == 0 ? 'No tengo Mascota : I do not have pet' : '' || kuda == 1 ? 'Nivel | Level ✦ 1' : '' || kuda == 2 ? 'Nivel | Level ✦ 2' : '' || kuda == 3 ? 'Nivel | Level ✦ 3' : '' || kuda == 4 ? 'Nivel | Level ✦ 4' : '' || kuda == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
@@ -970,7 +949,7 @@ _16.Top Caja para Mascota_ *${userspet.indexOf(m.sender) + 1}* _de_ *${userspet.
 ┃ *${anjing == 0 ? 'No tengo Mascota : I do not have pet' : '' || anjing == 1 ? 'Nivel | Level ✦ 1' : '' || anjing == 2 ? 'Nivel | Level ✦ 2' : '' || anjing == 3 ? 'Nivel | Level ✦ 3' : '' || anjing == 4 ? 'Nivel | Level ✦ 4' : '' || anjing == 5 ? 'Nivel | Level ✦ 5 ǁ MAX' : ''}*
 ╰━━━━━━━━━⬣
 
-*PROGRESO : PROGRESS*
+*PROGRESO : 
 *╭────────────┄⸙*
 *│ ${rpg.emoticon('level')} » ${user.level}*
 *│ ${rpg.emoticon('role')}*
@@ -1056,7 +1035,6 @@ _16.Top Caja para Mascota_ *${userspet.indexOf(m.sender) + 1}* _de_ *${userspet.
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
 *╭──━• 𝗔𝗡𝗜𝗠𝗔𝗟𝗘𝗦 𝗘𝗡 𝗥𝗘𝗦𝗘𝗥𝗩𝗔*
-*╭─━• 𝗔𝗡𝗜𝗠𝗔𝗟𝗦 𝗜𝗡 𝗥𝗘𝗦𝗘𝗥𝗩𝗔𝗧𝗜𝗢𝗡*
 *│${rpg.emoticon('bull')} ➡️ ${banteng}*
 *│${rpg.emoticon('tiger')} ➡️ ${harimau}*
 *│${rpg.emoticon('elephant')} ➡️ ${gajah}*
@@ -1076,7 +1054,6 @@ _16.Top Caja para Mascota_ *${userspet.indexOf(m.sender) + 1}* _de_ *${userspet.
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
 *╭────━• 𝗖𝗢𝗠𝗜𝗗𝗔*
-*╭────━• 𝗙𝗢𝗢𝗗*
 *│🥓 Comida de Mascota : Food Pet » ${makananpet}*
 *│🍖 Pollo a la Parrilla : Grilled Chicken » ${ayamb}*
 *│🍗 Pollo frito : Fried Chicken » ${ayamg}*
@@ -1087,7 +1064,6 @@ _16.Top Caja para Mascota_ *${userspet.indexOf(m.sender) + 1}* _de_ *${userspet.
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
 *╭──━• 𝗙𝗥𝗨𝗧𝗔𝗦 𝗬 𝗦𝗘𝗠𝗜𝗟𝗟𝗔𝗦*
-*╭────━• 𝗙𝗥𝗨𝗜𝗧 & 𝗦𝗘𝗘𝗗*
 *│🥭 Mango » ${mangga}*
 *│🍇 Uva : Grape » ${anggur}*
 *│🍌 Platano : Banana » ${pisang}*
@@ -1122,7 +1098,7 @@ _16.Top Caja para Mascota_ *${userspet.indexOf(m.sender) + 1}* _de_ *${userspet.
 ╰━━━━━━━━━⬣
 
 ╭━━━━━━━━━⬣ 
-┃ *𝗣𝗜𝗦𝗖𝗜𝗡𝗔 𝗗𝗘 𝗣𝗘𝗖𝗘𝗦 : 𝗙𝗜𝗦𝗛 𝗣𝗢𝗢𝗟*
+┃ *𝗣𝗜𝗦𝗖𝗜𝗡𝗔 𝗗𝗘 𝗣𝗘𝗖𝗘𝗦 : 
 ┃ *╸╸╸╸╸╸╸╸╸╸╸╸╸╸*
 ┃ 🦈 *Tiburón : Shark » ${hiu}*
 ┃ 🐟 *Pez : Fish » ${ikan}*
@@ -1211,10 +1187,9 @@ ${new Date - user.lastmonthly < 432000000 ? `${clockString(user.lastmonthly + 43
 *╰─⋆─⋆─⋆─⋆─⋆─⋆─⋆─⋆─┄⸙*
 
 🏆 *RESUMEN EN LOS TOPS* 🏆 
-🚀 *SUMMARY IN THE TOPS* 🚀
 👤» *${name}* ( @${who.split("@")[0]} )\n
 _1.Top Nivel_ *${userslevel.indexOf(m.sender) + 1}* _de_ *${userslevel.length}*
-_2.Top GataCoins_ *${usersmoney.indexOf(m.sender) + 1}* _de_ *${usersmoney.length}*
+_2.Top LoliCoins_ *${usersmoney.indexOf(m.sender) + 1}* _de_ *${usersmoney.length}*
 _3.Top Diamantes+_ *${usersdiamond.indexOf(m.sender) + 1}* _de_ *${usersdiamond.length}*
 _4.Top Poción_ *${userspotion.indexOf(m.sender) + 1}* _de_ *${userspotion.length}*
 _5.Top Basura_ *${userssampah.indexOf(m.sender) + 1}* _de_ *${userssampah.length}*

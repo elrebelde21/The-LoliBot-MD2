@@ -12,8 +12,8 @@ do b = ps.getRandom()
 while (b === a)
     
 if (command == 'futurarelacion') {    
-let caption = `💗 𝗙𝗨𝗧𝗨𝗥𝗔 𝗣𝗔𝗥𝗘𝗝𝗔 💗\n${toM(a)} 💞 ${toM(b)}\n\n💌 𝗠𝗘𝗡𝗦𝗔𝗝𝗘 𝗗𝗘 𝗔𝗠𝗢𝗥\n*_${await ktnmbk.getRandom()}_*`
-await conn.sendButton(m.chat, caption, `*_Si quiere tener una pareja use el comando ${usedPrefix}pareja etiquetando a tu futura Pareja._*\n\n` + wm, null, [
+let caption = `💗 𝑭𝒖𝒕𝒖𝒓𝒂 𝒑𝒂𝒓𝒆𝒋𝒂 💗\n${toM(a)} 💞 ${toM(b)}\n\n💌 𝑴𝒆𝒏𝒔𝒂𝒋𝒆 𝒅𝒆𝒍 𝒂𝒎𝒐𝒓\n*_${await ktnmbk.getRandom()}_*`
+await conn.sendButton(m.chat, caption, `*_𝑺𝒊 𝒒𝒖𝒊𝒆𝒓𝒆 𝒕𝒆𝒏𝒆𝒓 𝒖𝒏𝒂 𝒑𝒂𝒋𝒆𝒓𝒂 𝒖𝒔𝒆𝒓 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 ${usedPrefix}pareja etiquetando a tu futura Pareja._*\n\n` + wm, null, [
 ['🤭 𝙌𝙐𝙀 𝙎𝙀 𝘿𝙀𝘾𝙇𝘼𝙍𝙀𝙉', `amor`],
 ['🧐 𝙊𝙏𝙍𝘼 𝙋𝘼𝙍𝙀𝙅𝘼', `${usedPrefix}futurarelacion`],
 ['😆 𝙀𝙎 𝙐𝙉𝘼 𝙋𝘼𝙍𝙀𝙅𝘼 𝙍𝘼𝙉𝘿𝙊𝙈', `😂`]], m, { mentions: conn.parseMention(caption) })
@@ -25,7 +25,7 @@ var number = text.split`@`[1]
 var number = text
 }
 
-if(!text && !m.quoted) return await conn.sendButton(m.chat, `${mg}𝙀𝙏𝙄𝙌𝙐𝙀𝙏𝙀 𝙊 𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝙀 𝘼𝙇 𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝘿𝙀 𝙇𝘼 𝙋𝙀𝙍𝙎𝙊𝙉𝘼 𝙌𝙐𝙀 𝙌𝙐𝙄𝙀𝙍𝙀 𝙌𝙐𝙀 𝙎𝙀𝘼 𝙎𝙐 𝙋𝘼𝙍𝙀𝙅𝘼`, wm, null, [
+if(!text && !m.quoted) return await conn.sendButton(m.chat, `𝙌𝙪𝙞𝙚𝙣?🤔  𝙀𝙩𝙞𝙦𝙪𝙚𝙩𝙖𝙨 𝙤 𝙧𝙚𝙨𝙥𝙤𝙣𝙙𝙚 𝙖𝙡 𝙢𝙚𝙣𝙨𝙖𝙟𝙚 𝙙𝙚𝙡 𝙡𝙖 𝙥𝙚𝙧𝙨𝙤𝙣𝙖 𝙦𝙪𝙚 𝙦𝙪𝙞𝙚𝙧𝙚 𝙩𝙚 𝙨𝙚𝙖 𝙩𝙪 𝙥𝙖𝙧𝙚𝙟𝙖`, wm, null, [
 ['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)
 	
 try {
@@ -40,16 +40,16 @@ var user = number + '@s.whatsapp.net'
 } finally {
 let users = m.isGroup ? participants.find(v => areJidsSameUser(v.jid == user)) : {}
 	
-if(!users) return await conn.sendButton(m.chat, `${fg}𝙉𝙊 𝙎𝙀 𝙀𝙉𝘾𝙊𝙉𝙏𝙍𝙊 𝘼 𝙇𝘼 𝙋𝙀𝙍𝙎𝙊𝙉𝘼, 𝘿𝙀𝘽𝙀 𝘿𝙀 𝙀𝙎𝙏𝘼𝙍 𝙀𝙉 𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊`, wm, null, [
+if(!users) return await conn.sendButton(m.chat, `𝑵𝒐 𝒔𝒆 𝒆𝒏𝒄𝒐𝒏𝒕𝒓𝒐́ 𝒍𝒂 𝒑𝒆𝒓𝒔𝒐𝒏𝒂 𝒑𝒊𝒏𝒄𝒉𝒆́ 𝒑𝒆𝒏𝒅𝒆𝒋𝒐 🙄 𝒅𝒆𝒃𝒆 𝒅𝒆 𝒆𝒔𝒕𝒂 𝒆𝒍 𝒆𝒔𝒕𝒆 𝒈𝒓𝒖𝒑𝒐`, wm, null, [
 ['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)
 	
-if(user === m.sender) return await conn.sendButton(m.chat, `${fg}𝙐𝙎𝙏𝙀𝘿 𝙈𝙄𝙎𝙈𝙊 𝙉𝙊 𝙋𝙐𝙀𝘿𝙀 𝙎𝙀𝙍 𝙋𝘼𝙍𝙀𝙅𝘼`, wm, null, [
+if(user === m.sender) return await conn.sendButton(m.chat, `𝑺𝒆 𝒎𝒂𝒎𝒐😂  𝒖𝒔𝒕𝒆𝒅 𝒎𝒊𝒔𝒎𝒐 𝒏𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒔𝒖 𝒑𝒂𝒓𝒆𝒋𝒂`, wm, null, [
 ['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)
 	
-if(user === conn.user.jid) return await conn.sendButton(m.chat, `${fg}𝙔𝙊 𝙉𝙊 𝙋𝙐𝙀𝘿𝙊 𝙎𝙀𝙍 𝙎𝙐 𝙋𝘼𝙍𝙀𝙅𝘼 😹`, wm, null, [
+if(user === conn.user.jid) return await conn.sendButton(m.chat, `𝒀𝒐 𝒏𝒐 𝒑𝒖𝒆𝒅𝒐 𝒔𝒆𝒓 𝒕𝒖 𝒑𝒂𝒓𝒆𝒋𝒂 😹`, wm, null, [
 ['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)
 
-if (typeof global.db.data.users[user] == "undefined") return await conn.sendButton(m.chat, `${fg}𝙇𝘼 𝙋𝙀𝙍𝙎𝙊𝙉𝘼 𝙌𝙐𝙀 𝙀𝙏𝙄𝙌𝙐𝙀𝙏𝙊 𝙉𝙊 𝙀𝙎𝙏𝘼 𝙀𝙉 𝙈𝙄 𝘽𝘼𝙎𝙀 𝘿𝙀 𝘿𝘼𝙏𝙊𝙎`, wm, null, [
+if (typeof global.db.data.users[user] == "undefined") return await conn.sendButton(m.chat, `𝑳𝒂 𝒑𝒆𝒓𝒔𝒐𝒏𝒂 𝒒𝒖𝒆 𝒆𝒕𝒊𝒒𝒖𝒆𝒕𝒐 𝒏𝒐 𝒆𝒔𝒕𝒂́ 𝒆𝒏 𝒎𝒊 𝒃𝒂𝒔𝒆 𝒅𝒆 𝒅𝒂𝒕𝒐𝒔`, wm, null, [
 ['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)
 	
 let pacar = global.db.data.users[user].pasangan
@@ -58,27 +58,27 @@ let yo = conn.getName(m.sender)
 let tu = conn.getName(who)
 
 if(global.db.data.users[m.sender].pasangan != "" && global.db.data.users[global.db.data.users[m.sender].pasangan].pasangan == m.sender && global.db.data.users[m.sender].pasangan != user){
-await conn.sendButton(m.chat, `𝙀𝙍𝙀𝙎 𝙄𝙉𝙁𝙄𝙀𝙇 🙀😠 𝙋𝙀𝙍𝙊 𝙎𝙄 𝙔𝘼 𝙀𝙎𝙏𝘼𝙎 𝙀𝙉 𝙐𝙉𝘼 𝙍𝙀𝙇𝘼𝘾𝙄𝙊𝙉 𝘾𝙊𝙉 *${await conn.getName(spac)}*\n\n𝘼𝘾𝘼𝙎𝙊 𝙌𝙐𝙄𝙀𝙍𝙀𝙎 𝙏𝙀𝙍𝙈𝙄𝙉𝘼𝙍 𝙇𝘼 𝙍𝙀𝙇𝘼𝘾𝙄𝙊𝙉? 🤔\n𝘿𝙀 𝙎𝙀𝙍 𝘼𝙎𝙄, 𝙀𝙎𝘾𝙍𝙄𝘽𝘼 *${usedPrefix}terminar @tag* 𝙋𝘼𝙍𝘼 𝙌𝙐𝙀 𝙋𝙐𝙀𝘿𝘼 𝙏𝙀𝙉𝙀𝙍 𝙐𝙉𝘼 𝙍𝙀𝙇𝘼𝘾𝙄𝙊𝙉 𝘾𝙊𝙉 *${await conn.getName(user)}*`, wm, null, [
+await conn.sendButton(m.chat, `𝑾𝒕𝒇, 𝒆𝒓𝒆𝒔 𝒇𝒊𝒆𝒍 🙀😠 𝒑𝒆𝒓𝒐 𝒔𝒊 𝒚𝒂 𝒆𝒔𝒕𝒂𝒔 𝒆𝒏 𝒖𝒏𝒂 𝒓𝒆𝒍𝒂𝒄𝒊𝒐́𝒏 𝒄𝒐𝒏 *${await conn.getName(spac)}*\n\n𝑨𝒄𝒂𝒔𝒐 𝒒𝒖𝒊𝒆𝒓𝒆𝒔 𝒕𝒆𝒓𝒎𝒊𝒏𝒂𝒓 𝒍𝒂 𝒓𝒆𝒍𝒂𝒄𝒊𝒐́𝒏? 🤔\n𝑫𝒆 𝒔𝒆𝒓 𝒂𝒔𝒊, 𝒆𝒔𝒄𝒓𝒊𝒃𝒂 *${usedPrefix}terminar @tag* 𝑷𝒂𝒓𝒂 𝒒𝒖𝒆́ 𝒑𝒖𝒆𝒅𝒂 𝒕𝒆𝒏𝒆𝒓 𝒖𝒏𝒂 𝒓𝒆𝒍𝒂𝒄𝒊𝒐́𝒏 𝒄𝒐𝒏 *${await conn.getName(user)}*`, wm, null, [
 ['❤️ 𝙈𝘼𝙉𝙏𝙀𝙉𝙀𝙍 𝙍𝙀𝙇𝘼𝘾𝙄𝙊𝙉', '.mipareja'],
 ['💔 𝙏𝙀𝙍𝙈𝙄𝙉𝘼𝙍 𝙍𝙀𝙇𝘼𝘾𝙄𝙊𝙉', '/terminar']], m, { contextInfo: { mentionedJid: [m.sender, who, user, global.db.data.users[m.sender].pasangan]}})
 }else if(global.db.data.users[user].pasangan != ""){
 	
 if (pacar){
 if (m.sender == pacar && global.db.data.users[m.sender].pasangan == user) return conn.reply(m.chat, `ya estas saliendo ${spac.split('@')[0]}`, m , { contextInfo: { mentionedJid: [spac]}})
-conn.reply(m.chat, `𝙉𝙊 𝙋𝙐𝙀𝘿𝙀𝙎 𝙋𝙊𝙍𝙌𝙐𝙀 *${await conn.getName(user)}* 𝙔 ${await conn.getName(pacar)} 𝙀𝙎𝙏𝘼𝙉 𝙀𝙉 𝙐𝙉𝘼 𝙍𝙀𝙇𝘼𝘾𝙄𝙊𝙉\n𝘽𝙐𝙎𝙌𝙐𝙀 𝙊𝙏𝙍𝘼 𝙋𝙀𝙍𝙎𝙊𝙉𝘼 𝙌𝙐𝙀 𝙌𝙐𝙄𝙀𝙍𝘼 𝙎𝙀𝙍 𝙎𝙐 𝙋𝘼𝙍𝙀𝙅𝘼`, m , { contextInfo: { mentionedJid: [m.sender, global.db.data.users[m.sender].pasangan]}})
+conn.reply(m.chat, `𝑵𝒐 𝒑𝒖𝒆𝒅𝒆 𝒑𝒐𝒓𝒒𝒖𝒆 *${await conn.getName(user)}* 𝙔 ${await conn.getName(pacar)} 𝑬𝒔𝒕𝒂́𝒏 𝒆𝒏 𝒖𝒏𝒂 𝒓𝒆𝒍𝒂𝒄𝒊𝒐́𝒏\n𝑩𝒖𝒔𝒒𝒖𝒆 𝒂 𝒐𝒕𝒓𝒂 𝒑𝒆𝒓𝒔𝒐𝒏𝒂𝒔 𝒒𝒖𝒆 𝒒𝒖𝒊𝒆𝒓𝒂 𝒔𝒆𝒓 𝒕𝒖 𝒑𝒂𝒓𝒆𝒋𝒂`, m , { contextInfo: { mentionedJid: [m.sender, global.db.data.users[m.sender].pasangan]}})
 }else{
 	
 global.db.data.users[m.sender].pasangan = user
-conn.reply(m.chat, `${await ktnmbk.getRandom()}\n\nAcabas de invitar @${user.split('@')[0]}\n\n¡Por favor espere una respuesta!`, m , { contextInfo: { mentionedJid: [user]}})
+conn.reply(m.chat, `${await ktnmbk.getRandom()}\n\n𝑨𝒄𝒂𝒃𝒂𝒓 𝒅𝒆 𝒊𝒏𝒗𝒊𝒕𝒂𝒓 @${user.split('@')[0]}\n\n¡𝑷𝒐𝒓 𝒇𝒂𝒗𝒐𝒓 𝒆𝒔𝒑𝒆𝒓𝒆 𝒖𝒏𝒂 𝒓𝒆𝒔𝒑𝒖𝒆𝒔𝒕𝒂!`, m , { contextInfo: { mentionedJid: [user]}})
 }	
 	
 }else if (global.db.data.users[user].pasangan == m.sender){
 global.db.data.users[m.sender].pasangan = user
-conn.reply(m.chat, `Felicitaciones, oficialmente están saliendo @${user.split('@')[0]}\n\nQue dure para siempre y siempre sea feliz 🥳🥳🥳`, m , { contextInfo: { mentionedJid: [user]}})
+conn.reply(m.chat, `𝑭𝒆𝒍𝒊𝒄𝒊𝒅𝒂𝒅𝒆𝒔, 𝒐𝒇𝒊𝒄𝒊𝒂𝒍 𝒆𝒔𝒕𝒂 𝒔𝒂𝒍𝒊𝒆𝒏𝒅𝒐 @${user.split('@')[0]}\n\n𝑸𝒖𝒆 𝒅𝒖𝒓𝒆 𝒑𝒂𝒓𝒂 𝒔𝒊𝒎𝒑𝒍𝒆 𝒚 𝒒𝒖𝒆 𝒔𝒆𝒂 𝒇𝒆𝒍𝒊𝒄𝒆𝒔 🥳🥳🥳`, m , { contextInfo: { mentionedJid: [user]}})
 }else {
 	
 global.db.data.users[m.sender].pasangan = user
-await conn.sendButton(m.chat, `*_${await ktnmbk.getRandom()}_*\n\n*${await conn.getName(m.sender)}* 𝙎𝙀 𝙀𝙎𝙏𝘼 𝘿𝙀𝘾𝙇𝘼𝙍𝘼𝙉𝘿𝙊!!! 😳\n𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍 *${await conn.getName(who)}* 𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝙀 𝘼 𝙇𝘼 𝘿𝙀𝘾𝙇𝘼𝙍𝘼𝘾𝙄𝙊𝙉 🙀`, `❤️ *_Si quieres una Relacion escriba:_*\n*➠ ${usedPrefix}aceptar @${conn.getName(m.sender)}*\n\n💔 *_De no querer una Relacion escriba:_*\n*➠ ${usedPrefix}rechazar @${conn.getName(m.sender)}*\n\n` + wm, null, [
+await conn.sendButton(m.chat, `*_${await ktnmbk.getRandom()}_*\n\n*${await conn.getName(m.sender)}* 𝑺𝒆 𝒆𝒔𝒕𝒂 𝒅𝒆𝒄𝒍𝒂𝒓𝒂𝒏𝒅𝒐!!! 😳\n𝒑𝒐𝒓 𝒇𝒂𝒗𝒐𝒓 *${await conn.getName(who)}* 𝑹𝒆𝒔𝒑𝒐𝒏𝒅𝒆 𝒂 𝒍𝒂 𝒅𝒆𝒄𝒍𝒂𝒓𝒂𝒄𝒊𝒐́𝒏 🙀`, `❤️ *_𝑺𝒊 𝒒𝒖𝒊𝒆𝒓𝒆 𝒖𝒏𝒂 𝒓𝒆𝒍𝒂𝒄𝒊𝒐́𝒏 𝒆𝒔𝒄𝒓𝒊𝒃𝒂:_*\n*➠ ${usedPrefix}aceptar @${conn.getName(m.sender)}*\n\n💔 *_𝑫𝒆 𝒏𝒐 𝒒𝒖𝒆𝒓𝒆𝒓 𝒖𝒏𝒂 𝒓𝒆𝒍𝒂𝒄𝒊𝒐́𝒏 𝒆𝒔𝒄𝒓𝒊𝒃𝒂:_*\n*➠ ${usedPrefix}rechazar @${conn.getName(m.sender)}*\n\n` + wm, null, [
 ['🥳 𝙑𝘼𝙈𝙊𝙎 𝘼𝘾𝙀𝙋𝙏𝘼', `Amor`]], m, { contextInfo: { mentionedJid: [ who, m.sender, user ]}})
 }}}
 

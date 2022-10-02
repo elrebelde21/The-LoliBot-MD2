@@ -1,6 +1,6 @@
 let handler = async (m, { isPrems, conn }) => {
 let time = global.db.data.users[m.sender].lastcofre + 86400000 // 36000000 10 Horas //86400000 24 Horas
-if (new Date - global.db.data.users[m.sender].lastcofre < 86400000) throw `𝙔𝘼 𝙍𝙀𝘾𝙇𝘼𝙈𝘼𝙎𝙏𝙀 𝙏𝙐 𝘾𝙊𝙁𝙍𝙀 ⚗️\n𝙑𝙐𝙀𝙇𝙑𝙀 𝙀𝙉 *${msToTime(time - new Date())}* 𝙋𝘼𝙍𝘼 𝙑𝙊𝙇𝙑𝙀𝙍 𝘼 𝙍𝙀𝘾𝙇𝘼𝙈𝘼𝙍`
+if (new Date - global.db.data.users[m.sender].lastcofre < 86400000) throw `𝒀𝒂 𝒓𝒆𝒄𝒍𝒂𝒎𝒂𝒔𝒕𝒆 𝒕𝒖 𝒄𝒐𝒇𝒓𝒆 ⚗️\n𝑽𝒖𝒆𝒍𝒗𝒆 𝒆𝒏 *${msToTime(time - new Date())}* 𝑷𝒂𝒓𝒂 𝒗𝒐𝒍𝒗𝒆𝒓 𝒂 𝒓𝒆𝒄𝒍𝒂𝒎𝒂𝒓`
 
 let img = 'https://img.freepik.com/vector-gratis/cofre-monedas-oro-piedras-preciosas-cristales-trofeo_107791-7769.jpg?w=2000'
 let dia = Math.floor(Math.random() * 30)
@@ -15,12 +15,12 @@ let expp = Math.floor(Math.random() * 5000)
   
 let texto = `
 ╭━━🎉━🎉━🎉━━⬣
-┃✨ 𝙊𝘽𝙏𝙄𝙀𝙉𝙀𝙎 𝙐𝙉 𝘾𝙊𝙁𝙍𝙀!!
+┃✨ 𝑶𝒃𝒕𝒊𝒆𝒏𝒆𝒏 𝒆𝒍 𝒄𝒐𝒇𝒓𝒆!!
 ┃ ┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃⚗️ *${dia} Diamantes* 💎
-┃⚗️ *${tok} Tokens* 🪙
-┃⚗️ *${gata} loliCoins* 🐈
-┃⚗️ *${expp} Exp* ⚡
+┃⚗️ *${dia} 𝑫𝒊𝒂𝒎𝒂𝒏𝒕𝒆𝒔* 💎
+┃⚗️ *${tok} 𝑻𝒐𝒌𝒆𝒏𝒔* 🪙
+┃⚗️ *${gata} 𝑳𝒐𝒍𝒊𝒄𝒐𝒊𝒏𝒔* 🐈
+┃⚗️ *${expp} 𝑬𝒙𝒑* ⚡
 ╰━━〔 𓃠 *${vs}* 〕━━⬣`
 
 const fkontak = {

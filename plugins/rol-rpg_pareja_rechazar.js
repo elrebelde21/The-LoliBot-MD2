@@ -5,14 +5,14 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 let grupos = [nna, nn, nnn, nnnt]
 let gata = [img5, img6, img7, img8, img9]
 let enlace = { contextInfo: { externalAdReply: {title: wm + ' 🐈', body: 'support group' , sourceUrl: grupos.getRandom(), thumbnail: await(await fetch(gata.getRandom())).buffer() }}}
-let enlace2 = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: yt, mediaType: 'VIDEO', description: '', title: wm, body: '😻 𝗦𝘂𝗽𝗲𝗿 The LoliBot-𝗠𝗗 - 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 ', thumbnailUrl: await(await fetch(global.img)).buffer(), sourceUrl: yt }}}
+let enlace2 = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: yt, mediaType: 'VIDEO', description: '', title: wm, body: '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝒃𝒐𝒕-𝑴𝑫 ', thumbnailUrl: await(await fetch(global.img)).buffer(), sourceUrl: yt }}}
 let dos = [enlace, enlace2]
 
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 var number = conn.getName(who)
 
-if(!text && !m.quoted) return await conn.sendButton(m.chat, `${mg}𝙀𝙏𝙄𝙌𝙐𝙀𝙏𝙀 𝙊 𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝙀 𝘼𝙇 𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝘿𝙀 𝙇𝘼 𝙋𝙀𝙍𝙎𝙊𝙉𝘼 𝙌𝙐𝙀 𝙌𝙐𝙄𝙀𝙍𝙀 𝙍𝙀𝘾𝙃𝘼𝙕𝘼𝙍 𝘾𝙊𝙈𝙊 𝙋𝘼𝙍𝙀𝙅𝘼`, wm, null, [
+if(!text && !m.quoted) return await conn.sendButton(m.chat, `𝙌𝙪𝙞𝙚́𝙣?🤔  𝙀𝙩𝙞𝙦𝙪𝙚𝙩𝙖𝙨 𝙤 𝙧𝙚𝙨𝙥𝙤𝙣𝙙𝙚 𝙪𝙣 𝙢𝙚𝙣𝙨𝙖𝙟𝙚 𝙙𝙚𝙡 𝙥𝙚𝙧𝙨𝙤𝙣𝙖 𝙦𝙪𝙚 𝙦𝙪𝙞𝙚𝙧𝙚 𝙦𝙪𝙚 𝙨𝙚𝙖 𝙩𝙪 𝙥𝙖𝙧𝙚𝙟𝙖`, wm, null, [
 ['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)
 	
 try {
@@ -30,22 +30,22 @@ let users = m.isGroup ? participants.find(v => areJidsSameUser(v.jid == user)) :
 let yo = conn.getName(m.sender)
 let tu = conn.getName(who)
 
-if(!users) return await conn.sendButton(m.chat, `${fg}𝙉𝙊 𝙎𝙀 𝙀𝙉𝘾𝙊𝙉𝙏𝙍𝙊 𝘼 𝙇𝘼 𝙋𝙀𝙍𝙎𝙊𝙉𝘼, 𝘿𝙀𝘽𝙀 𝘿𝙀 𝙀𝙎𝙏𝘼𝙍 𝙀𝙉 𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊`, wm, null, [
+if(!users) return await conn.sendButton(m.chat, `𝑵𝒐 𝒔𝒆 𝒆𝒏𝒄𝒐𝒏𝒕𝒓𝒐́ 𝒍𝒂 𝒑𝒆𝒓𝒔𝒐𝒏𝒂 𝒑𝒊𝒏𝒄𝒉𝒆́ 𝒑𝒆𝒏𝒅𝒆𝒋𝒐 🙄 𝒅𝒆𝒃𝒆 𝒅𝒆 𝒆𝒔𝒕𝒂 𝒆𝒍 𝒆𝒔𝒕𝒆 𝒈𝒓𝒖𝒑𝒐`, wm, null, [
 ['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)
 	
-if(user === m.sender) return await conn.sendButton(m.chat, `${fg}𝙐𝙎𝙏𝙀𝘿 𝙈𝙄𝙎𝙈𝙊 𝙉𝙊 𝙋𝙐𝙀𝘿𝙀 𝙎𝙀𝙍 𝙋𝘼𝙍𝙀𝙅𝘼`, wm, null, [
+if(user === m.sender) return await conn.sendButton(m.chat, `𝑺𝒆 𝒎𝒂𝒎𝒐😂  𝒖𝒔𝒕𝒆𝒅 𝒎𝒊𝒔𝒎𝒐 𝒏𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒔𝒖 𝒑𝒂𝒓𝒆𝒋𝒂`, wm, null, [
 ['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)
 	
-if(user === conn.user.jid) return await conn.sendButton(m.chat, `${fg}𝙔𝙊 𝙉𝙊 𝙋𝙐𝙀𝘿𝙊 𝙎𝙀𝙍 𝙎𝙐 𝙋𝘼𝙍𝙀𝙅𝘼 😹`, wm, null, [
+if(user === conn.user.jid) return await conn.sendButton(m.chat, `𝒀𝒐 𝒏𝒐 𝒑𝒖𝒆𝒅𝒐 𝒔𝒆𝒓 𝒕𝒖 𝒑𝒂𝒓𝒆𝒋𝒂 😹`, wm, null, [
 ['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)
     
 if(global.db.data.users[user].pasangan != m.sender){ 
-return await conn.sendButton(m.chat, `𝙉𝙊 𝙋𝙐𝙀𝘿𝙀𝙎 𝙍𝙀𝘾𝙃𝘼𝙕𝘼𝙍 𝘼 *${tu}* 𝙎𝙄 𝙉𝙄𝙉𝙂𝙐𝙉𝙊 𝙎𝙀 𝙃𝘼 𝘿𝙀𝘾𝙇𝘼𝙍𝘼𝘿𝙊, 𝘿𝙀𝘾𝙇𝘼𝙍𝘼𝙏𝙀 𝙋𝘼𝙍𝘼 𝙌𝙐𝙀 𝘿𝙄𝙂𝘼 𝙎𝙄 𝙏𝙀 𝘼𝘾𝙀𝙋𝙏𝘼 𝙊 𝙏𝙀 𝙍𝙀𝘾𝙃𝘼𝙕𝘼`, wm, null, [
+return await conn.sendButton(m.chat, `𝑵𝒐 𝒑𝒖𝒆𝒅𝒆𝒔 𝒓𝒆𝒄𝒉𝒂𝒛𝒂𝒓 𝒂 *${tu}* 𝑺𝒊 𝒏𝒊𝒏𝒈𝒖𝒏𝒐 𝒔𝒆 𝒉𝒂 𝒅𝒆𝒄𝒍𝒂𝒓𝒂𝒅𝒐, 𝒅𝒆𝒔𝒄𝒍𝒂𝒓𝒂𝒕𝒆 𝒑𝒂𝒓𝒂 𝒒𝒖𝒆 𝒅𝒊𝒈𝒂 𝒔𝒊 𝒕𝒆 𝒂𝒄𝒆𝒓𝒕𝒂 𝒐 𝒏𝒐`, wm, null, [
 ['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m, { contextInfo: { mentionedJid: [user, tu]}})	
 	
 }else{
 global.db.data.users[user].pasangan = ""
-return await conn.sendButton(m.chat, `😿 𝙇𝘼𝙈𝙀𝙉𝙏𝘼𝘽𝙇𝙀𝙈𝙀𝙉𝙏𝙀 *${yo}* 𝙎𝙀 𝙃𝘼 𝙉𝙀𝙂𝘼𝘿𝙊 🚫 𝙀𝙉 𝘾𝙊𝙉𝙏𝙄𝙉𝙐𝘼𝙍 𝙀𝙉 𝙐𝙉𝘼 𝙍𝙀𝙇𝘼𝘾𝙄𝙊𝙉 𝘾𝙊𝙉𝙏𝙄𝙂𝙊 *${tu}*\n𝙉𝙊 𝙀𝙎𝙏𝙀𝙎 𝙏𝙍𝙄𝙎𝙏𝙀, 𝘼𝙐𝙉 𝙏𝙄𝙀𝙉𝙀𝙎 𝙈𝙐𝘾𝙃𝘼𝙎 𝘾𝙊𝙎𝘼𝙎 𝙋𝙊𝙍 𝙃𝘼𝘾𝙀𝙍 🍃`, `*${tu} 💔 ${yo}*\n` + wm, img5, [
+return await conn.sendButton(m.chat, `😿 𝑳𝒂𝒎𝒆𝒏𝒕𝒂𝒃𝒍𝒆𝒎𝒆𝒏𝒕𝒆 *${yo}* 𝒔𝒆 𝒉𝒂 𝒏𝒆𝒈𝒂𝒅𝒐 🚫 𝑬𝒏 𝒄𝒐𝒏𝒕𝒊𝒏𝒖𝒂 𝒆𝒏 𝒖𝒏𝒂 𝒓𝒆𝒍𝒂𝒄𝒊𝒐́𝒏 𝒄𝒐𝒏𝒕𝒊𝒈𝒐 *${tu}*\n𝑵𝒐 𝒆𝒔𝒕𝒆 𝒕𝒓𝒊𝒔𝒕𝒆, 𝒂 𝒖𝒏 𝒕𝒊𝒆𝒏𝒆 𝒎𝒖𝒄𝒉𝒂𝒔 𝒄𝒐𝒔𝒂 𝒑𝒐𝒓 𝒉𝒂𝒄𝒆𝒓 🍃`, `*${tu} 💔 ${yo}*\n` + wm, img5, [
 ['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], m, dos.getRandom(), { contextInfo: { mentionedJid: [user, tu, yo]}})	
 }}}
 
