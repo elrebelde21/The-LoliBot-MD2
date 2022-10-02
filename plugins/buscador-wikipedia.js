@@ -25,16 +25,16 @@ status: link.status,
 Pesan: eror}
 return notFond}}
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) throw `${mg}𝙀𝙎𝘾𝙍𝙄𝘽𝘼 𝙇𝘼 𝙋𝘼𝙇𝘼𝘽𝙍𝘼 𝘾𝙇𝘼𝙑𝙀 𝙋𝘼𝙍𝘼 𝘽𝙐𝙎𝘾𝘼𝙍\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} Luna*`
+if (!text) throw `${mg}𝙀𝙨𝙘𝙧𝙞𝙗𝙖 𝙡𝙖 𝙥𝙖𝙡𝙖𝙗𝙧𝙖 𝙘𝙡𝙖𝙫𝙚 𝙥𝙖𝙧𝙖 𝙗𝙪𝙨𝙘𝙖𝙧\n𝙀𝙟𝙚𝙢𝙥𝙡𝙤\n*${usedPrefix + command} Luna*`
 wikipedia(`${text}`).then(res => {
-let info = `𝙀𝙉𝘾𝙊𝙉𝙏𝙍𝙀 𝙀𝙎𝙏𝙊:\n\n` + res.result.isi
+let info = `𝑬𝒏𝒄𝒐𝒏𝒕𝒓𝒆́ 𝒆𝒔𝒕𝒐:\n\n` + res.result.isi
 conn.sendHydrated(m.chat, info, wm, null, null, null, [
 ['𝙈𝙚𝙣𝙪 𝘽𝙪𝙨𝙦𝙪𝙚𝙙𝙖𝙨 🔎', '#buscarmenu'],
 ['𝙈𝙚𝙣𝙪 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙤 ✨', '.allmenu'],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu']
 ], m,)   
   
-}).catch(() => { m.reply(`${fg}𝙉𝙊 𝙎𝙀 𝙀𝙉𝘾𝙊𝙉𝙏𝙍𝙊 𝙇𝙊 𝙌𝙐𝙀 𝘽𝙐𝙎𝘾𝘼. 𝙋𝙍𝙊𝘾𝙐𝙍𝙀 𝙐𝙎𝘼𝙍 𝙐𝙉𝘼 𝙋𝘼𝙇𝘼𝘽𝙍𝘼 𝘾𝙇𝘼𝙑𝙀`) })}
+}).catch(() => { m.reply(`${fg}𝑬𝒓𝒓𝒐 𝒏𝒐 𝒔𝒆 𝒆𝒏𝒄𝒐𝒏𝒕𝒓𝒐́ 𝒍𝒐𝒔 𝒒𝒖𝒆 𝒃𝒖𝒔𝒄𝒂𝒃𝒂,  𝑰𝒏𝒕𝒆𝒏𝒕𝒆 𝒅𝒆𝒍 𝒏𝒖𝒆𝒗𝒐`) })}
 handler.help = ['wikipedia'].map(v => v + ' <apa>')
 handler.tags = [ 'internet']
 handler.command = /^(wiki|wikipedia)$/i 
