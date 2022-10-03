@@ -19,7 +19,7 @@ let str = `
 *https://chat.whatsapp.com/Kxm5VKn6sfDI6Itda0cX0E*
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
  𝘾𝙤𝙢𝙪𝙣𝙞𝙙𝙖𝙙 𝙙𝙚 𝙗𝙤𝙩 𝘼𝙦𝙪𝙞́ 𝙨𝙚 𝙙𝙖𝙧𝙖́ 𝙡𝙖𝙨 𝙖𝙘𝙩𝙪𝙖𝙡𝙞𝙯𝙖𝙘𝙞𝙤𝙣𝙚𝙨 𝙙𝙚𝙡 𝙗𝙤𝙩 𝙮 𝙢𝙖́𝙨 𝙘𝙤𝙨𝙖 𝙨𝙤𝙗𝙧𝙚 𝙚𝙡 𝙗𝙤𝙩.
- https://chat.whatsapp.com/D7RiLsjYQSRAbQGEvzy7nA
+ https://chat.whatsapp.com/L6DSJ5ZfzgL2xgsy4rLAQ6
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
  𝙜𝙧𝙪𝙥𝙤 𝙙𝙚 𝙖𝙢𝙞𝙨𝙩𝙖𝙙𝙚𝙨 𝙙𝙤𝙣𝙙𝙚 𝙚𝙨𝙩𝙖 𝙚𝙡 𝙗𝙤𝙩
 
@@ -32,7 +32,7 @@ https://chat.whatsapp.com/JZaD3sfNoVW4JvaoQ4uVwF
 𝐚𝐪𝐮𝐢 𝐩𝐮𝐞𝐝𝐞 𝐦𝐚𝐧𝐝𝐚 𝐭𝐮 𝐞𝐧𝐥𝐚𝐜𝐞 𝐲 𝐭𝐚𝐦𝐛𝐢𝐞́𝐧 𝐬𝐢 𝐪𝐮𝐢𝐞𝐫𝐞 𝐮𝐧 𝐛𝐨𝐭 𝐩𝐚𝐫𝐚 𝐭𝐮 𝐠𝐫𝐮𝐩𝐨 𝐩𝐨𝐧𝐞𝐫 𝐞𝐥 𝐜𝐨𝐦𝐚𝐧𝐝𝐨 .𝐣𝐨𝐢𝐧 (𝐦𝐚𝐬 𝐞𝐧𝐥𝐚𝐜𝐞)
 
 *⇶⃤꙰𝑬𝒏𝒍𝒂𝒄𝒆 𝒍𝒐𝒍𝒊𝒃𝒐𝒕ꦿ⃟⃢*
-https://chat.whatsapp.com/DlDRY1p2VrcKGpXU7XO0Ad
+https://chat.whatsapp.com/KoGGxVwaDoQGwhs9yyi3Wd
 
 *꧁⃢⃟҉💫🌺ঔঔ𝔼ℕ𝕃𝔸ℂ𝔼𝕊 𝕃𝔸 𝕁𝔼𝔽𝔸✨*
 https://chat.whatsapp.com/JegOp8NUSMd0vn75s4hkaj
