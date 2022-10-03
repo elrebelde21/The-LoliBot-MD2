@@ -20,7 +20,7 @@ let str = `
 ✅ 𝘾𝙤𝙢𝙪𝙣𝙞𝙙𝙖𝙙 𝙙𝙚𝙡 𝙗𝙤𝙩 (𝙖𝙦𝙪𝙞́ 𝙨𝙚 𝙙𝙖𝙧 𝙖𝙘𝙩𝙪𝙖𝙡𝙞𝙯𝙖𝙘𝙞𝙤́𝙣 𝙮 𝙣𝙤𝙫𝙚𝙙𝙖𝙙𝙚𝙨 𝙙𝙚𝙡 𝙗𝙤𝙩)
 *https://chat.whatsapp.com/Byyrc8RJnUkJw6vvUgsbDF*
  
-*https://chat.whatsapp.com/D7RiLsjYQSRAbQGEvzy7nA*
+*https://chat.whatsapp.com/L6DSJ5ZfzgL2xgsy4rLAQ6*
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ✅ 𝙂𝙧𝙪𝙥𝙤 𝙖𝙨𝙞𝙨𝙩𝙚𝙣𝙘𝙞𝙖 𝙛𝙖𝙘𝙚𝙗𝙤𝙤𝙠
 *https://facebook.com/groups/721802642266362/*
