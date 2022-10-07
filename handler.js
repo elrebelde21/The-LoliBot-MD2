@@ -892,15 +892,15 @@ export async function handler(chatUpdate) {
                 if (!('autosticker' in chat)) chat.autosticker = false                      
                 if (!('audios' in chat)) chat.audios = false                     
 		if (!('antiver' in chat)) chat.antiver = true                    
-                if (!('antiLink' in chat)) chat.antiLink = false                    
+                if (!('antiLink' in chat)) chat.antiLink = true                    
                 if (!('antiLink2' in chat)) chat.antiLink2 = false
 		if (!('reaction' in chat)) chat.reaction = true 
 		if (!('antiTraba' in chat))
-                    chat.antiTraba = false   
-                if (!('antifake' in chat)) chat.antifake = false
+                    chat.antiTraba = true   
+                if (!('antifake' in chat)) chat.antifake = true
                 if (!('simi' in chat)) chat.simi = false
                 if (!('viewonce' in chat)) chat.viewonce = false                    
-               if (!('antitoxic' in chat)) chat.antitoxic = true                     
+               if (!('antitoxic' in chat)) chat.antitoxic = false                     
                 if (!isNumber(chat.expired)) chat.expired = 0
                     
             } else
@@ -918,30 +918,30 @@ export async function handler(chatUpdate) {
                     autosticker: false,
                     audios: true,
 		    antiver: true,
-                    antiLink: false,
+                    antiLink: true,
                     antiLink2: false,
 		    reaction: true,
                     viewonce: false,
-                    antiTraba: false,
-                    antifake: false,
+                    antiTraba: true,
+                    antifake: true,
                     simi: false,
-                    antitoxic: true,
+                    antitoxic: false,
                     expired: 0,
                 }
             let settings = global.db.data.settings[this.user.jid]
             if (typeof settings !== 'object') global.db.data.settings[this.user.jid] = {}
             if (settings) {
                 if (!('self' in settings)) settings.self = false
-                if (!('autoread' in settings)) settings.autoread = false
+                if (!('autoread' in settings)) settings.autoread = true
                 if (!('restrict' in settings)) settings.restrict = false
-		if (!('temporal' in settings)) settings.temporal = false
-		if (!('antiCall' in settings)) settings.antiCall = false
+		if (!('temporal' in settings)) settings.temporal = true
+		if (!('antiCall' in settings)) settings.antiCall = true
             } else global.db.data.settings[this.user.jid] = {
                 self: false,
-                autoread: false,
+                autoread: true,
                 restrict: false,
-		temporal: false,
-		antiCall: false
+		temporal: true,
+		antiCall: true
             }
         } catch (e) {
             console.error(e)
