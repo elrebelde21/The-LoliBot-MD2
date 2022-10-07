@@ -10,10 +10,10 @@ try {
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || q.mediaType || ''
 if (/webp|image|video/g.test(mime)) {
-if (/video/g.test(mime)) if ((q.msg || q).seconds > 8) return m.reply(`${fg}𝙀𝙇 𝙑𝙄𝘿𝙀𝙊 𝙉𝙊 𝘿𝙀𝘽𝙀 𝘿𝙀 𝘿𝙐𝙍𝘼𝙍 𝙈𝘼𝙎 𝘿𝙀 *7* 𝙎𝙀𝙂𝙐𝙉𝘿𝙊𝙎`)
+if (/video/g.test(mime)) if ((q.msg || q).seconds > 8) return m.reply(`𝙃𝙚𝙮 𝙩𝙖𝙣 𝙡𝙖𝙧𝙜𝙤 𝙚𝙡 𝙫𝙞𝙙𝙚𝙤,  𝙚𝙡 𝙫𝙞𝙙𝙚𝙤 𝙣𝙤 𝙥𝙪𝙚𝙙𝙚 𝙙𝙪𝙙𝙖𝙨 𝙢𝙖́𝙨 𝙙𝙚𝙡 *7* 𝙨𝙚𝙜𝙪𝙣𝙙𝙤𝙨`)
 let img = await q.download?.()
 
-if (!img) throw `${mg}𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝘼 𝘼 𝙐𝙉𝘼 𝙄𝙈𝘼𝙂𝙀𝙉, 𝙑𝙄𝘿𝙀𝙊, 𝙂𝙄𝙁 𝙊 𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀 𝙏𝙄𝙋𝙊 *.jpg* 𝙋𝘼𝙍𝘼 𝙍𝙀𝘼𝙇𝙄𝙕𝘼𝙍 𝙀𝙇 𝙎𝙏𝙄𝘾𝙆𝙀𝙍 𝙐𝙎𝙀 *${usedPrefix + command}*`
+if (!img) throw `𝑹𝒆𝒔𝒑𝒐𝒏𝒅𝒂 𝒂 𝒖𝒏𝒂 𝒊𝒎𝒂𝒈𝒆𝒏, 𝒗𝒊𝒅𝒆𝒐, 𝒈𝒊𝒇 𝒐 𝒆𝒏𝒍𝒂𝒄𝒆 𝒅𝒆 𝒕𝒊𝒑𝒐 *.jpg* 𝒑𝒂𝒓𝒂 𝒓𝒆𝒂𝒍𝒊𝒛𝒂𝒓 𝒆𝒍 𝒔𝒕𝒊𝒄𝒌𝒆𝒓 𝒖𝒔𝒆 *${usedPrefix + command}*`
 
 let out
 try {
@@ -31,7 +31,7 @@ stiker = await sticker(false, out, global.packname, global.author)
 } else if (args[0]) {
 if (isUrl(args[0])) stiker = await sticker(false, args[0], global.packname, global.author)
 
-else return m.reply(`${mg}EL LINK O URL DEBE DE TERMINAR EN *.jpg*\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command}* https://i.imgur.com/8fK4h6F.jpg`)
+else return m.reply(`𝙁𝙤𝙧𝙢𝙖 𝙞𝙣𝙘𝙤𝙧𝙧𝙚𝙘𝙩𝙖,  𝙚𝙡 𝙡𝙞𝙣𝙠 𝙤 𝙪𝙧𝙡 𝙙𝙚𝙗𝙚 𝙙𝙚𝙡 𝙩𝙚́𝙧𝙢𝙞𝙣𝙖 𝙚𝙣 *.jpg*\n𝙀𝙟𝙚𝙢𝙥𝙡𝙤\n*${usedPrefix + command}* https://i.imgur.com/8fK4h6F.jpg`)
   
 }
 } catch (e) {
@@ -40,7 +40,7 @@ if (!stiker) stiker = e
 } finally {
 if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '', m)
 
-else throw `${fg}𝙑𝙐𝙀𝙇𝙑𝘼 𝘼 𝙄𝙉𝙏𝙀𝙉𝙏𝘼𝙍 𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝘼 𝘼 𝙐𝙉𝘼 𝙄𝙈𝘼𝙂𝙀𝙉, 𝙑𝙄𝘿𝙀𝙊, 𝙂𝙄𝙁 𝙊 𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀 𝙏𝙄𝙋𝙊 *.jpg* 𝙋𝘼𝙍𝘼 𝙍𝙀𝘼𝙇𝙄𝙕𝘼𝙍 𝙀𝙇 𝙎𝙏𝙄𝘾𝙆𝙀𝙍`
+else throw `𝙀𝙧𝙧𝙤𝙧, 𝙫𝙪𝙚𝙡𝙫𝙖 𝙖𝙡 𝙞𝙣𝙩𝙚𝙣𝙩𝙖 𝙙𝙚 𝙣𝙪𝙚𝙫𝙤`
 
 }}
 handler.help = ['stiker (caption|reply media)', 'stiker <url>', 'stikergif (caption|reply media)', 'stikergif <url>']

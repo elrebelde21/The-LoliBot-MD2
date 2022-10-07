@@ -20,11 +20,11 @@ if (!(isAdmin || isOwner)) return dfail('admin', m, conn)}
 let id = m.chat
 conn.vote = conn.vote ? conn.vote : {}
 if (!(id in conn.vote)) {
-return await conn.sendButton(m.chat, `${fg}𝙉𝙊 𝙎𝙀 𝙃𝘼 𝘾𝙍𝙀𝘼𝘿𝙊 𝙑𝙊𝙏𝘼𝘾𝙄𝙊𝙉 𝙀𝙉 𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊`, `*Si quieres crear una nueva votación usa el comando ${usedPrefix}crearvoto*`, null, [
+return await conn.sendButton(m.chat, `${fg}𝙉𝙤 𝙨𝙚 𝙝𝙖 𝙘𝙧𝙚𝙖𝙙𝙤𝙧 𝙫𝙤𝙩𝙖𝙘𝙞𝙤́𝙣 𝙚𝙡 𝙚𝙨𝙩𝙚 𝙜𝙧𝙪𝙥𝙤`, `*Si quieres crear una nueva votación usa el comando ${usedPrefix}crearvoto*`, null, [
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu']], fkontak, m)}
   
 delete conn.vote[id]
-await conn.sendButton(m.chat, `${eg}𝙇𝘼 𝙑𝙊𝙏𝘼𝘾𝙄𝙊𝙉 𝙀𝙉 𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊 𝙃𝘼 𝙎𝙄𝘿𝙊 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝘿𝘼`, `*Si quieres hacer una nueva votación usa el comando ${usedPrefix}crearvoto*`, null, [
+await conn.sendButton(m.chat, `${eg}𝑽𝒐𝒕𝒂𝒄𝒊𝒐́𝒏 𝒆𝒍 𝒆𝒔𝒕𝒆 𝒈𝒓𝒖𝒑𝒐  𝒉𝒂 𝒔𝒊𝒅𝒐 𝒆𝒍𝒊𝒎𝒊𝒏𝒂𝒅𝒂`, `*Si quieres hacer una nueva votación usa el comando ${usedPrefix}crearvoto*`, null, [
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu']], fkontak, m)}
 
 handler.help = ['hapusvote']

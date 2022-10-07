@@ -3,7 +3,7 @@ import MessageType from '@adiwajshing/baileys'
 import fetch from 'node-fetch'
 import fs from "fs"
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {
-if (!args[0]) throw `𝘿𝙀𝘽𝙀 𝘿𝙀 𝙐𝙎𝘼𝙍 𝘿𝙊𝙎 𝙀𝙈𝙊𝙅𝙄𝙎 𝙔 𝙀𝙉 𝙈𝙀𝘿𝙄𝙊 𝙐𝙎𝘼𝙍 𝙀𝙇 *+*\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command}* 😺+😆`
+if (!args[0]) throw `𝘿𝙚𝙗𝙚𝙧 𝙙𝙚 𝙪𝙨𝙖𝙧 2 𝙚𝙢𝙤𝙟𝙞𝙨 𝙮 𝙚𝙣 𝙢𝙚𝙙𝙞𝙤 𝙪𝙨𝙖𝙧 𝙚𝙡 *+*\n𝙚𝙟𝙚𝙢𝙥𝙡𝙤\n*${usedPrefix + command}* 😺+😆`
 let [emoji1, emoji2] = text.split`+`
 let anu = await fetchJson(`https://tenor.googleapis.com/v2/featured?key=AIzaSyAyimkuYQYF_FXVALexPuGQctUWRURdCYQ&contentfilter=high&media_filter=png_transparent&component=proactive&collection=emoji_kitchen_v5&q=${encodeURIComponent(emoji1)}_${encodeURIComponent(emoji2)}`)
 for (let res of anu.results) {

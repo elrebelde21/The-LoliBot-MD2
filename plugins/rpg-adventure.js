@@ -24,30 +24,30 @@ let kt = await ke.json()
 let imgr = flaaa.getRandom()
     let user = global.db.data.users[m.sender]
     let timers = (cooldown - (new Date - user.lastadventure))
-if (user.health < 80) return conn.sendButton(m.chat,`${htki} 𝘽𝘼𝙅𝘼 𝙎𝘼𝙇𝙐𝘿 ${htka}`,
-`𝙏𝙐 𝙎𝘼𝙇𝙐𝘿 💔 𝙀𝙎𝙏𝘼 𝙋𝙊𝙍 𝘿𝙀𝘽𝘼𝙅𝙊 𝘿𝙀 *80!!*
-𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍 𝘾𝙐𝙍𝘼𝙏𝙀 𝙋𝙍𝙄𝙈𝙀𝙍𝙊 𝙋𝘼𝙍𝘼 𝘼𝙑𝙀𝙉𝙏𝙐𝙍𝘼𝙍 𝘿𝙀 𝙉𝙐𝙀𝙑𝙊`.trim(), imgr + 'MALA SALUD', [
+if (user.health < 80) return conn.sendButton(m.chat,`${htki} 𝑩𝒂𝒋𝒂 𝒔𝒂𝒍𝒖𝒅 ${htka}`,
+`𝑻𝒖 𝒔𝒂𝒍𝒖𝒅 💔 𝒆𝒔𝒕𝒂́ 𝒅𝒆𝒃𝒂𝒋𝒐 𝒅𝒆 *80!!*
+𝑷𝒐𝒓 𝒇𝒂𝒗𝒐𝒓 𝒄𝒖𝒓𝒂𝒕𝒆 𝒑𝒓𝒊𝒎𝒆𝒓𝒐 𝒑𝒂𝒓𝒂 𝑨𝒗𝒆𝒏𝒕𝒖𝒓𝒂 𝒅𝒆𝒍 𝒏𝒖𝒆𝒗𝒐`.trim(), imgr + 'MALA SALUD', [
 [`❤️ 𝘾𝙐𝙍𝘼𝙍𝙈𝙀`, `${usedPrefix}heal`],
 [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 | 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `${usedPrefix}inventory`]], fkontak, m)
     
-if (new Date - user.lastadventure <= cooldown) return conn.sendButton(m.chat, `${htki} 𝘿𝙀𝙎𝘾𝘼𝙉𝙎𝘼𝙉𝘿𝙊 ${htka}`,
-`𝙔𝘼 𝘼𝙑𝙀𝙉𝙏𝙐𝙍𝘼𝙎𝙏𝙀!! 𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍 𝙀𝙎𝙋𝙀𝙍𝘼 𝙃𝘼𝙎𝙏𝘼 𝙌𝙐𝙀 𝙏𝙀𝙍𝙈𝙄𝙉𝙀 𝙀𝙇 𝙏𝙄𝙀𝙈𝙋𝙊 𝘿𝙀 𝘿𝙀𝙎𝘾𝘼𝙉𝙎𝙊
+if (new Date - user.lastadventure <= cooldown) return conn.sendButton(m.chat, `${htki} 𝑫𝒆𝒔𝒄𝒂𝒏𝒔𝒂𝒏𝒅𝒐 ${htka}`,
+`𝒀𝒂 𝒂𝒗𝒆𝒏𝒕𝒖𝒓𝒂𝒔𝒕𝒆!! 𝑷𝒐𝒓 𝒇𝒂𝒗𝒐𝒓 𝒆𝒔𝒑𝒆𝒓𝒂 𝒉𝒂𝒔𝒕𝒂 𝒒𝒖𝒆 𝒕𝒆𝒓𝒎𝒊𝒏𝒆 𝒆𝒍 𝒕𝒊𝒆𝒎𝒑𝒐 𝒅𝒆 𝒅𝒆𝒔𝒄𝒂𝒏𝒔𝒐
 
-⏱️ ${timers.toTimeString()}`.trim(), imgr + 'DESCANSANDO', [
+⏱️ ${timers.toTimeString()}`.trim(), imgr + '𝑫𝒆𝒔𝒄𝒂𝒏𝒔𝒂𝒏𝒅𝒐', [
 [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊`, `${usedPrefix}inventory`],
 [`🔔 𝙍𝙀𝘾𝙇𝘼𝙈𝙊 𝘿𝙄𝘼𝙍𝙄𝙊`, `${usedPrefix}daily`]], fkontak, m) 
     
     const rewards = reward(user)
-    let text = `🛫 𝙀𝙎𝙏𝘼𝙎 𝘼𝙑𝙀𝙉𝙏𝙐𝙍𝘼𝙉𝘿𝙊 𝙀𝙉 *» ${kt[1][0].name}*
+    let text = `🛫 𝑬𝒔𝒕𝒂 𝒂𝒗𝒆𝒏𝒕𝒖𝒓𝒂𝒏𝒅𝒐 𝒆𝒏 *» ${kt[1][0].name}*
 
 ${cmenut}
 ${cmenub} *ID :* ${kt[1][0].id}
-${cmenub} *CIUDAD | CITY :* ${kt[1][0].capitalCity}
-${cmenub} *LONGITUD | LENGTH :* ${kt[1][0].longitude}
-${cmenub} *LATITUD | LATITUDE :* ${kt[1][0].latitude}
+${cmenub} *CIUDAD :* ${kt[1][0].capitalCity}
+${cmenub} *LONGITUD :* ${kt[1][0].longitude}
+${cmenub} *LATITUD :* ${kt[1][0].latitude}
 ${cmenuf}
 
-🏞️ 𝘼𝙑𝙀𝙉𝙏𝙐𝙍𝘼 𝙁𝙄𝙉𝘼𝙇𝙄𝙕𝘼𝘿𝘼 :
+🏞️ 𝑨𝒅𝒗𝒆𝒏𝒕𝒖𝒓𝒂 𝒇𝒊𝒏𝒂𝒍𝒊𝒛𝒂𝒅𝒂𝒔:
 ${cmenua}`
     
     for (const lost in rewards.lost) if (user[lost]) {
@@ -55,14 +55,14 @@ ${cmenua}`
         user[lost] -= total * 1
         if (total) text += `\n${global.rpg.emoticon(lost)} ${total}`
     }
-    text += '\n\n✨ 𝙍𝙀𝘾𝙊𝙈𝙋𝙀𝙉𝙎𝘼𝙎 𝘿𝙀 𝙇𝘼 𝘼𝙑𝙀𝙉𝙏𝙐𝙍𝘼'
+    text += '\n\n✨ 𝑹𝒆𝒄𝒐𝒎𝒑𝒆𝒏𝒔𝒂 𝒅𝒆 𝒍𝒂 𝑨𝒅𝒗𝒆𝒏𝒕𝒖𝒓𝒂'
     for (const rewardItem in rewards.reward) if (rewardItem in user) {
         const total = rewards.reward[rewardItem].getRandom()
         user[rewardItem] += total * 1
         if (total) text += `\n» ${global.rpg.emoticon(rewardItem)} ${total}`
     }
     conn.sendButton(m.chat, 
-     `${htki} 𝘼𝙑𝙀𝙉𝙏𝙐𝙍𝘼 ${htka}`, 
+     `${htki} 𝑨𝒅𝒗𝒆𝒏𝒕𝒖𝒓𝒂 ${htka}`, 
      text.trim(), `https://static-maps.yandex.ru/1.x/?lang=id-ID&ll=${kt[1][0].longitude},${kt[1][0].latitude}&z=12&l=map&size=600,300`, [
 [`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊`, `${usedPrefix}inventory`],
 [`🔔 𝙍𝙀𝘾𝙇𝘼𝙈𝙊 𝘿𝙄𝘼𝙍𝙄𝙊`, `${usedPrefix}daily`]

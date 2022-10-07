@@ -43,7 +43,7 @@ ${sortedRole.slice(0, len).map(({ jid, role }, i) => `${i + 1}. ${participants.s
 💠 *𝚃𝙾𝙿 ${len} 𝙻𝙾𝙻𝙸𝙲𝙾𝙸𝙽𝚂 🐈*
 Tú : *${usersMoney.indexOf(m.sender) + 1}* de *${usersMoney.length} 𝚞𝚜𝚞𝚊𝚛𝚒𝚘𝚜*
 
-${sortedMoney.slice(0, len).map(({ jid, money }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${money} GataCoins*`).join`\n`}
+${sortedMoney.slice(0, len).map(({ jid, money }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${money} LoliCoins*`).join`\n`}
 `.trim()
   await conn.reply(m.chat, text, m, { 
     contextInfo: {

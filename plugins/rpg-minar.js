@@ -10,7 +10,7 @@ if (new Date - global.db.data.users[m.sender].lastmiming < 600000) throw `*💟 
 
 conn.sendHydrated(m.chat, `*${minar} ${xp} 𝙓𝙋*`, wm, pp, md, '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝒃𝒐𝒕-𝑴𝑫', null, null, [
 ['𝙈𝙞𝙣𝙖𝙧 𝘿𝙞𝙖𝙢𝙖𝙣𝙩𝙚𝙨 💎', `.minar3`],
-['𝙈𝙞𝙣𝙖𝙧 Loli𝘾𝙤𝙞𝙣𝙨 🐈', `.minar2`],
+['𝙈𝙞𝙣𝙖𝙧 𝗟𝗼𝗹𝗶𝗰𝗼𝗶𝗻𝘀 🐈', `.minar2`],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', `.menu`]
 ], m,)
 global.db.data.users[m.sender].lastmiming = new Date * 1  

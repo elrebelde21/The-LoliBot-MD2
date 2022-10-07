@@ -22,13 +22,13 @@ conn.vote = conn.vote ? conn.vote : {}
 let id = m.chat
 
 if (id in conn.vote) { 
-return await conn.sendButton(m.chat, `🗃️ 𝙏𝙊𝘿𝘼𝙑𝙄𝘼 𝙃𝘼𝙔 𝙑𝙊𝙏𝘼𝘾𝙄𝙊𝙉 𝙋𝙀𝙉𝘿𝙄𝙀𝙉𝙏𝙀 𝙀𝙉 𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊!!`, wm, null, [
-['🧾 𝙁𝙄𝙉𝘼𝙇𝙄𝙕𝘼𝙍 𝙑𝙊𝙏𝘼𝘾𝙄𝙊𝙉', `${usedPrefix}-vote`]], fkontak, m)}
+return await conn.sendButton(m.chat, `🗃️ 𝙏𝙤𝙙𝙖𝙫𝙞́𝙖 𝙝𝙖𝙮 𝙫𝙤𝙩𝙖𝙘𝙞𝙤́𝙣 𝙥𝙚𝙣𝙙𝙞𝙚𝙣𝙩𝙚 𝙚𝙡 𝙚𝙨𝙩𝙚 𝙜𝙧𝙪𝙥𝙤!!`, wm, null, [
+['🧾 𝑭𝒊𝒏𝒂𝒍𝒊𝒛𝒂𝒓 𝒗𝒐𝒕𝒂𝒄𝒊𝒐́𝒏', `${usedPrefix}-vote`]], fkontak, m)}
   
-await conn.sendButton(m.chat, `✴️ 𝙉𝙐𝙀𝙑𝘼 𝙑𝙊𝙏𝘼𝘾𝙄𝙊𝙉 ✴️\n\n*CREADOR(A) DE LA VOTACIÓN*\n🛃 @${conn.getName(m.sender)}\n\n*MOTIVO ➫* ${text}`, `
+await conn.sendButton(m.chat, `✴️ 𝙉𝙪𝙚𝙫𝙖𝙨 𝙫𝙤𝙩𝙖𝙘𝙞𝙤́𝙣 ✴️\n\n*𝑪𝒓𝒆𝒂𝒅𝒐𝒓 𝒅𝒆 𝒍𝒂 𝒗𝒐𝒕𝒂𝒄𝒊𝒐́𝒏*\n🛃 @${conn.getName(m.sender)}\n\n*𝙈𝙤𝙩𝙞𝙫𝙤𝙨 ➫* ${text}`, `
 *Puede usar los comandos de abajo o los botones para hacer una acción en la votación!!*
 
-${htjava} 𝘿𝙐𝙍𝘼𝙉𝙏𝙀 𝙇𝘼 𝙑𝙊𝙏𝘼𝘾𝙄𝙊𝙉 ${htjava}
+${htjava} 𝘿𝙪𝙧𝙖𝙣𝙩𝙚 𝙡𝙖 𝙫𝙤𝙩𝙖𝙘𝙞𝙤́𝙣 ${htjava}
 ${dmenub} *${usedPrefix}sivotar | upvote* 
 ${dmenub} _Estar de acuerdo : Agree_
 ${dmenub2} *┈┈┈┈┈┈┈┈┈┈┈┈*

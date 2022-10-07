@@ -18,25 +18,25 @@ let id = m.chat
 conn.vote = conn.vote ? conn.vote : {}
         
 if (!(id in conn.vote)) {
-return await conn.sendButton(m.chat, `${fg}𝙉𝙊 𝙎𝙀 𝙃𝘼 𝘾𝙍𝙀𝘼𝘿𝙊 𝙑𝙊𝙏𝘼𝘾𝙄𝙊𝙉 𝙀𝙉 𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊`, `*Si quieres crear una nueva votación usa el comando ${usedPrefix}crearvoto*\n${wm}`, null, [
+return await conn.sendButton(m.chat, `𝙉𝙤 𝙨𝙚 𝙝𝙖 𝙘𝙧𝙚𝙖𝙙𝙤𝙧 𝙫𝙤𝙩𝙖𝙘𝙞𝙤́𝙣 𝙚𝙡 𝙚𝙨𝙩𝙚 𝙜𝙧𝙪𝙥𝙤`, `*Si quieres crear una nueva votación usa el comando ${usedPrefix}crearvoto*\n${wm}`, null, [
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣 ☘️', '/menu']], fkontak, m)}
 
 let [reason, upvote, devote] = conn.vote[id]
-let caption = `*${htjava} 𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝙑𝙊𝙏𝙊𝙎 ${htjava}*
+let caption = `*${htjava} 𝙇𝙞𝙨𝙩𝙖𝙨 𝙙𝙚 𝙫𝙤𝙩𝙤𝙨 ${htjava}*
 
-*USUARIO(A)*
+*𝙐𝙨𝙪𝙖𝙧𝙞𝙤(A)*
 🐈 @${conn.getName(m.sender)}
 
-*MOTIVO ➫* ${reason}
+*𝙈𝙤𝙩𝙞𝙫𝙤𝙨 ➫* ${reason}
 
-*${htjava} 𝙑𝙊𝙏𝙊𝙎 𝘼 𝙁𝘼𝙑𝙊𝙍 ${htjava}*
+*${htjava} 𝙑𝙤𝙩𝙤𝙧 𝙖 𝙛𝙖𝙫𝙤𝙧 ${htjava}*
 *Total: ${upvote.length}*
 
 ${dmenut}
 ${upvote.map((v, i) => `${dmenub} ${i + 1}.  @${v.split`@`[0]}`).join('\n')}
 ${dmenuf}
 
-*${htjava} 𝙑𝙊𝙏𝙊𝙎 𝙀𝙉 𝘾𝙊𝙉𝙏𝙍𝘼 ${htjava}*
+*${htjava} 𝙑𝙤𝙩𝙤𝙨 𝙚𝙡 𝙘𝙤𝙣𝙩𝙧𝙖 ${htjava}*
 *Total: ${devote.length}*
 
 ${dmenut}

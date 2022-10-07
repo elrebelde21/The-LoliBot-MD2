@@ -93,12 +93,12 @@ let hsl = `
 		global.db.data.users[m.sender].ayam += rbrb12
 	
 let time = global.db.data.users[m.sender].lastberburu + 2700000 //45 Minutos
-if (new Date - global.db.data.users[m.sender].lastberburu < 2700000) return conn.sendButton(m.chat, `𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍 𝘿𝙀𝙎𝘾𝘼𝙉𝙎𝘼 𝙐𝙉 𝙈𝙊𝙈𝙀𝙉𝙏𝙊 𝙋𝘼𝙍𝘼 𝙇𝙐𝙀𝙂𝙊 𝙎𝙀𝙂𝙐𝙄𝙍 𝘾𝘼𝙕𝘼𝙉𝘿𝙊`, `⫹⫺ 𝙏𝙄𝙀𝙈𝙋𝙊 ${clockString(time - new Date())}\n${wm}`, null, [
+if (new Date - global.db.data.users[m.sender].lastberburu < 2700000) return conn.sendButton(m.chat, `𝑷𝒐𝒓 𝒇𝒂𝒗𝒐𝒓 𝒅𝒆𝒔𝒄𝒂𝒏𝒔𝒂 𝒖𝒏 𝒎𝒐𝒎𝒆𝒏𝒕𝒐 𝒑𝒂𝒓𝒂 𝒍𝒖𝒆𝒈𝒐 𝒔𝒆𝒈𝒖𝒊́ 𝒄𝒂𝒏𝒛𝒂𝒅𝒐`, `⫹⫺ 𝑻𝒊𝒆𝒎𝒑𝒐 ${clockString(time - new Date())}\n${wm}`, null, [
 ['🏞️ 𝘼𝙣𝙞𝙢𝙖𝙡𝙚𝙨 𝘾𝙖𝙥𝙩𝙪𝙧𝙖𝙙𝙤𝙨 ', '.kandang'],
 [`🎒 𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 | 𝙄𝙣𝙫𝙚𝙣𝙩𝙤𝙧𝙮`, `.inventario`]], fkontak, m)	
 
 setTimeout(() => {
-conn.sendHydrated(m.chat, hsl, wm, null, md, `𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿`, null, null, [
+conn.sendHydrated(m.chat, hsl, wm, null, md, `𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫`, null, null, [
 [null, null]], null)}, 20000)
 	        
 setTimeout(() => {
