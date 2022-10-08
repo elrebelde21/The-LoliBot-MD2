@@ -5,7 +5,7 @@ throw false
 }
 let vn = './media/Invocar.mp3'
 let pesan = args.join` `
-let oi = `*𝙼𝙴𝙽𝚂𝙰𝙹𝙴:* ${pesan}`
+let oi = `*𝙈𝙚𝙣𝙨𝙖𝙟𝙚:* ${pesan}`
 let teks = `*⺀𝘼𝙘𝙩𝙞𝙫𝙚 𝙜𝙧𝙪𝙥𝙤𝙨 🗣️⺀*\n\n❏ ${oi}\n\n❏ *𝙀𝙩𝙞𝙦𝙪𝙚𝙩𝙖𝙨:*\n`
 for (let mem of participants) {
 teks += `┣🔸 @${mem.id.split('@')[0]}\n`}

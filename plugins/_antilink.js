@@ -16,7 +16,7 @@ if (isBotAdmin) {
 const linkThisGroup = `https://chat.whatsapp.com/${await this.groupInviteCode(m.chat)}`
 if (m.text.includes(linkThisGroup)) return !0
 }    
-await conn.sendButton(m.chat, `*「 𝐀𝐍𝐓𝐈 𝐋𝐈𝐍𝐊 」*\n*𝒄𝒉𝒆, ${await this.getName(m.sender)} 𝒆𝒔𝒐 𝒏𝒐 𝒔𝒆 𝒑𝒆𝒓𝒎𝒊𝒕𝒆 𝒓𝒂𝒕𝒂, 𝒓𝒐𝒎𝒑𝒊𝒔𝒕𝒆𝒔 𝒍𝒂𝒔 𝒓𝒆𝒈𝒍𝒂𝒔 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐 𝒔𝒆𝒓𝒂́𝒔 𝒆𝒙𝒕𝒆𝒓𝒎𝒊𝒏𝒂𝒅𝒐🤑...!!*${isBotAdmin ? '' : '\n\n*[❗𝐈𝐍𝐅𝐎❗] 𝑯𝒆𝒚 𝒒𝒖𝒆 𝒔𝒂𝒍𝒗𝒂𝒓𝒕𝒆 𝑮𝒊𝒍 𝒆𝒍 𝒃𝒐𝒕 𝒏𝒐 𝒆𝒔 𝒂𝒅𝒎𝒊𝒏 :v*'}`, author, ['𝘿𝙚𝙨𝙖𝙘𝙩𝙞𝙫𝙖𝙧 𝙖𝙣𝙩𝙞𝙡𝙞𝙣𝙠', '/disable antilink'], m)    
+await conn.sendButton(m.chat, `*「 𝐀𝐍𝐓𝐈 𝐋𝐈𝐍𝐊 」*\n*𝘾𝙝𝙚, ${await this.getName(m.sender)} 𝙀𝙨𝙤 𝙣𝙤 𝙨𝙚 𝙥𝙚𝙧𝙢𝙞𝙩𝙚 𝙧𝙖𝙩𝙖, 𝙧𝙤𝙢𝙥𝙞𝙨𝙩𝙚 𝙡𝙖 𝙧𝙚𝙜𝙡𝙖𝙨 𝙙𝙚𝙡 𝙜𝙧𝙪𝙥𝙤 𝙨𝙚𝙧𝙖́ 𝙚𝙡𝙞𝙢𝙞𝙣𝙖𝙙𝙤 🤑....!!*${isBotAdmin ? '' : '\n\n*[❗𝐈𝐍𝐅𝐎❗] 𝑯𝒆𝒚 𝒒𝒖𝒆 𝒔𝒂𝒍𝒗𝒂𝒓𝒕𝒆 𝑮𝒊𝒍 𝒆𝒍 𝒃𝒐𝒕 𝒏𝒐 𝒆𝒔 𝒂𝒅𝒎𝒊𝒏 :v*'}`, author, ['𝘿𝙚𝙨𝙖𝙘𝙩𝙞𝙫𝙖𝙧 𝙖𝙣𝙩𝙞𝙡𝙞𝙣𝙠', '/disable antilink'], m)    
 if (isBotAdmin) {
 await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
