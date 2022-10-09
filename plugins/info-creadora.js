@@ -4,8 +4,8 @@ let vn = './media/creador.mp3'
 let text = `
 *𝘾𝙤𝙣𝙩𝙖𝙘𝙩𝙤* 
 *Wa.me/5492266466080 (no bot)*
-*wa.me/972529277518 (bot)*
-*wa.me/12267784150 (bot²)*
+*wa.me/972529277406 (bot)*
+*wa.me/18134031777 (bot²)*
 `.trim()   
 conn.reply(m.chat, text, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
