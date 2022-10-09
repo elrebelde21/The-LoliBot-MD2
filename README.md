@@ -10,7 +10,7 @@
 )](https://chat.whatsapp.com/Lus9S60MABnH9lF4Wf2T7k)  <a href="https://chat.whatsapp.com/Lus9S60MABnH9lF4Wf2T7k"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
 
 [![blog](https://img.shields.io/badge/Grupo2-lolibot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
-)](https://chat.whatsapp.com/IJmvzc45SVg1lbErQqysc8) <a href="https://chat.whatsapp.com/IJmvzc45SVg1lbErQqysc8"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
+)](https://chat.whatsapp.com/ELQLdi4i0nQ7QkgN6JzCFj) <a href="https://chat.whatsapp.com/ELQLdi4i0nQ7QkgN6JzCFj"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
 
 -----
 [![blog](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
