@@ -677,6 +677,11 @@ let vn = './media/turrito.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
 
+if (!chat.isBanned && chat.audios && m.text.match(/(lgante|bar|tinicumbia|esaaaa|😎)/gi)) {
+let vn = './media/bar.mp3'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
+
 if (chat.audios && m.text.match(/(vetealavrg|vete a la vrg|vete a la verga)/gi)) {    
 let vn = './media/vete a la verga.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
