@@ -70,6 +70,10 @@ global.APIKeys = { // APIKey Here
   'https://anabotofc.herokuapp.com/': 'AnaBot'
 }
 
+global.imagen1 = fs.readFileSync('./Menu2.jpg')
+global.imagen2 = fs.readFileSync('./src/nuevobot.jpg') 
+global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png')
+
 //⊱ ━━━━━.⋅ KEY ⋅.━━━━ ⊰
 
 global.Key360 = ['964f-0c75-7afc'] //keys ephoto360
