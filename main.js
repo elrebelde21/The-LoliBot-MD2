@@ -5,7 +5,7 @@ import path, { join } from 'path'
 import { fileURLToPath, pathToFileURL } from 'url'
 import { platform } from 'process'
 import * as ws from 'ws';
-import { readdirSync, statSync, unlinkSync, existsSync, readFileSync } from 'fs';
+import { readdirSync, statSync, unlinkSync, existsSync, readFileSync, rmSync } from 'fs';
 import watch from 'glob-fs'
 import yargs from 'yargs';
 import { spawn } from 'child_process';
@@ -72,7 +72,7 @@ const connectionOptions = {
 printQRInTerminal: true,
 auth: state,
 logger: P({ level: 'silent'}),
-browser: ['TheLolibot-MD','Safari','1.0.0']
+browser: ['TheLoliBot-MD','Safari','1.0.0']
 }
 
 global.conn = makeWASocket(connectionOptions)
@@ -81,7 +81,7 @@ conn.isInit = false
 if (!opts['test']) {
 if (global.db) setInterval(async () => {
 if (global.db.data) await global.db.write()
-if (opts['autocleartmp'] && (global.support || {}).find) (tmp = [os.tmpdir(), 'tmp'], tmp.forEach(filename => cp.spawn('find', [filename, '-amin', '3', '-type', 'f', '-delete'])))
+if (opts['autocleartmp'] && (global.support || {}).find) (tmp = [os.tmpdir(), 'tmp', "jadibts"], tmp.forEach(filename => cp.spawn('find', [filename, '-amin', '3', '-type', 'f', '-delete'])))
 }, 30 * 1000)}
 
 if (opts['server']) (await import('./server.js')).default(global.conn, PORT)
@@ -90,6 +90,9 @@ function clearTmp() {
 const tmp = [tmpdir(), join(__dirname, './tmp')]
 const filename = []
 tmp.forEach(dirname => readdirSync(dirname).forEach(file => filename.push(join(dirname, file))))
+readdirSync("./jadibts").forEach(file => {
+    console.log(file)
+    rmSync("./jadibts/" + file, { recursive: true, force: true })})
 return filename.map(file => {
 const stats = statSync(file)
 if (stats.isFile() && (Date.now() - stats.mtimeMs >= 1000 * 60 * 3)) return unlinkSync(file) // 3 minutes
@@ -107,7 +110,7 @@ global.timestamp.connect = new Date
 if (global.db.data == null) loadDatabase()
 if (connection == 'open') {
 console.log(chalk.yellow('▣─────────────────────────────···\n│\n│❧ 𝙲𝙾𝙽𝙴𝙲𝚃𝙰𝙳𝙾 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙰𝙼𝙴𝙽𝚃𝙴 𝙰𝙻 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 ✅\n│\n▣─────────────────────────────···'))
-await conn.groupAcceptInvite('IoLP4fuiGSOEWx3fduaInV')}}
+await conn.groupAcceptInvite('KsSWXKfQXKWBXgkqk5YTuT')}}
 
 process.on('uncaughtException', console.error)
 
@@ -137,10 +140,10 @@ conn.ev.off('connection.update', conn.connectionUpdate)
 conn.ev.off('creds.update', conn.credsUpdate)
 }
   
-conn.welcome = '*┏━━━━━━━━━━━━\n┃──〘 *𝗕𝗶𝗲𝗻𝘃𝗲𝗻𝗶𝗱𝗼/𝗮* 〙──\n┃━━━━━━━━━━━━\n┃ ✨ *_@user_* \n┃ *_𝗔𝗹_*  *_@subject ✨_* \n┃\n┃=> *_𝗘𝗻 𝗲𝘀𝘁𝗲 𝗴𝗿𝘂𝗽𝗼 𝗽𝗼𝗱𝗿𝗮́𝘀_*\n┃ *_𝗘𝗻𝗰𝗼𝗻𝘁𝗿𝗮𝗿:_*\n┠⊷ *_𝗔𝗺𝗶𝘀𝘁𝗮𝗱𝗲𝘀_* 🫂 \n┠⊷ *_𝗗𝗲𝘀𝗺𝗮𝗱𝗿𝗲 💃🕺_* \n┠⊷ *_𝗕𝗮𝗿𝗱𝗼 🤺_* \n┠⊷ *_𝗝𝗼𝗱𝗮😛_* \n┠⊷ *_𝗨𝗻 𝗯𝗼𝘁 𝘀𝗲𝘅𝘆_*\n┃=> *_𝗣𝘂𝗲𝗱𝗲 𝘀𝗼𝗹𝗶𝗰𝗶𝘁𝗮𝗿 𝗺𝗶 𝗹𝗶𝘀𝘁𝗮 𝗱𝗲_*\n┃ *_𝗖𝗼𝗺𝗮𝗻𝗱𝗼 𝗰𝗼𝗻:_*\n┠⊷ *#menu*\n┃\n┃=> *_𝗔𝗾𝘂𝗶́ 𝘁𝗶𝗲𝗻𝗲 𝗹𝗮 𝗱𝗲𝘀𝗰𝗿𝗶𝗽𝗰𝗶𝗼́𝗻_* \n┃ *_𝗗𝗲𝗹 𝗴𝗿𝘂𝗽𝗼, 𝗹𝗲́𝗲𝗹𝗮!!_*\n┃\n\n@desc\n\n┃ \n┃ *_🔰 𝗗𝗶𝘀𝗳𝗿𝘂𝘁𝗮 𝗱𝗲 𝘁𝘂_* \n┃ *_𝗘𝘀𝘁𝗮𝗱𝗶́𝗮 𝗲𝗻 𝗲𝗹 𝗚𝗿𝘂𝗽𝗼 🔰_*  \n┃\n┗━━━━━━━━━━━'
+conn.welcome = '┏━━━━━━━━━━━━\n┃──〘 *𝗕𝗶𝗲𝗻𝘃𝗲𝗻𝗶𝗱𝗼/𝗮* 〙──\n┃━━━━━━━━━━━━\n┃ ✨ *_@user_* _𝗔𝗹_ \n┃ *_@subject ✨_* \n┃\n┃=> *_𝗘𝗻 𝗲𝘀𝘁𝗲 𝗴𝗿𝘂𝗽𝗼 𝗽𝗼𝗱𝗿𝗮́𝘀_*\n┃ *_𝗘𝗻𝗰𝗼𝗻𝘁𝗿𝗮𝗿:_*\n┠⊷ *_𝗔𝗺𝗶𝘀𝘁𝗮𝗱𝗲𝘀_* 🫂 \n┠⊷ *_𝗗𝗲𝘀𝗺𝗮𝗱𝗿𝗲 💃🕺_* \n┠⊷ *_𝗕𝗮𝗿𝗱𝗼 🤺_* \n┠⊷ *_𝗝𝗼𝗱𝗮😛_* \n┠⊷ *_𝗨𝗻 𝗯𝗼𝘁 𝘀𝗲𝘅𝘆_*\n┃=> *_𝗣𝘂𝗲𝗱𝗲 𝘀𝗼𝗹𝗶𝗰𝗶𝘁𝗮𝗿 𝗺𝗶 𝗹𝗶𝘀𝘁𝗮 𝗱𝗲_*\n┃ *_𝗖𝗼𝗺𝗮𝗻𝗱𝗼 𝗰𝗼𝗻:_*\n┠⊷ *#menu*\n┃\n┃=> *_𝗔𝗾𝘂𝗶́ 𝘁𝗶𝗲𝗻𝗲 𝗹𝗮 𝗱𝗲𝘀𝗰𝗿𝗶𝗽𝗰𝗶𝗼́𝗻_* \n┃ *_𝗗𝗲𝗹 𝗴𝗿𝘂𝗽𝗼, 𝗹𝗲́𝗲𝗹𝗮!!_*\n┃\n\n@desc\n\n┃ \n┃ *_🔰 𝗗𝗶𝘀𝗳𝗿𝘂𝘁𝗮 𝗱𝗲 𝘁𝘂_* \n┃ *_𝗘𝘀𝘁𝗮𝗱𝗶́𝗮 𝗲𝗻 𝗲𝗹 𝗚𝗿𝘂𝗽𝗼 🔰_*  \n┃\n┗━━━━━━━━━━━'
 conn.bye = '*╔══════════════*\n*╟❧ @user*\n*╟❧ 𝙷𝙰𝚂𝚃𝙰 𝙿𝚁𝙾𝙽𝚃𝙾 👋🏻* \n*╚══════════════*'
 conn.spromote = '*𝙃𝙚𝙮 @user 𝘼𝙝𝙤𝙧𝙖 𝙚𝙧𝙚𝙨 𝙖𝙙𝙢𝙞𝙣, 𝙙𝙚𝙡 𝙜𝙧𝙪𝙥𝙤😛!!*'
-conn.sdemote = '*𝙃𝙚𝙮 @user 𝙰𝙱𝙰𝙽𝙳𝙾𝙽𝙰 𝙔𝙖 𝙣𝙤 𝙚𝙧𝙚𝙨 𝙖𝙙𝙢𝙞𝙣😐!!*'
+conn.sdemote = '*𝙃𝙚𝙮 @user 𝙔𝙖 𝙣𝙤 𝙚𝙧𝙚𝙨 𝙖𝙙𝙢𝙞𝙣😐 !!*'
 conn.sDesc = '*𝚂𝙴 𝙷𝙰 𝙼𝙾𝙳𝙸𝙵𝙸𝙲𝙰𝙳𝙾 𝙻𝙰 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾*\n\n*𝙽𝚄𝙴𝚅𝙰 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽:* @desc'
 conn.sSubject = '*𝚂𝙴 𝙷𝙰 𝙼𝙾𝙳𝙸𝙵𝙸𝙲𝙰𝙳𝙾 𝙴𝙻 𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾*\n*𝙽𝚄𝙴𝚅𝙾 𝙽𝙾𝙼𝙱𝚁𝙴:* @subject'
 conn.sIcon = '*𝚂𝙴 𝙷𝙰 𝙲𝙰𝙼𝙱𝙸𝙰𝙳𝙾 𝙻𝙰 𝙵𝙾𝚃𝙾 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾!!*'
