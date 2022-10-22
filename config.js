@@ -110,10 +110,10 @@ global.gatadiosig = ig
 global.md = 'https://github.com/elrebelde21/The-LoliBot-MD'
 global.gatabot = md
 
-global.nn = 'https://chat.whatsapp.com/Lus9S60MABnH9lF4Wf2T7k'
+global.nn = 'https://chat.whatsapp.com/Ei87TDT7fsI3Q3p5MnM9sW'
 global.nngrupo = nn //Grupo 1
 
-global.nnn = 'https://chat.whatsapp.com/ELQLdi4i0nQ7QkgN6JzCFj'
+global.nnn = 'https://chat.whatsapp.com/JquaTMLO7Lm8bKjx2RPiC5'
 global.nnngrupo = nnn //Grupo 2
 
 global.paypal = 'https://paypal'
