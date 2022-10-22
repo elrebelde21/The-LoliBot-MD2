@@ -3,27 +3,27 @@ var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.present
 var document = doc[Math.floor(Math.random() * doc.length)]    
 let text = `
 *𝘾𝙤𝙣𝙩𝙖𝙘𝙩𝙤* 
-wa.me/5492266466080* *(no bot)*
+*wa.me/5492266466080 (no bot)*
 *wa.me/972529277406 (bot)*
 *wa.me/972529277535 (bot²)*
 `.trim()   
 let buttonMessage= {
-'document': { url: `https://github.com/BrunoSobrino/TheMystic-Bot-MD` },
+'document': { url: `https://github.com/elrebelde21/The-LoliBot-MD` },
 'mimetype': `application/${document}`,
-'fileName': `「  𝑯𝒆𝒍𝒍𝒐 𝑾𝒐𝒓𝒍𝒅 」`,
+'fileName': `「  contacto del mi creador 」`,
 'fileLength': 99999999999999,
 'pageCount': 200,
 'contextInfo': {
 'forwardingScore': 200,
 'isForwarded': true,
 'externalAdReply': {
-'mediaUrl': 'https://github.com/BrunoSobrino/TheMystic-Bot-MD',
+'mediaUrl': 'https://github.com/elrebelde21/The-LoliBot-MD',
 'mediaType': 2,
 'previewType': 'pdf',
 'title': 'ᴇʟ ᴍᴇᴊᴏʀ ʙᴏᴛ ᴅᴇ ᴡʜᴀᴛsᴀᴘᴘ⁩',
 'body': wm,
 'thumbnail': imagen1,
-'sourceUrl': 'https://www.youtube.com/channel/UCSTDMKjbm-EmEovkygX-lCA' }},
+'sourceUrl': 'https://youtube.com/channel/UCPSrzHooOjQMRmUK_2RLcSw' }},
 'caption': text,
 'footer': wm,
 'buttons':[
