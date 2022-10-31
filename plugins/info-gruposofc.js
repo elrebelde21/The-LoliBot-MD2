@@ -13,17 +13,12 @@ let str = `
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 2) *${nnn}*\n
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-3) *https://chat.whatsapp.com/Byyrc8RJnUkJw6vvUgsbDF*
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 *𝙂𝙧𝙪𝙥𝙤𝙨 𝙙𝙚𝙡 𝙖𝙮𝙪𝙙𝙖𝙧 𝙨𝙤𝙗𝙧𝙚 𝙚𝙡 𝙗𝙤𝙩*
 *https://chat.whatsapp.com/DNJ4Ppm5ysn3fhjGflrr0J*
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
- 𝘾𝙤𝙢𝙪𝙣𝙞𝙙𝙖𝙙 𝙙𝙚 𝙗𝙤𝙩 𝘼𝙦𝙪𝙞́ 𝙨𝙚 𝙙𝙖𝙧𝙖́ 𝙡𝙖𝙨 𝙖𝙘𝙩𝙪𝙖𝙡𝙞𝙯𝙖𝙘𝙞𝙤𝙣𝙚𝙨 𝙙𝙚𝙡 𝙗𝙤𝙩 𝙮 𝙢𝙖́𝙨 𝙘𝙤𝙨𝙖 𝙨𝙤𝙗𝙧𝙚 𝙚𝙡 𝙗𝙤𝙩.
-https://chat.whatsapp.com/C19fZBkW8yW1OZhM1auIOS
-┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
  𝙜𝙧𝙪𝙥𝙤 𝙙𝙚 𝙖𝙢𝙞𝙨𝙩𝙖𝙙𝙚𝙨 𝙙𝙤𝙣𝙙𝙚 𝙚𝙨𝙩𝙖 𝙚𝙡 𝙗𝙤𝙩
 
-*ஓீ͜ঔৣ͡🍒𝑪𝑬̈𝑹𝑬𝒁𝑨̈.𝑩Ø𝑻🔥ঔৣ͡ஓ*
+*ஓீ͜ঔৣ͡🍒STICKER/𝑩Ø𝑻🔥ঔৣ͡ஓ*
 https://chat.whatsapp.com/DCJclB8oBAPIAoleUtNEaN
 
 *꧁⁣𓆩Aᴹᴵᴳᴼˢ Cᴴᴬᵀˢ Y Aᴾᴼᴿᵀᴱ*
