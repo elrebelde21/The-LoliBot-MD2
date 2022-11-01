@@ -108,8 +108,5 @@
 
 ### 🌟 𝐀𝐠𝐫𝐚𝐜𝐢𝐦𝐢𝐞𝐧𝐭𝐨
  
-[![GataNina-Li](https://github.com/GataNina-Li.png?size=100)](https://github.com/GataNina-Li) 
-
-### 🌟 𝐀𝐠𝐫𝐚𝐜𝐢𝐦𝐢𝐞𝐧𝐭𝐨
- 
 [![TheShadowBrokers1](https://github.com/BrunoSobrino.png?size=100)](https://github.com/BrunoSobrino) 
+[![GataNina-Li](https://github.com/GataNina-Li.png?size=100)](https://github.com/GataNina-Li) 
