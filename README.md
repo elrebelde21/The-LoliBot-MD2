@@ -5,14 +5,14 @@
 
 <a href="http://wa.me/5492266466080" target="blank"><img src="https://img.shields.io/badge/creador-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 
-<a href="http://wa.me/972529277518" target="blank"><img src="https://img.shields.io/badge/Bot ofc-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
+<a href="http://wa.me/12262730097" target="blank"><img src="https://img.shields.io/badge/Bot ofc-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 
 
 [![blog](https://img.shields.io/badge/Grupo-lolibot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
 )](https://chat.whatsapp.com/Ei87TDT7fsI3Q3p5MnM9sW)  <a href="https://chat.whatsapp.com/Ei87TDT7fsI3Q3p5MnM9sW"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
 
 [![blog](https://img.shields.io/badge/Grupo2-lolibot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
-)](https://chat.whatsapp.com/JquaTMLO7Lm8bKjx2RPiC5) <a href="https://chat.whatsapp.com/JquaTMLO7Lm8bKjx2RPiC5"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
+)](https://chat.whatsapp.com/FjplFBlJBrI8qq7w29KjwM) <a href="https://chat.whatsapp.com/FjplFBlJBrI8qq7w29KjwM"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
 
 -----
 [![blog](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
