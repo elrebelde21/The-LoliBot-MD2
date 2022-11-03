@@ -900,7 +900,8 @@ export async function handler(chatUpdate) {
                 if (!('antifake' in chat)) chat.antifake = true
                 if (!('simi' in chat)) chat.simi = false
                 if (!('viewonce' in chat)) chat.viewonce = false                    
-               if (!('antitoxic' in chat)) chat.antitoxic = false                     
+               if (!('antitoxic' in chat)) chat.antitoxic = false           
+               if (!('modoadmin' in chat)) chat.modoadmin = false          
                 if (!isNumber(chat.expired)) chat.expired = 0
                     
             } else
@@ -926,6 +927,7 @@ export async function handler(chatUpdate) {
                     antifake: true,
                     simi: false,
                     antitoxic: false,
+                    modoadmin: false,
                     expired: 0,
                 }
             let settings = global.db.data.settings[this.user.jid]
