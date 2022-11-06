@@ -10,7 +10,7 @@ let texto1 = `
 
  𝒔𝒊 𝒏𝒆𝒄𝒆𝒔𝒊𝒕𝒂𝒔 𝒂𝒚𝒖𝒅𝒂 𝒆𝒏𝒕𝒓𝒂 𝒂𝒍 𝒈𝒓𝒖𝒑𝒐 𝒅𝒆𝒍 𝒃𝒐𝒕
 
-📌 *https://chat.whatsapp.com/Lus9S60MABnH9lF4Wf2T7k*
+📌 *https://chat.whatsapp.com/FjplFBlJBrI8qq7w29KjwM*
 
  𝑶 𝒆𝒔𝒄𝒓𝒊𝒃𝒊𝒎𝒆 𝒂𝒍 wa.me/5492266466080*
  𝒔𝒐𝒍𝒐 𝒑𝒐𝒓 𝒕𝒆𝒎𝒂 𝒅𝒆𝒍 𝒃𝒐𝒕
