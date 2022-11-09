@@ -22,6 +22,7 @@ rows: [
 {title: "🤑 𝘽𝙤𝙩𝙚𝙢𝙥𝙤𝙧𝙖𝙡 ", description: "𝙿𝚊𝚛𝚊 𝚙𝚎𝚛𝚖𝚒𝚝𝚎 𝚚𝚞𝚎 𝚋𝚘𝚝 𝚜𝚎 𝚞𝚗𝚊𝚛 𝚊𝚞𝚝𝚘𝚖𝚊́𝚝𝚒𝚌𝚊𝚖𝚎𝚗𝚝𝚎 𝚊𝚕 𝚐𝚛𝚞𝚙𝚘", rowId: `${usedPrefix + command} temporal`},
 {title: "🤡 𝙍𝙚𝙖𝙘𝙘𝙞𝙤́𝙣𝙚𝙨", description: "𝙷𝚊𝚌𝚎𝚛 𝚚𝚞𝚎 𝚎𝚕 𝚋𝚘𝚝 𝚛𝚎𝚊𝚌𝚌𝚒𝚘́𝚗𝚎 𝚊𝚕 𝚎𝚕 𝚖𝚎𝚗𝚜𝚊𝚓𝚎", rowId: `${usedPrefix + command} reaction`},
 {title: "🎠 𝙎𝙩𝙞𝙘𝙠𝙚𝙧𝙨", description: "𝙿𝚊𝚛𝚊 𝚊𝚌𝚝𝚒𝚟𝚊𝚛/𝚍𝚎𝚜𝚊𝚌𝚝𝚒𝚟𝚊𝚛 𝚕𝚘𝚜 𝚜𝚝𝚒𝚌𝚔𝚎𝚛𝚜", rowId: `${usedPrefix + command} stickers`},
+{title: "👑 | modoadmin", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙰𝙳𝙼𝙸𝙽𝚂 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix + command} modoadmin`},    
 {title: "🤬 | 𝘼𝙣𝙩𝙞𝙩𝙤𝙭𝙞𝙘", description: "𝙰𝙲𝚃𝙸𝚅𝙰 𝙾 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰 𝙴𝙻 𝙰𝙽𝚃𝙸 𝙼𝙰𝙻𝙰 𝙿𝙰𝙻𝙰𝙱𝚁𝙰", rowId: `${usedPrefix + command} antitoxic`},
 {title: "🕸️ | 𝘼𝙣𝙩𝙞𝙩𝙧𝙖𝙗𝙖", description: "𝙰𝙲𝚃𝙸𝚅𝙰 𝙾 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰 𝙴𝙻 𝙰𝙽𝚃𝙸 𝚃𝚁𝙰𝙱𝙰𝚂", rowId: `${usedPrefix + command} antitraba`}, 
 {title: "⚠️️ | antispam", description: "𝙰𝙲𝚃𝙸𝚅𝙰 𝙾 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰 para antispam", rowId: `${usedPrefix + command} antiSpam`},
@@ -215,6 +216,14 @@ throw false
 }
 global.opts['autoread'] = isEnable
 break
+case 'modoadmin':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.modoadmin = isEnable          
+break    
 case 'pconly':
 case 'privateonly':
 isAll = true
