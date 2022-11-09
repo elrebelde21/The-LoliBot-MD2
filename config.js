@@ -9,8 +9,8 @@ global.owner = [
   ['5492266466080', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', true],
   ['5492266613038', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', true],
   ['972529277406', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', true],
-  ['972529277535'],
-  ['12264575501'] 
+  ['972529277542'],
+  ['12262730097'] 
 ]
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
@@ -101,7 +101,7 @@ global.version = vs
 global.gt = '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫'
 global.gatabot = gt
 
-global.yt = 'https://www.youtube.com/@TheLoliBot-MD'
+global.yt = 'https://youtube.com/channel/UCPSrzHooOjQMRmUK_2RLcSw'
 global.youtube = yt
 
 global.ig = ''
@@ -113,7 +113,7 @@ global.gatabot = md
 global.nn = 'https://chat.whatsapp.com/Ei87TDT7fsI3Q3p5MnM9sW'
 global.nngrupo = nn //Grupo 1
 
-global.nnn = 'https://chat.whatsapp.com/FjplFBlJBrI8qq7w29KjwM'
+global.nnn = 'https://chat.whatsapp.com/JquaTMLO7Lm8bKjx2RPiC5'
 global.nnngrupo = nnn //Grupo 2
 
 global.paypal = 'https://paypal'
