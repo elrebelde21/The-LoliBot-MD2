@@ -73,7 +73,7 @@ export async function handler(chatUpdate) {
 	        }
 		                    		    
           if (!isNumber(user.afk)) user.afk = -1
-	      if (!('autolevelup' in user))  user.autolevelup = false
+	      //if (!('autolevelup' in user))  user.autolevelup = true
 	      if (!('role' in user)) user.role = 'Novato'
               if (!isNumber(user.agility)) user.agility = 0
               if (!isNumber(user.anakanjing)) user.anakanjing = 0
@@ -165,6 +165,7 @@ export async function handler(chatUpdate) {
 	      if (!isNumber(user.eleksirb)) user.eleksirb = 0
 	      if (!isNumber(user.emasbatang)) user.emasbatang = 0
 	      if (!isNumber(user.emasbiasa)) user.emasbiasa = 0
+	      if (!isNumber(user.fideos)) user.fideos = 0    
               if (!isNumber(user.fishingrod)) user.fishingrod = 0
               if (!isNumber(user.fishingroddurability)) user.fishingroddurability = 0
               if (!isNumber(user.fortress)) user.fortress = 0
@@ -287,6 +288,7 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.lastgojek)) user.lastgojek = 0
               if (!isNumber(user.lastgrab)) user.lastgrab = 0
               if (!isNumber(user.lasthourly)) user.lasthourly = 0
+	      if (!isNumber(user.halloween)) user.halloween = 0
               if (!isNumber(user.lasthunt)) user.lasthunt = 0
               if (!isNumber(user.lastIstigfar)) user.lastIstigfar = 0
               if (!isNumber(user.lastjb)) user.lastjb = 0
@@ -307,6 +309,7 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.lastngojek)) user.lastngojek = 0
               if (!isNumber(user.lastopen)) user.lastopen = 0
               if (!isNumber(user.lastpekerjaan)) user.lastpekerjaan = 0
+	      if (!isNumber(user.lastpago)) user.lastpago = 0 
               if (!isNumber(user.lastpotionclaim)) user.lastpotionclaim = 0
               if (!isNumber(user.lastrampok)) user.lastrampok = 0
               if (!isNumber(user.lastramuanclaim)) user.lastramuanclaim = 0
@@ -506,7 +509,7 @@ export async function handler(chatUpdate) {
                     armormonster: 0,
                     as: 0,
                     atm: 0,
-                    autolevelup: false,
+                    //autolevelup: true,
                     axe: 0,
                     axedurability: 0,
                     ayam: 0,
@@ -573,6 +576,7 @@ export async function handler(chatUpdate) {
 		    eleksirb: 0,
 		    emasbatang: 0,
 		    emasbiasa: 0,
+		    fideos: 0,
                     fishingrod: 0,
                     fishingroddurability: 0,
                     fortress: 0,
@@ -594,6 +598,7 @@ export async function handler(chatUpdate) {
                     griffinlastfeed: 0,
                     gulai: 0,
                     gurita: 0,
+		    halloween: 0,
                     harimau: 0,
                     haus: 100,
                     healt: 100,
@@ -710,6 +715,7 @@ export async function handler(chatUpdate) {
                     lastngojek: 0,
                     lastopen: 0,
                     lastpekerjaan: 0,
+		    lastpago: 0,
                     lastpotionclaim: 0,
                     lastramuanclaim: 0,
                     lastrob: 0,
@@ -894,15 +900,22 @@ export async function handler(chatUpdate) {
 		if (!('antiver' in chat)) chat.antiver = true                    
                 if (!('antiLink' in chat)) chat.antiLink = true                    
                 if (!('antiLink2' in chat)) chat.antiLink2 = false
-		if (!('reaction' in chat)) chat.reaction = true 
+		if (!('antiTiktok' in chat)) chat.antiTiktok = false
+		if (!('antiYoutube' in chat)) chat.antiYoutube = false
+		if (!('antiTelegram' in chat)) chat.antiTelegram = false
+		if (!('antiFacebook' in chat)) chat.antiFacebook = false
+		if (!('antiInstagram' in chat)) chat.antiInstagram = false
+		if (!('antiTwitter' in chat)) chat.antiInstagram = false
+		if (!('antifake' in chat)) chat.antifake = true
+		if (!('reaction' in chat)) chat.reaction = true    
+                if (!('viewonce' in chat)) chat.viewonce = false         
+                if (!('modoadmin' in chat)) chat.modoadmin = false           
+                if (!('antitoxic' in chat)) chat.antitoxic = true 
+		if (!('autolevelup' in chat))  chat.autolevelup = true
 		if (!('antiTraba' in chat))
-                    chat.antiTraba = true   
-                if (!('antifake' in chat)) chat.antifake = true
-                if (!('simi' in chat)) chat.simi = false
-                if (!('viewonce' in chat)) chat.viewonce = false                    
-               if (!('antitoxic' in chat)) chat.antitoxic = false          
-               if (!('autolevelup' in chat))  chat.autolevelup = true           
-               if (!('antiSpam' in chat))  chat.antiSpam = true 
+                    chat.antiTraba = true
+        if (!('simi' in chat)) chat.simi = false
+		if (!('antiSpam' in chat))  chat.antiSpam = true    
                 if (!isNumber(chat.expired)) chat.expired = 0
                     
             } else
@@ -922,14 +935,21 @@ export async function handler(chatUpdate) {
 		    antiver: true,
                     antiLink: true,
                     antiLink2: false,
+		    antiTiktok: false,
+		    antiYoutube: false,
+		    antiTelegram: false,
+		    antiFacebook: false,
+		    antiInstagram: false,
+		    antiTwitter: false,
+		    antifake: true,
 		    reaction: true,
                     viewonce: false,
-                    antiTraba: true,
-                    antifake: true,
-                    simi: false,
-                    antitoxic: false,
-                    autolevelup: true,
-                    antiSpam: true,
+                    modoadmin: false,
+                    antitoxic: true,
+	            autolevelup: true,
+	            antiTraba: true,
+	            simi: false,
+	            antiSpam: true,
                     expired: 0,
                 }
             let settings = global.db.data.settings[this.user.jid]
@@ -1021,7 +1041,7 @@ export async function handler(chatUpdate) {
                     for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
                         let data = (await conn.onWhatsApp(jid))[0] || {}
                         if (data.exists)
-                            m.reply(`*[ ⚠️ 𝙍𝙚𝙥𝙤𝙧𝙩𝙚 𝙙𝙚 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙘𝙤𝙣 𝙛𝙖𝙡𝙡𝙤𝙨 ⚠️ ]*\n\n*—◉ 𝑷𝒍𝒖𝒈𝒊𝒏:* ${name}\n*—◉ 𝑼𝒔𝒖𝒂𝒓𝒊𝒐𝒔:* ${m.sender}\n*—◉ 𝑪𝒐𝒎𝒂𝒏𝒅𝒐:* ${m.text}\n\n*—◉ 𝑬𝒓𝒓𝒐𝒓:*\n\`\`\`${format(e)}\`\`\`\n\n*[❗] 𝑹𝒆𝒑𝒐𝒓𝒕𝒆𝒍𝒐 𝒂𝒍 𝒄𝒓𝒆𝒂𝒅𝒐𝒓 𝒅𝒆𝒍 𝒃𝒐𝒕 𝒑𝒂𝒓𝒂 𝒅𝒂𝒓𝒍𝒆 𝒖𝒏𝒂 𝒔𝒐𝒍𝒖𝒄𝒊𝒐́𝒏, 𝒑𝒖𝒆𝒅𝒆 𝒖𝒔𝒂𝒓 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 #𝒓𝒆𝒑𝒐𝒓𝒕𝒆*`.trim(), data.jid)
+                            m.reply(`${lenguajeGB['smsCont1']()}\n\n${lenguajeGB['smsCont2']()}\n*_${name}_*\n\n${lenguajeGB['smsCont3']()}\n*_${m.sender}_*\n\n${lenguajeGB['smsCont4']()}\n*_${m.text}_*\n\n${lenguajeGB['smsCont5']()}\n\`\`\`${format(e)}\`\`\`\n\n${lenguajeGB['smsCont6']()}`.trim(), data.jid)
                     }
                 }
             }
@@ -1085,6 +1105,9 @@ export async function handler(chatUpdate) {
                         typeof plugin.command === 'string' ? // String?
                             plugin.command === command :
                             false
+		
+		//if (text) {
+		//m.reply('*ERROR DE COMANDO*')}
 
                 if (!isAccept)
                     continue
@@ -1097,7 +1120,13 @@ export async function handler(chatUpdate) {
                     if (name != 'owner-unbanuser.js' && user?.banned)
                         return
                 }
-                if (plugin.rowner && plugin.owner && !(isROwner || isOwner)) { // Both Owner
+
+               let hl = _prefix 
+                let adminMode = global.db.data.chats[m.chat].modoadmin
+                let gata = `${plugins.botAdmin || plugins.admin || plugins.group || plugins || noPrefix || hl ||  m.text.slice(0, 1) == hl || plugins.command}`
+                if (adminMode && !isOwner && !isROwner && m.isGroup && !isAdmin && gata) return   
+
+               if (plugin.rowner && plugin.owner && !(isROwner || isOwner)) { // Both Owner
                     fail('owner', m, this)
                     continue
                 }
@@ -1136,18 +1165,18 @@ export async function handler(chatUpdate) {
                     continue
                 }
                 m.isCommand = true
-                let xp = 'exp' in plugin ? parseInt(plugin.exp) : 17 // XP Earning per command
+                let xp = 'exp' in plugin ? parseInt(plugin.exp) : 12 // XP Earning per command
                 if (xp > 2000)
-                    m.reply('Ngecit -_-') // Hehehe
+                    m.reply('Exp limit') // Hehehe
                 else
                     m.exp += xp
                 if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-                    this.reply(m.chat, `${ag}𝑺𝒖𝒔 𝒅𝒊𝒂𝒎𝒂𝒏𝒕𝒆𝒔 💎 𝒔𝒆 𝒉𝒂𝒏 𝒂𝒈𝒐𝒕𝒂𝒅𝒐. 𝒑𝒖𝒆𝒅𝒆 𝒄𝒐𝒎𝒑𝒓𝒂𝒓 𝒎𝒂́𝒔 𝒖𝒔𝒂𝒏𝒅𝒐 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 .*${usedPrefix}buy*`, m)
+                    this.reply(m.chat, `${lenguajeGB['smsCont7']()} *${usedPrefix}buy*`, m)
                     continue // Limit habis
                 }
                 if (plugin.level > _user.level) {
-                    this.reply(m.chat, `𝑵𝒆𝒄𝒆𝒔𝒊𝒕𝒂 𝒆𝒍 𝒏𝒊𝒗𝒆𝒍 ➡️ *${plugin.level}* 𝑷𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒖𝒔𝒂𝒓 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐́ 𝒕𝒖 𝒏𝒊𝒗𝒆𝒍 𝒆𝒔 ➡️ *${_user.level}* 𝑨𝒄𝒕𝒖𝒂𝒍𝒊𝒛𝒂𝒓 𝒕𝒖 𝒏𝒊𝒗𝒆𝒍 𝒄𝒐𝒏 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 *${usedPrefix}nivel*`, m)
-                    continue // If the level has not been reached
+                    this.reply(m.chat, `${lenguajeGB['smsCont9']()} *${plugin.level}* ${lenguajeGB['smsCont10']()} *${_user.level}* ${lenguajeGB['smsCont11']()} *${usedPrefix}nivel*`, m)
+		    continue // If the level has not been reached
                 }
                 let extra = {
                     match,
@@ -1188,7 +1217,7 @@ export async function handler(chatUpdate) {
                             for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
                                 let data = (await conn.onWhatsApp(jid))[0] || {}
                                 if (data.exists)
-                                    m.reply(`*[ ⚠️ 𝙍𝙚𝙥𝙤𝙧𝙩𝙚 𝙙𝙚 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙘𝙤𝙣 𝙛𝙖𝙡𝙡𝙤𝙨 ⚠️ ]*\n\n*—◉ 𝑷𝒍𝒖𝒈𝒊𝒏:* ${m.plugin}\n*—◉ 𝑼𝒔𝒖𝒂𝒓𝒊𝒐𝒔:* ${m.sender}\n*—◉ 𝑪𝒐𝒎𝒂𝒏𝒅𝒐:* ${usedPrefix}${command} ${args.join(' ')}\n\n\`\`\`${text}\`\`\`\n\n*[❗] 𝑹𝒆𝒑𝒐𝒓𝒕𝒆𝒍𝒐 𝒂𝒍 𝒄𝒓𝒆𝒂𝒅𝒐𝒓 𝒅𝒆𝒍 𝒃𝒐𝒕 𝒑𝒂𝒓𝒂 𝒅𝒂𝒓𝒍𝒆 𝒖𝒏𝒂 𝒔𝒐𝒍𝒖𝒄𝒊𝒐́𝒏, 𝒑𝒖𝒆𝒅𝒆 𝒖𝒔𝒂𝒓 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐#𝒓𝒆𝒑𝒐𝒓𝒕𝒆*`.trim(), data.jid)
+                                    m.reply(`${lenguajeGB['smsCont1']()}\n\n${lenguajeGB['smsCont2']()}\n*_${name}_*\n\n${lenguajeGB['smsCont3']()}\n*_${m.sender}_*\n\n${lenguajeGB['smsCont4']()}\n*_${m.text}_*\n\n${lenguajeGB['smsCont5']()}\n\`\`\`${format(e)}\`\`\`\n\n${lenguajeGB['smsCont6']()}`.trim(), data.jid)
                             }
                         m.reply(text)
                     }
@@ -1202,7 +1231,7 @@ export async function handler(chatUpdate) {
                         }
                     }
                     if (m.limit)
-                        m.reply(+m.limit + ' 𝑫𝒊𝒂𝒎𝒂𝒏𝒕𝒆𝒔 💎 𝒖𝒔𝒂𝒅𝒐𝒔')
+                        m.reply(+m.limit + lenguajeGB.smsCont8())
                 }
                 break
             }
@@ -1270,7 +1299,6 @@ export async function handler(chatUpdate) {
 		
     }
 }
-
 /**
  * Handle groups participants update
  * @param {import('@adiwajshing/baileys').BaileysEventMap<unknown>['group-participants.update']} groupsUpdate 
@@ -1302,22 +1330,22 @@ export async function participantsUpdate({ id, participants, action }) {
                            }
                     } 
             }
-            break
-        case 'promote':
-        case 'daradmin':
-        case 'darpoder':
-            text = (chat.sPromote || this.spromote || conn.spromote || '@user ```is now Admin```')
-        case 'demote':
-        case 'quitarpoder':
-        case 'quitaradmin':
-            if (!text)
-                text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```is no longer Admin```')
-            text = text.replace('@user', '@' + participants[0].split('@')[0])
-            if (chat.detect)
-                this.sendMessage(id, { text, mentions: this.parseMention(text) })
-            break
-    }
-}
+            
+break
+case 'promote':
+case 'daradmin':
+case 'darpoder':
+text = (chat.sPromote || this.spromote || conn.spromote || '@user ```is now Admin```')
+case 'demote':
+case 'quitarpoder':
+case 'quitaradmin':
+if (!text)
+text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```is no longer Admin```')
+text = text.replace('@user', '@' + participants[0].split('@')[0])
+if (chat.detect)
+this.sendMessage(id, { text, mentions: this.parseMention(text) })
+break
+}}
 
 /**
  * Handle groups update
@@ -1346,7 +1374,7 @@ export async function callUpdate(callUpdate) {
     for (let nk of callUpdate) { 
     if (nk.isGroup == false) {
     if (nk.status == "offer") {
-    let callmsg = await this.reply(nk.from, `𝗛𝗼𝗹𝗮 *@${nk.from.split('@')[0]}*, 𝗟𝗮𝘀 ${nk.isVideo ? '📲 𝙑𝙄𝘿𝙀𝙊𝙇𝙇𝘼𝙈𝘼𝘿𝘼𝙎' : '📞 𝙇𝙇𝘼𝙈𝘼𝘿𝘼𝙎'}  𝗡𝗼 𝗲𝘀𝘁𝗮𝗻 𝗽𝗲𝗿𝗺𝗶𝘁𝗶𝗱𝗮𝘀, 𝘀𝗲𝗿𝗮́𝘀 𝗯𝗹𝗼𝗾𝘂𝗲𝗮𝗱𝗼\n\n 𝗦𝗶 𝗮𝗰𝗰𝗶𝗱𝗲𝗻𝘁𝗮𝗹𝗺𝗲𝗻𝘁𝗲 𝗹𝗹𝗮𝗺𝗮𝘀𝘁𝗲 𝗽𝗼́𝗻𝗴𝗮𝗻𝘀𝗲 𝗲𝗻 𝗰𝗼𝗻𝘁𝗮𝗰𝘁𝗼 𝗰𝗼𝗻 𝗺𝗶 𝗰𝗿𝗲𝗮𝗱𝗼𝗿 𝗽𝗮𝗿𝗮 𝗾𝘂𝗲 𝘁𝗲 𝗱𝗲𝘀𝗯𝗹𝗼𝗾𝘂𝗲𝗲! \n 𝗚𝗿𝘂𝗽𝗼 𝗮𝘀𝗶𝘀𝘁𝗲𝗻𝗰𝗶𝗮 𝗳𝗮𝗰𝗲𝗯𝗼𝗼𝗸: https://facebook.com/groups/721802642266362/ \n*${ig}*`, false, { mentions: [nk.from] })
+    let callmsg = await this.reply(nk.from, `${lenguajeGB['smsCont15']()} *@${nk.from.split('@')[0]}*, ${nk.isVideo ? lenguajeGB.smsCont16() : lenguajeGB.smsCont17()} ${lenguajeGB['smsCont18']()}`, false, { mentions: [nk.from] })
     //let data = global.owner.filter(([id, isCreator]) => id && isCreator)
     //await this.sendContact(nk.from, data.map(([id, name]) => [id, name]), false, { quoted: callmsg })
     await this.updateBlockStatus(nk.from, 'block')
@@ -1364,12 +1392,10 @@ let chat = global.db.data.chats[msg.chat] || {}
 if (chat.delete)
 return 
 await this.reply(msg.chat, `
-*╭━━⬣  𝘼𝙣𝙩𝙞 𝙙𝙚𝙡𝙚𝙩𝙚  ⬣━━ 𓃠*
-*┃✤ 𝑵𝒐𝒎𝒃𝒓𝒆:* @${participant.split`@`[0]}
-*┃✤ 𝑬𝒏𝒗𝒊𝒂𝒅𝒐 𝒆𝒍 𝒎𝒆𝒏𝒔𝒂𝒋𝒆...*
-*┃✤ 𝑷𝒂𝒓𝒂 𝒅𝒆𝒔𝒂𝒄𝒕𝒊𝒗𝒂 𝒆𝒔𝒕𝒂́ 𝒇𝒖𝒏𝒄𝒊𝒐𝒏 𝒆𝒔𝒄𝒓𝒊𝒃𝒂 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐:*
-*┃✤ #disable antidelete*
-*╰━━━⬣  𝘼𝙣𝙩𝙞 𝙙𝙚𝙡𝙚𝙩𝙚  ⬣━━━━╯*
+*╭━━⬣ ${lenguajeGB['smsCont19']()} ⬣━━ 𓃠*
+${lenguajeGB['smsCont20']()} @${participant.split`@`[0]}
+${lenguajeGB['smsCont21']()}
+*╰━━━⬣ ${lenguajeGB['smsCont19']()} ⬣━━╯*
 `.trim(), msg, { mentions: [participant] })
 	    
 this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
@@ -1377,25 +1403,25 @@ this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
 console.error(e)
 }}
 
-global.dfail = (type, m, conn) => {
-    let msg = {
-        rowner: '╰⊱⚠️⊱ *𝙄𝙣𝙛𝙤* ⊱⚠️⊱╮\n\n_*¡¡𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒔𝒂𝒅𝒐 𝒑𝒐𝒓 𝒎𝒊 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐/𝒂 (𝒐𝒘𝒏𝒆𝒓) 𝒅𝒆𝒍 𝒃𝒐𝒕!!*',
-        owner: '╰⊱⚠️⊱ *𝙄𝙣𝙛𝙤* ⊱⚠️⊱╮\n\n_*¡¡𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒔𝒂𝒅𝒐 𝒑𝒐𝒓 𝒎𝒊 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐/𝒂 (𝒐𝒘𝒏𝒆𝒓) 𝒅𝒆𝒍 𝒃𝒐𝒕!!*',
-        mods: '╰⊱⚠️⊱ *𝙄𝙣𝙛𝙤* ⊱⚠️⊱╮\n\n_*¡¡𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒕𝒊𝒍𝒊𝒛𝒂𝒅𝒐 𝒑𝒐𝒓 𝒎𝒐𝒅𝒆𝒓𝒂𝒅𝒐𝒓𝒆𝒔 𝒚 𝒆𝒍 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐/𝒂 (𝒐𝒘𝒏𝒆𝒓) 𝒅𝒆𝒍 𝒃𝒐𝒕!!*',
-        premium: '╰⊱⚠️⊱ *𝙄𝙣𝙛𝙤* ⊱⚠️⊱╮\n\n_*¡¡𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒕𝒊𝒍𝒊𝒛𝒂𝒅𝒐 𝒑𝒐𝒓 𝒖𝒔𝒖𝒂𝒓𝒊𝒐 𝒑𝒓𝒆𝒎𝒊𝒖𝒎 𝒚 𝒆𝒍 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐/𝒂 (𝒐𝒘𝒏𝒆𝒓) 𝒅𝒆𝒍 𝒃𝒐𝒕!!*',
-        group: '╰⊱⚠️⊱ *𝙄𝙣𝙛𝙤* ⊱⚠️⊱╮\n\n_*¡¡𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒖𝒔𝒂𝒓 𝒆𝒍 𝒈𝒓𝒖𝒑𝒐!!*',
-        private: '╰⊱⚠️⊱ *𝙄𝙣𝙛𝙤* ⊱⚠️⊱╮\n\n_*¡¡𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒖𝒔𝒂𝒓 𝒆𝒍 𝒄𝒉𝒂𝒕 𝒑𝒓𝒊𝒗𝒂𝒅𝒐 𝒅𝒆𝒍 𝒃𝒐𝒕!!*',
-        admin: '╰⊱⚠️⊱ *𝙄𝙣𝙛𝙤* ⊱⚠️⊱╮\n\n_*¡¡𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒔𝒆 𝒑𝒖𝒆𝒅𝒆 𝒖𝒔𝒂𝒓 𝒑𝒐𝒓 𝒂𝒅𝒎𝒊𝒏 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐!!*',
-        botAdmin: '╰⊱⚠️⊱ *𝙄𝙣𝙛𝙤* ⊱⚠️⊱╮\n\n_*¡¡𝑷𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒖𝒔𝒂𝒓 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒆𝒍 𝒃𝒐𝒕 (𝒚𝒐) 𝒏𝒆𝒄𝒆𝒔𝒊𝒕𝒂 𝒂𝒅𝒎𝒊𝒏, 𝒉𝒂𝒈𝒂 𝒒𝒖𝒆 𝒃𝒐𝒕 𝒔𝒆𝒂 𝒂𝒅𝒎𝒊𝒏 𝒑𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒖𝒔𝒂𝒓 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐!!*',
-        unreg: '╰⊱⚠️⊱ *𝙄𝙣𝙛𝙤* ⊱⚠️⊱╮\n\n_*¡𝑯𝒆𝒚!! 𝑨𝒍𝒕𝒐, 𝒏𝒐 𝒆𝒔𝒕𝒂́ 𝒓𝒆𝒈𝒊𝒔𝒕𝒓𝒂𝒅𝒐 𝑷𝒂𝒓𝒂 𝒑𝒐𝒅𝒆𝒓 𝒖𝒔𝒂𝒓 𝒆𝒍 𝒃𝒐𝒕 𝒏𝒆𝒄𝒆𝒔𝒊𝒕𝒂 𝒓𝒆𝒈𝒊𝒔𝒕𝒓𝒂𝒓𝒕𝒆, 𝒖𝒔𝒂 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 #𝒗𝒆𝒓𝒊𝒇𝒊𝒄𝒂𝒓*',
-        restrict: '╰⊱⚠️⊱ *𝙄𝙣𝙛𝙤* ⊱⚠️⊱╮\n\n_*¡¡𝑬𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒆𝒔𝒕𝒂́ 𝒓𝒆𝒔𝒕𝒓𝒊𝒏𝒈𝒊𝒅𝒐/𝒅𝒆𝒔𝒂𝒄𝒕𝒊𝒗𝒂𝒅𝒐 𝒑𝒐𝒓 𝒅𝒆𝒔𝒊𝒄𝒊𝒐𝒏 𝒅𝒆𝒍 𝒑𝒓𝒐𝒑𝒊𝒆𝒕𝒂𝒓𝒊𝒐/𝒂 (𝒐𝒘𝒏𝒆𝒓) 𝒅𝒆𝒍 𝒃𝒐𝒕!!*'
-    }[type]
-    if (msg) return m.reply(msg) 
+global.dfail = (type, m, conn, usedPrefix) => {
+let msg = {
+        rowner: lenguajeGB['smsRowner'](),
+        owner: lenguajeGB['smsOwner'](),
+        mods: lenguajeGB['smsMods'](),
+        premium: lenguajeGB['smsPremium'](),
+	group: lenguajeGB['smsGroup'](),
+        private: lenguajeGB['smsPrivate'](),
+        admin: lenguajeGB['smsAdmin'](),
+	botAdmin: lenguajeGB['smsBotAdmin'](),
+        unreg: lenguajeGB['smsUnreg'](),
+        restrict: lenguajeGB['smsRestrict'](),
+}[type]
+if (msg) return m.reply(msg) 
 }
 
 let file = global.__filename(import.meta.url, true)
 watchFile(file, async () => {
     unwatchFile(file)
-    console.log(chalk.redBright("se actualizo 'handler.js'"))
+    console.log(chalk.redBright("Update 'handler.js'"))
     if (global.reloadHandler) console.log(await global.reloadHandler())
 })
