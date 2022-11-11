@@ -4,7 +4,7 @@ let vn = './media/creador.mp3'
 let text = `
 *𝘾𝙤𝙣𝙩𝙖𝙘𝙩𝙤* 
 *Wa.me/5492266466080 (no bot)*
-*wa.me/972529277542 (bot)*
+*wa.me/51984498676 (bot)*
 *wa.me/12262730097 (bot²)*
 `.trim()   
 conn.reply(m.chat, text, m, {

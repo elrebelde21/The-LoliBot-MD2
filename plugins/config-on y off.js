@@ -7,7 +7,12 @@ rows: [
 {title: "🌎 | 𝙈𝙤𝙙𝙤 𝙥𝙪́𝙗𝙡𝙞𝙘𝙤", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙴 𝚅𝚄𝙴𝙻𝚅𝙴 𝙳𝙴 𝚄𝚂𝙾 𝙿𝚄𝙱𝙻𝙸𝙲𝙾 𝚈/𝙾 𝙿𝚁𝙸𝚅𝙰𝙳𝙾", rowId: `${usedPrefix + command} public`},
 {title: "🥵 | 𝙈𝙤𝙙𝙤 +18", description: "𝙰𝙲𝚃𝙸𝚅𝙰 𝙾 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 +𝟷𝟾", rowId: `${usedPrefix + command} modohorny`},
 {title: "🔗 | 𝘼𝙣𝙩𝙞𝙡𝙞𝙣𝙠", description: "𝙰𝙲𝚃𝙸𝚅𝙰 𝙾 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰 𝙴𝙻 𝙰𝙽𝚃𝙸 𝙴𝙽𝙻𝙰𝙲𝙴𝚂 𝙳𝙴 𝙶𝚁𝚄𝙿𝙾𝚂 𝙳𝙴 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿", rowId: `${usedPrefix + command} antilink`},   
-{title: "🔗 | 𝘼𝙣𝙩𝙞𝙡𝙞𝙣𝙠 𝟸", description: "𝙰𝙲𝚃𝙸𝚅𝙰 𝙾 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰 𝙴𝙻 𝙰𝙽𝚃𝙸 𝙴𝙽𝙻𝙰𝙲𝙴𝚂 𝚀𝚄𝙴 𝙸𝙽𝙸𝙲𝙸𝙰𝙽 𝙴𝙽 𝙷𝚃𝚃𝙿𝚂", rowId: `${usedPrefix + command} antilink2`},    
+{title: "🔗 | 𝘼𝙣𝙩𝙞𝙡𝙞𝙣𝙠 𝟸", description: "𝙰𝙲𝚃𝙸𝚅𝙰 𝙾 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰 𝙴𝙻 𝙰𝙽𝚃𝙸 𝙴𝙽𝙻𝙰𝙲𝙴𝚂 𝚀𝚄𝙴 𝙸𝙽𝙸𝙲𝙸𝙰𝙽 𝙴𝙽 𝙷𝚃𝚃𝙿𝚂", rowId: `${usedPrefix + command} antilink2`}, 
+{title: "🔗 | antiYouTube", description: "Eliminar Personas que envíen enlaces de YouTube", rowId: `${usedPrefix + command} antiyoutube`},    
+{title: "🔗 | antiTelegram", description: "Eliminar Personas que envíen enlaces de Telegram", rowId: `${usedPrefix + command} antitelegram`},   
+{title: "🔗 | antiFacebook", description: "Eliminar Personas que envíen enlaces de Facebook", rowId: `${usedPrefix + command} antifacebook`},   
+{title: "🔗 | antiinstagram", description: "Eliminar Personas que envíen enlaces de Instagram", rowId: `${usedPrefix + command} antiinstagram`},
+{title: "🔗 | antiTwitter", description: "Eliminar Personas que envíen enlaces de Twitter", rowId: `${usedPrefix + command} antitwitter`},   
 {title: "🔎 | 𝘿𝙚𝙘𝙩𝙚𝙘𝙩", description: "𝙰𝙲𝚃𝙸𝚅𝙰 𝙾 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰 𝙻𝙰𝚂 𝙽𝙾𝚃𝙸𝙵𝙸𝙲𝙰𝙲𝙸𝙾𝙽𝙴𝚂 𝙳𝙴 𝙽𝚄𝙴𝚅𝙰 𝙼𝙾𝙳𝙸𝙵𝙸𝙲𝙰𝙲𝙸𝙾𝙽 𝙴𝙽 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix + command} detect`},      
 {title: "❗ | 𝙍𝙚𝙨𝙩𝙧𝙞𝙘𝙩", description: "𝙰𝙲𝚃𝙸𝚅𝙰 𝙾 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰 𝙻𝙰𝚂 𝚁𝙴𝚂𝚃𝚁𝙸𝙲𝙲𝙸𝙾𝙽𝙴𝚂 𝙿𝙰𝚁𝙰 𝚂𝙰𝙲𝙰𝚁 𝙶𝙴𝙽𝚃𝙴 𝙳𝙴 𝙶𝚁𝚄𝙿𝙾𝚂", rowId: `${usedPrefix + command} restrict`},    
 {title: "☑️ | 𝘼𝙪𝙩𝙤𝙧𝙚𝙖𝙙", description: "𝙼𝙰𝚁𝙲𝙰 𝙰𝚄𝚃𝙾𝙼𝙰𝚃𝙸𝙲𝙰𝙼𝙴𝙽𝚃𝙴 𝙻𝙰𝚂 𝙲𝙾𝙽𝚅𝙴𝚁𝚂𝙰𝙲𝙸𝙾𝙽𝙴𝚂 𝙲𝙾𝙼𝙾 𝙻𝙴𝙸𝙳𝙾", rowId: `${usedPrefix + command} autoread`},
@@ -329,6 +334,50 @@ global.dfail('admin', m, conn)
 throw false
 }}
 chat.antispam = isEnable  
+break
+case 'antiyoutube': case 'antiyt':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.antiYoutube = isEnable 
+break
+		
+case 'antitelegram': case 'antitl': case 'antitele': case 'antitg': case 'antitel':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.antiTelegram = isEnable 
+break
+		
+case 'antifacebook': case 'antifb': case 'antifbook':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.antiFacebook = isEnable 
+break
+		
+case 'antiinstagram': case 'antinstagram': case 'antiig': case 'antig': case 'antiinsta': case 'antinsta':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.antiInstagram = isEnable 
+break
+		
+case 'antitwitter': case 'antitw': case 'antitwit': case 'antitwter': case 'antitwiter': case 'antiTwr':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.antiTwitter = isEnable 
 break
 case 'antifake':
 if (m.isGroup) {
