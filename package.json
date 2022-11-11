@@ -16,7 +16,7 @@
     },
     "homepage": "https://github.com/elrebelde21",
     "author": {
-        "name": "elrebelde"
+        "name": "elrebelde21"
     },
     "repository": {
         "type": "git",
@@ -27,7 +27,7 @@
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
-        "@adiwajshing/baileys": "^4.4.0",
+        "@adiwajshing/baileys": "github:BrunoSobrino/baileys",
         "@bochilteam/scraper": "^3.0.0",
         "@vitalets/google-translate-api": "^8.0.0",
         "acrcloud": "^1.4.0",
