@@ -138,7 +138,7 @@ global.nnngrupo = nnn //Grupo 2
 global.nnnt = 'https://chat.whatsapp.com/Jcq9dVMOoWV4Y6wTDDAgxN'
 global.nnntgrupo = nnnt //Grupo 3
 
-global.nnntt = 'https://chat.whatsapp.com/LbWPmCgLPcrLRDmLtZbiFs'
+global.nnntt = 'https://chat.whatsapp.com/Kicq8ynCPRbBQmrjOnqtjq'
 global.nnnttgrupo = nnntt //Grupo 4
 
 global.nnnttt = 'https://chat.whatsapp.com/JESaesjOEcB6wnGX0QYT9o'
