@@ -12,7 +12,13 @@
 )](https://chat.whatsapp.com/Ei87TDT7fsI3Q3p5MnM9sW)  <a href="https://chat.whatsapp.com/Ei87TDT7fsI3Q3p5MnM9sW"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
 
 [![blog](https://img.shields.io/badge/Grupo2-lolibot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
-)](https://chat.whatsapp.com/FjplFBlJBrI8qq7w29KjwM) <a href="https://chat.whatsapp.com/FjplFBlJBrI8qq7w29KjwM"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
+)](https://chat.whatsapp.com/FBMEpvnu3tsFvMtGWNCKCj) <a href="https://chat.whatsapp.com/FBMEpvnu3tsFvMtGWNCKCj"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
+
+[![blog](https://img.shields.io/badge/Grupo3-lolibot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
+)](https://chat.whatsapp.com/Jcq9dVMOoWV4Y6wTDDAgxN) <a href="https://chat.whatsapp.com/Jcq9dVMOoWV4Y6wTDDAgxN"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
+
+[![blog](https://img.shields.io/badge/Grupo4-lolibot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
+)](https://chat.whatsapp.com/Kicq8ynCPRbBQmrjOnqtjq) <a href="https://chat.whatsapp.com/Kicq8ynCPRbBQmrjOnqtjq"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
 
 -----
 [![blog](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
