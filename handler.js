@@ -910,7 +910,7 @@ export async function handler(chatUpdate) {
 		if (!('reaction' in chat)) chat.reaction = true    
                 if (!('viewonce' in chat)) chat.viewonce = false         
                 if (!('modoadmin' in chat)) chat.modoadmin = false           
-                if (!('antitoxic' in chat)) chat.antitoxic = true 
+                if (!('antitoxic' in chat)) chat.antitoxic = false 
 		if (!('autolevelup' in chat))  chat.autolevelup = true
 		if (!('antiTraba' in chat))
                     chat.antiTraba = true
@@ -945,7 +945,7 @@ export async function handler(chatUpdate) {
 		    reaction: true,
                     viewonce: false,
                     modoadmin: false,
-                    antitoxic: true,
+                    antitoxic: false,
 	            autolevelup: true,
 	            antiTraba: true,
 	            simi: false,
