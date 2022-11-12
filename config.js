@@ -652,6 +652,6 @@ global.rpgshopp = { //Tienda
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => {
   unwatchFile(file)
-  console.log(chalk.redBright("Update 'config.js'"))
+  console.log(chalk.redBright("Se actualizo 'config.js'"))
   import(`${file}?update=${Date.now()}`)
 })
