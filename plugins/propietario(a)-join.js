@@ -18,7 +18,5 @@ m.reply(`*✅ 𝙎𝙪 𝙚𝙣𝙡𝙖𝙘𝙚 𝙨𝙚 𝙚𝙣𝙫𝙞𝙤́ 
 
 handler.help = ['join [chat.whatsapp.com]']
 handler.tags = ['premium']
-handler.exp = 50
 handler.command = /^unete|join|nuevogrupo|unir|unite|unirse|entra|entrar$/i 
-handler.owner = true
 export default handler
