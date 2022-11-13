@@ -5,7 +5,7 @@ ${pickRandom([` Hola ${name}_\n\nquiere instalar el bot pues facil mira este tut
 `.trim()
 conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
 }
-handler.customPrefix = /Como puedo instalar bot|instalaciones para bot|cómo puedo tener el servido del bot/i
+handler.customPrefix = /Como puedo instalar bot|instalaciones para bot|cómo puedo tener el servido del bot|crea un bot|como crea un bot/i
 handler.command = new RegExp
 
 export default handler
