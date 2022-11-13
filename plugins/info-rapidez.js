@@ -14,8 +14,8 @@ let veloz =
 `🚄 *𝑽𝒆𝒍𝒐𝒄𝒊𝒅𝒂𝒅:*\n *${speed}* *Milisegundos*\n\n🚄 *𝑺𝒑𝒆𝒆𝒅:*\n *${speed}* *Milliseconds*`
 
  const templateButtonsReplyMessage = [
-{index: 1, urlButton: {displayText: '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', url: 'https://github.com/elrebelde21/The-LoliBot-MD'}},
-{index: 2, urlButton: {displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', url: 'https://www.instagram.com/gata_dios/'}},
+{index: 1, urlButton: {displayText: '𝙶𝙸𝚃𝙷𝚄𝙱', url: 'https://github.com/elrebelde21/The-LoliBot-MD'}},
+{index: 2, urlButton: {displayText: 'YouTube', url: 'https://www.youtube.com/@TheLoliBot-MD'}},
 {index: 3, quickReplyButton: {displayText: '𝙊𝙩𝙧𝙖 𝙫𝙚𝙯', id: '#ping'}},
 {index: 4, quickReplyButton: {displayText: '𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙘𝙞ó𝙣', id: '#infobot'}},
 {index: 5, quickReplyButton: {displayText: '𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́', id: '#menu'}},
