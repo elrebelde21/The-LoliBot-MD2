@@ -40,7 +40,7 @@ if (!stiker) stiker = e
 } finally {
 if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '', m)
 
-else throw `𝙀𝙧𝙧𝙤𝙧, 𝙫𝙪𝙚𝙡𝙫𝙖 𝙖𝙡 𝙞𝙣𝙩𝙚𝙣𝙩𝙖 𝙙𝙚 𝙣𝙪𝙚𝙫𝙤`
+else throw `y las imagen/vídeo? 🤔 etiquetas una imágenes o video bóludos`
 
 }}
 handler.help = ['stiker (caption|reply media)', 'stiker <url>', 'stikergif (caption|reply media)', 'stikergif <url>']
