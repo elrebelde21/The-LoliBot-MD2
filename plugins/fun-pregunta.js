@@ -9,9 +9,8 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   let res = await fetch(`https://api.simsimi.net/v2/?text=${text}&lc=es`)
   let json = await res.json()
   if (json.success) 
-m.reply(`🤔 𝙋𝙍𝙀𝙂𝙐𝙉𝙏𝘼 🤔
- 
-🤔 𝙋𝙍𝙀𝙂𝙐𝙉𝙏𝘼: ${text}
+m.reply(`🤔 𝙋𝙍𝙀𝙂𝙐𝙉𝙏𝘼: ${text}
+
 ✅ 𝙍𝙀𝙎𝙋𝙐𝙀𝙎𝙏𝘼 : ${json.success.replace('simsimi', 'simsimi').replace('Simsimi', 'Simsimi').replace('sim simi', 'sim simi')}`) 
 }
 
