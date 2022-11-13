@@ -32,7 +32,7 @@ function pickRandom(list) {
 return list[Math.floor(list.length * Math.random())]
 }
 
-global.crimen = ["Robaste a un politico y ganas", "Robaste al Gobierno, ganando", "Robaste una persona y ganas",
+global.crimen = ["Robaste a un politico y ganas", "Robaste al Gobierno, ganando", "robarte un banco", "robarte un autor con dueño arriba boludoooo que cago bien al piña por pelotudo jja", "Robaste una persona y ganas",
  "Robaste un Búnker y ganaste", "Robaste una Mansión y te pagaron", 
 "Robaste un Avión y ganaste", 
 "trabajaste para la mafia y te pagaron", "Robaste dos obra de arte del museo de España y ganaste", 
