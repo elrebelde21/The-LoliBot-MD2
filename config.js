@@ -10,7 +10,7 @@ import { en, es, id, ar, pt } from './lib/idiomas/total-idiomas.js'
 global.owner = [
   ['5492266466080', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', true],
   ['5492266613038', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', true],
-  ['972529277406', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', true],
+  ['972529277542', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', true],
   ['573183650526'],
   ['51984498676'] 
 ]
@@ -216,9 +216,16 @@ global.img7 = 'https://imgur.com/a/0hHv1ry.jpeg'
 global.img8 = 'https://imgur.com/a/0hHv1ry.jpeg'
 global.img9 = 'https://imgur.com/a/0hHv1ry.jpeg'
 
-global.img10 = 'https://imgur.com/a/0hHv1ry.jpg'
-global.img11 = 'https://imgur.com/a/0hHv1ry.jpg'
-global.img12 = 'https://imgur.com/a/0hHv1ry.jpg'
+global.img10 = 'https://i.imgur.com/DvHoMc3.jpg'
+global.img11 = 'https://i.imgur.com/5Q1MqGD.jpg'
+global.img12 = 'https://i.imgur.com/vWnsjh8.jpg'
+global.img13 = 'https://i.imgur.com/pCfFOgw.jpeg'
+global.img14 = 'https://i.imgur.com/knBDWRA.jpeg'
+global.img15 = 'https://i.imgur.com/QrkkKx7.jpeg'
+
+global.redesMenu = [nna, nn, nnn, nnnt, nnntt, nnnttt, md, ig, paypal, yt]
+global.gataMenu = [img, img2, img6, img7, img8, img9, img13, img14, img15]
+global.gataVidMenu = ['./media/menus/Menuvid1.mp4', './media/menus/Menuvid2.mp4', './media/menus/Menuvid3.mp4']
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
