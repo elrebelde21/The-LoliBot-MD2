@@ -25,10 +25,10 @@ await conn.sendHydrated(m.chat, gata, wm, null, md, '𝑻𝒉𝒆 𝑳𝒐𝒍�
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu']
 ], m,)
 }
-handler.help = ['Buy', 'Buyall']
+handler.help = ['Buy1', 'Buyall']
 handler.tags = ['xp']
 handler.register = true
-handler.command = ['buy', 'buyall'] 
+handler.command = ['buy1', 'buyall'] 
 
 handler.disabled = false
 
