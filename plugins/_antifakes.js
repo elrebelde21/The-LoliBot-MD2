@@ -82,8 +82,13 @@ await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
 if (m.sender.startsWith('20' || '20')) {
 global.db.data.users[m.sender].banned = true
 await conn.reply(m.chat, texto, fkontak,  m)
-await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
+await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')} 
 	
+if (m.sender.startsWith('229' || '229')) {
+global.db.data.users[m.sender].banned = true
+await conn.reply(m.chat, texto, fkontak,  m)
+await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
+
 if (m.sender.startsWith('62' || '62')) {
 global.db.data.users[m.sender].banned = true
 await conn.reply(m.chat, texto, fkontak,  m)
