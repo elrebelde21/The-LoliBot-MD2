@@ -9,6 +9,7 @@ let bang = m.key.id
 let bot = global.db.data.settings[this.user.jid] || {}
 let user = global.db.data.users[m.sender]
 
+if (bot.antiSpam) {
 this.spam = this.spam ? this.spam : {}
 if (!(m.sender in this.spam)) {
 let spaming = {
@@ -21,14 +22,14 @@ this.spam[spaming.jid] = spaming
 } else try {
 this.spam[m.sender].spam += 1
   
-if (new Date - this.spam[m.sender].lastspam > 1000) {
-if (this.spam[m.sender].spam > 3) {
+if (new Date - this.spam[m.sender].lastspam > 1500) {
+if (this.spam[m.sender].spam > 5) {
 this.spam[m.sender].spam = 0
   
 this.spam[m.sender].lastspam = new Date * 1
 let tiempo = 60000 * 1
 let time = user.antispam + tiempo * 1
-let texto = `*@${m.sender.split("@")[0]} 🤨 NO HAGAS SPAM, NO PODRÁ USAR A ${author} POR ${tiempo / 1000 - 59} MINUTO*` 
+let texto = `*@${m.sender.split("@")[0]} ${lenguajeGB['smsNoSpam']()}*` 
 
 if (new Date - user.antispam < tiempo * 1) return
 await conn.reply(m.chat, texto,  m, { mentions: this.parseMention(texto) })
@@ -44,8 +45,8 @@ this.spam[m.sender].lastspam = new Date * 1
   
 } catch (e) {
 console.log(e)
-m.reply(`${lenguajeGB['smsAvisoFG']()}*OCURRIÓ UN ERROR INESPERADO*`)
-}}
+m.reply(lenguajeGB.smsMalError())
+}}}
 export default handler
 
 function msToTime(duration) {
