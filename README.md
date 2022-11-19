@@ -3,9 +3,9 @@
 ### —◉ 𝗗𝘂𝗱𝗮 𝘀𝗼𝗯𝗿𝗲 𝗲𝗹 𝗯𝗼𝘁?
 𝗖𝗼𝗻𝘁𝗮𝗰𝘁𝗮𝗺𝗲 ✨ 
 
-<a href="http://wa.me/5492266466080" target="blank"><img src="https://img.shields.io/badge/creador-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
+<a href="http://wa.me/393271166550" target="blank"><img src="https://img.shields.io/badge/creador-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 
-<a href="http://wa.me/51984498676" target="blank"><img src="https://img.shields.io/badge/Bot ofc-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
+<a href="http://wa.me/393271166550" target="blank"><img src="https://img.shields.io/badge/Bot ofc-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 
 
 [![blog](https://img.shields.io/badge/Grupo-lolibot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
@@ -50,7 +50,7 @@
 > pkg install ffmpeg -y
 > pkg install imagemagick -y
 > pkg install yarn
-> git clone https://github.com/elrebelde21/The-LoliBot-MD
+> git clone https://github.com/ahmed1p7/The-LoliBot-MD
 > cd The-LoliBot-MD
 > npm install
 > yarn install 
