@@ -1,4 +1,4 @@
-process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0'; //SI QUIERES TEXTO SIMPLIFICADO EN LA CONSOLA USA ESTE CÓDIGO  
 import './config.js';
 import { createRequire } from "module"; 
 import path, { join } from 'path'
@@ -6,7 +6,7 @@ import { fileURLToPath, pathToFileURL } from 'url'
 import { platform } from 'process'
 import * as ws from 'ws';
 import { readdirSync, statSync, unlinkSync, existsSync, readFileSync, rmSync, watch } from 'fs';
-//import watch from 'glob-fs'
+/*import watch from 'glob-fs'*/
 import yargs from 'yargs';
 import { spawn } from 'child_process';
 import lodash from 'lodash';
@@ -72,24 +72,16 @@ const connectionOptions = {
 printQRInTerminal: true,
 auth: state,
 logger: P({ level: 'silent'}),
-browser: ['TheLoliBot-MD','Safari','1.0.0']
+browser: ['TheLoliBot-MD','Edge','1.0.0']
 }
 
 global.conn = makeWASocket(connectionOptions)
-/* Solucion mensajes en espera */
-//global.conn = makeWASocket({ ...connectionOptions, ...opts.connectionOptions,
-//getMessage: async (key) => (
-//opts.store.loadMessage(/** @type {string} */(key.remoteJid), key.id) ||
-//opts.store.loadMessage(/** @type {string} */(key.id)) || {}
-//).message || { conversation: 'Please send messages again' },
-//})
-
 conn.isInit = false
 
 if (!opts['test']) {
 if (global.db) setInterval(async () => {
 if (global.db.data) await global.db.write()
-if (opts['autocleartmp'] && (global.support || {}).find) (tmp = [os.tmpdir(), 'tmp', "jadibts"], tmp.forEach(filename => cp.spawn('find', [filename, '-amin', '3', '-type', 'f', '-delete'])))
+if (opts['autocleartmp'] && (global.support || {}).find) (tmp = [os.tmpdir(), 'tmp'], tmp.forEach(filename => cp.spawn('find', [filename, '-amin', '3', '-type', 'f', '-delete'])))
 }, 30 * 1000)}
 
 if (opts['server']) (await import('./server.js')).default(global.conn, PORT)
@@ -98,15 +90,32 @@ function clearTmp() {
 const tmp = [tmpdir(), join(__dirname, './tmp')]
 const filename = []
 tmp.forEach(dirname => readdirSync(dirname).forEach(file => filename.push(join(dirname, file))))
-
-       
-readdirSync("./BotSession").forEach(file => {
-if (file !== 'creds.json') {
-unlinkSync("./BotSession/" + file, { recursive: true, force: true })}})    
 return filename.map(file => {
 const stats = statSync(file)
 if (stats.isFile() && (Date.now() - stats.mtimeMs >= 1000 * 60 * 3)) return unlinkSync(file) // 3 minutes
-return false })}
+return false
+})}
+
+/*if (!opts['test']) {
+if (global.db) setInterval(async () => {
+if (global.db.data) await global.db.write()
+if (opts['autocleartmp'] && (global.support || {}).find) (tmp = [os.tmpdir(), 'tmp', "GataJadiBot"], tmp.forEach(filename => cp.spawn('find', [filename, '-amin', '3', '-type', 'f', '-delete'])))
+}, 30 * 1000)}
+
+if (opts['server']) (await import('./server.js')).default(global.conn, PORT)
+
+function clearTmp() {
+const tmp = [tmpdir(), join(__dirname, './tmp')]
+const filename = []
+tmp.forEach(dirname => readdirSync(dirname).forEach(file => filename.push(join(dirname, file))))
+readdirSync("./BotSession").forEach(file => {
+    console.log(file)
+    rmSync("./BotSession/" + file, { recursive: true, force: true })})
+return filename.map(file => {
+const stats = statSync(file)
+if (stats.isFile() && (Date.now() - stats.mtimeMs >= 1000 * 60 * 3)) return unlinkSync(file) // 3 minutes
+return false
+})}*/
 
 async function connectionUpdate(update) {
 const { connection, lastDisconnect, isNewLogin } = update
@@ -128,7 +137,7 @@ let isInit = true;
 let handler = await import('./handler.js')
 global.reloadHandler = async function (restatConn) {
 try {
-const Handler = await import(`./handler.js?se actualizo=${Date.now()}`).catch(console.error)
+const Handler = await import(`./handler.js?update=${Date.now()}`).catch(console.error)
 if (Object.keys(Handler || {}).length) handler = Handler
 } catch (e) {
 console.error(e)
@@ -150,14 +159,15 @@ conn.ev.off('connection.update', conn.connectionUpdate)
 conn.ev.off('creds.update', conn.credsUpdate)
 }
   
-conn.welcome = '┏━━━━━━━━━━━━\n┃──〘 *𝗕𝗶𝗲𝗻𝘃𝗲𝗻𝗶𝗱𝗼/𝗮* 〙──\n┃━━━━━━━━━━━━\n┃ ✨ *_@user_* _𝗔𝗹_ \n┃ *_@subject ✨_* \n┃\n┃=> *_𝗘𝗻 𝗲𝘀𝘁𝗲 𝗴𝗿𝘂𝗽𝗼 𝗽𝗼𝗱𝗿𝗮́𝘀_*\n┃ *_𝗘𝗻𝗰𝗼𝗻𝘁𝗿𝗮𝗿:_*\n┠⊷ *_𝗔𝗺𝗶𝘀𝘁𝗮𝗱𝗲𝘀_* 🫂 \n┠⊷ *_𝗗𝗲𝘀𝗺𝗮𝗱𝗿𝗲 💃🕺_* \n┠⊷ *_𝗕𝗮𝗿𝗱𝗼 🤺_* \n┠⊷ *_𝗝𝗼𝗱𝗮😛_* \n┠⊷ *_𝗨𝗻 𝗯𝗼𝘁 𝘀𝗲𝘅𝘆_*\n┃=> *_𝗣𝘂𝗲𝗱𝗲 𝘀𝗼𝗹𝗶𝗰𝗶𝘁𝗮𝗿 𝗺𝗶 𝗹𝗶𝘀𝘁𝗮 𝗱𝗲_*\n┃ *_𝗖𝗼𝗺𝗮𝗻𝗱𝗼 𝗰𝗼𝗻:_*\n┠⊷ *#menu*\n┃\n┃=> *_𝗔𝗾𝘂𝗶́ 𝘁𝗶𝗲𝗻𝗲 𝗹𝗮 𝗱𝗲𝘀𝗰𝗿𝗶𝗽𝗰𝗶𝗼́𝗻_* \n┃ *_𝗗𝗲𝗹 𝗴𝗿𝘂𝗽𝗼, 𝗹𝗲́𝗲𝗹𝗮!!_*\n┃\n\n@desc\n\n┃ \n┃ *_🔰 𝗗𝗶𝘀𝗳𝗿𝘂𝘁𝗮 𝗱𝗲 𝘁𝘂_* \n┃ *_𝗘𝘀𝘁𝗮𝗱𝗶́𝗮 𝗲𝗻 𝗲𝗹 𝗚𝗿𝘂𝗽𝗼 🔰_*  \n┃\n┗━━━━━━━━━━━'
-conn.bye = '*╔══════════════*\n*╟❧ @user*\n*╟❧ 𝙷𝙰𝚂𝚃𝙰 𝙿𝚁𝙾𝙽𝚃𝙾 👋🏻* \n*╚══════════════*'
-conn.spromote = '*𝙃𝙚𝙮 @user 𝘼𝙝𝙤𝙧𝙖 𝙚𝙧𝙚𝙨 𝙖𝙙𝙢𝙞𝙣, 𝙙𝙚𝙡 𝙜𝙧𝙪𝙥𝙤😛!!*'
-conn.sdemote = '*𝙃𝙚𝙮 @user 𝙔𝙖 𝙣𝙤 𝙚𝙧𝙚𝙨 𝙖𝙙𝙢𝙞𝙣😐 !!*'
-conn.sDesc = '*𝑺𝒆 𝒉𝒂 𝒎𝒐𝒅𝒊𝒇𝒊𝒄𝒂𝒅𝒐 𝒍𝒂 𝒅𝒆𝒔𝒄𝒓𝒊𝒑𝒄𝒊𝒐𝒏 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐*\n\n*𝑵𝒖𝒆𝒗𝒐 𝒅𝒆𝒔𝒄𝒓𝒊𝒑𝒄𝒊𝒐𝒏:* @desc'
-conn.sSubject = '*𝑺𝒆 𝒉𝒂 𝒎𝒐𝒅𝒊𝒇𝒊𝒄𝒂𝒅𝒐 𝒆𝒍 𝒏𝒐𝒎𝒃𝒓𝒆 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐*\n*𝑵𝒖𝒆𝒗𝒐 𝒏𝒐𝒎𝒃𝒓𝒆:* @subject'
-conn.sIcon = '*𝑺𝒆 𝒉𝒂 𝒄𝒂𝒎𝒃𝒊𝒂𝒅𝒐 𝒍𝒂 𝒇𝒐𝒕𝒐 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐!!*'
-conn.sRevoke = '*𝑺𝒆 𝒉𝒂 𝒂𝒄𝒕𝒖𝒂𝒍𝒊𝒛𝒂𝒅𝒐 𝒆𝒍 𝒍𝒊𝒏𝒌 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐!!*\n*𝑳𝒊𝒏𝒌 𝒏𝒖𝒆𝒗𝒐:* @revoke'
+//Información para Grupos
+conn.welcome = lenguajeGB['smsWelcome']() //'*┏━━━━━━━━━━━━\n┃──〘 *𝗕𝗶𝗲𝗻𝘃𝗲𝗻𝗶𝗱𝗼/𝗮* 〙──\n┃━━━━━━━━━━━━\n┃ ✨ *_@user_* _𝗔𝗹_ \n┃ *_@subject ✨_* \n┃\n┃=> *_𝗘𝗻 𝗲𝘀𝘁𝗲 𝗴𝗿𝘂𝗽𝗼 𝗽𝗼𝗱𝗿𝗮́𝘀_*\n┃ *_𝗘𝗻𝗰𝗼𝗻𝘁𝗿𝗮𝗿:_*\n┠⊷ *_𝗔𝗺𝗶𝘀𝘁𝗮𝗱𝗲𝘀_* 🫂 \n┠⊷ *_𝗗𝗲𝘀𝗺𝗮𝗱𝗿𝗲 💃🕺_* \n┠⊷ *_𝗕𝗮𝗿𝗱𝗼 🤺_* \n┠⊷ *_𝗝𝗼𝗱𝗮😛_* \n┠⊷ *_𝗨𝗻 𝗯𝗼𝘁 𝘀𝗲𝘅𝘆_*\n┃=> *_𝗣𝘂𝗲𝗱𝗲 𝘀𝗼𝗹𝗶𝗰𝗶𝘁𝗮𝗿 𝗺𝗶 𝗹𝗶𝘀𝘁𝗮 𝗱𝗲_*\n┃ *_𝗖𝗼𝗺𝗮𝗻𝗱𝗼 𝗰𝗼𝗻:_*\n┠⊷ *#menu*\n┃\n┃=> *_𝗔𝗾𝘂𝗶́ 𝘁𝗶𝗲𝗻𝗲 𝗹𝗮 𝗱𝗲𝘀𝗰𝗿𝗶𝗽𝗰𝗶𝗼́𝗻_* \n┃ *_𝗗𝗲𝗹 𝗴𝗿𝘂𝗽𝗼, 𝗹𝗲́𝗲𝗹𝗮!!_*\n┃\n\n@desc\n\n┃ \n┃ *_🔰 𝗗𝗶𝘀𝗳𝗿𝘂𝘁𝗮 𝗱𝗲 𝘁𝘂_* \n┃ *_𝗘𝘀𝘁𝗮𝗱𝗶́𝗮 𝗲𝗻 𝗲𝗹 𝗚𝗿𝘂𝗽𝗼 🔰_*  \n┃\n┗━━━━━━━━━━━'
+conn.bye = lenguajeGB['smsBye']() //'*╔══════════════*\n*╟❧ @user*\n*╟❧ 𝙷𝙰𝚂𝚃𝙰 𝙿𝚁𝙾𝙽𝚃𝙾 👋🏻* \n*╚══════════════*'
+conn.spromote = lenguajeGB['smsSpromote']() //'*𝙃𝙚𝙮@user 𝘼𝙝𝙤𝙧𝙖 𝙚𝙧𝙚𝙨 𝙖𝙙𝙢𝙞𝙣, 𝙙𝙚𝙡 𝙜𝙧𝙪𝙥𝙤😛!!*'
+conn.sdemote = lenguajeGB['smsSdemote']() //'*𝙃𝙚𝙮 @user 𝘿𝙀𝙅𝘼𝙔𝙖 𝙣𝙤 𝙚𝙧𝙚𝙨 𝙖𝙙𝙢𝙞𝙣😐!!*'
+conn.sDesc = lenguajeGB['smsSdesc']() //'*𝑺𝒆 𝒉𝒂 𝒎𝒐𝒅𝒊𝒇𝒊𝒄𝒂𝒅𝒐 𝒍𝒂 𝒅𝒆𝒔𝒄𝒓𝒊𝒑𝒄𝒊𝒐𝒏 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐*\n\n*𝑵𝒖𝒆𝒗𝒐 𝒅𝒆𝒔𝒄𝒓𝒊𝒑𝒄𝒊𝒐𝒏:*\n@desc'
+conn.sSubject = lenguajeGB['smsSsubject']() //'*𝑺𝒆 𝒉𝒂 𝒎𝒐𝒅𝒊𝒇𝒊𝒄𝒂𝒅𝒐 𝒆𝒍 𝒏𝒐𝒎𝒃𝒓𝒆 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐*\n*𝑵𝒖𝒆𝒗𝒐 𝒏𝒐𝒎𝒃𝒓𝒆:*\n@subject'
+conn.sIcon = lenguajeGB['smsSicon']() //'*𝑺𝒆 𝒉𝒂 𝒄𝒂𝒎𝒃𝒊𝒂𝒅𝒐 𝒍𝒂 𝒇𝒐𝒕𝒐 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐!!'
+conn.sRevoke = lenguajeGB['smsSrevoke']() //'*𝑺𝒆 𝒉𝒂 𝒂𝒄𝒕𝒖𝒂𝒍𝒊𝒛𝒂𝒅𝒐 𝒆𝒍 𝒍𝒊𝒏𝒌 𝒅𝒆𝒍 𝒈𝒓𝒖𝒑𝒐!!*\n*𝑳𝒊𝒏𝒌 𝒏𝒖𝒆𝒗𝒐!!*\n\n*@revoke*'
 
 conn.handler = handler.handler.bind(global.conn)
 conn.participantsUpdate = handler.participantsUpdate.bind(global.conn)
@@ -243,8 +253,9 @@ Object.freeze(global.support)
 }
 setInterval(async () => {
 var a = await clearTmp()
-console.log(chalk.cyanBright(`\n▣─────────[ 𝙰𝚄𝚃𝙾𝙲𝙻𝙴𝙰𝚁𝚃𝙼𝙿 ]────────────···\n│\n▣─❧ 𝙰𝚁𝙲𝙷𝙸𝚅𝙾𝚂 𝙴𝙻𝙸𝙼𝙸𝙽𝙰𝙳𝙾𝚂 ✅\n│\n▣─────────────────────────────────────···\n`))
+console.log(chalk.cyanBright(lenguajeGB['smsClearTmp']()))
 }, 180000)
 _quickTest()
-.then(() => conn.logger.info(`Ƈᴀʀɢᴀɴᴅᴏ．．．\n`))
+.then(() => conn.logger.info(lenguajeGB['smsCargando']()))
 .catch(console.error)
+
