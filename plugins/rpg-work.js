@@ -31,7 +31,7 @@ function pickRandom(list) {
 return list[Math.floor(list.length * Math.random())]
 }
 
-global.work = ["Trabajas como cortador de galletas y ganas", "cuidarte el grupos del lolibot ganar  450 xp", "defendiste al boxmine del ataque del los ni?o rata", "trabaja el un boliche todas las noche ganarte una piba? y 450 xp", "le hiciste la paja un hombre por 150 xp", "Trabaja para una empresa militar privada, ganando", "Organiza un evento de cata de vinos y obtiene",
+global.work = ["Trabajas como cortador de galletas y ganas", "cuidarte el grupos del lolibot ganar", "defendiste al boxmine del ataque del los ni?o rata", "trabaja el un boliche todas las noche ganarte una piba? y ", "le hiciste la paja un hombre por ", "Trabaja para una empresa militar privada, ganando", "Organiza un evento de cata de vinos y obtiene",
  "Te secuestran y te llevan a un coliseo subterráneo donde luchaste contra monstruos con personas que nunca antes habías conocido. Ganas", "Limpias la chimenea y encuentras", 
 "Desarrollas juegos para ganarte la vida y ganas", 
 "¿Por qué este comando se llama trabajo? Ni siquiera estás haciendo nada relacionado con el trabajo. Sin embargo, ganas", "Trabajaste en la oficina horas extras por", 
