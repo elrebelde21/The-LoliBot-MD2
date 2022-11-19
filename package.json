@@ -15,16 +15,16 @@
 "test": "node test.js",
 "test2": "nodemon index.js" },
     
-"homepage": "https://github.com/elrebelde21",
+"homepage": "https://github.com/ahmed1p7",
 "author": {
-"name": "elrebelde21" },
+"name": "ahmed1p7" },
     
 "repository": {
 "type": "git",
-"url": "git+https://github.com/elrebelde21/The-LoliBot-MD.git" },
+"url": "git+https://github.com/ahmed1p7/The-LoliBot-MD.git" },
     
 "bugs": {
-"url": "https://github.com/elrebelde21/The-LoliBot-MD/issues" },
+"url": "https://github.com/ahmed1p7/The-LoliBot-MD/issues" },
 "license": "GPL-3.0-or-later",
 "dependencies": {
         "@adiwajshing/baileys": "^4.4.0",
