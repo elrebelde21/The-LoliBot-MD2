@@ -3,13 +3,13 @@
 ### —◉ 𝗗𝘂𝗱𝗮 𝘀𝗼𝗯𝗿𝗲 𝗲𝗹 𝗯𝗼𝘁?
 𝗖𝗼𝗻𝘁𝗮𝗰𝘁𝗮𝗺𝗲 ✨ 
 
-<a href="http://wa.me/5492266466080" target="blank"><img src="https://img.shields.io/badge/creador-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
+<a href="http://wa.me/393271166550" target="blank"><img src="https://img.shields.io/badge/creador-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 
-<a href="http://wa.me/51984498676" target="blank"><img src="https://img.shields.io/badge/Bot ofc-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
+<a href="http://wa.me/393271166550" target="blank"><img src="https://img.shields.io/badge/Bot ofc-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 
 
 [![blog](https://img.shields.io/badge/Grupo-lolibot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
-)](https://chat.whatsapp.com/Ei87TDT7fsI3Q3p5MnM9sW)  <a href="https://chat.whatsapp.com/Ei87TDT7fsI3Q3p5MnM9sW"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
+)](https://chat.whatsapp.com/Ei87TDT7fsI3Q3p5MnM9sW)  <a href="https://chat.whatsapp.com/DOdAyFBGSfv5WcIdfxHDxe"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
 
 [![blog](https://img.shields.io/badge/Grupo2-lolibot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
 )](https://chat.whatsapp.com/FBMEpvnu3tsFvMtGWNCKCj) <a href="https://chat.whatsapp.com/FBMEpvnu3tsFvMtGWNCKCj"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
@@ -50,7 +50,7 @@
 > pkg install ffmpeg -y
 > pkg install imagemagick -y
 > pkg install yarn
-> git clone https://github.com/elrebelde21/The-LoliBot-MD
+> git clone https://github.com/ahmed1p7/The-LoliBot-MD
 > cd The-LoliBot-MD
 > npm install
 > yarn install 
@@ -110,7 +110,7 @@
 ```
 ----
 ## `𝐄𝐃𝐈𝐓𝐎𝐑 𝐘 𝐏𝐎𝐑𝐏𝐈𝐄𝐓𝐀𝐑𝐈𝐎 𝐃𝐄𝐋 𝐁𝐎𝐓` 
-<a href="https://github.com/elrebelde21"><img src="https://github.com/elrebelde21.png" width="300" height="300" alt="elrebelde21"/></a>
+<a href="https://github.com/ahmed1p7"><img src="https://github.com/ahmed1p7.png" width="300" height="300" alt="ahmed1p7"/></a>
 
 `The LoliBot-MD _ Byelrebelde`
 
@@ -118,5 +118,6 @@
 
 ### 🌟 𝐀𝐠𝐫𝐚𝐜𝐢𝐦𝐢𝐞𝐧𝐭𝐨
  
-[![TheShadowBrokers1](https://github.com/BrunoSobrino.png?size=100)](https://github.com/BrunoSobrino) 
-[![GataNina-Li](https://github.com/GataNina-Li.png?size=100)](https://github.com/GataNina-Li) 
+[![TheShadowBrokers1](https://github.com/ahmed1p7.png?size=100)](https://github.com/ahmed1p7) 
+
+

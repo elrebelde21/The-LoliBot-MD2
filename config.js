@@ -7,16 +7,14 @@ import { en, es, id, ar, pt } from './lib/idiomas/total-idiomas.js'
 
 //⊱ ━━━━━.⋅ Añada los numeros a ser Propietario/a ⋅.━━━━ ⊰ 
 global.owner = [
-  ['5492266466080', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', true],
-  ['5492266613038', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', true],
-  ['972529277542', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', true],
-  ['573183650526'],
-  ['51984498676'] 
+  [' 393271166550' , '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', true],
+
+[' +393271166550'] 
 ]
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
-global.mods = ['50495745934'] 
-global.prems = ['595986172767', '5493704555464'], 
+global.mods = [' 393271166550'] 
+global.prems = ['+393271166550', ' 393271166550'], 
   
   
 //⊱ ━━━━━.⋅ IDIOMA : LENGUAJE ⋅.━━━━ ⊰ 
@@ -25,7 +23,7 @@ global.prems = ['595986172767', '5493704555464'],
 //  en = English         pt = Português 
 //  ar = عرب  
 
-global.lenguajeGB = es  //Idioma de 𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫, Ejemplo: es | en | pt...
+global.lenguajeGB = ar  //Idioma de 𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫, Ejemplo: es | en | pt...
 
 //━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
@@ -116,37 +114,37 @@ global.version = vs
 global.gt = '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫'
 global.gatabot = gt
 
-global.yt = 'https://www.youtube.com/@TheLoliBot-MD'
+global.yt = 'https://www.youtube.com/'
 global.youtube = yt
 
 global.ig = ''
 global.gatadiosig = ig
 
-global.md = 'https://github.com/GataNina-Li/GataBot-MD'
+global.md = 'https://github.com/ahmed1p7/TheMystic-Bot-MD'
 global.gatabot = md
 
-global.nna = 'https://chat.whatsapp.com/DNJ4Ppm5ysn3fhjGflrr0J'
+global.nna = 'https://chat.whatsapp.com/'
 global.nnagrupo = nna //grupo del ayuda sobre el bot
 
-global.nn = 'https://chat.whatsapp.com/Ei87TDT7fsI3Q3p5MnM9sW'
+global.nn = 'https://chat.whatsapp.com/'
 global.nngrupo = nn //Grupo 1
 
-global.nnn = 'https://chat.whatsapp.com/FBMEpvnu3tsFvMtGWNCKCj'
+global.nnn = 'https://chat.whatsapp.com/'
 global.nnngrupo = nnn //Grupo 2
 
-global.nnnt = 'https://chat.whatsapp.com/IURoZwbZKlB6NX4OgskLAx'
+global.nnnt = 'https://chat.whatsapp.com/'
 global.nnntgrupo = nnnt //Grupo 3
 
-global.nnntt = 'https://chat.whatsapp.com/D7BKjtAHY1cHnqZFBdap3l'
+global.nnntt = 'https://chat.whatsapp.com/'
 global.nnnttgrupo = nnntt //Grupo 4
 
-global.nnnttt = 'https://chat.whatsapp.com/JESaesjOEcB6wnGX0QYT9o'
+global.nnnttt = 'https://chat.whatsapp.com/'
 global.nnntttgrupo = nnnttt //Grupo informacion del bot
 
 global.paypal = ''
 global.donar = paypal
 
-global.asistencia = 'Wa.me/5492266466080' //Dudas? escríbeme...
+global.asistencia = 'Wa.me/393271166550' //Dudas? escríbeme...
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
