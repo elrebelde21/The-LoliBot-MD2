@@ -49,6 +49,7 @@ handler.help = ['hourly']
 handler.tags = ['xp']
 handler.command = ['hourly', 'entega', 'cadahora', 'recibirentrega'] 
 handler.level = 4 
+handler.register = true
 export default handler
 
 function pickRandom(list) {

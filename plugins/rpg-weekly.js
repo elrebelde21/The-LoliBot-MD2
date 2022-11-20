@@ -60,6 +60,7 @@ user.lastweekly = new Date * 1
 }
 handler.command = ['weekly', 'semana', 'semanal', 'cadasemana', 'entregasemanal'] 
 handler.level = 7
+handler.register = true
 export default handler
 
 function pickRandom(list) {

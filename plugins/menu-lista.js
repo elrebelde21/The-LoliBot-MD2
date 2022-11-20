@@ -38,8 +38,8 @@ rows: [
 ]},{
 title: comienzo + ' ' + lenguajeGB['smsLista10']() + ' ' + fin,
 rows: [
-{title: lenguajeGB['smsLista11'](), rowId: `${usedPrefix}top`},
-{title: lenguajeGB['smsLista12'](), rowId: `${usedPrefix}listprem`},
+{title: lenguajeGB['smsLista11'](), rowId: `${usedPrefix}lb`},
+{title: lenguajeGB['smsLista12'](), rowId: `${usedPrefix}listapremium`},
 {title: lenguajeGB['smsLista13'](), rowId: `${usedPrefix}pase premium`},
 {title: lenguajeGB['smsLista15'](), rowId: `${usedPrefix}rpgmenu`},
 {title: lenguajeGB['smsLista16'](), rowId: `${usedPrefix}buy`},
@@ -57,7 +57,6 @@ rows: [
 {title: lenguajeGB['smsLista25'](), rowId: `${usedPrefix}audios`},
 {title: lenguajeGB['smsLista26'](), rowId: `${usedPrefix}stickermenu`},
 {title: lenguajeGB['smsLista27'](), rowId: `${usedPrefix}makermenu`},
-{title: lenguajeGB['smsLista28'](), rowId: `${usedPrefix}menulogos2`},
 {title: lenguajeGB['smsLista29'](), rowId: `${usedPrefix}randommenu`},
 {title: lenguajeGB['smsLista30'](), rowId: `${usedPrefix}hornymenu`, description: '\n'}
 ]},{	
@@ -65,7 +64,7 @@ title: comienzo + ' ' + lenguajeGB['smsLista31']() + ' ' + fin,
 rows: [
 {title: lenguajeGB['smsLista32'](), rowId: `${usedPrefix}grupomenu`},
 {title: lenguajeGB['smsLista33'](), rowId: `${usedPrefix}listas`},
-{title: lenguajeGB['smsLista34'](), rowId: `${usedPrefix}on`},
+{title: lenguajeGB['smsLista34'](), rowId: `${usedPrefix}enable`},
 {title: lenguajeGB['smsLista35'](), rowId: `${usedPrefix}ownermenu`}
 ]}]
 

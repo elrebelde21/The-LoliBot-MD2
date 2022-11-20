@@ -73,6 +73,7 @@ handler.tags = ['loli']
 handler.command = ['minar2', 'miming2', 'mine2', 'minargatacoins', 'minarcoins', 'minargata'] 
 handler.fail = null
 handler.exp = 0
+handler.register = true
 export default handler
 
 function msToTime(duration) {

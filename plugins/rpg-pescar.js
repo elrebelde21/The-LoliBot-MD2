@@ -580,6 +580,7 @@ console.log(e)
 handler.help = ['fishing <args>']
 handler.tags = ['rpg']
 handler.command = /^(fishing|mancing|pescar)$/i
+handler.register = true
 export default handler
 
 function pickRandom(list) {

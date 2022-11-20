@@ -5,10 +5,9 @@ const { levelling } = '../lib/levelling.js'
 import PhoneNumber from 'awesome-phonenumber'
 import { promises } from 'fs'
 import { join } from 'path'
-let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text }) => {
+let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, command }) => {
 try {
 let vn = './media/menu.mp3'
-let pp = './Menu2.jpg'
 let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
 let { exp, limit, level, role } = global.db.data.users[m.sender]
 let { min, xp, max } = xpRange(level, global.multiplier)
@@ -68,24 +67,30 @@ text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 let username = conn.getName(who)
-let enlace = { contextInfo: { externalAdReply: {title: wm, body: 'support group' , sourceUrl: nna, thumbnail: await(await fetch(img)).buffer() }}}
+//let enlace = { contextInfo: { externalAdReply: {title: wm, body: 'support group' , sourceUrl: nna, thumbnail: await(await fetch(img)).buffer() }}}
+let pp = gataVidMenu.getRandom()
+let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+let fsizedoc = '1'.repeat(10)
+let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: ig, description: 'Hola', previewType: 'PHOTO', thumbnail: await(await fetch(gataMenu.getRandom())).buffer(), sourceUrl: redesMenu.getRandom() }}}
 
 
-let str = 
-`╭══〘 ✯✯✯✯✯✯✯✯ 〙═╮
+let menuA = `
+╭══〘 ✯✯✯✯✯✯✯✯ 〙═╮
 ║═ *𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫*
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-║➤ *✨𝗛ola como esta, ${name}!!*
+║➤ ${lenguajeGB['smsConfi2']()} *${username}*
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ║➤ *𝘾𝙧𝙚𝙖𝙙𝙤𝙧 𝙙𝙚𝙡 𝙗𝙤𝙩: el rebelde* 
 ║➤ *𝙉𝙪́𝙢𝙚𝙧𝙤 𝙙𝙚𝙡 𝙘𝙧𝙚𝙖𝙙𝙤𝙧:* *wa.me/5492266466080 (No Bot)*
 ║➤ *𝙉𝙪́𝙢𝙚𝙧𝙤 𝙙𝙚𝙡 𝙗𝙤𝙩 𝙤𝙛𝙞𝙘𝙞𝙖𝙡 :* *wa.me/51984498676*
-║➤ 𝙏𝙞𝙚𝙢𝙥𝙤𝙨 𝙖𝙘𝙩𝙞𝙫𝙤𝙨 : *${uptime}*
-║➤ *Usuarios:* *${Object.keys(global.db.data.users).length}*
+║➤ *𝙏𝙞𝙚𝙢𝙥𝙤𝙨 𝙖𝙘𝙩𝙞𝙫𝙤𝙨 :* *${uptime}*
+║➤ *${lenguajeGB['smsBotonM4']()} » ${Object.keys(global.db.data.users).length}* 
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-╰══╡✯✯✯✯✯✯✯✯╞══╯
+╰══╡✯✯✯✯✯✯✯✯╞══╯`.trim()
+
+let menuB = `
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< 𝕀ℕ𝔽𝕆 𝔻𝔼𝕃 𝕌𝕊𝕌𝔸ℝ𝕀𝕆 />*
+┃ *< 𝙄𝙣𝙛𝙤 𝙙𝙚𝙡 𝙪𝙨𝙪𝙖𝙧𝙞𝙤 />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ *🎖️ Nivel:* ${level}
 ┣ *💎 Diamantes:* ${limit}
@@ -126,7 +131,7 @@ let str =
 ┗━━━━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< serbot - jadibot />*
+┃ *< 𝙎𝙚𝙧𝙗𝙤𝙩 - 𝙟𝙖𝙙𝙞𝙗𝙤𝙩 />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 🤖 _${usedPrefix}serbot_
 ┣ ඬ⃟ 🤖 _${usedPrefix}stop_
@@ -179,7 +184,7 @@ let str =
 ┣ ඬ⃟ 🕹️ _${usedPrefix}cancion_
 ┣ ඬ⃟ 🕹️ _${usedPrefix}pista_
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-┃ *< PAREJAS 💞  />*
+┃ *< 𝙋𝙖𝙧𝙚𝙟𝙖𝙨 💞  />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ┃ *Declarate con alguien*
 ┃ *para que sean Parejas!!*
@@ -199,7 +204,7 @@ let str =
 ┗━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< 𝔸ℂ𝕋𝕀𝕍𝔸ℝ 𝕆 𝔻𝔼𝕊𝔸ℂ𝕋𝕀𝕍𝔸ℝ />*
+┃ *< 𝘼𝙘𝙩𝙞𝙫𝙖 𝙤 𝙙𝙚𝙨𝙖𝙘𝙩𝙞𝙫𝙖𝙧 />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ ☑️ _${usedPrefix}enable
 ┗━━━━━━━━━━━━━━━━━━━┛
@@ -214,7 +219,7 @@ let str =
 ┗━━━━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━━━━┓
-┣ *< SER PREMIUM />*
+┣ *< 𝙎𝙚𝙧 𝙥𝙧𝙚𝙢𝙞𝙪𝙢 />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ┃ *Convierte en un(a)*
 ┃ *Usuario(a) Premium!!*
@@ -295,7 +300,7 @@ let str =
 ┗━━━━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< ℂ𝕆ℕ𝕍𝔼ℝ𝕋𝕀𝔻𝕆ℝ𝔼𝕊 />*
+┃ *< 𝘾𝙤𝙣𝙫𝙚𝙧𝙩𝙞𝙙𝙤𝙧𝙚𝙨 />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 🧧 _${usedPrefix}togifaud *<video>*_
 ┣ ඬ⃟ 🧧 _${usedPrefix}robar *texto*
@@ -310,7 +315,7 @@ let str =
 ┗━━━━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< 𝔼𝔽𝔼ℂ𝕋𝕆𝕊 𝕐 𝕃𝕆𝔾𝕆𝕊 />*
+┃ *< 𝙀𝙛𝙚𝙘𝙩𝙤𝙨 𝙮 𝙡𝙤𝙜𝙤𝙨 />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 🖍️ _${usedPrefix}mensajefalso *<nombre|mensaje>*_
 ┣ ඬ⃟ 🖍️ _${usedPrefix}phmaker *<opcion> <imagen>*_
@@ -327,7 +332,7 @@ let str =
 ┗━━━━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< 𝔽ℝ𝔸𝕊𝔼𝕊 𝕐 𝕋𝔼𝕏𝕋𝕆𝕊 />*
+┃ *< 𝙁𝙧𝙖𝙨𝙚𝙨 𝙮 𝙩𝙚𝙭𝙩𝙤𝙨 />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 🥀 _${usedPrefix}piropo_
 ┣ ඬ⃟ 🥀 _${usedPrefix}consejo_
@@ -439,7 +444,7 @@ let str =
 ┗━━━━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< 𝔹𝕌𝕊ℂ𝔸𝔻𝕆ℝ𝔼𝕊 />*
+┃ *< 𝘽𝙪𝙨𝙘𝙖𝙙𝙤𝙧𝙚𝙨 />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 🔍 _${usedPrefix}stickersearch *<texto>*_
 ┣ ඬ⃟ 🔍 _${usedPrefix}stickersearch2 *<texto>*_
@@ -461,7 +466,7 @@ let str =
 ┣ ඬ⃟ 🔍 _${usedPrefix}playstore *<texto>*_
 ┗━━━━━━━━━━━━━━━━━━━┛
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< ℍ𝔼ℝℝ𝔸𝕄𝕀𝔼ℕ𝕋𝔸𝕊 />*
+┃ *< 𝙃𝙚𝙧𝙧𝙖𝙢𝙞𝙚𝙣𝙩𝙖𝙨 />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 🛠️ _${usedPrefix}spamwa *<numero|texto|cantidad>*_
 ┣ ඬ⃟ 🛠️ _${usedPrefix}tamaño *<cantidad> <imagen / video>*_
@@ -484,7 +489,7 @@ let str =
 ┗━━━━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< ℝℙ𝔾 - 𝕃𝕀𝕄𝕀𝕋𝔼𝕊 - 𝔼ℂ𝕆ℕ𝕆𝕄𝕀𝔸 />*
+┃ *< 𝙍𝙋𝙂 - 𝙡𝙞𝙢𝙞𝙩𝙚𝙨 - 𝙚𝙘𝙤𝙣𝙤𝙢𝙞𝙖𝙨 />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 💵 _${usedPrefix}verificar_
 ┣ ඬ⃟ 💵 _${usedPrefix}unreg *<numero de serie>*_
@@ -502,7 +507,7 @@ let str =
 ┗━━━━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< 𝕊𝕋𝕀ℂ𝕂𝔼ℝ𝕊 />*
+┃ *< 𝙎𝙩𝙞𝙘𝙠𝙚𝙧𝙨 />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 👽 _${usedPrefix}sticker *<responder a imagen o video>*_
 ┣ ඬ⃟ 👽 _${usedPrefix}sticker *<enlace / link / url>*_
@@ -531,7 +536,7 @@ let str =
 ┗━━━━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< 𝕆𝕎ℕ𝔼ℝ 𝕐 𝕄𝕆𝔻𝔼ℝ𝔸𝔻𝕆ℝ𝔼𝕊 />*
+┃ *< 𝙋𝙧𝙤𝙥𝙞𝙚𝙩𝙖𝙧𝙞𝙤 𝙙𝙚𝙡 𝙗𝙤𝙩 />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 👑 > *<funcion>*
 ┣ ඬ⃟ 👑 => *<funcion>*
@@ -584,31 +589,15 @@ let str =
 ┗━━━━━━━━━━━━━━━━━━━┛
 `.trim()
 
-const fkontak = {
-	"key": {
-    "participants":"0@s.whatsapp.net",
-		"remoteJid": "status@broadcast",
-		"fromMe": false,
-		"id": "Halo"
-	},
-	"message": {
-		"contactMessage": {
-			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
-		}
-	},
-	"participant": "0@s.whatsapp.net"
-}
-
-conn.sendHydrated(m.chat, str, wm, pp, 'https://github.com/elrebelde21/The-LoliBot-MD', '𝙶𝙸𝚃𝙷𝚄𝙱', null, null, [
-['🔰 𝙈𝙚𝙣𝙪 𝘼𝙪𝙙𝙞𝙤𝙨 🔰', '.audios']
-], m,)
-	
+await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', '🎧 ' + lenguajeGB.smsTex16() + ' 🎧', '/audios', lenguajeGB.smsBotonM3(), '#infobot', fkontak, adReply)
 await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, {
 type: 'audioMessage', 
 ptt: true})
+	
 } catch (e) {
-conn.reply(m.chat, `${fg}𝙀𝙍𝙍𝙊𝙍 𝙀𝙉 𝙀𝙇 𝙈𝙀𝙉𝙐, 𝙍𝙀𝙋𝙊𝙍𝙏𝘼 𝘾𝙊𝙉 𝙀𝙇 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 *#reporte*`, m)
-throw e
+await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)
+console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
+console.log(e)	
 }}
 handler.help = ['menu', 'help', '?']
 handler.tags = ['main']
