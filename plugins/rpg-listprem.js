@@ -29,6 +29,7 @@ handler.help = ['premlist [angka]']
 handler.tags = ['info']
 handler.command = /^(listprem|premlist|listavip|viplista)$/i
 //handler.command = /^(vip|prem|premium|lista|list)vip|prem|premium|lista|list$/i
+handler.register = true
 
 export default handler
 

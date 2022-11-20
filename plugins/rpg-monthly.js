@@ -72,6 +72,7 @@ user.lastmonthly = new Date * 1
 }
 handler.command = ['monthly', 'cadames', 'mes', 'mensual', 'entregadelmes'] 
 handler.level = 1
+handler.register = true
 export default handler
 
 function pickRandom(list) {

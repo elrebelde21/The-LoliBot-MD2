@@ -22,5 +22,6 @@ abundancia: 'Medianamente poca'
 m.reply(categorias.exp.utilidad)
 }
 handler.command = /^(colección|coleccion|inforpg|set|collection)$/i
+handler.register = true
 
 export default handler
