@@ -203,7 +203,7 @@ global.lolkeysapi = ['85faf717d0545d14074659ad']
 
 //━━━━━━━━━━━━━━ img ━━━━━━━━━
 
-global.img = 'https://imgur.com/a/0hHv1ry.jpg'
+global.img = 'https://i.imgur.com/H6AofpJl.jpg'
 global.img2 = 'https://imgur.com/a/0hHv1ry.jpg'
 
 global.img3 = 'https://imgur.com/a/0hHv1ry.jpg' //prem
