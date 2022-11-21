@@ -205,23 +205,23 @@ global.lolkeysapi = ['85faf717d0545d14074659ad']
 //━━━━━━━━━━━━━━ img ━━━━━━━━━
 
 global.img = 'https://i.imgur.com/H6AofpJl.jpg'
-global.img2 = 'https://imgur.com/a/0hHv1ry.jpg'
+global.img2 = 'https://imgur.com/0hHv1ry.jpg'
 
-global.img3 = 'https://imgur.com/a/0hHv1ry.jpg' //prem
-global.img4 = 'https://imgur.com/a/0hHv1ry.jpg' //prem
+global.img3 = 'https://imgur.com/0hHv1ry.jpg' //prem
+global.img4 = 'https://imgur.com/0hHv1ry.jpg' //prem
 
-global.img5 = 'https://imgur.com/a/0hHv1ry.jpeg'
-global.img6 = 'https://imgur.com/a/0hHv1ry.jpeg'
-global.img7 = 'https://imgur.com/a/0hHv1ry.jpeg'
-global.img8 = 'https://imgur.com/a/0hHv1ry.jpeg'
-global.img9 = 'https://imgur.com/a/0hHv1ry.jpeg'
+global.img5 = 'https://imgur.com/0hHv1ry.jpeg'
+global.img6 = 'https://imgur.com/0hHv1ry.jpeg'
+global.img7 = 'https://imgur.com/0hHv1ry.jpeg'
+global.img8 = 'https://imgur.com/0hHv1ry.jpeg'
+global.img9 = 'https://imgur.com/0hHv1ry.jpeg'
 
-global.img10 = 'https://imgur.com/a/0hHv1ry.jpg'
-global.img11 = 'https://imgur.com/a/0hHv1ry.jpg'
-global.img12 = 'https://imgur.com/a/0hHv1ry.jpg'
-global.img13 = 'https://imgur.com/a/0hHv1ry.jpeg'
-global.img14 = 'https://imgur.com/a/0hHv1ry.jpeg'
-global.img15 = 'https://imgur.com/a/0hHv1ry.jpeg'
+global.img10 = 'https://imgur.com/0hHv1ry.jpg'
+global.img11 = 'https://imgur.com/0hHv1ry.jpg'
+global.img12 = 'https://imgur.com/0hHv1ry.jpg'
+global.img13 = 'https://imgur.com/0hHv1ry.jpeg'
+global.img14 = 'https://imgur.com/0hHv1ry.jpeg'
+global.img15 = 'https://imgur.com/0hHv1ry.jpeg'
 
 global.redesMenu = [nna, nn, nnn, nnnt, nnntt, nnnttt, md, ig, paypal, yt]
 global.gataMenu = [img, img2, img6, img7, img8, img9, img13, img14, img15]
