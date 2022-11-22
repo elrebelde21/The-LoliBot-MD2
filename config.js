@@ -123,7 +123,7 @@ global.youtube = yt
 global.ig = ''
 global.gatadiosig = ig
 
-global.md = 'https://github.com/GataNina-Li/GataBot-MD'
+global.md = 'https://github.com/elrebelde21/The-LoliBot-MD'
 global.gatabot = md
 
 global.nna = 'https://chat.whatsapp.com/DNJ4Ppm5ysn3fhjGflrr0J'
