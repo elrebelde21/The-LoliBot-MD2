@@ -60,6 +60,10 @@ irq: 0
 
 let old = performance.now()
 await conn.sendButton(m.chat, wm, `_𝘾𝙤𝙢𝙚𝙣𝙯𝙖𝙣𝙙𝙤 𝙥𝙧𝙪𝙚𝙗𝙖 𝙙𝙚𝙡 𝙫𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙 🚀..._`, null, [['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)  
+await m.reply('🚀')
+await m.reply('🚀🚀')
+await m.reply('🚀🚀🚀')
+await m.reply(`╰⊱✅⊱ *𝑹𝒆𝒔𝒖𝒍𝒕𝒂𝒅𝒐𝒔* ⊱✅⊱╮`)
 let neww = performance.now()
 let speed = neww - old
 let caption = `*${htki} 𝙫𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙 ${htka}*
@@ -67,15 +71,17 @@ let caption = `*${htki} 𝙫𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙 ${htka}*
 🚄 *${Math.round(neww - old)}* ms
 🚄 *${speed}* ms
 
+❇️ INFO BOT
+
 *${htjava}* 𝙏𝙄𝙀𝙈𝙋𝙊 𝘿𝙀 𝙀𝙅𝙀𝘾𝙐𝘾𝙄𝙊𝙉 : 𝙍𝙐𝙉𝙏𝙄𝙈𝙀 
 ${muptime}
 ${readMore}
 *${htjava} C H A T S*
-• *${groupsIn.length}* _Grupales : Group_
-• *${groupsIn.length}* _Grupos Unidos : Join Group_
-• *${groupsIn.length - groupsIn.length}* _Grupos Restantes : Groups Left_
-• *${chats.length - groupsIn.length}* _Chats Privados : Chats Private_
-• *${chats.length}* _Total Chats_
+▢ *${groupsIn.length}* _Chats de grupo_
+▢ *${groupsIn.length}* _Grupos unidos_
+▢ *${groupsIn.length - groupsIn.length}* _Grupos abandonados_
+▢ *${chats.length - groupsIn.length}* _Chats Privados_
+▢ *${chats.length}* _Total Chats_
 
 *${htjava} S E R V I D O R : S E R V E R*
 *🟢 RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
