@@ -120,7 +120,7 @@ global.gatabot = gt
 global.yt = 'https://www.youtube.com/@TheLoliBot-MD'
 global.youtube = yt
 
-global.ig = ''
+global.ig = 'https://www.tiktok.com/@thelolibot_md'
 global.gatadiosig = ig
 
 global.md = 'https://github.com/elrebelde21/The-LoliBot-MD'
@@ -132,13 +132,13 @@ global.nnagrupo = nna //grupo del ayuda sobre el bot
 global.nn = 'https://chat.whatsapp.com/Ei87TDT7fsI3Q3p5MnM9sW'
 global.nngrupo = nn //Grupo 1
 
-global.nnn = 'https://chat.whatsapp.com/FBMEpvnu3tsFvMtGWNCKCj'
+global.nnn = 'https://chat.whatsapp.com/JZ0Ls4Fqc4b5pirH1BYvYK'
 global.nnngrupo = nnn //Grupo 2
 
-global.nnnt = 'https://chat.whatsapp.com/IURoZwbZKlB6NX4OgskLAx'
+global.nnnt = 'https://chat.whatsapp.com/KkHx88JzJpO7QrLu8Cf6rX'
 global.nnntgrupo = nnnt //Grupo 3
 
-global.nnntt = 'https://chat.whatsapp.com/D7BKjtAHY1cHnqZFBdap3l'
+global.nnntt = 'https://chat.whatsapp.com/Bn3NPjToS9r9q3mfkHa4PX'
 global.nnnttgrupo = nnntt //Grupo 4
 
 global.nnnttt = 'https://chat.whatsapp.com/JESaesjOEcB6wnGX0QYT9o'
