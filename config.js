@@ -9,10 +9,10 @@ import { en, es, id, ar, pt } from './lib/idiomas/total-idiomas.js'
 global.owner = [
   ['5492266466080', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', true],
   ['5492266613038', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', true],
-  ['972529277542', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', true],
-  ['573183650526'],
+  ['51984498676', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', true],
   ['593968585383'],
-  ['51984498676'] 
+  ['5492266573414'],
+  ['573183650526'] 
 ]
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
@@ -126,8 +126,8 @@ global.gatadiosig = ig
 global.md = 'https://github.com/elrebelde21/The-LoliBot-MD'
 global.gatabot = md
 
-global.nna = 'https://chat.whatsapp.com/DNJ4Ppm5ysn3fhjGflrr0J'
-global.nnagrupo = nna //grupo del ayuda sobre el bot
+global.nna = 'https://chat.whatsapp.com/JESaesjOEcB6wnGX0QYT9o'
+global.nnagrupo = nna //grupo informacion sobre el bot
 
 global.nn = 'https://chat.whatsapp.com/Ei87TDT7fsI3Q3p5MnM9sW'
 global.nngrupo = nn //Grupo 1
@@ -141,8 +141,8 @@ global.nnntgrupo = nnnt //Grupo 3
 global.nnntt = 'https://chat.whatsapp.com/Bn3NPjToS9r9q3mfkHa4PX'
 global.nnnttgrupo = nnntt //Grupo 4
 
-global.nnnttt = 'https://chat.whatsapp.com/JESaesjOEcB6wnGX0QYT9o'
-global.nnntttgrupo = nnnttt //Grupo informacion del bot
+global.nnnttt = 'https://chat.whatsapp.com/DNJ4Ppm5ysn3fhjGflrr0J'
+global.nnntttgrupo = nnnttt //Grupo ayuda sobfe el bot
 
 global.paypal = ''
 global.donar = paypal
