@@ -3,7 +3,7 @@ const grupoOficial1 = nn
 const grupoOficial2 = nnn
 const grupoOficial3 = nnnt
 const grupoOficial4 = nnntt
-const grupoOficial5 = nnnttt
+const grupoOficial5 = nna
 
 let handler = async (m, { conn, text, usedPrefix, command, participants, groupMetadata }) => {
 let users = m.sender.split`@`[0]
