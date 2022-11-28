@@ -135,10 +135,10 @@ global.nngrupo = nn //Grupo 1
 global.nnn = 'https://chat.whatsapp.com/JZ0Ls4Fqc4b5pirH1BYvYK'
 global.nnngrupo = nnn //Grupo 2
 
-global.nnnt = 'https://chat.whatsapp.com/KkHx88JzJpO7QrLu8Cf6rX'
+global.nnnt = 'https://chat.whatsapp.com/Gt1fF9OihuyKcTP4zg3Lhe'
 global.nnntgrupo = nnnt //Grupo 3
 
-global.nnntt = 'https://chat.whatsapp.com/Bn3NPjToS9r9q3mfkHa4PX'
+global.nnntt = 'https://chat.whatsapp.com/JQvATGowiEz6p9qdNF5p3W'
 global.nnnttgrupo = nnntt //Grupo 4
 
 global.nnnttt = 'https://chat.whatsapp.com/DNJ4Ppm5ysn3fhjGflrr0J'
