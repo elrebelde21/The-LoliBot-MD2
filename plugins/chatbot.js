@@ -27,6 +27,11 @@ if (/^so|So$/i.test(m.text) ) { //sem prefixo
 
 }
 
+if (/^rra$/i.test(m.text) ) { //sem prefixo
+    conn.reply(m.chat, `eres`, m) //wm, null, [['Menu', '#menu']], m) botones :V
+
+}
+
 if (/^eres$/i.test(m.text) ) { //sem prefixo
     conn.reply(m.chat, `Tu 😂😂😂`, m) //wm, null, [['Menu', '#menu']], m) botones :V
 
