@@ -10,7 +10,7 @@ let [_, code] = grupo.match(linkRegex) || []
 if ( users == 5492266466080 || users == 5492266613038 ) try {
 if (!text) return m.reply(`*Falta Texto*`) 
 let res = await conn.groupAcceptInvite(code)
-await conn.sendMessage(res, { text: text + '\n\n_𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫_', mentions: (await conn.groupMetadata(`${res}`)).participants.map(v => v.id) }, { quoted: fkontak })
+await conn.sendMessage(res, { text: text + '\n\n_atte. 𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫_', mentions: (await conn.groupMetadata(`${res}`)).participants.map(v => v.id) }, { quoted: fkontak })
 await m.reply(`✅ *MENSAJE ENVIADO CON ÉXITO* `)
 
 } catch (e) {
