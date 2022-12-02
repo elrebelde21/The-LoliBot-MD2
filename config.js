@@ -135,14 +135,14 @@ global.nngrupo = nn //Grupo 1
 global.nnn = 'https://chat.whatsapp.com/JZ0Ls4Fqc4b5pirH1BYvYK'
 global.nnngrupo = nnn //Grupo 2
 
-global.nnnt = 'https://chat.whatsapp.com/Gt1fF9OihuyKcTP4zg3Lhe'
+global.nnnt = 'https://chat.whatsapp.com/KLnwrWtV446600FNTgoagV'
 global.nnntgrupo = nnnt //Grupo 3
 
-global.nnntt = 'https://chat.whatsapp.com/JQvATGowiEz6p9qdNF5p3W'
+global.nnntt = 'https://chat.whatsapp.com/Egq2HbYkXH23Oh83so8JE4'
 global.nnnttgrupo = nnntt //Grupo 4
 
 global.nnnttt = 'https://chat.whatsapp.com/DNJ4Ppm5ysn3fhjGflrr0J'
-global.nnntttgrupo = nnnttt //Grupo ayuda sobfe el bot
+global.nnntttgrupo = nnnttt //Grupo ayuda sobre el bot
 
 global.paypal = ''
 global.donar = paypal
