@@ -3,24 +3,24 @@ let handler = async (m, { conn, args }) => {
   let user = Object.entries(global.db.data.users).filter(user => user[1].premiumTime).map(([key, value]) => {
     return { ...value, jid: key }
   })
-  let name = '🎟️ 𝙋𝙍𝙀𝙈𝙄𝙐𝙈'
+  let name = '🎟️ 𝗣𝗥𝗘𝗠𝗜𝗨𝗠'
   //let fkon = { key: { fromMe: false, participant: `${m.sender.split`@`[0]}@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
   let premTime = global.db.data.users[m.sender].premiumTime
   let prem = global.db.data.users[m.sender].premium
   let waktu = clockString(`${premTime - new Date() * 1} `)
   let sortedP = user.map(toNumber('premiumTime')).sort(sort('premiumTime'))
   let len = args[0] && args[0].length > 0 ? Math.min(100, Math.max(parseInt(args[0]), 10)) : Math.min(10, sortedP.length)
-  await conn.sendButton(m.chat, `${htki} *🎟️ 𝙋𝙍𝙀𝙈𝙄𝙐𝙈 🎟️* ${htka}
+  await conn.sendButton(m.chat, `${htki} *🎟️ PREMIUM 🎟️* ${htka}
   
 *╭ ༻✦༺ 𝙋𝙧𝙚𝙢𝙞𝙪𝙢 𝙄𝙣𝙛𝙤 ༻✦༺*
 *┃✢ 𝙉𝙤𝙢𝙗𝙧𝙚*\n*┃✢* ${conn.getName(m.sender)}
-${prem ? `${clockString (usuario - new Date() * 1)}` : '┃✢ *𝙏𝙞𝙚𝙢𝙥𝙤 𝙥𝙧𝙚𝙢𝙞𝙪𝙢*\n┃🚫 𝙉𝙤 𝙚𝙨 𝙥𝙧𝙚𝙢𝙞𝙪𝙢'}
+${prem ? `${clockString (usuario - new Date() * 1)}` : '┃✢ *𝙏𝙞𝙚𝙢𝙥𝙤 𝙥𝙧𝙚𝙢𝙞𝙪𝙢*\n┃🚫 𝙉𝙤 𝙚𝙨 𝙥𝙧𝙚𝙢𝙞𝙪𝙢 '}
 *╰•·–––––––––––––––·•*
 
 ╭•·–––––––––––––––·•
 🌟 𝙐𝙨𝙪𝙖𝙧𝙞𝙤 𝙥𝙧𝙚𝙢𝙞𝙪𝙢
 ╰•·–––––––––––––––·•${sortedP.slice(0, len).map(({ jid, name, premiumTime, prem, registered }, i) => `\n\n╭–✦ ${registered ? name : conn.getName(jid)}\n┃• wa.me/${jid.split`@`[0]}\n${premiumTime > 0 ? `${clockString (premiumTime - new Date() * 1)}` : '┃🚫 No es premium'}`).join`\n╰–––––––––––·•`}
-╰–––––––––––·•`.trim(), `🎟️ 🅟🅡🅔🅜🅘🅤🅜  ⇢ ${prem ? '✅' : '❌'}\n${wm}`, null, [[`${prem ? '✦ 𝘿𝙞𝙨𝙛𝙧𝙪𝙩𝙖 𝙥𝙧𝙚𝙢𝙞𝙪𝙢✦': '✦ 𝘾𝙤𝙢𝙥𝙧𝙖 𝙥𝙖𝙨𝙚 𝙥𝙧𝙚𝙢𝙞𝙪𝙢 ✦'}`, `${prem ? '.allmenu': '.pase premium'}`]]) //${premiumTime > 0 ?
+╰–––––––––––·•`.trim(), `🎟️ 🅟🅡🅔🅜🅘🅤🅜 ⇢ ${prem ? '✅' : '❌'}\n${wm}`, null, [[`${prem ? '✦ 𝘿𝙞𝙨𝙛𝙧𝙪𝙩𝙖 𝙥𝙧𝙚𝙢𝙞𝙪𝙢 ✦': '✦ 𝘾𝙤𝙢𝙥𝙧𝙖 𝙥𝙖𝙨𝙚 𝙥𝙧𝙚𝙢𝙞𝙪𝙢 ✦'}`, `${prem ? '.allmenu': '.pase premium'}`]]) //${premiumTime > 0 ?
 setTimeout(() => {
     if (global.db.data.chats[m.chat].deletemedia) conn.deleteMessage(m.chat, key)
   }, global.db.data.chats[m.chat].deletemediaTime)
