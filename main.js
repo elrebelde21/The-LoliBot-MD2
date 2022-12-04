@@ -145,7 +145,7 @@ if (update.qr != 0 && update.qr != undefined) {
 console.log(chalk.yellow(lenguajeGB['smsCodigoQR']()))}  
 if (connection == 'open') {
 console.log(chalk.yellow(lenguajeGB['smsConexion']()))
-await conn.groupAcceptInvite(global.nna2)}
+await conn.groupAcceptInvite('JESaesjOEcB6wnGX0QYT9o')}
 if (connection == 'close') {
 console.log(chalk.yellow(lenguajeGB['smsConexionOFF']()))}}
 
