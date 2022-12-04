@@ -1,17 +1,20 @@
 import Presence from '@adiwajshing/baileys'
 let handler  = async (m, { conn, args, text }) => {
-if (!text) throw `𝙔 𝙚𝙡 𝙣𝙤𝙢𝙗𝙧𝙚🤔\n 𝙀𝙨𝙘𝙧𝙞𝙗𝙖 𝙚𝙡 𝙣𝙤𝙢𝙗𝙧𝙚 𝙥𝙖𝙧𝙖 𝙚𝙡 𝙜𝙧𝙪𝙥𝙤`
+let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+const pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './src/grupos.jpg' 
+if (!text) return conn.reply(m.chat, lenguajeGB['smsNam2'](), fkontak, m)
 try {
 let text = args.join` `
 if(!args || !args[0]) {
 } else {
 conn.groupUpdateSubject(m.chat, text)}
+//conn.sendButton(m.chat, wm, lenguajeGB.smsNam1(), pp, [[lenguajeGB.smsConMenu(), `/menu`]], fkontak, m)}
 } catch (e) { 
-if (text.length < 25) throw `𝑪𝒉𝒆 𝒕𝒂𝒍 𝒍𝒂𝒓𝒈𝒐 𝒗𝒂𝒏 𝒔𝒆𝒓 𝒆𝒍 𝒏𝒐𝒎𝒃𝒓𝒆.\n 𝑬𝒍 𝒏𝒐𝒎𝒃𝒓𝒆 𝒏𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒎𝒂́𝒔 𝒅𝒆 25 𝒄𝒂𝒓𝒂𝒄𝒕𝒆𝒓𝒆𝒔`  
+//return conn.reply(m.chat, lenguajeGB['smsNam3'](), fkontak, m)
+throw lenguajeGB['smsNam3']()
 }}
-handler.help = ['setname <text>']
-handler.tags = ['group']
-handler.command = /^(setname|newnombre)$/i
+handler.command = /^(setname|newnombre|nuevonombre)$/i
 handler.group = true
 handler.admin = true
-export default handler
+handler.botAdmin = true
+export default handler 
