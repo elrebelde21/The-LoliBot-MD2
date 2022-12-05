@@ -72,7 +72,7 @@
 ```bash
 𝐄𝐒𝐂𝐑𝐈𝐁𝐄 𝐋𝐎𝐒 𝐒𝐈𝐆𝐔𝐈𝐄𝐍𝐓𝐄𝐒 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐔𝐍𝐎 𝐏𝐎𝐑 𝐔𝐍𝐎:
 > cd 
-> cd The-LoliBot-MD
+> cd storage/downloads/LoliBot
 > npm start
 ```
 ----
@@ -80,9 +80,10 @@
 ### 𝐎𝐁𝐓𝐄𝐍𝐄𝐑 𝐎𝐓𝐑𝐎 𝐂𝐎𝐃𝐈𝐆𝐎 𝐐𝐑 <img src="http://4.bp.blogspot.com/-mFQY5cKLkQ0/U0kwKQn5RzI/AAAAAAAADk0/FDOXxWZ9grU/s1600/QR-code-color.png" height="30px">
 ```bash
 𝐄𝐒𝐂𝐑𝐈𝐁𝐄 𝐋𝐎𝐒 𝐒𝐈𝐆𝐔𝐈𝐄𝐍𝐓𝐄𝐒 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐔𝐍𝐎 𝐏𝐎𝐑 𝐔𝐍𝐎:
+(Apaga termux y elimina las carpetas Botsession)
+Después el termux poner:
 > cd 
-> cd The-LoliBot-MD
-> rm -rf session.data.json
+> cd storage/downloads/LoliBot
 > npm start
 ```
 ----
