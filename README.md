@@ -125,7 +125,7 @@ Después el termux poner:
 
 ----
 
-### colaborador
+### 𝐶𝑜𝑙𝑎𝑏𝑜𝑟𝑎𝑑𝑜𝑟𝑎 
 [![GataNina-Li](https://github.com/GataNina-Li.png?size=100)](https://github.com/GataNina-Li) 
 
 ----
