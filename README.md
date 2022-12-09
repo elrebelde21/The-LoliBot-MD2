@@ -126,7 +126,7 @@ You can deploy this bot anywhere.
 </a>
 </p>
 </details>
-
+----
 <details><summary>Deploy To VPS</summary>
 <p>
 <pre>
