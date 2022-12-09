@@ -111,7 +111,35 @@ Después el termux poner:
 -----
 - [x] Resultado <details><summary>Importar Repositorio - The-LoliBot-MD</summary><img src="https://i.imgur.com/GQyRnMf.jpg"></details>
 -----
-  
+## Deploy
+You can deploy this bot anywhere.
+
+
+<a target="_blank" href="https://app.koyeb.com/deploy?type=git&repository=github.com/LazyDeveloperr/LazyPrincess&branch=master&name=lazyprincessbot"><img alt="Deploy to Koyeb" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg"></a>
+
+
+<details><summary>Deploy To Heroku</summary>
+<p>
+<br>
+<a href="https://heroku.com/deploy?template=https://github.com/LazyDeveloperr/LazyPrincess">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+</a>
+</p>
+</details>
+
+<details><summary>Deploy To VPS</summary>
+<p>
+<pre>
+git clone https://github.com/LazyDeveloperr/LazyPrincess
+# Install Packages
+pip3 install -U -r requirements.txt
+Edit info.py with variables as given below then run bot
+python3 bot.py
+</pre>
+</p>
+</details>
+
+-----
 ### `—◉ 📝 𝐍𝐎𝐓𝐀 📝`
 ```bash
 🔸𝐄𝐒𝐓𝐄 𝐑𝐄𝐏𝐎𝐒𝐈𝐓𝐎𝐑𝐈𝐎 𝐏𝐮𝐁𝐋𝐈𝐂𝐀 𝐋𝐀 𝐕𝐄𝐑𝐒𝐈𝐎́𝐍 𝐀𝐂𝐓𝐔𝐀𝐋|𝐎𝐅𝐈𝐂𝐈𝐀𝐋 𝐃𝐄 𝐓𝐡𝐄 𝐋𝐎𝐋𝐈𝐁𝐎𝐓-𝐌𝐃
