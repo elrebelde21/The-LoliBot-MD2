@@ -6,7 +6,7 @@ global.db.data.users[m.sender].money += 100
 global.db.data.users[m.sender].exp += 100
   
 let vn = './media/a.mp3'
-conn.sendFile(m.chat, vn, 'a.mp3', null, m, true, { 
+conn.sendMessage(m.chat, vn, 'a.mp3', null, m, true, { 
 type: 'audioMessage', 
 ptt: true 
 })
