@@ -1,26 +1,36 @@
-import { youtubeSearch } from '@bochilteam/scraper'
-let handler = async (m, { conn, command, text, usedPrefix }) => {
-if (!text) throw `*🤔𝙦𝙪𝙚 𝙚𝙨𝙩𝙖 𝙗𝙪𝙨𝙘𝙖𝙙𝙤?🤔 𝙄𝙣𝙜𝙧𝙚𝙨𝙚 𝙚𝙡 𝙣𝙤𝙢𝙗𝙧𝙚/𝙩𝙞𝙩𝙪𝙡𝙤 𝙙𝙚 𝙘𝙖𝙣𝙘𝙞𝙤𝙣*\n\n*—◉ 𝙀𝙟𝙚𝙢𝙥𝙡𝙤:*\n*${usedPrefix + command} lgante bar*`
-let vid = (await youtubeSearch(text)).video[0]
-if (!vid) throw '*[❗𝙄𝙣𝙛𝙤❗] 𝙇𝙤𝙨 𝙨𝙞𝙚𝙣𝙩𝙤, 𝙣𝙤 𝙥𝙪𝙙𝙚 𝙚𝙣𝙘𝙤𝙣𝙩𝙧𝙖𝙧 𝙚𝙡 𝙖𝙪𝙙𝙞𝙤/𝙫𝙞𝙙𝙚𝙤, 𝙞𝙣𝙩𝙚𝙣𝙩𝙚 𝙘𝙤𝙣 𝙤𝙩𝙧𝙤𝙨 𝙣𝙤𝙢𝙗𝙧𝙚𝙨/𝙩𝙞𝙩𝙪𝙡𝙤𝙨*'
+import fetch from 'node-fetch'
+let handler = async (m, {command, conn, text}) => {
+if (!text) throw `🤔𝙦𝙪𝙚 𝙚𝙨𝙩𝙖 𝙗𝙪𝙨𝙘𝙖𝙙𝙤?🤔 𝙄𝙣𝙜𝙧𝙚𝙨𝙚 𝙚𝙡 𝙣𝙤𝙢𝙗𝙧𝙚/𝙩𝙞𝙩𝙪𝙡𝙤 𝙙𝙚 𝙘𝙖𝙣𝙘𝙞𝙤𝙣\n\n*—◉ 𝙀𝙟𝙚𝙢𝙥𝙡𝙤:\n#play.1 lgante - bar*`
 try {
-let { title, description, thumbnail, videoId, durationH, viewH, publishedTime } = vid
+let vid2 = await (await fetch(`https://api.lolhuman.xyz/api/ytsearch?apikey=${lolkeysapi}&query=${text}`)).json()
+let { videoId, title, views, published, thumbnail } = await vid2.result[0]
 const url = 'https://www.youtube.com/watch?v=' + videoId
-conn.sendHydrated(m.chat, `
-📌 *𝗧𝗶𝘁𝘂𝗹𝗼:* ${title}
-📇 *𝗗𝗲𝘀𝗰𝗿𝗶𝗽𝗰𝗶𝗼𝗻:* ${description}
-📆 *𝗣𝘂𝗯𝗹𝗶𝗰𝗮𝗰𝗶𝗼𝗻:* ${publishedTime}
-⌚ *𝗗𝘂𝗿𝗮𝗰𝗶𝗼𝗻:* ${durationH}
-👀 *𝗩𝗶𝘀𝘁𝗮𝘀:* ${viewH}
-`.trim(), author, thumbnail, '', '', null, null, [
-    ['𝐀𝐔𝐃𝐈𝐎', `${usedPrefix}yta ${url}`],
-    ['𝐕𝐈𝐃𝐄𝐎', `${usedPrefix}ytv ${url}`],
-], m)
-}catch(e){
+let ytLink = await fetch(`https://api.lolhuman.xyz/api/ytplay2?apikey=${lolkeysapi}&query=${text}`)
+let jsonn = await ytLink.json()
+let aud = await jsonn.result.audio
+let capt = `📌 *𝗧𝗶𝘁𝘂𝗹𝗼:*: ${title}\n📆 *𝗣𝘂𝗯𝗹𝗶𝗰𝗮𝗰𝗶𝗼𝗻:* ${published}\n👀 *𝗩𝗶𝘀𝘁𝗮𝘀:* ${views}`
+const buttons = [{buttonId: `#menu`, buttonText: {displayText: '🎅 Menu 🎅'}, type: 1}]
+const buttonMessage = { image: {url: thumbnail}, caption: capt, footer: '*ᴇɴᴠɪᴀɴᴅᴏ ᴀᴜᴅɪᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*', buttons: buttons, headerType: 4 }
+let msg = await conn.sendMessage(m.chat, buttonMessage, { quoted: m })
+conn.sendMessage(m.chat, { audio: { url: aud }, mimetype: 'audio/mp4', fileName: `${title}.mp3`}, {quoted: msg})
+
+if (command == 'play2') {
+let res = await fetch(`https://api.lolhuman.xyz/api/ytplay2?apikey=${lolkeysapi}&query=${text}`)
+let { videoId, title, views, published, thumbnail } = await vid2.result[0]
+const url = 'https://www.youtube.com/watch?v=' + videoId
+let ytLink = await fetch(`https://api.lolhuman.xyz/api/ytplay2?apikey=${lolkeysapi}&query=${text}`)
+let jsonn = await ytLink.json()
+let vid = await jsonn.result.video
+let capt = `📌 *𝗧𝗶𝘁𝘂𝗹𝗼:*: ${title}\n📆 *𝗣𝘂𝗯𝗹𝗶𝗰𝗮𝗰𝗶𝗼𝗻:* ${published}\n👀 *𝗩𝗶𝘀𝘁𝗮𝘀:* ${views}`
+const buttons = [{buttonId: `#playlist ${title}`, buttonText: {displayText: '𓃠 𝗠 𝗔 𝗦   𝗥 𝗘 𝗦 𝗨 𝗟 𝗧 𝗔 𝗗 𝗢 𝗦'}, type: 1}]
+const buttonMessage = { image: {url: thumbnail}, caption: capt, footer: '*ᴇɴᴠɪᴀɴᴅᴏ video, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*', buttons: buttons, headerType: 4 }
+let msg = await conn.sendMessage(m.chat, buttonMessage, { quoted: m })
+let json = await res.json()
+conn.sendFile(m.chat, json.result.video, 'error.mp4', `🔰 𝘼𝙦𝙪𝙞 𝙚𝙨𝙩𝙖 𝙩𝙪 𝙫𝙞𝙙𝙚𝙤`, m)}
+} catch (e) {
 m.reply('*[❗𝙄𝙣𝙛𝙤❗] 𝑬𝒓𝒓𝒐𝒓, 𝒑𝒐𝒓 𝒇𝒂𝒗𝒐𝒓 𝒗𝒖𝒆𝒍𝒗𝒂 𝒂 𝒊𝒏𝒕𝒆𝒏𝒕𝒂𝒓𝒍𝒐*')
-console.log(e)
 }}
 handler.help = ['play', 'play2'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']
-handler.command = /^play2?$/i
+handler.command = ['play', 'play2']
 export default handler
