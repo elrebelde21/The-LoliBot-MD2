@@ -900,7 +900,7 @@ export async function handler(chatUpdate) {
                 if (!('autosticker' in chat)) chat.autosticker = false                      
                 if (!('audios' in chat)) chat.audios = false                     
 		if (!('antiver' in chat)) chat.antiver = true                    
-                if (!('antiLink' in chat)) chat.antiLink = false                    
+                if (!('antiLink' in chat)) chat.antiLink = true                    
                 if (!('antiLink2' in chat)) chat.antiLink2 = false
 		if (!('antiTiktok' in chat)) chat.antiTiktok = false
 		if (!('antiYoutube' in chat)) chat.antiYoutube = false
@@ -908,11 +908,11 @@ export async function handler(chatUpdate) {
 		if (!('antiFacebook' in chat)) chat.antiFacebook = false
 		if (!('antiInstagram' in chat)) chat.antiInstagram = false
 		if (!('antiTwitter' in chat)) chat.antiInstagram = false
-		if (!('antifake' in chat)) chat.antifake = false
+		if (!('antifake' in chat)) chat.antifake = true
 		if (!('reaction' in chat)) chat.reaction = true    
                 if (!('viewonce' in chat)) chat.viewonce = false         
                 if (!('modoadmin' in chat)) chat.modoadmin = false           
-                if (!('antitoxic' in chat)) chat.antitoxic = true 
+                if (!('antitoxic' in chat)) chat.antitoxic = false 
                 if (!('simi' in chat)) chat.simi = false
                 if (!('antiTraba' in chat))
                     chat.antiTraba = true
@@ -934,7 +934,7 @@ export async function handler(chatUpdate) {
                     autosticker: false,
                     audios: true,
 		    antiver: true,
-                    antiLink: false,
+                    antiLink: true,
                     antiLink2: false,
 		    antiTiktok: false,
 		    antiYoutube: false,
@@ -942,11 +942,11 @@ export async function handler(chatUpdate) {
 		    antiFacebook: false,
 		    antiInstagram: false,
 		    antiTwitter: false,
-		    antifake: false,
+		    antifake: true,
 		    reaction: true,
                     viewonce: false,
                     modoadmin: false,
-                    antitoxic: true,
+                    antitoxic: false,
                     simi: false,
                     antiTraba: true,
 	            autolevelup: true,

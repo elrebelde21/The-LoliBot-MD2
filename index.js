@@ -13,11 +13,11 @@ const { name, author } = require(join(__dirname, './package.json'))
 const { say } = cfonts
 const rl = createInterface(process.stdin, process.stdout)
 
-say('The loli\nBot\nMD', {
+say('The Loli\nBot\nMD', {
 font: 'chrome',
 align: 'center',
 gradient: ['red', 'magenta']})
-say(`Por lolibot`, {
+say(`Por Lolibot`, {
 font: 'console',
 align: 'center',
 gradient: ['red', 'magenta']})
@@ -42,7 +42,8 @@ exec: args[0],
 args: args.slice(1), })
 let p = fork()
 p.on('message', data => {
-console.log('[RECEIVED]', data)
+//setTimeout(() => {  
+console.log('╭--------- - - - ✓\n┆ ✅ TIEMPO DE ACTIVIDAD ACTUALIZADA\n╰-------------------- - - -', data)//}, 50000)
 switch (data) {
 case 'reset':
 p.process.kill()
@@ -68,4 +69,4 @@ let opts = new Object(yargs(process.argv.slice(2)).exitProcess(false).parse())
 if (!opts['test'])
 if (!rl.listenerCount()) rl.on('line', line => {
 p.emit('message', line.trim())})}
-start('main.js')
+start('main.js') 
