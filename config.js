@@ -214,7 +214,7 @@ global.img13 = 'https://i.imgur.com/qevNnBU.jpeg'
 global.img14 = 'https://i.imgur.com/c1xXpPX.jpeg'
 global.img15 = 'https://i.imgur.com/5cofHE5.jpeg'
 
-global.redesMenu = [nna, nn, nnn, nnnttt, md, tik, lb, yt]
+global.redesMenu = [nna, nn, nnn, nnnttt, md, ig, lb, yt]
 global.gataMenu = [img, img2, img6, img7, img8, img9, img13, img14, img15]
 global.gataVidMenu = ['./media/menus/Menuvid1.mp4', './media/menus/Menuvid2.mp4', './media/menus/Menuvid3.mp4']
 
