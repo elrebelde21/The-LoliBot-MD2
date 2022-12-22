@@ -113,17 +113,17 @@ global.author = '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫'
 global.vs = '1.4.0 (Navidad) 🎄'
 global.version = vs
 
-global.gt = '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫'
-global.gatabot = gt
+global.lb = '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫'
+global.lolibot = lb
 
 global.yt = 'https://www.youtube.com/@TheLoliBot-MD'
 global.youtube = yt
 
 global.ig = 'https://www.tiktok.com/@thelolibot_md'
-global.gatadiosig = ig
+global.tiktok = ig
 
 global.md = 'https://github.com/elrebelde21/The-LoliBot-MD'
-global.gatabot = md
+global.lolibot = md
 
 global.nna = 'https://chat.whatsapp.com/JESaesjOEcB6wnGX0QYT9o'
 global.nnagrupo = nna //Actualización, información sobre el bot
@@ -132,20 +132,11 @@ global.nna2 = 'JESaesjOEcB6wnGX0QYT9o'
 global.nn = 'https://chat.whatsapp.com/Ei87TDT7fsI3Q3p5MnM9sW'
 global.nngrupo = nn //Grupo 1
 
-global.nnn = 'https://chat.whatsapp.com/JZ0Ls4Fqc4b5pirH1BYvYK'
+global.nnn = 'https://chat.whatsapp.com/L4UWejhXNrDCVTq3RrBRMM'
 global.nnngrupo = nnn //Grupo 2
-
-global.nnnt = 'https://chat.whatsapp.com/KLnwrWtV446600FNTgoagV'
-global.nnntgrupo = nnnt //Grupo 3
-
-global.nnntt = 'https://chat.whatsapp.com/Egq2HbYkXH23Oh83so8JE4'
-global.nnnttgrupo = nnntt //Grupo 4
 
 global.nnnttt = 'https://chat.whatsapp.com/DNJ4Ppm5ysn3fhjGflrr0J'
 global.nnntttgrupo = nnnttt //Grupo ayuda sobre el bot
-
-global.paypal = ''
-global.donar = paypal
 
 global.asistencia = 'Wa.me/5492266466080' //Dudas? escríbeme...
 
@@ -223,7 +214,7 @@ global.img13 = 'https://i.imgur.com/qevNnBU.jpeg'
 global.img14 = 'https://i.imgur.com/c1xXpPX.jpeg'
 global.img15 = 'https://i.imgur.com/5cofHE5.jpeg'
 
-global.redesMenu = [nna, nn, nnn, nnnt, nnntt, nnnttt, md, ig, paypal, yt]
+global.redesMenu = [nna, nn, nnn, nnnttt, md, tik, lb, yt]
 global.gataMenu = [img, img2, img6, img7, img8, img9, img13, img14, img15]
 global.gataVidMenu = ['./media/menus/Menuvid1.mp4', './media/menus/Menuvid2.mp4', './media/menus/Menuvid3.mp4']
 
