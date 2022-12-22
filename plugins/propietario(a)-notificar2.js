@@ -1,9 +1,7 @@
 const linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})( [0-9]{1,3})?/i
 const grupoOficial1 = nn
 const grupoOficial2 = nnn
-const grupoOficial3 = nnnt
-const grupoOficial4 = nnntt
-const grupoOficial5 = nna
+const grupoOficial3 = nna
 
 let handler = async (m, { conn, text, usedPrefix, command, participants, groupMetadata }) => {
 let users = m.sender.split`@`[0]
@@ -12,8 +10,6 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 let [_1, code1] = grupoOficial1.match(linkRegex) || []
 let [_2, code2] = grupoOficial2.match(linkRegex) || []
 let [_3, code3] = grupoOficial3.match(linkRegex) || []
-let [_4, code4] = grupoOficial4.match(linkRegex) || []
-let [_5, code5] = grupoOficial5.match(linkRegex) || []
 
 if ( users == 5492266466080 || users == 5492266613038 ) try {
 if (!text) return m.reply(`*Falta Texto*`) 
@@ -21,8 +17,6 @@ if (!text) return m.reply(`*Falta Texto*`)
 let res1 = await conn.groupAcceptInvite(code1)
 let res2 = await conn.groupAcceptInvite(code2)
 let res3 = await conn.groupAcceptInvite(code3)
-let res4 = await conn.groupAcceptInvite(code4)
-let res5 = await conn.groupAcceptInvite(code5)
 
 await conn.sendMessage(res1, { text: text + '\n\n_atte. 𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫_', mentions: (await conn.groupMetadata(`${res1}`)).participants.map(v => v.id) }, { quoted: fkontak })
 await conn.sendMessage(res2, { text: text + '\n\n_atte. 𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫_', mentions: (await conn.groupMetadata(`${res2}`)).participants.map(v => v.id) }, { quoted: fkontak })
