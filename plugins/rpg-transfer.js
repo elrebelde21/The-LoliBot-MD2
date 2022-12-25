@@ -14,7 +14,7 @@ async function handler(m, { conn, args, usedPrefix, command }) {
     
 *${usedPrefix + command}  tipo cantidad @tag*
 *EJEMPLO*
-*${usedPrefix + command} exp 30 @ etiqueta*
+*${usedPrefix + command} exp 30 @59300000000*
 
 ╭━━━━━━━━━━━━━━━━━━ ღ
 ┃ ✅ *RECURSOS DISPONIBLES*
@@ -43,7 +43,7 @@ async function handler(m, { conn, args, usedPrefix, command }) {
 *DESEAS CONTINUAR?*`.trim()
     
     let c = `${wm}\nTienes 60 segundos!!`
-    conn.sendButton(m.chat, confirm, c, null, [['Si'], ['No']], m, { mentions: [who] })
+    conn.sendButton(m.chat, confirm, c, null, [['𝙎𝙄'], ['𝙉𝙊']], m, { mentions: [who] })
     confirmation[m.sender] = {
         sender: m.sender,
         to: who,
@@ -62,12 +62,12 @@ handler.before = async m => {
     if (m.id === message.id) return
     let user = global.db.data.users[sender]
     let _user = global.db.data.users[to]
-    if (/No?/g.test(m.text.toLowerCase())) {
+    if (/𝙉𝙊?/g.test(m.text.toLowerCase())) {
         clearTimeout(timeout)
         delete confirmation[sender]
         return m.reply('*CANCELADO*')
     }
-    if (/Si?/g.test(m.text.toLowerCase())) {
+    if (/𝙎𝙄?/g.test(m.text.toLowerCase())) {
         let previous = user[type] * 1
         let _previous = _user[type] * 1
         user[type] -= count * 1
