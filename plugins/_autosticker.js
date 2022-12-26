@@ -24,8 +24,7 @@ stiker = await sticker(img, false, packname, author)
 if (isUrl(m.text)) stiker = await sticker(false, m.text.split(/\n| /i)[0], packname, author)
 else return
 }
-if (stiker) {
-await this.sendFile(m.chat, stiker, null, { asSticker: true })
+if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `h`, mediaType: 2, sourceUrl: nn, thumbnail: imagen1}}}, { quoted: m })
 }}
 return !0
 }
