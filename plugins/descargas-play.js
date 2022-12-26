@@ -28,6 +28,8 @@ let msg = await conn.sendMessage(m.chat, buttonMessage, { quoted: m })
 let json = await res.json()
 conn.sendFile(m.chat, json.result.video, 'error.mp4', `🔰 𝘼𝙦𝙪𝙞 𝙚𝙨𝙩𝙖 𝙩𝙪 𝙫𝙞𝙙𝙚𝙤`, m)}
 } catch (e) {
+m.reply('*[❗𝙄𝙣𝙛𝙤❗] ERROR, SERVIDOR CAIDO, INTENTA DEL NUEVO POR FAVOR*')
+}}
 handler.help = ['play', 'play2'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']
 handler.command = ['play', 'play2']
