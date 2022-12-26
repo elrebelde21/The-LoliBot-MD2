@@ -59,6 +59,7 @@ irq: 0
 }})
 
 let old = performance.now()
+await delay(5 * 5000)
 await conn.sendButton(m.chat, wm, `_𝘾𝙤𝙢𝙚𝙣𝙯𝙖𝙣𝙙𝙤 𝙥𝙧𝙪𝙚𝙗𝙖 𝙙𝙚𝙡 𝙫𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙 🚀..._`, null, [['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)  
 await m.reply('🚀')
 await m.reply('🚀🚀')
@@ -108,6 +109,8 @@ handler.help = ['ping', 'speed']
 handler.tags = ['info', 'tools']
 handler.command = /^(ping|speed|velocidad|rapidez|velocity)$/i
 export default handler
+
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
