@@ -7,13 +7,10 @@ import { en, es, id, ar, pt } from './lib/idiomas/total-idiomas.js'
 
 //⊱ ━━━━━.⋅ Añada los numeros a ser Propietario ⋅.━━━━ ⊰  
 global.owner = [
+  ['5492266466080', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', true],
   ['5492266613038', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', true],
-  global.owner¹ = ['wa.me/5492266613038'],
-  global.owner1 = ['wa.me/5492266466080'], //owner
-  global.owner2 =  ['wa.me/447418333329'], //bot 1
-  //['593968585383'], DEJEN ESTO ASÍ POR AHORA POR FAVOR
-  global.owner3 =  ['wa.me/5492266573414'], //bot 2
-  global.owner4 =  ['wa.me/524531577440'] 
+//['593968585383'], DEJEN ESTO ASÍ POR AHORA POR FAVOR
+  ['447418333329']
 ]
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
