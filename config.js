@@ -134,7 +134,7 @@ global.nngrupo = nn //Grupo 1
 global.nnn = 'https://chat.whatsapp.com/L4UWejhXNrDCVTq3RrBRMM'
 global.nnngrupo = nnn //Grupo 2
 
-global.nnnttt = 'https://chat.whatsapp.com/DNJ4Ppm5ysn3fhjGflrr0J'
+global.nnnttt = 'https://chat.whatsapp.com/KGNYdXQd3LYE7y7N0E8mDd'
 global.nnntttgrupo = nnnttt //Grupo ayuda sobre el bot
 
 global.asistencia = 'Wa.me/5492266466080' //Dudas? escríbeme...
