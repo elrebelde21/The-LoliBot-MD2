@@ -204,6 +204,7 @@ templateButtons: templateButtonsReplyMessage
 conn.sendMessage(m.chat, tttt, m)  
 }
  }
+ await delay(5000)
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = ['multijuegos', 'juegos']
@@ -211,7 +212,8 @@ handler.group = true
 //handler.exp = 200
 //handler.money = 200
 export default handler
-                              
+const delay = time => new Promise(res => setTimeout(res, time)) 
+                             
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
 function clockString(ms) {

@@ -78,5 +78,7 @@ conn.sendButton(m.chat, `😼 𝑱𝒖𝒆𝒈𝒐 𝒕𝒂𝒕𝒆𝒕𝒊
 `, wm, imgplay, [['😎 𝑼𝒏𝒊𝒓𝒎𝒆 𝒂𝒍 𝒋𝒖𝒆𝒈𝒐𝒔', `${usedPrefix + command} ${text}`]], fkontak, m, { mentions: conn.parseMention(text) })
 conn.game[room.id] = room
 }}
+await delay(5000)
 handler.command = /^(tictactoe|ttc|ttt|xo)$/i
 export default handler
+const delay = time => new Promise(res => setTimeout(res, time))
