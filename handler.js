@@ -302,6 +302,7 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.lastmancinghard)) user.lastmancinghard = 0
               if (!isNumber(user.lastmancingnormal)) user.lastmancingnormal = 0
               if (!isNumber(user.lastmining)) user.lastmining = 0
+              if (!isNumber(user.prueb)) user.prueb = 0
               if (!isNumber(user.lastmisi)) user.lastmisi = 0
               if (!isNumber(user.lastmonthly)) user.lastmonthly = 0
               if (!isNumber(user.lastmulung)) user.lastmulung = 0
