@@ -14,10 +14,10 @@ render: (literal, symbol) => `${literal} ${symbol}B`,
 let handler = async (m, { conn, usedPrefix, command, isRowner}) => {
 try {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
-let grupos = [nna, nn, nnn, nnnttt]
+let grupos = [nna, nn, nnn]
 let gata = [img5, img6, img7, img8, img9]
-let enlace = { contextInfo: { externalAdReply: {title: wm + ' ', body: 'support group' , sourceUrl: grupos.getRandom(), thumbnail: await(await fetch(gata.getRandom())).buffer() }}}
-let enlace2 = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: yt, mediaType: 'VIDEO', description: '', title: wm, body: 'The LoliBot-MD', thumbnailUrl: await(await fetch(img)).buffer(), sourceUrl: yt }}}
+let enlace = { contextInfo: { externalAdReply: {title: wm + ' 🐈', body: 'support group' , sourceUrl: grupos.getRandom(), thumbnail: await(await fetch(gata.getRandom())).buffer() }}}
+let enlace2 = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: yt, mediaType: 'VIDEO', description: '', title: wm, body: '😻 𝗦𝘂𝗽𝗲𝗿 𝗚𝗮𝘁𝗮𝗕𝗼𝘁-𝗠𝗗 - 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 ', thumbnailUrl: await(await fetch(img)).buffer(), sourceUrl: yt }}}
 let dos = [enlace, enlace2]
 
 let _muptime
@@ -59,11 +59,7 @@ irq: 0
 }})
 
 let old = performance.now()
-await conn.sendButton(m.chat, wm, `_𝘾𝙤𝙢𝙚𝙣𝙯𝙖𝙣𝙙𝙤 𝙥𝙧𝙪𝙚𝙗𝙖 𝙙𝙚𝙡 𝙫𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙 🚀..._`, null, [['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)  
-await m.reply('🚀')
-await m.reply('🚀🚀')
-await m.reply('🚀🚀🚀')
-await m.reply(`╰⊱✅⊱ *𝑹𝒆𝒔𝒖𝒍𝒕𝒂𝒅𝒐𝒔* ⊱✅⊱╮`)
+await conn.sendButton(m.chat, wm, `${eg}🚀 _𝘾𝙤𝙢𝙚𝙣𝙯𝙖𝙣𝙙𝙤 𝙥𝙧𝙪𝙚𝙗𝙖 𝙙𝙚𝙡 𝙫𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙 🚀....`, null, [['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)  
 let neww = performance.now()
 let speed = neww - old
 let caption = `*${htki} 𝙫𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙 ${htka}*
@@ -71,17 +67,16 @@ let caption = `*${htki} 𝙫𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙 ${htka}*
 🚄 *${Math.round(neww - old)}* ms
 🚄 *${speed}* ms
 
-❇️ INFO BOT
-
 *${htjava}* 𝙏𝙄𝙀𝙈𝙋𝙊 𝘿𝙀 𝙀𝙅𝙀𝘾𝙐𝘾𝙄𝙊𝙉 : 𝙍𝙐𝙉𝙏𝙄𝙈𝙀 
 ${muptime}
 ${readMore}
-*${htjava} C H A T S*
+*${htjava} 𝐶𝐻𝐴𝑇*
 ▢ *${groupsIn.length}* _Chats de grupo_
 ▢ *${groupsIn.length}* _Grupos unidos_
 ▢ *${groupsIn.length - groupsIn.length}* _Grupos abandonados_
 ▢ *${chats.length - groupsIn.length}* _Chats Privados_
 ▢ *${chats.length}* _Total Chats_
+
 
 *${htjava} S E R V I D O R : S E R V E R*
 *🟢 RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
@@ -102,7 +97,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 
 await conn.sendButton(m.chat, wm, caption, gata.getRandom(), [['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], m, dos.getRandom())
 } catch (e) {
-await conn.reply(m.chat, `${fg}*ALGO SALIÓ MAL.*\n\n\`\`\`REPORTE ESTE COMANDO ${usedPrefix + command} CON EL COMANDO ${usedPrefix}reporte\`\`\``, m)
+await conn.reply(m.chat, `${fg}*ALGO SALIÓ MAL. ERRORS FOUND.*\n\n\`\`\`REPORTE ESTE COMANDO ${usedPrefix + command} CON EL COMANDO ${usedPrefix}reporte\`\`\``, m)
 }}
 handler.help = ['ping', 'speed']
 handler.tags = ['info', 'tools']
@@ -117,5 +112,5 @@ function clockString(ms) {
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return [' ' + d, ' *Días ☀️*\n ', h, ' *Horas 🕐*\n ', m, ' *Minuto ⏰*\n ', s, ' *Segundo ⏱️* '].map(v => v.toString().padStart(2, 0)).join('')
+  return [' ' + d, ' *Días : Days ☀️*\n ', h, ' *Horas : Hours 🕐*\n ', m, ' *Minuto : Minute ⏰*\n ', s, ' *Segundo : Second ⏱️* '].map(v => v.toString().padStart(2, 0)).join('')
 }
