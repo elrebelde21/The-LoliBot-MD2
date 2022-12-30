@@ -11,6 +11,7 @@ await m.reply(`${eg}𝑬𝒍 𝒔𝒑𝒂𝒎 𝒔𝒆 𝒆𝒏𝒗𝒊𝒐́ *$
 for (let i = fixedJumlah; i > 1; i--) {
 if (i !== 0) conn.reply(fixedNumber, pesan.trim(), m)
 }}
+await delay(10000)
 handler.help = ['spamwa <number>|<mesage>|<no of messages>']
 handler.tags = ['General']
 handler.command = /^spam(wa)?$/i
@@ -21,3 +22,4 @@ handler.level = 9
 handler.limit = 80
 handler.register = true
 export default handler 
+const delay = time => new Promise(res => setTimeout(res, time))

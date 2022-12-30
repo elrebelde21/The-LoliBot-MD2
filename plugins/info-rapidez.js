@@ -104,10 +104,12 @@ await conn.sendButton(m.chat, wm, caption, gata.getRandom(), [['𝗠 𝗘 𝗡 �
 } catch (e) {
 await conn.reply(m.chat, `${fg}*ALGO SALIÓ MAL.*\n\n\`\`\`REPORTE ESTE COMANDO ${usedPrefix + command} CON EL COMANDO ${usedPrefix}reporte\`\`\``, m)
 }}
+await delay(5000)
 handler.help = ['ping', 'speed']
 handler.tags = ['info', 'tools']
 handler.command = /^(ping|speed|velocidad|rapidez|velocity)$/i
 export default handler
+const delay = time => new Promise(res => setTimeout(res, time))
 
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
