@@ -184,8 +184,10 @@ conn.reply(m.chat, ` *❤️❤️ MEDIDOR DE AMOR ❤️❤️*
  mentions: m.mentionedJid
  } : {})} 
 }
+await delay(5000)
 handler.help = ['love', 'gay2', 'lesbiana', 'pajero', 'pajera', 'puto', 'puta', 'manco', 'manca', 'rata', 'prostituta', 'prostituto'].map(v => v + ' @tag | nombre')
 handler.tags = ['calculator']
 handler.command = /^love|gay2|lesbiana|pajero|pajera|puto|puta|manco|manca|rata|prostituta|prostituto/i
 handler.exp = 100
 export default handler
+const delay = time => new Promise(res => setTimeout(res, time))

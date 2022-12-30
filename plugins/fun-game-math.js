@@ -47,12 +47,14 @@ if (global.math[id]) conn.sendButton(m.chat, `𝑺𝒆 𝒂𝒄𝒂𝒃𝒐 𝒆
 delete global.math[id]
 }, math.time)
 ]}
+await delay(5000)
 handler.help = ['math <mode>']
 handler.tags = ['game']
 handler.register = true
 handler.command = /^math|mates|matemáticas/i
 
 export default handler
+const delay = time => new Promise(res => setTimeout(res, time))
 
 let modes = {
 noob: [-3, 3,-3, 3, '+-', 15000, 30], 
