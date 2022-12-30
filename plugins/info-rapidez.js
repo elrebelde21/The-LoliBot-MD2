@@ -109,6 +109,7 @@ handler.help = ['ping', 'speed']
 handler.tags = ['info', 'tools']
 handler.command = /^(ping|speed|velocidad|rapidez|velocity)$/i
 export default handler
+const delay = time => new Promise(res => setTimeout(res, time))
 
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
@@ -120,5 +121,3 @@ function clockString(ms) {
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [' ' + d, ' *Días ☀️*\n ', h, ' *Horas 🕐*\n ', m, ' *Minuto ⏰*\n ', s, ' *Segundo ⏱️* '].map(v => v.toString().padStart(2, 0)).join('')
 }
-
-const delay = time => new Promise(res => setTimeout(res, time))
