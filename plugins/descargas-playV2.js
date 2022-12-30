@@ -4,15 +4,16 @@ if (!text) throw `🤔𝙦𝙪𝙚 𝙚𝙨𝙩𝙖 𝙗𝙪𝙨𝙘𝙖𝙙𝙤
 try {
 let res = await fetch(`https://api.lolhuman.xyz/api/ytplay2?apikey=${lolkeysapi}&query=${text}`)
 if (command == 'play.1') {
-conn.reply(m.chat, `_⏳𝙋𝙧𝙤𝙘𝙚𝙨𝙖𝙣𝙙𝙤.... 𝙚𝙨𝙥𝙚𝙧𝙚 𝙪𝙣𝙤𝙨 𝙢𝙞𝙣𝙪𝙩𝙤𝙨 𝙚𝙡 𝙦𝙪𝙚 𝙢𝙖𝙣𝙙𝙤 𝙨𝙪𝙨 𝙖𝙪𝙙𝙞𝙤...⏳_`, m)  
+conn.reply(m.chat, `*_⏳𝙋𝙧𝙤𝙘𝙚𝙨𝙖𝙣𝙙𝙤.... 𝙚𝙨𝙥𝙚𝙧𝙚 𝙪𝙣𝙤𝙨 𝙢𝙞𝙣𝙪𝙩𝙤𝙨 𝙚𝙡 𝙦𝙪𝙚 𝙢𝙖𝙣𝙙𝙤 𝙨𝙪𝙨 𝙖𝙪𝙙𝙞𝙤...⏳_*`, m)  
 let json = await res.json()
-conn.sendFile(m.chat, json.result.audio, 'error.mp3', null, m, false, { mimetype: 'audio/mp4' })}
+let aa = conn.sendMessage(m.chat, { audio: { url: json.result.audio }, fileName: `error.mp3`, mimetype: 'audio/mp4' }, { quoted: m })
+if (!aa) return conn.sendFile(m.chat, json.result.audio, 'error.mp3', null, m, false, { mimetype: 'audio/mp4' })}
 if (command == 'play.2') {
-conn.reply(m.chat, `_⏳𝙋𝙧𝙤𝙘𝙚𝙨𝙖𝙣𝙙𝙤.... 𝙚𝙨𝙥𝙚𝙧𝙚 𝙪𝙣𝙤𝙨 𝙢𝙞𝙣𝙪𝙩𝙤𝙨 𝙚𝙡 𝙦𝙪𝙚 𝙢𝙖𝙣𝙙𝙤 𝙨𝙪𝙨 𝙑𝙞𝙙𝙚𝙤...⏳_`, m)
+conn.reply(m.chat, `*_⏳𝙋𝙧𝙤𝙘𝙚𝙨𝙖𝙣𝙙𝙤.... 𝙚𝙨𝙥𝙚𝙧𝙚 𝙪𝙣𝙤𝙨 𝙢𝙞𝙣𝙪𝙩𝙤𝙨 𝙚𝙡 𝙦𝙪𝙚 𝙢𝙖𝙣𝙙𝙤 𝙨𝙪𝙨 𝙑𝙞𝙙𝙚𝙤...⏳_*`, m)
 let json = await res.json()
 conn.sendFile(m.chat, json.result.video, 'error.mp4', `_𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫_`, m)}
 } catch (e) {
-m.reply('*[❗𝙄𝙣𝙛𝙤❗] 𝑬𝒓𝒓𝒐𝒓, 𝒑𝒐𝒓 𝒇𝒂𝒗𝒐𝒓 𝒗𝒖𝒆𝒍𝒗𝒂 𝒂 𝒊𝒏𝒕𝒆𝒏𝒕𝒂𝒓𝒍𝒐*')
+m.reply('*[❗𝐈𝐍𝐅𝐎❗] Error, por favor vuelva a intentarlo*')
 }}
 handler.help = ['play.1' , 'play.2'].map(v => v + ' <texto>')
 handler.tags = ['downloader']
