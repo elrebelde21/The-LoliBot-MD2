@@ -1,8 +1,8 @@
 import { googleImage } from '@bochilteam/scraper'
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 let user = global.db.data.users[m.sender]
-  let time = user.prueb + 40000 //tiempo de espera en min
-if (new Date - user.prueb < 40000) return await conn.reply(m.chat, `*𝙀𝙨𝙥𝙚𝙧𝙖 𝙪𝙣𝙤𝙨 𝙨𝙚𝙜𝙪𝙣𝙙𝙤𝙨 𝙥𝙖𝙧𝙖 𝙪𝙨𝙖𝙧 𝙤𝙩𝙧𝙤 𝙘𝙤𝙢𝙖𝙣𝙙𝙤*`,  m)
+  let time = user.prueb + 5000 //tiempo de espera en min
+if (new Date - user.prueb < 5000) return await conn.reply(m.chat, `*𝙀𝙨𝙥𝙚𝙧𝙖 𝙪𝙣𝙤𝙨 𝙨𝙚𝙜𝙪𝙣𝙙𝙤𝙨 𝙥𝙖𝙧𝙖 𝙪𝙨𝙖𝙧 𝙤𝙩𝙧𝙤 𝙘𝙤𝙢𝙖𝙣𝙙𝙤*`,  m)
 
 if (!text) throw `𝗤𝘂𝗲 𝗯𝘂𝘀𝗰𝗮𝗿? 🤔️\n 𝗨𝘀𝗲𝗿 𝙙𝙚 𝙡𝙖 𝙨𝙞𝙜𝙪𝙞𝙚𝙣𝙩𝙚 𝙢𝙖𝙣𝙚𝙧𝙖\n𝗘𝗷𝗲𝗺𝗽𝗹𝗼\n*${usedPrefix + command} Loli*`
 const res = await googleImage(text)
