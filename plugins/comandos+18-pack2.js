@@ -4,6 +4,8 @@ if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `[ ⚠️ ] Los comando
 let url = packgirl[Math.floor(Math.random() * packgirl.length)]
 conn.sendButton(m.chat, `_🥵 toma mi pack 😏_`, author, url, [['😏 𝑺𝒊𝒈𝒖𝒊𝒆𝒏𝒕𝒆 😏', `/${command}`]], m)
 }
+await delay(5000)
+
 handler.help = ['pack2']
 handler.tags = ['internet']
 handler.command = /^(pack2)$/i
@@ -11,6 +13,7 @@ handler.level = 1
 handler.money = 100
 handler.register = true
 export default handler
+const delay = time => new Promise(res => setTimeout(res, time)) 
 
 global.packgirl = [
   "https://i.imgur.com/mwLJaxU.jpg",
