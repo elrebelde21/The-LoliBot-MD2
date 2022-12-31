@@ -53,11 +53,11 @@ if (astro == 'tijera') {
 global.db.data.users[m.sender].exp += 1000
 m.reply(`🥳 𝙃𝘼 𝙂𝘼𝙉𝘼𝘿𝙊! 🎉\n\n👉🏻 𝑻𝒖: ${text}\n👉🏻 𝑬𝒍 𝒃𝒐𝒕: ${astro}\n🎁 𝑷𝒓𝒆𝒎𝒊𝒐 +1000 𝑿𝑷`)
 } else {
+await delay(5000)
 global.db.data.users[m.sender].exp -= 300
 m.reply(`𝙃𝘼 𝙋𝙀𝙍𝘿𝙄𝘿𝙊! 🤡\n\n👉🏻 𝑻𝒖: ${text}\n👉🏻 𝑬𝒍 𝒃𝒐𝒕: ${astro}\n❌ 𝑷𝒓𝒆𝒎𝒊𝒐 -300 𝑿𝑷`)
 }
 }}
-await delay(5000)
 handler.help = ['ppt']
 handler.tags = ['games']
 handler.command = /^(ppt)$/i
