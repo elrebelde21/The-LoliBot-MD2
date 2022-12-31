@@ -13,6 +13,9 @@ let str = `
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 2) *${nnn}*\n
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+✅ *Grupo del Colaboracion ${lb} con GataBot-MD 
+ *${nnntt}*\n
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
  *infomarte sobre la nueva actualización del bot*
  *${nna}*\n
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
