@@ -137,6 +137,8 @@ global.nnngrupo = nnn //Grupo 2
 global.nnnttt = 'https://chat.whatsapp.com/KGNYdXQd3LYE7y7N0E8mDd'
 global.nnntttgrupo = nnnttt //Grupo ayuda sobre el bot
 
+global.nnntt = 'https://chat.whatsapp.com/F1965v9fToG82aPuzj2a0a' //Grupo 7 COL
+
 global.asistencia = 'Wa.me/5492266466080' //Dudas? escríbeme...
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
@@ -213,7 +215,7 @@ global.img13 = 'https://i.imgur.com/qevNnBU.jpeg'
 global.img14 = 'https://i.imgur.com/c1xXpPX.jpeg'
 global.img15 = 'https://i.imgur.com/5cofHE5.jpeg'
 
-global.redesMenu = [nna, nn, nnn, nnnttt, md, ig, lb, yt]
+global.redesMenu = [nna, nn, nnn, nnnttt, nnntt, md, ig, lb, yt]
 global.gataMenu = [img, img2, img6, img7, img8, img9, img13, img14, img15]
 global.gataVidMenu = ['./media/menus/Menuvid1.mp4', './media/menus/Menuvid2.mp4', './media/menus/Menuvid3.mp4']
 
