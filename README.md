@@ -22,6 +22,9 @@
 [![blog](https://img.shields.io/badge/Grupo2-lolibot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
 )](https://chat.whatsapp.com/FBMEpvnu3tsFvMtGWNCKCj) <a href="https://chat.whatsapp.com/FBMEpvnu3tsFvMtGWNCKCj"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
 
+<a href="https://chat.whatsapp.com/F1965v9fToG82aPuzj2a0a" target="blank"><img src="https://img.shields.io/badge/🐈 𝐆𝐚𝐭𝐚𝐁𝐨𝐭 & 𝐋𝐨𝐥𝐢𝐁𝐨𝐭 🥳-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+</a>
+
 -----
 [![blog](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
 ](https://youtube.com/channel/UCPSrzHooOjQMRmUK_2RLcSw)  <img src="https://github.com/siegrin/siegrin/blob/main/Assets/powerup.gif" height="29px">
