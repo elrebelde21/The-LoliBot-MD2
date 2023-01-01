@@ -5,7 +5,7 @@ let poin_bot = 200
 let handler = async (m, { conn, usedPrefix, text }) => {
 conn.suit = conn.suit ? conn.suit : {}
 if (Object.values(conn.suit).find(room => room.id.startsWith('suit') && [room.p, room.p2].includes(m.sender))) throw '*[❗] Termina tu partida antes de iniciar otra*'
-let textquien = `*a quien quieres desafiar? etiqueta q una persona*\n\n*—◉ Ejemplo:*\n${usedPrefix}ppt @${global.suittag}`
+let textquien = `*a quien quieres desafiar? etiqueta a una persona*\n\n*—◉ Ejemplo:*\n${usedPrefix}ppt @${global.suittag}`
 if (!m.mentionedJid[0]) return m.reply(textquien, m.chat, { mentions: conn.parseMention(textquien)})
 if (Object.values(conn.suit).find(room => room.id.startsWith('suit') && [room.p, room.p2].includes(m.mentionedJid[0]))) throw `*[❗] La persona a la que quieres desafiar aun esta jugando otta partida, espera a que termine de jugar`
 let id = 'suit_' + new Date() * 1
