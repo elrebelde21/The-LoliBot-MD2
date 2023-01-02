@@ -33,7 +33,7 @@ https://chat.whatsapp.com/JZaD3sfNoVW4JvaoQ4uVwF
 𝐚𝐪𝐮𝐢 𝐩𝐮𝐞𝐝𝐞 𝐦𝐚𝐧𝐝𝐚 𝐭𝐮 𝐞𝐧𝐥𝐚𝐜𝐞 𝐲 𝐭𝐚𝐦𝐛𝐢𝐞́𝐧 𝐬𝐢 𝐪𝐮𝐢𝐞𝐫𝐞 𝐮𝐧 𝐛𝐨𝐭 𝐩𝐚𝐫𝐚 𝐭𝐮 𝐠𝐫𝐮𝐩𝐨 𝐩𝐨𝐧𝐞𝐫 𝐞𝐥 𝐜𝐨𝐦𝐚𝐧𝐝𝐨 .𝐣𝐨𝐢𝐧 (𝐦𝐚𝐬 𝐞𝐧𝐥𝐚𝐜𝐞)
 
 *⇶⃤꙰𝑬𝒏𝒍𝒂𝒄𝒆 𝒍𝒐𝒍𝒊𝒃𝒐𝒕ꦿ⃟⃢*
-https://chat.whatsapp.com/FoNIGi32jYk2hWzlnmDzTd
+https://chat.whatsapp.com/D4G9HMmCDClFfRj4GG5CMZ
 
 *꧁⃢⃟҉💫🌺ঔঔ𝔼ℕ𝕃𝔸ℂ𝔼𝕊 𝕃𝔸 𝕁𝔼𝔽𝔸✨*
 https://chat.whatsapp.com/JegOp8NUSMd0vn75s4hkaj
