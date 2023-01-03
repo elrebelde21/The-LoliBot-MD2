@@ -69,42 +69,44 @@ let fsizedoc = '1'.repeat(10)
 let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: ig, description: 'Hola', previewType: 'PHOTO', thumbnail: await(await fetch(gataMenu.getRandom())).buffer(), sourceUrl: redesMenu.getRandom() }}}
 
 let menuA = `🧸 ${lenguajeGB['smsConfi2']()} *${username}*`.trim()
-let menuB = `╭━━〔 *${wm}* 〕━━⬣
-┃🧸🧸🧸🧸🧸🧸🧸🧸🧸 
-┃❏ *𝙁𝙚𝙘𝙝𝙖 ➺ ${week}, ${date}*
-┃❏ *𝙀𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖 ➺ ${exp}*
-┃❏ *𝙉𝙞𝙫𝙚𝙡 ➺ ${level}*
-┃❏ *𝙍𝙤𝙡 ➺* ${role}
-┃❏ *𝙇𝙤𝙡𝙞𝙘𝙤𝙞𝙣𝙨 ➺ $ ${money}*
-┃❏ *𝙐𝙨𝙪𝙖𝙧𝙞𝙤 ➺ ${Object.keys(global.db.data.users).length}* 
-┃🧸🧸🧸🧸🧸🧸🧸🧸🧸 
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃  ${lenguajeGB['smsTex22']()} 🎐
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🎐 _${usedPrefix}sticker | s *imagen o video*_
-┃🎐 _${usedPrefix}sticker | s *url de tipo jpg*_
-┃🎐 _${usedPrefix}emojimix *😺+😆*_
-┃🎐 _${usedPrefix}scircle | círculo *imagen*_
-┃🎐 _${usedPrefix}semoji | emoji *tipo emoji*_
-┃🎐 _${usedPrefix}attp *texto*_
-┃🎐 _${usedPrefix}attp2 *texto*_
-┃🎐 _${usedPrefix}ttp *texto*_
-┃🎐 _${usedPrefix}ttp2 *texto*_
-┃🎐 _${usedPrefix}ttp3 *texto*_
-┃🎐 _${usedPrefix}ttp4 *texto*_
-┃🎐 _${usedPrefix}ttp5 *texto*_
-┃🎐 _${usedPrefix}ttp6 *texto*_
-┃🎐 _${usedPrefix}palmaditas | pat *@tag*_
-┃🎐 _${usedPrefix}bofetada | slap *@tag*_
-┃🎐 _${usedPrefix}besar | kiss *@tag*_
-┃🎐 _${usedPrefix}alimentar | food *@tag*_
-┃🎐 _${usedPrefix}dado_
-┃🎐 _${usedPrefix}wm *packname|author*_
-┃🎐 _${usedPrefix}wm *texto1|texto2*_
-┃🎐 _${usedPrefix}stickermarker *efecto : responder a imagen*_
-┃🎐 _${usedPrefix}stickerfilter *efecto : responder a imagen*_
-┃🎐 _${usedPrefix}cs *:* cs2_
-╰━━━━━━━━━━━━━━━━━━━⬣
+let menuB = `
+┌───⊷ *${wm}*
+┆🧸🧸🧸🧸🧸🧸🧸🧸🧸 
+┆❏ *𝙁𝙚𝙘𝙝𝙖 ➺ ${week}, ${date}*
+┆❏ *𝙀𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖 ➺ ${exp}*
+┆❏ *𝙉𝙞𝙫𝙚𝙡 ➺ ${level}*
+┆❏ *𝙍𝙤𝙡 ➺* ${role}
+┆❏ *𝙇𝙤𝙡𝙞𝙘𝙤𝙞𝙣𝙨 ➺ $ ${money}*
+┆❏ *𝙐𝙨𝙪𝙖𝙧𝙞𝙤 ➺ ${Object.keys(global.db.data.users).length}* 
+┆❏ *𝙏𝙞𝙚𝙢𝙥𝙤 𝙖𝙘𝙩𝙞𝙫𝙤 ➺ ${uptime}*
+┆🧸🧸🧸🧸🧸🧸🧸🧸🧸 
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆ • • •「 ${lenguajeGB['smsTex22']()} 🎐 」• • •
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆🎐 _${usedPrefix}sticker | s *imagen o video*_
+┆🎐 _${usedPrefix}sticker | s *url de tipo jpg*_
+┆🎐 _${usedPrefix}emojimix *😺+😆*_
+┆🎐 _${usedPrefix}scircle | círculo *imagen*_
+┆🎐 _${usedPrefix}semoji | emoji *tipo emoji*_
+┆🎐 _${usedPrefix}attp *texto*_
+┆🎐 _${usedPrefix}attp2 *texto*_
+┆🎐 _${usedPrefix}ttp *texto*_
+┆🎐 _${usedPrefix}ttp2 *texto*_
+┆🎐 _${usedPrefix}ttp3 *texto*_
+┆🎐 _${usedPrefix}ttp4 *texto*_
+┆🎐 _${usedPrefix}ttp5 *texto*_
+┆🎐 _${usedPrefix}ttp6 *texto*_
+┆🎐 _${usedPrefix}palmaditas | pat *@tag*_
+┆🎐 _${usedPrefix}bofetada | slap *@tag*_
+┆🎐 _${usedPrefix}besar | kiss *@tag*_
+┆🎐 _${usedPrefix}alimentar | food *@tag*_
+┆🎐 _${usedPrefix}dado_
+┆🎐 _${usedPrefix}wm *packname|author*_
+┆🎐 _${usedPrefix}wm *texto1|texto2*_
+┆🎐 _${usedPrefix}stickermarker *efecto : responder a imagen*_
+┆🎐 _${usedPrefix}stickerfilter *efecto : responder a imagen*_
+┆🎐 _${usedPrefix}cs *:* cs2_
+╰─────────────────
 `.trim()
 await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#infobot', fkontak, adReply)
 

@@ -69,67 +69,68 @@ let fsizedoc = '1'.repeat(10)
 let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: ig, description: 'Hola', previewType: 'PHOTO', thumbnail: await(await fetch(gataMenu.getRandom())).buffer(), sourceUrl: redesMenu.getRandom() }}}
 
 let menuA = `⛩️ ${lenguajeGB['smsConfi2']()} *${username}*`.trim()
-let menuB = `╭━〔 *${wm}* 〕━⬣
-┃⛩️⛩️⛩️⛩️⛩️⛩️⛩️⛩️⛩️
-┃❏ *𝙁𝙚𝙘𝙝𝙖 ➺ ${week}, ${date}*
-┃❏ *𝙀𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖 ➺ ${exp}*
-┃❏ *𝙉𝙞𝙫𝙚𝙡  ➺ ${level}*
-┃❏ *𝙍𝙤𝙡 ➺* ${role}
-┃❏ *𝙇𝙤𝙡𝙞𝙘𝙤𝙞𝙣𝙨 ➺ $ ${money}*
-┃❏ *𝙐𝙨𝙪𝙖𝙧𝙞𝙤 ➺ ${Object.keys(global.db.data.users).length}* 
-┃⛩️⛩️⛩️⛩️⛩️⛩️⛩️⛩️⛩️
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ ${lenguajeGB['smsTex23']()} 🧩
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🧩 _${usedPrefix}chica_
-┃🧩 _${usedPrefix}chico_
-┃🧩 _${usedPrefix}cristianoronaldo_
-┃🧩 _${usedPrefix}messi_
-┃🧩 _${usedPrefix}meme_
-┃🧩 _${usedPrefix}itzy_
-┃🧩 _${usedPrefix}blackpink_
-┃🧩 _${usedPrefix}kpop *blackpink : exo : bts*_
-┃🧩 _${usedPrefix}lolivid_
-┃🧩 _${usedPrefix}loli_
-┃🧩 _${usedPrefix}navidad_
-┃🧩 _${usedPrefix}ppcouple_
-┃🧩 _${usedPrefix}neko_
-┃🧩 _${usedPrefix}waifu_
-┃🧩 _${usedPrefix}akira_
-┃🧩 _${usedPrefix}akiyama_
-┃🧩 _${usedPrefix}anna_
-┃🧩 _${usedPrefix}asuna_
-┃🧩 _${usedPrefix}ayuzawa_
-┃🧩 _${usedPrefix}boruto_
-┃🧩 _${usedPrefix}chiho_
-┃🧩 _${usedPrefix}chitoge_
-┃🧩 _${usedPrefix}deidara_
-┃🧩 _${usedPrefix}erza_
-┃🧩 _${usedPrefix}elaina_
-┃🧩 _${usedPrefix}eba_
-┃🧩 _${usedPrefix}emilia_
-┃🧩 _${usedPrefix}hestia_
-┃🧩 _${usedPrefix}hinata_
-┃🧩 _${usedPrefix}inori_
-┃🧩 _${usedPrefix}isuzu_
-┃🧩 _${usedPrefix}itachi_
-┃🧩 _${usedPrefix}itori_
-┃🧩 _${usedPrefix}kaga_
-┃🧩 _${usedPrefix}kagura_
-┃🧩 _${usedPrefix}kaori_
-┃🧩 _${usedPrefix}keneki_
-┃🧩 _${usedPrefix}kotori_
-┃🧩 _${usedPrefix}kurumi_
-┃🧩 _${usedPrefix}madara_
-┃🧩 _${usedPrefix}mikasa_
-┃🧩 _${usedPrefix}miku_
-┃🧩 _${usedPrefix}minato_
-┃🧩 _${usedPrefix}naruto_
-┃🧩 _${usedPrefix}nezuko_
-┃🧩 _${usedPrefix}sagiri_
-┃🧩 _${usedPrefix}sasuke_
-┃🧩 _${usedPrefix}sakura_
-┃🧩 _${usedPrefix}cosplay_
+let menuB = `
+┌───⊷ *${wm}*
+┆⛩️⛩️⛩️⛩️⛩️⛩️⛩️⛩️⛩️
+┆❏ *𝙁𝙚𝙘𝙝𝙖 ➺ ${week}, ${date}*
+┆❏ *𝙀𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖 ➺ ${exp}*
+┆❏ *𝙉𝙞𝙫𝙚𝙡  ➺ ${level}*
+┆❏ *𝙍𝙤𝙡 ➺* ${role}
+┆❏ *𝙇𝙤𝙡𝙞𝙘𝙤𝙞𝙣𝙨 ➺ $ ${money}*
+┆❏ *𝙐𝙨𝙪𝙖𝙧𝙞𝙤 ➺ ${Object.keys(global.db.data.users).length}* 
+┆⛩️⛩️⛩️⛩️⛩️⛩️⛩️⛩️⛩️
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆ • • •「 ${lenguajeGB['smsTex23']()} 🧩 」• • •
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆🧩 _${usedPrefix}chica_
+┆🧩 _${usedPrefix}chico_
+┆🧩 _${usedPrefix}cristianoronaldo_
+┆🧩 _${usedPrefix}messi_
+┆🧩 _${usedPrefix}meme_
+┆🧩 _${usedPrefix}itzy_
+┆🧩 _${usedPrefix}blackpink_
+┆🧩 _${usedPrefix}kpop *blackpink : exo : bts*_
+┆🧩 _${usedPrefix}lolivid_
+┆🧩 _${usedPrefix}loli_
+┆🧩 _${usedPrefix}navidad_
+┆🧩 _${usedPrefix}ppcouple_
+┆🧩 _${usedPrefix}neko_
+┆🧩 _${usedPrefix}waifu_
+┆🧩 _${usedPrefix}akira_
+┆🧩 _${usedPrefix}akiyama_
+┆🧩 _${usedPrefix}anna_
+┆🧩 _${usedPrefix}asuna_
+┆🧩 _${usedPrefix}ayuzawa_
+┆🧩 _${usedPrefix}boruto_
+┆🧩 _${usedPrefix}chiho_
+┆🧩 _${usedPrefix}chitoge_
+┆🧩 _${usedPrefix}deidara_
+┆🧩 _${usedPrefix}erza_
+┆🧩 _${usedPrefix}elaina_
+┆🧩 _${usedPrefix}eba_
+┆🧩 _${usedPrefix}emilia_
+┆🧩 _${usedPrefix}hestia_
+┆🧩 _${usedPrefix}hinata_
+┆🧩 _${usedPrefix}inori_
+┆🧩 _${usedPrefix}isuzu_
+┆🧩 _${usedPrefix}itachi_
+┆🧩 _${usedPrefix}itori_
+┆🧩 _${usedPrefix}kaga_
+┆🧩 _${usedPrefix}kagura_
+┆🧩 _${usedPrefix}kaori_
+┆🧩 _${usedPrefix}keneki_
+┆🧩 _${usedPrefix}kotori_
+┆🧩 _${usedPrefix}kurumi_
+┆🧩 _${usedPrefix}madara_
+┆🧩 _${usedPrefix}mikasa_
+┆🧩 _${usedPrefix}miku_
+┆🧩 _${usedPrefix}minato_
+┆🧩 _${usedPrefix}naruto_
+┆🧩 _${usedPrefix}nezuko_
+┆🧩 _${usedPrefix}sagiri_
+┆🧩 _${usedPrefix}sasuke_
+┆🧩 _${usedPrefix}sakura_
+┆🧩 _${usedPrefix}cosplay_
 ╰━━━━━━━━━━━━━━━━⬣
 `.trim()
 await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#infobot', fkontak, adReply)

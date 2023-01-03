@@ -70,47 +70,48 @@ let fsizedoc = '1'.repeat(10)
 let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: ig, description: 'Hola', previewType: 'PHOTO', thumbnail: await(await fetch(gataMenu.getRandom())).buffer(), sourceUrl: redesMenu.getRandom() }}}
 
 let menuA = `🎠 ${lenguajeGB['smsConfi2']()} *${username}*`.trim()
-let menuB = `╭━━〔 *${wm}* 〕━━⬣
-┃🎠🎠🎠🎠🎠🎠🎠🎠🎠
-┃❏ *𝙁𝙚𝙘𝙝𝙖 ➺ ${week}, ${date}*
-┃❏ *𝙀𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖 ➺ ${exp}*
-┃❏ *𝙉𝙞𝙫𝙚𝙡 ➺ ${level}*
-┃❏ *𝙍𝙤𝙡 ➺* ${role}
-┃❏ *𝙇𝙤𝙡𝙞𝙘𝙤𝙞𝙣𝙨 ➺ $ ${money}*
-┃❏ *𝙐𝙨𝙪𝙖𝙧𝙞𝙤 ➺ ${Object.keys(global.db.data.users).length}* 
-┃🎠🎠🎠🎠🎠🎠🎠🎠🎠
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃〔 𝙅𝙪𝙚𝙜𝙤𝙨 𝙙𝙞𝙣𝙖́𝙢𝙞𝙘𝙤𝙨 〕
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🎡➺ _${usedPrefix}mates | matemáticas | math_
-┃🎡➺ _${usedPrefix}ppt *piedra : papel : tijera*_
-┃🎡➺ _${usedPrefix}topgays_
-┃🎡➺ _${usedPrefix}topotakus_
-┃🎡➺ _${usedPrefix}gay | gay *@tag*_
-┃🎡➺ _${usedPrefix}gay2 *nombre : @tag*_
-┃🎡➺ _${usedPrefix}lesbiana *nombre : @tag*_
-┃🎡➺ _${usedPrefix}manca *nombre : @tag*_
-┃🎡➺ _${usedPrefix}manco *nombre : @tag*_
-┃🎡➺ _${usedPrefix}pajero *nombre : @tag*_
-┃🎡➺ _${usedPrefix}pajera *nombre : @tag*_
-┃🎡➺ _${usedPrefix}puto *nombre : @tag*_
-┃🎡➺ _${usedPrefix}puta *nombre : @tag*_
-┃🎡➺ _${usedPrefix}rata *nombre : @tag*_
-┃🎡➺ _${usedPrefix}love *nombre : @tag*_
-┃🎡➺ _${usedPrefix}doxear *nombre : @tag*_
-┃🎡➺ _${usedPrefix}doxxeame_
-┃🎡➺ _${usedPrefix}pregunta *texto*_
-┃🎡➺ _${usedPrefix}slot *apuesta*_
-┃🎡➺ _${usedPrefix}formarpareja_
-┃🎡➺ _${usedPrefix}dado_
-┃🎡➺ _${usedPrefix}verdad_
-┃🎡➺ _${usedPrefix}reto_
-┃🎡➺ _${usedPrefix}simi | okgoogle *texto*_
-┃🎡➺ _${usedPrefix}alexa | siri | cortana *texto*_
-┃🎡➺ _${usedPrefix}simsimi | bixby *texto*_
-┃🎡➺ _${usedPrefix}multijuegos_
-┃🎡➺ _${usedPrefix}juegos_
-╰━━━━━━━━━━━━━━━━━━━⬣
+let menuB = `
+┌───⊷ *${wm}*
+┆🎠🎠🎠🎠🎠🎠🎠🎠🎠
+┆❏ *𝙁𝙚𝙘𝙝𝙖 ➺ ${week}, ${date}*
+┆❏ *𝙀𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖 ➺ ${exp}*
+┆❏ *𝙉𝙞𝙫𝙚𝙡 ➺ ${level}*
+┆❏ *𝙍𝙤𝙡 ➺* ${role}
+┆❏ *𝙇𝙤𝙡𝙞𝙘𝙤𝙞𝙣𝙨 ➺ $ ${money}*
+┆❏ *𝙐𝙨𝙪𝙖𝙧𝙞𝙤 ➺ ${Object.keys(global.db.data.users).length}* 
+┆🎠🎠🎠🎠🎠🎠🎠🎠🎠
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆ • • •「𝙅𝙪𝙚𝙜𝙤𝙨 𝙙𝙞𝙣𝙖́𝙢𝙞𝙘𝙤𝙨  」• • •
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆🎡➺ _${usedPrefix}mates | matemáticas | math_
+┆🎡➺ _${usedPrefix}ppt *piedra : papel : tijera*_
+┆🎡➺ _${usedPrefix}topgays_
+┆🎡➺ _${usedPrefix}topotakus_
+┆🎡➺ _${usedPrefix}gay | gay *@tag*_
+┆🎡➺ _${usedPrefix}gay2 *nombre : @tag*_
+┆🎡➺ _${usedPrefix}lesbiana *nombre : @tag*_
+┆🎡➺ _${usedPrefix}manca *nombre : @tag*_
+┆🎡➺ _${usedPrefix}manco *nombre : @tag*_
+┆🎡➺ _${usedPrefix}pajero *nombre : @tag*_
+┆🎡➺ _${usedPrefix}pajera *nombre : @tag*_
+┆🎡➺ _${usedPrefix}puto *nombre : @tag*_
+┆🎡➺ _${usedPrefix}puta *nombre : @tag*_
+┆🎡➺ _${usedPrefix}rata *nombre : @tag*_
+┆🎡➺ _${usedPrefix}love *nombre : @tag*_
+┆🎡➺ _${usedPrefix}doxear *nombre : @tag*_
+┆🎡➺ _${usedPrefix}doxxeame_
+┆🎡➺ _${usedPrefix}pregunta *texto*_
+┆🎡➺ _${usedPrefix}slot *apuesta*_
+┆🎡➺ _${usedPrefix}formarpareja_
+┆🎡➺ _${usedPrefix}dado_
+┆🎡➺ _${usedPrefix}verdad_
+┆🎡➺ _${usedPrefix}reto_
+┆🎡➺ _${usedPrefix}simi | okgoogle *texto*_
+┆🎡➺ _${usedPrefix}alexa | siri | cortana *texto*_
+┆🎡➺ _${usedPrefix}simsimi | bixby *texto*_
+┆🎡➺ _${usedPrefix}multijuegos_
+┆🎡➺ _${usedPrefix}juegos_
+╰───────────
 `.trim()
 await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#infobot', fkontak, adReply)
 

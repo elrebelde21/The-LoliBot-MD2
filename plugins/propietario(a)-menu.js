@@ -70,28 +70,30 @@ let fsizedoc = '1'.repeat(10)
 let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: ig, description: 'Hola', previewType: 'PHOTO', thumbnail: await(await fetch(gataMenu.getRandom())).buffer(), sourceUrl: redesMenu.getRandom() }}}
 
 let menuA = `🛂 ${lenguajeGB['smsConfi2']()} *${username}*`.trim()
-let menuB = `╭━━〔 *${wm}* 〕━━⬣
-┃⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️
-┃❏ *𝙁𝙚𝙘𝙝𝙖 ➺ ${week}, ${date}*
-┃❏ *𝙀𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖  ➺ ${exp}*
-┃❏ *𝙉𝙞𝙫𝙚𝙡  ➺* ${level}
-┃❏ *𝙍𝙤𝙡 ➺ ${role}*
-┃❏ *𝙇𝙤𝙡𝙞𝙘𝙤𝙞𝙣𝙨 ➺ $ ${money}*
-┃❏ *𝙐𝙨𝙪𝙖𝙧𝙞𝙤  ➺ ${Object.keys(global.db.data.users).length}* 
-┃⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃〔 𝙈𝙚𝙣𝙪 𝙥𝙖𝙧𝙖 𝙚𝙡 𝙥𝙧𝙤𝙥𝙞𝙚𝙩𝙖𝙧𝙞𝙤/𝙖 〕
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃💎➺ _${usedPrefix}actualizar | update_
-┃💎➺ _${usedPrefix}reiniciar | restart_
-┃💎➺ _${usedPrefix}borrartmp | cleartmp_
-┃💎➺ _${usedPrefix}ban1 | banchat1_
-┃💎➺ _${usedPrefix}desban1 | unbanchat1_
-┃💎➺ _${usedPrefix}comunicar | broadcastall | bc_
-┃💎➺ _${usedPrefix}comunicarpv | broadcastchats | bcc_
-┃💎➺ _${usedPrefix}comunicargrupos | broadcastgc_
-┃💎➺ _${usedPrefix}bcgc_
-╰━━━━━━━━━━━━━━━━━━━⬣
+let menuB = `
+┌───⊷ *${wm}*
+┆⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️
+┆❏ *𝙁𝙚𝙘𝙝𝙖 ➺ ${week}, ${date}*
+┆❏ *𝙀𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖  ➺ ${exp}*
+┆❏ *𝙉𝙞𝙫𝙚𝙡  ➺* ${level}
+┆❏ *𝙍𝙤𝙡 ➺ ${role}*
+┆❏ *𝙇𝙤𝙡𝙞𝙘𝙤𝙞𝙣𝙨 ➺ $ ${money}*
+┆❏ *𝙐𝙨𝙪𝙖𝙧𝙞𝙤  ➺ ${Object.keys(global.db.data.users).length}* 
+┆❏ *𝙏𝙞𝙚𝙢𝙥𝙤 𝙖𝙘𝙩𝙞𝙫𝙤 ➺ ${uptime}*
+┆⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆ • • •「𝙈𝙚𝙣𝙪 𝙥𝙖𝙧𝙖 𝙚𝙡 𝙥𝙧𝙤𝙥𝙞𝙚𝙩𝙖𝙧𝙞𝙤/𝙖 」• • •
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆💎➺ _${usedPrefix}actualizar | update_
+┆💎➺ _${usedPrefix}reiniciar | restart_
+┆💎➺ _${usedPrefix}borrartmp | cleartmp_
+┆💎➺ _${usedPrefix}ban1 | banchat1_
+┆💎➺ _${usedPrefix}desban1 | unbanchat1_
+┆💎➺ _${usedPrefix}comunicar | broadcastall | bc_
+┆💎➺ _${usedPrefix}comunicarpv | broadcastchats | bcc_
+┆💎➺ _${usedPrefix}comunicargrupos | broadcastgc_
+┆💎➺ _${usedPrefix}bcgc_
+╰─────────────────
 `.trim()
 await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#infobot', fkontak, adReply)
 

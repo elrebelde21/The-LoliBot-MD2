@@ -70,39 +70,41 @@ let fsizedoc = '1'.repeat(10)
 let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: ig, description: 'Hola', previewType: 'PHOTO', thumbnail: await(await fetch(gataMenu.getRandom())).buffer(), sourceUrl: redesMenu.getRandom() }}}
 
 let menuA = `🔰 ${lenguajeGB['smsConfi2']()} *${username}*`.trim()
-let menuB = `╭━━〔 *${wm}* 〕━━⬣
-┃🔰🔰🔰🔰🔰🔰🔰🔰🔰
-┃❏ *𝙁𝙚𝙘𝙝𝙖 ➺ ${week}, ${date}* 
-┃❏ *𝙀𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖 ➺ ${exp}*
-┃❏ *𝙉𝙞𝙫𝙚𝙡 ➺ ${level}*
-┃❏ *𝙍𝙤𝙡 ➺* ${role}
-┃❏ *𝙇𝙤𝙡𝙞𝙘𝙤𝙞𝙣𝙨 ➺ $ ${money}*
-┃❏ *𝙐𝙨𝙪𝙖𝙧𝙞𝙤 ➺ ${Object.keys(global.db.data.users).length}* 
-┃🔰🔰🔰🔰🔰🔰🔰🔰🔰
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃〔 𝙈𝙚𝙣𝙪 𝙙𝙚 𝙜𝙧𝙪𝙥𝙤𝙨 〕
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🌐➺ _${usedPrefix}add *numero*_
-┃🌐➺ _${usedPrefix}sacar | ban | kick  *@tag*_
-┃🌐➺ _${usedPrefix}grupo *abrir : cerrar*_
-┃🌐➺ _${usedPrefix}group *open : close*_
-┃🌐➺ _${usedPrefix}daradmin | promote *@tag*_
-┃🌐➺ _${usedPrefix}quitar | demote *@tag*_
-┃🌐➺ _${usedPrefix}banchat_
-┃🌐➺ _${usedPrefix}unbanchat_
-┃🌐➺ _${usedPrefix}admins *texto*_
-┃🌐➺ _${usedPrefix}invocar *texto*_
-┃🌐➺ _${usedPrefix}tagall *texto*_
-┃🌐➺ _${usedPrefix}hidetag *texto*_
-┃🌐➺ _${usedPrefix}infogrupo | infogroup_
-┃🌐➺ _${usedPrefix}enlace | link *texto*_
-┃🌐➺ _${usedPrefix}newnombre | setname *texto*_
-┃🌐➺ _${usedPrefix}newdesc | setdesc *texto*_
-┃🌐➺ _${usedPrefix}setwelcome *texto*_
-┃🌐➺ _${usedPrefix}setbye *texto*_
-┃🌐➺ _${usedPrefix}on_
-┃🌐➺ _${usedPrefix}off_
-╰━━━━━━━━━━━━━━━━━━━⬣
+let menuB = `
+┌───⊷  *${wm}*
+┆🔰🔰🔰🔰🔰🔰🔰🔰🔰
+┆❏ *𝙁𝙚𝙘𝙝𝙖 ➺ ${week}, ${date}* 
+┆❏ *𝙀𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖 ➺ ${exp}*
+┆❏ *𝙉𝙞𝙫𝙚𝙡 ➺ ${level}*
+┆❏ *𝙍𝙤𝙡 ➺* ${role}
+┆❏ *𝙇𝙤𝙡𝙞𝙘𝙤𝙞𝙣𝙨 ➺ $ ${money}*
+┆❏ *𝙐𝙨𝙪𝙖𝙧𝙞𝙤 ➺ ${Object.keys(global.db.data.users).length}* 
+┆❏ *𝙏𝙞𝙚𝙢𝙥𝙤 𝙖𝙘𝙩𝙞𝙫𝙤 ➺ ${uptime}*
+┆🔰🔰🔰🔰🔰🔰🔰🔰🔰
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆ • • •「𝙈𝙚𝙣𝙪 𝙙𝙚 𝙜𝙧𝙪𝙥𝙤𝙨 」• • •
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆🌐➺ _${usedPrefix}add *numero*_
+┆🌐➺ _${usedPrefix}sacar | ban | kick  *@tag*_
+┆🌐➺ _${usedPrefix}grupo *abrir : cerrar*_
+┆🌐➺ _${usedPrefix}group *open : close*_
+┆🌐➺ _${usedPrefix}daradmin | promote *@tag*_
+┆🌐➺ _${usedPrefix}quitar | demote *@tag*_
+┆🌐➺ _${usedPrefix}banchat_
+┆🌐➺ _${usedPrefix}unbanchat_
+┆🌐➺ _${usedPrefix}admins *texto*_
+┆🌐➺ _${usedPrefix}invocar *texto*_
+┆🌐➺ _${usedPrefix}tagall *texto*_
+┆🌐➺ _${usedPrefix}hidetag *texto*_
+┆🌐➺ _${usedPrefix}infogrupo | infogroup_
+┆🌐➺ _${usedPrefix}enlace | link *texto*_
+┆🌐➺ _${usedPrefix}newnombre | setname *texto*_
+┆🌐➺ _${usedPrefix}newdesc | setdesc *texto*_
+┆🌐➺ _${usedPrefix}setwelcome *texto*_
+┆🌐➺ _${usedPrefix}setbye *texto*_
+┆🌐➺ _${usedPrefix}on_
+┆🌐➺ _${usedPrefix}off_
+╰─────────────────
 `.trim()
 await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#infobot', fkontak, adReply)
 

@@ -70,36 +70,38 @@ let fsizedoc = '1'.repeat(10)
 let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: ig, description: 'Hola', previewType: 'PHOTO', thumbnail: await(await fetch(gataMenu.getRandom())).buffer(), sourceUrl: redesMenu.getRandom() }}}
 
 let menuA = `🪄 ${lenguajeGB['smsConfi2']()} *${username}*`.trim()
-let menuB = `╭━━〔 *${wm}* 〕━━⬣
-┃🪄🪄🪄🪄🪄🪄🪄🪄🪄
-┃❏  *𝙁𝙚𝙘𝙝𝙖  ➺ ${week}, ${date}*
-┃❏  *𝙀𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖  ➺ ${exp}*
-┃❏  *𝙉𝙞𝙫𝙚𝙡 ➺ ${level}*
-┃❏  *𝙍𝙤𝙡 ➺* ${role}
-┃❏  *𝙇𝙤𝙡𝙞𝙘𝙤𝙞𝙣𝙨 ➺ $ ${money}*
-┃❏  *𝙐𝙨𝙪𝙖𝙧𝙞𝙤 ➺ ${Object.keys(global.db.data.users).length}*
-┃🪄🪄🪄🪄🪄🪄🪄🪄🪄
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃〔 𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖 〕
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🚀➺ _${usedPrefix}imagen | image *texto*_
-┃🚀➺ _${usedPrefix}pinterest | dlpinterest *texto*_
-┃🚀➺ _${usedPrefix}wallpaper|wp *texto*_
-┃🚀➺ _${usedPrefix}play | play2 *texto o link*_
-┃🚀➺ _${usedPrefix}play.1 *texto o link*_
-┃🚀➺ _${usedPrefix}play.2 *texto o link*_ 
-┃🚀➺ _${usedPrefix}ytmp3 | yta *link*_
-┃🚀➺ _${usedPrefix}ytmp4 | ytv *link*_
-┃🚀➺ _${usedPrefix}facebook | fb *link*_
-┃🚀➺ _${usedPrefix}instagram *link video o imagen*_
-┃🚀➺ _${usedPrefix}verig | igstalk *usuario(a)*_
-┃🚀➺ _${usedPrefix}ighistoria | igstory *usuario(a)*_
-┃🚀➺ _${usedPrefix}tiktok *link*_
-┃🚀➺ _${usedPrefix}tiktokfoto | tiktokphoto *usuario(a)*_
-┃🚀➺ _${usedPrefix}vertiktok | tiktokstalk *usuario(a)*_
-┃🚀➺ _${usedPrefix}mediafire | dlmediafire *link*_
-┃🚀➺ _${usedPrefix}clonarepo | gitclone *link*_
-╰━━━━━━━━━━━━━━━━━━━⬣
+let menuB = `
+┌───⊷ *${wm}*
+┆🪄🪄🪄🪄🪄🪄🪄🪄🪄
+┆❏  *𝙁𝙚𝙘𝙝𝙖  ➺ ${week}, ${date}*
+┆❏  *𝙀𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖  ➺ ${exp}*
+┆❏  *𝙉𝙞𝙫𝙚𝙡 ➺ ${level}*
+┆❏  *𝙍𝙤𝙡 ➺ ${role}*
+┆❏  *𝙇𝙤𝙡𝙞𝙘𝙤𝙞𝙣𝙨 ➺ $ ${money}*
+┆❏  *𝙐𝙨𝙪𝙖𝙧𝙞𝙤 ➺ ${Object.keys(global.db.data.users).length}*
+┆❏ *𝙏𝙞𝙚𝙢𝙥𝙤 𝙖𝙘𝙩𝙞𝙫𝙤 ➺ ${uptime}*
+┆🪄🪄🪄🪄🪄🪄🪄🪄🪄
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆ • • •「𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖 」• • •
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆🚀➺ _${usedPrefix}imagen | image *texto*_
+┆🚀➺ _${usedPrefix}pinterest | dlpinterest *texto*_
+┆🚀➺ _${usedPrefix}wallpaper|wp *texto*_
+┆🚀➺ _${usedPrefix}play | play2 *texto o link*_
+┆🚀➺ _${usedPrefix}play.1 *texto o link*_
+┆🚀➺ _${usedPrefix}play.2 *texto o link*_ 
+┆🚀➺ _${usedPrefix}ytmp3 | yta *link*_
+┆🚀➺ _${usedPrefix}ytmp4 | ytv *link*_
+┆🚀➺ _${usedPrefix}facebook | fb *link*_
+┆🚀➺ _${usedPrefix}instagram *link video o imagen*_
+┆🚀➺ _${usedPrefix}verig | igstalk *usuario(a)*_
+┆🚀➺ _${usedPrefix}ighistoria | igstory *usuario(a)*_
+┆🚀➺ _${usedPrefix}tiktok *link*_
+┆🚀➺ _${usedPrefix}tiktokfoto | tiktokphoto *usuario(a)*_
+┆🚀➺ _${usedPrefix}vertiktok | tiktokstalk *usuario(a)*_
+┆🚀➺ _${usedPrefix}mediafire | dlmediafire *link*_
+┆🚀➺ _${usedPrefix}clonarepo | gitclone *link*_
+╰──────────
 `.trim()
 await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#infobot', fkontak, adReply)
 

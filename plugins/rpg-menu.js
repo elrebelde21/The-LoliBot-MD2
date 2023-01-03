@@ -70,52 +70,53 @@ let fsizedoc = '1'.repeat(10)
 let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: ig, description: 'Hola', previewType: 'PHOTO', thumbnail: await(await fetch(gataMenu.getRandom())).buffer(), sourceUrl: redesMenu.getRandom() }}}
 
 let menuA = `🪅 ${lenguajeGB['smsConfi2']()} *${username}*`.trim()
-let menuB = `╭━〔 *${wm}* 〕━⬣
-┃⚒️⚒️⚒️⚒️⚒️⚒️⚒️⚒️⚒️
-┃❏ *𝙁𝙚𝙘𝙝𝙖 ➺ ${week}, ${date}*
-┃❏ *𝙀𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖 ➺ ${exp}*
-┃❏ *𝙉𝙞𝙫𝙚𝙡 ➺ ${level}*
-┃❏ *𝙍𝙤𝙡 ➺* ${role}
-┃❏ *𝙇𝙤𝙡𝙞𝙘𝙤𝙞𝙣𝙨 ➺ $ ${money}*
-┃❏ *𝙐𝙨𝙪𝙖𝙧𝙞𝙤 ➺ ${Object.keys(global.db.data.users).length}* 
-┃⚒️⚒️⚒️⚒️⚒️⚒️⚒️⚒️⚒️
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ ${lenguajeGB['smsTex21']()} ⚗️
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🪅 _${usedPrefix}botemporal *enlace* *cantidad*_
-┃🪅 _${usedPrefix}addbot *enlace* *cantidad*_
-┃⚗️➺ _${usedPrefix}pase premium_
-┃⚗️➺ _${usedPrefix}pass premium_
-┃⚗️➺ _${usedPrefix}listapremium | listprem_
-┃⚗️➺ _${usedPrefix}transfer *tipo cantidad @tag*_
-┃⚗️➺ _${usedPrefix}dar *tipo cantidad @tag*_
-┃⚗️➺ _${usedPrefix}enviar *tipo cantidad @tag*_
-┃⚗️➺ _${usedPrefix}balance_
-┃⚗️➺ _${usedPrefix}cartera | wallet_
-┃⚗️➺ _${usedPrefix}experiencia | exp_
-┃⚗️➺ _${usedPrefix}top | lb | leaderboard_
-┃⚗️➺ _${usedPrefix}nivel | level | lvl_
-┃⚗️➺ _${usedPrefix}rol | rango_
-┃⚗️➺ _${usedPrefix}inventario | inventory_
-┃⚗️➺ _${usedPrefix}aventura | adventure_
-┃⚗️➺ _${usedPrefix}caza | cazar | hunt_
-┃⚗️➺ _${usedPrefix}animales_
-┃⚗️➺ _${usedPrefix}alimentos_
-┃⚗️➺ _${usedPrefix}curar | heal_
-┃⚗️➺ _${usedPrefix}minardiamantes | minargemas_
-┃⚗️➺ _${usedPrefix}minargatacoins | minarcoins_
-┃⚗️➺ _${usedPrefix}minarexperiencia | minarexp_
-┃⚗️➺ _${usedPrefix}minar *:* minar2 *:* minar3_
-┃⚗️➺ _${usedPrefix}buy_
-┃⚗️➺ _${usedPrefix}sell_
-┃⚗️➺ _${usedPrefix}verificar | registrar_
-┃⚗️➺ _${usedPrefix}perfil | profile_
-┃⚗️➺ _${usedPrefix}myns_
-┃⚗️➺ _${usedPrefix}unreg *numero de serie*_
-┃⚗️➺ _${usedPrefix}reclamar | regalo | claim_
-┃⚗️➺ _${usedPrefix}cofre | abrircofre | coffer_
-┃⚗️➺ _${usedPrefix}trabajar | work_
-╰━━━━━━━━━━━━━━━━⬣
+let menuB = `
+┌───⊷ *${wm}*
+┆⚒️⚒️⚒️⚒️⚒️⚒️⚒️⚒️⚒️
+┆❏ *𝙁𝙚𝙘𝙝𝙖 ➺ ${week}, ${date}*
+┆❏ *𝙀𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖 ➺ ${exp}*
+┆❏ *𝙉𝙞𝙫𝙚𝙡 ➺ ${level}*
+┆❏ *𝙍𝙤𝙡 ➺ ${role}*
+┆❏ *𝙇𝙤𝙡𝙞𝙘𝙤𝙞𝙣𝙨 ➺ $ ${money}*
+┆❏ *𝙐𝙨𝙪𝙖𝙧𝙞𝙤 ➺ ${Object.keys(global.db.data.users).length}* 
+┆⚒️⚒️⚒️⚒️⚒️⚒️⚒️⚒️⚒️
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆ • • •「 ${lenguajeGB['smsTex21']()} ⚗️ 」• • •
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆🪅 _${usedPrefix}botemporal *enlace* *cantidad*_
+┆🪅 _${usedPrefix}addbot *enlace* *cantidad*_
+┆⚗️➺ _${usedPrefix}pase premium_
+┆⚗️➺ _${usedPrefix}pass premium_
+┆⚗️➺ _${usedPrefix}listapremium | listprem_
+┆⚗️➺ _${usedPrefix}transfer *tipo cantidad @tag*_
+┆⚗️➺ _${usedPrefix}dar *tipo cantidad @tag*_
+┆⚗️➺ _${usedPrefix}enviar *tipo cantidad @tag*_
+┆⚗️➺ _${usedPrefix}balance_
+┆⚗️➺ _${usedPrefix}cartera | wallet_
+┆⚗️➺ _${usedPrefix}experiencia | exp_
+┆⚗️➺ _${usedPrefix}top | lb | leaderboard_
+┆⚗️➺ _${usedPrefix}nivel | level | lvl_
+┆⚗️➺ _${usedPrefix}rol | rango_
+┆⚗️➺ _${usedPrefix}inventario | inventory_
+┆⚗️➺ _${usedPrefix}aventura | adventure_
+┆⚗️➺ _${usedPrefix}caza | cazar | hunt_
+┆⚗️➺ _${usedPrefix}animales_
+┆⚗️➺ _${usedPrefix}alimentos_
+┆⚗️➺ _${usedPrefix}curar | heal_
+┆⚗️➺ _${usedPrefix}minardiamantes | minargemas_
+┆⚗️➺ _${usedPrefix}minargatacoins | minarcoins_
+┆⚗️➺ _${usedPrefix}minarexperiencia | minarexp_
+┆⚗️➺ _${usedPrefix}minar *:* minar2 *:* minar3_
+┆⚗️➺ _${usedPrefix}buy_
+┆⚗️➺ _${usedPrefix}sell_
+┆⚗️➺ _${usedPrefix}verificar | registrar_
+┆⚗️➺ _${usedPrefix}perfil | profile_
+┆⚗️➺ _${usedPrefix}myns_
+┆⚗️➺ _${usedPrefix}unreg *numero de serie*_
+┆⚗️➺ _${usedPrefix}reclamar | regalo | claim_
+┆⚗️➺ _${usedPrefix}cofre | abrircofre | coffer_
+┆⚗️➺ _${usedPrefix}trabajar | work_
+╰─────────────────
 `.trim()
 await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#infobot', fkontak, adReply)
 

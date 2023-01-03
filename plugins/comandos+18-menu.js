@@ -71,77 +71,78 @@ let fsizedoc = '1'.repeat(10)
 let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: ig, description: 'Hola', previewType: 'PHOTO', thumbnail: await(await fetch(gataMenu.getRandom())).buffer(), sourceUrl: redesMenu.getRandom() }}}
 
 let menuA = `😏 ${lenguajeGB['smsConfi2']()} *${username}*`.trim()
-let menuB = `╭━〔 *${wm}* 〕━⬣
-┃😏😏😏😏😏😏😏😏😏
-┃❏ *𝙁𝙚𝙘𝙝𝙖 ➺ *${week}, ${date}*
-┃❏ *𝙀𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖  ➺ ${exp}*
-┃❏ *𝙉𝙞𝙫𝙚𝙡  ➺ ${level}*
-┃❏ *𝙍𝙤𝙡 ➺* ${role}
-┃❏ *𝙇𝙤𝙡𝙞𝙘𝙤𝙞𝙣𝙨 ➺ $ ${money}*
-┃❏ *𝙐𝙨𝙪𝙖𝙧𝙞𝙤 ➺ ${Object.keys(global.db.data.users).length}* 
-┃😏😏😏😏😏😏😏😏😏
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 〔 𝗠𝗲𝗻𝘂 +𝟭𝟴 〕
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ *𝑼́𝒔𝒂𝒍𝒐𝒔 𝒃𝒂𝒋𝒐𝒔 𝒕𝒖 𝒓𝒆𝒔𝒑𝒐𝒏𝒔𝒂𝒃𝒊𝒍𝒊𝒅𝒂𝒅*
-┃ *𝑵𝒐𝒕𝒂: 𝒏𝒐 𝒔𝒆𝒂 𝒑𝒂𝒋𝒆𝒓𝒐*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🔞➺ _${usedPrefix}nsfwloli_
-┃🔞➺ _${usedPrefix}nsfwfoot_
-┃🔞➺ _${usedPrefix}nsfwass_
-┃🔞➺ _${usedPrefix}nsfwbdsm_
-┃🔞➺ _${usedPrefix}nsfwcum_
-┃🔞➺ _${usedPrefix}nsfwero_
-┃🔞➺ _${usedPrefix}nsfwfemdom_
-┃🔞➺ _${usedPrefix}nsfwfoot_
-┃🔞➺ _${usedPrefix}nsfwglss_
-┃🔞➺ _${usedPrefix}nsfworgy_
-┃🔞➺ _${usedPrefix}pies_
-┃🔞➺ _${usedPrefix}yuri_
-┃🔞➺ _${usedPrefix}yuri2_ 
-┃🔞➺ _${usedPrefix}yaoi_
-┃🔞➺ _${usedPrefix}yaoi2_
-┃🔞➺ _${usedPrefix}panties_ 
-┃🔞➺ _${usedPrefix}tetas_ 
-┃🔞➺ _${usedPrefix}booty_
-┃🔞➺ _${usedPrefix}ecchi_
-┃🔞➺ _${usedPrefix}furro_
-┃🔞➺ _${usedPrefix}hentai_
-┃🔞➺ _${usedPrefix}trapito_
-┃🔞➺ _${usedPrefix}imagenlesbians_
-┃🔞➺ _${usedPrefix}pene_
-┃🔞➺ _${usedPrefix}porno_
-┃🔞➺ _${usedPrefix}porno2_
-┃🔞➺ _${usedPrefix}randomxxx_
-┃🔞➺ _${usedPrefix}pechos_
-┃🔞➺ _${usedPrefix}pack_
-┃🔞➺ _${usedPrefix}pack2_
-┃🔞➺ _${usedPrefix}pack3_
-┃🔞➺ _${usedPrefix}videoxxx_
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 🥵 𝑪𝒐𝒏𝒕𝒆𝒏𝒊𝒅𝒐 𝒅𝒊𝒏𝒂́𝒎𝒊𝒄𝒐  🥵
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃»🥵 _${usedPrefix}pornovideo | pornovid_
-┃»🥵 _${usedPrefix}pornovidgay | pornogayv_
-┃»🥵 _${usedPrefix}pornolesbivid | pornolesbiv_
-┃»🥵 _${usedPrefix}pornobisexualvid | pornobiv_
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ ❤️‍🔥 𝑩𝒖𝒔𝒄𝒂𝒓 𝒚 𝒅𝒆𝒔𝒄𝒂𝒓𝒈𝒂𝒓 ❤️‍🔥
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃❤️‍🔥➺ _${usedPrefix}xnxxsearch | buscarxnxx *texto*_
-┃❤️‍🔥➺ _${usedPrefix}xvideossearch *texto*_
-┃❤️‍🔥➺ _${usedPrefix}xnxxdl | xnxx *enlace*_
-┃❤️‍🔥➺ _${usedPrefix}xvideosdl | xvideos *enlace*_
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 🔥 𝑪𝒐𝒏𝒕𝒆𝒏𝒊𝒅𝒐 𝒑𝒍𝒖𝒔  🔥
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ *𝑼𝒔𝒂𝒓 𝒃𝒂𝒋𝒐 𝒕𝒖 𝒓𝒆𝒔𝒑𝒐𝒏𝒔𝒂𝒃𝒊𝒍𝒊𝒅𝒂𝒅*
-┃ *𝑽𝒊𝒅𝒆𝒐 +18 𝒂𝒍𝒆𝒂𝒕𝒐𝒓𝒊𝒐*
-┃ *𝑷𝒖𝒆𝒅𝒆 𝒕𝒂𝒓𝒅𝒂𝒓 𝒆𝒏 𝒆𝒏𝒗𝒊𝒂𝒓*
-┃ *𝑪𝒐𝒏𝒕𝒆𝒏𝒊𝒅𝒐 𝒅𝒆 𝒄𝒂𝒍𝒊𝒅𝒂𝒅*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃»🔥 _${usedPrefix}pornopremium_
-╰━━━━━━━━━━━━━━━━⬣
+let menuB = `┌───⊷ *${wm}*
+┆😏😏😏😏😏😏😏😏😏
+┆❏ *𝙁𝙚𝙘𝙝𝙖 ➺ ${week}, ${date}*
+┆❏ *𝙀𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖  ➺ ${exp}*
+┆❏ *𝙉𝙞𝙫𝙚𝙡  ➺ ${level}*
+┆❏ *𝙍𝙤𝙡 ➺  ${role}*
+┆❏ *𝙇𝙤𝙡𝙞𝙘𝙤𝙞𝙣𝙨 ➺ $ ${money}*
+┆❏ *𝙐𝙨𝙪𝙖𝙧𝙞𝙤 ➺ ${Object.keys(global.db.data.users).length}* 
+┆❏ *𝙏𝙞𝙚𝙢𝙥𝙤 𝙖𝙘𝙩𝙞𝙫𝙤 ➺ ${uptime}*
+┆😏😏😏😏😏😏😏😏😏
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆ • • •「𝗠𝗲𝗻𝘂 +𝟭𝟴 」• • •
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆ *𝑼́𝒔𝒂𝒍𝒐𝒔 𝒃𝒂𝒋𝒐𝒔 𝒕𝒖 𝒓𝒆𝒔𝒑𝒐𝒏𝒔𝒂𝒃𝒊𝒍𝒊𝒅𝒂𝒅*
+┆ *𝑵𝒐𝒕𝒂: 𝒏𝒐 𝒔𝒆𝒂 𝒑𝒂𝒋𝒆𝒓𝒐*
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆🔞➺ _${usedPrefix}nsfwloli_
+┆🔞➺ _${usedPrefix}nsfwfoot_
+┆🔞➺ _${usedPrefix}nsfwass_
+┆🔞➺ _${usedPrefix}nsfwbdsm_
+┆🔞➺ _${usedPrefix}nsfwcum_
+┆🔞➺ _${usedPrefix}nsfwero_
+┆🔞➺ _${usedPrefix}nsfwfemdom_
+┆🔞➺ _${usedPrefix}nsfwfoot_
+┆🔞➺ _${usedPrefix}nsfwglss_
+┆🔞➺ _${usedPrefix}nsfworgy_
+┆🔞➺ _${usedPrefix}pies_
+┆🔞➺ _${usedPrefix}yuri_
+┆🔞➺ _${usedPrefix}yuri2_ 
+┆🔞➺ _${usedPrefix}yaoi_
+┆🔞➺ _${usedPrefix}yaoi2_
+┆🔞➺ _${usedPrefix}panties_ 
+┆🔞➺ _${usedPrefix}tetas_ 
+┆🔞➺ _${usedPrefix}booty_
+┆🔞➺ _${usedPrefix}ecchi_
+┆🔞➺ _${usedPrefix}furro_
+┆🔞➺ _${usedPrefix}hentai_
+┆🔞➺ _${usedPrefix}trapito_
+┆🔞➺ _${usedPrefix}imagenlesbians_
+┆🔞➺ _${usedPrefix}pene_
+┆🔞➺ _${usedPrefix}porno_
+┆🔞➺ _${usedPrefix}porno2_
+┆🔞➺ _${usedPrefix}randomxxx_
+┆🔞➺ _${usedPrefix}pechos_
+┆🔞➺ _${usedPrefix}pack_
+┆🔞➺ _${usedPrefix}pack2_
+┆🔞➺ _${usedPrefix}pack3_
+┆🔞➺ _${usedPrefix}videoxxx_
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆ 🥵 𝑪𝒐𝒏𝒕𝒆𝒏𝒊𝒅𝒐 𝒅𝒊𝒏𝒂́𝒎𝒊𝒄𝒐  🥵
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆»🥵 _${usedPrefix}pornovideo | pornovid_
+┆»🥵 _${usedPrefix}pornovidgay | pornogayv_
+┆»🥵 _${usedPrefix}pornolesbivid | pornolesbiv_
+┆»🥵 _${usedPrefix}pornobisexualvid | pornobiv_
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆ ❤️‍🔥 𝑩𝒖𝒔𝒄𝒂𝒓 𝒚 𝒅𝒆𝒔𝒄𝒂𝒓𝒈𝒂𝒓 ❤️‍🔥
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆❤️‍🔥➺ _${usedPrefix}xnxxsearch | buscarxnxx *texto*_
+┆❤️‍🔥➺ _${usedPrefix}xvideossearch *texto*_
+┆❤️‍🔥➺ _${usedPrefix}xnxxdl | xnxx *enlace*_
+┆❤️‍🔥➺ _${usedPrefix}xvideosdl | xvideos *enlace*_
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆ 🔥 𝑪𝒐𝒏𝒕𝒆𝒏𝒊𝒅𝒐 𝒑𝒍𝒖𝒔  🔥
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆ *𝑼𝒔𝒂𝒓 𝒃𝒂𝒋𝒐 𝒕𝒖 𝒓𝒆𝒔𝒑𝒐𝒏𝒔𝒂𝒃𝒊𝒍𝒊𝒅𝒂𝒅*
+┆ *𝑽𝒊𝒅𝒆𝒐 +18 𝒂𝒍𝒆𝒂𝒕𝒐𝒓𝒊𝒐*
+┆ *𝑷𝒖𝒆𝒅𝒆 𝒕𝒂𝒓𝒅𝒂𝒓 𝒆𝒏 𝒆𝒏𝒗𝒊𝒂𝒓*
+┆ *𝑪𝒐𝒏𝒕𝒆𝒏𝒊𝒅𝒐 𝒅𝒆 𝒄𝒂𝒍𝒊𝒅𝒂𝒅*
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆»🔥 _${usedPrefix}pornopremium_
+╰──────────
 `.trim()
 
 await conn.sendButton(m.chat, menuA, menuB, pp, [
