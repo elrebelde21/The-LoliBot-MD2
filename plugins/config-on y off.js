@@ -380,6 +380,15 @@ throw false
 chat.antiTraba = isEnable
 break
 
+case 'antiprivado':
+isAll = true
+if (!isROwner) {
+global.dfail('rowner', m, conn)
+throw false
+}
+bot.antiPrivate = isEnable
+break
+
 case 'simi':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
