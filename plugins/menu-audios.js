@@ -67,13 +67,13 @@ let user = global.db.data.users[m.sender]
 let pp = gataVidMenu.getRandom()
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 let fsizedoc = '1'.repeat(10)
-let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: tik, description: 'Hola', previewType: 'PHOTO', thumbnail: await(await fetch(gataMenu.getRandom())).buffer(), sourceUrl: redesMenu.getRandom() }}}
+let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: ig, description: 'Hola', previewType: 'PHOTO', thumbnail: await(await fetch(gataMenu.getRandom())).buffer(), sourceUrl: redesMenu.getRandom() }}}
 
 let menuA = `🎶 ${lenguajeGB['smsConfi2']()} *${username}*`.trim()
 let menuB = `
-┌───⊷  ${username}
+┌───⊷  
 ┆ *Menu de audios*
-┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆ *𝑵𝒐 𝒆𝒔 𝒏𝒆𝒄𝒆𝒔𝒂𝒓𝒊𝒐 𝒆𝒍 𝒑𝒓𝒆𝒇𝒊𝒋𝒐*
 ┆ *𝑷𝒖𝒆𝒅𝒆 𝒔𝒐𝒍𝒐 𝒆𝒔𝒄𝒓𝒊𝒃𝒊𝒓 𝒍𝒂*
 ┆ *𝑷𝒂𝒍𝒂𝒃𝒓𝒂 𝒐 𝑭𝒓𝒂𝒔𝒆.*
