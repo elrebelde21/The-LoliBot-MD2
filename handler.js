@@ -982,10 +982,6 @@ export async function handler(chatUpdate) {
         if (!m.fromMe && opts['self'])
             return
         if (opts['pconly'] && m.chat.endsWith('g.us'))
-        if (m.isBaileys && m.fromMe) return !0
-        if (m.isGroup) return !1
-        if (!m.message) return !0
-        if (m.text.includes('PIEDRA') || m.text.includes('PAPEL') || m.text.includes('TIJERA') || m.text.includes('serbot') || m.text.includes('jadibot')) return !0
             return
         if (opts['gconly'] && !m.chat.endsWith('g.us'))
             return
