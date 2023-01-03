@@ -960,6 +960,7 @@ export async function handler(chatUpdate) {
                 if (!('autoread' in settings)) settings.autoread = false
                 if (!('restrict' in settings)) settings.restrict = false
 		if (!('temporal' in settings)) settings.temporal = true
+        if (!('antiPrivate' in settings)) settings.antiPrivate = false
 		if (!('antiCall' in settings)) settings.antiCall = true
 		if (!('antiSpam' in settings)) settings.antiSpam = true
             } else global.db.data.settings[this.user.jid] = {
@@ -967,6 +968,7 @@ export async function handler(chatUpdate) {
                 autoread: false,
                 restrict: false,
 		temporal: true,
+		antiPrivate: false,
 		antiCall: true,
 		antiSpam: true
             }
