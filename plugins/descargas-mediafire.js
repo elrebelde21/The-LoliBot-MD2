@@ -1,22 +1,26 @@
 import fs from 'fs'
 import { mediafiredl } from '@bochilteam/scraper'
 let handler = async (m, { conn, args, usedPrefix, command }) => {
+let user = db.data.users[m.sender]
+let time = user.prueb + 60000 //tiempo de espera en min
+if (new Date - user.prueb < 60000) return await conn.reply(m.chat, `*ESPERA UNOS MINUTOS PARA USAR OTRO COMANDO*`,  m)
+
 if (!args[0]) throw `${mg}𝑰𝒏𝒈𝒓𝒆𝒔𝒆 𝒖𝒏 𝒆𝒏𝒍𝒂𝒄𝒆 𝒗𝒂́𝒍𝒊𝒅𝒐 𝒅𝒆 𝒎𝒆𝒅𝒊𝒂𝒇𝒊𝒓𝒆.`
 try {
 let res = await mediafiredl(args[0])
 let { url, url2, filename, ext, aploud, filesize, filesizeH } = res
 let caption = `
-${eg}
-┃ 𓃠 *${gt} ${vs}*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 💫 𝑵𝒐𝒎𝒃𝒓𝒆
-┃ ${filename}
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 💪 𝑷𝒆𝒔𝒐
-┃ ${filesizeH}
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 🚀 𝑻𝒊𝒑𝒐
-┃ ${ext}`.trim()
+  ${eg}
+╭┄〔 *𓃠 ${wm}* 〕┄⊱
+┆ 💫 𝑵𝒐𝒎𝒃𝒓𝒆
+┆ ${filename}
+┆——————«•»——————
+┆ 💪 𝑷𝒆𝒔𝒐
+┆ ${filesizeH}
+┆——————«•»——————
+┆ 🚀 𝑻𝒊𝒑𝒐
+┆ ${ext}
+╰━━━⊰ 𓃠 ${vs} ⊱━━━━დ`.trim()
 conn.reply(m.chat, caption, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 title: '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫',
@@ -46,3 +50,16 @@ handler.register = true
 handler.limit = 3
 handler.exp = 100
 export default handler
+
+function msToTime(duration) {
+var milliseconds = parseInt((duration % 1000) / 100),
+seconds = Math.floor((duration / 1000) % 60),
+minutes = Math.floor((duration / (1000 * 60)) % 60),
+hours = Math.floor((duration / (1000 * 60 * 60)) % 24)
+
+hours = (hours < 10) ? "0" + hours : hours
+minutes = (minutes < 10) ? "0" + minutes : minutes
+seconds = (seconds < 10) ? "0" + seconds : seconds
+
+return minutes + " m y " + seconds + " s " 
+}
