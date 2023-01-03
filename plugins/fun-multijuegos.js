@@ -66,6 +66,7 @@ let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? c
  let mentionedJid = [who]
   let username = conn.getName(who)  
   
+await delay(5000)
 if (command == 'multijuegos') { 
   global.db.data.users[m.sender].limit += 1
 
@@ -135,7 +136,7 @@ conn.sendMessage(m.chat, tt, m)
 
  const templateButtonsReplyMessage = [
 {index: 1, urlButton: {displayText: '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝒃𝒐𝒕-𝑴𝑫', url: 'https://github.com/elrebelde21/The-LoliBot-MD'}},
-{index: 2, urlButton: {displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', url: 'https://www.instagram.com/gata_dios/'}},
+{index: 2, urlButton: {displayText: '𝙔𝙤𝙪𝙩𝙪𝙗𝙚', url: 'https://www.youtube.com/@TheLoliBot-MD'}},
 {index: 3, quickReplyButton: {displayText: `𝙅𝙪𝙜𝙖𝙧 ${emojis1}`, id: juegos}},
 {index: 4, quickReplyButton: {displayText: `𝙅𝙪𝙜𝙖𝙧 ${emojis2}`, id: juegos2}},
 {index: 5, quickReplyButton: {displayText: `𝙅𝙪𝙜𝙖𝙧 ${emojis3}`, id: juegos3}},
@@ -204,7 +205,6 @@ templateButtons: templateButtonsReplyMessage
 conn.sendMessage(m.chat, tttt, m)  
 }
  }
- await delay(5000)
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = ['multijuegos', 'juegos']
