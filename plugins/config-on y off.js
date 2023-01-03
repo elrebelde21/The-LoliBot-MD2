@@ -398,14 +398,14 @@ throw false
 chat.simi = isEnable
 break
 
-case 'anticomando':
-case 'anticomando':
+case 'antipv':
+case 'antipv':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
 throw false
 }}
-chat.anticomando = isEnable
+chat.antipv = isEnable
 break
 
 case 'swonly': case 'statusonly':
