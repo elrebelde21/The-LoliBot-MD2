@@ -69,28 +69,29 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 let fsizedoc = '1'.repeat(10)
 let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: ig, description: 'Hola', previewType: 'PHOTO', thumbnail: await(await fetch(gataMenu.getRandom())).buffer(), sourceUrl: redesMenu.getRandom() }}}
 
-let menuA = `✨ ${lenguajeGB['smsConfi2']()} *${username}*`.trim()
-let menuB = `╭━〔 *${wm}* 〕━⬣
-┃✨✨✨✨✨✨✨✨✨
-┃❏ *𝙁𝙚𝙘𝙝𝙖 ➺ ${week}, ${date}*
-┃❏ *𝙀𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖 ➺ ${exp}*
-┃❏ *𝙉𝙞𝙫𝙚𝙡 ➺ ${level}*
-┃❏ *𝙍𝙤𝙡 ➺* ${role}
-┃❏ *𝙇𝙤𝙡𝙞𝙘𝙤𝙞𝙣𝙨 ➺ $ ${money}*
-┃❏ *𝙐𝙨𝙪𝙖𝙧𝙞𝙤  ➺ ${Object.keys(global.db.data.users).length}* 
-┃✨✨✨✨✨✨✨✨✨
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃〔 𝙈𝙚𝙣𝙪 𝙚𝙛𝙚𝙘𝙩𝙤 𝙮 𝙡𝙤𝙜𝙤𝙨  〕
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🔆 _${usedPrefix}logos *efecto texto*_
-┃⛺ _${usedPrefix}simpcard *@tag*_
-┃⛺ _${usedPrefix}hornycard *@tag*_
-┃⛺ _${usedPrefix}lolice *@tag*_
-┃⛺ _${usedPrefix}ytcomment *texto*_
-┃⛺ _${usedPrefix}itssostupid_
-┃⛺ _${usedPrefix}pixelar_
-┃⛺ _${usedPrefix}blur_
-╰━━━━━━━━━━━━━━━━⬣
+let menuA = `${lenguajeGB['smsConfi2']()}  ${username}`.trim()
+let menuB = `
+ 
+┌───⊷ ${wm}
+┆✨✨✨✨✨✨✨✨✨
+┆ ☞ *𝙁𝙚𝙘𝙝𝙖 ➺ ${week}, ${date}*
+┆ ☞ *𝙀𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖 ➺ ${exp}*
+┆ ☞ *𝙉𝙞𝙫𝙚𝙡 ➺ ${level}*
+┆ ☞ *𝙍𝙤𝙡 ➺* ${role}
+┆ ☞ *𝙇𝙤𝙡𝙞𝙘𝙤𝙞𝙣𝙨 ➺ $ ${money}*
+┆ ☞ *𝙐𝙨𝙪𝙖𝙧𝙞𝙤  ➺ ${Object.keys(global.db.data.users).length}* 
+┆✨✨✨✨✨✨✨✨✨
+┆ • • •「𝙈𝙚𝙣𝙪 𝙚𝙛𝙚𝙘𝙩𝙤 𝙮 𝙡𝙤𝙜𝙤𝙨 」• • •
+┆~~••~~••~~••~~••~~
+┆🔆 _${usedPrefix}logos *efecto texto*_
+┆⛺ _${usedPrefix}simpcard *@tag*_
+┆⛺ _${usedPrefix}hornycard *@tag*_
+┆⛺ _${usedPrefix}lolice *@tag*_
+┆⛺ _${usedPrefix}ytcomment *texto*_
+┆⛺ _${usedPrefix}itssostupid_
+┆⛺ _${usedPrefix}pixelar_
+┆⛺ _${usedPrefix}blur_
+╰──────────╯
 `.trim()
 await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#infobot', fkontak, adReply)
 
