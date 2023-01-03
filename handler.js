@@ -983,8 +983,6 @@ export async function handler(chatUpdate) {
             return
         if (opts['pconly'] && m.chat.endsWith('g.us'))
             return
-        if (m.plugin != 'jadibot.js')
-    return !0
         if (opts['gconly'] && !m.chat.endsWith('g.us'))
             return
         if (opts['swonly'] && m.chat !== 'status@broadcast')
