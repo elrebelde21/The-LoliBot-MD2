@@ -32,6 +32,7 @@ let top = `*${x} Top 10 ${text} ${x}*
 *9. ${user(i)}*
 *10. ${user(j)}*`
 m.reply(top, null, { mentions: [a, b, c, d, e, f, g, h, i, j]})
+await delay(5000)
 conn.sendFile(m.chat, vn, 'error.mp3', null, m, true, {
 type: 'audioMessage',
 ptt: true })}
@@ -40,5 +41,7 @@ handler.tags = ['fun']
 handler.group = true
 handler.limit = 2
 export default handler
+const delay = time => new Promise(res => setTimeout(res, time))
+
 function pickRandom(list) {
 return list[Math.floor(Math.random() * list.length)]}
