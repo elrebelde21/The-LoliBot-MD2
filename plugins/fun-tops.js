@@ -1,7 +1,6 @@
 import util from 'util'
 import path from 'path' 
 
-await delay(5000)
 function handler(m, { groupMetadata, command, usedPrefix, conn }) {
    let user = a => '@' + a.split('@')[0] //'@' + a.split('@')[0]
    
@@ -368,6 +367,7 @@ Genial! 💝, están de Luna de miel 🥵✨❤️‍🔥`
 m.reply(top, null, { mentions: conn.parseMention(top) })}
   
 }
+await delay(5000)
 handler.help = handler.command = ['topgays', 'topotakus', 'topintegrantes', 'topintegrante', 'toplagrasa', 'topgrasa', 'toppanafrescos', 'toppanafresco', 'topshiposters', 'topshipost', 'toppajeros', 'toppajer@s', 'toplindos', 'toplind@s', 'topputos', 'topput@s', 'topfamosos', 'topfamos@s', 'topparejas', 'top5parejas' ]
 handler.tags = ['games']
 handler.group = true
