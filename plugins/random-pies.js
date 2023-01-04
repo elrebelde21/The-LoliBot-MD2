@@ -2,6 +2,7 @@ import fetch from 'node-fetch'
 let handler = async (m, { conn, command }) => {
 if (!db.data.chats[m.chat].modohorny && m.isGroup) throw '[ ⚠️ ] 𝑳𝒐𝒔 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 +18 𝒆𝒔𝒕𝒂 𝑫𝒆𝒔𝒂𝒄𝒕𝒊𝒗𝒂𝒅𝒐 𝒆𝒍 𝒆𝒔𝒕𝒆 𝒈𝒓𝒖𝒑𝒐, 𝒔𝒊 𝒂𝒅𝒎𝒊𝒏 𝒅𝒆𝒍 𝒆𝒔𝒕𝒆 𝒈𝒓𝒖𝒑𝒐, 𝒚 𝒒𝒖𝒊𝒆𝒓𝒆 𝒂𝒄𝒕𝒊𝒗𝒂𝒍𝒐𝒔 𝒆𝒔𝒄𝒓𝒊𝒃𝒂 #enable nsfw'
 let url = pies[Math.floor(Math.random() * pies.length)]
+await delay(5000)
 conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, [['🔄 𝐬𝐢𝐠𝐮𝐢𝐞𝐧𝐭𝐞 🔄', `/${command}`]], m)
 }
 handler.help = ['pies']
@@ -10,7 +11,7 @@ handler.command = /^(pies)$/
 handler.exp = 50
 handler.level = 5
 export default handler
-
+const delay = time => new Promise(res => setTimeout(res, time))
 
 global.pies = [
 "https://i.pinimg.com/originals/d9/e0/d4/d9e0d435743e9db03cf6b1b01627830f.jpg",

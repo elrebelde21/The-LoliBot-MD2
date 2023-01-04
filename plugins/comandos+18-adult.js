@@ -1,6 +1,7 @@
 import axios from "axios" 
 let handler = async (m, {command, conn}) => {
 if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `[ ⚠️ ] Los comandos +18 estan desactivados en este grupo, si es administrador de este grupo y desea activarlos escriba #enable modohorny para activar`   
+await delay(5000)
 if (command == 'nsfwloli') {
 let haha = await conn.getFile(`https://server-api-rey.herokuapp.com/api/wallpaper/nsfwloli?apikey=apirey`) 
 conn.sendButton(m.chat, `_${command}_`.trim(), wm, haha.data, [['🥵 𝑺𝒊𝒈𝒖𝒊𝒆𝒏𝒕𝒆🥵', `/${command}`]], m)}
@@ -119,6 +120,7 @@ handler.level = 3
 handler.register = true
 handler.limit = 1
 export default  handler
+const delay = time => new Promise(res => setTimeout(res, time))
 
 /*import util from 'util'
 import path from 'path'

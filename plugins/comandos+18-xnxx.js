@@ -5,6 +5,7 @@ let handler = async (m, { conn, args, command, usedPrefix }) => {
 if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `[ ⚠️ ] Los comandos +18 estan desactivados en este grupo, si es administrador de este grupo y desea activarlos escriba #enable modohorny para activar`
 if (!args[0]) throw `𝙌𝙪𝙚 𝙗𝙪𝙨𝙘𝙖? 𝙐𝙨𝙚𝙧 𝙪𝙣 𝙚𝙣𝙡𝙖𝙘𝙚 𝙙𝙚 𝙭𝙣𝙭𝙭\n𝙀𝙟𝙚𝙢𝙥𝙡𝙤\n*${usedPrefix + command} https://www.xnxx.com/video-14lcwbe8/sexo_en_casa*`
 try {
+await delay(6000)
 await conn.reply(m.chat, `⏳️ 𝙀𝙨𝙥𝙚𝙧𝙚 𝙥𝙤𝙧 𝙛𝙖𝙫𝙤𝙧  𝙖 𝙦𝙪𝙚́ 𝙨𝙚 𝙚𝙣𝙫𝙞́𝙚 𝙚𝙡 𝙫𝙞́𝙙𝙚𝙤, 𝙣𝙤 𝙨𝙚𝙖 𝙖𝙥𝙪𝙧𝙖𝙙𝙤, 𝙚𝙨𝙥𝙚𝙧𝙚 𝙦𝙪𝙚 𝙚𝙨𝙩𝙤𝙮 𝙡𝙚𝙣𝙩𝙤🐢`, m)
 //let res = await fetch(API('https://zenzapis.xyz', '/downloader/xvideos', { apikey: 'B2CB95861FBF', url: args[0] }))
 let res = await fetch(`https://zenzapis.xyz/downloader/xnxx?apikey=${keysxxx}&url=`+args[0])
@@ -21,3 +22,4 @@ handler.level = 5
 handler.money = 600
 handler.register = true
 export default handler
+const delay = time => new Promise(res => setTimeout(res, time))

@@ -1,6 +1,7 @@
 let handler  = async (m, { conn, usedPrefix, command }) => {
 if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `[ ⚠️ ] Los comandos +18 estan desactivados en este grupo, si es administrador de este grupo y desea activarlos escriba #enable modohorny para activar`   
 let res = pickRandom(asupan)
+await delay(9000)
 conn.sendHydrated(m.chat, null, null, res, null, null, null, null, [['🥵 𝑺𝒊𝒈𝒖𝒊𝒆𝒏𝒕𝒆 🥵', `/${command}`]], m)}
 handler.help = ['videoxxx']
 handler.tags = ['random']
@@ -9,6 +10,7 @@ handler.level = 6
 handler.limit = 2
 handler.register = true
 export default handler
+const delay = time => new Promise(res => setTimeout(res, time))
 
 function pickRandom(list) {
 return list[Math.floor(list.length * Math.random())]}

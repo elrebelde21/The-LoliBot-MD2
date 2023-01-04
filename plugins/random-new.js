@@ -47,6 +47,7 @@ if (command == 'clima3') {
  if (!text) return conn.reply(m.chat, `${mg}𝑬𝒔𝒄𝒓𝒊𝒃𝒂 𝒆𝒍 𝒑𝒂𝒊́𝒔 𝒚 𝒄𝒖𝒊𝒅𝒂𝒅 𝒑𝒂𝒓𝒂 𝒔𝒂𝒃𝒆𝒓 𝒆𝒍 𝒄𝒍𝒊𝒎𝒂\n𝑬𝒋𝒆𝒎𝒑𝒍𝒐\n*${usedPrefix + command} Ecuador Quito*`, m)  
 
 let pp = `https://pt.wttr.in/${text}.png`
+await delay(5000)
 conn.sendHydrated(m.chat, `✨ *𝑨𝒔𝒊́ 𝒆𝒔𝒕𝒂*`, wm, pp, md, '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝒃𝒐𝒕-𝑴𝑫', null, null, [
 ['💙 𝙑𝙚𝙧𝙨𝙞𝙤𝙣 𝙀𝙨𝙥𝙖𝙣𝙤𝙡', `.clima ${text}`],
 ['💜 𝙀𝙣𝙜𝙡𝙞𝙨𝙝 𝙫𝙚𝙧𝙨𝙞𝙤𝙣', `.clima2 ${text}`],  
@@ -57,4 +58,4 @@ conn.sendHydrated(m.chat, `✨ *𝑨𝒔𝒊́ 𝒆𝒔𝒕𝒂*`, wm, pp, md, '
 handler.help = ['chica', 'chico', 'clima', 'clima2', 'clima3'] 
 handler.command = ['chica', 'chico', 'clima', 'clima2', 'clima3'] 
 export default handler
-
+const delay = time => new Promise(res => setTimeout(res, time))

@@ -14,9 +14,12 @@ conn.reply(m.chat, '𝑼𝒇𝒇, 𝒐𝒄𝒖𝒓𝒓𝒊𝒐́ 𝒖𝒏 𝒆�
 })
 } else {
 conn.reply(m.chat, `𝑳𝒂 𝒃𝒖́𝒔𝒒𝒖𝒆𝒅𝒂 𝒏𝒐 𝒆𝒔𝒕𝒂́ 𝒅𝒊𝒔𝒑𝒐𝒏𝒊𝒃𝒍𝒆, 𝒆𝒔𝒄𝒓𝒊𝒃𝒆 𝒑𝒂𝒓𝒂 ${usedPrefix}kpop  𝒗𝒆𝒛 𝒍𝒂 𝒍𝒊𝒔𝒕𝒂 𝒃𝒖́𝒔𝒒𝒖𝒆𝒅𝒂 𝒅𝒊𝒔𝒑𝒐𝒏𝒊𝒃𝒍𝒆`, m)
-}}
+}
+await delay(9000)
+}
 handler.help = ['kpop'].map(v => v + ' <query>')
 handler.tags = ['image']
 handler.command = /^(kpop)$/i
 handler.register = true
 export default handler 
+const delay = time => new Promise(res => setTimeout(res, time))

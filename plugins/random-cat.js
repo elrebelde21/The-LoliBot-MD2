@@ -6,6 +6,7 @@ let img = await res.buffer()
 let caption = `
 𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝒃𝒐𝒕-𝑴𝑫
 `.trim()
+await delay(5000)
 conn.sendFile(m.chat, img, 'cat.jpg', caption, m)
 } catch (e) {
 console.log(e)
@@ -17,3 +18,4 @@ handler.command = /^cat$/i
 handler.register = true
 handler.fail = null
 export default handler
+const delay = time => new Promise(res => setTimeout(res, time))

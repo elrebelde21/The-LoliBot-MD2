@@ -1,6 +1,7 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, command }) => {
 if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `[ ⚠️ ] Los comandos +18 estan desactivados en este grupo, si es administrador de este grupo y desea activarlos escriba #enable modohorny para activar`
+await delay(5000)
 let url = pack[Math.floor(Math.random() * pack.length)]
 conn.sendButton(m.chat, `_🥵 aqui tiene mi Pack 😏_`, author, url, [['🥵 𝑺𝒊𝒈𝒖𝒊𝒆𝒏𝒕𝒆 😏', `/${command}`]], m)
 }
@@ -10,6 +11,7 @@ handler.command = /^(pack)$/i
 handler.level = 1
 handler.register = true
 export default handler
+const delay = time => new Promise(res => setTimeout(res, time))
 
 global.pack = [
   "https://i.imgur.com/XbW7FO2.jpg",
