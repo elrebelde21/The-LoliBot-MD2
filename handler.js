@@ -37,7 +37,7 @@ export async function handler(chatUpdate) {
         m.limit = false
         m.money = false
         try {
-            // TODO: use loop to insert data instead of this
+            // TODO: use el bucle para insertar datos en lugar de esto
             let user = global.db.data.users[m.sender]
             if (typeof user !== 'object')
                 global.db.data.users[m.sender] = {}
@@ -46,8 +46,8 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.exp)) user.exp = 0
 		if (!('premium' in user)) user.premium = false
 		if (!isNumber(user.joincount)) user.joincount = 2 
-                if (!isNumber(user.money)) user.money = 500
-                if (!isNumber(user.limit)) user.limit = 20    	       
+                if (!isNumber(user.money)) user.money = 400
+                if (!isNumber(user.limit)) user.limit = 16    	       
                 if (!('registered' in user)) user.registered = false
                     
             if (!user.registered) {
@@ -182,7 +182,7 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.gardenboxs)) user.gardenboxs = 0
               if (!isNumber(user.gems)) user.gems = 0
               if (!isNumber(user.glass)) user.glass = 0
-              if (!isNumber(user.glimit)) user.glimit = 20
+              if (!isNumber(user.glimit)) user.glimit = 16
               if (!isNumber(user.glory)) user.glory = 0
               if (!isNumber(user.gold)) user.gold = 0
               if (!isNumber(user.griffin)) user.griffin = 0
@@ -337,7 +337,7 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.lelebakar)) user.lelebakar = 0
               if (!isNumber(user.leleg)) user.leleg = 0
               if (!isNumber(user.level)) user.level = 0
-              if (!isNumber(user.limit)) user.limit = 20
+              if (!isNumber(user.limit)) user.limit = 16
               if (!isNumber(user.limitjoinfree)) user.limitjoinfree = 1
               if (!isNumber(user.lion)) user.lion = 0
               if (!isNumber(user.lionexp)) user.lionexp = 0
@@ -355,7 +355,7 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.makananserigala)) user.makananserigala = 0
               if (!isNumber(user.mana)) user.mana = 0
               if (!isNumber(user.mangga)) user.mangga = 0
-              if (!isNumber(user.money)) user.money = 500
+              if (!isNumber(user.money)) user.money = 400
               if (!isNumber(user.monyet)) user.monyet = 0
               if (!isNumber(user.mythic)) user.mythic = 0
               if (!isNumber(user.naga)) user.naga = 0
