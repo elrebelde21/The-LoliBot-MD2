@@ -1,4 +1,4 @@
-process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0'; //SI QUIERES TEXTO SIMPLIFICADO EN LA CONSOLA USA ESTE CÓDIGO  
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0'; 
 import './config.js';
 import { createRequire } from "module"; 
 import path, { join } from 'path'
@@ -83,7 +83,7 @@ if (!opts['test']) {
 if (global.db) setInterval(async () => {
 if (global.db.data) await global.db.write()
 if (opts['autocleartmp'] && (global.support || {}).find) (tmp = [os.tmpdir(), 'tmp'], tmp.forEach(filename => cp.spawn('find', [filename, '-amin', '3', '-type', 'f', '-delete'])))
-}, 30 * 1000)}
+}, 1000 * 900)}
 
 if (opts['server']) (await import('./server.js')).default(global.conn, PORT)
 
@@ -93,30 +93,9 @@ const filename = []
 tmp.forEach(dirname => readdirSync(dirname).forEach(file => filename.push(join(dirname, file))))
 return filename.map(file => {
 const stats = statSync(file)
-if (stats.isFile() && (Date.now() - stats.mtimeMs >= 1000 * 60 * 3)) return unlinkSync(file) // 3 minutes
+if (stats.isFile() && (Date.now() - stats.mtimeMs >= 1000 * 900)) return unlinkSync(file) // 15 minutes
 return false
 })}
-    
-/*if (!opts['test']) {
-if (global.db) setInterval(async () => {
-if (global.db.data) await global.db.write()
-if (opts['autocleartmp'] && (global.support || {}).find) (tmp = [os.tmpdir(), 'tmp', "GataJadiBot"], tmp.forEach(filename => cp.spawn('find', [filename, '-amin', '3', '-type', 'f', '-delete'])))
-}, 30 * 1000)}
-
-if (opts['server']) (await import('./server.js')).default(global.conn, PORT)
-
-function clearTmp() {
-const tmp = [tmpdir(), join(__dirname, './tmp')]
-const filename = []
-tmp.forEach(dirname => readdirSync(dirname).forEach(file => filename.push(join(dirname, file))))
-readdirSync("./GataJadiBot").forEach(file => {
-    console.log(file)
-    rmSync("./GataJadiBot/" + file, { recursive: true, force: true })})
-return filename.map(file => {
-const stats = statSync(file)
-if (stats.isFile() && (Date.now() - stats.mtimeMs >= 1000 * 60 * 3)) return unlinkSync(file) // 3 minutes
-return false
-})}*/
 
 async function connectionUpdate(update) {
 const { connection, lastDisconnect, isNewLogin } = update
@@ -256,10 +235,9 @@ let s = global.support = { ffmpeg, ffprobe, ffmpegWebp, convert, magick, gm, fin
 Object.freeze(global.support)
 }
 setInterval(async () => {
-//if (stopped == 'close') return
 var a = await clearTmp()    
 console.log(chalk.cyanBright(lenguajeGB['smsClearTmp']()))
-}, 180000)
+}, 900000) //15 min
 _quickTest()
 .then(() => conn.logger.info(lenguajeGB['smsCargando']()))
 .catch(console.error)

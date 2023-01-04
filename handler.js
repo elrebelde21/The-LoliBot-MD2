@@ -302,7 +302,6 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.lastmancinghard)) user.lastmancinghard = 0
               if (!isNumber(user.lastmancingnormal)) user.lastmancingnormal = 0
               if (!isNumber(user.lastmining)) user.lastmining = 0
-              if (!isNumber(user.prueb)) user.prueb = 0
               if (!isNumber(user.lastmisi)) user.lastmisi = 0
               if (!isNumber(user.lastmonthly)) user.lastmonthly = 0
               if (!isNumber(user.lastmulung)) user.lastmulung = 0
@@ -388,6 +387,7 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.pisang)) user.pisang = 0
               if (!isNumber(user.pointxp)) user.pointxp = 0
               if (!isNumber(user.potion)) user.potion = 0
+              if (!isNumber(user.prueb)) user.prueb = 0
               if (!isNumber(user.psenjata)) user.psenjata = 0
               if (!isNumber(user.psepick)) user.psepick = 0
               if (!isNumber(user.ramuan)) user.ramuan = 0
@@ -913,7 +913,7 @@ export async function handler(chatUpdate) {
 		if (!('reaction' in chat)) chat.reaction = true    
                 if (!('viewonce' in chat)) chat.viewonce = false         
                 if (!('modoadmin' in chat)) chat.modoadmin = false           
-                if (!('antitoxic' in chat)) chat.antitoxic = false 
+                if (!('antitoxic' in chat)) chat.antitoxic = true 
                 if (!('simi' in chat)) chat.simi = false
                 if (!('antiTraba' in chat))
                     chat.antiTraba = true
@@ -947,7 +947,7 @@ export async function handler(chatUpdate) {
 		    reaction: true,
                     viewonce: false,
                     modoadmin: false,
-                    antitoxic: false,
+                    antitoxic: true,
                     simi: false,
                     antiTraba: true,
 	            autolevelup: true,
@@ -962,16 +962,14 @@ export async function handler(chatUpdate) {
 		if (!('temporal' in settings)) settings.temporal = true
         if (!('antiPrivate' in settings)) settings.antiPrivate = false
 		if (!('antiCall' in settings)) settings.antiCall = true
-        if (!('antipv' in settings)) settings.antipv = false
 		if (!('antiSpam' in settings)) settings.antiSpam = true
             } else global.db.data.settings[this.user.jid] = {
                 self: false,
                 autoread: false,
                 restrict: false,
 		temporal: true,
-		antiPrivate: false,
+		antiPrivate: true,
 		antiCall: true,
-		antipv: false,
 		antiSpam: true
             }
         } catch (e) {
@@ -1317,6 +1315,7 @@ export async function handler(chatUpdate) {
 		
     }
 }
+
 
 /**
  * Handle groups participants update
