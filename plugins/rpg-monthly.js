@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 let handler = async (m, { isPrems, conn }) => {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" 
 }
-let grupos = [nna, nn, nnn]
+let grupos = [nna, nn, nnn, nnnt]
 let gata = [img5, img6, img7, img8, img9]
 let enlace = { contextInfo: { externalAdReply: {title: wm + ' 🐈', body: 'support group' , sourceUrl: grupos.getRandom(), thumbnail: await(await fetch(gata.getRandom())).buffer() }}}
 let enlace2 = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: yt, mediaType: 'VIDEO', description: '', title: wm, body: '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', thumbnailUrl: await(await fetch(global.img)).buffer(), sourceUrl: yt }}}
@@ -71,7 +71,7 @@ await conn.sendButton(m.chat, text, texto + `\n\n🎟️ 𝙿𝚛𝚎𝚖𝚒�
 user.lastmonthly = new Date * 1
 }
 handler.command = ['monthly', 'cadames', 'mes', 'mensual', 'entregadelmes'] 
-handler.level = 1
+handler.level = 6
 handler.register = true
 export default handler
 
