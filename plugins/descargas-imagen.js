@@ -15,5 +15,6 @@ handler.help = ['gimage <query>', 'imagen <query>']
 handler.tags = ['internet', 'tools']
 handler.command = /^(gimage|image|imagen)$/i
 handler.exp = 20
+handler.money = 40
 export default handler
 const delay = time => new Promise(res => setTimeout(res, time))

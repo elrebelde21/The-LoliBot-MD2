@@ -6,6 +6,7 @@ const img = res[Math.floor(Math.random() * res.length)]
 let link = img
 //conn.sendFile(m.chat, img, 'error.jpg', `*𝚁𝙴𝚂𝚄𝙻𝚃𝙰𝙳𝙾 𝙳𝙴 ${text}*`, m)
   
+  await delay(5000)
   conn.sendHydrated(m.chat, `💞 𝑹𝒆𝒔𝒖𝒍𝒕𝒂𝒅𝒐𝒔: ${text}`, `𝑭𝒐𝒏𝒅𝒐𝒔 | ${wm}`, img, img, '☘️ 𝙐𝙍𝙇', null, null, [
 ['🔄 𝙎𝙞𝙜𝙪𝙞𝙚𝙣𝙩𝙚', `${usedPrefix + command} ${text}`],
 ['🔍 𝙋𝙞𝙣𝙩𝙚𝙧𝙚𝙨𝙩 ', `#pinterest ${text}`],
@@ -17,4 +18,8 @@ handler.help = ['', '2'].map(v => 'wallpaper' + v + ' <query>')
 handler.tags = ['downloader']
 handler.command = /^(wp|wallpaper2?)$/i
 handler.exp = 29
+handler.limit = 2
+handler.register = true
+handler.level = 6
 export default handler 
+const delay = time => new Promise(res => setTimeout(res, time))
