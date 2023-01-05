@@ -5,3 +5,4 @@ await m.reply(users.map(v => '👉🏻 wa.me/' + v.jid.replace(/[^0-9]/g, '') + 
 handler.command = handler.help = ['listjadibot','bots','subsbots']
 handler.tags = ['jadibot']
 export default handler
+
