@@ -14,9 +14,9 @@ global.owner = [
 ]
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
-global.mods = ['50495745934'] 
-global.prems = ['595986172767', '5493704555464'], 
-  
+global.mods = [] 
+global.prems = ['528451003894'], 
+   
   
 //⊱ ━━━━━.⋅ IDIOMA : LENGUAJE ⋅.━━━━ ⊰ 
 //Agrega el Idioma que quieres que tenga 𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫
@@ -178,7 +178,7 @@ global.igfg = '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫'
 global.wait = '*⌛ _Cargando..._ ▬▭▭▭▭▭▭*'
 global.waitt = '*⌛ _Cargando..._ ▬▬▭▭▭*'
 global.waittt = '*⌛ _Cargando..._ ▬▬▬▬▭▭*'
-global.waitttt = '*⌛ _Cargando..._ ▬▬▬▬▬▬▭*'
+global.waitttt = '*⌛ _Cargando...._ ▬▬▬▬▬▬▭*'
 global.nomorown = '5492266466080'
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf']
 
@@ -278,9 +278,9 @@ global.rpg = {
       level: '🧬 Nivel',
       limit: lenguajeGB.eDiamante(),
       exp: lenguajeGB.eExp(),
-      bank: '🏦 Banco',
+      bank: '🏦 Banco : Bank',
       diamond: lenguajeGB.eDiamantePlus(),
-      health: '❤️ Salud',
+      health: '❤️ Salud : Health',
       kyubi: lenguajeGB.eMagia(),
       joincount: lenguajeGB.eToken(),
       emerald: lenguajeGB.eEsmeralda(),

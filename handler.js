@@ -37,7 +37,7 @@ export async function handler(chatUpdate) {
         m.limit = false
         m.money = false
         try {
-            // TODO: use el bucle para insertar datos en lugar de esto
+            // TODO: use loop to insert data instead of this
             let user = global.db.data.users[m.sender]
             if (typeof user !== 'object')
                 global.db.data.users[m.sender] = {}
@@ -387,7 +387,6 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.pisang)) user.pisang = 0
               if (!isNumber(user.pointxp)) user.pointxp = 0
               if (!isNumber(user.potion)) user.potion = 0
-              if (!isNumber(user.prueb)) user.prueb = 0
               if (!isNumber(user.psenjata)) user.psenjata = 0
               if (!isNumber(user.psepick)) user.psepick = 0
               if (!isNumber(user.ramuan)) user.ramuan = 0
@@ -761,7 +760,7 @@ export async function handler(chatUpdate) {
                     mana: 20,
                     mangga: 0,
                     misi: '',
-                    money: 400,
+                    money: 500,
                     monyet: 0,
                     mythic: 0,
                     naga: 0,
@@ -909,7 +908,7 @@ export async function handler(chatUpdate) {
 		if (!('antiFacebook' in chat)) chat.antiFacebook = false
 		if (!('antiInstagram' in chat)) chat.antiInstagram = false
 		if (!('antiTwitter' in chat)) chat.antiInstagram = false
-		if (!('antifake' in chat)) chat.antifake = true
+		if (!('antifake' in chat)) chat.antifake = false
 		if (!('reaction' in chat)) chat.reaction = true    
                 if (!('viewonce' in chat)) chat.viewonce = false         
                 if (!('modoadmin' in chat)) chat.modoadmin = false           
@@ -943,7 +942,7 @@ export async function handler(chatUpdate) {
 		    antiFacebook: false,
 		    antiInstagram: false,
 		    antiTwitter: false,
-		    antifake: true,
+		    antifake: false,
 		    reaction: true,
                     viewonce: false,
                     modoadmin: false,
@@ -968,7 +967,7 @@ export async function handler(chatUpdate) {
                 autoread: false,
                 restrict: false,
 		temporal: true,
-		antiPrivate: true,
+		antiPrivate: false,
 		antiCall: true,
 		antiSpam: true
             }
@@ -1316,7 +1315,6 @@ export async function handler(chatUpdate) {
     }
 }
 
-
 /**
  * Handle groups participants update
  * @param {import('@adiwajshing/baileys').BaileysEventMap<unknown>['group-participants.update']} groupsUpdate 
@@ -1440,6 +1438,6 @@ if (msg) return m.reply(msg)
 let file = global.__filename(import.meta.url, true)
 watchFile(file, async () => {
     unwatchFile(file)
-    console.log(chalk.redBright("Se actualizo 'handler.js'"))
+    console.log(chalk.redBright("Update 'handler.js'"))
     if (global.reloadHandler) console.log(await global.reloadHandler())
 })
