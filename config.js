@@ -128,7 +128,7 @@ global.nna = 'https://chat.whatsapp.com/JESaesjOEcB6wnGX0QYT9o'
 global.nnagrupo = nna //Actualización, información sobre el bot
 global.nna2 = 'JESaesjOEcB6wnGX0QYT9o'
 
-global.nn = 'https://chat.whatsapp.com/Ei87TDT7fsI3Q3p5MnM9sW'
+global.nn = 'https://chat.whatsapp.com/BaHPUdegBxB4eurlAbhOT8'
 global.nngrupo = nn //Grupo 1
 
 global.nnn = 'https://chat.whatsapp.com/L4UWejhXNrDCVTq3RrBRMM'
