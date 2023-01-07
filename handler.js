@@ -900,7 +900,7 @@ export async function handler(chatUpdate) {
                 if (!('autosticker' in chat)) chat.autosticker = false                      
                 if (!('audios' in chat)) chat.audios = false                     
 		if (!('antiver' in chat)) chat.antiver = true                    
-                if (!('antiLink' in chat)) chat.antiLink = true                    
+                if (!('antiLink' in chat)) chat.antiLink = false                    
                 if (!('antiLink2' in chat)) chat.antiLink2 = false
 		if (!('antiTiktok' in chat)) chat.antiTiktok = false
 		if (!('antiYoutube' in chat)) chat.antiYoutube = false
@@ -934,7 +934,7 @@ export async function handler(chatUpdate) {
                     autosticker: false,
                     audios: true,
 		    antiver: true,
-                    antiLink: true,
+                    antiLink: false,
                     antiLink2: false,
 		    antiTiktok: false,
 		    antiYoutube: false,
@@ -960,7 +960,9 @@ export async function handler(chatUpdate) {
                 if (!('restrict' in settings)) settings.restrict = false
 		if (!('temporal' in settings)) settings.temporal = true
         if (!('antiPrivate' in settings)) settings.antiPrivate = false
+         if (!('antipv' in settings)) settings.antipv = false
 		if (!('antiCall' in settings)) settings.antiCall = true
+        if (!('antipv' in settings)) settings.antipv = false
 		if (!('antiSpam' in settings)) settings.antiSpam = true
             } else global.db.data.settings[this.user.jid] = {
                 self: false,
@@ -969,6 +971,7 @@ export async function handler(chatUpdate) {
 		temporal: true,
 		antiPrivate: false,
 		antiCall: true,
+		antipv: false,
 		antiSpam: true
             }
         } catch (e) {
