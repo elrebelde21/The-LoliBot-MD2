@@ -575,13 +575,15 @@ return await conn.sendMessage(m.chat, listMessage, {quoted: fkontak} )}}
 } catch (e) {
 await conn.reply(m.chat, "```ERROR AL INTENTAR PESCAR\n\nREPORTE ESTE COMANDO CON EL COMANDO #REPORTE```", m)
 console.log(e)
-}}
 
+await delay(5 * 5000)
+}}
 handler.help = ['fishing <args>']
 handler.tags = ['rpg']
 handler.command = /^(fishing|mancing|pescar)$/i
 export default handler
 handler.register = true
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
 function pickRandom(list) {
     return list[Math.floor(Math.random() * list.length)]

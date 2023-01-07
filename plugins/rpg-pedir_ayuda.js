@@ -16,4 +16,5 @@ handler.tags = ['group']
 handler.command = /^(pedirayuda)$/i
 handler.group = true
 handler.register = true
+handler.limit = 1
 export default handler

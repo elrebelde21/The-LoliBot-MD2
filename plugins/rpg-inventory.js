@@ -1592,6 +1592,7 @@ await conn.sendButton(m.chat, aineh, `*𝗣𝗥𝗘𝗠𝗜𝗨𝗠 ${user.premi
 [`🎒 𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 𝙩𝙤𝙩𝙖𝙡`, `${usedPrefix}inventario 4`],
 ['𝙈𝙚𝙣𝙪 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖 💗', '.rpgmenu']], fkontak, m)}
 
+await delay(5 * 5000)
 }
 handler.help = ['inventory', 'inv']
 handler.tags = ['rpg']
@@ -1600,6 +1601,7 @@ handler.level = 1
 handler.limit = 1
 handler.register = true
 export default handler
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4201)

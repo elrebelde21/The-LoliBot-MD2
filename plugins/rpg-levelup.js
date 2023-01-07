@@ -46,11 +46,12 @@ let user = global.db.data.users[m.sender]
             m.reply(str)
         }
     }
+await delay(5 * 5000)  
 }
-
 handler.help = ['levelup']
 handler.tags = ['xp']
 
 handler.command = ['nivel', 'lvl', 'levelup', 'level'] 
 
 export default handler
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))

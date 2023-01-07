@@ -61,6 +61,7 @@ for (let reward of Object.keys(recompensas)) {
     user[reward] += recompensas[reward]
 texto += `+${recompensas[reward]} ${global.rpgshop.emoticon(reward)}\n`}
 
+await delay(5 * 5000)
 conn.sendHydrated(m.chat, `*${premium ? '🎟️ Recompensa Premium' : '🆓 Recompensa Gratis'}*\n*${minar}*\n*${limit} ${global.rpgshop.emoticon('limit')}*`,`🍁 𝗕 𝗢 𝗡 𝗢\n` + texto + `\n\n🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 ⇢ ${premium ? '✅' : '❌'}\n${wm}`, pp, md, '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝒃𝒐𝒕-𝑴𝑫', null, null, [
 ['𝙈𝙞𝙣𝙖𝙧 𝙀𝙓𝙋 ⚡', `.minar`],
 ['𝙈𝙞𝙣𝙖𝙧 𝗟𝗼𝗹𝗶𝗰𝗼𝗶𝗻𝘀 🐈', `.minar2`],
@@ -74,6 +75,7 @@ handler.command = ['minar3', 'miming3', 'mine3', 'minardiamantes', 'minargemas',
 handler.fail = null
 handler.exp = 0
 export default handler
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
 function msToTime(duration) {
 var milliseconds = parseInt((duration % 1000) / 100),

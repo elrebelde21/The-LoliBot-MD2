@@ -46,12 +46,14 @@ let peces = `🌊🌊 𝗣𝗜𝗦𝗖𝗜𝗡𝗔 𝗗𝗘 𝗣𝗘𝗖𝗘𝗦
 🎏 *Total: ${paus + kepiting + gurita + cumi + buntal + dory + lumba + lobster + hiu + udang + ikan + orca}*`.trim()
 await conn.sendButton(m.chat, wm, peces, img5, [['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m, dos.getRandom())
 //conn.sendButton(m.chat, peces, `${wm}`, [['Pasar', '#pasar']], m)
+await delay(5 * 5000)
 }
 handler.help = ['kotakikan', 'kolam', 'kolamikan']
 handler.tags = ['rpg']
 handler.command = /^(picina|piscina|peces|kotak(ikan)?|kolam(ikan)?)$/i
 export default handler 
 handler.register = true
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
