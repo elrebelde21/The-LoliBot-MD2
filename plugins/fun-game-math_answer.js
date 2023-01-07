@@ -22,9 +22,9 @@ conn.sendButton(m.chat, `𝑺𝒆 𝒂𝒄𝒂𝒃𝒂𝒓𝒐𝒏 𝒕𝒖𝒔 
 clearTimeout(global.math[id][3])
 delete global.math[id]
 } else conn.reply(m.chat, `❌️ 𝑹𝒆𝒔𝒑𝒖𝒆𝒔𝒕𝒂 𝒊𝒏𝒄𝒐𝒓𝒓𝒆𝒄𝒕𝒂!!\n𝑻𝒆 𝒒𝒖𝒆𝒅𝒂𝒏 *${global.math[id][2]}* 𝑶𝒑𝒐𝒓𝒕𝒖𝒏𝒊𝒅𝒂𝒅𝒆𝒔 😱`, m)
+await delay(5000)  
 }}}
 
-await delay(5000)  
 handler.customPrefix = /^-?[0-9]+(\.[0-9]+)?$/
 handler.command = new RegExp
 handler.exp = 0

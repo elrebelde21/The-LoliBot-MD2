@@ -2,7 +2,8 @@ import fs from 'fs'
 let handler = async (m, { conn, text } ) => {
 let chatsall = Object.entries(conn.chats).filter(([_, chat]) => chat.isChats).map(v => v[0])
 for (let id of chatsall) { 
-conn.sendButton(id, `*╭━━[ 𝘾𝙤𝙢𝙪𝙣𝙞𝙘𝙖𝙙𝙤 ]━━━⬣*\n*┃*\n*┃💌* ${text}\n*┃*\n*╰━━━━━━━━━━━━━━━━━━⬣*`, '✅ *𝑪𝒐𝒎𝒖𝒏𝒊𝒄𝒂𝒅𝒐 𝒐𝒇𝒊𝒄𝒊𝒂𝒍*\n' + wm, fs.readFileSync('./src/avatar_contact.png'), [['🎁 𝙄𝙣𝙛𝙤 𝙊𝙛𝙞𝙘𝙞𝙖𝙡', '.cuentasgb'],['🐈 𝙈𝙚𝙣𝙪', '.menu']], false, {
+await delay(5 * 5000)
+conn.sendButton(id, `*┌───⊷ 𝘾𝙤𝙢𝙪𝙣𝙞𝙘𝙖𝙙𝙤*\n*┆*\n*┆💌* ${text}\n*┆*\n*╰──────────────────*`, '✅ *𝑪𝒐𝒎𝒖𝒏𝒊𝒄𝒂𝒅𝒐 𝒐𝒇𝒊𝒄𝒊𝒂𝒍*\n' + wm, fs.readFileSync('./src/avatar_contact.png'), [['🎁 𝙄𝙣𝙛𝙤 𝙊𝙛𝙞𝙘𝙞𝙖𝙡', '.cuentasgb'],['🐈 𝙈𝙚𝙣𝙪', '.menu']], false, {
 contextInfo: { externalAdReply: {
 title: '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫',
 body: '𝑺𝒖𝒑𝒆𝒓 𝒃𝒐𝒕 𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑', 
@@ -16,3 +17,4 @@ handler.command = /^(comunicar|comunicado|broadcastall|bc)$/i
 handler.rowner = true
 handler.exp = 500
 export default handler
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))

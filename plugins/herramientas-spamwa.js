@@ -10,8 +10,9 @@ if (fixedJumlah > 5) throw `${fg}𝑴𝒊́𝒏𝒊𝒎𝒐 *5* 𝒎𝒆𝒏𝒔
 await m.reply(`${eg}𝑬𝒍 𝒔𝒑𝒂𝒎 𝒔𝒆 𝒆𝒏𝒗𝒊𝒐́ *${fixedJumlah}* 𝑽𝒆𝒄𝒆𝒔 𝒂 *${nomor}*`)
 for (let i = fixedJumlah; i > 1; i--) {
 if (i !== 0) conn.reply(fixedNumber, pesan.trim(), m)
-}}
+
 await delay(10000)
+}}
 handler.help = ['spamwa <number>|<mesage>|<no of messages>']
 handler.tags = ['General']
 handler.command = /^spam(wa)?$/i
