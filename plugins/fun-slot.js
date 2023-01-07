@@ -210,8 +210,9 @@ await conn.sendHydrated(m.chat, `*𝑬𝒍𝒊𝒋𝒂 𝒆𝒍 𝒒𝒖𝒆 �
 
 //global.db.data.users[m.sender].lastwork = new Date * 1
        
-}
+
 await delay(10000)
+}
 handler.help = ['slot <apuesta>']
 handler.tags = ['game']
 handler.command = ['slot', 'apostar', 'slot1', 'slot2', 'slot3']
