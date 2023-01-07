@@ -10,12 +10,12 @@ global.owner = [
   ['5492266466080', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', true],
   ['5492266613038', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', true],
 //['593968585383'], DEJEN ESTO ASÍ POR AHORA POR FAVOR
-  ['447451217097'] 
+  ['573183650526'] 
 ]
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
-global.mods = [] 
-global.prems = ['528451003894'], 
+global.mods = ['50495745934'] 
+global.prems = ['595986172767', '5493704555464'], 
    
   
 //⊱ ━━━━━.⋅ IDIOMA : LENGUAJE ⋅.━━━━ ⊰ 
@@ -134,9 +134,9 @@ global.nngrupo = nn //Grupo 1
 global.nnn = 'https://chat.whatsapp.com/L4UWejhXNrDCVTq3RrBRMM'
 global.nnngrupo = nnn //Grupo 2
 
-global.nnntt = 'https://chat.whatsapp.com/ItsLdBgl0b5Lhb9vU4dC0c' //Grupo del Colaboracion
+global.nnntt = 'https://chat.whatsapp.com/LsFbimqRU49DgZh9KdliKL' //Grupo del Colaboracion
 
-global.nnnttt = 'https://chat.whatsapp.com/KGNYdXQd3LYE7y7N0E8mDd'
+global.nnnttt = 'https://chat.whatsapp.com/B7gNHcvAsg0JJEf8euz1eB'
 global.nnntttgrupo = nnnttt //Grupo ayuda sobre el bot
 
 global.asistencia = 'Wa.me/5492266466080' //Dudas? escríbeme...
