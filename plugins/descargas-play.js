@@ -9,7 +9,7 @@ let ytLink = await fetch(`https://api.lolhuman.xyz/api/ytplay2?apikey=${lolkeysa
 let jsonn = await ytLink.json()
 let aud = await jsonn.result.audio
 let capt = `📌 *𝗧𝗶𝘁𝘂𝗹𝗼:*: ${title}\n📆 *𝗣𝘂𝗯𝗹𝗶𝗰𝗮𝗰𝗶𝗼𝗻:* ${published}\n👀 *𝗩𝗶𝘀𝘁𝗮𝘀:* ${views}`
-const buttons = [{buttonId: `#menu`, buttonText: {displayText: '🎅 Menu 🎅'}, type: 1}]
+const buttons = [{buttonId: `#menu`, buttonText: {displayText: '🎶 Menu 🎶'}, type: 1}]
 const buttonMessage = { image: {url: thumbnail}, caption: capt, footer: '*ᴇɴᴠɪᴀɴᴅᴏ ᴀᴜᴅɪᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*', buttons: buttons, headerType: 4 }
 let msg = await conn.sendMessage(m.chat, buttonMessage, { quoted: m })
 conn.sendMessage(m.chat, { audio: { url: aud }, mimetype: 'audio/mp4', fileName: `${title}.mp3`}, {quoted: msg})
