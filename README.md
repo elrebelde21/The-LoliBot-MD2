@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-<img src="https://i.imgur.com/R1uVUId.jpeg" alt="The-LoliBot-MD" width="900"/>
+<img src="https://i.imgur.com/Q5m8R11.jpeg" alt="The-LoliBot-MD" width="900"/>
 </p>
 
 <a href="#"><img title="The-LoliBot-MD" src="https://img.shields.io/badge/COMPATIBLE CON LA VERSIÓN MULTI DISPOSITIVOS DE WHATSAPP-red?colorA=%F77F48FF&colorB=%F77F48FF&style=for-the-badge">
