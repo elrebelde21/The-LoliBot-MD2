@@ -132,12 +132,12 @@ global.nna2 = 'JESaesjOEcB6wnGX0QYT9o'
 global.nn = 'https://chat.whatsapp.com/BaHPUdegBxB4eurlAbhOT8'
 global.nngrupo = nn //Grupo 1
 
-global.nnn = 'https://chat.whatsapp.com/L4UWejhXNrDCVTq3RrBRMM'
+global.nnn = 'https://chat.whatsapp.com/IzYCMmIk3bg9sdMP4uYFRZ'
 global.nnngrupo = nnn //Grupo 2
 
-global.nnntt = 'https://chat.whatsapp.com/LsFbimqRU49DgZh9KdliKL' //Grupo del Colaboracion
+global.nnntt = 'https://chat.whatsapp.com/HJpzLVK1XWaKG7kCWTmfW0' //Grupo del Colaboracion
 
-global.nnnttt = 'https://chat.whatsapp.com/B7gNHcvAsg0JJEf8euz1eB'
+global.nnnttt = 'https://chat.whatsapp.com/KzHWDoG6he3GrXIfssvc7t'
 global.nnntttgrupo = nnnttt //Grupo ayuda sobre el bot
 
 global.asistencia = 'Wa.me/5492266466080' //Dudas? escríbeme...
