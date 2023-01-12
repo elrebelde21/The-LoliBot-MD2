@@ -66,7 +66,7 @@ handler.tags = ['downloader']
 handler.command = /^play4$/i
 
 handler.exp = 0
-
+handler.money = 80
 export default handler
 
 function pickRandom(list) {
