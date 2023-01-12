@@ -22,12 +22,12 @@ this.spam[spaming.jid] = spaming
 } else try {
 this.spam[m.sender].spam += 1
   
-if (new Date - this.spam[m.sender].lastspam > 1500) {
-if (this.spam[m.sender].spam > 5) {
+if (new Date - this.spam[m.sender].lastspam > 1200000) {
+if (this.spam[m.sender].spam > 20) {
 this.spam[m.sender].spam = 0
   
 this.spam[m.sender].lastspam = new Date * 1
-let tiempo = 320000 * 5
+let tiempo = 1200000 * 20
 let time = user.antispam + tiempo * 1
 let texto = `*@${m.sender.split("@")[0]} ${lenguajeGB['smsNoSpam']()}*` 
 
