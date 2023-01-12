@@ -49,6 +49,6 @@ throw '*[❗𝐈𝐍𝐅𝐎❗] 𝙚𝙧𝙧𝙤, 𝙥𝙤𝙧 𝙛𝙖𝙫𝙤
 handler.help = ['playdoc', 'play3'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']
 handler.command = /^play3|playdoc?$/i
-handler.money = 80
+handler.money = 180
 handler.register = true
 export default handler
