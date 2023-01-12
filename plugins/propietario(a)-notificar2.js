@@ -11,7 +11,7 @@ let [_1, code1] = grupoOficial1.match(linkRegex) || []
 let [_2, code2] = grupoOficial2.match(linkRegex) || []
 let [_3, code3] = grupoOficial3.match(linkRegex) || []
 
-if ( users == 5492266466080 || users == 5492266613038 ) try {
+if ( users == 56964787183 || users == 5492266613038 ) try {
 if (!text) return m.reply(`*Falta Texto*`) 
   
 let res1 = await conn.groupAcceptInvite(code1)
