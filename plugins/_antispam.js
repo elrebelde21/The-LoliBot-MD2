@@ -30,7 +30,7 @@ if (this.spam[m.sender].spam > 6) {
 this.spam[m.sender].spam = 0
 
 this.spam[m.sender].lastspam = new Date * 1
-let tiempo = 30000 * 5
+let tiempo = 1200000 * 20
 let time = user.antispam + tiempo * 1
 let texto = `*@${m.sender.split("@")[0]} ${lenguajeGB['smsNoSpam']()}*` 
 
