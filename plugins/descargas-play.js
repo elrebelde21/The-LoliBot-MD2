@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 let handler = async (m, {command, conn, text}) => {
 if (!text) throw `🤔𝙦𝙪𝙚 𝙚𝙨𝙩𝙖 𝙗𝙪𝙨𝙘𝙖𝙙𝙤?🤔 𝙄𝙣𝙜𝙧𝙚𝙨𝙚 𝙚𝙡 𝙣𝙤𝙢𝙗𝙧𝙚/𝙩𝙞𝙩𝙪𝙡𝙤 𝙙𝙚 𝙘𝙖𝙣𝙘𝙞𝙤𝙣\n\n*—◉ 𝙀𝙟𝙚𝙢𝙥𝙡𝙤:\n#play lgante - bar*`
 try {
-if (command == 'play2') {
+if (command == 'play') {
 let vid2 = await (await fetch(`https://api.lolhuman.xyz/api/ytsearch?apikey=${lolkeysapi}&query=${text}`)).json()
 let { videoId, title, views, published, thumbnail } = await vid2.result[0]
 const url = 'https://www.youtube.com/watch?v=' + videoId
