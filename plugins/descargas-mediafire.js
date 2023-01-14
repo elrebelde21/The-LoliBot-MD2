@@ -37,12 +37,12 @@ await conn.sendHydrated(m.chat, info, wm, null, ig, '', null, null, [
 /* let vn = './media/descarga.mp3'
 */  
 conn.sendFile(m.chat, url, filename, '', m, null, { mimetype: ext, asDocument: true })
-} catch (e) { 
-m.reply(`${fg}𝑽𝒖𝒆𝒍𝒗𝒂 𝒂 𝒊𝒏𝒕𝒆𝒏𝒕𝒂𝒓 𝒅𝒆𝒃𝒆 𝒅𝒆 𝒔𝒆𝒓 𝒖𝒏 𝒆𝒏𝒍𝒂𝒄𝒆 𝒗𝒂́𝒍𝒊𝒅𝒐 𝒅𝒆 𝒎𝒆𝒅𝒊𝒂𝒇𝒊𝒓𝒆`)
-console.log(e)
+} catch (e) {
+let sticker = './src/stickers1.webp'
+conn.sendFile(m.chat, sticker, 'error.webp', '', m)}
 /* conn.sendFile(m.chat, vn, 'descarga.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true })
 */
-}}
+}
 handler.help = ['mediafire'].map(v => v + ' <url>')
 handler.tags = ['downloader']
 handler.command = /^(mediafire|mediafiredl|dlmediafire)$/i
