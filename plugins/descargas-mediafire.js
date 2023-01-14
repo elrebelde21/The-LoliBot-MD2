@@ -29,7 +29,7 @@ previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
 sourceUrl: `https://github.com/elrebelde21/The-LoliBot-MD`}}})
   
 let info = `𝑴𝒂𝒚𝒐𝒓 𝒂 150 𝑴𝑮 𝒆𝒔 𝒑𝒐𝒔𝒊𝒃𝒍𝒆 𝒒𝒖𝒆 𝒏𝒐 𝒔𝒆 𝒆𝒏𝒗𝒊𝒆́`.trim()  
-await conn.sendHydrated(m.chat, info, wm, null, ig, '', null, null, [
+await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙏𝙞𝙠𝙩𝙤𝙠', null, null, [
 ['𝙈𝙚𝙣𝙪 𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙨 🌀', '#descargasmenu'],
 ['𝙈𝙚𝙣𝙪 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙤 ✨', '.allmenu'],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu']
