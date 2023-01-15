@@ -1,6 +1,8 @@
+
 let handler = m => m
 handler.all = async function (m) {
 let chat = global.db.data.chats[m.chat]
+let name = conn.getName(m.sender)
 
 if (/^todo bien$/i.test(m.text) ) { //sem prefixo
     conn.reply(m.chat, `𝑩𝒊𝒆𝒏 𝒄𝒂𝒑𝒐 😎 𝒚 𝒕𝒖`, m) //wm, null, [['Menu', '#menu']], m) botones :V
@@ -17,7 +19,15 @@ if (/^5492266466080|${global.owner}$/i.test(m.text) ) { //sem prefixo
 
 }
 
-if (/^¿que es un bot?|que es un bot$/i.test(m.text) ) { //sem prefixo
+if (/^Mande porno|porno|paja$/i.test(m.text) ) { //sem prefixo
+    let teks = `
+${pickRandom([` 𝑨𝒔𝒊́ 𝒒𝒖𝒆 𝒒𝒖𝒊𝒆𝒓𝒂 𝒉𝒂𝒈𝒂 𝒑𝒖𝒕𝒊𝒕𝒐 🧐`, `_uff mire un pajero_`, `_pagame y paso mi pack😏🥵_`, `_que_`, `_que quiere pija dice 🤣`, `_pasa el pack de tu hermana😏_`, `_mire un gilipolla_`, `_siuuu sexo sexo sexo😈_`, '_callarte putito_'])}
+`.trim()
+conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
+
+}
+
+if (/^¿que es un bot?|Que es un bot$/i.test(m.text) ) { //sem prefixo
     conn.reply(m.chat, `┌───⊷ *${lb}*
 ┆ ───────•••───────
 ┆ ☆::¿𝐐𝐮𝐞́ 𝐞𝐬 𝐮𝐧 𝐁𝐨𝐭 𝐝𝐞 𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩?::☆*
@@ -31,10 +41,13 @@ if (/^¿que es un bot?|que es un bot$/i.test(m.text) ) { //sem prefixo
 ┆ 𝐏𝐚𝐫𝐚 𝐯𝐞𝐫 𝐞𝐥 𝐦𝐞𝐧𝐮́ 𝐝𝐞 𝐜𝐨𝐦𝐚𝐧𝐝𝐨𝐬 𝐩𝐮𝐞𝐝𝐞𝐬 𝐮𝐬𝐚𝐫 #menu
 ┆ 
 ┆ 「 🅣🅗🅔 🅛🅞🅛🅘🅑🅞🅣-🅜🅓 」
-╰──────────────────`, m) //wm, null, [['Menu', '#menu']], m)
+╰──────────────────`, m) //wm, null, [['Menu', '#menu']], m) botones :V
 
+}  
+return !0 
 }
-
-   
-return !0 }
 export default handler
+
+function pickRandom(list) {
+    return list[Math.floor(Math.random() * list.length)]
+}
