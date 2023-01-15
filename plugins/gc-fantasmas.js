@@ -1,4 +1,5 @@
-let handler = async (m, { conn, text, participants }) => {
+import { areJidsSameUser } from '@adiwajshing/baileys'
+let handler = async (m, { conn, text, participants, args, command }) => {
 let member = participants.map(u => u.id)
 if(!text) {
 var sum = member.length
@@ -16,9 +17,39 @@ sider.push(member[i])}
 }else {
 total++
 sider.push(member[i])}}}
-if(total == 0) return conn.reply(m.chat, `*[❗] 𝙴𝚂𝚃𝙴 𝙶𝚁𝚄𝙿𝙾 𝙴𝚂 𝙰𝙲𝚃𝙸𝚅𝙾, 𝙽𝙾 𝚃𝙸𝙴𝙽𝙴 𝙵𝙰𝙽𝚃𝙰𝚂𝙼𝙰𝚂 :D*`, m) 
-m.reply(`*[ ⚠ 𝚁𝙴𝚅𝙸𝚂𝙸𝙾𝙽 𝙳𝙴 𝙸𝙽𝙰𝙲𝚃𝙸𝚅𝙾𝚂 ⚠ ]*\n\n*𝙶𝚁𝚄𝙿𝙾:* ${await conn.getName(m.chat)}\n*𝙼𝙸𝙴𝙼𝙱𝚁𝙾𝚂 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾:* ${sum}\n\n*[ 👻 𝙻𝙸𝚂𝚃𝙰 𝙳𝙴 𝙵𝙰𝙽𝚃𝙰𝚂𝙼𝙰𝚂 👻 ]*\n${sider.map(v => '  👉🏻 @' + v.replace(/@.+/, '')).join('\n')}\n\n*𝙽𝙾𝚃𝙰: 𝙴𝚂𝚃𝙾 𝙿𝚄𝙴𝙳𝙴 𝙽𝙾 𝚂𝙴𝚁 𝟷𝟶𝟶% 𝙰𝙲𝙴𝚁𝚃𝙰𝙳𝙾, 𝙴𝙻 𝙱𝙾𝚃 𝙸𝙽𝙸𝙲𝙸𝙰 𝙴𝙻 𝙲𝙾𝙽𝚃𝙴𝙾 𝙳𝙴 𝙼𝙴𝙽𝚂𝙰𝙹𝙴𝚂 𝙰𝙿𝙰𝚁𝚃𝙸𝚁 𝙳𝙴 𝚀𝚄𝙴 𝚂𝙴 𝙰𝙲𝚃𝙸𝚅𝙾 𝙴𝙽 𝙴𝚂𝚃𝙴 𝙽𝚄𝙼𝙴𝚁𝙾*`, null, { mentions: sider })}
-handler.command = /^(verfantasmas|fantasmas|sider)$/i
-handler.admin = true
-handler.botAdmin = true
+const delay = time => new Promise(res=>setTimeout(res,time));
+switch (command) {
+case "fantasmas": 
+if(total == 0) return conn.reply(m.chat, `*[❗] ᴇsᴛᴇ ɢʀᴜᴘᴏ ᴇs ᴀᴄᴛɪᴠᴏ ɴᴏ ᴛɪᴇɴᴇ ғᴀɴᴛᴀsᴍᴀs :D*`, m) 
+m.reply(`*[ ⚠ ʀᴇᴠɪsɪᴏɴ ᴅᴇ ɪɴᴀᴄᴛɪᴠᴏs ⚠ ]*\n\n*ɢʀᴜᴘᴏs:* ${await conn.getName(m.chat)}\n*ᴍɪᴇɴᴛʀᴏs ᴅᴇʟ ɢʀᴜᴘᴏ𝙾:* ${sum}\n\n*[ 👻 ʟɪsᴛᴀs ᴅᴇ ғᴀɴᴛᴀsᴍᴀs 👻 ]*\n${sider.map(v => '  👉🏻 @' + v.replace(/@.+/, '')).join('\n')}\n\n*ɴᴏᴛᴀ: ᴇsᴛᴏ ᴘᴜᴇᴅᴇ  ɴᴏ sᴇʀ %100  ᴀᴄᴇʀᴛᴀᴅᴏ,   ᴇʟ ʙᴏᴛ  ɪɴɪᴄɪᴀ ᴇʟ ᴄᴏɴᴛᴇᴏ  ᴅᴇ ᴍᴇɴsᴀᴊᴇ ᴀᴘᴀʀᴛɪʀ ᴅᴇ ǫᴜᴇ sᴇ ᴀᴄᴛɪᴠᴏ  ᴇɴ ᴇsᴛᴇ ɴᴜᴍᴇʀᴏ*`, null, { mentions: sider }) 
+  break   
+case "kickfantasmas":  
+        if(total == 0) return conn.reply(m.chat, `*ᴇsᴛᴇ ɢʀᴜᴘᴏ ɴᴏ ᴛɪᴇɴᴇ ғᴀɴᴛᴀsᴍᴀs :D.*`, m) 
+       await m.reply(`*[ᴇʟɪᴍɪɴᴀᴄɪᴏɴ ᴅᴇ ɪɴᴀᴄᴛɪᴠᴏs]*\n\n*ɢʀᴜᴘᴏs: ${await conn.getName(m.chat)}*\n*ᴘᴀʀᴛɪᴄɪᴘᴀʀᴛᴇ: ${sum}*\n\n*[ 👻 ғᴀɴᴛᴀsᴍᴀs ᴇʟɪᴍɪɴᴀᴅᴏ 👻 ]*\n${sider.map(v => '@' + v.replace(/@.+/, '')).join('\n')}\n\n*ᴇʟ ʙᴏᴛ ᴇʟɪᴍɪɴᴀʀᴀ  ʟᴀ ʟɪsᴛᴀ ᴍᴇɴᴄɪᴏɴᴀᴅᴀ,  ᴇᴍᴘᴇᴢᴀᴅᴏ ᴇʟ 20 sᴇɢᴜɴᴅᴏ,  ʏ ᴄᴀᴅᴀ 10 sᴇɢᴜɴᴅᴏs ᴇʟɪᴍɪɴᴀʀᴀ  ᴜɴ ɴᴜᴍᴇʀᴏ*`, null, { mentions: sider }) 
+       await delay(1 * 10000)
+       let chat = global.db.data.chats[m.chat]
+       chat.welcome = false
+       try{
+       
+         let users = m.mentionedJid.filter(u => !areJidsSameUser(u, conn.user.id))
+       let kickedGhost = sider.map(v => v.id).filter(v => v !== conn.user.jid)
+       for (let user of users)
+           if (user.endsWith('@s.whatsapp.net') && !(participants.find(v => areJidsSameUser(v.id, user)) || { admin: true }).admin)
+        {
+        let res = await conn.groupParticipantsUpdate(m.chat, [user], 'remove')
+        kickedGhost.concat(res)
+       await delay(1 * 10000)
+       }} finally{
+        chat.welcome = true
+       }
+break            
+}}
+handler.command = /^(fantasmas|kickfantasmas)$/i
+handler.group = handler.botAdmin = handler.admin = true
+handler.fail = null
 export default handler
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
+
+    //desarrollado por https://github.com/ReyEndymion
+    //participa en desactivacion de despedida https://github.com/BrunoSobrino/
+
