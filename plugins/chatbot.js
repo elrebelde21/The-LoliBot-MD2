@@ -1,3 +1,4 @@
+// by https://github.com/elrebelde21/The-LoliBot-MD
 
 let handler = m => m
 handler.all = async function (m) {
