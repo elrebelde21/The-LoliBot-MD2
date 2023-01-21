@@ -1,3 +1,6 @@
+// by https://github.com/elrebelde21/The-LoliBot-MD 
+// https://github.com/GataNina-Li/GataBot-MD
+
 import { randomBytes } from 'crypto'
 
 let handler = async (m, { conn, text }) => {
