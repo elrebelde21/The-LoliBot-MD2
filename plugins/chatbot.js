@@ -15,8 +15,8 @@ if (/^e$/i.test(m.text) ) { //sem prefixo
 
 }
 
-if (/^5492266466080|${global.owner}$/i.test(m.text) ) { //sem prefixo
-    conn.reply(m.chat, `[❗] 𝑵𝒐 𝒆𝒕𝒊𝒒𝒖𝒆𝒕𝒆𝒔  [❗] 𝑨 𝒎𝒊 𝒄𝒓𝒆𝒂𝒅𝒐𝒓 𝒔𝒊 𝒕𝒊𝒆𝒏𝒆 𝒂𝒍𝒈𝒖𝒏𝒂 𝒄𝒐𝒏𝒔𝒖𝒍𝒕𝒂 𝒐 𝒅𝒖𝒅𝒂, 𝒉𝒂𝒃𝒍𝒂𝒎𝒆 𝒆𝒍 𝒑𝒗 𝒔𝒐𝒍𝒐 𝒑𝒐𝒓 𝒕𝒆𝒎𝒂 𝒅𝒆 𝒃𝒐𝒕`, m) //wm, null, [['Menu', '#menu']], m) botones :V
+if (/^@5492266466080|@56964787183|@5492266613038$/i.test(m.text) ) { //sem prefixo
+    conn.reply(m.chat, `[❗] No etiquetes [❗] A mi creador si tiene alguna consulta o dudas, hablame el pv solo por tema del bot`, m) //wm, null, [['Menu', '#menu']], m) botones :V
 
 }
 
@@ -25,6 +25,21 @@ if (/^Mande porno|porno|paja$/i.test(m.text) ) { //sem prefixo
 ${pickRandom([` 𝑨𝒔𝒊́ 𝒒𝒖𝒆 𝒒𝒖𝒊𝒆𝒓𝒂 𝒉𝒂𝒈𝒂 𝒑𝒖𝒕𝒊𝒕𝒐 🧐`, `_uff mire un pajero_`, `_pagame y paso mi pack😏🥵_`, `_que_`, `_que quiere pija dice 🤣`, `_pasa el pack de tu hermana😏_`, `_mire un gilipolla_`, `_siuuu sexo sexo sexo😈_`, '_callarte putito_'])}
 `.trim()
 conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
+
+}
+
+if (/^reglas|normas$/i.test(m.text) ) { //sem prefixo
+    conn.reply(m.chat, `*┌───⊷ *${lb}*
+┆ ───────•••───────
+┆ ⚠️ 𝗢𝗯𝗲𝗱𝗲𝗰𝗲 𝗹𝗮𝘀 𝗿𝗲𝗴𝗹𝗮𝘀 ⚠️
+┆───────•••───────
+┆➽❌ 𝐏𝐫𝐨𝐡𝐢𝐛𝐢𝐝𝐨 𝐥𝐥𝐚𝐦𝐚𝐫 𝐚𝐥 𝐁𝐨𝐭
+┆➽❌ 𝐏𝐫𝐨𝐡𝐢𝐛𝐢𝐝𝐨 𝐒𝐩𝐚𝐦 𝐚𝐥 𝐁𝐨𝐭
+┆➽❌ 𝐍𝐨 𝐚𝐠𝐫𝐞𝐠𝐚𝐫 𝐚𝐥 𝐁𝐨𝐭
+┆➽❌ 𝐑𝐞𝐬𝐩𝐞𝐭𝐚 𝐥𝐨𝐬 𝐭𝐞𝐫𝐦𝐢𝐧𝐨𝐬 𝐲 𝐜𝐨𝐧𝐝𝐢𝐜𝐢𝐨𝐧𝐞𝐬
+┆ 
+┆ 「 🅣🅗🅔 🅛🅞🅛🅘🅑🅞🅣-🅜🅓 」
+╰──────────────────`, m) //wm, null, [['Menu', '#menu']], m) botones :V
 
 }
 
@@ -52,3 +67,4 @@ export default handler
 function pickRandom(list) {
     return list[Math.floor(Math.random() * list.length)]
 }
+
