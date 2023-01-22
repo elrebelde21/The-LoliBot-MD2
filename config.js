@@ -9,7 +9,7 @@ import { en, es, id, ar, pt } from './lib/idiomas/total-idiomas.js'
 global.owner = [
   ['5492266466080', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', true],
   ['5492266613038', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', true],
-  ['56964787183', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', true],
+  ['12262412156', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', true],
 //['593968585383'], DEJEN ESTO ASÍ POR AHORA POR FAVOR
   ['573183650526'] 
 ]
@@ -132,10 +132,10 @@ global.nna2 = 'JESaesjOEcB6wnGX0QYT9o'
 global.nn = 'https://chat.whatsapp.com/BaHPUdegBxB4eurlAbhOT8'
 global.nngrupo = nn //Grupo 1
 
-global.nnn = 'https://chat.whatsapp.com/IzYCMmIk3bg9sdMP4uYFRZ'
+global.nnn = 'https://chat.whatsapp.com/LMN3wF9XoX86oalLfx2mC0'
 global.nnngrupo = nnn //Grupo 2
 
-global.nnntt = 'https://chat.whatsapp.com/HJpzLVK1XWaKG7kCWTmfW0' //Grupo del Colaboracion
+global.nnntt = 'https://chat.whatsapp.com/BaIUBA5ni4X1HbcVU1uIB6' //Grupo del Colaboracion
 
 global.nnnttt = 'https://chat.whatsapp.com/KzHWDoG6he3GrXIfssvc7t'
 global.nnntttgrupo = nnnttt //Grupo ayuda sobre el bot
