@@ -4,6 +4,7 @@ import { fileURLToPath } from 'url'
 import path, { join } from 'path'
 import { unwatchFile, watchFile } from 'fs'
 import chalk from 'chalk'   
+import fetch from 'node-fetch'
 
 /**
  * @type {import('@adiwajshing/baileys')}  
@@ -46,7 +47,7 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.exp)) user.exp = 0
 		if (!('premium' in user)) user.premium = false
 		if (!isNumber(user.joincount)) user.joincount = 2 
-                if (!isNumber(user.money)) user.money = 400
+                if (!isNumber(user.money)) user.money = 500
                 if (!isNumber(user.limit)) user.limit = 16    	       
                 if (!('registered' in user)) user.registered = false
                     
@@ -76,7 +77,7 @@ export async function handler(chatUpdate) {
 		                    		    
           if (!isNumber(user.afk)) user.afk = -1
 	      //if (!('autolevelup' in user))  user.autolevelup = true
-	      if (!('role' in user)) user.role = 'Novato'
+	      if (!('role' in user)) user.role = '*NOVATO(A)* 🪤'
               if (!isNumber(user.agility)) user.agility = 0
               if (!isNumber(user.anakanjing)) user.anakanjing = 0
               if (!isNumber(user.anakcentaur)) user.anakcentaur = 0
@@ -336,7 +337,7 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.lelebakar)) user.lelebakar = 0
               if (!isNumber(user.leleg)) user.leleg = 0
               if (!isNumber(user.level)) user.level = 0
-              if (!isNumber(user.limit)) user.limit = 16
+              if (!isNumber(user.limit)) user.limit = 20
               if (!isNumber(user.limitjoinfree)) user.limitjoinfree = 1
               if (!isNumber(user.lion)) user.lion = 0
               if (!isNumber(user.lionexp)) user.lionexp = 0
@@ -740,7 +741,7 @@ export async function handler(chatUpdate) {
                     lelebakar: 0,
                     leleg: 0,
                     level: 0,
-                    limit: 16,
+                    limit: 20,
                     limitjoinfree: 1,
                     lion: 0,
                     lionexp: 0,
@@ -908,15 +909,14 @@ export async function handler(chatUpdate) {
 		if (!('antiFacebook' in chat)) chat.antiFacebook = false
 		if (!('antiInstagram' in chat)) chat.antiInstagram = false
 		if (!('antiTwitter' in chat)) chat.antiInstagram = false
-		if (!('antifake' in chat)) chat.antifake = false
+		if (!('antifake' in chat)) chat.antifake = true
 		if (!('reaction' in chat)) chat.reaction = true    
-                if (!('viewonce' in chat)) chat.viewonce = false         
+                if (!('viewonce' in chat)) chat.viewonce = true         
                 if (!('modoadmin' in chat)) chat.modoadmin = false           
                 if (!('antitoxic' in chat)) chat.antitoxic = true 
                 if (!('simi' in chat)) chat.simi = false
-                if (!('antiTraba' in chat))
-                    chat.antiTraba = true
-		if (!('autolevelup' in chat))  chat.autolevelup = true
+                if (!('antiTraba' in chat)) chat.antiTraba = true
+		if (!('autolevelup' in chat))  chat.autolevelup = false
                 if (!isNumber(chat.expired)) chat.expired = 0
                     
             } else
@@ -930,9 +930,9 @@ export async function handler(chatUpdate) {
                     sDemote: '', 
                     delete: true,
                     modohorny: true,
-                    stickers: true,
+                    stickers: false,
                     autosticker: false,
-                    audios: true,
+                    audios: false,
 		    antiver: true,
                     antiLink: false,
                     antiLink2: false,
@@ -942,14 +942,14 @@ export async function handler(chatUpdate) {
 		    antiFacebook: false,
 		    antiInstagram: false,
 		    antiTwitter: false,
-		    antifake: false,
+		    antifake: true,
 		    reaction: true,
-                    viewonce: false,
+                    viewonce: true,
                     modoadmin: false,
                     antitoxic: true,
                     simi: false,
                     antiTraba: true,
-	            autolevelup: true,
+	            autolevelup: false,
                     expired: 0,
                 }
             let settings = global.db.data.settings[this.user.jid]
@@ -958,20 +958,22 @@ export async function handler(chatUpdate) {
                 if (!('self' in settings)) settings.self = false
                 if (!('autoread' in settings)) settings.autoread = true
                 if (!('restrict' in settings)) settings.restrict = false
+               if (!('antipv' in settings)) settings.antipv = false
 		if (!('temporal' in settings)) settings.temporal = true
-        if (!('antiPrivate' in settings)) settings.antiPrivate = false
-         if (!('antipv' in settings)) settings.antipv = false
+                if (!('antiPrivate' in settings)) settings.antiPrivate = false
 		if (!('antiCall' in settings)) settings.antiCall = true
 		if (!('antiSpam' in settings)) settings.antiSpam = true
+		if (!('jadibotmd' in settings)) settings.jadibotmd = true  
             } else global.db.data.settings[this.user.jid] = {
                 self: false,
                 autoread: true,
                 restrict: false,
+        antipv: false,
 		temporal: true,
 		antiPrivate: false,
-                antipv: false,
 		antiCall: true,
-		antiSpam: true
+		antiSpam: true,
+		jadibotmd: true,
             }
         } catch (e) {
             console.error(e)
@@ -1308,7 +1310,7 @@ export async function handler(chatUpdate) {
 		
 	await this.readMessages([m.key])
 	    
-        if (!db.data.chats[m.chat].reaction && m.isGroup) throw 0
+         if (!db.data.chats[m.chat].reaction && m.isGroup) throw 0
         if (!m.fromMem && m.text.match(/(el rebelde|@5219996125657|@5492266466080|admin del bot|Bot|LoliBot|lolibot|The LoliBot-md|lolibot-md|The LoliBot-MD|has|ato|ido|ura|des|able|sub|izo|ita|con|.-.|._.|:)|:(|:v|v:|o.o|;v|v;|v':|:'v)/gi)) {
         let emot = pickRandom(["😺", "😸", "😹", "😻", "😼", "😽", "🙀", "😿", "😾", "🤩", "😏", "😳", "🥵", "🤯", "😱", "😨", "🤫", "🥴", "🤧", "🤑", "🤠", "🤖", "🤝", "💪", "👑", "😚", "🐱", "🐈", "🐆", "🐅", "⚡️", "🌈", "☃️", "⛄️", "🌝", "🌛", "🌜", "🍓", "🍎", "🎈", "🪄", "❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍", "💘", "💝", "💟", "🌝", "😎", "🔥", "🖕", "🐦"])
         this.sendMessage(m.chat, { react: { text: emot, key: m.key }})}
