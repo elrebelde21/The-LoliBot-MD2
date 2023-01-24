@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, command, usedPrefix }) => {
-if (!db.data.chats[m.chat].modohorny && m.isGroup) throw '`[ ⚠️ ] Los comandos +18 estan desactivados en este grupo, si es administrador de este grupo y desea activarlos escriba #enable modohorny para activar*'
+if (!db.data.chats[m.chat].modohorny && m.isGroup) throw '[ ⚠️ ] Los comandos +18 estan desactivados en este grupo, si es administrador de este grupo y desea activarlos escriba #enable modohorny para activar*'
 await delay(5000)
 switch (command) {
 case "pack": 
@@ -18,13 +18,9 @@ break
 case "videoxxx": case "vídeoxxx":    
 let url4 = await videosxxxc[Math.floor(Math.random() * videosxxxc.length)] 
 await conn.sendButton(m.chat, `*ᴅɪsғʀᴜᴛᴀ ᴅᴇʟ ᴠɪᴅᴇᴏ 🥵*`, author, url4, [['🥵 𝑺𝒊𝒈𝒖𝒊𝒆𝒏𝒕𝒆🥵', `${usedPrefix + command}`]], m)  
-break  
-case "videoxxxlesbi": case "videolesbixxx": case "pornolesbivid": case "pornolesbianavid": case "pornolesbiv": case "pornolesbianav": case "pornolesv":       
-let url5 = await videosxxxc2[Math.floor(Math.random() * videosxxxc2.length)] 
-await conn.sendButton(m.chat, `*ᴅɪsғʀᴜᴛᴀ ᴅᴇʟ ᴠɪᴅᴇᴏ 🥵*`, author, url5, [['🥵 𝑺𝒊𝒈𝒖𝒊𝒆𝒏𝒕𝒆🥵', `${usedPrefix + command}`]], m)    
 break    
 }}
-handler.command = /^(pack|pack2|pack3|videoxxx|vídeoxxx|videoxxxlesbi|videolesbixxx|pornolesbivid|pornolesbianavid|pornolesbiv|pornolesbianav|pornolesv)$/i
+handler.command = /^(pack|pack2|pack3|videoxxx)$/i
 export default handler
 handler.register = true
 handler.level = 2
