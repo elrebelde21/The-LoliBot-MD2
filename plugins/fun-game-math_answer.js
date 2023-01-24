@@ -5,7 +5,9 @@ let id = m.chat
 if (!m.quoted) return
 if (m.quoted.sender != conn.user.jid) return
 if (!/^𝘾𝙪𝙖𝙡 𝙚𝙨 𝙧𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤 𝙙𝙚/i.test(m.quoted.text)) return
-if (!(m.chat in global.math)) return conn.sendButton(m.chat, `${lenguajeGB['smsAvisoMG']()}𝒀𝒂 𝒔𝒆 𝒓𝒆𝒔𝒑𝒐𝒏𝒅𝒊𝒐́  𝒆𝒔𝒕𝒂 𝒑𝒓𝒆𝒈𝒖𝒏𝒕𝒂`, wm, null, [['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖 𝙅𝙪𝙜𝙖𝙧 🧮', `/math`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m)
+if (!(m.chat in global.math)) return 
+await delay(5000)  
+conn.sendButton(m.chat, `${lenguajeGB['smsAvisoMG']()}𝒀𝒂 𝒔𝒆 𝒓𝒆𝒔𝒑𝒐𝒏𝒅𝒊𝒐́  𝒆𝒔𝒕𝒂 𝒑𝒓𝒆𝒈𝒖𝒏𝒕𝒂`, wm, null, [['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖 𝙅𝙪𝙜𝙖𝙧 🧮', `/math`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m)
 if (m.quoted.id == global.math[id][0].id) {
 let math = global.math[id][1]
 let gatacoins = global.db.data.users[m.sender].money += 500
@@ -24,7 +26,6 @@ delete global.math[id]
 } else conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}❌️ 𝑹𝒆𝒔𝒑𝒖𝒆𝒔𝒕𝒂 𝒊𝒏𝒄𝒐𝒓𝒓𝒆𝒄𝒕𝒂!!\n𝑻𝒆 𝒒𝒖𝒆𝒅𝒂𝒏 *${global.math[id][2]}* 𝑶𝒑𝒐𝒓𝒕𝒖𝒏𝒊𝒅𝒂𝒅𝒆𝒔 😱`, m)
 }}}
 
-await delay(5000)  
 handler.customPrefix = /^-?[0-9]+(\.[0-9]+)?$/
 handler.command = new RegExp
 handler.exp = 0
