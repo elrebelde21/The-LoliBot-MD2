@@ -9,7 +9,7 @@ let ytLink = await fetch(`https://api.lolhuman.xyz/api/ytplay2?apikey=${lolkeysa
 if (command == 'play') {
 let jsonn = await ytLink.json()
 let aud = await jsonn.result.audio
-let capt = `📌 𝙏𝙞𝙩𝙪𝙡𝙤: ${title}\n📆 𝙋𝙪𝙗𝙡𝙞𝙘𝙖𝙘𝙞𝙤𝙣: ${published}\n⌚ 𝘿𝙪𝙧𝙖𝙘𝙞𝙤𝙣: ${durationH}\n👀 𝙑𝙞𝙨𝙩𝙖𝙨: ${views}`
+let capt = `📌 𝙏𝙞𝙩𝙪𝙡𝙤: ${title}\n📆 𝙋𝙪𝙗𝙡𝙞𝙘𝙖𝙘𝙞𝙤𝙣: ${published}\n👀 𝙑𝙞𝙨𝙩𝙖𝙨: ${views}`
 const buttons = [{buttonId: `#menu`, buttonText: {displayText: '🎶 𝙈𝙚𝙣𝙪 🎶'}, type: 1}]
 const buttonMessage = { image: {url: thumbnail}, caption: capt, footer: 'ᴇɴᴠɪᴀɴᴅᴏ ᴀᴜᴅɪᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...', buttons: buttons, headerType: 4 }
 let msg = await conn.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -19,7 +19,7 @@ conn.sendMessage(m.chat, { audio: { url: aud }, mimetype: 'audio/mp4', fileName:
 if (command == 'play2') {
 let jsonn = await ytLink.json()
 let vid = await jsonn.result.video
-let capt = `📌 𝙏𝙞𝙩𝙪𝙡𝙤: ${title}\n📆 𝙋𝙪𝙗𝙡𝙞𝙘𝙖𝙘𝙞𝙤𝙣: ${published}\n⌚ 𝘿𝙪𝙧𝙖𝙘𝙞𝙤𝙣: ${durationH}\n👀 𝙑𝙞𝙨𝙩𝙖𝙨: ${views}`
+let capt = `📌 𝙏𝙞𝙩𝙪𝙡𝙤: ${title}\n📆 𝙋𝙪𝙗𝙡𝙞𝙘𝙖𝙘𝙞𝙤𝙣: ${published}\n👀 𝙑𝙞𝙨𝙩𝙖𝙨: ${views}`
 const buttons = [{buttonId: `#playlist ${title}`, buttonText: {displayText: '𓃠 𝙈𝙖𝙨 𝙧𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤𝙨'}, type: 1}]
 const buttonMessage = { image: {url: thumbnail}, caption: capt, footer: 'ᴇɴᴠɪᴀɴᴅᴏ ᴠɪᴅᴇᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...', buttons: buttons, headerType: 4 }
 let msg = await conn.sendMessage(m.chat, buttonMessage, { quoted: m })
