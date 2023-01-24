@@ -8,10 +8,10 @@ let fixedNumber = nomor.replace(/[-+<>@]/g, '').replace(/ +/g, '').replace(/^[0]
 let fixedJumlah = jumlah ? jumlah * 1 : 10
 if (fixedJumlah > 5) throw `${fg}𝑴𝒊́𝒏𝒊𝒎𝒐 *5* 𝒎𝒆𝒏𝒔𝒂𝒋𝒆 𝒑𝒂𝒓𝒂 𝒉𝒂𝒄𝒆𝒓 𝒔𝒑𝒂𝒎`
 await m.reply(`${eg}𝑬𝒍 𝒔𝒑𝒂𝒎 𝒔𝒆 𝒆𝒏𝒗𝒊𝒐́ *${fixedJumlah}* 𝑽𝒆𝒄𝒆𝒔 𝒂 *${nomor}*`)
+await delay(10000)
 for (let i = fixedJumlah; i > 1; i--) {
 if (i !== 0) conn.reply(fixedNumber, pesan.trim(), m)
 
-await delay(10000)
 }}
 handler.help = ['spamwa <number>|<mesage>|<no of messages>']
 handler.tags = ['General']

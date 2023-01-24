@@ -4,7 +4,7 @@ let ne = await (await fetch('https://raw.githubusercontent.com/ArugaZ/grabbed-re
 let nek = ne.split('\n')
 let neko = pickRandom(nek)
 await delay(5000)
-conn.sendButton(m.chat, 'Nyaww~ 😘💗', wm, neko, [['🆕𝑺𝒊𝒈𝒖𝒊𝒆𝒏𝒕𝒆 🆕', `/${command}`]],m)
+conn.sendButton(m.chat, 'Nyaww~ 🐾💗', wm, neko, [['𝑺𝒊𝒈𝒖𝒊𝒆𝒏𝒕𝒆 🆕', `/${command}`]],m)
 }
 handler.command = /^(neko)$/i
 handler.tags = ['anime']
