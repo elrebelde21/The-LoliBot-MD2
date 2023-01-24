@@ -10,7 +10,7 @@ try {
 let res = await mediafiredl(args[0])
 let { url, url2, filename, ext, aploud, filesize, filesizeH } = res
 let caption = `
-╭┄〔 ${eg} 〕┄⊱
+╭┄ ${eg}
 ┆ 𓃠 ${wm}* 
 ┆——————«•»——————
 ┆ 💫 𝑵𝒐𝒎𝒃𝒓𝒆
