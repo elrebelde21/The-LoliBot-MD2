@@ -16,10 +16,10 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
   user.age = age
   user.regTime = + new Date
   user.registered = true
-global.db.data.users[m.sender].money += 600
+global.db.data.users[m.sender].money += 400
 global.db.data.users[m.sender].limit += 4
-global.db.data.users[m.sender].exp += 305
-global.db.data.users[m.sender].joincount += 3
+global.db.data.users[m.sender].exp += 150
+global.db.data.users[m.sender].joincount += 2
   let sn = createHash('md5').update(m.sender).digest('hex')
 let caption = `┌───⊷ *𝙍𝙚𝙜𝙞𝙨𝙩𝙧𝙤 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙖𝙙𝙤*
 ┆ *𝙉𝙤𝙢𝙗𝙧𝙚* 
@@ -31,9 +31,9 @@ let caption = `┌───⊷ *𝙍𝙚𝙜𝙞𝙨𝙩𝙧𝙤 𝙘𝙤𝙢�
 ┆ *𝘽𝙤𝙣𝙤* 
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆ *$4 𝘿𝙞𝙖𝙢𝙖𝙣𝙩𝙚𝙨* 💎
-┆ *$600 𝙇𝙤𝙡𝙞𝙘𝙤𝙞𝙣𝙨*
-┆ *$305 𝙓𝙥*
-┆ *$4 𝙏𝙤𝙠𝙚𝙣𝙨*
+┆ *$400 𝙇𝙤𝙡𝙞𝙘𝙤𝙞𝙣𝙨*
+┆ *$150 𝙓𝙥*
+┆ *$2 𝙏𝙤𝙠𝙚𝙣𝙨*
 ╰──────────────────`
 //let author = global.author
 await conn.sendButton(m.chat, caption, `𝑻𝒖 𝒏𝒖𝒎𝒆𝒓𝒐 𝒅𝒆 𝒔𝒆𝒓𝒊𝒆 𝒕𝒆 𝒔𝒆𝒓𝒗𝒊𝒓𝒂́ 𝒆𝒏 𝒄𝒂𝒔𝒐 𝒆𝒏 𝒒𝒖𝒆 𝒒𝒖𝒊𝒆𝒓𝒂𝒔 𝒃𝒐𝒓𝒓𝒂𝒓 𝒔𝒖𝒔 𝒓𝒆𝒈𝒊𝒔𝒕𝒓𝒐𝒔 👇👇👇\n𝑬𝒋𝒆𝒎𝒑𝒍𝒐\n${usedPrefix}unreg numero de serie\n${wm}`, [['𝘼𝙝𝙤𝙧𝙖 𝙚𝙨𝙩𝙤𝙮 𝙑𝙚𝙧𝙞𝙛𝙞𝙘𝙖𝙙𝙤(𝙖)!! ✅', '/profile']], m)
