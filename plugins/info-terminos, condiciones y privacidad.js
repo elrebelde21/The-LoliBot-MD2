@@ -67,11 +67,11 @@ let username = conn.getName(who)
 //let user = global.db.data.users[m.sender]
 //user.registered = false
 
-let Terminos = `
+let TerminoA = `
 *_Toda la información que se mencione aquí no excluye a la Propietario del Bot, y Propietarios Acredores al uso de The LoliBot-MD_*
-*_No Somos responsables del desconocimiento que tenga por parte de esta información._* 
+*_No Somos responsables del desconocimiento que tenga por parte de esta información._*`.trim()
 
-
+let terminoB = `    
 *TÉRMINOS DE PRIVACIDAD*
 _- Somos consciente del constante uso que le pueda dar al Bot, y también Garantizamos que la información como (imágenes, vídeos, enlaces, ubicación, Audios, Stickers, Gif, Contactos que Usted Proporcione en torno a Número(s) Oficial(es) No son ni serán Compartido Con Nadie, ni se usaran dicho Datos fuera del entorno del BOT._
 
@@ -107,24 +107,21 @@ _- Al hacer uso de ciertos comandos que tengan como objetivo socavar la incomodi
 
 
 *ESTE ES EL REPOSITORIO OFICIAL*
-*https://github.com/elrebelde21/The-LoliBot-MD*
+ *${md}*
 
-*GRUPOS OFICIAL DE ASISTENCIA*
-*si necesitas ayuda o pregunta entra al grupo de bot ofc*
-*https://chat.whatsapp.com/Byyrc8RJnUkJw6vvUgsbDF*
+*GRUPOS UPDATE ACTUALIZACIONES Y NOVEDADES SOBRE EL BOT*
+*imfomarte sobre la nueva actualizaciónes y novedades de bot aqui*
+${nna}
 
-*CUENTA OFICIAL DE ASISTENCIA - FACEBOOK*
+*FACEBOOK*
 ~ _puede unirte al grupo asistencia facebook del bot_
 *https://facebook.com/groups/721802642266362/*
 
 
 *~ Muchas Gracias Por tomarte el tiempo en informate sobre The LoliBot-MD*
 `.trim()
-conn.sendHydrated(m.chat, Terminos,  `${wm}\nEstamos de acuerdo en Hacer Colaboraciones con Personas Comprometidas, manteniendo el Respeto Puedes Contactar si ese es el caso a esta Grupo Oficial asistencia facebook| https://facebook.com/groups/721802642266362/`, pp, 'https://github.com/elrebelde21/The-LoliBot-MD', 'The LoliBot-MD', null, null, [
-['menu conpleto', '.allmenu'],
-['listamenu', '/menulista'],
-['menucompleto', '#menu']
-], m,)
+conn.sendButton(m.chat, TerminoA, terminoB, pp, [
+['ɢʀᴜᴘᴏs', `#grupos`]], m)
 }
 
 handler.customPrefix = /terminos|términos|términos, condiciones y privacidad|terminos, condiciones y privacidad|términos y condiciones y privacidad|terminosycondicionesyprivacidad|terminosycondiciones|terminos y condiciones y privacidad|terminos y condiciones|terminos y condiciones|terminos de uso|Terminos de uso|Terminó se uso|términos de uso|Términos de uso|Términos y condiciones/i
