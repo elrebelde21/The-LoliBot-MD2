@@ -20,7 +20,7 @@ let str = `
  *${nna}*\n
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ✅ 𝙂𝙧𝙪𝙥𝙤 𝙖𝙨𝙞𝙨𝙩𝙚𝙣𝙘𝙞𝙖 𝙛𝙖𝙘𝙚𝙗𝙤𝙤𝙠
-*https://facebook.com/groups/721802642266362/*
+*https://facebook.com/groups/872989990425789/*
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ✅ 𝙂𝙧𝙪𝙥𝙤 𝙩𝙚𝙡𝙚𝙜𝙧𝙖𝙢
 *https://t.me/+EcdN9fktnQQwY2Ex*
