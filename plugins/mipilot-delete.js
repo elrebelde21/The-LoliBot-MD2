@@ -27,7 +27,7 @@ console.error('La carpeta o archivo de sesion no existen ', err)
 }}
 handler.help = ['deletebot']
 handler.tags = ['jadibot']
-handler.command = /^(deletebot|aa2)$/i
+handler.command = /^(deletebot|eliminarsesion)$/i
 handler.private = true
 handler.fail = null
 export default handler
