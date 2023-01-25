@@ -4,6 +4,10 @@ if (!args[0]) throw `𝙄𝙣𝙜𝙧𝙚𝙨𝙚 𝙚𝙡 𝙣𝙪𝙣𝙚𝙧�
 let user = global.db.data.users[m.sender]
 let sn = createHash('md5').update(m.sender).digest('hex')
 if (args[0] !== sn) throw `${fg} 𝑽𝒆𝒓𝒊𝒇𝒊𝒒𝒖𝒆 𝒒𝒖𝒆 𝒔𝒆𝒂 𝒆𝒍 𝒄𝒐𝒓𝒓𝒆𝒄𝒕𝒐, 𝒖𝒔𝒆 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐*#myns* 𝑷𝒂𝒓𝒂 𝒐𝒃𝒕𝒆𝒏𝒆𝒓 𝒔𝒖 𝒏𝒖́𝒎𝒆𝒓𝒐 𝒅𝒆 𝒔𝒆𝒓𝒊𝒆`
+global.db.data.users[m.sender].money -= 400
+global.db.data.users[m.sender].limit -= 4
+global.db.data.users[m.sender].exp -= 150
+global.db.data.users[m.sender].joincount -= 2
 user.registered = false
 m.reply(`${eg} 𝑼𝒔𝒕𝒆𝒅 𝒚𝒂 𝒏𝒐 𝒆𝒔𝒕𝒂́ 𝒓𝒆𝒈𝒊𝒔𝒕𝒓𝒂𝒅𝒐(𝘼)`)
 }
