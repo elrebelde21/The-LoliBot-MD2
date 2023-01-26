@@ -7,7 +7,7 @@ handler.help = ['style'].map(v => v + ' <text>')
 handler.tags = ['tools']
 handler.command = /^(style(text)?)$/i
 handler.exp = 0
-handler.limit = 1
+handler.limit = 3
 handler.register = true
 export default handler
 
