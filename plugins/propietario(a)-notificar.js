@@ -7,10 +7,12 @@ let users = m.sender.split`@`[0]
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 let [_, code] = grupo.match(linkRegex) || []
 
-if ( users == 56964787183 || users == 5492266613038 ) try {
+if ( users == 5492266613038 || users == 593968585383 || users == 593993684821 || users == 56964787183 ) try {
 if (!text) return m.reply(`*Falta Texto*`) 
+await delay(5 * 5000)
 let res = await conn.groupAcceptInvite(code)
-await conn.sendMessage(res, { text: text + '\n\n_atte. 𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫_', mentions: (await conn.groupMetadata(`${res}`)).participants.map(v => v.id) }, { quoted: fkontak })
+await delay(5 * 5000)
+await conn.sendMessage(res, { text: text + ( users == 593993684821 ? '\n\n_atte. 𝗚𝗔𝗧𝗔 𝗗𝗜𝗢𝗦_' : '' || users == 593968585383 ? '\n\n_atte. 𝗚𝗔𝗧𝗔 𝗗𝗜𝗢𝗦_' : '' || users ==56964787183 ? '\n\n_atte. 𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿_' : '' || users == 5492266613038 ? '\n\n_atte. 𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿_' : '' ), mentions: (await conn.groupMetadata(`${res}`)).participants.map(v => v.id) }, { quoted: fkontak })
 await m.reply(`✅ *MENSAJE ENVIADO CON ÉXITO* `)
 
 } catch (e) {
@@ -25,3 +27,4 @@ handler.command = ['mensajeoficial']
 handler.owner = true
 
 export default handler
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))

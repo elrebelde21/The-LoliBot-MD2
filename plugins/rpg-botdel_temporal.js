@@ -15,6 +15,7 @@ handler.help = ['delexpired']
 handler.tags = ['owner']
 handler.command = /^(delbot|delbottemporal|delbotemporal)$/i
 handler.owner = true
+handler.register = true
 handler.group = true
 
 export default handler
