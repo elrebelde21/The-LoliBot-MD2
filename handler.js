@@ -897,9 +897,9 @@ export async function handler(chatUpdate) {
                 if (!('sDemote' in chat)) chat.sDemote = ''                    
                 if (!('delete' in chat)) chat.delete = true                    
                 if (!('modohorny' in chat)) chat.modohorny = false                    
-                if (!('stickers' in chat)) chat.stickers = false                    
+                if (!('stickers' in chat)) chat.stickers = true                    
                 if (!('autosticker' in chat)) chat.autosticker = false                      
-                if (!('audios' in chat)) chat.audios = false                     
+                if (!('audios' in chat)) chat.audios = true                     
 		if (!('antiver' in chat)) chat.antiver = true                    
                 if (!('antiLink' in chat)) chat.antiLink = false                    
                 if (!('antiLink2' in chat)) chat.antiLink2 = false
@@ -909,7 +909,7 @@ export async function handler(chatUpdate) {
 		if (!('antiFacebook' in chat)) chat.antiFacebook = false
 		if (!('antiInstagram' in chat)) chat.antiInstagram = false
 		if (!('antiTwitter' in chat)) chat.antiInstagram = false
-		if (!('antifake' in chat)) chat.antifake = true
+		if (!('antifake' in chat)) chat.antifake = false
 		if (!('reaction' in chat)) chat.reaction = true    
                 if (!('viewonce' in chat)) chat.viewonce = true         
                 if (!('modoadmin' in chat)) chat.modoadmin = false           
@@ -930,9 +930,9 @@ export async function handler(chatUpdate) {
                     sDemote: '', 
                     delete: true,
                     modohorny: true,
-                    stickers: false,
+                    stickers: true,
                     autosticker: false,
-                    audios: false,
+                    audios: true,
 		    antiver: true,
                     antiLink: false,
                     antiLink2: false,
@@ -942,7 +942,7 @@ export async function handler(chatUpdate) {
 		    antiFacebook: false,
 		    antiInstagram: false,
 		    antiTwitter: false,
-		    antifake: true,
+		    antifake: false,
 		    reaction: true,
                     viewonce: true,
                     modoadmin: false,
