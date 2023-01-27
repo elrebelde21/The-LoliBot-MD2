@@ -121,7 +121,7 @@ global.lolibot = md
 
 global.nna = 'https://chat.whatsapp.com/JESaesjOEcB6wnGX0QYT9o'
 global.nnagrupo = nna //Actualización, información sobre el bot
-global.nna2 = 'JESaesjOEcB6wnGX0QYT9o'
+global.nna2 = 'JESaesjOEcB6wnGYT9o'
 
 global.nn = 'https://chat.whatsapp.com/BaHPUdegBxB4eurlAbhOT8'
 global.nngrupo = nn //Grupo 1
