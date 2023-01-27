@@ -5,41 +5,77 @@ var document = doc[Math.floor(Math.random() * doc.length)]
 await m.reply(`╰⊱🔰⊱ *𝑰𝒏𝒔𝒕𝒂𝒍𝒂𝒄𝒊𝒐𝒏* ⊱🔰⊱╮`)
   //conn.sendButton(m.chat, str, author, await(await fetch(pp)).buffer(), [['Menu', '/menu']], m)
 let texto1 = `
- 𝙋𝙖𝙨𝙤 𝙙𝙚 𝙡𝙖 𝙞𝙣𝙨𝙩𝙖𝙡𝙖𝙘𝙞𝙤𝙣
- 𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫 𝒚𝒂 𝒆𝒔𝒕𝒂 𝒍𝒊𝒔𝒕𝒂 𝒑𝒂𝒓𝒂 𝒍𝒂 𝒊𝒏𝒔𝒕𝒂𝒍𝒂𝒄𝒊𝒐𝒏
+ ⚡▁ ▂ ▄ ▅ ▆ ▇ █ 🚆 █ ▇ ▆ ▅ ▄ ▂ ▁⚡
 
- 𝒔𝒊 𝒏𝒆𝒄𝒆𝒔𝒊𝒕𝒂𝒔 𝒂𝒚𝒖𝒅𝒂 𝒆𝒏𝒕𝒓𝒂 𝒂𝒍 𝒈𝒓𝒖𝒑𝒐 𝒅𝒆𝒍 𝒃𝒐𝒕
+💥 𝙔𝘼 𝙋𝙐𝙀𝘿𝙀 𝙄𝙉𝙎𝙏𝘼𝙇𝘼𝙍 𝘼 𝙏𝙝𝙚-𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿 ❕
 
-📌 *${global.nna}*
+*VÍDEO DE INSTALACIÓN*
+*https://youtu.be/gh5NajZOTA8*
 
- 𝑶 𝒆𝒔𝒄𝒓𝒊𝒃𝒊𝒎𝒆 𝒂𝒍 *wa.me/56964787183*
- 𝒔𝒐𝒍𝒐 𝒑𝒐𝒓 𝒕𝒆𝒎𝒂 𝒅𝒆𝒍 𝒃𝒐𝒕
+✨ 𝙍𝙀𝙌𝙐𝙄𝙎𝙄𝙏𝙊𝙎 𝙋𝘼𝙍𝘼 𝙄𝙉𝙎𝙏𝘼𝙇𝘼𝙍 𝙏𝙝𝙚-𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿
 
-📌 𝒑𝒂𝒔𝒐 𝒑𝒂𝒓𝒂 𝒊𝒏𝒔𝒕𝒂𝒍𝒂𝒓 𝒆𝒍 𝒃𝒐𝒕 𝒆𝒍 𝒕𝒆𝒓𝒎𝒖𝒙
- 
-📌 𝒄𝒐𝒎𝒐 𝒊𝒏𝒔𝒕𝒂𝒍𝒂𝒓 𝒆𝒍 𝒃𝒐𝒕 *https://youtu.be/gh5NajZOTA8*
+✅ _1 GB de almacenamiento_
+✅ _Aplicación Termux (actualizada)_
+✅ _Un WhatsApp recomiendo el WhatsApp normal_
+✅ _Un número virtual (si es ofc mejor)_
+✅ _2 dispositivos o una PC para escanear_
 
-🔸 𝒏𝒆𝒄𝒆𝒔𝒊𝒕𝒂 2 𝒄𝒆𝒍𝒖 𝒔𝒐𝒍𝒐 𝒑𝒂𝒓𝒂 𝒆𝒔𝒄𝒂𝒏𝒆𝒂𝒓 𝒆𝒍 𝑸𝑹
-🔸 𝑰𝒏𝒔𝒕𝒂𝒍𝒂𝒓 𝒕𝒆𝒓𝒎𝒖𝒙 𝒅𝒆 𝑮𝒐𝒐𝒈𝒍𝒆
+───────•••───────
 
- 𝒑𝒂𝒔𝒐 𝒏𝒖𝒎𝒆𝒓𝒐 1*
+✨ 𝙂𝙄𝙏𝙃𝙐𝘽 > 𝙍𝙀𝙋𝙊𝙎𝙄𝙏𝙊𝙍𝙄𝙊
+*_Visita mí repositorio 😸 para más información, si te agrada el Bot apoya me con una ⭐️ ¡Gracias!_*
 
-🔸 termux-setup-storage
-🔸 apt update 
-🔸 pkg upgrade 
-🔸 pkg install git -y
-🔸 pkg install nodejs -y
-🔸 pkg install ffmpeg -y
-🔸 pkg install imagemagick -y
-🔸 pkg install yarn
-🔸 cd storage/downloads/LoliBot
-🔸 npm install
-🔸 ls
-🔸 npm start
- (𝒚 𝒂𝒄𝒂 𝒒𝒖𝒆 𝒗𝒂𝒏 𝒎𝒂𝒏𝒅𝒂 𝒆𝒍 𝑸𝑹 𝒕𝒆𝒏𝒆𝒓 𝒍𝒂  𝒐𝒑𝒄𝒊𝒐𝒏 𝒔𝒂𝒄𝒂 𝒖𝒏𝒂 𝒄𝒂𝒑𝒕𝒖𝒓𝒂 𝒚 𝒎𝒂𝒏𝒅𝒂𝒍𝒂  𝒂 𝒕𝒖 𝒐𝒕𝒓𝒐 𝒄𝒆𝒍𝒖 𝒚 𝒆𝒔𝒄𝒂𝒏𝒆𝒂)
+${md}
 
- 𝒄𝒖𝒂𝒍𝒒𝒖𝒊𝒆𝒓 𝒄𝒐𝒔𝒂 𝒉𝒂𝒃𝒍𝒂𝒎𝒆 𝒔𝒐𝒍𝒐 𝒑𝒐𝒓 𝒕𝒆𝒎𝒂 𝒅𝒆𝒍 𝒃𝒐𝒕🔰🤖
- 𝑺𝒂𝒍𝒖𝒅𝒐𝒔🔰🤖`
+───────•••───────
+
+❇️ *COMANDO INSTALACIÓN POR GITHUB*
+
+🔸termux-setup-storage
+🔸apt update
+🔸pkg upgrade
+🔸pkg install nodejs -y
+🔸pkg install ffmpeg -y
+🔸pkg install imagemagick -y
+🔸git clone https://github.com/elrebelde21/The-LoliBot-MD-V2
+🔸cd The-LoliBot-MD-V2
+🔸npm install
+🔸npm update
+🔸npm start
+
+───────•••───────
+
+❇️ 𝗜𝗡𝗦𝗧𝗔𝗟𝗔𝗥 𝗘𝗡 𝗕𝗢𝗫𝗠𝗜𝗡𝗘
+
+*𝙏𝙝𝙚-𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿 : 𝘽𝙤𝙭𝙈𝙞𝙣𝙚*
+*_https://youtu.be/wWyBHtKzx9Q_*
+
+_Pagina Oficial_ 
+_https://boxmineworld.com_
+
+_Panel_
+_https://panel.boxmineworld.com_
+
+───────•••───────
+
+❇️ 𝗜𝗡𝗦𝗧𝗔𝗟𝗔𝗥 𝗘𝗡 𝙍𝙀𝙋𝙇𝙄𝙏 
+
+*𝙏𝙝𝙚-𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿 : 𝙍𝙀𝙋𝙇𝙄𝙏*
+https://youtu.be/SMjCcfuyWQE
+
+_Pagina Oficial_ 
+https://replit.com/
+
+───────•••───────
+
+💛 *_Si tienes dudas o necesitas ayuda en el proceso de la instalación puede escribir me a este número (No es Bot el número)_*
+
+📲 *Wa.me/56964787183*
+
+❗ *_Solo para temas de instalación_* 
+
+⚡▁ ▂ ▄ ▅ ▆ ▇ █ 🚆 █ ▇ ▆ ▅ ▄ ▂ ▁⚡
+                           𝙏𝙝𝙚-𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿`
 let buttonMessage= {
 'document': { url: `https://youtu.be/HyCqmXDHGeQ` },
 'mimetype': `application/${document}`,

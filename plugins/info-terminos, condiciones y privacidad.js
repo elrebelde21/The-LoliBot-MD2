@@ -115,7 +115,7 @@ ${nna}
 
 *FACEBOOK*
 ~ _puede unirte al grupo asistencia facebook del bot_
-*https://facebook.com/groups/721802642266362/*
+*https://facebook.com/groups/872989990425789/*
 
 
 *~ Muchas Gracias Por tomarte el tiempo en informate sobre The LoliBot-MD*
