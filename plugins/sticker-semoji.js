@@ -145,4 +145,6 @@ throw er
 handler.help = ['emoji <tipo> <emoji>']
 handler.tags = ['sticker'] 
 handler.command = ['emoji', 'smoji', 'semoji']
+handler.money = 60
+handler.register = true
 export default handler

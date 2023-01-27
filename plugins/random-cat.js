@@ -16,5 +16,6 @@ handler.help = ['cat']
 handler.tags = ['random']
 handler.command = /^cat$/i
 handler.fail = null
+handler.money = 25
 export default handler
 const delay = time => new Promise(res => setTimeout(res, time))

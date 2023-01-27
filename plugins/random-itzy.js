@@ -10,5 +10,6 @@ conn.sendButton(m.chat, `_${command}_`, wm, gata, [['𝑺𝒊𝒈𝒖𝒊𝒆�
 handler.help = ['itzy','kpopitzy']
 handler.tags = ['internet']
 handler.command = /^(itzy|kpopitzy)$/i
+handler.money = 25
 export default handler
 const delay = time => new Promise(res => setTimeout(res, time))

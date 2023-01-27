@@ -73,6 +73,7 @@ handler.help = ['adventure']
 handler.tags = ['rpg']
 handler.limit = 1
 handler.register = true
+handler.level = 1
 handler.command = /^(adventure|adv|aventura|aventurar)$/i
 
 handler.cooldown = cooldown

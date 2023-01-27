@@ -9,5 +9,6 @@ conn.sendButton(m.chat, `_${command}_`, author, randomkpopx, [['🔄 𝑺𝒊�
 handler.help = ['blackpink']
 handler.tags = ['internet']
 handler.command = /^(blackpink)$/i
+handler.money = 25
 export default handler
 const delay = time => new Promise(res => setTimeout(res, time))

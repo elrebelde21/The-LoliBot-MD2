@@ -45,7 +45,7 @@ handler.help = ['daily']
 handler.tags = ['xp']
 handler.command = ['coffer', 'cofre', 'abrircofre', 'cofreabrir'] 
 handler.register = true
-handler.level = 5
+handler.level = 8
 export default handler
 
 function pickRandom(list) {

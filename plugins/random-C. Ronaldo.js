@@ -7,5 +7,6 @@ conn.sendButton(m.chat, "*Siiiuuuuuu*", author, ronaldo, [['⚽ 𝑺𝒊𝒈𝒖
 handler.help = ['cristianoronaldo', 'cr7']
 handler.tags = ['internet']
 handler.command = /^(cristianoronaldo|cr7)$/i
+handler.money = 25
 export default handler
 const delay = time => new Promise(res => setTimeout(res, time))

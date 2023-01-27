@@ -27,7 +27,8 @@ avatar: url
 })
 try {
 let stiker = await sticker(null, apiUrl, global.packname, global.author)
-conn.sendFile(m.chat, stiker, null, { asSticker: true })
+await delay(5 * 5000)
+if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `h`, mediaType: 2, sourceUrl: nnnttt, thumbnail: imagen1}}}, { quoted: m })
 } catch (e) {
 m.reply(`𝑬𝒓𝒓𝒐𝒓, 𝒏𝒐 𝒔𝒆 𝒑𝒖𝒅𝒐 𝒉𝒂𝒄𝒆𝒓 𝒍𝒂 𝒄𝒐𝒏𝒗𝒆𝒓𝒔𝒊𝒐́𝒏, 𝒆𝒏 𝒔𝒖 𝒍𝒖𝒈𝒂𝒓 𝒆𝒏𝒗𝒊́𝒂 𝒖𝒏𝒂 𝒊𝒎𝒂𝒈𝒆𝒏`)
 await conn.sendFile(m.chat, apiUrl, 'image.png', null, m)
@@ -35,4 +36,6 @@ await conn.sendFile(m.chat, apiUrl, 'image.png', null, m)
 handler.help = ['stickfilter (caption|reply media)']
 handler.tags = ['General']
 handler.command = /^(stickerfilter|stikerfilter|cs2|stickerefecto|efectosticker|filtrosticker|stickerfiltro)$/i
+handler.money = 40
 export default handler
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))

@@ -8,12 +8,17 @@ let [emoji1, emoji2] = text.split`+`
 let anu = await fetchJson(`https://tenor.googleapis.com/v2/featured?key=AIzaSyAyimkuYQYF_FXVALexPuGQctUWRURdCYQ&contentfilter=high&media_filter=png_transparent&component=proactive&collection=emoji_kitchen_v5&q=${encodeURIComponent(emoji1)}_${encodeURIComponent(emoji2)}`)
 for (let res of anu.results) {
 let stiker = await sticker(false, res.url, global.packname, global.author)
-conn.sendFile(m.chat, stiker, null, { asSticker: true })
+await delay(5 * 5000)
+if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `h`, mediaType: 2, sourceUrl: nnnttt, thumbnail: imagen1}}}, { quoted: m })
 }}
 handler.help = ['emojimix'].map(v => v + ' emot1|emot2>')
 handler.tags = ['fun']
 handler.command = /^(emojimix|emogimix|combinaremojis|crearemoji|emojismix|emogismix)$/i
+handler.money = 40
+handler.register = true
 export default handler
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
+
 const fetchJson = (url, options) => new Promise(async (resolve, reject) => {
 fetch(url, options)
 .then(response => response.json())

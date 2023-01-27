@@ -11,5 +11,6 @@ conn.sendButton(m.chat, '𝑪𝒉𝒊𝒄𝒐 ✨', wm, json.result.male, [['�
 handler.help = ['ppcouple']
 handler.tags = ['internet']
 handler.command = /^(ppcp|ppcouple|compartirperfil|compartirfoto)$/i
+handler.money = 40
 export default handler
 const delay = time => new Promise(res => setTimeout(res, time))

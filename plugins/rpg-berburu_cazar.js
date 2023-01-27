@@ -127,6 +127,7 @@ handler.tags = ['rpg']
 handler.command = /^(hunt|berburu|caza(r)?)$/i
 handler.limit = 1
 handler.register = true
+handler.level = 3
 //handler.group = true
 export default handler
 

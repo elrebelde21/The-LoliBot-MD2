@@ -10,6 +10,7 @@ handler.tags = ['internet']
 handler.command = /^(pies)$/
 handler.exp = 50
 handler.level = 5
+handler.money = 25
 export default handler
 const delay = time => new Promise(res => setTimeout(res, time))
 

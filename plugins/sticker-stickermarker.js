@@ -27,6 +27,7 @@ avatar: url
 })
 try {
 let stiker = await sticker(null, apiUrl, global.packname, global.author)
+await delay(5 * 5000)
 conn.sendFile(m.chat, stiker, null, { asSticker: true })
 } catch (e) {
 m.reply(`𝑬𝒓𝒓𝒐𝒓, 𝒏𝒐 𝒔𝒆 𝒑𝒖𝒅𝒐 𝒉𝒂𝒄𝒆𝒓 𝒍𝒂 𝒄𝒐𝒏𝒗𝒆𝒓𝒔𝒊𝒐́𝒏, 𝒆𝒏 𝒔𝒖 𝒍𝒖𝒈𝒂𝒓 𝒆𝒏𝒗𝒊́𝒂 𝒖𝒏𝒂 𝒊𝒎𝒂𝒈𝒆𝒏`)
@@ -35,4 +36,6 @@ await conn.sendFile(m.chat, apiUrl, 'image.png', null, m)
 handler.help = ['stickmaker (caption|reply media)']
 handler.tags = ['General']
 handler.command = /^(stickmaker|stickermaker|stickermarker|cs)$/i
+handler.money = 40
 export default handler
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))

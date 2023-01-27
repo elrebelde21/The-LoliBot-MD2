@@ -88,7 +88,7 @@ handler.tags = ['xp']
 handler.command = ['payxp', 'transfer', 'darxp', 'dar', 'enviar', 'transferir'] 
 
 handler.disabled = false
-
+handler.register = true
 export default handler
 
 function special(type) {

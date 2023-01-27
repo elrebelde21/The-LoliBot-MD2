@@ -51,8 +51,10 @@ await delay(5 * 5000)
 handler.help = ['kotakikan', 'kolam', 'kolamikan']
 handler.tags = ['rpg']
 handler.command = /^(picina|piscina|peces|kotak(ikan)?|kolam(ikan)?)$/i
-export default handler 
+handler.money = 60
+handler.level = 3
 handler.register = true
+export default handler 
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
 const more = String.fromCharCode(8206)

@@ -1592,6 +1592,9 @@ await conn.sendButton(m.chat, `*𝗣𝗥𝗘𝗠𝗜𝗨𝗠 ${user.premium ? "�
 handler.help = ['inventory', 'inv']
 handler.tags = ['rpg']
 handler.command = /^(inventory|inv|inventario|alimentos)$/i
+handler.money = 60
+handler.level = 6
+handler.register = true
 export default handler
 
 const more = String.fromCharCode(8206)

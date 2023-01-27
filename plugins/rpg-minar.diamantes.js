@@ -74,6 +74,7 @@ handler.tags = ['diamantes']
 handler.command = ['minar3', 'miming3', 'mine3', 'minardiamantes', 'minargemas', 'minardiamante'] 
 handler.fail = null
 handler.exp = 0
+handler.register = true
 export default handler
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 

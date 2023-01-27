@@ -48,7 +48,7 @@ await conn.sendButton(m.chat, ndy, `🔖 𝘼𝙣𝙞𝙢𝙖𝙡𝙚𝙨 𝙡�
 }
 handler.help = ['kandang']
 handler.tags = ['rpg']
-handler.level = 1
+handler.level = 6
 handler.limit = 1
 handler.register = true
 handler.command = /^(kandang|animales|animals)$/i
