@@ -12,6 +12,17 @@ let texto1 = `
 *VÍDEO DE INSTALACIÓN*
 *https://youtu.be/gh5NajZOTA8*
 
+✨ *Si necesitas ayuda entra al grupo del bot*
+📌 *${global.nna}*
+
+💛 *Si tienes dudas o necesitas ayuda en el proceso de la instalación puede escribir me a este número (No es Bot el número)*
+
+📲 *Wa.me/56964787183*
+
+❗ *_Solo para temas de instalación_*
+
+───────•••───────
+
 ✨ 𝙍𝙀𝙌𝙐𝙄𝙎𝙄𝙏𝙊𝙎 𝙋𝘼𝙍𝘼 𝙄𝙉𝙎𝙏𝘼𝙇𝘼𝙍 𝙏𝙝𝙚-𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿
 
 ✅ _1 GB de almacenamiento_
@@ -29,23 +40,24 @@ ${md}
 
 ───────•••───────
 
-❇️ *COMANDO INSTALACIÓN POR GITHUB*
+📌 *PASO PARA INSTALAR EL BOT EL TERMUX*
 
-🔸termux-setup-storage
-🔸apt update
-🔸pkg upgrade
-🔸pkg install nodejs -y
-🔸pkg install ffmpeg -y
-🔸pkg install imagemagick -y
-🔸git clone https://github.com/elrebelde21/The-LoliBot-MD-V2
-🔸cd The-LoliBot-MD-V2
-🔸npm install
-🔸npm update
-🔸npm start
+🔸 termux-setup-storage
+🔸 apt update 
+🔸 pkg upgrade 
+🔸 pkg install git -y
+🔸 pkg install nodejs -y
+🔸 pkg install ffmpeg -y
+🔸 pkg install imagemagick -y
+🔸 pkg install yarn
+🔸 cd storage/downloads/LoliBot
+🔸 npm install
+🔸 ls
+🔸 npm start
 
 ───────•••───────
 
-❇️ 𝗜𝗡𝗦𝗧𝗔𝗟𝗔𝗥 𝗘𝗡 𝗕𝗢𝗫𝗠𝗜𝗡𝗘
+📌 𝗜𝗡𝗦𝗧𝗔𝗟𝗔𝗥 𝗘𝗡 𝗕𝗢𝗫𝗠𝗜𝗡𝗘
 
 *𝙏𝙝𝙚-𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿 : 𝘽𝙤𝙭𝙈𝙞𝙣𝙚*
 *_https://youtu.be/wWyBHtKzx9Q_*
@@ -58,7 +70,7 @@ _https://panel.boxmineworld.com_
 
 ───────•••───────
 
-❇️ 𝗜𝗡𝗦𝗧𝗔𝗟𝗔𝗥 𝗘𝗡 𝙍𝙀𝙋𝙇𝙄𝙏 
+📌 𝗜𝗡𝗦𝗧𝗔𝗟𝗔𝗥 𝗘𝗡 𝙍𝙀𝙋𝙇𝙄𝙏 
 
 *𝙏𝙝𝙚-𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿 : 𝙍𝙀𝙋𝙇𝙄𝙏*
 https://youtu.be/SMjCcfuyWQE
@@ -67,12 +79,8 @@ _Pagina Oficial_
 https://replit.com/
 
 ───────•••───────
-
-💛 *_Si tienes dudas o necesitas ayuda en el proceso de la instalación puede escribir me a este número (No es Bot el número)_*
-
-📲 *Wa.me/56964787183*
-
-❗ *_Solo para temas de instalación_* 
+𝒄𝒖𝒂𝒍𝒒𝒖𝒊𝒆𝒓 𝒄𝒐𝒔𝒂 𝒉𝒂𝒃𝒍𝒂𝒎𝒆 𝒔𝒐𝒍𝒐 𝒑𝒐𝒓 𝒕𝒆𝒎𝒂 𝒅𝒆𝒍 𝒃𝒐𝒕🔰🤖
+ 𝑺𝒂𝒍𝒖𝒅𝒐𝒔🔰🤖
 
 ⚡▁ ▂ ▄ ▅ ▆ ▇ █ 🚆 █ ▇ ▆ ▅ ▄ ▂ ▁⚡
                            𝙏𝙝𝙚-𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿`
