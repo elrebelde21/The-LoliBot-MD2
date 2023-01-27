@@ -5,7 +5,7 @@ let text = `
 *𝘾𝙤𝙣𝙩𝙖𝙘𝙩𝙤* 
 *Wa.me/56964787183 (no bot)*
 *Wa.me/573183650526 (Bot)*
-*Wa.me/527445318650 (Bot ²)*
+*Wa.me/18134037792 (Bot ²)*
 `.trim()   
 conn.reply(m.chat, text, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
