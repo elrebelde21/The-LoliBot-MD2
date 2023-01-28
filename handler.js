@@ -387,6 +387,7 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.pillhero)) user.pillhero= 0
               if (!isNumber(user.pisang)) user.pisang = 0
               if (!isNumber(user.pointxp)) user.pointxp = 0
+              if (!isNumber(user.prue)) user.prue = 0
               if (!isNumber(user.potion)) user.potion = 0
               if (!isNumber(user.psenjata)) user.psenjata = 0
               if (!isNumber(user.psepick)) user.psepick = 0
