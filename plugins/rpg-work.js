@@ -2,9 +2,9 @@
 let handler = async (m, { conn, isPrems}) => {
 let hasil = Math.floor(Math.random() * 5000)
 let time = global.db.data.users[m.sender].lastwork + 600000
-if (new Date - global.db.data.users[m.sender].lastwork < 600000) throw `*𝙴𝚜𝚝𝚊𝚜 𝚌𝚊𝚗𝚜𝚊𝚍𝚘, 𝚍𝚎𝚋𝚎𝚜 𝚍𝚎𝚜𝚌𝚊𝚗𝚜𝚊𝚛 𝚌𝚘𝚖𝚘 𝚖𝚒𝚗𝚒𝚖𝚘 ${msToTime(time - new Date())} 𝚙𝚊𝚛𝚊 𝚟𝚘𝚕𝚟𝚎𝚛 𝚊 𝚝𝚛𝚊𝚋𝚊𝚓𝚊𝚛!*`
-
-await delay(5 * 5000)
+if (new Date - global.db.data.users[m.sender].lastwork < 600000) throw `*ᴇsᴛᴀ ᴄᴀɴsᴀᴅᴏ, ᴅᴇʙᴇs ᴅᴇsᴄᴀɴsᴀʀ ᴄᴏᴍᴏ ᴍɪɴɪᴍᴏ ${msToTime(time - new Date())} ᴘᴀʀᴀ ᴠᴏʟᴠᴇʀ ᴀ ᴛʀᴀʙᴀᴊᴀʀ!*`
+ 
+await delay(3 * 3000)
 m.reply(`${pickRandom(global.work)} *${hasil} XP*`)
 global.db.data.users[m.sender].lastwork = new Date * 1
 }
@@ -33,7 +33,7 @@ function pickRandom(list) {
 return list[Math.floor(list.length * Math.random())]
 }
 
-global.work = ["Trabajas como cortador de galletas y ganas", "cuidarte el grupos del lolibot ganar", "defendiste al boxmine del ataque del los ni?o rata", "trabaja el un boliche todas las noche ganarte una piba? y ", "le hiciste la paja un hombre por ", "Trabaja para una empresa militar privada, ganando", "Organiza un evento de cata de vinos y obtiene",
+global.work = ["Trabajas como cortador de galletas y ganas", "cuidarte el grupos del lolibot ganar", "defendiste al boxmine del los niño rata por", "le hiciste un pete a un hombre por", "Trabaja para una empresa militar privada, ganando", "Organiza un evento de cata de vinos y obtiene",
  "Te secuestran y te llevan a un coliseo subterráneo donde luchaste contra monstruos con personas que nunca antes habías conocido. Ganas", "Limpias la chimenea y encuentras", 
 "Desarrollas juegos para ganarte la vida y ganas", 
 "¿Por qué este comando se llama trabajo? Ni siquiera estás haciendo nada relacionado con el trabajo. Sin embargo, ganas", "Trabajaste en la oficina horas extras por", 
