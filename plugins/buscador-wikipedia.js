@@ -40,4 +40,5 @@ handler.tags = [ 'internet']
 handler.command = /^(wiki|wikipedia)$/i 
 handler.exp = 40
 handler.level = 2
+handler.money = 25
 export default handler

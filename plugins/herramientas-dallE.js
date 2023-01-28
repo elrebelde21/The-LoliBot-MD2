@@ -9,5 +9,7 @@ throw `*[❗] ᴇʀʀᴏʀ, ᴠᴜᴇʟᴠᴀ ᴀ ɪɴᴛᴇɴᴛᴀʀ*`
 }
 }
 handler.command = ['dall-e', 'dalle', 'ia2', 'cimg', 'openai2']
+handler.money = 20
+handler.register = true
 export default handler
 

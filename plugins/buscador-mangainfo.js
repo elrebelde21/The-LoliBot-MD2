@@ -52,4 +52,5 @@ handler.tags = ['internet']
 handler.command = /^(mangainfo)$/i
 handler.exp = 50
 handler.level = 4 
+handler.money = 20
 export default handler
