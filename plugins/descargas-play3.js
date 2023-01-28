@@ -11,7 +11,7 @@ var document = doc[Math.floor(Math.random() * doc.length)]
 const buttons = [
 { buttonId: `#ytmp3doc ${urll}`, buttonText: { displayText: '🎵 𝘼𝙪𝙙𝙞𝙤𝙙𝙤𝙘 🎵' }, type: 1 },
 { buttonId: `#ytmp4doc ${urll}`, buttonText: { displayText: '🎥 𝙑𝙞𝙙𝙚𝙤𝙙𝙤𝙘 🎥' }, type: 1 },
-{ buttonId: `#playlist ${text}`, buttonText: { displayText: '📋 𝙈𝘼𝙎 𝙍𝙀𝙎𝙐𝙇𝙏𝘼𝘿𝙊𝙎 📋' }, type: 1 }, ] 
+{ buttonId: `#playlistass2 ${text}`, buttonText: { displayText: '📋 𝙈𝘼𝙎 𝙍𝙀𝙎𝙐𝙇𝙏𝘼𝘿𝙊𝙎 📋' }, type: 1 }, ] 
 let texto1 = `*╭───≪~*╌◌ᰱ•••⃙❨͟͞P̸͟͞L̸͟A̸͟͞Y̸͟͞❩⃘•••ᰱ◌╌*~*
 │║📌 *𝗧𝗶𝘁𝘂𝗹𝗼:* ${title}
 │║📆 *𝗣𝘂𝗯𝗹𝗶𝗰𝗮𝗰𝗶𝗼𝗻:* ${publishedTime}
@@ -40,7 +40,7 @@ let capt = `*╭───≪~*╌◌ᰱ•••⃙❨͟͞P̸͟͞L̸͟A̸͟͞Y͞
 │║
 │║        *████████████┃%100*
 ╰─•┈┈┈•••✦𝒟ℳ✦•••┈┈┈•─╯⟤`
-const buttons = [{buttonId: `#playlist ${title}`, buttonText: {displayText: '📋 𝙈𝘼𝙎 𝙍𝙀𝙎𝙐𝙇𝙏𝘼𝘿𝙊𝙎 📋'}, type: 1}]
+const buttons = [{buttonId: `#playlistass2 ${title}`, buttonText: {displayText: '📋 𝙈𝘼𝙎 𝙍𝙀𝙎𝙐𝙇𝙏𝘼𝘿𝙊𝙎 📋'}, type: 1}]
 const buttonMessage = { image: {url: thumbnail}, caption: capt, footer: '*ᴇɴᴠɪᴀɴᴅᴏ ᴀᴜᴅɪᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*', buttons: buttons, headerType: 4 }
 let msg = await conn.sendMessage(m.chat, buttonMessage, { quoted: m })
 conn.sendMessage(m.chat, { document: { url: aud }, mimetype: 'audio/mpeg', fileName: `${title}.mp3`}, {quoted: msg})

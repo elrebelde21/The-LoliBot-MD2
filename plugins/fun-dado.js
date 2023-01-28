@@ -1,10 +1,19 @@
-let handler = async(m, { conn, text, args, usedPrefix, command }) => {
+const dir = [
+  'https://media.giphy.com/media/h5cY0X4NcHP2JiFXNG/giphy.gif',
+  'https://tinyurl.com/dados02',
+  'https://tinyurl.com/dados03',
+  'https://tinyurl.com/dados04',
+  'https://tinyurl.com/dados05',
+  'https://tinyurl.com/dados06'
+];
+let handler = async (m, { conn }) => {
 await conn.reply(m.chat, '🕧 𝑷𝒐𝒓 𝒇𝒂𝒗𝒐𝒓 𝒆𝒔𝒑𝒆𝒓𝒆... 𝒔𝒐𝒚 𝒍𝒆𝒏𝒕𝒐🐢,  𝒔𝒖𝒔 𝒅𝒂𝒅𝒐𝒔 𝒔𝒆 𝒆𝒔𝒕𝒂 𝒄𝒓𝒆𝒂𝒏𝒅𝒐', m)
-await conn.sendFile(m.chat, `https://violetics.pw/api/random/dadu?apikey=${Key360}`, 'sticker.webp', '', m, { asSticker: true })}
+  conn.sendFile(m.chat, dir[Math.floor(Math.random() * dir.length)], 'dado.webp', '', m)
+}
 handler.help = ['dado']
-handler.tags = ['game'] 
-handler.command = /^(dado|dados)/
-handler.exp = 50
+handler.tags = ['game']
+handler.command = ['dado', 'dados'] 
+
 export default handler
 
  /*import { sticker } from '../lib/sticker.js'

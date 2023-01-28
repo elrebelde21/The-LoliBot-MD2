@@ -35,7 +35,7 @@ conn.sendMessage(m.chat, listMessage, { quoted: m })
 } catch {    
 await m.reply('*Error, por favor vuelva a intentarlo con otro nombre de una canción*')
 }}}
-handler.command = /^playlist|playlist2$/i
+handler.command = /^playlist|playlistass2$/i
 handler.money = 40
 handler.register = true
 export default handler
