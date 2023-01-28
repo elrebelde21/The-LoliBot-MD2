@@ -14,7 +14,7 @@ let str = `
 2) *${nnn}*\n
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ✅ *Grupo del Colaboracion ${lb} con GataBot-MD*
- *${nnntt}*\n
+ *${nnnt}*\n
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ✅ *Grupo del col ² (aquí se permití todo los comando del bot)*
 *${nnntt}*\n
