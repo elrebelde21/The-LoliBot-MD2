@@ -126,14 +126,14 @@ global.nna2 = 'JESaesjOEcB6wnGYT9o'
 global.nn = 'https://chat.whatsapp.com/BaHPUdegBxB4eurlAbhOT8'
 global.nngrupo = nn //Grupo 1
 
-global.nnn = 'https://chat.whatsapp.com/LMN3wF9XoX86oalLfx2mC0'
+global.nnn = 'https://chat.whatsapp.com/IIteN3dd6rG87b2liETl2o'
 global.nnngrupo = nnn //Grupo 2
 
-global.nnnt = 'https://chat.whatsapp.com/BaIUBA5ni4X1HbcVU1uIB6' //Grupo del Colaboracion
+global.nnnt = 'https://chat.whatsapp.com/CcJKHrxGBWAAH3PiBL07JS' //Grupo del Colaboracion
 
 global.nnntt = 'https://chat.whatsapp.com/ImKvcl3Pstb8IMZk02v692' //Grupo COL 2 
 
-global.nnnttt = 'https://chat.whatsapp.com/JLZm65V3cA4JHAY5xOH3Dm' //enlace lolibot
+global.nnnttt = 'https://chat.whatsapp.com/DsFPvTLFDQaBroutCnD2DO' //enlace lolibot
 
 global.nnntttt = 'https://chat.whatsapp.com/KzHWDoG6he3GrXIfssvc7t'
 global.nnntttgrupo = nnnttt //Grupo ayuda sobre el bot
