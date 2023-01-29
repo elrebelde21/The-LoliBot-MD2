@@ -5,7 +5,7 @@ let user = db.data.users[m.sender]
 let time = global.db.data.users[m.sender].prue + 60000
 if (new Date - global.db.data.users[m.sender].prue < 60000) throw `*ESPERA UNOS MINUTOS PARA USAR OTRO COMANDO*`
 
-if (!args[0]) throw `${mg}𝙄𝙣𝙜𝙧𝙚𝙨𝙚 𝙪𝙣 𝙚𝙣𝙡𝙖𝙘𝙚 𝙫𝙖𝙡𝙞𝙙𝙤 𝙙𝙚𝙡 𝙢𝙚𝙙𝙞𝙖𝙛𝙞𝙧𝙚\n𝙀𝙟𝙚𝙢𝙥𝙡𝙤 ${usedPrefix + command} https://www.mediafire.com/file/cv64tns6co3272q/Lolibot.zip/file`
+if (!args[0]) throw `${mg}𝙄𝙣𝙜𝙧𝙚𝙨𝙚 𝙪𝙣 𝙚𝙣𝙡𝙖𝙘𝙚 𝙫𝙖𝙡𝙞𝙙𝙤 𝙙𝙚𝙡 𝙢𝙚𝙙𝙞𝙖𝙛𝙞𝙧𝙚\n𝙀𝙟𝙚𝙢𝙥𝙡𝙤\n ${usedPrefix + command} https://www.mediafire.com/file/cv64tns6co3272q/Lolibot.zip/file`
 try {
 let res = await mediafiredl(args[0])
 let { url, url2, filename, ext, aploud, filesize, filesizeH } = res
