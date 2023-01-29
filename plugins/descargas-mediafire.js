@@ -5,21 +5,21 @@ let user = db.data.users[m.sender]
 let time = global.db.data.users[m.sender].prue + 60000
 if (new Date - global.db.data.users[m.sender].prue < 60000) throw `*ESPERA UNOS MINUTOS PARA USAR OTRO COMANDO*`
 
-if (!args[0]) throw `${mg}𝑰𝒏𝒈𝒓𝒆𝒔𝒆 𝒖𝒏 𝒆𝒏𝒍𝒂𝒄𝒆 𝒗𝒂́𝒍𝒊𝒅𝒐 𝒅𝒆 𝒎𝒆𝒅𝒊𝒂𝒇𝒊𝒓𝒆.`
+if (!args[0]) throw `${mg}𝙄𝙣𝙜𝙧𝙚𝙨𝙚 𝙪𝙣 𝙚𝙣𝙡𝙖𝙘𝙚 𝙫𝙖𝙡𝙞𝙙𝙤 𝙙𝙚𝙡 𝙢𝙚𝙙𝙞𝙖𝙛𝙞𝙧𝙚\n𝙀𝙟𝙚𝙢𝙥𝙡𝙤 ${usedPrefix + command} https://www.mediafire.com/file/cv64tns6co3272q/Lolibot.zip/file`
 try {
 let res = await mediafiredl(args[0])
 let { url, url2, filename, ext, aploud, filesize, filesizeH } = res
 let caption = `
 ╭┄ ${eg}
-┆ 𓃠 ${wm}* 
+┆ 𓃠 ${wm}*    
 ┆——————«•»——————
-┆ 💫 𝑵𝒐𝒎𝒃𝒓𝒆
+┆ 💫 𝙉𝙤𝙢𝙗𝙧𝙚   
 ┆ ${filename}
 ┆——————«•»——————
-┆ 💪 𝑷𝒆𝒔𝒐
+┆ 💪 𝙋𝙚𝙨𝙤
 ┆ ${filesizeH}
 ┆——————«•»——————
-┆ 🚀 𝑻𝒊𝒑𝒐
+┆ 🚀 𝙏𝙞𝙥𝙤
 ┆ ${ext}
 ╰━━━⊰ 𓃠 ${vs} ⊱━━━━დ`.trim()
 //let author = global.author
