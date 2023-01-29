@@ -51,7 +51,7 @@
 -----
 ### 𝐀𝐂𝐓𝐈𝐕𝐀 𝐄𝐋 𝐓𝐄𝐑𝐌𝐔𝐗  <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="40px">  
 > DESCARGUÉ Y DESCOMPRIMA 
-### [`The Lolibot-MD ~ MediaFire`](https://www.mediafire.com/file/kzpgd6o72ecnnhj/LoliBot.zip/file) <a href="https://www.mediafire.com/file/kzpgd6o72ecnnhj/LoliBot.zip/file"> <img src="https://i.pinimg.com/originals/47/77/17/477717205aa460ae58f6b988a4606a02.png" height="30px">
+### [`The Lolibot-MD ~ MediaFire`](https://www.mediafire.com/file/cv64tns6co3272q/Lolibot.zip/file) <a href="https://www.mediafire.com/file/cv64tns6co3272q/Lolibot.zip/file"> <img src="https://i.pinimg.com/originals/47/77/17/477717205aa460ae58f6b988a4606a02.png" height="30px">
 [![blog](https://img.shields.io/badge/LoliBot-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
 ](https://youtu.be/i1xjB4bmYCc)
 
@@ -65,7 +65,7 @@
 > pkg install ffmpeg -y
 > pkg install imagemagick -y
 > pkg install yarn
-> cd storage/downloads/LoliBot
+> cd storage/downloads/Lolibot
 > npm install
 > ls
 > npm start
