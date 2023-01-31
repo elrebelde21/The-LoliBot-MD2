@@ -1,17 +1,15 @@
-let handler = async (m, { conn }) => { 
-let txt = ''
-let vn = './media/listas.mp3'
-for (let [jid, chat] of Object.entries(conn.chats).filter(([jid, chat]) => jid.endsWith('@g.us') && chat.isChats)) txt += `\n🐈 ${await conn.getName(jid)}\n✦ ${jid} \n${chat?.metadata?.read_only ? '❌ *No estoy aquí*' : '✅ *Si estoy aquí*'}\n\n`
-m.reply(`*${lb} 𝑬𝒔𝒕𝒂 𝒆𝒏 𝒆𝒔𝒕𝒐𝒔 𝒈𝒓𝒖𝒑𝒐𝒔:*`.trim())
-
-conn.sendHydrated(m.chat, txt, wm, null, 'https://github.com/elrebelde21/The-LoliBot-MD', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
-['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '.menu'],
-['𝘾𝙪𝙚𝙣𝙩𝙖𝙨 𝙊𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 ✅', '/cuentasgb']
-], m,)
+let handler = async (m, { conn }) => {
+    let txt = ''
+    let vn = './media/listas.mp3'
+    for (let [jid, chat] of Object.entries(conn.chats).filter(([jid, chat]) => jid.endsWith('@g.us') && chat.isChats)) txt += `${await conn.getName(jid)}\n✳ ${jid} [${chat?.metadata?.read_only ? '✅ *Si estoy aquí*' : '❌ *No estoy aquí*'}]\n\n`
+    m.reply(`${lb} Esta en estos grupos:
+    
+${txt}
+`.trim())   
 conn.sendFile(m.chat, vn, 'listas.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true })
 }
 handler.help = ['groups', 'grouplist']
 handler.tags = ['info']
 handler.command = /^(groups|grouplist|listadegrupo|gruposlista|listagrupos|listadegrupos|grupolista|listagrupo)$/i
-handler.exp = 30
+
 export default handler
