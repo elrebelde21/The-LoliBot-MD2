@@ -1,10 +1,11 @@
+import { generateWAMessageFromContent } from "@adiwajshing/baileys"
 import { smsg } from './lib/simple.js'
 import { format } from 'util'
 import { fileURLToPath } from 'url'
 import path, { join } from 'path'
 import { unwatchFile, watchFile } from 'fs'
 import chalk from 'chalk'   
-import fetch from 'node-fetch'
+import fetch from 'node-fetch' 
 
 /**
  * @type {import('@adiwajshing/baileys')}  
@@ -379,6 +380,7 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.pet)) user.pet = 0
               if (!isNumber(user.petFood)) user.petFood = 0
               if (!isNumber(user.phonix)) user.phonix = 0
+              if (!isNumber(user.prue)) user.prue = 0
               if (!isNumber(user.phonixexp)) user.phonixexp = 0
               if (!isNumber(user.phonixlastclaim)) user.phonixlastclaim = 0
               if (!isNumber(user.phonixlastfeed)) user.phonixlastfeed = 0
@@ -387,7 +389,6 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.pillhero)) user.pillhero= 0
               if (!isNumber(user.pisang)) user.pisang = 0
               if (!isNumber(user.pointxp)) user.pointxp = 0
-              if (!isNumber(user.prue)) user.prue = 0
               if (!isNumber(user.potion)) user.potion = 0
               if (!isNumber(user.psenjata)) user.psenjata = 0
               if (!isNumber(user.psepick)) user.psepick = 0
@@ -759,7 +760,7 @@ export async function handler(chatUpdate) {
                     makananpet: 0,
                     makananphonix: 0,
                     makananserigala: 0,
-                    mana: 8,
+                    mana: 0,
                     mangga: 0,
                     misi: '',
                     money: 100,
@@ -898,9 +899,9 @@ export async function handler(chatUpdate) {
                 if (!('sDemote' in chat)) chat.sDemote = ''                    
                 if (!('delete' in chat)) chat.delete = true                    
                 if (!('modohorny' in chat)) chat.modohorny = false                    
-                if (!('stickers' in chat)) chat.stickers = true                    
+                if (!('stickers' in chat)) chat.stickers = false                    
                 if (!('autosticker' in chat)) chat.autosticker = false                      
-                if (!('audios' in chat)) chat.audios = true                     
+                if (!('audios' in chat)) chat.audios = false                     
 		if (!('antiver' in chat)) chat.antiver = true                    
                 if (!('antiLink' in chat)) chat.antiLink = false                    
                 if (!('antiLink2' in chat)) chat.antiLink2 = false
@@ -931,9 +932,9 @@ export async function handler(chatUpdate) {
                     sDemote: '', 
                     delete: true,
                     modohorny: true,
-                    stickers: true,
+                    stickers: false,
                     autosticker: false,
-                    audios: true,
+                    audios: false,
 		    antiver: true,
                     antiLink: false,
                     antiLink2: false,
@@ -959,9 +960,9 @@ export async function handler(chatUpdate) {
                 if (!('self' in settings)) settings.self = false
                 if (!('autoread' in settings)) settings.autoread = true
                 if (!('restrict' in settings)) settings.restrict = false
-               if (!('antipv' in settings)) settings.antipv = false
 		if (!('temporal' in settings)) settings.temporal = true
                 if (!('antiPrivate' in settings)) settings.antiPrivate = false
+                if (!('antipv' in settings)) settings.antipv = false
 		if (!('antiCall' in settings)) settings.antiCall = true
 		if (!('antiSpam' in settings)) settings.antiSpam = true
 		if (!('jadibotmd' in settings)) settings.jadibotmd = true  
@@ -969,9 +970,9 @@ export async function handler(chatUpdate) {
                 self: false,
                 autoread: true,
                 restrict: false,
-        antipv: false,
 		temporal: true,
 		antiPrivate: false,
+		antipv: false,
 		antiCall: true,
 		antiSpam: true,
 		jadibotmd: true,
@@ -1175,7 +1176,7 @@ export async function handler(chatUpdate) {
                 }
 
                 m.isCommand = true
-                let xp = 'exp' in plugin ? parseInt(plugin.exp) : 12 // XP Earning per command
+                let xp = 'exp' in plugin ? parseInt(plugin.exp) : 10 // Ganancia de XP por comando
                 if (xp > 2000)
                     m.reply('Exp limit') // Hehehe
                 else               
@@ -1311,7 +1312,7 @@ export async function handler(chatUpdate) {
 		
 	await this.readMessages([m.key])
 	    
-         if (!db.data.chats[m.chat].reaction && m.isGroup) throw 0
+        if (!db.data.chats[m.chat].reaction && m.isGroup) throw 0
         if (!m.fromMem && m.text.match(/(el rebelde|@5219996125657|@5492266466080|admin del bot|Bot|LoliBot|lolibot|The LoliBot-md|lolibot-md|The LoliBot-MD|has|ato|ido|ura|des|able|sub|izo|ita|con|.-.|._.|:)|:(|:v|v:|o.o|;v|v;|v':|:'v)/gi)) {
         let emot = pickRandom(["😺", "😸", "😹", "😻", "😼", "😽", "🙀", "😿", "😾", "🤩", "😏", "😳", "🥵", "🤯", "😱", "😨", "🤫", "🥴", "🤧", "🤑", "🤠", "🤖", "🤝", "💪", "👑", "😚", "🐱", "🐈", "🐆", "🐅", "⚡️", "🌈", "☃️", "⛄️", "🌝", "🌛", "🌜", "🍓", "🍎", "🎈", "🪄", "❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍", "💘", "💝", "💟", "🌝", "😎", "🔥", "🖕", "🐦"])
         this.sendMessage(m.chat, { react: { text: emot, key: m.key }})}
@@ -1351,7 +1352,7 @@ export async function participantsUpdate({ id, participants, action }) {
                            }
                     } 
             }
-		    
+			    
 break
 case 'promote':
 case 'daradmin':
@@ -1424,7 +1425,7 @@ this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
 console.error(e)
 }}
 
-global.dfail = (type, m, conn, usedPrefix) => {
+global.dfail = (type, m, conn) => {
 let msg = {
         rowner: lenguajeGB['smsRowner'](),
         owner: lenguajeGB['smsOwner'](),
@@ -1437,12 +1438,15 @@ let msg = {
         unreg: lenguajeGB['smsUnreg'](),
         restrict: lenguajeGB['smsRestrict'](),
 }[type]
-if (msg) return m.reply(msg) 
+//if (msg) return m.reply(msg)
+let tg = { quoted: m, userJid: conn.user.jid }
+let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: lenguajeGB.smsAvisoAG().slice(0,-2), body: [wm, '' + lb + ' 😊', '🌟'].getRandom(), thumbnail: gataImg.getRandom(), sourceUrl: [md, nna, nnn, nn, yt, ig].getRandom() }}}}, tg)
+if (msg) return conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id })
 }
 
 let file = global.__filename(import.meta.url, true)
 watchFile(file, async () => {
     unwatchFile(file)
-    console.log(chalk.redBright("Update 'handler.js'"))
+    console.log(chalk.redBright("Se actualizo 'handler.js'"))
     if (global.reloadHandler) console.log(await global.reloadHandler())
 })
