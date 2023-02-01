@@ -1,11 +1,22 @@
-let handler = async (m, { conn, usedPrefix }) => {
-let pp = 'https://i.imgur.com/lkch77g.jpeg' 
-var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
-var document = doc[Math.floor(Math.random() * doc.length)]    
+let handler  = async (m, { conn, usedPrefix, command }) => {
+const fkontak = {
+	"key": {
+    "participants":"0@s.whatsapp.net",
+		"remoteJid": "status@broadcast",
+		"fromMe": false,
+		"id": "Halo"
+	},
+	"message": {
+		"contactMessage": {
+			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+		}
+	},
+	"participant": "0@s.whatsapp.net"
+}
+
+let picture = './media/menus/Menu1.jpg'
 await m.reply(`╰⊱🔰⊱ *𝑰𝒏𝒔𝒕𝒂𝒍𝒂𝒄𝒊𝒐𝒏* ⊱🔰⊱╮`)
-  //conn.sendButton(m.chat, str, author, await(await fetch(pp)).buffer(), [['Menu', '/menu']], m)
-let texto1 = `
- ⚡▁ ▂ ▄ ▅ ▆ ▇ █ 🚆 █ ▇ ▆ ▅ ▄ ▂ ▁⚡
+let instalar = `*◄┢┅͜͡✇⟬↯ື ►ஜ۩💥۩ஜ◄ ↯ື⟭✇͜͡┅┧►*
 
 💥 𝙔𝘼 𝙋𝙐𝙀𝘿𝙀 𝙄𝙉𝙎𝙏𝘼𝙇𝘼𝙍 𝘼 𝙏𝙝𝙚-𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿 ❕
 
@@ -21,9 +32,9 @@ let texto1 = `
 
 ❗ *_Solo para temas de instalación_*
 
-───────•••───────
+───────•••───────`
 
-✨ 𝙍𝙀𝙌𝙐𝙄𝙎𝙄𝙏𝙊𝙎 𝙋𝘼𝙍𝘼 𝙄𝙉𝙎𝙏𝘼𝙇𝘼𝙍 𝙏𝙝𝙚-𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿
+conn.sendButton(m.chat, instalar, `✨ 𝙍𝙀𝙌𝙐𝙄𝙎𝙄𝙏𝙊𝙎 𝙋𝘼𝙍𝘼 𝙇𝘼 𝙄𝙉𝙎𝙏𝘼𝙇𝘼𝘾𝙄𝙊𝙉 ✨
 
 ✅ _1 GB de almacenamiento_
 ✅ _Aplicación Termux (actualizada)_
@@ -79,32 +90,10 @@ _Pagina Oficial_
 https://replit.com/
 
 ───────•••───────
-𝒄𝒖𝒂𝒍𝒒𝒖𝒊𝒆𝒓 𝒄𝒐𝒔𝒂 𝒉𝒂𝒃𝒍𝒂𝒎𝒆 𝒔𝒐𝒍𝒐 𝒑𝒐𝒓 𝒕𝒆𝒎𝒂 𝒅𝒆𝒍 𝒃𝒐𝒕🔰🤖
- 𝑺𝒂𝒍𝒖𝒅𝒐𝒔🔰🤖
 
-⚡▁ ▂ ▄ ▅ ▆ ▇ █ 🚆 █ ▇ ▆ ▅ ▄ ▂ ▁⚡
-                           𝙏𝙝𝙚-𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿`
-let buttonMessage= {
-'document': { url: `https://youtu.be/HyCqmXDHGeQ` },
-'mimetype': `application/${document}`,
-'fileName': `𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫`,
-'fileLength': 99999999999999,
-'pageCount': 200,
-'contextInfo': {
-'forwardingScore': 200,
-'isForwarded': true,
-'externalAdReply': {
-'mediaUrl': 'https://youtu.be/HyCqmXDHGeQ',
-'mediaType': 2,
-'previewType': 'pdf',
-'title': 'tutorial del instalación',
-'body': wm,
- }},
-'caption': texto1,
-'footer': wm,
-'buttons':[
-{buttonId: `${usedPrefix}menu`, buttonText: {displayText: '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫'}, type: 1}],
-'headerType': 6 }
-conn.sendMessage(m.chat, buttonMessage, { quoted: m })}
-handler.command = /^(instalarbot|instalarbot)$/i
+
+*◄┢┅͜͡✇⟬↯ື ►ஜ۩💥۩ஜ◄ ↯ື⟭✇͜͡┅┧►*\n\n💥 INFO EXTRA 💥\n➤ Se sugiere leer el archivo README.md \n➤ Bot compartible con WhatsApp multi device \n➤ Para habilitar el /añadir y el /sacar usa /enable restrict \n- Puede ocasionar que el numero se vaya a soporte \n➤ Cualquier cosa hablame solo por tema del bot🔰🤖\nSaludos 🔰🤖\n\n${wm}`, picture, [
+['𝘾𝙪𝙚𝙣𝙩𝙖𝙨 𝙊𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨  ✅', '.cuentasgb']], fkontak, m)}
+
+handler.command = /^(instalarbot|instalargatabot|instalargata|procesobot|botproceso|procesodelbot|botinstall|installbot)/i
 export default handler
