@@ -53,26 +53,27 @@
 > ❇️ YA PUEDE INSTALAR DIRECTAMENTE DESDE TERMUX USANDO LA V2!!
 #### ⬇️ 𝐄𝐒𝐂𝐑𝐈𝐁𝐄 𝐋𝐎𝐒 𝐒𝐈𝐆𝐔𝐈𝐄𝐍𝐓𝐄𝐒 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐔𝐍𝐎 𝐏𝐎𝐑 𝐔𝐍𝐎 (Opción 1):
 ```bash
-termux-setup-storage
-apt update
-pkg upgrade
-pkg install nodejs -y
-pkg install ffmpeg -y
-pkg install imagemagick -y
-git clone https://github.com/elrebelde21/The-LoliBot-MD-V2
-cd The-LoliBot-MD-V2 
-npm install
-npm update
-npm start
+> termux-setup-storage
+> apt update
+> pkg upgrade
+> pkg install git -y
+> pkg install nodejs -y
+> pkg install ffmpeg -y
+> pkg install imagemagick -y
+>git clone https://github.com/elrebelde21/The-LoliBot-MD-V2
+> cd The-LoliBot-MD-V2 
+> npm install
+> ls
+> npm start
 ```
 ------------------
-### 𝐀𝐂𝐓𝐈𝐕𝐀 𝐄𝐋 𝐓𝐄𝐑𝐌𝐔𝐗  <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="40px">  
+### 𝐀𝐂𝐓𝐈𝐕𝐀 𝐄𝐋 𝐓𝐄𝐑𝐌𝐔𝐗 - ARCHIVOS <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="40px">  
 > DESCARGUÉ Y DESCOMPRIMA 
 ### [`The Lolibot-MD ~ MediaFire`](https://www.mediafire.com/file/cv64tns6co3272q/Lolibot.zip/file) <a href="https://www.mediafire.com/file/cv64tns6co3272q/Lolibot.zip/file"> <img src="https://i.pinimg.com/originals/47/77/17/477717205aa460ae58f6b988a4606a02.png" height="30px">
 [![blog](https://img.shields.io/badge/LoliBot-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
 ](https://youtu.be/i1xjB4bmYCc)
 
-#### 𝐄𝐒𝐂𝐑𝐈𝐁𝐄 𝐋𝐎𝐒 𝐒𝐈𝐆𝐔𝐈𝐄𝐍𝐓𝐄𝐒 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐔𝐍𝐎 𝐏𝐎𝐑 𝐔𝐍𝐎:
+#### 𝐄𝐒𝐂𝐑𝐈𝐁𝐄 𝐋𝐎𝐒 𝐒𝐈𝐆𝐔𝐈𝐄𝐍𝐓𝐄𝐒 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐔𝐍𝐎 𝐏𝐎𝐑 𝐔𝐍𝐎 (Opción 2):
 ```bash
 > termux-setup-storage
 > apt update 
@@ -83,7 +84,6 @@ npm start
 > pkg install imagemagick -y
 > pkg install yarn
 > cd storage/downloads/Lolibot
-> npm install
 > ls
 > npm start
 ```
