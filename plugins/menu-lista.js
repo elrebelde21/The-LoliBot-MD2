@@ -70,10 +70,10 @@ rows: [
 
 
 const listMessage = {
-text: `*╭───────────────────❊*
+text: `┌─────────────⊷
 ┆ *${lb}*
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆➤ *𝙃𝙤𝙡𝙖 𝙘𝙤́𝙢𝙤 𝙚𝙨𝙩𝙖́ ✨ ${name}!!*
+┆➤ *𝙃𝙤𝙡𝙖 𝙘𝙤𝙢𝙤 𝙚𝙨𝙩𝙖́ ✨ ${name}!!*
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆➤ *𝘾𝙧𝙚𝙖𝙙𝙤𝙧 𝙙𝙚𝙡 𝙗𝙤𝙩:  𝙀𝙡 𝙧𝙚𝙗𝙚𝙡𝙙𝙚*
 ┆➤ *𝙉𝙪𝙢𝙚𝙧𝙤 𝙙𝙚𝙡  𝙘𝙧𝙚𝙖𝙙𝙤𝙧:* *wa.me/5492266466080 (No Bot)*
@@ -99,7 +99,7 @@ text: `*╭───────────────────❊*
 ┆   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
 ┆➤ *${lenguajeGB['smsBanUsers']()}*
 ┆➺ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
-╰─────────────────`, footer: `${(conn.user.jid == global.conn.user.jid ? '' : `➤ 𝙎𝙤𝙮 𝙪𝙣 𝙨𝙪𝙗 𝙗𝙤𝙩 𝙙𝙚𝙡: wa.me/${global.conn.user.jid.split`@`[0]}\n`) || ''}➤ ${redesMenu.getRandom()}\n\n *${lenguajeGB['smsPareja']()} ➤ ${pareja ? `${name} 💞 ${conn.getName(pareja)}` : `😛 ${lenguajeGB['smsResultPareja']()}`}*`, //${name} ${ucapan()} //lenguajeGB['smsMenu']()
+╰─────────────────`, footer: `${(conn.user.jid == global.conn.user.jid ? '' : `➤ 𝙎𝙤𝙮 𝙪𝙣 𝙨𝙪𝙗 𝙗𝙤𝙩 𝙙𝙚𝙡: wa.me/${global.conn.user.jid.split`@`[0]}\n`) || ''}➤ ${redesMenu.getRandom()}\n *${lenguajeGB['smsPareja']()}  ${pareja ? `${name} 💞 ${conn.getName(pareja)}` : `😛 ${lenguajeGB['smsResultPareja']()}`}*`, //${name} ${ucapan()} //lenguajeGB['smsMenu']()
 title: null,
 buttonText: `${lenguajeGB['smsListaMenu']()}`, 
 sections }
