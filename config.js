@@ -135,7 +135,7 @@ global.nnntt = 'https://chat.whatsapp.com/ImKvcl3Pstb8IMZk02v692' //Grupo COL 2
 global.nnnttt = 'https://chat.whatsapp.com/DsFPvTLFDQaBroutCnD2DO' //enlace lolibot
 
 global.nnntttt = 'https://chat.whatsapp.com/KzHWDoG6he3GrXIfssvc7t'
-global.nnntttgrupo = nnnttt //Grupo ayuda sobre el bot
+global.nnnttttgrupo = nnntttt //Grupo ayuda sobre el bot
 
 global.asistencia = 'Wa.me/5492266466080' //Dudas? escríbeme...
 
