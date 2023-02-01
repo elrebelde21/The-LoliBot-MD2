@@ -11,29 +11,21 @@ if (process.send) { process.send('uptime')
 _muptime = await new Promise(resolve => { process.once('message', resolve) 
 setTimeout(resolve, 1000) }) * 1000}
 let uptime = clockString(_uptime)
-let estado =`
-╭━━━━[ *𝙀𝙎𝙏𝘼𝘿𝙊* ]━━━━━⬣
-┃ *¡𝙃𝙤𝙡𝙖 𝙘𝙤𝙢𝙤 𝙚𝙨𝙩𝙖!* ${name}✨ 
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ *ミ🤖 Estado del Bot 🤖彡*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ *=> Bot activo ✅*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ *=> Bot uso público ✅️*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃=> 𝘼𝙘𝙩𝙞𝙫𝙤 𝙙𝙪𝙧𝙖𝙣𝙩𝙚
-┃=> ${uptime} ✅
-╰━━━━━━━━━━━━━━━━━━⬣`.trim()
-
-conn.sendHydrated(m.chat, estado, wm, picture, 'https://github.com/elrebelde21/The-LoliBot-MD', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
-['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤', '.allmenu'],
-['𝙈𝙚𝙣𝙪 𝘼𝙪𝙙𝙞𝙤𝙨́', '#audios']
-], m,)}
+let estado = `*💖 Hola  ${name} ✨*`
+conn.sendButton(m.chat, estado, `┌───⊷ *ミ🤖 Estado del Bot 🤖彡*
+┆ *=> Bot activo ✅*
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆ *=> Bot uso público ✅️*
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆=> 𝘼𝙘𝙩𝙞𝙫𝙤 𝙙𝙪𝙧𝙖𝙣𝙩𝙚
+┆=> ${uptime} ✅
+╰──────────────────`, [
+['🔷️ MENÚ 🔷', '.menu'], ['♨️ MENÚ AUDIOS ♨️', '.audios']], m)
 
 /*conn.sendHydrated(m.chat, estado, wm, picture, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪', '#menu']
 ], m)}*/
-
+}
 handler.help = ['estado']
 handler.tags = ['main']
 handler.command = /^(estado|status|estate|state|stado|stats|botstat(us)?)$/i
