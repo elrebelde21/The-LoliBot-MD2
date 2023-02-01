@@ -274,7 +274,7 @@ let vn = './media/el pepe.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
     
-if (chat.audios && m.text.match(/(el rap de fernanfloo)/gi)) {    
+if (chat.audios && m.text.match(/(el rap de fernanfloo|trap|grap)/gi)) {    
 let vn = './media/el rap de fernanfloo.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
@@ -349,7 +349,7 @@ let vn = './media/hentai.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
     
-if (chat.audios && m.text.match(/(hola|ola|hi|hello)/gi)) {    
+if (chat.audios && m.text.match(/(hola|hello|Hola)/gi)) {    
 let vn = './media/Hola.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
@@ -646,11 +646,6 @@ this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt
 
 if (!chat.isBanned && chat.audios && m.text.match(/(loli conmigo venga|abusado|loli venir)/gi)) {
 let vn = './media/loli conmigo.mp3'
-this.sendPresenceUpdate('recording', m.chat)   
-this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
-
-if (!chat.isBanned && chat.audios && m.text.match(/(Grap|trap|grap)/gi)) {
-let vn = './media/grap.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
 
