@@ -99,8 +99,8 @@ text: `┌─────────────⊷
 ┆   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
 ┆➤ *${lenguajeGB['smsBanUsers']()}*
 ┆➺ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
-╰─────────────────
-➤ ${redesMenu.getRandom()}`, footer: `${(conn.user.jid == global.conn.user.jid ? '' : `➤ 𝙎𝙤𝙮 𝙪𝙣 𝙨𝙪𝙗 𝙗𝙤𝙩 𝙙𝙚𝙡: wa.me/${global.conn.user.jid.split`@`[0]}\n`) || ''} *${lenguajeGB['smsPareja']()} ➺ ${pareja ? `${name} 💞 ${conn.getName(pareja)}` : `😛 ${lenguajeGB['smsResultPareja']()}`}*`, //${name} ${ucapan()} //lenguajeGB['smsMenu']()
+╰─────────────────`, footer: `${(conn.user.jid == global.conn.user.jid ? '' : `➤ 𝙎𝙤𝙮 𝙪𝙣 𝙨𝙪𝙗 𝙗𝙤𝙩 𝙙𝙚𝙡: wa.me/${global.conn.user.jid.split`@`[0]}\n`) || ''} *${lenguajeGB['smsPareja']()} ➺ ${pareja ? `${name} 💞 ${conn.getName(pareja)}` : `😛 ${lenguajeGB['smsResultPareja']()}`}*
+ ➤ ${redesMenu.getRandom()}`, //${name} ${ucapan()} //lenguajeGB['smsMenu']()
 title: null,
 buttonText: `${lenguajeGB['smsListaMenu']()}`, 
 sections }
