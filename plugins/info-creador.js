@@ -1,35 +1,106 @@
-import fs from 'fs'
-function handler(m, { conn }) {
-let vn = './media/creador.mp3'
-let text = `
+let { MessageType } = (await import('@adiwajshing/baileys')).default
+
+let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
+  let chat = global.db.data.chats[m.chat]
+let user = global.db.data.users[m.sender]
+let bot = global.db.data.settings[conn.user.jid] || {}
+let name = await conn.getName(m.sender)
+  let type = (args[0] || '').toLowerCase()
+  let _type = (args[0] || '').toLowerCase()
+let totalreg = Object.keys(global.db.data.users).length
+  let vn = './media/creador.mp3'
+
+//------- Nombre
+  let nowner = `${wm.split`@`[0]}@s.whatsapp.net`
+  let teksnomor = `
+• @${wm.split`@`[0]} •
+------- ${wm} -------
+`
+
+//------------ BIO
+let ppown = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image').catch(_ => hwaifu[1]) 
+let teksbio = `
 *𝘾𝙤𝙣𝙩𝙖𝙘𝙩𝙤* 
 *Wa.me/56964787183 (no bot)*
 *Wa.me/59895551199 (bot)*
 *Wa.me/18134037792 (Bot ²)*
 *wa.me/56977774738 (bot ³)*
 *Wa.me/18134031118 (sub bot ofc)*
-`.trim()   
-conn.reply(m.chat, text, m, {
-contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
-title: '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫',
-body: '𝐂𝐫𝐞𝐚𝐝𝐨𝐫',         
-previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
-sourceUrl: `https://wa.me/5492266466080`}}})
-  
-//const data = global.owner.filter(([id, isCreator]) => id && isCreator)
-//this.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)
-  
-/*let pp = './media/menus/Menu2.jpg'
-let str = `🧡 *Eso son los contactos para ti.*`
+`
+  let teks = ' '
+const sections = [
+   {
+	title: `𝙋𝙍𝙊𝙋𝙄𝙀𝙏𝘼𝙍𝙄𝙊/𝙊𝙒𝙉𝙀𝙍`,
+	rows: [
+	    {title: "🔰 • NUMERO", rowId: ".owner bio"},
+	{title: "🌐 • CUENTAS OFICIALES", rowId: ".cuentasgb"},
+	{title: "🙌 • GRUPOS", rowId: ".grupos"},
+	]
+    },{
+	title: `–––––––·• 𝘼𝙋𝙊𝙔𝘼 𝘼𝙇 𝘽𝙊𝙏 –––––––·•`,
+	rows: [
+	{title: "🤖 • INSTALARBOT", rowId: ".instalarbot"},
+	{title: "🌟 • SC", rowId: ".sc"},
+	]
+  },
+]
 
-conn.sendHydrated(m.chat, str, wm, pp, 'https://chat.whatsapp.com/Lus9S60MABnH9lF4Wf2T7k', 'grupos', null, null, [
-['🐈 𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙘𝙞ó𝙣', '.infobot'],
-['🎁 𝘿𝙤𝙣𝙖𝙧', '.donar'],
-['☘ 𝙄𝙧 𝙖𝙡 𝙞𝙣𝙞𝙘𝙞𝙤', '/menu']
-], m,) */
+const listMessage = {
+text: `~ *PROPIETARIO/OWNER DEL BOT*`,
+footer: `╭┄〔 *OWNER* 〕┄⊱
+┆ *Hola👋 ${name}*
+┆——————«•»——————
+┆• 𝙑𝙚𝙧𝙨𝙞𝙤𝙣 𝙙𝙚𝙡 𝙗𝙤𝙩: ${vs}  
+┆———————————
+┆• 𝙏𝙤𝙩𝙖𝙡 𝙙𝙚𝙡 𝙐𝙨𝙪𝙖𝙧𝙞𝙤𝙨: *${totalreg}* 
+┆———————————
+┆• 𝙈𝙤𝙙𝙤: ${global.db.data.settings[conn.user.jid].self ? '*Privado*' : '*Público*'}
+┆———————————
+┆• 𝙋𝙧𝙚𝙛𝙞𝙟𝙤: *${usedPrefix}* 
+┆———————————
+┆• 𝙋𝙧𝙚𝙢𝙞𝙪𝙢: ${user.premiumTime > 0 ? 'Siu ✅' : 'No ❌'}
+┆———————————
+┆• 𝘾𝙝𝙖𝙩(𝙨) 𝙋𝙧𝙤𝙝𝙞𝙗𝙞𝙙𝙤(𝙨): ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
+┆———————————
+┆• 𝙐𝙨𝙪𝙖𝙧𝙞𝙤(𝙨) 𝙋𝙧𝙤𝙝𝙞𝙗𝙞𝙙𝙤(𝙨): ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} 
+╰━━━⊰ 𓃠 ${vs} ⊱━━━━დ
+${wm}`,
+title: null,
+buttonText: `HAGA CLICK AQUI`,
+sections }
+
+  try {
+    if (/(contacto|owner|creator|propietario|dueño|dueña|propietaria|dueño|creadora|creador)/i.test(command)) {
+      const count = args[1] && args[1].length > 0 ? Math.min(99999999, Math.max(parseInt(args[1]), 1)) : !args[1] || args.length < 3 ? 1 : Math.min(1, count)
+        switch (type) {
+          //case 'nomor':
+          //conn.reply(m.chat, "N", m, { contextInfo: { mentionedJid: [nowner] }})
+           // break
+            case 'bio':
+          conn.sendHydrated(m.chat, teksbio, wm, ppown, "https://github.com/elrebelde21/The-LoliBot-MD", "𝙂𝙞𝙩𝙝𝙪𝙗",null, [null, null], m)
+            break
+          default:
+            return await conn.sendMessage(m.chat, listMessage, { quoted: m, contextInfo: { mentionedJid: [m.sender] }})
+        }
+    } else if (/aoaooaoaooaoa/i.test(command)) {
+      const count = args[2] && args[2].length > 0 ? Math.min(99999999, Math.max(parseInt(args[2]), 1)) : !args[2] || args.length < 4 ? 1 :Math.min(1, count)
+      switch (_type) {
+        case 't':
+          break
+        case '':
+          break
+
+        default:
+          return conn.sendButton( m.chat, caption, wm, null, [`⋮☰ Menu`, `.menu`], m)
+      }
+    }
+  } catch (err) {
+    m.reply("Error\n\n\n" + err.stack)
+  }
 conn.sendFile(m.chat, vn, 'creador.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true })
 }
 handler.help = ['owner', 'creator']
 handler.tags = ['info']
 handler.command = /^(contacto|owner|creator|propietario|dueño|dueña|propietaria|dueño|creadora|creador)$/i
+
 export default handler
