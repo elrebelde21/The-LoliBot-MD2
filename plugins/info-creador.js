@@ -40,7 +40,7 @@ const sections = [
 	title: `–––––––·• 𝘼𝙋𝙊𝙔𝘼 𝘼𝙇 𝘽𝙊𝙏 –––––––·•`,
 	rows: [
 	{title: "🤖 • INSTALARBOT", rowId: ".instalarbot"},
-	{title: "🌟 • SC", rowId: ".sc"},
+	{title: "🌟 • SC", rowId: "Sc"},
 	]
   },
 ]
