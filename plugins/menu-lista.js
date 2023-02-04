@@ -70,37 +70,36 @@ rows: [
 
 
 const listMessage = {
-text: `┌─────────────⊷
+text: `┌──────────────
 ┆ *${lb}*
-┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆➤ *𝙃𝙤𝙡𝙖 𝙘𝙤𝙢𝙤 𝙚𝙨𝙩𝙖́ ✨ ${name}!!*
-┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┆✨ *𝙃𝙤𝙡𝙖 𝙘𝙤𝙢𝙤 𝙚𝙨𝙩𝙖́ ✨ ${name}!!*
+┆ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆➤ *𝘾𝙧𝙚𝙖𝙙𝙤𝙧 𝙙𝙚𝙡 𝙗𝙤𝙩:  𝙀𝙡 𝙧𝙚𝙗𝙚𝙡𝙙𝙚*
-┆➤ *𝙉𝙪𝙢𝙚𝙧𝙤 𝙙𝙚𝙡  𝙘𝙧𝙚𝙖𝙙𝙤𝙧:* *wa.me/5492266466080 (No Bot)*
-┆➤ *𝙉𝙪𝙢𝙚𝙧𝙤 𝙙𝙚𝙡 𝙗𝙤𝙩 𝙤𝙛𝙞𝙘𝙞𝙖𝙡:* *wa.me/59895551199*
-┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆➤ *${lenguajeGB['smsTime']()}*	    
-┆➺ ${time}   
-┆   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┆➤ *${lenguajeGB['smsUptime']()}* 
-┆➺ ${uptime}
-┆   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┆➤ *${lenguajeGB['smsVersion']()}* 𓃠
-┆➺ ${vs} 
-┆   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┆➤ *${lenguajeGB['smsTotalUsers']()}*
-┆➺ ${Object.keys(global.db.data.users).length} 
-┆   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┆➤ *${lenguajeGB['smsMode']()}*
-┆➺ ${global.opts['self'] ? `*${lenguajeGB['smsModePrivate']()}*` : `*${lenguajeGB['smsModePublic']()}*`}
-┆   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┆➤ *${lenguajeGB['smsBanChats']()}*
-┆➺ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
-┆   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┆➤ *${lenguajeGB['smsBanUsers']()}*
-┆➺ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
-╰─────────────────`, footer: `${(conn.user.jid == global.conn.user.jid ? '' : ` » *Sub bot del:* wa.me/${global.conn.user.jid.split`@`[0]}\n`) || ''} *» ${lenguajeGB['smsPareja']()} ➺ ${pareja ? `${name} 💞 ${conn.getName(pareja)}` : `😛 ${lenguajeGB['smsResultPareja']()}`}*
- » ${redesMenu.getRandom()}`, //${name} ${ucapan()} //lenguajeGB['smsMenu']()
+┆➤ *𝙉𝙪𝙢𝙚𝙧𝙤 𝙙𝙚𝙡  𝙘𝙧𝙚𝙖𝙙𝙤𝙧:* *wa.me/5492266466080 (No Bot)*  ${(conn.user.jid == global.conn.user.jid ? '' : `\n┆➤ *𝙎𝙪𝙗 𝙗𝙤𝙩 𝙙𝙚𝙡: https://wa.me/${global.conn.user.jid.split`@`[0]}`) || '\n┆➤ *𝙉𝙪𝙢𝙚𝙧𝙤 𝙙𝙚𝙡 𝙗𝙤𝙩 𝙤𝙛𝙞𝙘𝙞𝙖𝙡:* *wa.me/59895551199*'}
+┆ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┆➤ *${lenguajeGB['smsTime']()}:*
+┆□ ${time}   
+┆ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┆➤ *${lenguajeGB['smsUptime']()}:* 
+┆□ ${uptime}
+┆ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┆➤ *${lenguajeGB['smsVersion']()} 𓃠*
+┆□ ${vs}
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┆➤ *${lenguajeGB['smsTotalUsers']()}:* 
+┆□ ${Object.keys(global.db.data.users).length} 
+┆ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┆➤ *${lenguajeGB['smsMode']()}:*  
+┆□ ${global.opts['self'] ? `*${lenguajeGB['smsModePrivate']()}*` : `*${lenguajeGB['smsModePublic']()}*`}
+┆ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┆➤ *${lenguajeGB['smsBanChats']()}:* 
+┆□ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┆➤ *${lenguajeGB['smsBanUsers']()}:* 
+┆□ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
+└────ׂ─ׂ─ׂ─ׂ─────`, footer: `*» ${lenguajeGB['smsPareja']()} ➺ ${pareja ? `${name} 💞 ${conn.getName(pareja)}` : `😛 ${lenguajeGB['smsResultPareja']()}`}* 
+» ${redesMenu.getRandom()}`, //${name} ${ucapan()} //lenguajeGB['smsMenu']()
 title: null,
 buttonText: `${lenguajeGB['smsListaMenu']()}`, 
 sections }
