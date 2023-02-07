@@ -49,8 +49,7 @@
 <a href="https://dash.boxmineworld.com" target="_blank"> <img src="https://img.shields.io/badge/-boxmine-%23E4405F?style=for-the-badge&logo=acidicnodes&logoColor=black" target="_blank"></a> <img src="https://github.com/siegrin/siegrin/blob/main/Assets/Handshake.gif" height="30px">
 
 -----
-### 𝐀𝐂𝐓𝐈𝐕𝐀 𝐄𝐋 𝐓𝐄𝐑𝐌𝐔𝐗 - 𝙂𝙄𝙏𝙃𝙐𝘽 <a href="https://github.com/elrebelde21/The-LoliBot-MD-V2"> <img src="https://icones.pro/wp-content/uploads/2021/06/icone-github-violet.png" height="40px"> </a>
-(𝙔𝘼 𝙋𝙐𝙀𝘿𝙀 𝙄𝙉𝙎𝙏𝘼𝙇𝘼𝙍 𝘿𝙄𝙍𝙀𝘾𝙏𝘼𝙈𝙀𝙉𝙏𝙀 𝘿𝙀𝙎𝘿𝙀 𝙏𝙀𝙍𝙈𝙐𝙓 𝙐𝙎𝘼𝙉𝘿𝙊 𝙇𝘼 V2!!)
+### 𝐀𝐂𝐓𝐈𝐕𝐀 𝐄𝐋 𝐓𝐄𝐑𝐌𝐔𝐗 - 𝙂𝙄𝙏𝙃𝙐𝘽 <a href="https://github.com/elrebelde21/The-LoliBot-MD"> <img src="https://icones.pro/wp-content/uploads/2021/06/icone-github-violet.png" height="40px"> </a>
 #### ⬇️ 𝐄𝐒𝐂𝐑𝐈𝐁𝐄 𝐋𝐎𝐒 𝐒𝐈𝐆𝐔𝐈𝐄𝐍𝐓𝐄𝐒 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐔𝐍𝐎 𝐏𝐎𝐑 𝐔𝐍𝐎 (Opción 1):
 ```bash
 > termux-setup-storage
@@ -60,8 +59,8 @@
 > pkg install nodejs -y
 > pkg install ffmpeg -y
 > pkg install imagemagick -y
-> git clone https://github.com/elrebelde21/The-LoliBot-MD-V2
-> cd The-LoliBot-MD-V2 
+> git clone https://github.com/elrebelde21/The-LoliBot-MD
+> cd The-LoliBot-MD
 > npm install
 > ls
 > npm start
