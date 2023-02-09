@@ -32,7 +32,7 @@ const sections = [
    {
 	title: `𝙋𝙍𝙊𝙋𝙄𝙀𝙏𝘼𝙍𝙄𝙊/𝙊𝙒𝙉𝙀𝙍`,
 	rows: [
-	    {title: "🔰 • NUMERO", rowId: ".owner bio"},
+	    {title: "🔰 • NUMERO", rowId: ".ownerbio"},
 	{title: "🌐 • CUENTAS OFICIALES", rowId: ".cuentasgb"},
 	{title: "🙌 • GRUPOS", rowId: ".grupos"},
 	]
