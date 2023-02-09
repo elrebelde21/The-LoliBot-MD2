@@ -10,7 +10,7 @@ global.owner = [
   ['5492266466080', '𝙏𝙝𝙚 𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿', true],
   ['5492266613038', '𝙏𝙝𝙚 𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿', true],
   ['56964787183', '𝙏𝙝𝙚 𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿', true], 
-//['593968585383'], DEJEN ESTO ASÍ POR AHORA POR FAVOR
+  ['593968585383'],
   ['59895551199'], //bot
   ['56977774738']
 ]
@@ -120,7 +120,7 @@ global.nna = 'https://chat.whatsapp.com/JESaesjOEcB6wnGX0QYT9o'
 global.nnagrupo = nna //Actualización, información sobre el bot
 global.nna2 = 'JESaesjOEcB6wnGX0QYT9o'
 
-global.nn = 'https://chat.whatsapp.com/BaHPUdegBxB4eurlAbhOT8'
+global.nn = 'https://chat.whatsapp.com/LZFE2MHvEkY7b69TmAGmHR'
 global.nngrupo = nn //Grupo 1
 
 global.nnn = 'https://chat.whatsapp.com/IIteN3dd6rG87b2liETl2o'
