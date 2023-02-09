@@ -18,7 +18,7 @@ let totalreg = Object.keys(global.db.data.users).length
 `
 
 //------------ BIO
-let ppown = await conn.profilePictureUrl(bio + '@s.whatsapp.net', 'image').catch(_ => hwaifu[1]) 
+let ppown = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image').catch(_ => hwaifu[1]) 
 let teksbio = `
 *𝘾𝙤𝙣𝙩𝙖𝙘𝙩𝙤* 
 *Wa.me/56964787183 (no bot)*
@@ -73,9 +73,9 @@ sections }
     if (/(contacto|owner|creator|propietario|dueño|dueña|propietaria|dueño|creadora|creador)/i.test(command)) {
       const count = args[1] && args[1].length > 0 ? Math.min(99999999, Math.max(parseInt(args[1]), 1)) : !args[1] || args.length < 3 ? 1 : Math.min(1, count)
         switch (type) {
-          //case 'nomor':
-          //conn.reply(m.chat, "N", m, { contextInfo: { mentionedJid: [nowner] }})
-           // break
+          case 'nomor':
+          conn.reply(m.chat, "The-LoliBot-MD", m, { contextInfo: { mentionedJid: [nowner] }})
+           break
             case 'bio':
           conn.sendHydrated(m.chat, teksbio, wm, ppown, "https://github.com/elrebelde21/The-LoliBot-MD", "𝙂𝙞𝙩𝙝𝙪𝙗",null, [null, null], m)
             break
