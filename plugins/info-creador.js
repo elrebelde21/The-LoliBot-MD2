@@ -18,7 +18,7 @@ let totalreg = Object.keys(global.db.data.users).length
 `
 
 //------------ BIO
-let ppown = await conn.profilePictureUrl(wm + '@s.whatsapp.net', 'image').catch(_ => imagen1[1]) 
+let ppown = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image').catch(_ => hwaifu[1]) 
 let teksbio = `
 *𝘾𝙤𝙣𝙩𝙖𝙘𝙩𝙤* 
 *Wa.me/56964787183 (no bot)*
@@ -32,7 +32,7 @@ const sections = [
    {
 	title: `𝙋𝙍𝙊𝙋𝙄𝙀𝙏𝘼𝙍𝙄𝙊/𝙊𝙒𝙉𝙀𝙍`,
 	rows: [
-	    {title: "🔰 • NUMERO", rowId: ".ownerbio"},
+	    {title: "🔰 • NUMERO", rowId: ".owner bio"},
 	{title: "🌐 • CUENTAS OFICIALES", rowId: ".cuentasgb"},
 	{title: "🙌 • GRUPOS", rowId: ".grupos"},
 	]
