@@ -259,7 +259,10 @@ return conn.sendButton(m.chat,
 ], fkontak, m)
 } else {
 if (user[item] < total) return conn.sendButton(m.chat, `🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 ⇢ ${premium ? '✅' : '❌'}\n${wm}`, `*No tienes suficiente ${global.rpgshop.emoticon(item)} para vender solo tienes ${user[item]} ${global.rpgshopp.emoticon(item)}`, gata.getRandom(), [[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊`, `${usedPrefix}inventory`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪️', '/menu']], m, enlace)
-       
+
+let time = user.lastmiming + 600000 //10 min
+if (new Date - user.lastmiming < 600000) return await conn.reply(m.chat, `*⏱️ 𝙑𝙪𝙚𝙡𝙫𝙖 𝙚𝙣 ${msToTime(time - new Date())} 𝙥𝙖𝙧𝙖 𝙘𝙤𝙣𝙩𝙞𝙣𝙪𝙖𝙧 𝙢𝙞𝙣𝙖𝙣𝙙𝙤 ${global.rpgshopp.emoticon('exp')}⛏️*\n\n*𝙂𝙚𝙩 𝙗𝙖𝙘𝙠 𝙞𝙣 ${msToTime(time - new Date())} 𝙩𝙤 𝙢𝙞𝙣𝙚 ${global.rpgshopp.emoticon('exp')}⛏️*`,  m)
+
 let paymentMethod = Object.keys(listItems[item]).find(v => v in user)
 user[item] -= total
 user[paymentMethod] += listItems[item][paymentMethod] * total
@@ -274,7 +277,9 @@ return conn.sendButton(m.chat,
 `.trim(), imgr + 'VENTA EXITOSA', [
 [`👝 𝘾𝘼𝙍𝙏𝙀𝙍𝘼`, `${usedPrefix}cartera`],
 ], fkontak, m)
-}}
+}
+user.lastmiming = new Date * 1  
+}
 handler.help = ['buy', 'sell'].map(v => v + ' [item] [count]')
 handler.tags = ['rpg']
 handler.command = /^(buy|sell)$/i
@@ -282,6 +287,19 @@ handler.disabled = false
 handler.register = true
 
 export default handler
+
+function msToTime(duration) {
+var milliseconds = parseInt((duration % 1000) / 100),
+seconds = Math.floor((duration / 1000) % 60),
+minutes = Math.floor((duration / (1000 * 60)) % 60),
+hours = Math.floor((duration / (1000 * 60 * 60)) % 24)
+
+hours = (hours < 10) ? "0" + hours : hours
+minutes = (minutes < 10) ? "0" + minutes : minutes
+seconds = (seconds < 10) ? "0" + seconds : seconds
+
+return minutes + " m y " + seconds + " s " 
+}  
 
 function pickRandom(list) {
     return list[Math.floor(Math.random() * list.length)]
