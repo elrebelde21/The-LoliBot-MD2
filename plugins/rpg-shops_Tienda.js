@@ -165,12 +165,12 @@ const items = {
 
 let imgr = flaaa.getRandom()
     const listItems = Object.fromEntries(Object.entries(items[command.toLowerCase()]).filter(([v]) => v && v in user))
-let time = user.lastmiming + 600000 //10 min
-if (new Date - user.lastmiming < 600000) return await conn.reply(m.chat, `*⏱️ 𝙑𝙪𝙚𝙡𝙫𝙖 𝙚𝙣 ${msToTime(time - new Date())}*`, fkontak,  m)
     let text = ''
     let footer = ''
     let image = ''
     let buttons = ''
+    let time = user.lastmiming + 600000 //10 min
+if (new Date - user.lastmiming < 600000) return await conn.reply(m.chat, `*⏱️ 𝙑𝙪𝙚𝙡𝙫𝙖 𝙚𝙣 ${msToTime(time - new Date())}*`, fkontak,  m)
     text = (command.toLowerCase() == 'buy' ?
 (`
 ${htki} *COMPRAR : BUY* ${htka}
