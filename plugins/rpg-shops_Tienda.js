@@ -163,8 +163,6 @@ const items = {
     }
 }   
 
-let time = user.lastmiming + 600000 //10 min
-if (new Date - user.lastmiming < 600000) return await conn.reply(m.chat, `*⏱️ 𝙑𝙪𝙚𝙡𝙫𝙖 𝙚𝙣 ${msToTime(time - new Date())} 𝙥𝙖𝙧𝙖 𝙘𝙤𝙣𝙩𝙞𝙣𝙪𝙖𝙧 𝙢𝙞𝙣𝙖𝙣𝙙𝙤 ${global.rpgshopp.emoticon('exp')}⛏️*`, fkontak,  m)
 let imgr = flaaa.getRandom()
     const listItems = Object.fromEntries(Object.entries(items[command.toLowerCase()]).filter(([v]) => v && v in user))
     
@@ -259,6 +257,8 @@ return conn.sendButton(m.chat,
 `.trim(), imgr + 'COMPRA EXITOSA', [
 [`👝 𝘾𝘼𝙍𝙏𝙀𝙍𝘼`, `${usedPrefix}cartera`],
 ], fkontak, m)
+let time = user.lastmiming + 600000 //10 min
+if (new Date - user.lastmiming < 600000) return await conn.reply(m.chat, `*⏱️ 𝙑𝙪𝙚𝙡𝙫𝙖 𝙚𝙣 ${msToTime(time - new Date())}*`, fkontak,  m)
 } else {
 if (user[item] < total) return conn.sendButton(m.chat, `🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 ⇢ ${premium ? '✅' : '❌'}\n${wm}`, `*No tienes suficiente ${global.rpgshop.emoticon(item)} para vender solo tienes ${user[item]} ${global.rpgshopp.emoticon(item)}`, gata.getRandom(), [[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊`, `${usedPrefix}inventory`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪️', '/menu']], m, enlace)
 
