@@ -8,8 +8,8 @@ let gata = [img5, img6, img7, img8, img9]
 let enlace = { contextInfo: { externalAdReply: {title: wm + ' ', body: 'support group' , sourceUrl: grupos.getRandom(), thumbnail: await(await fetch(gata.getRandom())).buffer() }}}
 let enlace2 = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: yt, mediaType: 'VIDEO', description: '', title: wm, body: 'TheLoliBot-MD', thumbnailUrl: await(await fetch(global.img)).buffer(), sourceUrl: yt }}}
 let dos = [enlace, enlace2]
-let time = user.lastmiming + 600000 //10 min
-if (new Date - user.lastmiming < 600000) return await conn.reply(m.chat, `*⏱️ Vuelvs en ${msToTime(time - new Date())}*`,  fkontak, m)
+let time = global.db.data.users[m.sender].lastmiming + 600000 //10 min
+if (new Date - global.db.data.users[m.sender].lastmiming < 600000) throw `*Vuelve el  ${msToTime(time - new Date())}*`
 
 const items = {
    buy: {
@@ -277,7 +277,7 @@ return conn.sendButton(m.chat,
 [`👝 𝘾𝘼𝙍𝙏𝙀𝙍𝘼`, `${usedPrefix}cartera`],
 ], fkontak, m)
 }
-user.lastmiming = new Date * 1  
+global.db.data.users[m.sender].lastmiming = new Date * 1
 }
 handler.help = ['buy', 'sell'].map(v => v + ' [item] [count]')
 handler.tags = ['rpg']
@@ -298,7 +298,7 @@ minutes = (minutes < 10) ? "0" + minutes : minutes
 seconds = (seconds < 10) ? "0" + seconds : seconds
 
 return minutes + " m y " + seconds + " s " 
-}  
+}
 
 function pickRandom(list) {
     return list[Math.floor(Math.random() * list.length)]
