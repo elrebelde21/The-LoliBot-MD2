@@ -6,6 +6,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   if (!text) throw `✳️ *Ejemplo :*\n\n *${usedPrefix + command}* eres puto`
  
   //let res = await fetch(global.API('https://api.simsimi.net', '/v2/', { text: encodeURIComponent(text), lc: "es" }, ''))
+  await conn.sendPresenceUpdate('composing', m.chat)
   let res = await fetch(`https://api.simsimi.net/v2/?text=${text}&lc=es`)
   let json = await res.json()
   if (json.success) 
