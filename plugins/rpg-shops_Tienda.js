@@ -8,6 +8,8 @@ let gata = [img5, img6, img7, img8, img9]
 let enlace = { contextInfo: { externalAdReply: {title: wm + ' ', body: 'support group' , sourceUrl: grupos.getRandom(), thumbnail: await(await fetch(gata.getRandom())).buffer() }}}
 let enlace2 = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: yt, mediaType: 'VIDEO', description: '', title: wm, body: 'TheLoliBot-MD', thumbnailUrl: await(await fetch(global.img)).buffer(), sourceUrl: yt }}}
 let dos = [enlace, enlace2]
+let time = user.lastmiming + 600000 //10 min
+if (new Date - user.lastmiming < 600000) return await conn.reply(m.chat, `*⏱️ Vuelvs en ${msToTime(time - new Date())}*`,  fkontak, m)
 
 const items = {
    buy: {
@@ -246,9 +248,6 @@ if (user[paymentMethod] < listItems[item][paymentMethod] * total) return conn.se
 *${usedPrefix}transfer ${paymentMethod} ${(listItems[item][paymentMethod] * total) - user[paymentMethod]} @${conn.getName(m.sender)}*`]], m)
 user[paymentMethod] -= listItems[item][paymentMethod] * total
 user[item] += total
-
-let time = user.lastmiming + 600000 //10 min
-if (new Date - user.lastmiming < 600000) return await conn.reply(m.chat, `*⏱️ Vuelvs en ${msToTime(time - new Date())}*`,  m)
 
 return conn.sendButton(m.chat,
 `*––『 COMPRADO 』––*`,
