@@ -169,8 +169,6 @@ let imgr = flaaa.getRandom()
     let footer = ''
     let image = ''
     let buttons = ''
-    let time = user.lastmiming + 600000 //10 min
-if (new Date - user.lastmiming < 600000) return await conn.reply(m.chat, `*⏱️ 𝙑𝙪𝙚𝙡𝙫𝙖 𝙚𝙣 ${msToTime(time - new Date())}*`, fkontak,  m)
     text = (command.toLowerCase() == 'buy' ?
 (`
 ${htki} *COMPRAR : BUY* ${htka}
@@ -261,6 +259,8 @@ return conn.sendButton(m.chat,
 } else {
 if (user[item] < total) return conn.sendButton(m.chat, `🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 ⇢ ${premium ? '✅' : '❌'}\n${wm}`, `*No tienes suficiente ${global.rpgshop.emoticon(item)} para vender solo tienes ${user[item]} ${global.rpgshopp.emoticon(item)}`, gata.getRandom(), [[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊`, `${usedPrefix}inventory`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪️', '/menu']], m, enlace)
 
+let time = user.lastmiming + 600000 //10 min
+if (new Date - user.lastmiming < 600000) return await conn.reply(m.chat, `*⏱️ 𝙑𝙪𝙚𝙡𝙫𝙖 𝙚𝙣 ${msToTime(time - new Date())}*`, fkontak,  m)
 let paymentMethod = Object.keys(listItems[item]).find(v => v in user)
 user[item] -= total
 user[paymentMethod] += listItems[item][paymentMethod] * total
