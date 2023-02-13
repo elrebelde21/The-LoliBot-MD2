@@ -28,7 +28,7 @@ let instalar = `*◄┢┅͜͡✇⟬↯ື ►ஜ۩💥۩ஜ◄ ↯ື⟭✇͜͡
 
 💛 *Si tienes dudas o necesitas ayuda en el proceso de la instalación puede escribir me a este número (No es Bot el número)*
 
-📲 *Wa.me/56964787183*
+📲 *Wa.me/5492266466080*
 
 ❗ *_Solo para temas de instalación_*
 
