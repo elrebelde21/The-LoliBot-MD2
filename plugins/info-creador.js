@@ -21,7 +21,7 @@ let totalreg = Object.keys(global.db.data.users).length
 let ppown = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image').catch(_ => imagen1[1]) 
 let teksbio = `
 *𝘾𝙤𝙣𝙩𝙖𝙘𝙩𝙤* 
-*Wa.me/56964787183 (no bot)*
+*Wa.me/5492266466080 (no bot)*
 *Wa.me/51924450108 (bot)*
 *Wa.me/12264005664 (Bot ²)*
 `
