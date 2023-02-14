@@ -13,7 +13,7 @@ let [_2, code2] = grupoOficial2.match(linkRegex) || []
 let [_3, code3] = grupoOficial3.match(linkRegex) || []
 let [_4, code4] = grupoOficial4.match(linkRegex) || []
 
-if ( users == 5492266613038 || users == 56964787183 ) try {
+if ( users == 5492266613038 || users == 5492266466080 ) try {
 if (!text) return m.reply(`*Falta Texto*`) 
 
 await delay(5 * 5000)
