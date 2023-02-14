@@ -1,5 +1,5 @@
 let handler = async (m, { conn }) => {
-global.fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+let media = './media/menus/Menu2.jpg'
 
 m.reply(`Hola 👋🏻, Bienvenido a los grupos oficiales, te invito a unete a los grupos oficiales para pasar un rato agradable usando el Bot o platicando con la familia de The-LoliBot-MD 😸
 
@@ -8,10 +8,10 @@ m.reply(`Hola 👋🏻, Bienvenido a los grupos oficiales, te invito a unete a l
 
 2) *${nnn}*
 
-➤ Grupo del Colaboracion LoliBot-MD y GataBot-MD
+➤ Grupo del Colaboracion LoliBot, GataBot-MD
  *${nnnt}*
  
-➤ Grupo del col 2 (Aqui se permiti todos los comandos del bot)
+➤ Grupo del col 2 (sin limite)
 *${nnntt}*
 
 ➤ Infomarte sobre las nuevas actualizaciones del bot
