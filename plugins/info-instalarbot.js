@@ -18,7 +18,7 @@ let picture = './media/menus/Menu1.jpg'
 await m.reply(`╰⊱🔰⊱ *𝑰𝒏𝒔𝒕𝒂𝒍𝒂𝒄𝒊𝒐𝒏* ⊱🔰⊱╮`)
 let instalar = `*◄┢┅͜͡✇⟬↯ື ►ஜ۩💥۩ஜ◄ ↯ື⟭✇͜͡┅┧►*
 
-💥 𝙔𝘼 𝙋𝙐𝙀𝘿𝙀 𝙄𝙉𝙎𝙏𝘼𝙇𝘼𝙍 𝘼 𝙏𝙝𝙚-𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿 ❕
+💥 𝙔𝙖 𝙥𝙪𝙚𝙙𝙚 𝙞𝙣𝙨𝙩𝙖𝙡𝙖𝙧 𝙖 𝙏𝙝𝙚-𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿 ❕
 
 *𝙑𝙄𝘿𝙀𝙊 𝘿𝙀 𝙄𝙉𝙎𝙏𝘼𝙇𝘼𝘾𝙄𝙊𝙉*
 *https://youtu.be/gh5NajZOTA8*
@@ -61,8 +61,8 @@ ${md}
 🔸 pkg install nodejs -y
 🔸 pkg install ffmpeg -y
 🔸 pkg install imagemagick -y
-🔸 git clone https://github.com/elrebelde21/The-LoliBot-MD-V2
-🔸 cd The-LoliBot-MD-V2 
+🔸 git clone https://github.com/elrebelde21/The-LoliBot-MD
+🔸 cd The-LoliBot-MD
 🔸 npm install
 🔸 ls
 🔸 npm start
