@@ -1,25 +1,24 @@
 let handler = async (m, { conn }) => {
+global.fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 
-m.reply(`✨ 𝘽𝙞𝙚𝙣𝙫𝙚𝙣𝙞𝙙𝙤 𝙖 𝙡𝙤𝙨 𝙜𝙧𝙪𝙥𝙤𝙨 𝙤𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨
-
-𝙏𝙚 𝙞𝙣𝙫𝙞𝙩𝙤 𝙖 𝙦𝙪𝙚 𝙩𝙚 𝙪𝙣𝙖𝙨 𝙖 𝙡𝙤𝙨 𝙜𝙧𝙪𝙥𝙤𝙨 𝙤𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 𝙥𝙖𝙧𝙖 𝙥𝙖𝙨𝙖𝙧 𝙪𝙣 𝙧𝙖𝙩𝙤 𝙖𝙜𝙧𝙖𝙙𝙖𝙗𝙡𝙚 𝙪𝙨𝙖𝙣𝙙𝙤 𝙚𝙡 𝘽𝙤𝙩 𝙤 𝙪𝙣 𝙗𝙪𝙚𝙣 𝙢𝙤𝙢𝙚𝙣𝙩𝙤 𝙚 𝙞𝙣𝙩𝙚𝙧𝙖𝙘𝙘𝙞𝙤𝙣𝙖 𝙘𝙤𝙣 𝙣𝙤𝙨𝙤𝙩𝙧𝙤𝙨 😸
+m.reply(`Hola 👋🏻, Bienvenido a los grupos oficiales, te invito a unete a los grupos oficiales para pasar un rato agradable usando el Bot o platicando con la familia de The-LoliBot-MD 😸
 
 ➤ Grupos oficiales del bot:
-1) *${nn}*\n
+1) *${nn}*
 
-2) *${nnn}*\n
+2) *${nnn}*
 
 ➤ Grupo del Colaboracion LoliBot-MD y GataBot-MD
- *${nnnt}*\n
+ *${nnnt}*
  
 ➤ Grupo del col 2 (Aqui se permiti todos los comandos del bot)
-*${nnntt}*\n
+*${nnntt}*
 
 ➤ Infomarte sobre las nuevas actualizaciones del bot
- *${nna}*\n
+ *${nna}*
  
 ➤ Grupos del ayuda sobre el bot
- *${nnntttt}*\n 
+ *${nnntttt}*
  
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 Grupos del amistades donde esta el bot
