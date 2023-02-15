@@ -1,7 +1,7 @@
 let handler = async (m, { conn }) => {
 let txt = ''
 let vn = './media/listas.mp3'
-for (let [jid, chat] of Object.entries(conn.chats).filter(([jid, chat]) => jid.endsWith('@g.us') && chat.isChats)) txt += `\n ${await conn.getName(jid)}\n➤ ${jid} [${chat?.metadata?.read_only ? '❌ *No estoy aquí*' : '✅ *Si estoy aquí'}]\n\n`
+for (let [jid, chat] of Object.entries(conn.chats).filter(([jid, chat]) => jid.endsWith('@g.us') && chat.isChats)) txt += `\n🔸${await conn.getName(jid)}\n➤ ${jid} [ ${chat?.metadata?.read_only ? '❌ No estoy aquí' : '✅ Si estoy aquí'}]\n\n`
 m.reply(`*${lb} Esta en estos grupos::*
 ${txt}
 `.trim())
