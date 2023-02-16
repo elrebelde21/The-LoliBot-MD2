@@ -1,24 +1,11 @@
-const da = [
-  'https://tinyurl.com/gdd01',
-  'https://tinyurl.com/gdd02',
-  'https://tinyurl.com/gdd003',
-  'https://tinyurl.com/gdd004',
-  'https://tinyurl.com/gdd05',
-  'https://tinyurl.com/gdd006'
-];
-let handler = async (m, { conn }) => {
+let handler = async(m, { conn, text, args, usedPrefix, command }) => {
 await conn.reply(m.chat, '🕧 𝑷𝒐𝒓 𝒇𝒂𝒗𝒐𝒓 𝒆𝒔𝒑𝒆𝒓𝒆... 𝒔𝒐𝒚 𝒍𝒆𝒏𝒕𝒐🐢,  𝒔𝒖𝒔 𝒅𝒂𝒅𝒐𝒔 𝒔𝒆 𝒆𝒔𝒕𝒂 𝒄𝒓𝒆𝒂𝒏𝒅𝒐', m)
-  conn.sendFile(m.chat, pickRandom(da), 'dado.webp', '', m)
-}
+await conn.sendFile(m.chat, `https://violetics.pw/api/random/dadu?apikey=${Key360}`, 'sticker.webp', '', m, { asSticker: true })}
 handler.help = ['dado']
-handler.tags = ['game']
-handler.command = ['dado', 'dados'] 
-
+handler.tags = ['game'] 
+handler.command = /^(dado|dados)/
+handler.exp = 50
 export default handler
-
-function pickRandom(list) {
-  return list[Math.floor(list.length * Math.random())]
-}
 
  /*import { sticker } from '../lib/sticker.js'
 let handler = async(m, { conn }) => {
