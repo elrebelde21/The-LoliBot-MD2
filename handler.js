@@ -898,10 +898,10 @@ export async function handler(chatUpdate) {
                 if (!('sPromote' in chat)) chat.sPromote = ''                    
                 if (!('sDemote' in chat)) chat.sDemote = ''                    
                 if (!('delete' in chat)) chat.delete = true                    
-                if (!('modohorny' in chat)) chat.modohorny = false                    
+                if (!('modohorny' in chat)) chat.modohorny = true                  
                 if (!('stickers' in chat)) chat.stickers = false                    
                 if (!('autosticker' in chat)) chat.autosticker = false                      
-                if (!('audios' in chat)) chat.audios = false                     
+                if (!('audios' in chat)) chat.audios = true                   
 		if (!('antiver' in chat)) chat.antiver = true                    
                 if (!('antiLink' in chat)) chat.antiLink = false                    
                 if (!('antiLink2' in chat)) chat.antiLink2 = false
@@ -934,7 +934,7 @@ export async function handler(chatUpdate) {
                     modohorny: true,
                     stickers: false,
                     autosticker: false,
-                    audios: false,
+                    audios: true,
 		    antiver: true,
                     antiLink: false,
                     antiLink2: false,
