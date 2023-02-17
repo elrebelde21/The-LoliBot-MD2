@@ -71,26 +71,25 @@ rows: [
 
 
 const listMessage = {
-text: `╭┄〔 ≪ •${lb}• ≫ 〕┄⊱
-┆ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+text: `┌──────────────
 ┆✨ *Hola ${name}!!*
 ┆ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
 ┆➤ *𝘾𝙧𝙚𝙖𝙙𝙤𝙧 𝙙𝙚𝙡 𝙗𝙤𝙩: 𝙀𝙡 𝙧𝙚𝙗𝙚𝙡𝙙𝙚*
 ┆➤ *𝙉𝙪𝙢𝙚𝙧𝙤 𝙙𝙚𝙡 𝙘𝙧𝙚𝙖𝙙𝙤𝙧:* *wa.me/5492266466080 (No Bot)*  ${(conn.user.jid == global.conn.user.jid ? '' : `\n┆➤ *𝙎𝙤𝙮 𝙪𝙣 𝙨𝙪𝙗 𝙗𝙤𝙩 𝙙𝙚𝙡:* *wa.me/${global.conn.user.jid.split`@`[0]}*`) || '\n┆➤ *𝙉𝙪𝙢𝙚𝙧𝙤 𝙙𝙚𝙡 𝙗𝙤𝙩 𝙤𝙛𝙞𝙘𝙞𝙖𝙡:* *wa.me/51924450108*'}
 ┆ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┆➤ ${lenguajeGB['smsTime']()}: 
+┆➤ ${lenguajeGB['smsTime']()}
 ┆□ ${time}    
 ┆ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┆➤ ${lenguajeGB['smsUptime']()}: 
+┆➤ ${lenguajeGB['smsUptime']()}
 ┆□ ${uptime}
 ┆ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┆➤ ${lenguajeGB['smsVersion']()}: 
+┆➤ ${lenguajeGB['smsVersion']()}
 ┆□ ${vs}
 ┆ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┆➤ ${lenguajeGB['smsTotalUsers']()}: 
+┆➤ ${lenguajeGB['smsTotalUsers']()}
 ┆□ ${Object.keys(global.db.data.users).length} 
 ┆ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┆➤ ${lenguajeGB['smsMode']()}: 
+┆➤ ${lenguajeGB['smsMode']()}
 ┆□ ${global.opts['self'] ? `*${lenguajeGB['smsModePrivate']()}*` : `*${lenguajeGB['smsModePublic']()}*`}
 └────ׂ─ׂ─ׂ─ׂ─────`, footer: `*» ${lenguajeGB['smsPareja']()} ➺ ${pareja ? `${name} 💞 ${conn.getName(pareja)}` : `😛 ${lenguajeGB['smsResultPareja']()}`}* 
 » ${redesMenu.getRandom()}`, //${name} ${ucapan()} //lenguajeGB['smsMenu']()
