@@ -19,7 +19,8 @@ let uptime = clockString(_uptime)
 wm = global.wm
 vs = global.vs
       
-let { exp, limit, level, role } = global.db.data.users[m.sender]
+let user = global.db.data.users[m.sender]
+let { exp, diamond, registered, limit, level, role } = global.db.data.users[m.sender]
 let { min, xp, max } = xpRange(level, global.multiplier)
 let name = await conn.getName(m.sender)
 let pareja = global.db.data.users[m.sender].pasangan 
@@ -70,34 +71,27 @@ rows: [
 
 
 const listMessage = {
-text: `┌──────────────
-┆ *${lb}*
+text: `╭┄〔 ≪ •${lb}• ≫ 〕┄⊱
 ┆ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┆✨ *𝙃𝙤𝙡𝙖 𝙘𝙤𝙢𝙤 𝙚𝙨𝙩𝙖́ ✨ ${name}!!*
-┆ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆✨ *Hola ${name}!!*
+┆ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
 ┆➤ *𝘾𝙧𝙚𝙖𝙙𝙤𝙧 𝙙𝙚𝙡 𝙗𝙤𝙩: 𝙀𝙡 𝙧𝙚𝙗𝙚𝙡𝙙𝙚*
 ┆➤ *𝙉𝙪𝙢𝙚𝙧𝙤 𝙙𝙚𝙡 𝙘𝙧𝙚𝙖𝙙𝙤𝙧:* *wa.me/5492266466080 (No Bot)*  ${(conn.user.jid == global.conn.user.jid ? '' : `\n┆➤ *𝙎𝙤𝙮 𝙪𝙣 𝙨𝙪𝙗 𝙗𝙤𝙩 𝙙𝙚𝙡:* *wa.me/${global.conn.user.jid.split`@`[0]}*`) || '\n┆➤ *𝙉𝙪𝙢𝙚𝙧𝙤 𝙙𝙚𝙡 𝙗𝙤𝙩 𝙤𝙛𝙞𝙘𝙞𝙖𝙡:* *wa.me/51924450108*'}
 ┆ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┆➤ *${lenguajeGB['smsTime']()}*
-┆□ ${time}   
+┆➤ ${lenguajeGB['smsTime']()}: 
+┆□ ${time}    
 ┆ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┆➤ *${lenguajeGB['smsUptime']()}* 
+┆➤ ${lenguajeGB['smsUptime']()}: 
 ┆□ ${uptime}
 ┆ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┆➤ *${lenguajeGB['smsVersion']()} 𓃠*
+┆➤ ${lenguajeGB['smsVersion']()}: 
 ┆□ ${vs}
-┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┆➤ *${lenguajeGB['smsTotalUsers']()}* 
+┆ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┆➤ ${lenguajeGB['smsTotalUsers']()}: 
 ┆□ ${Object.keys(global.db.data.users).length} 
 ┆ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┆➤ *${lenguajeGB['smsMode']()}*  
+┆➤ ${lenguajeGB['smsMode']()}: 
 ┆□ ${global.opts['self'] ? `*${lenguajeGB['smsModePrivate']()}*` : `*${lenguajeGB['smsModePublic']()}*`}
-┆ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┆➤ *${lenguajeGB['smsBanChats']()}* 
-┆□ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
-┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┆➤ *${lenguajeGB['smsBanUsers']()}* 
-┆□ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
 └────ׂ─ׂ─ׂ─ׂ─────`, footer: `*» ${lenguajeGB['smsPareja']()} ➺ ${pareja ? `${name} 💞 ${conn.getName(pareja)}` : `😛 ${lenguajeGB['smsResultPareja']()}`}* 
 » ${redesMenu.getRandom()}`, //${name} ${ucapan()} //lenguajeGB['smsMenu']()
 title: null,
