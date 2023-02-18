@@ -8,15 +8,15 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 	let { title, description, thumbnail, videoId, timestamp, views, ago, url } = vid
 	//const url = 'https://www.youtube.com/watch?v=' + videoId<
 	let play = `┌───⊷ 🅟🅛🅐🅨
-│📌 *Título* : ${title}
-│📆 *Publicado:* ${ago}
-│⌚ *Duración:* ${timestamp}
-│👀 *Vistas:* ${views}
+│📌 *𝙏𝙞𝙩𝙪𝙡𝙤* : ${title}
+│📆 *𝙋𝙪𝙗𝙡𝙞𝙘𝙖𝙙𝙤:* ${ago}
+│⌚ *𝘿𝙪𝙧𝙖𝙘𝙞𝙤𝙣:* ${timestamp}
+│👀 *𝙑𝙞𝙨𝙩𝙖𝙨:* ${views}
 │
 ╰─────────────────`
  await conn.sendButton(m.chat, play, lb, thumbnail, [
-    ['AUDIO', `${usedPrefix}fgmp3 ${url}`],
-    ['VIDEO', `${usedPrefix}fgmp4 ${url}`]
+    ['Audio', `${usedPrefix}fgmp3 ${url}`],
+    ['Video', `${usedPrefix}fgmp4 ${url}`]
   ], m, nn)
 }
 handler.help = ['play4']
@@ -24,4 +24,3 @@ handler.tags = ['downloader']
 handler.command = ['play4', 'playvid']
 
 export default handler
-
