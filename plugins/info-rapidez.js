@@ -60,11 +60,7 @@ irq: 0
 
 let old = performance.now()
 await delay(5 * 5000)
-await conn.sendButton(m.chat, wm, `_𝘾𝙤𝙢𝙚𝙣𝙯𝙖𝙣𝙙𝙤 𝙥𝙧𝙪𝙚𝙗𝙖 𝙙𝙚𝙡 𝙫𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙 🚀..._`, null, [['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)  
-await m.reply('🚀')
-await m.reply('🚀🚀')
-await m.reply('🚀🚀🚀')
-await m.reply(`╰⊱✅⊱ *𝑹𝒆𝒔𝒖𝒍𝒕𝒂𝒅𝒐𝒔* ⊱✅⊱╮`)
+await conn.sendButton(m.chat, wm, `𝘾𝙤𝙢𝙚𝙣𝙯𝙖𝙣𝙙𝙤 𝙥𝙧𝙪𝙚𝙗𝙖 𝙙𝙚𝙡 𝙫𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙 🚀...`, null, [['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)  
 let neww = performance.now()
 let speed = neww - old
 let caption = `*${htki} 𝙫𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙 ${htka}*
