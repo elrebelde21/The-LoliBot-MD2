@@ -39,7 +39,7 @@ export async function handler(chatUpdate) {
         m.limit = false
         m.money = false
         try {
-            // TODO: use loop to insert data instead of this
+                        // TODO: use loop to insert data instead of this
             let user = global.db.data.users[m.sender]
             if (typeof user !== 'object')
                 global.db.data.users[m.sender] = {}
@@ -1403,27 +1403,37 @@ export async function callUpdate(callUpdate) {
     }}}}
 
 export async function deleteUpdate(message) {
-try {
-const { fromMe, id, participant } = message
-if (fromMe)
-return
-let msg = this.serializeM(this.loadMessage(id))
-if (!msg)
-return
-let chat = global.db.data.chats[msg.chat] || {}
-if (chat.delete)
-return 
-await this.reply(msg.chat, `
-*╭━━⬣ ${lenguajeGB['smsCont19']()} ⬣━━ 𓃠*
-${lenguajeGB['smsCont20']()} @${participant.split`@`[0]}
-${lenguajeGB['smsCont21']()}
-*╰━━━⬣ ${lenguajeGB['smsCont19']()} ⬣━━╯*
-`.trim(), msg, { mentions: [participant] })
-	    
-this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
-} catch (e) {
-console.error(e)
-}}
+    try {
+        const { fromMe, id, participant } = message
+        if (fromMe)
+            return
+        let msg = this.serializeM(this.loadMessage(id))
+        if (!msg)
+            return
+        let chat = global.db.data.chats[msg.chat] || {}
+        if (chat.delete)
+            return
+        await this.reply(msg.chat, `
+╭━─━─━─≪🔴≫─━─━─━╮
+│ 🤨 ʙᴏʀʀᴏ ᴜɴ ᴍᴇɴsᴀᴊᴇ 🤨
+│◤━━━━━ ☆. ∆ .☆ ━━━━━◥
+│ 🔴 ᴀɴᴛɪ ᴅᴇʟᴇᴛᴇ 🔴
+│◤━━━━━ ☆. ∆ .☆ ━━━━━◥
+│🔸️ *ɴᴏᴍʙʀᴇ :* @${participant.split`@`[0]} 
+│◤━━━━━ ☆. ∆ .☆ ━━━━━◥
+│🔸ᴘᴀʀᴀ ᴅᴇsᴀᴄᴛɪᴠᴀʀ ᴇsᴛᴀ ᴏᴘᴄɪᴏɴ, 
+│🔸️ᴇsᴄʀɪʙɪ 
+│/off antidelete
+│#enable delete
+╰━─━─━─≪🔴≫─━─━─━╯
+`.trim(), msg, {
+            mentions: [participant]
+        })
+        this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
+    } catch (e) {
+        console.error(e)
+    }
+}
 
 global.dfail = (type, m, conn) => {
 let msg = {
