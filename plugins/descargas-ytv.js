@@ -21,7 +21,7 @@ let n3 = lolh.result.size
 let n4 = lolh.result.thumbnail
 await conn.sendMessage(m.chat, { video: { url: n2 }, fileName: `${n}.mp4`, mimetype: 'video/mp4', caption: `🔰 𝘼𝙦𝙪𝙞 𝙚𝙨𝙩𝙖 𝙩𝙪 𝙫𝙞𝙙𝙚𝙤 \n🔥 𝙏𝙞𝙩𝙪𝙡𝙤: ${n}`, thumbnail: await fetch(n4) }, { quoted: m })
 } catch {
-await conn.reply(m.chat, '*❗ 𝑬𝒔 𝒑𝒐𝒔𝒊𝒃𝒍𝒆 𝒒𝒖𝒆 𝒆𝒍 𝒂𝒓𝒄𝒉𝒊𝒗𝒐 𝒔𝒆𝒂 𝒎𝒖𝒚 𝒑𝒆𝒔𝒂𝒅𝒐 𝒊𝒏𝒕𝒆𝒏𝒕𝒆́ 𝒄𝒐𝒏 𝒐𝒕𝒓𝒐*', m)}
+}
 }}
 handler.command = /^fgmp4|dlmp4|getvid|yt(v|mp4)?$/i
 export default handler

@@ -13,7 +13,6 @@ conn.reply(m.chat, `*_⏳𝙋𝙧𝙤𝙘𝙚𝙨𝙖𝙣𝙙𝙤.... 𝙚𝙨�
 let json = await res.json()
 conn.sendFile(m.chat, json.result.video, 'error.mp4', `_𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫_`, m)}
 } catch (e) {
-m.reply('*[❗𝐈𝐍𝐅𝐎❗] Error, por favor vuelva a intentarlo*')
 }}
 handler.help = ['play.1' , 'play.2'].map(v => v + ' <texto>')
 handler.tags = ['downloader']

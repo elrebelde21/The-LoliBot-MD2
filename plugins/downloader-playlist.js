@@ -33,7 +33,6 @@ listSerch4.push({title: x.title, description: null, rowId: `${usedPrefix}ytmp4do
 const listMessage = { text: teskd, footer: '𝐄𝐥𝐢𝐣𝐚 𝐮𝐧𝐚 𝐨𝐩𝐜𝐢𝐨𝐧 𝐲 𝐩𝐫𝐞𝐜𝐢𝐨𝐧𝐞 𝐄𝐧𝐯𝐢𝐚𝐫', title: " 『 𝙈𝙐𝙎𝙄𝘾𝘼 𝙍𝙀𝙇𝘼𝘾𝙄𝙊𝙉𝘼𝘿𝘼 』", buttonText: "[♦ 𝙍𝙀𝙎𝙐𝙇𝙏𝘼𝘿𝙊𝙎 ♦]", sections }
 conn.sendMessage(m.chat, listMessage, { quoted: m })    
 } catch {    
-await m.reply('*Error, por favor vuelva a intentarlo con otro nombre de una canción*')
 }}}
 handler.command = /^playlist|playlistass2$/i
 handler.money = 40
