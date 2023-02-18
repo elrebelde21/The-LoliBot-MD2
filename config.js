@@ -128,7 +128,7 @@ global.nnngrupo = nnn //Grupo 2
 
 global.nnnt = 'https://chat.whatsapp.com/CcJKHrxGBWAAH3PiBL07JS' //Grupo del Colaboracion
 
-global.nnntt = 'https://chat.whatsapp.com/CypX2VF70QZI09Nq0XUKPn' //Grupo COL 2 
+global.nnntt = 'https://chat.whatsapp.com/FfiQUYDDtaG9bwaI7UKMAR' //Grupo COL 2 
 
 global.nnnttt = 'https://chat.whatsapp.com/DsFPvTLFDQaBroutCnD2DO' //enlace lolibot
 
