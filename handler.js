@@ -39,7 +39,7 @@ export async function handler(chatUpdate) {
         m.limit = false
         m.money = false
         try {
-                        // TODO: use loop to insert data instead of this
+                                    // TODO: use loop to insert data instead of this
             let user = global.db.data.users[m.sender]
             if (typeof user !== 'object')
                 global.db.data.users[m.sender] = {}
@@ -885,6 +885,31 @@ export async function handler(chatUpdate) {
                     wood: 0,
                     wortel: 0,	
                 }
+            let akinator = global.db.data.users[m.sender].akinator
+		    if (typeof akinator !== 'object')
+			global.db.data.users[m.sender].akinator = {}
+		    if (akinator) {
+				if (!('sesi' in akinator)) akinator.sesi = false
+				if (!('server' in akinator)) akinator.server = null
+				if (!('frontaddr' in akinator)) akinator.frontaddr = null
+				if (!('session' in akinator)) akinator.session = null
+				if (!('signature' in akinator)) akinator.signature = null
+				if (!('question' in akinator)) akinator.question = null
+				if (!('progression' in akinator)) akinator.progression = null
+				if (!('step' in akinator)) akinator.step = null
+				if (!('soal' in akinator)) akinator.soal = null
+	            } else
+		        global.db.data.users[m.sender].akinator = {
+				sesi: false,
+				server: null,
+				frontaddr: null,
+				session: null,
+				signature: null,
+				question: null,
+				progression: null,
+				step: null, 
+				soal: null
+				}   		
             let chat = global.db.data.chats[m.chat]
             if (typeof chat !== 'object')
                 global.db.data.chats[m.chat] = {}
@@ -897,11 +922,12 @@ export async function handler(chatUpdate) {
                 if (!('sBye' in chat)) chat.sBye = ''                    
                 if (!('sPromote' in chat)) chat.sPromote = ''                    
                 if (!('sDemote' in chat)) chat.sDemote = ''                    
-                if (!('delete' in chat)) chat.delete = true                    
-                if (!('modohorny' in chat)) chat.modohorny = true                  
+                if (!('delete' in chat))
+                    chat.delete = true                    
+                if (!('modohorny' in chat)) chat.modohorny = false                    
                 if (!('stickers' in chat)) chat.stickers = false                    
                 if (!('autosticker' in chat)) chat.autosticker = false                      
-                if (!('audios' in chat)) chat.audios = true                   
+                if (!('audios' in chat)) chat.audios = true                     
 		if (!('antiver' in chat)) chat.antiver = true                    
                 if (!('antiLink' in chat)) chat.antiLink = false                    
                 if (!('antiLink2' in chat)) chat.antiLink2 = false
@@ -999,7 +1025,7 @@ export async function handler(chatUpdate) {
         //const isPrems = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
 	const isPrems = isROwner || global.db.data.users[m.sender].premiumTime > 0
 
-       /* if (opts['queque'] && m.text && !(isMods || isPrems)) {
+       if (opts['queque'] && m.text && !(isMods || isPrems)) {
             let queque = this.msgqueque, time = 1000 * 5
             const previousID = queque[queque.length - 1]
             queque.push(m.id || m.key.id)
@@ -1007,12 +1033,6 @@ export async function handler(chatUpdate) {
                 if (queque.indexOf(previousID) === -1) clearInterval(this)
                 await delay(time)
             }, time)
-        } */
-        
-        if (opts['queque'] && m.text && !m.fromMe && !(isMods || isPrems)) {
-            const id = m.id
-            this.msgqueque.add(id)
-            await this.msgqueque.waitQueue(id)
         }
 
         if (m.isBaileys)
@@ -1125,10 +1145,17 @@ export async function handler(chatUpdate) {
                 if (m.chat in global.db.data.chats || m.sender in global.db.data.users) {
                     let chat = global.db.data.chats[m.chat]
                     let user = global.db.data.users[m.sender]
-                    if (name != 'owner-unbanchat.js' && chat?.isBanned)
-                        return // Except this
-                    if (name != 'owner-unbanuser.js' && user?.banned)
+                    if (!['unbanchat.js', 'link.js', 'pengumuman.js', 'creator.js'].includes(name) && chat && chat.isBanned && !isROwner) return // Except this
+            if (!['unbanuser.js', 'inv.js', 'link.js', 'creator.js', 'profile.js'].includes(name) && user && user.banned && !isROwner) {
+                    if (!opts['msgifbanned']) m.reply(`*⚠️ ESTAS BANEADO ⚠️* ${user.bannedReason ? `\n*Motivo:* *${user.bannedReason}*` : ''}
+
+*👉🏻 Puedes contactar al propietario del Bot si crees que se trata de un error o para charlar sobre tu desbaneo*
+
+👉 wa.me/5492266466080
+👉 ${global.nn}
+`.trim())
                         return
+                }
                 }
 
                let hl = _prefix 
@@ -1414,18 +1441,13 @@ export async function deleteUpdate(message) {
         if (chat.delete)
             return
         await this.reply(msg.chat, `
-╭━─━─━─≪🔴≫─━─━─━╮
-│ 🤨 ʙᴏʀʀᴏ ᴜɴ ᴍᴇɴsᴀᴊᴇ 🤨
-│◤━━━━━ ☆. ∆ .☆ ━━━━━◥
-│ 🔴 ᴀɴᴛɪ ᴅᴇʟᴇᴛᴇ 🔴
-│◤━━━━━ ☆. ∆ .☆ ━━━━━◥
-│🔸️ *ɴᴏᴍʙʀᴇ :* @${participant.split`@`[0]} 
-│◤━━━━━ ☆. ∆ .☆ ━━━━━◥
-│🔸ᴘᴀʀᴀ ᴅᴇsᴀᴄᴛɪᴠᴀʀ ᴇsᴛᴀ ᴏᴘᴄɪᴏɴ, 
-│🔸️ᴇsᴄʀɪʙɪ 
-│/off antidelete
-│#enable delete
-╰━─━─━─≪🔴≫─━─━─━╯
+━━━━⬣  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀  ⬣━━━━
+*■ Nombre:* @${participant.split`@`[0]}
+*■ Enviando el mensaje..*
+*■ Para desactivar esta función escriba el comando:*
+*—◉ #disable antidelete*
+*—◉ #enable delete*
+━━━━⬣  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀  ⬣━━━━
 `.trim(), msg, {
             mentions: [participant]
         })
@@ -1434,6 +1456,7 @@ export async function deleteUpdate(message) {
         console.error(e)
     }
 }
+
 
 global.dfail = (type, m, conn) => {
 let msg = {
@@ -1450,13 +1473,13 @@ let msg = {
 }[type]
 //if (msg) return m.reply(msg)
 let tg = { quoted: m, userJid: conn.user.jid }
-let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: lenguajeGB.smsAvisoAG().slice(0,-2), body: [wm, '' + lb + ' 😊', '🌟'].getRandom(), thumbnail: gataImg.getRandom(), sourceUrl: [md, nna, nnn, nn, yt, ig].getRandom() }}}}, tg)
+let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: lenguajeGB.smsAvisoAG().slice(0,-2), body: [wm, ' ' + lb + ' 😊', '🌟'].getRandom(), thumbnail: gataImg.getRandom(), sourceUrl: [md, nna, nnn, nn, yt, ig].getRandom() }}}}, tg)
 if (msg) return conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id })
 }
 
 let file = global.__filename(import.meta.url, true)
 watchFile(file, async () => {
     unwatchFile(file)
-    console.log(chalk.redBright("Se actualizo 'handler.js'"))
+    console.log(chalk.redBright("Update 'handler.js'"))
     if (global.reloadHandler) console.log(await global.reloadHandler())
 })
