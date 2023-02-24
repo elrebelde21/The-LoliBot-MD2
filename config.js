@@ -7,13 +7,12 @@ import { en, es, id, ar, pt } from './lib/idiomas/total-idiomas.js'
 
 ///⊱ ━━━━━.⋅ Añada los numeros a ser Propietario ⋅.━━━━ ⊰  
 global.owner = [
-  ['5492266466080', '𝙏𝙝𝙚 𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿', true],
-  ['5492266613038', '𝙏𝙝𝙚 𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿', true],
-  ['51924450108', '𝙏𝙝𝙚 𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿', true], 
+  ['5492266466080', '𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿', true],
+  ['573183650526', '𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿', true],
   ['593968585383'],
+  ['5492266613038'],
   ['12264005664'] //Bot
 ]
-
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
 global.mods = ['50495745934'] 
@@ -102,19 +101,11 @@ global.author = '𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿'
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
 global.vs = '1.4.5'
-global.vsJB = '2.0'
-
 global.lb = '𝙏𝙝𝙚 𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿'
-global.lolibot = lb
-
 global.yt = 'https://www.youtube.com/@TheLoliBot-MD'
-global.youtube = yt
-
 global.ig = 'https://www.tiktok.com/@thelolibot_md'
-global.tiktok = ig
-
 global.md = 'https://github.com/elrebelde21/The-LoliBot-MD'
-global.lolibot = md
+global.fb = 'https://www.facebook.com/groups/872989990425789/'
 
 global.nna = 'https://chat.whatsapp.com/JESaesjOEcB6wnGX0QYT9o'
 global.nnagrupo = nna //Actualización, información sobre el bot
@@ -230,7 +221,7 @@ global.img16 = 'https://i.imgur.com/11MRjo4.jpeg' //+18
 
 global.img17 = 'https://i.imgur.com/JpYfcH0.jpeg'
 
-global.redesMenu = [nna, nna2, nn, nnn, nnnt, nnntt, nnnttt, nnntttt, md, ig, lb, yt]
+global.redesMenu = [nna, nna2, nn, nnn, nnnt, nnntt, nnnttt, nnntttt, md, ig, lb, fb, yt]
 global.gataMenu = [img, img2, img6, img7, img8, img9, img13, img14, img15, img16]
 global.gataVidMenu = ['./media/menus/Menuvid1.mp4', './media/menus/Menuvid2.mp4', './media/menus/Menuvid3.mp4']
 global.gataImg = [imagen1, imagen2, imagen3]
@@ -286,7 +277,7 @@ global.fgif = {
 
 global.multiplier = 60 // Cuanto más alto, más difícil subir de nivel
 
-//Emojis RPG - Referencias
+//Emojis RPG
 global.rpg = {
   emoticon(string) {
     string = string.toLowerCase()

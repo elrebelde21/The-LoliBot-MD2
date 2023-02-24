@@ -39,7 +39,7 @@ export async function handler(chatUpdate) {
         m.limit = false
         m.money = false
         try {
-                                    // TODO: use loop to insert data instead of this
+              // TODO: use loop to insert data instead of this
             let user = global.db.data.users[m.sender]
             if (typeof user !== 'object')
                 global.db.data.users[m.sender] = {}
@@ -1208,7 +1208,7 @@ export async function handler(chatUpdate) {
                     m.reply('Exp limit') // Hehehe
                 else               
                 if (!isPrems && plugin.money && global.db.data.users[m.sender].money < plugin.money * 1) {
-                    this.reply(m.chat, `🫥 𝙉𝙤 𝙩𝙞𝙚𝙣𝙚 𝙇𝙤𝙡𝙞𝘾𝙤𝙞𝙣𝙨`, m)
+                    this.reply(m.chat, `𝙇𝙤𝙡𝙞𝘾𝙤𝙞𝙣𝙨 𝙪𝙨𝙖𝙙𝙤𝙨`, m)
                     continue     
 		}
 			
@@ -1457,7 +1457,6 @@ export async function deleteUpdate(message) {
     }
 }
 
-
 global.dfail = (type, m, conn) => {
 let msg = {
         rowner: lenguajeGB['smsRowner'](),
@@ -1480,6 +1479,6 @@ if (msg) return conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id
 let file = global.__filename(import.meta.url, true)
 watchFile(file, async () => {
     unwatchFile(file)
-    console.log(chalk.redBright("Update 'handler.js'"))
+    console.log(chalk.redBright("Se actualizo 'handler.js'"))
     if (global.reloadHandler) console.log(await global.reloadHandler())
 })
