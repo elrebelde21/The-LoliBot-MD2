@@ -1203,8 +1203,8 @@ export async function handler(chatUpdate) {
                 }
 
                 m.isCommand = true
-                let xp = 'exp' in plugin ? parseInt(plugin.exp) : 10 // Ganancia de XP por comando
-                if (xp > 2000)
+                let xp = 'exp' in plugin ? parseInt(plugin.exp) : 17 // Ganancia de XP por comando
+                if (xp > 200)
                     m.reply('Exp limit') // Hehehe
                 else               
                 if (!isPrems && plugin.money && global.db.data.users[m.sender].money < plugin.money * 1) {
