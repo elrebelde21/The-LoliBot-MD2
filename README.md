@@ -22,6 +22,7 @@
 ### ❇️ GRUPOS OFICIALES
 
 <a href="https://chat.whatsapp.com/LZFE2MHvEkY7b69TmAGmHR" target="blank"><img src="https://img.shields.io/badge/Grupo Lolibot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /> 
+
 <a href="https://chat.whatsapp.com/Gvp9BotznpdKoJ461uBlLO" target="blank"><img src="https://img.shields.io/badge/Grupo ² Lolibot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 <a href="https://chat.whatsapp.com/Erswe0ySWIK1UeS8Kt8Rlm" target="blank"><img src="https://img.shields.io/badge/🐈 𝐆𝐚𝐭𝐚𝐁𝐨𝐭 & 𝐋𝐨𝐥𝐢𝐁𝐨𝐭 🥳-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 <a href="https://chat.whatsapp.com/I3qjtQABJPaB65i2uhGe81" target="blank"><img src="https://img.shields.io/badge/💖 🅜🅤🅛🅣🅘 🅑🅞🅣🅢 💖-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
