@@ -16,19 +16,16 @@
 𝗖𝗼𝗻𝘁𝗮𝗰𝘁𝗮𝗺𝗲 ✨ 
 
 <a href="http://wa.me/5492266466080" target="blank"><img src="https://img.shields.io/badge/creador-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
-
 <a href="http://Wa.me/573183650526" target="blank"><img src="https://img.shields.io/badge/Bot ofc-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
-
 
 [![blog](https://img.shields.io/badge/Grupo-lolibot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
 )](https://chat.whatsapp.com/Ei87TDT7fsI3Q3p5MnM9sW)  <a href="https://chat.whatsapp.com/Ei87TDT7fsI3Q3p5MnM9sW"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
-
 [![blog](https://img.shields.io/badge/Grupo2-lolibot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
 )](https://chat.whatsapp.com/LMN3wF9XoX86oalLfx2mC0) <a href="https://chat.whatsapp.com/FBMEpvnu3tsFvMtGWNCKCj"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px"></a>
-
 <a href="https://chat.whatsapp.com/Erswe0ySWIK1UeS8Kt8Rlm" target="blank"><img src="https://img.shields.io/badge/🐈 𝐆𝐚𝐭𝐚𝐁𝐨𝐭 & 𝐋𝐨𝐥𝐢𝐁𝐨𝐭 🥳-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 </a>
 <a href="https://chat.whatsapp.com/I3qjtQABJPaB65i2uhGe81" target="blank"><img src="https://img.shields.io/badge/💖 🅜🅤🅛🅣🅘 🅑🅞🅣🅢 💖-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+-----
 [![blog](https://img.shields.io/badge/Grupo-actulizaciones-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
 )](https://chat.whatsapp.com/JESaesjOEcB6wnGX0QYT9o)  <a href="https://chat.whatsapp.com/JESaesjOEcB6wnGX0QYT9o"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px">
 </a>
