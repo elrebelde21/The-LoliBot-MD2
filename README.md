@@ -12,7 +12,8 @@
 
 
 
-### —◉ 𝗗𝘂𝗱𝗮 𝘀𝗼𝗯𝗿𝗲 𝗲𝗹 𝗯𝗼𝘁? 𝗖𝗼𝗻𝘁𝗮𝗰𝘁𝗮𝗺𝗲 ✨ 
+### —◉ 𝗗𝘂𝗱𝗮 𝘀𝗼𝗯𝗿𝗲 𝗲𝗹 𝗯𝗼𝘁? 
+𝗖𝗼𝗻𝘁𝗮𝗰𝘁𝗮𝗺𝗲 ✨ 
 
 <a href="http://wa.me/5492266466080" target="blank"><img src="https://img.shields.io/badge/creador-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 <a href="http://Wa.me/573183650526" target="blank"><img src="https://img.shields.io/badge/Bot oficial -25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
@@ -25,6 +26,7 @@
 <a href="https://chat.whatsapp.com/I3qjtQABJPaB65i2uhGe81" target="blank"><img src="https://img.shields.io/badge/💖 🅜🅤🅛🅣🅘 🅑🅞🅣🅢 💖-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 </a>
 -----
+[![Typing SVG](http://readme-typing-svg.herokuapp.com?font=Fira+Code&size=10&duration=3000&pause=1000&color=34F6F7&center=falso&vCenter=falso&width=435&lines=%C3%9necesita+ayuda+sobre+el bot+%C3%9entra al+grupo del+%C3%9de ayuda sobre el bot )](https://git.io/typing-svg)
 <a href="https://chat.whatsapp.com/FRkr7jJHSJA5OjVtE64dDs" target="blank"><img src="https://img.shields.io/badge/Grupo ayuda sobre el bot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 -----
 [![Typing SVG](http://readme-typing-svg.herokuapp.com?font=Fira+Code&size=10&duration=3000&pause=1000&color=34F6F7&center=falso&vCenter=falso&width=435&lines=%C3%9Anete+y+Conoce+las+%C3%9Altimas+Novedades!!)](https://git.io/typing-svg)
