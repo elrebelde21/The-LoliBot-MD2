@@ -16,18 +16,18 @@ if (/^e$/i.test(m.text) ) { //sem prefixo
 }
 
 if (/^@5492266466080|@56964787183|@5492266613038$/i.test(m.text) ) { //sem prefixo
-    conn.reply(m.chat, `*[ ⚠ ️] No etiquetes a mi creador, No etiquetes a mi creador si tiene alguna consulta o dudas, hablarle el pv solo por tema del bot`, m) //wm, null, [['Menu', '#menu']], m) botones :V
+    conn.reply(m.chat, `*[ ⚠ ️] No etiquetes a mi creador, si tiene alguna consulta o dudas, hablarle el pv solo por tema del bot`, m) //wm, null, [['Menu', '#menu']], m) botones :V
 
 }
 
-if (/^Mande porno|porno|paja$/i.test(m.text) ) { //sem prefixo
+/* if (/^Mande porno|porno|paja$/i.test(m.text) ) { //sem prefixo
     let teks = `
 ${pickRandom([` 𝑨𝒔𝒊́ 𝒒𝒖𝒆 𝒒𝒖𝒊𝒆𝒓𝒂 𝒉𝒂𝒈𝒂 𝒑𝒖𝒕𝒊𝒕𝒐 🧐`, `_uff mire un pajero_`, `_pagame y paso mi pack😏🥵_`, `_que_`, `_que quiere pija dice 🤣`, `_pasa el pack de tu hermana😏_`, `_mire un gilipolla_`, `_siuuu sexo sexo sexo😈_`, '_callarte putito_'])}
 `.trim()
 conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
 
 }
-
+*/
 if (/^reglas|normas|Reglas$/i.test(m.text) ) { //sem prefixo
     conn.reply(m.chat, `*┌───⊷ *${lb}*
 ┆ ───────•••───────
