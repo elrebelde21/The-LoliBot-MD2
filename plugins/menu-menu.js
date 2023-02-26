@@ -82,7 +82,7 @@ let menuA = `
 ┆~~••~~••~~••~~••~~••~~
 ┆➤ *𝘾𝙧𝙚𝙖𝙙𝙤𝙧 𝙙𝙚𝙡 𝙗𝙤𝙩: el rebelde* 
 ┆➤ *𝙉𝙪́𝙢𝙚𝙧𝙤 𝙙𝙚𝙡 𝙘𝙧𝙚𝙖𝙙𝙤𝙧:* *wa.me/5492266466080*
-┆➤ *𝙉𝙪́𝙢𝙚𝙧𝙤 𝙙𝙚𝙡 𝙗𝙤𝙩 𝙤𝙛𝙞𝙘𝙞𝙖𝙡 :* *wa.me/573183650526*
+┆➤ *𝙉𝙪́𝙢𝙚𝙧𝙤 𝙙𝙚𝙡 𝙗𝙤𝙩 𝙤𝙛𝙞𝙘𝙞𝙖𝙡 :* *wa.me/51924450108*
 ┆➤ *𝙏𝙞𝙚𝙢𝙥𝙤𝙨 𝙖𝙘𝙩𝙞𝙫𝙤𝙨 :* *${uptime}*
 ┆➤ *${lenguajeGB['smsBotonM4']()} :* *${Object.keys(global.db.data.users).length}*  
 ┆➤ *𝙍𝙚𝙜𝙞𝙨𝙩𝙧𝙖𝙙𝙤:* ${rtotalreg} 𝙙𝙚 ${totalreg} 
@@ -92,13 +92,15 @@ let menuA = `
 let menuB = `
 ┌───⊷ 𝙄𝙣𝙛𝙤 𝙙𝙚𝙡 𝙪𝙨𝙪𝙖𝙧𝙞𝙤
 ┆——————«•»—————
+┆ *🙌 Registrado:* ${user.registered === true ? '✅' : '❌ _#verificar_'}
+┆ *🎟️ Premium:* ${user.premiumTime > 0 ? '✅' : '❌ _#pase premium_'}
+┆ *🔰 Mi estado:* ${typeof user.miestado !== 'string' ? '_#miestado || Estado no asignado_' : '_Me siento ' + user.miestado + '_'}
 ┆ *🎖️ Nivel:* ${level}
 ┆ *💎 Diamantes:* ${limit}
 ┆ *👾 LoliCoins:* ${money}
 ┆ *🪙 Tokens:* ${joincount}
 ┆ *🧰 Experiencia:* ${exp}
 ┆ *⚓ Rango:* ${role}
-┆ *🎟️ Premium:* ${user.premiumTime > 0 ? '✅' : '❌'}
 ┆——————«•»—————
 ┆ 🤖 𝙄𝙣𝙛𝙤 𝙙𝙚𝙡 𝙗𝙤𝙩
 ┆——————«•»—————
