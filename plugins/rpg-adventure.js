@@ -28,7 +28,7 @@ if (user.health < 80) return conn.sendButton(m.chat,`${htki} 𝑩𝒂𝒋𝒂 �
 `𝑻𝒖 𝒔𝒂𝒍𝒖𝒅 💔 𝒆𝒔𝒕𝒂́ 𝒅𝒆𝒃𝒂𝒋𝒐 𝒅𝒆 *80!!*
 𝑷𝒐𝒓 𝒇𝒂𝒗𝒐𝒓 𝒄𝒖𝒓𝒂𝒕𝒆 𝒑𝒓𝒊𝒎𝒆𝒓𝒐 𝒑𝒂𝒓𝒂 𝑨𝒗𝒆𝒏𝒕𝒖𝒓𝒂 𝒅𝒆𝒍 𝒏𝒖𝒆𝒗𝒐`.trim(), imgr + 'MALA SALUD', [
 [`❤️ 𝘾𝙐𝙍𝘼𝙍𝙈𝙀`, `${usedPrefix}heal`],
-[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊 | 𝙄𝙉𝙑𝙀𝙉𝙏𝙊𝙍𝙔`, `${usedPrefix}inventory`]], fkontak, m)
+[`🎒 𝙄𝙉𝙑𝙀𝙉𝙏𝘼𝙍𝙄𝙊`, `${usedPrefix}inventory`]], fkontak, m)
     
 if (new Date - user.lastadventure <= cooldown) return conn.sendButton(m.chat, `${htki} 𝑫𝒆𝒔𝒄𝒂𝒏𝒔𝒂𝒏𝒅𝒐 ${htka}`,
 `𝒀𝒂 𝒂𝒗𝒆𝒏𝒕𝒖𝒓𝒂𝒔𝒕𝒆!! 𝑷𝒐𝒓 𝒇𝒂𝒗𝒐𝒓 𝒆𝒔𝒑𝒆𝒓𝒂 𝒉𝒂𝒔𝒕𝒂 𝒒𝒖𝒆 𝒕𝒆𝒓𝒎𝒊𝒏𝒆 𝒆𝒍 𝒕𝒊𝒆𝒎𝒑𝒐 𝒅𝒆 𝒅𝒆𝒔𝒄𝒂𝒏𝒔𝒐
@@ -73,7 +73,7 @@ handler.help = ['adventure']
 handler.tags = ['rpg']
 handler.limit = 1
 handler.register = true
-handler.level = 1
+handler.level = 3
 handler.command = /^(adventure|adv|aventura|aventurar)$/i
 
 handler.cooldown = cooldown
