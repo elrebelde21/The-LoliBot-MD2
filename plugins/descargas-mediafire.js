@@ -1,63 +1,39 @@
-import fs from 'fs'
-import { mediafiredl } from '@bochilteam/scraper'
-let handler = async (m, { conn, args, usedPrefix, command }) => {
-let user = db.data.users[m.sender]
-let time = global.db.data.users[m.sender].prue + 60000
-if (new Date - global.db.data.users[m.sender].prue < 60000) throw `*ESPERA UNOS MINUTOS PARA USAR OTRO COMANDO*`
+import axios from 'axios'
+import fetch from 'node-fetch'
 
-if (!args[0]) throw `${mg}𝙄𝙣𝙜𝙧𝙚𝙨𝙚 𝙪𝙣 𝙚𝙣𝙡𝙖𝙘𝙚 𝙫𝙖𝙡𝙞𝙙𝙤 𝙙𝙚𝙡 𝙢𝙚𝙙𝙞𝙖𝙛𝙞𝙧𝙚\n𝙀𝙟𝙚𝙢𝙥𝙡𝙤\n ${usedPrefix + command} https://www.mediafire.com/file/cv64tns6co3272q/Lolibot.zip/file`
-try {
-let res = await mediafiredl(args[0])
-let { url, url2, filename, ext, aploud, filesize, filesizeH } = res
-let caption = `
-╭┄ ${eg}
-┆ 𓃠 ${wm}*    
-┆——————«•»——————
-┆ 💫 𝙉𝙤𝙢𝙗𝙧𝙚   
-┆ ${filename}
-┆——————«•»——————
-┆ 💪 𝙋𝙚𝙨𝙤
-┆ ${filesizeH}
-┆——————«•»——————
-┆ 🚀 𝙏𝙞𝙥𝙤
-┆ ${ext}
-╰━━━⊰ 𓃠 ${vs} ⊱━━━━დ`.trim()
-//let author = global.author
-await conn.sendButton(m.chat, caption, `𝑴𝒂𝒚𝒐𝒓 𝒂 150 𝑴𝑮 𝒆𝒔 𝒑𝒐𝒔𝒊𝒃𝒍𝒆 𝒒𝒖𝒆 𝒏𝒐 𝒔𝒆 𝒆𝒏𝒗𝒊𝒆`, [['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 ⚡', '.menu']], m)
- 
-/*let info = `𝑴𝒂𝒚𝒐𝒓 𝒂 150 𝑴𝑮 𝒆𝒔 𝒑𝒐𝒔𝒊𝒃𝒍𝒆 𝒒𝒖𝒆 𝒏𝒐 𝒔𝒆 𝒆𝒏𝒗𝒊𝒆́`.trim()  
-await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙏𝙞𝙠𝙩𝙤𝙠', null, null, [
-['𝙈𝙚𝙣𝙪 𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙨 🌀', '#descargasmenu'],
-['𝙈𝙚𝙣𝙪 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙤 ✨', '.allmenu'],
-['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu']
-], m,)  
-let vn = './media/descarga.mp3'
-*/  
-conn.sendFile(m.chat, url, filename, '', m, null, { mimetype: ext, asDocument: true })
-} catch (e) {
-let sticker = './src/stickers1.webp'
-conn.sendFile(m.chat, sticker, 'error.webp', '', m)}
-/* conn.sendFile(m.chat, vn, 'descarga.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true })
-*/
-global.db.data.users[m.sender].prue = new Date * 1
+let handler = async (m, { conn, args, usedPrefix, command }) => {
+   if (!args[0]) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝚄𝙽 𝙴𝙽𝙻𝙰𝙲𝙴 𝚅𝙰𝙻𝙸𝙳𝙾 𝙳𝙴 𝙼𝙴𝙳𝙸𝙰𝙵𝙸𝚁𝙴, 𝙴𝙹𝙴𝙼𝙿𝙻𝙾: ${usedPrefix + command} https://www.mediafire.com/file/pbabuzyc7i8ord5/TheMystic-Bot-MD-master_%25285%2529.zip/file*`
+   try {  
+      let res = await mediafireDl(args[0])
+      let { name, size, date, mime, link } = res
+      let caption = `
+*📓 𝙽𝙾𝙼𝙱𝚁𝙴:* ${name}
+*📁 𝙿𝙴𝚂𝙾:* ${size}
+*📄 𝚃𝙸𝙿𝙾:* ${mime}
+*⏳ 𝙴𝚂𝙿𝙴𝚁𝙴 𝙴𝙽 𝙻𝙾 𝚀𝚄𝙴 𝙴𝙽𝚅𝙸𝙾 𝚂𝚄 𝙰𝚁𝙲𝙷𝙸𝚅𝙾. . . .* 
+`.trim()
+   await m.reply(caption)
+   await conn.sendFile(m.chat, link, name, '', m, null, { mimetype: mime, asDocument: true })
+   } catch {  
+      await m.reply('*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾*\n\n*- 𝙲𝙾𝚁𝚁𝙾𝙱𝙾𝚁𝙴 𝚀𝚄𝙴 𝙴𝙻 𝙴𝙽𝙻𝙰𝙲𝙴 𝚂𝙴𝙰 𝚂𝙸𝙼𝙸𝙻𝙰𝚁 𝙰:*\n*◉ https://www.mediafire.com/file/pbabuzyc7i8ord5/TheMystic-Bot-MD-master_%25285%2529.zip/file*')
+   }
 }
+
 handler.help = ['mediafire'].map(v => v + ' <url>')
 handler.tags = ['downloader']
 handler.command = /^(mediafire|mediafiredl|dlmediafire)$/i
-handler.register = true
-handler.limit = 3
-handler.exp = 100
+
 export default handler
 
-function msToTime(duration) {
-var milliseconds = parseInt((duration % 1000) / 100),
-seconds = Math.floor((duration / 1000) % 60),
-minutes = Math.floor((duration / (1000 * 60)) % 60),
-hours = Math.floor((duration / (1000 * 60 * 60)) % 24)
-
-hours = (hours < 10) ? "0" + hours : hours
-minutes = (minutes < 10) ? "0" + minutes : minutes
-seconds = (seconds < 10) ? "0" + seconds : seconds
-
-return minutes + " m y " + seconds + " s " 
+async function mediafireDl(url) {
+   const res = await axios.get(`https://www-mediafire-com.translate.goog/${url.replace('https://www.mediafire.com/','')}?_x_tr_sl=en&_x_tr_tl=fr&_x_tr_hl=en&_x_tr_pto=wapp`)
+   const $ = cheerio.load(res.data)
+   const link = $('#downloadButton').attr('href')
+   const name = $('body > main > div.content > div.center > div > div.dl-btn-cont > div.dl-btn-labelWrap > div.promoDownloadName.notranslate > div').attr('title').replaceAll(' ','').replaceAll('\n','')
+   const date = $('body > main > div.content > div.center > div > div.dl-info > ul > li:nth-child(2) > span').text()
+   const size = $('#downloadButton').text().replace('Download', '').replace('(', '').replace(')', '').replace('\n', '').replace('\n', '').replace('                         ', '').replaceAll(' ','')
+   let mime = ''
+   let rese = await axios.head(link)
+   mime = rese.headers['content-type']
+   return { name, size, date, mime, link }
 }
