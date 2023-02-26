@@ -984,7 +984,8 @@ export async function handler(chatUpdate) {
             if (typeof settings !== 'object') global.db.data.settings[this.user.jid] = {}
             if (settings) {
                 if (!('self' in settings)) settings.self = false
-                if (!('autoread' in settings)) settings.autoread = true
+                if (!('autoread' in settings)) settings.autoread = false
+                	if (!('autoread2' in settings)) settings.autoread2 = false
                 if (!('restrict' in settings)) settings.restrict = false
 		if (!('temporal' in settings)) settings.temporal = true
                 if (!('antiPrivate' in settings)) settings.antiPrivate = false
@@ -994,9 +995,10 @@ export async function handler(chatUpdate) {
 		if (!('jadibotmd' in settings)) settings.jadibotmd = true  
             } else global.db.data.settings[this.user.jid] = {
                 self: false,
-                autoread: true,
+                autoread: false,
+                autoread2: false,
                 restrict: false,
-		temporal: true,
+		temporal: false,
 		antiPrivate: false,
 		antipv: false,
 		antiCall: true,
@@ -1334,11 +1336,11 @@ export async function handler(chatUpdate) {
         } catch (e) {
             console.log(m, m.quoted, e)
         }
-        if (opts['autoread'])
-            //await this.chatRead(m.chat, m.isGroup ? m.sender : undefined, m.id || m.key.id).catch(() => { })
-		
-	await this.readMessages([m.key])
-	    
+	let settingsREAD = global.db.data.settings[this.user.jid] || {}  
+        if (opts['autoread']) await this.readMessages([m.key])
+	if (settingsREAD.autoread2) await this.readMessages([m.key])  
+	if (settingsREAD.autoread2 == 'true') await this.readMessages([m.key])    
+       
         if (!db.data.chats[m.chat].reaction && m.isGroup) throw 0
         if (!m.fromMem && m.text.match(/(el rebelde|@5219996125657|@5492266466080|admin del bot|Bot|LoliBot|lolibot|The LoliBot-md|lolibot-md|The LoliBot-MD|has|ato|ido|ura|des|able|sub|izo|ita|con|.-.|._.|:)|:(|:v|v:|o.o|;v|v;|v':|:'v)/gi)) {
         let emot = pickRandom(["😺", "😸", "😹", "😻", "😼", "😽", "🙀", "😿", "😾", "🤩", "😏", "😳", "🥵", "🤯", "😱", "😨", "🤫", "🥴", "🤧", "🤑", "🤠", "🤖", "🤝", "💪", "👑", "😚", "🐱", "🐈", "🐆", "🐅", "⚡️", "🌈", "☃️", "⛄️", "🌝", "🌛", "🌜", "🍓", "🍎", "🎈", "🪄", "❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍", "💘", "💝", "💟", "🌝", "😎", "🔥", "🖕", "🐦"])
