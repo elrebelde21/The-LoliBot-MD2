@@ -5,7 +5,7 @@ export function before(m, { conn }) {
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 let username = conn.getName(who)
-	
+
 let user = global.db.data.users[m.sender]
 let chat = global.db.data.chats[m.chat]
 if (!chat.autolevelup)
@@ -16,8 +16,8 @@ while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
  if (before !== user.level) {
 	  	 
 conn.sendButton(m.chat, ' ' + wm, `┌───⊷ ${username}
-▢ ${lenguajeGB.smsAutoLv2()} ${before}*
-▢ ${lenguajeGB.smsAutoLv3()} ${user.level}*
+▢ ${lenguajeGB.smsAutoLv2()} ${before}
+▢ ${lenguajeGB.smsAutoLv3()} ${user.level}
 ▢ ${lenguajeGB.smsAutoLv4()}* ${user.role}
 └──────────────
 
