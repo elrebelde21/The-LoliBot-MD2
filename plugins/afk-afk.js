@@ -7,4 +7,6 @@ m.reply(`${lenguajeGB['smsAfkM1A']()} *${conn.getName(m.sender)}* ${lenguajeGB['
 handler.help = ['afk [alasan]']
 handler.tags = ['main']
 handler.command = /^afk$/i
+handler.register = true
+handler.money = 120
 export default handler
