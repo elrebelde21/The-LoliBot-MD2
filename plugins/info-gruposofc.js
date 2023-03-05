@@ -23,9 +23,6 @@ Hola 👋🏻, Bienvenido a los grupos oficiales, te invito a unete a los grupos
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 Grupos del amistades donde esta el bot
 
-*ஓீ͜ঔৣ͡🍒STICKER/𝑩Ø𝑻🔥ঔৣ͡ஓ*
-https://chat.whatsapp.com/DCJclB8oBAPIAoleUtNEaN
-
 *꧁⁣𓆩Aᴹᴵᴳᴼˢ Cᴴᴬᵀˢ Y Aᴾᴼᴿᵀᴱ*
 https://chat.whatsapp.com/JZaD3sfNoVW4JvaoQ4uVwF
 
