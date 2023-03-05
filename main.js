@@ -80,7 +80,7 @@ getMessage: async (key) => ( opts.store.loadMessage(/** @type {string} */(key.re
 msgRetryCounterMap,
 logger: pino({ level: 'silent' }),
 auth: state,
-browser: ['The-LoliBot-MD','Safari','9.7.0'],
+browser: ['The-LoliBot-MD','Edge','1.0.0'],
 version   
 }
 
