@@ -20,6 +20,8 @@ let handler = async (m, { conn }) => {
   chat.isBanned = false
   m.reply(`𝙀𝙨𝙩𝙚 𝙘𝙝𝙖𝙩 𝙛𝙪𝙚 𝙙𝙚𝙨𝙗𝙖𝙣𝙚𝙖𝙙𝙤 🥳\n𝙖𝙝𝙤𝙧𝙖 𝙚𝙨𝙩𝙤𝙮 𝙙𝙞𝙨𝙥𝙤𝙣𝙞𝙗𝙡𝙚...`)
 }
+handler.help = ['unbanchat']
+handler.tags = ['owner']
 handler.command = /^unbanchat$/i
 handler.botAdmin = true
 handler.admin = true 
