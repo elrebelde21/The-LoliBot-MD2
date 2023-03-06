@@ -1154,7 +1154,7 @@ export async function handler(chatUpdate) {
 *👉🏻 Puedes contactar al propietario del Bot si crees que se trata de un error o para charlar sobre tu desbaneo*
 
 👉 wa.me/5492266466080
-👉 ${global.nn}
+👉 Wa.me/573183650526
 `.trim())
                         return
                 }
