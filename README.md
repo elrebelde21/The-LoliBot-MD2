@@ -68,6 +68,7 @@
 > git clone https://github.com/elrebelde21/The-LoliBot-MD
 > cd The-LoliBot-MD
 > npm install
+> yarn
 > ls
 > npm start
 ```
