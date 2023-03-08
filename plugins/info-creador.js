@@ -24,7 +24,7 @@ let teksbio = `
 *Wa.me/5492266466080 (no bot)*
 *Wa.me/573183650526 (bot)*
 *Wa.me/972529277406 (Bot ²)*
-*Wa.me/51974322442 (bot ³)*
+*Wa.me/50760407691 (bot ³)*
 `
   let teks = ' '
 const sections = [
