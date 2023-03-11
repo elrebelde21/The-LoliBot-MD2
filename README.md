@@ -59,13 +59,13 @@
 #### ⬇️ 𝐄𝐒𝐂𝐑𝐈𝐁𝐄 𝐋𝐎𝐒 𝐒𝐈𝐆𝐔𝐈𝐄𝐍𝐓𝐄𝐒 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐔𝐍𝐎 𝐏𝐎𝐑 𝐔𝐍𝐎 (Opción 1):
 ```bash
 > termux-setup-storage
-> apt update && pkg upgrade && pkg install git -y && pkg install nodejs -y && pkg install ffmpeg -y && pkg install imagemagick -y && pkg install yarn
-> git clone https://github.com/elrebelde21/The-LoliBot-MD
-> cd The-LoliBot-MD
-> npm install
-> yarn
-> ls
-> npm start
+```
+```bash
+> pkg update -y && pkg upgrade -y && pkg install -y bash && pkg install -y wget
+```
+```bash
+> wget -O - https://raw.githubusercontent.com/elrebelde21/The-LoliBot-MD/master/install.sh | bash
+> npm start 
 ```
 ------------------
 ### 𝐀𝐂𝐓𝐈𝐕𝐀 𝐄𝐋 𝐓𝐄𝐑𝐌𝐔𝐗 - 𝘼𝙍𝘾𝙃𝙄𝙑𝙊𝙎 <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="40px">  
