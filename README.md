@@ -75,17 +75,19 @@ wget -O - https://raw.githubusercontent.com/elrebelde21/The-LoliBot-MD/master/in
 
 #### 𝐄𝐒𝐂𝐑𝐈𝐁𝐄 𝐋𝐎𝐒 𝐒𝐈𝐆𝐔𝐈𝐄𝐍𝐓𝐄𝐒 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐔𝐍𝐎 𝐏𝐎𝐑 𝐔𝐍𝐎 (Opción 2):
 ```bash
-> termux-setup-storage
-> apt update 
-> pkg upgrade 
-> pkg install git -y
-> pkg install nodejs -y
-> pkg install ffmpeg -y
-> pkg install imagemagick -y
-> pkg install yarn
-> cd storage/downloads/Lolibot
-> ls
-> npm start
+termux-setup-storage
+```
+```bash
+apt update && pkg upgrade && pkg install git -y && pkg install nodejs -y && pkg install ffmpeg -y && pkg install imagemagick -y && pkg install yarn
+```
+```bash
+cd storage/downloads/Lolibot
+```
+```bash
+ls
+```
+```bash
+npm start
 ```
 ----  
 
