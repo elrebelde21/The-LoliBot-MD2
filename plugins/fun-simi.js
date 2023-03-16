@@ -1,13 +1,34 @@
-
-import fetch from 'node-fetch'
-let handler = async (m, { text, usedPrefix, command }) => {
-
-if (!text) throw `𝙀𝙨𝙘𝙧𝙞𝙗𝙖 𝙪𝙣 𝙩𝙚𝙭𝙩𝙤 𝙥𝙖𝙧𝙖 𝙝𝙖𝙗𝙡𝙖𝙧 𝙘𝙤𝙣𝙢𝙞𝙜𝙤\n\n𝙀𝙟𝙚𝙢𝙥𝙡𝙤: ${usedPrefix + command} Hola bot*`
+import translate from '@vitalets/google-translate-api'
+import fetch from "node-fetch"
+let handler = async (m, { text, command, args, usedPrefix }) => {
+  if (!text) throw ` 𝙀𝙨𝙘𝙧𝙞𝙗𝙖 𝙪𝙣 𝙩𝙚𝙭𝙩𝙤 𝙥𝙖𝙧𝙖 𝙝𝙖𝙗𝙡𝙖𝙧 𝙘𝙤𝙣𝙢𝙞𝙜𝙤\n\n𝙀𝙟𝙚𝙢𝙥𝙡𝙤: ${usedPrefix + command} Hola bot*`
+  try {
   await conn.sendPresenceUpdate('composing', m.chat)
-let res = await fetch(`https://api.simsimi.net/v2/?text=${text}&lc=es`)
-let json = await res.json()
-let tes = json.success.replace('simsimi', 'simsimi').replace('Simsimi', 'Simsimi').replace('sim simi', 'sim simi')
-m.reply(`${tes}`) 
+  let api = await fetch("https://api.simsimi.net/v2/?text=" + text + "&lc=es")
+  let resSimi = await api.json()
+  m.reply(resSimi.success)      
+  } catch {
+  try {
+  if (text.includes('Hola')) text = text.replace('Hola', 'Hello')
+  if (text.includes('hola')) text = text.replace('hola', 'Hello')
+  if (text.includes('HOLA')) text = text.replace('HOLA', 'HELLO')    
+  let reis = await fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=en&dt=t&q=" + text)
+  let resu = await reis.json()  
+  let nama = m.pushName || '1'
+  let api = await fetch("http://api.brainshop.ai/get?bid=153868&key=rcKonOgrUFmn5usX&uid=" + nama + "&msg=" + resu[0][0][0])
+  let res = await api.json()
+  let reis2 = await fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=es&dt=t&q=" + res.cnt)
+  let resu2 = await reis2.json()
+  m.reply(resu2[0][0][0])      
+  } catch {  
+  let reisss = await fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=id&dt=t&q=" + text)
+  let resuuu = await reisss.json()      
+  let res222 = await fetch(`https://violetics.pw/api/utility/simsimi?apikey=beta&text=${resuuu[0][0][0]}`)  
+  let json222 = await res222.json()
+  let resulttt = json222.result
+  let lolll = await translate(`${resulttt}`, { to: 'es', autoCorrect: true })
+  m.reply(lolll.text)      
+  }}
 }
 handler.help = ['simsimi']
 handler.tags = ['General']
