@@ -8,11 +8,8 @@ let handler = async (m, { conn, text }) => {
 		txt = Object.keys(data).map(v => `*${v.capitalize()}:* ${data[v]}`).join('\n'),
 		pp = await conn.profilePictureUrl(data.id, 'image').catch(console.error)
 		let groupinfo = `
-*┏━━━━━━━━━━━━━━━━┓*
-*┃ ${wm}
-*┗━━━━━━━━━━━━━━━━┛*
 *┏━━━━━━━━━━━━━━━┓*
-*┃🆔❐ ID:* ${data.id}◞
+*┃🆔 ID:* ${data.id}◞
 *┃💳❐ Nombre:* ${data.subject}
 *┃📅❐ Creado:* ${data.creation}
 *┃👑❐ Owner:* ${data.owner}
