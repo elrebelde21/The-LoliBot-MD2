@@ -39,7 +39,7 @@ export async function handler(chatUpdate) {
         m.limit = false
         m.money = false
         try {
-              // TODO: use loop to insert data instead of this
+            // TODO: use loop to insert data instead of this
             let user = global.db.data.users[m.sender]
             if (typeof user !== 'object')
                 global.db.data.users[m.sender] = {}
@@ -49,13 +49,25 @@ export async function handler(chatUpdate) {
 		if (!('premium' in user)) user.premium = false
 		if (!isNumber(user.joincount)) user.joincount = 1
                 if (!isNumber(user.money)) user.money = 100
-                if (!isNumber(user.limit)) user.limit = 8 	       
+                if (!isNumber(user.limit)) user.limit = 8	       
                 if (!('registered' in user)) user.registered = false
+		if (!('registroR' in user)) user.registroR = false
+		if (!('registroC' in user)) user.registroC = false  
+		if (!isNumber(user.IDregister)) user.IDregister = 0   
                     
             if (!user.registered) {
 		                    	 
 		    if (!('name' in user)) user.name = m.name
-                    if (!isNumber(user.age)) user.age = -1
+		    if (!isNumber(user.age)) user.age = 0
+                    if (!isNumber(user.descripcion)) user.descripcion = 0
+		    if (!isNumber(user.genero)) user.genero = 0
+		    if (!isNumber(user.identidad)) user.identidad = 0
+		    if (!isNumber(user.pasatiempo)) user.pasatiempo = 0
+		    if (!isNumber(user.tiempo)) user.tiempo = 0
+		    if (!isNumber(user.premLimit)) user.premLimit = 0
+		    if (!isNumber(user.miestado)) user.miestado = 0
+		    
+		    
                     if (!isNumber(user.anggur)) user.anggur = 0
                     if (!isNumber(user.apel)) user.apel = 0
                     if (!isNumber(user.bibitanggur)) user.bibitanggur = 0
@@ -184,7 +196,7 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.gardenboxs)) user.gardenboxs = 0
               if (!isNumber(user.gems)) user.gems = 0
               if (!isNumber(user.glass)) user.glass = 0
-              if (!isNumber(user.glimit)) user.glimit = 8
+              if (!isNumber(user.glimit)) user.glimit = 15
               if (!isNumber(user.glory)) user.glory = 0
               if (!isNumber(user.gold)) user.gold = 0
               if (!isNumber(user.griffin)) user.griffin = 0
@@ -380,7 +392,6 @@ export async function handler(chatUpdate) {
               if (!isNumber(user.pet)) user.pet = 0
               if (!isNumber(user.petFood)) user.petFood = 0
               if (!isNumber(user.phonix)) user.phonix = 0
-              if (!isNumber(user.prue)) user.prue = 0
               if (!isNumber(user.phonixexp)) user.phonixexp = 0
               if (!isNumber(user.phonixlastclaim)) user.phonixlastclaim = 0
               if (!isNumber(user.phonixlastfeed)) user.phonixlastfeed = 0
@@ -486,7 +497,13 @@ export async function handler(chatUpdate) {
 		    
 		    afk: -1,
                     afkReason: '',
-                    age: -1,
+                    age: 0,
+		    genero: 0,
+		    identidad: 0,
+		    pasatiempo: 0,
+		    tiempo: 0,
+		    premLimit: 0,
+		    miestado: 0,
                     agility: 16,
                     anakanjing: 0,
                     anakcentaur: 0,
@@ -808,6 +825,8 @@ export async function handler(chatUpdate) {
                     ramuanrubahlast: 0,
                     ramuanserigalalast: 0,
                     registered: false,
+		    registroR: false,
+		    registroC: false,
                     reglast: 0,
                     regTime: -1,
                     rendang: 0,
@@ -927,7 +946,7 @@ export async function handler(chatUpdate) {
                 if (!('modohorny' in chat)) chat.modohorny = false                    
                 if (!('stickers' in chat)) chat.stickers = false                    
                 if (!('autosticker' in chat)) chat.autosticker = false                      
-                if (!('audios' in chat)) chat.audios = true                     
+                if (!('audios' in chat)) chat.audios = true                    
 		if (!('antiver' in chat)) chat.antiver = true                    
                 if (!('antiLink' in chat)) chat.antiLink = false                    
                 if (!('antiLink2' in chat)) chat.antiLink2 = false
@@ -985,22 +1004,20 @@ export async function handler(chatUpdate) {
             if (settings) {
                 if (!('self' in settings)) settings.self = false
                 if (!('autoread' in settings)) settings.autoread = false
-                	if (!('autoread2' in settings)) settings.autoread2 = false
+		if (!('autoread2' in settings)) settings.autoread2 = false
                 if (!('restrict' in settings)) settings.restrict = false
 		if (!('temporal' in settings)) settings.temporal = true
                 if (!('antiPrivate' in settings)) settings.antiPrivate = false
-                if (!('antipv' in settings)) settings.antipv = false
 		if (!('antiCall' in settings)) settings.antiCall = true
 		if (!('antiSpam' in settings)) settings.antiSpam = true
 		if (!('jadibotmd' in settings)) settings.jadibotmd = true  
             } else global.db.data.settings[this.user.jid] = {
                 self: false,
                 autoread: false,
-                autoread2: false,
+		autoread2: false,
                 restrict: false,
-		temporal: false,
+		temporal: true,
 		antiPrivate: false,
-		antipv: false,
 		antiCall: true,
 		antiSpam: true,
 		jadibotmd: true,
@@ -1205,12 +1222,12 @@ export async function handler(chatUpdate) {
                 }
 
                 m.isCommand = true
-                let xp = 'exp' in plugin ? parseInt(plugin.exp) : 17 // Ganancia de XP por comando
-                if (xp > 200)
+                let xp = 'exp' in plugin ? parseInt(plugin.exp) : 10 // Ganancia de XP por comando
+                if (xp > 2000)
                     m.reply('Exp limit') // Hehehe
                 else               
                 if (!isPrems && plugin.money && global.db.data.users[m.sender].money < plugin.money * 1) {
-                    this.reply(m.chat, `𝙇𝙤𝙡𝙞𝘾𝙤𝙞𝙣𝙨 𝙪𝙨𝙖𝙙𝙤𝙨`, m)
+                    this.reply(m.chat, `🫥 𝙉𝙤 𝙩𝙞𝙚𝙣𝙚 𝙇𝙤𝙡𝙞𝘾𝙤𝙞𝙣𝙨`, m) 
                     continue     
 		}
 			
@@ -1340,7 +1357,7 @@ export async function handler(chatUpdate) {
         if (opts['autoread']) await this.readMessages([m.key])
 	if (settingsREAD.autoread2) await this.readMessages([m.key])  
 	if (settingsREAD.autoread2 == 'true') await this.readMessages([m.key])    
-       
+	    
         if (!db.data.chats[m.chat].reaction && m.isGroup) throw 0
         if (!m.fromMem && m.text.match(/(el rebelde|@5219996125657|@5492266466080|admin del bot|Bot|LoliBot|lolibot|The LoliBot-md|lolibot-md|The LoliBot-MD|has|ato|ido|ura|des|able|sub|izo|ita|con|.-.|._.|:)|:(|:v|v:|o.o|;v|v;|v':|:'v)/gi)) {
         let emot = pickRandom(["😺", "😸", "😹", "😻", "😼", "😽", "🙀", "😿", "😾", "🤩", "😏", "😳", "🥵", "🤯", "😱", "😨", "🤫", "🥴", "🤧", "🤑", "🤠", "🤖", "🤝", "💪", "👑", "😚", "🐱", "🐈", "🐆", "🐅", "⚡️", "🌈", "☃️", "⛄️", "🌝", "🌛", "🌜", "🍓", "🍎", "🎈", "🪄", "❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍", "💘", "💝", "💟", "🌝", "😎", "🔥", "🖕", "🐦"])
