@@ -173,7 +173,10 @@ echo -e "\033[01;32m\033[01mLa clonación se ha descargado e instalado correctam
 
 echo -e "\033[01;32m\033[01mCambiando al directorio del repositorio!!\nChanging to the repository directory!!\n\033[0m" 
 cd The-LoliBot-MD
+
+echo -e "\033[01;32m\033[01mINSTALADO LOS MODULOS!!\n\033[0m" 
 npm install
+echo -e "\033[01;32m\033[01mCASI CASI FALTA POCO!\n\033[0m" 
 yarn install
 
 : <<'COMMENT'
@@ -196,7 +199,7 @@ menu() {
 }
 
 menu_ayuda() {
-    #printf "${v1}[${b}++${v1}]${v} GataBot-MD${b}: "
+    #printf "${v1}[${b}++${v1}]${v} The-LoliBot-MD${b}: "
 	read opcion
 	case $opcion in
             01|1)
