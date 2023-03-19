@@ -16,14 +16,14 @@ echo -e "\e[35m
 ...
 COMMENT
 
-echo -e "\033[01;93mPreparando instalación...\nPreparing installation...\n\033[0m"
+echo -e "\033[01;93mPreparando instalación...\n\033[0m"
 mp3_array=("install_automatic1.mp3" "install_automatic2.mp3" "install_automatic3.mp3" "install_automatic4.mp3" "install_automatic5.mp3" "install_automatic6.mp3" "install_automatic7.mp3" "install_automatic8.mp3" "install_automatic9.mp3" "install_automatic10.mp3" "install_automatic11.mp3" "install_automatic12.mp3")
 random_mp3=${mp3_array[$RANDOM % ${#mp3_array[@]}]}
 if wget -q https://github.com/elrebelde21/The-LoliBot-MD/raw/master/musicSH/"$random_mp3"; then
-echo -e "\033[01;32mDescarga exitosa. Reproduciendo sonido de intro...\nDownload successful. Playing intro sound...\n\033[0m"
+echo -e "\033[01;32mDescarga exitosa. Reproduciendo sonido de intro...\n\033[0m"
 mpv --no-terminal "$random_mp3" &
 else
-echo -e "\033[01;91mSonido de intro no disponible.\nIntro sound not available.\n\033[0m"
+echo -e "\033[01;91mSonido de intro no disponible.\n\033[0m"
 fi
 
 echo -e "\033[01;32m\033[01mInstalando dependencias!!\n\033[0m" 
@@ -146,11 +146,7 @@ fi
 echo -e "\e[36m
 ▀▀█▀▀ ▒█▀▀▀█ ▒█▀▀▄ ▒█▀▀▀█ 　 ▒█▀▀█ ▒█▀▀▀█ ▒█▀▀█ ▒█▀▀█ ▒█▀▀▀ ▒█▀▀█ ▀▀█▀▀ ▒█▀▀▀█ 
 ░▒█░░ ▒█░░▒█ ▒█░▒█ ▒█░░▒█ 　 ▒█░░░ ▒█░░▒█ ▒█▄▄▀ ▒█▄▄▀ ▒█▀▀▀ ▒█░░░ ░▒█░░ ▒█░░▒█ 
-░▒█░░ ▒█▄▄▄█ ▒█▄▄▀ ▒█▄▄▄█ 　 ▒█▄▄█ ▒█▄▄▄█ ▒█░▒█ ▒█░▒█ ▒█▄▄▄ ▒█▄▄█ ░▒█░░ ▒█▄▄▄█
-
-░█▀▀█ ▒█░░░ ▒█░░░ 　 ▒█▀▀█ ▀█▀ ▒█▀▀█ ▒█░▒█ ▀▀█▀▀ 
-▒█▄▄█ ▒█░░░ ▒█░░░ 　 ▒█▄▄▀ ▒█░ ▒█░▄▄ ▒█▀▀█ ░▒█░░ 
-▒█░▒█ ▒█▄▄█ ▒█▄▄█ 　 ▒█░▒█ ▄█▄ ▒█▄▄█ ▒█░▒█ ░▒█░░\n\e[0m"
+░▒█░░ ▒█▄▄▄█ ▒█▄▄▀ ▒█▄▄▄█ 　 ▒█▄▄█ ▒█▄▄▄█ ▒█░▒█ ▒█░▒█ ▒█▄▄▄ ▒█▄▄█ ░▒█░░ ▒█▄▄▄█░░\n\e[0m"
 echo -e "\033[01;32m\033[01m\nTodas las dependencias se han instalado correctamente.\nAll dependencies have been installed successfully.\n\033[0m" 
 
 echo -e "\e[35m
@@ -184,7 +180,7 @@ echo -e "\e[36m
 ╚═╝╚═╝░░╚══╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚══════╝╚══════╝  ╚═╝░░╚══╝╚═╝░░░░░╚═╝░░░░░╚═╝\n\e[0m"
 
 if command npm install >/dev/null 2>&1; then
-echo -e "\033[01;33mNPM ya estaba instalado anteriormente.\nNPM was already installed previously.\033[0m"
+echo -e "\033[01;33mNPM ya estaba instalado anteriormente..\033[0m"
 else
 echo -e "\033[0;34mNPM no se encontró en su sistema. Se instalará NPM automáticamente.\nNPM was not found on your system. NPM will be installed automatically.\n\033[0m"
 if npm install 2>&1 >/dev/null | grep -E -i -q '(command not found|unable to locate package|E: Could not get lock|debconf: delaying package configuration|Package not found|Failed to fetch|404 Not Found|Hash sum mismatch|503 Service Unavailable|504 Gateway Timeout|408 Request Timeout|Connection timed out|Temporary failure resolving)'; then
@@ -194,7 +190,7 @@ echo -e "\033[0;34mNo se pudo instalar NPM. Verifique su conexión a Internet e 
 echo -e "\033[01;33mpkg install git -y\npkg install nodejs -y\npkg install ffmpeg -y\npkg install imagemagick -y\npkg install yarn -y\npkg install npm -y\ngit clone https://github.com/elrebelde21/The-LoliBot-MD\ncd The-LoliBot-MD\nnpm install\nyarn install\nnpm start\033[0m"
 exit 1
 else
-echo -e "\033[01;32m\033[01mNPM se ha instalado correctamente.\nNPM has been installed successfully.\n\033[0m" 
+echo -e "\033[01;32m\033[01mNPM se ha instalado correctamente..\n\033[0m" 
 fi
 fi
 
@@ -207,7 +203,7 @@ echo -e "\e[35m
 ╚═╝╚═╝░░╚══╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚══════╝╚══════╝  ░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝\n\e[0m"
 
 if command yarn install >/dev/null 2>&1; then
-echo -e "\033[01;33mYarn ya estaba instalado anteriormente.\nYarn was already installed previously.\033[0m"
+echo -e "\033[01;33mYarn ya estaba instalado anteriormente....\033[0m"
 else
 if yarn install 2>&1 >/dev/null | grep -E -i -q '(command not found|unable to locate package|E: Could not get lock|debconf: delaying package configuration|Package not found|Failed to fetch|404 Not Found|Hash sum mismatch|503 Service Unavailable|504 Gateway Timeout|408 Request Timeout|Connection timed out|Temporary failure resolving)'; then
 error=$(yarn install 2>&1 >/dev/null)
@@ -216,7 +212,7 @@ echo -e "\033[0;34mNo se pudo instalar Yarn. Verifique su conexión a Internet e
 echo -e "\033[01;33mpkg install git -y\npkg install nodejs -y\npkg install ffmpeg -y\npkg install imagemagick -y\npkg install yarn\ngit clone https://github.com/elrebelde21/The-LoliBot-MD\ncd The-LoliBot-MD\nnpm install\nyarn install\nnpm start\033[0m"
 exit 1
 else
-echo -e "\033[01;32m\033[01mYarn se ha instalado correctamente.\nYarn has been installed successfully.\n\033[0m" 
+echo -e "\033[01;32m\033[01mYarn se ha instalado correctamente.....\n\033[0m" 
 fi
 fi
 
