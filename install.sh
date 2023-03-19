@@ -174,6 +174,7 @@ echo -e "\033[01;32m\033[01mLa clonación se ha descargado e instalado correctam
 echo -e "\033[01;32m\033[01mCambiando al directorio del repositorio!!\nChanging to the repository directory!!\n\033[0m" 
 cd The-LoliBot-MD
 
+
 echo -e "\e[36m
 ██╗███╗░░██╗░██████╗████████╗░█████╗░██╗░░░░░██╗░░░░░  ███╗░░██╗██████╗░███╗░░░███╗
 ██║████╗░██║██╔════╝╚══██╔══╝██╔══██╗██║░░░░░██║░░░░░  ████╗░██║██╔══██╗████╗░████║
@@ -182,7 +183,7 @@ echo -e "\e[36m
 ██║██║░╚███║██████╔╝░░░██║░░░██║░░██║███████╗███████╗  ██║░╚███║██║░░░░░██║░╚═╝░██║
 ╚═╝╚═╝░░╚══╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚══════╝╚══════╝  ╚═╝░░╚══╝╚═╝░░░░░╚═╝░░░░░╚═╝\n\e[0m"
 
-echo -e "\033[1;35m"
+if command -v npm >/dev/null 2>&1; then
 npm install
 echo -e "\033[01;33mNPM ya estaba instalado anteriormente.\nNPM was already installed previously.\033[0m"
 else
@@ -206,8 +207,7 @@ echo -e "\e[35m
 ██║██║░╚███║██████╔╝░░░██║░░░██║░░██║███████╗███████╗  ░░░██║░░░██║░░██║██║░░██║██║░╚███║
 ╚═╝╚═╝░░╚══╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚══════╝╚══════╝  ░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝\n\e[0m"
 
-echo -e "\033[1;35m"
-yarn install
+if command -v yarn >/dev/null 2>&1; then
 echo -e "\033[01;33mYarn ya estaba instalado anteriormente.\nYarn was already installed previously.\033[0m"
 else
 if pkg install yarn -y 2>&1 >/dev/null | grep -E -i -q '(command not found|unable to locate package|E: Could not get lock|debconf: delaying package configuration|Package not found|Failed to fetch|404 Not Found|Hash sum mismatch|503 Service Unavailable|504 Gateway Timeout|408 Request Timeout|Connection timed out|Temporary failure resolving)'; then
