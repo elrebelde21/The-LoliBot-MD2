@@ -183,6 +183,7 @@ echo -e "\e[36m
 ╚═╝╚═╝░░╚══╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚══════╝╚══════╝  ╚═╝░░╚══╝╚═╝░░░░░╚═╝░░░░░╚═╝\n\e[0m"
 
 echo -e "\033[1;35m"
+npm install
 if command -v npm >/dev/null 2>&1; then
 echo -e "\033[01;33mNPM ya estaba instalado anteriormente.\nNPM was already installed previously.\033[0m"
 else
@@ -207,6 +208,7 @@ echo -e "\e[35m
 ╚═╝╚═╝░░╚══╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚══════╝╚══════╝  ░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝\n\e[0m"
 
 echo -e "\033[1;35m"
+yarn install
 if command -v yarn >/dev/null 2>&1; then
 echo -e "\033[01;33mYarn ya estaba instalado anteriormente.\nYarn was already installed previously.\033[0m"
 else
