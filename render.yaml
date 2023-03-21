@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: themystic-bot-md
+    name: the-lolibot-md
     env: docker
     region: Frankfurt
     plan: free
