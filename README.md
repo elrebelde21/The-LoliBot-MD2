@@ -162,6 +162,10 @@ pm2 start index
 [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/elrebelde21/The-LoliBot-MD&branch=master&name=the-lolibot-md)
 
 ------------------
+### `—◉ 🔰 ACTIVAR EN RENDER 🔰`
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2Felrebelde21%2FThe-LoliBot-MD) 
+------------------
 ### `—◉ 📝 𝐍𝐎𝐓𝐀 📝`
 ```bash
 🔸𝐄𝐒𝐓𝐄 𝐑𝐄𝐏𝐎𝐒𝐈𝐓𝐎𝐑𝐈𝐎 𝐏𝐮𝐁𝐋𝐈𝐂𝐀 𝐋𝐀 𝐕𝐄𝐑𝐒𝐈𝐎́𝐍 𝐀𝐂𝐓𝐔𝐀𝐋|𝐎𝐅𝐈𝐂𝐈𝐀𝐋 𝐃𝐄 𝐓𝐡𝐄 𝐋𝐎𝐋𝐈𝐁𝐎𝐓-𝐌𝐃
@@ -177,7 +181,6 @@ pm2 start index
 <a href="https://github.com/elrebelde21"><img src="https://github.com/elrebelde21.png" width="300" height="300" alt="elrebelde21"/></a>
 
 ----
-
 ### 𝘾𝙤𝙡𝙖𝙗𝙤𝙧𝙖𝙙𝙤𝙧𝙚𝙨
 [![GataNina-Li](https://github.com/GataNina-Li.png?size=100)](https://github.com/GataNina-Li) 
 [![Yesenia57](https://github.com/Yesenia57.png?size=100)](https://github.com/Yesenia57) 
