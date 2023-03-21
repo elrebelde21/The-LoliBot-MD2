@@ -110,7 +110,6 @@ Después el termux poner:
 > npm start
 ```
 ----
-----
 ### 🚀 USAR LOLIBOT 24/7 EN TERMUX 
 > EJECUTE ESTE COMANDO CUANDO YA TENGA INSTALADO EL BOT
 ```bash
