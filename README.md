@@ -110,6 +110,30 @@ Después el termux poner:
 > npm start
 ```
 ----
+----
+### 🚀 USAR LOLIBOT 24/7 EN TERMUX 
+> EJECUTE ESTE COMANDO CUANDO YA TENGA INSTALADO EL BOT
+```bash
+termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs 
+``` 
+#### ⬇️ Opciones Disponibles
+> **Warning** Esto eliminará todo el historial que hayas establecido con PM2:
+```bash 
+pm2 delete index
+``` 
+> Si tienes cerrado Termux y quiere ver de nuevo la ejecución use:
+```bash 
+pm2 logs 
+``` 
+> Si desea detener la ejecución de Termux use:
+```bash 
+pm2 stop index
+``` 
+> Si desea iniciar de nuevo la ejecución de Termux use:
+```bash 
+pm2 start index
+``` 
+----
 ### 🟣 𝐀𝐂𝐓𝐈𝐕𝐀 𝐄𝐋 𝐇𝐄𝐑𝐎𝐊𝐔
 #### ☂️ 𝐏𝐀𝐑𝐀 𝐔𝐒𝐀𝐑𝐈𝐎𝐒 𝐃𝐄 𝐇𝐄𝐑𝐎𝐊𝐔
 
