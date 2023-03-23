@@ -419,15 +419,23 @@ default:
 if (!/[01]/.test(command)) return conn.sendMessage(m.chat, listMessage, {quoted: fkontak})	
 throw false
 }
-	
-conn.sendButton(m.chat, `╭┄〔 *${wm}* 〕┄⊱
+
+m.reply(`╭┄〔 *${wm}* 〕┄⊱
+┆🗂️ ᴏᴘᴄɪᴏɴ: ${type} 
+┆——————«•»——————
+┆🎚️ ᴇsᴛᴀᴅᴏ: ${isEnable ? 'ᴀᴄᴛɪᴠᴀᴅᴏ' : 'ᴅᴇsᴀᴄᴛɪᴠᴀᴅᴏ'}
+┆——————«•»——————
+┆📣 ᴘᴀʀᴀ: ${isAll ? 'ᴇsᴛᴇ ʙᴏᴛ' : isUser ? '' : 'ᴇsᴛᴇ ᴄʜᴀᴛ'} 
+╰━━━⊰ 𓃠 ${vs} ⊱━━━━დ`)
+
+/*conn.sendButton(m.chat, `╭┄〔 *${wm}* 〕┄⊱
 ┆🗂️ ᴏᴘᴄɪᴏɴ: ${type} 
 ┆——————«•»——————
 ┆🎚️ ᴇsᴛᴀᴅᴏ: ${isEnable ? 'ᴀᴄᴛɪᴠᴀᴅᴏ' : 'ᴅᴇsᴀᴄᴛɪᴠᴀᴅᴏ'}
 ┆——————«•»——————
 ┆📣 ᴘᴀʀᴀ: ${isAll ? 'ᴇsᴛᴇ ʙᴏᴛ' : isUser ? '' : 'ᴇsᴛᴇ ᴄʜᴀᴛ'} 
 ╰━━━⊰ 𓃠 ${vs} ⊱━━━━დ`, wm, null, [[`${isEnable ? '✖️ ᴅᴇsᴀᴄᴛɪᴠᴀʀ ✖️' : '✔️ ᴀᴄᴛɪᴠᴀʀ ✔️'}`, `${isEnable ? `#disable ${type}` : `#enable ${type}`}`]], m)
-
+*/
 } catch (e) {
 await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)
 console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
