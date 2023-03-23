@@ -10,8 +10,17 @@ let _muptime
 if (process.send) { process.send('uptime')
 _muptime = await new Promise(resolve => { process.once('message', resolve) 
 setTimeout(resolve, 1000) }) * 1000}
+let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 let uptime = clockString(_uptime)
-let estado = `*💖 Hola  ${name} ✨*`
+await conn.reply(m.chat, `┌───⊷ *ミ🤖 Estado del Bot 🤖彡*
+┆ *=> Bot activo ✅*
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆ *=> Bot uso público ✅️*
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆=> 𝘼𝙘𝙩𝙞𝙫𝙤 𝙙𝙪𝙧𝙖𝙣𝙩𝙚
+┆=> ${uptime} ✅
+╰──────────────────`, fkontak,  m)
+/*let estado = `*💖 Hola  ${name} ✨*`
 conn.sendButton(m.chat, estado, `┌───⊷ *ミ🤖 Estado del Bot 🤖彡*
 ┆ *=> Bot activo ✅*
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -22,7 +31,7 @@ conn.sendButton(m.chat, estado, `┌───⊷ *ミ🤖 Estado del Bot 🤖彡
 ╰──────────────────`, [
 ['🔷️ MENÚ 🔷', '.menu'], ['♨️ MENÚ AUDIOS ♨️', '.audios']], m)
 
-/*conn.sendHydrated(m.chat, estado, wm, picture, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+conn.sendHydrated(m.chat, estado, wm, picture, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪', '#menu']
 ], m)}*/
 }
