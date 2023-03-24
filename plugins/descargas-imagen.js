@@ -7,9 +7,10 @@ const res = await googleImage(text)
 let image = res.getRandom()
 let link = image
 await delay(5000)
-conn.sendHydrated(m.chat, `✨ 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤: ${text}`, `${wm}`, link, link, '☘️ 𝙐𝙍𝙇', null, null, [
+conn.sendFile(m.chat, link, 'error.jpg', `*✨ 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤: ${text}*`, m)
+/*conn.sendHydrated(m.chat, `✨ 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤: ${text}`, `${wm}`, link, link, '☘️ 𝙐𝙍𝙇', null, null, [
 ['🔄 𝙎𝙞𝙜𝙪𝙞𝙚𝙣𝙩𝙚', `/imagen ${text}`],
-], m)
+], m)*/
 }
 handler.help = ['gimage <query>', 'imagen <query>']
 handler.tags = ['internet', 'tools']

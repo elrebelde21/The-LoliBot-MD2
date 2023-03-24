@@ -12,6 +12,8 @@ pp = await conn.getProfilePicture(who)         //pp = await conn.getProfilePictu
 
 } finally {
 let { name, limit, lastclaim, registered, regTime, age } = global.db.data.users[who]
+let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+let mentionedJid = [who]
 let username = conn.getName(who)
 let prem = global.prems.includes(who.split`@`[0])
 let sn = createHash('md5').update(who).digest('hex')
@@ -30,9 +32,10 @@ let str =
 ┃ *❇️𝙋𝙧𝙚𝙢𝙞𝙪𝙢 :* ${user.premiumTime > 0 ? '✅' : '❌ _#pase premium_'}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ *🔰 Mi estado:* ${typeof user.miestado !== 'string' ? '_#miestado || Estado no asignado_' : '_Me siento ' + user.miestado + '_'}
-┗━━━━━━━━━━━━━━`
-conn.sendButton(m.chat, str, wm, await(await fetch(pp)).buffer(), [['𝑽𝒆𝒓𝒊𝒇𝒊𝒄𝒂𝒓', '/verificar ✅'], ['𝑸𝒖𝒆 𝒆𝒎𝒑𝒊𝒆𝒛𝒆 𝒍𝒂 𝒂𝒗𝒆𝒏𝒕𝒖𝒓𝒂!! 😎', '/menu']], m)
-}}
+┗━━━━━━━━━━━━━━`.trim()
+    conn.sendFile(m.chat, pp, 'pp.jpg', str, m, false, { contextInfo: { mentionedJid }})
+  }
+}
 handler.help = ['profile [@user]']
 handler.tags = ['xp']
 handler.command = /^perfil|profile?$/i
