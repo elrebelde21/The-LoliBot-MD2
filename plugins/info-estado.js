@@ -29,11 +29,7 @@ conn.sendButton(m.chat, estado, `┌───⊷ *ミ🤖 Estado del Bot 🤖彡
 ┆=> 𝘼𝙘𝙩𝙞𝙫𝙤 𝙙𝙪𝙧𝙖𝙣𝙩𝙚
 ┆=> ${uptime} ✅
 ╰──────────────────`, [
-['🔷️ MENÚ 🔷', '.menu'], ['♨️ MENÚ AUDIOS ♨️', '.audios']], m)
-
-conn.sendHydrated(m.chat, estado, wm, picture, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
-['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪', '#menu']
-], m)}*/
+['🔷️ MENÚ 🔷', '.menu'], ['♨️ MENÚ AUDIOS ♨️', '.audios']], m)*/
 }
 handler.help = ['estado']
 handler.tags = ['main']
