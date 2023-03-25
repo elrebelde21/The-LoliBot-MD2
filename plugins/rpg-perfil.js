@@ -12,7 +12,7 @@ pp = await conn.getProfilePicture(who)         //pp = await conn.getProfilePictu
 
 } finally {
 let { name, limit, lastclaim, registered, regTime, age } = global.db.data.users[who]
-let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+//let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 let username = conn.getName(who)
 let prem = global.prems.includes(who.split`@`[0])
