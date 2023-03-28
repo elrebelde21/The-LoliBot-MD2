@@ -14,7 +14,7 @@ conn.sendFile(m.chat, thumbnail, 'thumbnail.jpg', `
 *⇄ㅤ     ◁   ㅤ  ❚❚ㅤ     ▷ㅤ     ↻*
 
 *📆 Publicado:* ${published}
-*👉🏻Aguarde un momento en lo que envío su audio/video*
+*👉🏻Aguarde un momento en lo que envío su audio*
 `.trim(), m)
 conn.sendMessage(m.chat, { audio: { url: aud }, mimetype: 'audio/mp4', fileName: `${title}.mp3`}, {quoted: m})
 }
@@ -27,7 +27,7 @@ conn.sendFile(m.chat, thumbnail, 'thumbnail.jpg', `
 *⇄ㅤ     ◁   ㅤ  ❚❚ㅤ     ▷ㅤ     ↻*
 
 *📆 Publicado:* ${published}
-*👉🏻Aguarde un momento en lo que envío su audio/video*
+*👉🏻Aguarde un momento en lo que envío su video*
 `.trim(), m)
 conn.sendMessage(m.chat, { video: { url: vid }, fileName: '${title}.mp4', mimetype: 'video/mp4', caption: `🔰 𝘼𝙦𝙪𝙞 𝙚𝙨𝙩𝙖 𝙩𝙪 𝙫𝙞𝙙𝙚𝙤 \n🔥 𝙏𝙞𝙩𝙪𝙡𝙤: ${title}`}, {quoted: m})
 }
