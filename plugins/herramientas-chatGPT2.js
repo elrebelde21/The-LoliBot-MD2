@@ -3,8 +3,7 @@
 /*                                                       */ 
 /*       |- [ ⚠ ] - CREDITOS DEL CODIGO - [ ⚠ ] -|      */
 /*     —◉ DESAROLLADO POR OTOSAKA:                       */
-/*     ◉ Otosaka (https://github.com/6otosaka9)          */
-/*     ◉ Número: wa.me/51993966345                       */
+/*     ◉ Otosaka (https://github.com/6otosaka9)          */                    */
 /*                                                       */
 /*     —◉ FT:                                            */
 /*     ◉ BrunoSobrino (https://github.com/BrunoSobrino)  */
