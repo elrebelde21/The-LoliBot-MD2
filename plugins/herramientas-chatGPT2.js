@@ -3,7 +3,7 @@
 /*                                                       */ 
 /*       |- [ ⚠ ] - CREDITOS DEL CODIGO - [ ⚠ ] -|      */
 /*     —◉ DESAROLLADO POR OTOSAKA:                       */
-/*     ◉ Otosaka (https://github.com/6otosaka9)          */                    */
+/*     ◉ Otosaka (https://github.com/6otosaka9)          */
 /*                                                       */
 /*     —◉ FT:                                            */
 /*     ◉ BrunoSobrino (https://github.com/BrunoSobrino)  */
@@ -16,7 +16,7 @@ import { Configuration, OpenAIApi } from 'openai'
 const configuration = new Configuration({ organization: global.openai_org_id, apiKey: global.openai_key });
 const openaiii = new OpenAIApi(configuration);
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) throw `*[❗] ɪɴɢʀᴇsᴇ ᴜɴᴀ ᴘᴇᴛɪᴄɪᴏɴ ᴏ ᴜɴᴀ ᴏʀᴅᴇɴ  ᴘᴀʀᴀ ᴜsᴀʀ ʟᴀ ғᴜɴᴄɪᴏɴ ᴅᴇʟ ᴄʜᴀᴛɢᴘᴛ\n\n❏ ᴇᴊᴇᴍᴘʟᴏ ᴅᴇ ᴘᴇᴛɪᴄɪᴏɴᴇ ʏ ᴏʀᴅᴇɴᴇs\n*• ${usedPrefix + command} Reflexion sobre la serie Merlina 2022 de netflix*\n*• ${usedPrefix + command} Codigo en JS para un juego de cartas*`    
+if (!text) throw `*[❗] ɪɴɢʀᴇsᴇ ᴜɴᴀ ᴘᴇᴛɪᴄɪᴏɴ ᴏ ᴜɴᴀ ᴏʀᴅᴇɴ  ᴘᴀʀᴀ ᴜsᴀʀ ʟᴀ ғᴜɴᴄɪᴏɴ ᴅᴇʟ ᴄʜᴀᴛɢᴘᴛ\n\n❏ ᴇᴊᴇᴍᴘʟᴏ ᴅᴇ ᴘᴇᴛɪᴄɪᴏɴᴇ ʏ ᴏʀᴅᴇɴᴇs*\n* ${usedPrefix + command} Reflexion sobre la serie Merlina 2022 de netflix*\n*${usedPrefix + command} Codigo en JS para un juego de cartas*`    
 try {
 await conn.sendPresenceUpdate('composing', m.chat)
 let chgptdb = global.chatgpt.data.users[m.sender];
@@ -47,7 +47,7 @@ console.log(efe3)
 try {
 let tioress22 = await fetch(`https://api.lolhuman.xyz/api/openai?apikey=${lolkeysapi}&text=${text}&user=${m.sender}`)
 let hasill22 = await tioress22.json()
-m.reply(`${hasill22.result}`.trim())         
+m.reply(`${hasill22.result}`.trim())      
 } catch (efe4) {   
 console.log(efe4)
 throw `*[❗] ᴇʀʀᴏʀ, ᴠᴜᴇʟᴠᴀ ᴀʟ ɪɴᴛᴇɴᴛᴀʀʟᴏ*`   
