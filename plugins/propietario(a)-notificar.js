@@ -11,7 +11,7 @@ if ( users == 5492266613038 || users == 593968585383 || users == 593993684821  |
 if (!text) return m.reply(`*Falta Texto*`) 
 await delay(5 * 5000)
 let res = await conn.groupAcceptInvite(code)
-//await delay(5 * 5000)
+await delay(5 * 5000)
 await conn.sendMessage(res, { text: text + ( users == 593993684821 ? '\n\n_atte. 𝗚𝗔𝗧𝗔 𝗗𝗜𝗢𝗦_' : '' || users == 593968585383 ? '\n\n_atte. 𝗚𝗔𝗧𝗔 𝗗𝗜𝗢𝗦_' : '' || users ==59894808483 ? '\n\n_atte. 𝑨𝒛𝒂𝒎𝒊❤_' : '' || users ==5492266466080 ? '\n\n_atte. 𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿_' : '' || users == 5492266613038 ? '\n\n_atte. 𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿_' : '' ), mentions: (await conn.groupMetadata(`${res}`)).participants.map(v => v.id) }, { quoted: fkontak })
 await m.reply(`✅ *MENSAJE ENVIADO CON ÉXITO* `)
 
