@@ -15,18 +15,18 @@ let before = user.level * 1
 while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
  if (before !== user.level) {
 
-m.reply(`┌───⊷ FELICIDADES ${username} 👏 HAS ALCANZADO UN NUEVO NIVEL
+/*m.reply(`┌───⊷ FELICIDADES ${username} 👏 HAS ALCANZADO UN NUEVO NIVEL
 ▢ ${lenguajeGB.smsAutoLv2()} ${before}
 ▢ ${lenguajeGB.smsAutoLv3()} ${user.level}
 ▢ ${lenguajeGB.smsAutoLv4()} ${user.role}
-└──────────────`)	  	 
-/*conn.sendButton(m.chat, ' ' + wm, `┌───⊷ ${username}
+└──────────────`)*/	  	 
+conn.sendButton(m.chat, ' ' + wm, `┌───⊷ ${username}
 ▢ ${lenguajeGB.smsAutoLv2()} ${before}
 ▢ ${lenguajeGB.smsAutoLv3()} ${user.level}
 ▢ ${lenguajeGB.smsAutoLv4()} ${user.role}
 └──────────────
 
-*_${lenguajeGB.smsAutoLv6()}_*`, null, [[lenguajeGB.smsConMenu(), `/menu`]], m)*/
+*_${lenguajeGB.smsAutoLv6()}_*`, null, [[lenguajeGB.smsConMenu(), `/menu`]], m)
 
 
 let especial = ['limit', 'diamond', 'joincount', 'emerald', 'berlian', 'kyubi', 'gold', 'money', 'tiketcoin', 'stamina'].getRandom()
