@@ -121,7 +121,7 @@ ${role}
 *𝙽𝚘𝚟𝚊𝚝𝚘(A) II* 🪤
 *𝙽𝚘𝚟𝚊𝚝𝚘(A) III* 🪤
 ╰━━━━━━━━━━━━━━━━━━━⬣`.trim()
-conn.sendHydrated(m.chat, menu, `𝚁𝙰𝙽𝙶𝙾 | ${wm}`, pp, 'https://github.com/Subbotsito/The-LoliBot-MD', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
+conn.sendButton(m.chat, menu, `𝚁𝙰𝙽𝙶𝙾 | ${wm}`, pp, 'https://github.com/Subbotsito/The-LoliBot-MD', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
 ['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 💫', '.allmenu'],
 ['𝙏𝙤𝙥𝙨 🏆', `${usedPrefix}top`],
 ['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 ⚡', '#menu']
