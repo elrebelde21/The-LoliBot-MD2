@@ -14,5 +14,5 @@ let caption = `
 `.trim()
 m.reply(caption, null, {mentions: conn.parseMention(caption)})}
 handler.command = /^chat(s)?baneado(s)?|list(a)?chat(s)?|list(a)?ban(chat(s)?)?$/i
-handler.rowner = true
+//handler.rowner = true
 export default handler
