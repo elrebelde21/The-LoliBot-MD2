@@ -124,7 +124,7 @@ return false })}
 
 function purgeSession() {
 let prekey = []
-let directorio = readdirSync("./GataBotSession")
+let directorio = readdirSync("./BotSession")
 let filesFolderPreKeys = directorio.filter(file => {
 return file.startsWith('pre-key-') || file.startsWith('session-') || file.startsWith('sender-') || file.startsWith('app-')
 })
