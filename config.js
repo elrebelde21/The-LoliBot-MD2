@@ -1,4 +1,4 @@
-import { watchFile, unwatchFile } from 'fs'
+import { watchFile, unwatchFile } from 'fs' 
 import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 import fs from 'fs'
@@ -8,7 +8,9 @@ import axios from 'axios'
 import moment from 'moment-timezone' 
 import { en, es, id, ar, pt } from './lib/idiomas/total-idiomas.js' 
 
-///⊱ ━━━━━.⋅ Añada los numeros a ser Propietario ⋅.━━━━ ⊰  
+
+//⊱ ━━━━━.⋅ Añada los numeros a ser Propietario/a ⋅.━━━━ ⊰  
+
 global.owner = [
   ['5492266466080', '𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿', true],
   ['573183650526', '𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿', true],
@@ -21,6 +23,7 @@ global.owner = [
   ['972529277518'],
   ['5214531106422']
 ]
+
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
 global.mods = ['50495745934'] 
@@ -33,7 +36,7 @@ global.prems = ['972529277314'],
 //  en = English         pt = Português 
 //  ar = عرب  
 
-global.lenguajeGB = es  //Idioma de The-LoliBot-MD, Ejemplo: es | en | pt...
+global.lenguajeGB = es  //Idioma de The-LoliBot-MD,Ejemplo: es | en | pt...
 
 //━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
@@ -148,7 +151,7 @@ global.envio = eeg
 global.eg = '╰⊱💚⊱ *𝙀𝙭𝙞𝙩𝙤* ⊱💚⊱╮\n\n'
 global.exito = eg
 
-//𝙀𝙅𝙀𝙈𝙋𝙇𝙊
+//𝙀𝙅𝙀𝙈𝙋𝙇𝙊 | 𝙀𝙓𝘼𝙈𝙋𝙇𝙀
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
 
@@ -254,7 +257,7 @@ global.fgif = {
 
 global.multiplier = 60 // Cuanto más alto, más difícil subir de nivel
 
-//Emojis RPG
+//Emojis RPG - Referencias
 global.rpg = {
   emoticon(string) {
     string = string.toLowerCase()
@@ -469,6 +472,6 @@ global.rpgshopp = { //Tienda
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => {
   unwatchFile(file)
-  console.log(chalk.redBright("Se actualizo 'config.js'"))
+  console.log(chalk.redBright("Update 'config.js'"))
   import(`${file}?update=${Date.now()}`)
 })

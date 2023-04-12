@@ -1,4 +1,4 @@
-process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0'; 
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';  
 import './config.js';
 import { createRequire } from "module"; 
 import path, { join } from 'path'
@@ -82,13 +82,25 @@ patchMessageBeforeSending: (message) => {
 const requiresPatch = !!( message.buttonsMessage || message.templateMessage || message.listMessage );
 if (requiresPatch) { message = { viewOnceMessage: { message: { messageContextInfo: { deviceListMetadataVersion: 2, deviceListMetadata: {}, }, ...message, },},};}
 return message;},
-getMessage: async (key) => ( opts.store.loadMessage(/** @type {string} */(key.remoteJid), key.id) || opts.store.loadMessage(/** @type {string} */(key.id)) || {} ).message || { conversation: 'Please send messages again' },   
+getMessage: async (key) => {
+if (store) {
+const msg = await store.loadMessage(key.remoteJid, key.id)
+return msg.message || undefined }
+return { conversation: "hello, i'm GataBot-MD" }},   
 msgRetryCounterMap,
 logger: pino({ level: 'silent' }),
 auth: state,
 browser: ['The-LoliBot-MD','Edge','1.0.0'],
 version   
-}
+}       
+       
+//getMessage: async (key) => ( opts.store.loadMessage(/** @type {string} */(key.remoteJid), key.id) || opts.store.loadMessage(/** @type {string} */(key.id)) || {} ).message || { conversation: 'Please send messages again' },   
+/*msgRetryCounterMap,
+logger: pino({ level: 'silent' }),
+auth: state,
+browser: ['The-LoliBot-MD','Edge','107.0.1418.26'],
+version   
+}*/
 
 global.conn = makeWASocket(connectionOptions)
 conn.isInit = false
@@ -96,8 +108,8 @@ conn.isInit = false
 if (!opts['test']) {
 if (global.db) setInterval(async () => {
 if (global.db.data) await global.db.write()
-if (opts['autocleartmp'] && (global.support || {}).find) (tmp = [os.tmpdir(), 'tmp', "jadibts"], tmp.forEach(filename => cp.spawn('find', [filename, '-amin', '3', '-type', 'f', '-delete'])))
-}, 1000 * 60 * 4)}
+if (opts['autocleartmp'] && (global.support || {}).find) (tmp = [os.tmpdir(), 'tmp', "jadibts"], tmp.forEach(filename => cp.spawn('find', [filename, '-amin', '4', '-type', 'f', '-delete'])))
+}, 30 * 1000)}
 
 if (opts['server']) (await import('./server.js')).default(global.conn, PORT)
        
@@ -107,12 +119,12 @@ const filename = []
 tmp.forEach(dirname => readdirSync(dirname).forEach(file => filename.push(join(dirname, file))))
 return filename.map(file => {
 const stats = statSync(file)
-if (stats.isFile() && (Date.now() - stats.mtimeMs >= 1000 * 60 * 4)) return unlinkSync(file) // 3 minutes
+if (stats.isFile() && (Date.now() - stats.mtimeMs >= 1000 * 60 * 4)) return unlinkSync(file) // 4 minutes
 return false })}
 
 function purgeSession() {
 let prekey = []
-let directorio = readdirSync("./BotSession")
+let directorio = readdirSync("./GataBotSession")
 let filesFolderPreKeys = directorio.filter(file => {
 return file.startsWith('pre-key-') || file.startsWith('session-') || file.startsWith('sender-') || file.startsWith('app-')
 })
@@ -139,16 +151,16 @@ unlinkSync(`./jadibts/${directorio}/${fileInDir}`)
 }
 })
 if (SBprekey.length === 0) {
-console.log(chalk.green(lenguajeGB.smspurgeSessionSB1()))
+console.log(chalk.bold.green(lenguajeGB.smspurgeSessionSB1()))
 } else {
-console.log(chalk.cyanBright(lenguajeGB.smspurgeSessionSB2()))
+console.log(chalk.bold.cyanBright(lenguajeGB.smspurgeSessionSB2()))
 }} catch (err){
-console.log(chalk.red(lenguajeGB.smspurgeSessionSB3() + err))
+console.log(chalk.bold.red(lenguajeGB.smspurgeSessionSB3() + err))
 }}
 
 function purgeOldFiles() {
 const directories = ['./BotSession/', './jadibts/']
-const oneHourAgo = Date.now() - (1000 * 60 * 60) //60 min 
+const oneHourAgo = Date.now() - (1000 * 60 * 30) //30 min 
 directories.forEach(dir => {
 readdirSync(dir, (err, files) => {
 if (err) throw err
@@ -159,10 +171,10 @@ if (err) throw err;
 if (stats.isFile() && stats.mtimeMs < oneHourAgo && file !== 'creds.json') { 
 unlinkSync(filePath, err => {  
 if (err) throw err
-console.log(chalk.green(`${lenguajeGB.smspurgeOldFiles1()} ${file} ${lenguajeGB.smspurgeOldFiles2()}`))
+console.log(chalk.bold.green(`${lenguajeGB.smspurgeOldFiles1()} ${file} ${lenguajeGB.smspurgeOldFiles2()}`))
 })
 } else {  
-console.log(chalk.red(`${lenguajeGB.smspurgeOldFiles3()} ${file} ${lenguajeGB.smspurgeOldFiles4()}` + err))
+console.log(chalk.bold.red(`${lenguajeGB.smspurgeOldFiles3()} ${file} ${lenguajeGB.smspurgeOldFiles4()}` + err))
 } }) }) }) })
 }
 
@@ -177,11 +189,11 @@ global.timestamp.connect = new Date
 }
 if (global.db.data == null) loadDatabase()
 if (update.qr != 0 && update.qr != undefined) {
-console.log(chalk.yellow(lenguajeGB['smsCodigoQR']()))}  
+console.log(chalk.bold.yellow(lenguajeGB['smsCodigoQR']()))}  
 if (connection == 'open') {
-console.log(chalk.yellow(lenguajeGB['smsConexion']()))}
+console.log(chalk.bold.yellow(lenguajeGB['smsConexion']()))}
 if (connection == 'close') {
-console.log(chalk.yellow(lenguajeGB['smsConexionOFF']()))}}
+console.log(chalk.bold.yellow(lenguajeGB['smsConexionOFF']()))}}
 
 process.on('uncaughtException', console.error)
 
@@ -315,18 +327,18 @@ Object.freeze(global.support)
 setInterval(async () => {
 if (stopped == 'close') return
 var a = await clearTmp()        
-console.log(chalk.cyanBright(lenguajeGB.smsClearTmp()))}, 1000 * 60 * 4) 
+console.log(chalk.bold.cyanBright(lenguajeGB.smsClearTmp()))}, 1000 * 60 * 4) 
 
 setInterval(async () => {
 await purgeSession()
-console.log(chalk.cyanBright(lenguajeGB.smspurgeSession()))}, 1000 * 60 * 60)
+console.log(chalk.bold.cyanBright(lenguajeGB.smspurgeSession()))}, 1000 * 60 * 30)
 
 setInterval(async () => {
-await purgeSessionSB()}, 1000 * 60 * 60)
+await purgeSessionSB()}, 1000 * 60 * 30)
 
 setInterval(async () => {
 await purgeOldFiles()
-console.log(chalk.cyanBright(lenguajeGB.smspurgeOldFiles()))}, 1000 * 60 * 60)
+console.log(chalk.bold.cyanBright(lenguajeGB.smspurgeOldFiles()))}, 1000 * 60 * 30)
 _quickTest()
-.then(() => conn.logger.info(lenguajeGB['smsCargando']()))
+.then(() => conn.logger.info(chalk.bold(lenguajeGB['smsCargando']())))
 .catch(console.error)

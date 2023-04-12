@@ -1,3 +1,4 @@
+console.log('Iniciando 🚀🚀🚀')
 import { join, dirname } from 'path'
 import { createRequire } from "module";
 import { fileURLToPath } from 'url'
@@ -17,7 +18,7 @@ say('The Loli\nBot\nMD', {
 font: 'chrome',
 align: 'center',
 gradient: ['red', 'magenta']})
-say(`Por lolibot`, {
+say(`Por Lolibot`, {
 font: 'console',
 align: 'center',
 gradient: ['red', 'magenta']})

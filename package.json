@@ -25,10 +25,10 @@
 
     
 "bugs": {
-"url": "https://github.com/elrebelde21/The-LoliBot-MD/issues" },
+"url": "https://github.com/elrebelde21/The-LoliBot-MD" },
 "license": "GPL-3.0-or-later",
 "dependencies": {
-  "@adiwajshing/baileys": "^5.0.0",
+  "@adiwajshing/baileys": "npm:@ferdiz-afk/baileys",
   "@bochilteam/scraper": "^3.0.0",
   "@vitalets/google-translate-api": "^8.0.0",
   "@shineiichijo/marika": "^2.0.6",
