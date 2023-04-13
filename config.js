@@ -104,25 +104,13 @@ global.ig = 'https://www.tiktok.com/@thelolibot_md'
 global.md = 'https://github.com/elrebelde21/The-LoliBot-MD'
 global.fb = 'https://www.facebook.com/groups/872989990425789/'
 
-global.nna = 'https://chat.whatsapp.com/JESaesjOEcB6wnGX0QYT9o'
-global.nnagrupo = nna //Actualización, información sobre el bot
-global.nna2 = 'JESaesjOEcB6wnGX0QYT9o'
-
-global.nn = 'https://chat.whatsapp.com/LnUHHTH1BDxDz7xntb9k4w'
-global.nngrupo = nn //Grupo 1
-
-global.nnn = 'https://chat.whatsapp.com/GUlSx2eoanhBPssKzuA48c'
-global.nnngrupo = nnn //Grupo 2
-
+global.nna = 'https://chat.whatsapp.com/JESaesjOEcB6wnGX0QYT9o' //Actualización, información sobre el bot
+global.nn = 'https://chat.whatsapp.com/LnUHHTH1BDxDz7xntb9k4w' //Grupo 1
+global.nnn = 'https://chat.whatsapp.com/GUlSx2eoanhBPssKzuA48c' //Grupo 2
 global.nnnt = 'https://chat.whatsapp.com/CcJKHrxGBWAAH3PiBL07JS' //Grupo del Colaboracion
-
 global.nnntt = 'https://chat.whatsapp.com/ErnXC51D9lWJtRWOD4stR2' //Grupo COL 2 
-
 global.nnnttt = 'https://chat.whatsapp.com/DjZMclVofPaHhw9E2ptunM' //enlace lolibot
-
-global.nnntttt = 'https://chat.whatsapp.com/FRkr7jJHSJA5OjVtE64dDs'
-global.nnnttttgrupo = nnntttt //Grupo ayuda sobre el bot
-
+global.nnntttt = 'https://chat.whatsapp.com/FRkr7jJHSJA5OjVtE64dDs' //Grupo ayuda sobre el bot
 global.asistencia = 'Wa.me/5492266466080' //Dudas? escríbeme...
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
@@ -132,26 +120,20 @@ global.asistencia = 'Wa.me/5492266466080' //Dudas? escríbeme...
 
 global.rg = '╰⊱✅⊱ *𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤𝙨* ⊱✅⊱╮\n\n'
 global.resultado = rg
-
 global.ag = '╰⊱⚠️⊱ *𝘼𝙙𝙫𝙚𝙧𝙩𝙚𝙣𝙘𝙞𝙖* ⊱⚠️⊱╮\n\n'
 global.advertencia = ag
-
 global.iig = '╰⊱❕⊱ *𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙘𝙞𝙤𝙣* ⊱⊱╮\n\n'
 global.informacion = iig
-
 global.fg = '╰⊱❌⊱ *𝙀𝙧𝙧𝙤𝙧* ⊱❌⊱╮\n\n'
 global.fallo = fg
-
 global.mg = '╰⊱❗️⊱ *𝙇𝙤 𝙪𝙨𝙤 𝙢𝙖𝙡* ⊱❗️⊱╮\n\n'
 global.mal = mg
-
 global.eeg = '╰⊱📩⊱ *𝙍𝙚𝙥𝙤𝙧𝙩𝙚* ⊱📩⊱╮\n\n'
 global.envio = eeg
-
 global.eg = '╰⊱💚⊱ *𝙀𝙭𝙞𝙩𝙤* ⊱💚⊱╮\n\n'
 global.exito = eg
 
-//𝙀𝙅𝙀𝙈𝙋𝙇𝙊 | 𝙀𝙓𝘼𝙈𝙋𝙇𝙀
+//𝙀𝙅𝙀𝙈𝙋𝙇𝙊
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
 
@@ -201,7 +183,7 @@ global.img16 = 'https://i.imgur.com/11MRjo4.jpeg' //+18
 
 global.img17 = 'https://i.imgur.com/JpYfcH0.jpeg'
 
-global.redesMenu = [nna, nna2, nn, nnn, nnnt, nnntt, nnnttt, nnntttt, md, ig, lb, fb, yt]
+global.redesMenu = [nna, nn, nnn, nnnt, nnntt, nnnttt, nnntttt, md, ig, lb, fb, yt]
 global.gataMenu = [img, img2, img6, img7, img8, img9, img13, img14, img15, img16]
 global.gataVidMenu = ['./media/menus/Menuvid1.mp4', './media/menus/Menuvid2.mp4', './media/menus/Menuvid3.mp4']
 global.gataImg = [imagen1, imagen2, imagen3]
