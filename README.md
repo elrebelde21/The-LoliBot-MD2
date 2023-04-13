@@ -130,6 +130,14 @@ pm2 stop index
 pm2 start index
 ``` 
 ----
+### 😼 ACTUALIZAR LOLIBOT
+> **Note** Comandos para actualizar LoliBot-MD de forma automática
+```bash
+grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https://raw.githubusercontent.com/elrebelde21/The-LoliBot-MD/master/update.sh | bash 
+```
+#### Para que no pierda su progreso en LoliBot-MD, estos comandos realizarán un respaldo de su `database.json` y se agregará a la versión más reciente.
+> **Warning** Estos comandos solo funcionan para TERMUX, REPLIT, LINUX                           
+----
 ### 🟣 𝐀𝐂𝐓𝐈𝐕𝐀 𝐄𝐋 𝐇𝐄𝐑𝐎𝐊𝐔
 #### ☂️ 𝐏𝐀𝐑𝐀 𝐔𝐒𝐀𝐑𝐈𝐎𝐒 𝐃𝐄 𝐇𝐄𝐑𝐎𝐊𝐔
 
