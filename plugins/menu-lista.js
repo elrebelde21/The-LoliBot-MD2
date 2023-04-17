@@ -1,4 +1,4 @@
-import fs from 'fs'
+/*import fs from 'fs'
 import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 const { levelling } = '../lib/levelling.js'
@@ -136,3 +136,4 @@ function ucapan() {
   }
   return res
 } 
+*/
