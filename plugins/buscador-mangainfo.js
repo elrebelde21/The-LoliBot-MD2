@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 import cheerio from 'cheerio'
 let handler = async (m, { conn, text }) => {
-if (!text) throw `${mg}𝙀𝙎𝘾𝙍𝙄𝘽𝘼 𝙀𝙇 𝙉𝙊𝙈𝘽𝙍𝙀 𝘿𝙀 𝙐𝙉 𝙈𝘼𝙉𝙂𝘼`
+if (!text) throw `${lenguajeGB['smsAvisoMG']()}𝙀𝙎𝘾𝙍𝙄𝘽𝘼 𝙀𝙇 𝙉𝙊𝙈𝘽𝙍𝙀 𝘿𝙀 𝙐𝙉 𝙈𝘼𝙉𝙂𝘼`
 let res = await fetch(global.API('https://api.jikan.moe', '/v3/search/manga', { q: text }))
 if (!res.ok) throw await res.text()
 let json = await res.json()
@@ -37,14 +37,14 @@ let animeingfo =
 𝙀𝙉𝙇𝘼𝘾𝙀
 ❣ ${url}`
 await conn.sendFile(m.chat, image_url, '', animeingfo, m) 
-let info = `💖 *𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙧𝙩𝙚 𝙨𝙤𝙗𝙧𝙚 𝙡𝙖𝙨 𝙣𝙤𝙫𝙚𝙙𝙖𝙙𝙚𝙨 𝙮 𝙧𝙚𝙘𝙪𝙚𝙧𝙙𝙖 𝙩𝙚𝙣𝙚𝙧 𝙡𝙖 𝙪́𝙡𝙩𝙞𝙢𝙖 𝙫𝙚𝙧𝙨𝙞𝙤́𝙣.*
-  `.trim()
+
+/*.trim()
   
-await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [
-['𝙈𝙚𝙣𝙪 𝘽𝙪𝙨𝙦𝙪𝙚𝙙𝙖𝙨 🔎', '#buscarmenu'],
-['𝙈𝙚𝙣𝙪 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙤 ✨', '.allmenu'],
-['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu']
-], m,)  
+conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [
+['𝙈𝙚𝙣𝙪 𝘽𝙪𝙨𝙦𝙪𝙚𝙙𝙖𝙨 | 𝙎𝙚𝙖𝙧𝙘𝙝𝙚𝙨 🔎', '#buscarmenu'],
+['𝙈𝙚𝙣𝙪 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 ✨', '.allmenu'],
+['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']
+], m,)  */
   
 }
 handler.help = ['animeinfo <anime>']
@@ -52,5 +52,4 @@ handler.tags = ['internet']
 handler.command = /^(mangainfo)$/i
 handler.exp = 50
 handler.level = 4 
-handler.money = 20
 export default handler

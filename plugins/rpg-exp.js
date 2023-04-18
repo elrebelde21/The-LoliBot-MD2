@@ -39,7 +39,7 @@ process.once('message', resolve)
 setTimeout(resolve, 1000)
 }) * 1000
 }
-let { money } = global.db.data.users[m.sender]
+let { money, joincount } = global.db.data.users[m.sender]
 //let { limit } = global.db.data.users[m.sender]
 let muptime = clockString(_muptime)
 let uptime = clockString(_uptime)
@@ -68,7 +68,7 @@ let mentionedJid = [who]
 let username = conn.getName(who)
 
 
-let menu = `╭━━〔 *${wm}* 〕━━⬣
+let tex = `╭━━〔 *${wm}* 〕━━⬣
 ┃ ✪ *𝙉𝙤𝙢𝙗𝙧𝙚* 
 ┃ ${username}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -92,20 +92,24 @@ let menu = `╭━━〔 *${wm}* 〕━━⬣
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ ✪ *𝙐𝙨𝙪𝙖𝙧𝙞𝙤*
 ┃ ➥ *${Object.keys(global.db.data.users).length}* 
-╰━━━━━━〔 *𓃠 ${vs}* 〕━━━━━━⬣`.trim()
+╰━━━━━━〔 *𓃠 ${vs}* 〕━━━━━━⬣`
+await conn.sendButton(m.chat, tex, wm, [['𝙀𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖 𝙥𝙤𝙧 𝘿𝙞𝙖𝙢𝙖𝙣𝙩𝙚 ⚡', '.buy'],
+['𝗟𝗼𝗹𝗶𝗰𝗼𝗶𝗻𝘀 𝙥𝙤𝙧 𝘿𝙞𝙖𝙢𝙖𝙣𝙩𝙚 🐈', '/buy2'],
+['𝙏𝙤𝙥𝙨 🏆', '#top']], m)  
+/*.trim()
 conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/elrebelde21/The-LoliBot-MD', '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫', null, null, [
 ['𝙀𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖 𝙥𝙤𝙧 𝘿𝙞𝙖𝙢𝙖𝙣𝙩𝙚 ⚡', '.buy'],
 ['𝗟𝗼𝗹𝗶𝗰𝗼𝗶𝗻𝘀 𝙥𝙤𝙧 𝘿𝙞𝙖𝙢𝙖𝙣𝙩𝙚 🐈', '/buy2'],
 ['𝙏𝙤𝙥𝙨 🏆', '#top']
 ], m,)
+], m,)*/
 
 }
 
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
-handler.command = /^(xp|experiencia|esperiencia|esperiensia|experiensia|exp|level|gatacoins|coinsgata|coins)$/i
+handler.command = /^(xp|experiencia|esperiencia|esperiensia|experiensia|exp|coinsgata|coins)$/i
 handler.exp = 10
-handler.register = true
 export default handler
 
 const more = String.fromCharCode(8206)

@@ -76,7 +76,7 @@ sections }
           conn.reply(m.chat, "The-LoliBot-MD", m, { contextInfo: { mentionedJid: [nowner] }})
            break
             case 'bio':
-          conn.sendHydrated(m.chat, teksbio, wm, ppown, "https://github.com/elrebelde21/The-LoliBot-MD", "𝙂𝙞𝙩𝙝𝙪𝙗",null, [null, null], m)
+          conn.sendButton(m.chat, teksbio, insta, ppown, [`⋮☰ Menu`, `.menu`], m)
             break
           default:
             return await conn.sendMessage(m.chat, listMessage, { quoted: m, contextInfo: { mentionedJid: [m.sender] }})

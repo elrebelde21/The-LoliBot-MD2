@@ -32,19 +32,8 @@ ${json.result.bio}
 `.trim()
 await conn.sendFile(m.chat, res2, 'error.jpg', gata, m, false)
 } catch (e) {
-throw `𝙐𝙛𝙛, 𝙚𝙧𝙧𝙤𝙧, 𝙫𝙪𝙚𝙡𝙫𝙖 𝙖𝙡 𝙞𝙣𝙩𝙚𝙣𝙩𝙖𝙧.`
-}
-/*
-let info = `💖 𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙩𝙚 𝙨𝙤𝙗𝙧𝙚 𝙡𝙖𝙨 𝙉𝙤𝙫𝙚𝙙𝙖𝙙𝙚𝙨 𝙮 𝙧𝙚𝙘𝙪𝙚𝙧𝙙𝙖 𝙩𝙚𝙣𝙚𝙧 𝙡𝙖 𝙪𝙡𝙩𝙞𝙢𝙖 𝙫𝙚𝙧𝙨𝙞𝙤𝙣.
-  `.trim()
-  
-await conn.sendHydrated(m.chat, info, wm, null, ig, '', null, null, [
-['𝙈𝙚𝙣𝙪 𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙨 🌀', '#descargasmenu'],
-['𝙈𝙚𝙣𝙪 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙤 ✨', '.allmenu'],
-['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu']
-], m,)  
-*/
-}
+throw `${lenguajeGB['smsAvisoFG']()}𝙐𝙛𝙛, 𝙚𝙧𝙧𝙤𝙧, 𝙫𝙪𝙚𝙡𝙫𝙖 𝙖𝙡 𝙞𝙣𝙩𝙚𝙣𝙩𝙖𝙧`
+}}
 handler.help = ['tiktokstalk'].map(v => v + ' <username>')
 handler.tags = ['stalk']
 handler.command = /^(tiktokstalk|ttstalk)$/i
