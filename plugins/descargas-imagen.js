@@ -12,6 +12,8 @@ conn.sendFile(m.chat, link, 'error.jpg', `*✨ 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙�
 ['🔄 𝙎𝙞𝙜𝙪𝙞𝙚𝙣𝙩𝙚', `/imagen ${text}`],
 ], m)*/
 }
+} catch (e) {
+}}
 handler.help = ['gimage <query>', 'imagen <query>']
 handler.tags = ['internet', 'tools']
 handler.command = /^(gimage|image|imagen)$/i
