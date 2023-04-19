@@ -13,7 +13,7 @@ conn.sendFile(m.chat, link, 'error.jpg', `*✨ 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙�
 ], m)*/
 }
 } catch (e) {
-}}
+}
 handler.help = ['gimage <query>', 'imagen <query>']
 handler.tags = ['internet', 'tools']
 handler.command = /^(gimage|image|imagen)$/i
