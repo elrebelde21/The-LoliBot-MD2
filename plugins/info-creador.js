@@ -8,6 +8,8 @@ let name = await conn.getName(m.sender)
   let type = (args[0] || '').toLowerCase()
   let _type = (args[0] || '').toLowerCase()
 let totalreg = Object.keys(global.db.data.users).length
+let pp = gataVidMenu.getRandom()
+let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
   let vn = './media/creador.mp3'
 
 //------- Nombre
@@ -75,7 +77,7 @@ sections }
           conn.reply(m.chat, "The-LoliBot-MD", m, { contextInfo: { mentionedJid: [nowner] }})
            break
             case 'bio':
-          conn.sendButton(m.chat, teksbio, ppown, [`⋮☰ Menu`, `.menu`], m)
+          conn.sendButton(m.chat, teksbio, fkontak, pp, [`⋮☰ Menu`, `.menu`], m)
             break
           default:
             return await conn.sendMessage(m.chat, listMessage, { quoted: m, contextInfo: { mentionedJid: [m.sender] }})
