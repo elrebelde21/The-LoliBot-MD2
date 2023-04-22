@@ -47,7 +47,7 @@
 
 -----
 
-### `—◉ 💥 ACTIVAR EN BOXMINEHOST 💥`
+### `💥 ACTIVAR EN BOXMINEHOST 💥`
 
 𝐐𝐮𝐢𝐞𝐫𝐞 𝐭𝐞𝐧𝐞𝐫 𝐮𝐧 𝐛𝐨𝐭 𝟐𝟒/𝟕 𝐚𝐜𝐭𝐢𝐯𝐨
 
