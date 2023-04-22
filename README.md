@@ -17,7 +17,8 @@
 <a href="http://wa.me/5492266466080" target="blank"><img src="https://img.shields.io/badge/creador-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /> 
 
 <a href="http://Wa.me/573183650526" target="blank"><img src="https://img.shields.io/badge/Bot oficial -25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
------
+</a>
+
 ### ❇️ 𝙂𝙍𝙐𝙋𝙊𝙎 𝙊𝙁𝙄𝘾𝙄𝘼𝙇𝙀𝙎
 
 <a href="https://chat.whatsapp.com/LnUHHTH1BDxDz7xntb9k4w" target="blank"><img src="https://img.shields.io/badge/𝙂𝙧𝙪𝙥𝙤 𝙇𝙤𝙡𝙞𝙗𝙤𝙩-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /> 
@@ -32,17 +33,22 @@
 [![blog](https://img.shields.io/badge/Grupo-actulizaciones-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
 )](https://chat.whatsapp.com/JESaesjOEcB6wnGX0QYT9o)  <a href="https://chat.whatsapp.com/JESaesjOEcB6wnGX0QYT9o"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px">
 </a>
+
 -----
 
 [![blog](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)
 ](https://facebook.com/groups/872989990425789/)  
+</a>
 
 -----
 [![blog](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
 ](https://youtube.com/channel/UCPSrzHooOjQMRmUK_2RLcSw)  <img src="https://github.com/siegrin/siegrin/blob/main/Assets/powerup.gif" height="29px">
+</a>
+
 -----
 <p align="hihg">   
 <a href="https://www.tiktok.com/@thelolibot_md" target="_blank"> <img src="https://img.shields.io/badge/-TikTok-%23E4405F?style=for-the-badge&logo=tiktok&logoColor=black" target="_blank"></a> <img src="https://github.com/siegrin/siegrin/blob/main/Assets/Handshake.gif" height="30px">
+</a>
 
 -----
 
@@ -52,6 +58,7 @@
 
 <p align="hihg">   
 <a href="https://dash.boxmineworld.com" target="_blank"> <img src="https://img.shields.io/badge/-boxmine-%23E4405F?style=for-the-badge&logo=acidicnodes&logoColor=black" target="_blank"></a> <img src="https://github.com/siegrin/siegrin/blob/main/Assets/Handshake.gif" height="30px">
+</a>
 
 -----
 ### 𝐀𝐂𝐓𝐈𝐕𝐀 𝐄𝐋 𝐓𝐄𝐑𝐌𝐔𝐗 - 𝙂𝙄𝙏𝙃𝙐𝘽 <a href="https://github.com/elrebelde21/The-LoliBot-MD"> <img src="https://icones.pro/wp-content/uploads/2021/06/icone-github-violet.png" height="40px"> </a>
