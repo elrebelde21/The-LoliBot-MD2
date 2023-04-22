@@ -181,16 +181,13 @@ grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https:/
 🔸𝐓𝐡𝐞 𝐋𝐨𝐥𝐢𝐁𝐨𝐭-𝐌𝐃, 𝐍𝐎 𝐒𝐄 𝐇𝐀𝐂𝐄 𝐑𝐄𝐒𝐏𝐎𝐍𝐒𝐀𝐁𝐋𝐄 𝐃𝐄𝐋 𝐔𝐒𝐎, 𝐍𝐔𝐌𝐄𝐑𝐎𝐒, 𝐏𝐑𝐈𝐕𝐀𝐂𝐈𝐃𝐀𝐃 𝐘 𝐂𝐎𝐍𝐓𝐄𝐍𝐈𝐃𝐎 𝐌𝐀𝐍𝐃𝐀𝐃𝐎, 𝐔𝐒𝐀𝐃𝐎 𝐎 𝐆𝐄𝐒𝐓𝐈𝐎𝐍𝐀𝐃𝐎 𝐏𝐎𝐑 𝐔𝐒𝐓𝐄𝐃𝐄𝐒 𝐎 𝐄𝐋 𝐁𝐎𝐓.
 ```
 ----
-## `𝙀𝘿𝙄𝙏𝙊𝙍 𝙔 𝙋𝙍𝙊𝙋𝙄𝙀𝙏𝘼𝙍𝙄𝙊 𝘿𝙀𝙇 𝘽𝙊𝙏` 
+### 🌟 𝙀𝘿𝙄𝙏𝙊𝙍 𝙔 𝙋𝙍𝙊𝙋𝙄𝙀𝙏𝘼𝙍𝙄𝙊 𝘿𝙀𝙇 𝘽𝙊𝙏 
 <a href="https://github.com/elrebelde21"><img src="https://github.com/elrebelde21.png" width="300" height="300" alt="elrebelde21"/></a>
 
-----
-### 𝘾𝙤𝙡𝙖𝙗𝙤𝙧𝙖𝙙𝙤𝙧𝙚𝙨
+### 🌟 𝘾𝙤𝙡𝙖𝙗𝙤𝙧𝙖𝙙𝙤𝙧𝙚𝙨
 [![GataNina-Li](https://github.com/GataNina-Li.png?size=100)](https://github.com/GataNina-Li) 
 [![Yesenia57](https://github.com/Yesenia57.png?size=100)](https://github.com/Yesenia57) 
 [![Azami19](https://github.com/Azami19.png?size=100)](https://github.com/Azami19) 
-----
 
 ### 🌟 𝐀𝐠𝐫𝐚𝐜𝐢𝐦𝐢𝐞𝐧𝐭𝐨
- 
-[![TheShadowBrokers1](https://github.com/BrunoSobrino.png?size=100)](https://github.com/BrunoSobrino) 
+[![TheShadowBrokers1](https://github.com/BrunoSobrino.png?size=60)](https://github.com/BrunoSobrino) 
