@@ -1172,18 +1172,20 @@ function _0x1ce7(){const _0xac1ac2=['212872fjshDh','17320yUXgkp','6019568oxJfgD'
                     let user = global.db.data.users[m.sender]
                     if (!['unbanchat.js', 'link.js', 'pengumuman.js', 'creator.js'].includes(name) && chat && chat.isBanned && !isROwner) return // Except this
             if (!['unbanuser.js', 'inv.js', 'link.js', 'creator.js', 'profile.js'].includes(name) && user && user.banned && !isROwner) {
-                    if (!opts['msgifbanned']) m.reply(`*⚠️ ESTAS BANEADO ⚠️* ${user.bannedReason ? `\n*Motivo:* *${user.bannedReason}*` : ''}
+                    if (!opts['msgifbanned']) m.reply(`❰ ⚠️ ❱ *ESTAS BANEADO/A* ❰ ⚠️ ❱ ${user.bannedReason ? `\n*Motivo:* *${user.bannedReason}*` : ''}
 
-*👉🏻 Puedes contactar al propietario del Bot si crees que se trata de un error o para charlar sobre tu desbaneo*
+*👉 Puedes contactar a la propietaria del Bot si crees que se trata de un error (TENER PRUEBAS) para tratar el motivo de tú desbaneo*
 
+👉 ${global.asistencia}
 👉 wa.me/5492266466080
-👉 Wa.me/573183650526
+👉 Wa.me/5214531173598
+👉 ${global.ig}
 `.trim())
                         return
                 }
                 }
 
-               let hl = _prefix 
+                let hl = _prefix 
                 let adminMode = global.db.data.chats[m.chat].modoadmin
                 let gata = `${plugins.botAdmin || plugins.admin || plugins.group || plugins || noPrefix || hl ||  m.text.slice(0, 1) == hl || plugins.command}`
                 if (adminMode && !isOwner && !isROwner && m.isGroup && !isAdmin && gata) return   
@@ -1364,7 +1366,7 @@ function _0x1ce7(){const _0xac1ac2=['212872fjshDh','17320yUXgkp','6019568oxJfgD'
 	if (settingsREAD.autoread2) await this.readMessages([m.key])  
 	if (settingsREAD.autoread2 == 'true') await this.readMessages([m.key])    
 	    
-         if (!db.data.chats[m.chat].reaction && m.isGroup) throw 0
+        if (!db.data.chats[m.chat].reaction && m.isGroup) throw 0
         if (!m.fromMem && m.text.match(/(el rebelde|@5219996125657|@5492266466080|admin del bot|Bot|LoliBot|lolibot|The LoliBot-md|lolibot-md|The LoliBot-MD|has|ato|ido|ura|des|able|sub|izo|ita|con|.-.|._.|:)|:(|:v|v:|o.o|;v|v;|v':|:'v)/gi)) {
         let emot = pickRandom(["😺", "😸", "😹", "😻", "😼", "😽", "🙀", "😿", "😾", "🤩", "😏", "😳", "🥵", "🤯", "😱", "😨", "🤫", "🥴", "🤧", "🤑", "🤠", "🤖", "🤝", "💪", "👑", "😚", "🐱", "🐈", "🐆", "🐅", "⚡️", "🌈", "☃️", "⛄️", "🌝", "🌛", "🌜", "🍓", "🍎", "🎈", "🪄", "❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍", "💘", "💝", "💟", "🌝", "😎", "🔥", "🖕", "🐦"])
         this.sendMessage(m.chat, { react: { text: emot, key: m.key }})}
