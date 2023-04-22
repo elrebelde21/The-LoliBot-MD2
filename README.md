@@ -16,8 +16,8 @@
 
 <a href="http://wa.me/5492266466080" target="blank"><img src="https://img.shields.io/badge/Creador-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /> 
 
-<a href="http://wa.me/573183650526?text=.menu" target="blank"><img src="https://img.shields.io/badge/Bot oficial 1️⃣-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="http://wa.me/51942304434?text=.menu" target="blank"><img src="https://img.shields.io/badge/Bot oficial 2️⃣-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="http://wa.me/573183650526?text=.menu" target="blank"><img src="https://img.shields.io/badge/_Bot oficial 1️⃣-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="http://wa.me/51942304434?text=.menu" target="blank"><img src="https://img.shields.io/badge/_Bot oficial 2️⃣-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 </a>
 
 ### ❇️ 𝙂𝙍𝙐𝙋𝙊𝙎 𝙊𝙁𝙄𝘾𝙄𝘼𝙇𝙀𝙎
