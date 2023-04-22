@@ -1397,29 +1397,43 @@ export async function participantsUpdate({ id, participants, action }) {
                         pp = await this.profilePictureUrl(user, 'image')
                     } catch (e) {
                     } finally {
+                    let apii = await this.getFile(pp)
+                    const antiArab = JSON.parse(fs.readFileSync('./src/antiArab.json'))
+                    const userPrefix = antiArab.some(prefix => user.startsWith(prefix))                        
+                    const botTt2 = groupMetadata.participants.find(u => this.decodeJid(u.id) == this.user.jid) || {} 
+                    const isBotAdminNn = botTt2?.admin === "admin" || false
                         text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*ᴜɴ ɢʀᴜᴘᴏ ɢᴇɴɪᴀ😸*\n *sɪɴ ʀᴇɢʟᴀ 😉*') :
-                            (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', await this.getName(user))
-                            let apii = await this.getFile(pp)
-                            this.sendHydrated(id, text, groupMetadata.subject, apii.data, null, null, [], '', { mentions: [user]})
-                           }
-                    } 
+                              (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
+			    
+if (userPrefix && chat.antifake && botTt.restrict && isBotAdminNn && action === 'add') {
+ let responseb = await this.groupParticipantsUpdate(id, [user], 'remove')
+     if (responseb[0].status === "404") return 
+let fkontak2 = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${user.split('@')[0]}:${user.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }      
+this.sendMessage(id, { text: `*[❗] @${user.split('@')[0]} ᴇɴ ᴇsᴛᴇ ɢʀᴜᴘᴏ ɴᴏ sᴇ ᴘᴇʀᴍɪᴛᴇɴ ɴᴜᴍᴇʀᴏs ᴀʀᴀʙᴇs ᴏ ʀᴀʀᴏs, ᴘᴏʀ ʟᴏ ϙᴜᴇ sᴇ ᴛᴇ sᴀᴄᴀʀᴀ ᴅᴇʟ ɢʀᴜᴘᴏ*`, mentions: [user] }, { quoted: fkontak2 });          
+return    
+}    
+			    
+this.sendFile(id, apii.data, 'pp.jpg', text, null, false, { mentions: [user] }) 
+                   }
+                }
             }
 			    
 break
 case 'promote':
-case 'daradmin':
-case 'darpoder':
-text = (chat.sPromote || this.spromote || conn.spromote || '@user ```is now Admin```')
-case 'demote':
-case 'quitarpoder':
-case 'quitaradmin':
-if (!text)
-text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```is no longer Admin```')
-text = text.replace('@user', '@' + participants[0].split('@')[0])
-if (chat.detect)
-this.sendMessage(id, { text, mentions: this.parseMention(text) })
-break
-}}
+        case 'daradmin':
+        case 'darpoder':
+            text = (chat.sPromote || this.spromote || conn.spromote || '@user ```is now Admin```')
+        case 'demote':
+        case 'quitarpoder':
+        case 'quitaradmin':
+            if (!text)
+                text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```is no longer Admin```')
+            text = text.replace('@user', '@' + participants[0].split('@')[0])
+            if (chat.detect)
+                this.sendMessage(id, { text, mentions: this.parseMention(text) })
+            break
+    }
+}
 
 /**
  * Handle groups update
