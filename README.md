@@ -12,10 +12,9 @@
 
 
 
-### 💫 𝗗𝘂𝗱𝗮 𝘀𝗼𝗯𝗿𝗲 𝗲𝗹 𝗯𝗼𝘁? 𝗖𝗼𝗻𝘁𝗮𝗰𝘁𝗮𝗺𝗲 ✨ 
+### 💫 𝗗𝘂𝗱𝗮 𝘀𝗼𝗯𝗿𝗲 𝗲𝗹 𝗯𝗼𝘁? 𝗖𝗼𝗻𝘁𝗮𝗰𝘁𝗮𝗺𝗲 
 
 <a href="http://wa.me/5492266466080" target="blank"><img src="https://img.shields.io/badge/creador-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-
 <a href="http://Wa.me/573183650526" target="blank"><img src="https://img.shields.io/badge/Bot oficial -25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 -----
 ### ❇️ 𝙂𝙍𝙐𝙋𝙊𝙎 𝙊𝙁𝙄𝘾𝙄𝘼𝙇𝙀𝙎
