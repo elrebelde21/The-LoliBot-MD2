@@ -139,7 +139,7 @@ grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https:/
 > **Warning** Estos comandos solo funcionan para TERMUX, REPLIT, LINUX                           
 ----
 ### 🟣 𝐀𝐂𝐓𝐈𝐕𝐀 𝐄𝐋 𝐇𝐄𝐑𝐎𝐊𝐔
-#### ☂️ 𝐏𝐀𝐑𝐀 𝐔𝐒𝐀𝐑𝐈𝐎𝐒 𝐃𝐄 𝐇𝐄𝐑𝐎𝐊𝐔
+☂️ 𝐏𝐀𝐑𝐀 𝐔𝐒𝐀𝐑𝐈𝐎𝐒 𝐃𝐄 𝐇𝐄𝐑𝐎𝐊𝐔
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/elrebelde21/The-LoliBot-MD) <img src="https://c.tenor.com/OIc0cAei3dwAAAAd/gato-baile.gif" height="32px">
 ### Añada lo siguente al Buildpack: <img src="https://cdn-0.emojis.wiki/emoji-pics/microsoft/backhand-index-pointing-down-microsoft.png" height="32px">
@@ -156,22 +156,22 @@ grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https:/
 ### ⚡ ACTIVA EL REPLIT
 [![blog](https://img.shields.io/badge/Lolibot-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
 ](https://youtu.be/SMjCcfuyWQE)
-
+</a>
 [![Deploy](https://img.shields.io/badge/replit_-667881?style=for-the-badge&logo=replit&logoColor=white)](https://replit.com/github/elrebelde21/The-LoliBot-MD)
 <a href="https://replit.com/github/elrebelde21/The-LoliBot-MD"> <img src="https://media0.giphy.com/media/lMwu8EJAnv9kmn51KQ/giphy.gif" height="29px"></a>
 -----
 - [x] Resultado <details><summary>Importar Repositorio - The-LoliBot-MD</summary><img src="https://i.imgur.com/GQyRnMf.jpg"></details>
 ------------------
-### `—◉ 💥 ACTIVAR EN KOYEB 💥`
+### `💥 ACTIVAR EN KOYEB 💥`
 
 [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/elrebelde21/The-LoliBot-MD&branch=master&name=the-lolibot-md)
 
 ------------------
-### `—◉ 🔰 ACTIVAR EN RENDER 🔰`
+### `🔰 ACTIVAR EN RENDER 🔰`
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2Felrebelde21%2FThe-LoliBot-MD) 
 ------------------
-### `—◉ 📝 𝐍𝐎𝐓𝐀 📝`
+### `📝 𝐍𝐎𝐓𝐀 📝`
 ```bash
 🔸𝐄𝐒𝐓𝐄 𝐑𝐄𝐏𝐎𝐒𝐈𝐓𝐎𝐑𝐈𝐎 𝐏𝐮𝐁𝐋𝐈𝐂𝐀 𝐋𝐀 𝐕𝐄𝐑𝐒𝐈𝐎́𝐍 𝐀𝐂𝐓𝐔𝐀𝐋|𝐎𝐅𝐈𝐂𝐈𝐀𝐋 𝐃𝐄 𝐓𝐡𝐄 𝐋𝐎𝐋𝐈𝐁𝐎𝐓-𝐌𝐃
 🔸𝐄𝐒 𝐏𝐎𝐒𝐈𝐁𝐋𝐄 𝐐𝐔𝐄 𝐄𝐋 𝐁𝐎𝐓 𝐓𝐄𝐍𝐆𝐀 𝐀𝐋𝐆𝐔𝐍𝐀𝐒 𝐅𝐀𝐋𝐋𝐀𝐒, 𝐒𝐄 𝐈𝐑𝐀𝐍 𝐒𝐎𝐋𝐔𝐂𝐈𝐎𝐍𝐀𝐍𝐃𝐎 𝐂𝐎𝐍𝐅𝐎𝐑𝐌𝐄 𝐒𝐄 𝐕𝐀𝐘𝐀𝐍 𝐃𝐄𝐓𝐄𝐂𝐓𝐀𝐍𝐃𝐎
