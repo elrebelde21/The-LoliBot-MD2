@@ -1,4 +1,4 @@
-#### 🚀 Versión actual: 1.4.5
+> <b>🚀 VERSIÓN 1.4.9</b>
 
 <p align="center"> 
   <a href="https://github.com/elrebelde21"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=17&duration=4000&color=F7B11B&center=falso&vCenter=falso&lines=The-LoliBot-MD++%F0%9F%90%88;Gracias+por+visitar+este+repositorio.+%F0%9F%92%96" height="90px"
@@ -9,7 +9,8 @@
 </p>
 
 <a href="#"><img title="The-LoliBot-MD" src="https://img.shields.io/badge/COMPATIBLE CON LA VERSIÓN MULTI DISPOSITIVOS DE WHATSAPP-red?colorA=%F77F48FF&colorB=%F77F48FF&style=for-the-badge">
-
+</a>
+</a>
 
 ### 💫 𝗗𝘂𝗱𝗮 𝘀𝗼𝗯𝗿𝗲 𝗲𝗹 𝗯𝗼𝘁? 
 𝗖𝗼𝗻𝘁𝗮𝗰𝘁𝗮𝗺𝗲 ✨
@@ -19,8 +20,7 @@
 <a href="http://Wa.me/573183650526" target="blank"><img src="https://img.shields.io/badge/Bot oficial -25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 -----
 ### ❇️ 𝙂𝙍𝙐𝙋𝙊𝙎 𝙊𝙁𝙄𝘾𝙄𝘼𝙇𝙀𝙎
-
-<a href="https://chat.whatsapp.com/LnUHHTH1BDxDz7xntb9k4w" target="blank"><img src="https://img.shields.io/badge/𝙂𝙧𝙪𝙥𝙤 𝙇𝙤𝙡𝙞𝙗𝙤𝙩-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /> 
+<a href="https://chat.whatsapp.com/LnUHHTH1BDxDz7xntb9k4w" target="blank"><img src="https://img.shields.io/badge/𝙂𝙧𝙪𝙥𝙤 𝙇𝙤𝙡𝙞𝙗𝙤𝙩-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 <a href="https://chat.whatsapp.com/GUlSx2eoanhBPssKzuA48c" target="blank"><img src="https://img.shields.io/badge/𝙂𝙧𝙪𝙥𝙤 𝙇𝙤𝙡𝙞𝙗𝙤𝙩 2-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 <a href="https://chat.whatsapp.com/CcJKHrxGBWAAH3PiBL07JS" target="blank"><img src="https://img.shields.io/badge/🐈 𝐆𝐚𝐭𝐚𝐁𝐨𝐭 & 𝐋𝐨𝐥𝐢𝐁𝐨𝐭 🥳-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 <a href="https://chat.whatsapp.com/ErnXC51D9lWJtRWOD4stR2" target="blank"><img src="https://img.shields.io/badge/💖 🅜🅤🅛🅣🅘 🅑🅞🅣🅢 💖-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
@@ -28,12 +28,8 @@
 -----
 <a href="https://chat.whatsapp.com/FRkr7jJHSJA5OjVtE64dDs" target="blank"><img src="https://img.shields.io/badge/Grupo ayuda sobre el bot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 -----
-[![Typing SVG](http://readme-typing-svg.herokuapp.com?font=Fira+Code&size=10&duration=3000&pause=1000&color=34F6F7&center=falso&vCenter=falso&width=435&lines=%C3%9Anete+y+Conoce+las+%C3%9Altimas+Novedades!!)](https://git.io/typing-svg)
-[![blog](https://img.shields.io/badge/Grupo-actulizaciones-25D366?style=for-the-badge&logo=whatsapp&logoColor=white 
-)](https://chat.whatsapp.com/JESaesjOEcB6wnGX0QYT9o)  <a href="https://chat.whatsapp.com/JESaesjOEcB6wnGX0QYT9o"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1200px-WhatsApp_logo-color-vertical.svg.png" height="29px">
-</a>
+<a href="https://chat.whatsapp.com/JESaesjOEcB6wnGX0QYT9o" target="blank"><img src="https://img.shields.io/badge/Grupo-actualizaciónes-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 -----
-
 [![blog](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)
 ](https://facebook.com/groups/872989990425789/)  
 
@@ -45,8 +41,6 @@
 <a href="https://www.tiktok.com/@thelolibot_md" target="_blank"> <img src="https://img.shields.io/badge/-TikTok-%23E4405F?style=for-the-badge&logo=tiktok&logoColor=black" target="_blank"></a> <img src="https://github.com/siegrin/siegrin/blob/main/Assets/Handshake.gif" height="30px">
 
 -----
-
-### `—◉ 💥 ACTIVAR EN BOXMINEHOST 💥`
 
 𝐐𝐮𝐢𝐞𝐫𝐞 𝐭𝐞𝐧𝐞𝐫 𝐮𝐧 𝐛𝐨𝐭 𝟐𝟒/𝟕 𝐚𝐜𝐭𝐢𝐯𝐨
 
@@ -181,16 +175,14 @@ grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https:/
 🔸𝐓𝐡𝐞 𝐋𝐨𝐥𝐢𝐁𝐨𝐭-𝐌𝐃, 𝐍𝐎 𝐒𝐄 𝐇𝐀𝐂𝐄 𝐑𝐄𝐒𝐏𝐎𝐍𝐒𝐀𝐁𝐋𝐄 𝐃𝐄𝐋 𝐔𝐒𝐎, 𝐍𝐔𝐌𝐄𝐑𝐎𝐒, 𝐏𝐑𝐈𝐕𝐀𝐂𝐈𝐃𝐀𝐃 𝐘 𝐂𝐎𝐍𝐓𝐄𝐍𝐈𝐃𝐎 𝐌𝐀𝐍𝐃𝐀𝐃𝐎, 𝐔𝐒𝐀𝐃𝐎 𝐎 𝐆𝐄𝐒𝐓𝐈𝐎𝐍𝐀𝐃𝐎 𝐏𝐎𝐑 𝐔𝐒𝐓𝐄𝐃𝐄𝐒 𝐎 𝐄𝐋 𝐁𝐎𝐓.
 ```
 ----
-## `𝙀𝘿𝙄𝙏𝙊𝙍 𝙔 𝙋𝙍𝙊𝙋𝙄𝙀𝙏𝘼𝙍𝙄𝙊 𝘿𝙀𝙇 𝘽𝙊𝙏` 
+### 🌟 𝙀𝘿𝙄𝙏𝙊𝙍 𝙔 𝙋𝙍𝙊𝙋𝙄𝙀𝙏𝘼𝙍𝙄𝙊 𝘿𝙀𝙇 𝘽𝙊𝙏 
 <a href="https://github.com/elrebelde21"><img src="https://github.com/elrebelde21.png" width="300" height="300" alt="elrebelde21"/></a>
 
-----
-### 𝘾𝙤𝙡𝙖𝙗𝙤𝙧𝙖𝙙𝙤𝙧𝙚𝙨
+### 🌟 𝘾𝙤𝙡𝙖𝙗𝙤𝙧𝙖𝙙𝙤𝙧𝙚𝙨
 [![GataNina-Li](https://github.com/GataNina-Li.png?size=100)](https://github.com/GataNina-Li) 
 [![Yesenia57](https://github.com/Yesenia57.png?size=100)](https://github.com/Yesenia57) 
 [![Azami19](https://github.com/Azami19.png?size=100)](https://github.com/Azami19) 
-----
 
 ### 🌟 𝐀𝐠𝐫𝐚𝐜𝐢𝐦𝐢𝐞𝐧𝐭𝐨
- 
-[![TheShadowBrokers1](https://github.com/BrunoSobrino.png?size=100)](https://github.com/BrunoSobrino) 
+[![TheShadowBrokers1](https://github.com/BrunoSobrino.png?size=60)](https://github.com/BrunoSobrino) 
+
