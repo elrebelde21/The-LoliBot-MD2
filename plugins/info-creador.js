@@ -75,7 +75,7 @@ sections }
           conn.reply(m.chat, "The-LoliBot-MD", m, { contextInfo: { mentionedJid: [nowner] }})
            break
             case 'bio':
-          conn.sendButton(m.chat, teksbio, insta, ppown, [`⋮☰ Menu`, `.menu`], m)
+          conn.sendButton(m.chat, teksbio, ppown, [`⋮☰ Menu`, `.menu`], m)
             break
           default:
             return await conn.sendMessage(m.chat, listMessage, { quoted: m, contextInfo: { mentionedJid: [m.sender] }})
