@@ -11,7 +11,7 @@ m.reply(`*el Bot se ha unido al grupo✅*`)
 await delay(5 * 5000)
 let res = await conn.groupAcceptInvite(code)
 } else {
-const data = global.owner.filter(([id]) => id)
+const data = global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)
 
 await delay(5 * 5000)
 for (let jid of data.map(([id]) => [id] + '@s.whatsapp.net').filter(v => v != conn.user.jid)) m.reply(`*[❗] 𝙎𝙊𝙇𝙄𝘾𝙄𝙏𝙐𝘿 𝘿𝙀 𝘽𝙊𝙏 𝙋𝘼𝙍𝘼 𝙐𝙉 𝙂𝙍𝙐𝙋𝙊 [❗]*\n\n*👤 𝙉𝙪𝙣𝙚𝙧𝙤 𝙨𝙤𝙡𝙞𝙘𝙞𝙩𝙖𝙣𝙩𝙚:*\n` + ' wa.me/' + m.sender.split('@')[0] + '\n\n*🔮 𝙇𝙞𝙣𝙠 𝙙𝙚𝙡 𝙜𝙧𝙪𝙥𝙤:*\n ' + link, jid)
