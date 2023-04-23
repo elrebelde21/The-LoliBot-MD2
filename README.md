@@ -69,7 +69,7 @@ pkg update -y && pkg upgrade -y && pkg install -y bash && pkg install -y wget &&
 wget -O - https://raw.githubusercontent.com/elrebelde21/The-LoliBot-MD/master/install.sh | bash
 ```
 ------------------
-### 📁 𝐀𝐂𝐓𝐈𝐕𝐀 𝐄𝐋 𝐓𝐄𝐑𝐌𝐔𝐗 - 𝘼𝙍𝘾𝙃𝙄𝙑𝙊𝙎 <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="40px"> (OPCIÓN 2)
+### 📁 (OPCIÓN 2) 𝐀𝐂𝐓𝐈𝐕𝐀 𝐄𝐋 𝐓𝐄𝐑𝐌𝐔𝐗 - 𝘼𝙍𝘾𝙃𝙄𝙑𝙊𝙎 <img src="https://c.tenor.com/HLrXIleGBToAAAAC/transparent-cat.gif" height="40px">
 > DESCARGUÉ Y DESCOMPRIMA 
 ### [`The Lolibot-MD ~ MediaFire`](https://www.mediafire.com/file/cv64tns6co3272q/Lolibot.zip/file) <a href="https://www.mediafire.com/file/cv64tns6co3272q/Lolibot.zip/file"> <img src="https://i.pinimg.com/originals/47/77/17/477717205aa460ae58f6b988a4606a02.png" height="30px">
 [![blog](https://img.shields.io/badge/LoliBot-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
