@@ -2,8 +2,9 @@ let media = './media/menus/Menuvid2.mp4'
 let handler = async (m, { conn, command }) => {
 let str = `🔰 𝘽𝙞𝙚𝙣𝙫𝙚𝙣𝙞𝙙𝙤 𝙖𝙡 𝙡𝙖𝙨 𝙘𝙪𝙚𝙣𝙩𝙖𝙨 𝙤𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨`
 conn.sendButton(m.chat, str, `┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
- 𝙉𝙪́𝙢𝙚𝙧𝙤 𝙙𝙚𝙡 𝙗𝙤𝙩 𝙤𝙛𝙘
+ 𝙉𝙪𝙢𝙚𝙧𝙤 𝙙𝙚𝙡 𝙗𝙤𝙩 𝙤𝙛𝙘
 🔰 *Wa.me/573183650526*
+🔰 *wa.me/527822175745*
 🔰 *Wa.me/51942304434*
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ✅ 𝙂𝙞𝙩𝙝𝙪𝙗
