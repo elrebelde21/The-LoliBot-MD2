@@ -3,7 +3,7 @@ let handler  = async (m, { conn }) => {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 let texto = `*◄┢┅͜͡✇⟬↯ື ►ஜ۩💥۩ஜ◄ ↯ື⟭✇͜͡┅┧►*
 
-💥 𝙔𝙖 𝙥𝙪𝙚𝙙𝙚 𝙞𝙣𝙨𝙩𝙖𝙡𝙖𝙧 𝙖 𝙏𝙝𝙚-𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿 ❕
+❕ 𝙔𝙖 𝙥𝙪𝙚𝙙𝙚 𝙞𝙣𝙨𝙩𝙖𝙡𝙖𝙧 𝙖 𝙏𝙝𝙚-𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿 ❕
 
 *𝙑𝙄𝘿𝙀𝙊 𝘿𝙀 𝙄𝙉𝙎𝙏𝘼𝙇𝘼𝘾𝙄𝙊𝙉*
 *https://youtu.be/gh5NajZOTA8*
@@ -40,16 +40,22 @@ ${md}
 📌 *𝙊𝙋𝘾𝙄𝙊𝙉: 1 𝙂𝙄𝙏𝙃𝙐𝘽*
 
 🔸 termux-setup-storage
+
 🔸 pkg update -y && pkg upgrade -y && pkg install -y bash && pkg install -y wget && pkg install yarn
+
 🔸 wget -O - https://raw.githubusercontent.com/elrebelde21/The-LoliBot-MD/master/install.sh | bash
 
 📌 *𝙊𝙋𝘾𝙄𝙊𝙉: 2 𝘼𝙍𝘾𝙃𝙄𝙑𝙊*
 *https://youtu.be/i1xjB4bmYCc*
 
 🔸 termux-setup-storage
+
 🔸 pkg update -y && pkg upgrade -y && pkg install -y bash && pkg install -y wget && pkg install yarn
+
 🔸 cd storage/downloads/Lolibot
+
 🔸 ls
+
 🔸 npm start
 
 ───────•••───────

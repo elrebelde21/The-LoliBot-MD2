@@ -75,67 +75,57 @@ let fsizedoc = '1'.repeat(10)
 let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: ig, description: 'Hola', previewType: 'PHOTO', thumbnail: await(await fetch(global.img)).buffer(), sourceUrl: redesMenu.getRandom() }}}
 
 
-let menu = `
-╭─────────────────╮
-┆═ *𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝑩𝒐𝒕-𝑴𝑫*
-┆~~••~~••~~••~~••~~••~~
-┆➤ ${lenguajeGB['smsConfi2']()} *${username}*
-┆~~••~~••~~••~~••~~••~~
-┆➤ *𝘾𝙧𝙚𝙖𝙙𝙤𝙧 𝙙𝙚𝙡 𝙗𝙤𝙩: el rebelde* 
-┆➤ *𝙉𝙪́𝙢𝙚𝙧𝙤 𝙙𝙚𝙡 𝙘𝙧𝙚𝙖𝙙𝙤𝙧:* *wa.me/5492266466080*
-┆➤ *𝙉𝙪́𝙢𝙚𝙧𝙤 𝙙𝙚𝙡 𝙗𝙤𝙩 𝙤𝙛𝙞𝙘𝙞𝙖𝙡 :* *wa.me/573183650526*
-┆➤ *𝙏𝙞𝙚𝙢𝙥𝙤𝙨 𝙖𝙘𝙩𝙞𝙫𝙤𝙨 :* *${uptime}*
-┆➤ *${lenguajeGB['smsBotonM4']()} :* *${Object.keys(global.db.data.users).length}*  
-┆➤ *𝙍𝙚𝙜𝙞𝙨𝙩𝙧𝙖𝙙𝙤:* ${rtotalreg} 𝙙𝙚 ${totalreg} 
-┆~~••~~••~~••~~••~~~ ${(conn.user.jid == global.conn.user.jid ? '' : `\n║➤ 𝙎𝙤𝙮 𝙪𝙣 𝙨𝙪𝙗 𝙗𝙤𝙩 𝙙𝙚𝙡: wa.me/${global.conn.user.jid.split`@`[0]}`) || ''}
-╰────────────────╯
+let menu = `⌜ *${wm}* ⌟  
 
-┌───⊷ 𝙄𝙣𝙛𝙤 𝙙𝙚𝙡 𝙪𝙨𝙪𝙖𝙧𝙞𝙤
-┆——————«•»—————
-┆ *🙌 Registrado:* ${user.registered === true ? '✅' : '❌ _#verificar_'}
-┆ *🎟️ Premium:* ${user.premiumTime > 0 ? '✅' : '❌ _#pase premium_'}
-┆ *🔰 Mi estado:* ${typeof user.miestado !== 'string' ? '_#miestado || Estado no asignado_' : '_Me siento ' + user.miestado + '_'}
-┆ *🎖️ Nivel:* ${level}
-┆ *💎 Diamantes:* ${limit}
-┆ *👾 LoliCoins:* ${money}
-┆ *🪙 Tokens:* ${joincount}
-┆ *🧰 Experiencia:* ${exp}
-┆ *⚓ Rango:* ${role}
-┆——————«•»—————
-┆ 🤖 𝙄𝙣𝙛𝙤 𝙙𝙚𝙡 𝙗𝙤𝙩
-┆——————«•»—————
-┆ ඬ⃟ℹ️️ _${usedPrefix}infobot_
-┆ ඬ⃟ℹ️️ _${usedPrefix}grupos_
-┆ ඬ⃟ℹ️ _${usedPrefix}instalarbot_
-┆ ඬ⃟ℹ️ _${usedPrefix}menusimple_
-┆ ඬ⃟ℹ️️ _${usedPrefix}menuaudios_
-┆ ඬ⃟ℹ️️ _${usedPrefix}menu2_
-┆ ඬ⃟ℹ️ _${usedPrefix}estado_
-┆ ඬ⃟ℹ️️ _${usedPrefix}sc_
-┆ ඬ⃟ℹ️ _${usedPrefix}ping_
-┆ ඬ⃟ℹ️ _${usedPrefix}infomenu_
-┆ ඬ⃟ℹ️ _${usedPrefix}juegosmenu_
-┆ ඬ⃟ℹ️ _${usedPrefix}grupomenu_
-┆ ඬ⃟ℹ️ _${usedPrefix}descargasmenu_
-┆ ඬ⃟ℹ️ _${usedPrefix}búsquedarmenu_
-┆ ඬ⃟ℹ️ _${usedPrefix}ownermenu_
-┆ ඬ⃟ℹ️ _Bot_
-┆ ඬ⃟ℹ️ _¿Qué es un Bot?_
-┆ ඬ⃟ℹ️ _Términos y condiciones_
-┆——————«•»—————
-┆ 🙌 𝙐𝙣𝙚 𝙖𝙡 𝙗𝙤𝙩 𝙖 𝙩𝙪 𝙜𝙧𝙪𝙥𝙤
-┆——————«•»—————
-┆ ඬ⃟🤖 _${usedPrefix}join *link del grupo*_ 
-┆ ඬ⃟🤖 _${usedPrefix}botemporal *link de grupo*_
-┆——————«•»—————
-┆ 🤖 𝙎𝙚𝙧𝙗𝙤𝙩 - 𝙟𝙖𝙙𝙞𝙗𝙤𝙩
-┆——————«•»—————
-┆ ඬ⃟ 🤖 _${usedPrefix}serbot_
-┆ ඬ⃟ 🤖 _${usedPrefix}stop_
-┆ ඬ⃟ 🤖 _${usedPrefix}bots_
-┆——————«•»—————
-┆ 🕹 𝙅𝙪𝙚𝙜𝙤𝙨
-┆——————«•»—————
+◉ *Hola ${username}*
+   □ *Creador: Mario*
+   □ *Numero del creador: wa.me/5492266466080*
+   □ *Numero del bot ofc: wa.me/573183650526*
+   □ *Tiempos activos :* *${uptime}*
+   □ *Usuarios:* *${Object.keys(global.db.data.users).length}*
+   □ *Registrado: ${rtotalreg} de ${totalreg}* ${(conn.user.jid == global.conn.user.jid ? '' : `\n□ Soy un sub bot del: wa.me/${global.conn.user.jid.split`@`[0]}`) || ''}
+    
+□ *COMO INSTALAR EL BOT*
+https://youtu.be/O_j2q5xCg3A
+
+◉ _*INFO DEL USUARIO*_
+□ *🙌 Registrado:* ${user.registered === true ? '✅' : '❌ _#verificar_'}
+□ *🎟️ Premium:* ${user.premiumTime > 0 ? '✅' : '❌ _#pase premium_'}
+□ *🔰 Mi estado:* ${typeof user.miestado !== 'string' ? '_#miestado || Estado no asignado_' : '_Me siento ' + user.miestado + '_'}
+□ *🎖️ Nivel:* ${level}
+□ *💎 Diamantes:* ${limit}
+□ *👾 LoliCoins:* ${money}
+□ *🪙 Tokens:* ${joincount}
+□ *🧰 Experiencia:* ${exp}
+□ *⚓ Rango:* ${role}
+${readMore}
+┌───⊷ *INFO DEL BOT*
+┊□ _${usedPrefix}infobot_
+┊□ _${usedPrefix}grupos_
+┊□ _${usedPrefix}instalarbot_
+┊□️ _${usedPrefix}menu2_
+┊□ _${usedPrefix}estado_
+┊□ _${usedPrefix}sc_
+┊□ _${usedPrefix}ping_
+┊□ _Bot_
+┊□ _¿Qué es un Bot?_
+┊□ _Términos y condiciones_
+└─────────────
+
+┌───⊷ *UNER UN BOT A TU GRUPO*
+┆ 🤖 _${usedPrefix}join *link del grupo*_ 
+┆ 🤖 _${usedPrefix}botemporal *link de grupo*_
+└─────────────
+
+┌───⊷ *SERBOT & JADIBOT*
+┆ 🤖 _${usedPrefix}serbot_
+┆ 🤖 _${usedPrefix}stop_
+┆ 🤖 _${usedPrefix}bots_
+└─────────────
+
+┌───⊷ *JUEGOS*
+┆ *conando para la diversión del tu Grupos*
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆ ඬ⃟ 🕹 _${usedPrefix}mates *<noob / easy / medium / hard / extreme /impossible /impossible2>*_
 ┆ ඬ⃟ 🕹️ _${usedPrefix}ppt *<papel / tijera /piedra>*_
 ┆ ඬ⃟ ️🕹 _${usedPrefix}prostituto *<nombre / @tag>*_
@@ -178,49 +168,61 @@ let menu = `
 ┆ ඬ⃟ 🕹️ _${usedPrefix}reto_
 ┆ ඬ⃟ 🕹️ _${usedPrefix}cancion_
 ┆ ඬ⃟ 🕹️ _${usedPrefix}pista_
-┆——————«•»—————
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆ 💞 𝙋𝙖𝙧𝙚𝙟𝙖𝙨
-┆——————«•»—————
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆ *Declarate con alguien*
 ┆ *para que sean Parejas!!*
-┆——————«•»—————
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆ ඬ⃟ ❤️➺ _${usedPrefix}listaparejas_
 ┆ ඬ⃟ ❤️➺ _${usedPrefix}mipareja_
 ┆ ඬ⃟ ❤️➺ _${usedPrefix}pareja *@tag*_
 ┆ ඬ⃟ ❤️➺ _${usedPrefix}aceptar *@tag*_
 ┆ ඬ⃟ ❤️➺ _${usedPrefix}rechazar *@tag*_
 ┆ ඬ⃟ ❤️➺ _${usedPrefix}terminar *@tag*_
-┆——————«•»—————
-┆ 🤖 𝙉𝙪́𝙢𝙚𝙧𝙤 𝙙𝙚𝙡 𝙘𝙧𝙚𝙖𝙙𝙤𝙧
-┆——————«•»—————
-┆ ඬ⃟🤖 _${usedPrefix}owner_
-┆——————«•»—————
-┆ ☑️ 𝘼𝙘𝙩𝙞𝙫𝙖 𝙤 𝙙𝙚𝙨𝙖𝙘𝙩𝙞𝙫𝙖𝙧
-┆——————«•»—————
-┆ ඬ⃟ ☑️ _${usedPrefix}enable_
-┆——————«•»—————
-┆ 🚫 𝙍𝙚𝙥𝙤𝙧𝙩𝙖𝙧 𝙛𝙖𝙡𝙡𝙤𝙨 𝙚𝙣 𝙖𝙡𝙜𝙪́𝙣 𝙘𝙤𝙢𝙖𝙣𝙙𝙤
-┆ Reporta cualquier comando que falle para poder solucionarlo
-┆——————«•»—————
-┆ ඬ⃟ 🚫 _${usedPrefix}reporte *<texto>*_
-┆——————«•»—————
-┆ 🎟️ 𝙎𝙚𝙧 𝙥𝙧𝙚𝙢𝙞𝙪𝙢
-┆——————«•»—————
+└─────────────
+
+┌───⊷ *NUMERO DEL CREADOR*
+┆ඬ⃟ 🤖 _${usedPrefix}owner_
+└─────────────
+
+┌───⊷ *ACTIVA O DESACTIVAR*
+┆ *Configura si eres Propietario(a) y/o*
+┆ *Admin!!*
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆ඬ⃟ ☑️ _${usedPrefix}enable_
+└─────────────
+
+┌───⊷ *REPORTA COMANDO CON ERRORES*
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆ *Reporta cualquier comando que falle para poder solucionarlo*
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆ඬ⃟ 🚫 _${usedPrefix}reporte *<texto>*_
+└─────────────
+
+┌───⊷ *SER PREMIUM*
 ┆ *Convierte en un(a)*
 ┆ *Usuario(a) Premium!!*
-┆——————«•»—————
-┆ ඬ⃟ 🎟️ _${usedPrefix}listapremium_
-┆ ඬ⃟ 🎟️ _${usedPrefix}pase premium_
-┆ ඬ⃟ 🎟️ _${usedPrefix}pass premium_
-┆——————«•»—————
-┆ 📥 𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖
-┆——————«•»—————
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆ඬ⃟ 🎟️ _${usedPrefix}listapremium_
+┆ඬ⃟ 🎟️ _${usedPrefix}pase premium_
+┆ඬ⃟ 🎟️ _${usedPrefix}pass premium_
+└─────────────
+
+┌───⊷ *DESCARGAS*
+┆ ඬ⃟ 📥 _${usedPrefix}play *<texto>*_
+┆ ඬ⃟ 📥 _${usedPrefix}play.1 *<texto>*_
+┆ ඬ⃟ 📥 _${usedPrefix}play.2 *<texto>*_
+┆ ඬ⃟ 📥 _${usedPrefix}playdoc *<texto>*_
+┆ ඬ⃟ 📥 _${usedPrefix}playlist *<texto>*_
+┆ ඬ⃟ 📥 _${usedPrefix}playlist2 *<texto>*_
+┆ ඬ⃟ 📥 _${usedPrefix}spotify *<texto>*_
+┆ ඬ⃟ 📥 _${usedPrefix}tiktok *<enlace / link / url>*_
 ┆ ඬ⃟ 📥 _${usedPrefix}instagram *<enlace / link / url>*_
 ┆ ඬ⃟ 📥 _${usedPrefix}mediafire *<enlace / link / url>*_
 ┆ ඬ⃟ 📥 _${usedPrefix}instagram *<enlace / link / url>*_
 ┆ ඬ⃟ 📥 _${usedPrefix}gitclone *<enlace / link / url>*_
 ┆ ඬ⃟ 📥 _${usedPrefix}gdrive *<enlace / link / url>*_
-┆ ඬ⃟ 📥 _${usedPrefix}tiktok *<enlace / link / url>*_
 ┆ ඬ⃟ 📥 _${usedPrefix}xnxxdl *<enlace / link / url>*_
 ┆ ඬ⃟ 📥 _${usedPrefix}xvideosdl *<enlace / link / url>*_
 ┆ ඬ⃟ 📥 _${usedPrefix}twitter *<enlace / link / url>*_
@@ -234,13 +236,6 @@ let menu = `
 ┆ ඬ⃟ 📥 _${usedPrefix}ytmp3doc *<enlace / link / url>*_
 ┆ ඬ⃟ 📥 _${usedPrefix}ytmp4doc *<enlace / link / url>*_
 ┆ ඬ⃟ 📥 _${usedPrefix}stickerpack *<enlace / link / url>*_
-┆ ඬ⃟ 📥 _${usedPrefix}play *<texto>*_
-┆ ඬ⃟ 📥 _${usedPrefix}play.1 *<texto>*_
-┆ ඬ⃟ 📥 _${usedPrefix}play.2 *<texto>*_
-┆ ඬ⃟ 📥 _${usedPrefix}playdoc *<texto>*_
-┆ ඬ⃟ 📥 _${usedPrefix}playlist *<texto>*_
-┆ ඬ⃟ 📥 _${usedPrefix}playlist2 *<texto>*_
-┆ ඬ⃟ 📥 _${usedPrefix}spotify *<texto>*_
 ┆ ඬ⃟ 📥 _${usedPrefix}stickerly *<texto>*_
 ┆ ඬ⃟ 📥 _${usedPrefix}ringtone *<texto>*_
 ┆ ඬ⃟ 📥 _${usedPrefix}soundcloud *<texto>*_
@@ -252,9 +247,11 @@ let menu = `
 ┆ ඬ⃟ 📥 _${usedPrefix}igstalk *<nombre de usuario>*_
 ┆ ඬ⃟ 📥 _${usedPrefix}igstory *<nombre de usuario>*_
 ┆ ඬ⃟ 📥 _${usedPrefix}tiktokstalk *<username>*_
-┆——————«•»—————
-┆ 💎 𝙜𝙧𝙪𝙥𝙤𝙨
-┆——————«•»—————
+└─────────────
+
+┌───⊷ *GRUPOS*
+┆ *Mejora tú Grupo con LoliBot*
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆ ඬ⃟ 💎 _${usedPrefix}add *<numero>*_
 ┆ ඬ⃟ 💎 _${usedPrefix}kick *<@tag>*_
 ┆ ඬ⃟ 💎 _${usedPrefix}grupo *<abrir / cerrar>*_
@@ -278,9 +275,12 @@ let menu = `
 ┆ ඬ⃟ 💎 _${usedPrefix}fantasmas_
 ┆ ඬ⃟ 💎 _${usedPrefix}destraba_
 ┆ ඬ⃟ 💎 _${usedPrefix}setpp *<imagen>*_
-┆——————«•»—————
-┆ 🧧 𝘾𝙤𝙣𝙫𝙚𝙧𝙩𝙞𝙙𝙤𝙧𝙚𝙨
-┆——————«•»—————
+└─────────────
+
+┌───⊷ *CONVERTIDORES*
+┆ *Convierte sticker en imagen!!*
+┆ *Crea enlace de archivos!!*
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆ ඬ⃟ 🧧 _${usedPrefix}togifaud *<video>*_
 ┆ ඬ⃟ 🧧 _${usedPrefix}robar *texto*
 ┆ ඬ⃟ 🧧 _${usedPrefix}wm *texto*
@@ -291,9 +291,12 @@ let menu = `
 ┆ ඬ⃟ 🧧 _${usedPrefix}tovideo *<sticker>*_
 ┆ ඬ⃟ 🧧 _${usedPrefix}tourl *<video / imagen / audio>*_
 ┆ ඬ⃟ 🧧 _${usedPrefix}tts es *<texto>*_
-┆——————«•»—————
-┆ 🖍️ 𝙀𝙛𝙚𝙘𝙩𝙤𝙨 𝙮 𝙡𝙤𝙜𝙤𝙨
-┆——————«•»—————
+└─────────────
+
+┌───⊷ *EFECTOS Y LOGOS*
+┆ *Crea Logos o personaliza*
+┆ *la información del Logo!!*
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆ ඬ⃟ 🖍️ _${usedPrefix}mensajefalso *<nombre|mensaje>*_
 ┆ ඬ⃟ 🖍️ _${usedPrefix}phmaker *<opcion> <imagen>*_
 ┆ ඬ⃟ 🖍️ _${usedPrefix}logos *<efecto> <texto>*_
@@ -306,15 +309,18 @@ let menu = `
 ┆ ඬ⃟ 🖍️ _${usedPrefix}itssostupid_
 ┆ ඬ⃟ 🖍️ _${usedPrefix}pixelar_
 ┆ ඬ⃟ 🖍️ _${usedPrefix}blur_
-┆——————«•»—————
-┆ 😸 𝙁𝙧𝙖𝙨𝙚𝙨 𝙮 𝙩𝙚𝙭𝙩𝙤𝙨
-┆——————«•»—————
+└─────────────
+
+┌───⊷ *FRASES Y TEXTOS*
+┆ *Enamora a tu enamorada/o*
+┆ *con esta frases/piropo uwu*
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆ ඬ⃟ 🥀 _${usedPrefix}piropo_
 ┆ ඬ⃟ 🥀 _${usedPrefix}consejo_
 ┆ ඬ⃟ 🥀 _${usedPrefix}fraseromantica_
-┆——————«•»—————
-┆ 👾 𝙍𝙖𝙣𝙙𝙤𝙬
-┆——————«•»—————
+└─────────────
+
+┌───⊷ *RANDOM*
 ┆ ඬ⃟ 👾 _${usedPrefix}kpop *<blackpink / exo / bts>*_
 ┆ ඬ⃟ 👾 _${usedPrefix}cristianoronaldo_
 ┆ ඬ⃟ 👾 _${usedPrefix}messi_
@@ -380,32 +386,42 @@ let menu = `
 ┆ ඬ⃟ 👾 _${usedPrefix}sasuke_
 ┆ ඬ⃟ 👾 _${usedPrefix}sakura_
 ┆ ඬ⃟ 👾 _${usedPrefix}cosplay_
-┆——————«•»—————
-┆ 🔞 𝘾𝙤𝙢𝙖𝙣𝙙𝙤 +18
-┆——————«•»—————
-┆*Usar bajo su responsabilidad*
-┆ *nota: no sea pajero*
-┆——————«•»—————
+└─────────────
+
+┌───⊷ *COMANDO +18*
+┆ *Usar bajo su responsabilidad*
+┆ *Nota: no sea pajero*
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆ ඬ⃟🔞 _${usedPrefix}hornymenu_
-┆——————«•»—————
-┆ 🎤 𝙀𝙛𝙚𝙘𝙩𝙤𝙨 𝙥𝙖𝙧𝙖 𝙣𝙤𝙩𝙖𝙨 𝙙𝙚 𝙫𝙤𝙯 𝙤 𝙖𝙪𝙙𝙞𝙤𝙨
-┆ Responde a un audio o nota de voz
-┆——————«•»—————
+└─────────────
+
+┌───⊷ *EFECTOS PARA NOTAS DE VOZ/AUDIOS*
+┆ *Realiza Modificaciones*
+┆ *al Audio o Nota de Voz!!*
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆ ඬ⃟🎤 _${usedPrefix}audioefectomenu_
-┆——————«•»—————
-┆ 🔊 𝘼𝙪𝙙𝙞𝙤𝙨
-┆——————«•»—————
+└─────────────
+
+┌───⊷ *AUDIOS*
+┆ *Visita el Menú de Audios!!*
+┆ *Disfruta de una Gran Variedad*
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆ ඬ⃟🔊 _${usedPrefix}menu2_
 ┆ ඬ⃟🔊 _${usedPrefix}audios_
-┆——————«•»—————
-┆ 📳 𝘾𝙝𝙖𝙩 𝙖𝙣𝙤́𝙣𝙞𝙢𝙤
-┆——————«•»—————
+└─────────────
+
+┌───⊷ *CHATS ANONIMO*
+┆ *¡Escribe con Alguien* 
+┆ *de forma Anónima!* 
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆ ඬ⃟ 📳 _${usedPrefix}start_
 ┆ ඬ⃟ 📳 _${usedPrefix}next_
 ┆ ඬ⃟ 📳 _${usedPrefix}leave_
-┆——————«•»—————
-┆ 🔍 𝘽𝙪𝙨𝙘𝙖𝙙𝙤𝙧𝙚𝙨
-┆——————«•»—————
+└─────────────
+
+┌───⊷ *BUSCADORES*
+┆ *Busca lo que quieres con el Bot!!*
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆ ඬ⃟ 🔍 _${usedPrefix}stickersearch *<texto>*_
 ┆ ඬ⃟ 🔍 _${usedPrefix}stickersearch2 *<texto>*_
 ┆ ඬ⃟ 🔍 _${usedPrefix}xnxxsearch *<texto>*_
@@ -424,9 +440,9 @@ let menu = `
 ┆ ඬ⃟ 🔍 _${usedPrefix}toraccino *<texto>*_
 ┆ ඬ⃟ 🔍 _${usedPrefix}uapkpro *<texto>*_
 ┆ ඬ⃟ 🔍 _${usedPrefix}playstore *<texto>*_
-┆——————«•»—————
-┆ 🛠️ 𝙃𝙚𝙧𝙧𝙖𝙢𝙞𝙚𝙣𝙩𝙖𝙨
-┆——————«•»—————
+└─────────────
+
+┌───⊷ *HERRAMIENTAS*
 ┆ ඬ⃟ 🛠️ _${usedPrefix}spamwa *<numero|texto|cantidad>*_
 ┆ ඬ⃟ 🛠️ _${usedPrefix}tamaño *<cantidad> <imagen / video>*_
 ┆ ඬ⃟ 🛠️ _${usedPrefix}clima *<país> <ciudad>*_
@@ -445,9 +461,12 @@ let menu = `
 ┆ ඬ⃟ 🛠️ _${usedPrefix}zoom *<texto>*_
 ┆ ඬ⃟ 🛠️ _${usedPrefix}nowa *<numero>*_
 ┆ ඬ⃟ 🛠️ _${usedPrefix}horario_
-┆——————«•»—————
-┆ 💵 𝙍𝙋𝙂 - 𝙡𝙞𝙢𝙞𝙩𝙚𝙨 - 𝙚𝙘𝙤𝙣𝙤𝙢𝙞𝙖𝙨
-┆——————«•»—————
+└─────────────
+
+┌───⊷ *RPG - LIMITES - ECONÓMIAS*
+┆ *Compra, Adquiere Recuersos*
+┆ *Mejora Tú Nivel y Rango!!*
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆ ඬ⃟ 💵 _${usedPrefix}verificar_
 ┆ ඬ⃟ 💵 _${usedPrefix}unreg *<numero de serie>*_
 ┆ ඬ⃟ 💵 _${usedPrefix}claim_
@@ -461,9 +480,18 @@ let menu = `
 ┆ ඬ⃟ 💵 _${usedPrefix}work_
 ┆ ඬ⃟ 💵 _${usedPrefix}buyall_
 ┆ ඬ⃟ 💵 _${usedPrefix}transfer *<tipo> <cantidad> <@tag>*_
-┆——————«•»—————
-┆ 👽 𝙎𝙩𝙞𝙘𝙠𝙚𝙧𝙨
-┆——————«•»—————
+└─────────────
+
+┌───⊷ *TOP EN LOLIBOT-MD*
+┆ *Averigua en que Top te encuentras!!*
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆🏆➺ _${usedPrefix}top | lb | leaderboard_
+└─────────────
+
+┌───⊷ *STICKERS*
+┆ *Realiza stickers o crea*
+┆ *stickers con filtros!!*
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆ ඬ⃟ 👽 _${usedPrefix}sticker *<responder a imagen o video>*_
 ┆ ඬ⃟ 👽 _${usedPrefix}sticker *<enlace / link / url>*_
 ┆ ඬ⃟ 👽 _${usedPrefix}s *<responder a imagen o video>*_
@@ -488,9 +516,21 @@ let menu = `
 ┆ ඬ⃟ 👽 _${usedPrefix}wm *<packname> <author>*_
 ┆ ඬ⃟ 👽 _${usedPrefix}stickermarker *<efecto> <imagen>*_
 ┆ ඬ⃟ 👽 _${usedPrefix}stickerfilter *<efecto> <imagen>*_
-┆——————«•»—————
-┆ 👑 𝙋𝙧𝙤𝙥𝙞𝙚𝙩𝙖𝙧𝙞𝙤 𝙙𝙚𝙡 𝙗𝙤𝙩
-┆——————«•»—————
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆ *STICKERS DINÁMICOS*
+┆ *Realiza acciones con Stickers*
+┆ *Etiquetando a alguien!!*
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┆ඬ⃟ ⛱️ _${usedPrefix}palmaditas | pat *@tag*_
+┆ඬ⃟ ⛱️ _${usedPrefix}bofetada | slap *@tag*_
+┆ඬ⃟ ⛱️ _${usedPrefix}golpear *@tag*_
+┆ඬ⃟ ⛱️ _${usedPrefix}besar | kiss *@tag*_
+┆ඬ⃟ ⛱️ _${usedPrefix}alimentar | food *@tag*
+└─────────────
+
+┌───⊷ *PROPIETARIO DEL BOT*
+┆ *Comando exclusivo para Propietario/owner del bot*
+┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆ ඬ⃟ 👑 > *<funcion>*
 ┆ ඬ⃟ 👑 => *<funcion>*
 ┆ ඬ⃟ 👑 $ *<funcion>*
@@ -539,7 +579,7 @@ let menu = `
 ┆ ඬ⃟ 👑 _${usedPrefix}setppbot *<responder a imagen>*_
 ┆ ඬ⃟ 👑 _${usedPrefix}addcmd *<texto> <responder a sticker/imagen>*_
 ┆ ඬ⃟ 👑 _${usedPrefix}delcmd *<responder a sticker/imagen con comando o texto asignado>*_
-╰──────────────────`.trim()
+└───────────────────`.trim()
     conn.sendFile(m.chat, pp, 'lp.jpg', menu, m, false, { contextInfo: { mentionedJid }})
 	
 } catch (e) {

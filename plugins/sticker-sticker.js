@@ -10,10 +10,10 @@ try {
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || q.mediaType || ''
 if (/webp|image|video/g.test(mime)) {
-if (/video/g.test(mime)) if ((q.msg || q).seconds > 8) return m.reply(`𝙀𝙇 𝙑𝙄𝘿𝙀𝙊 𝙉𝙊 𝘿𝙀𝘽𝙀 𝘿𝙀 𝘿𝙐𝙍𝘼𝙍 𝙈𝘼𝙎 𝘿𝙀 *7* 𝙎𝙀𝙂𝙐𝙉𝘿𝙊𝙎`)
+if (/video/g.test(mime)) if ((q.msg || q).seconds > 8) return m.reply(`*EL VIDEO NO PUEDE DURA MAS DE 7 SEGUNDOS*`)
 let img = await q.download?.()
 
-if (!img) throw `Y las imagen o video? responder a jna imagen o video`
+if (!img) throw `╰⊱❗️⊱ *𝙇𝙊 𝙐𝙎𝙊́ 𝙈𝘼𝙇* ⊱❗️⊱╮\n\n*RESPONDE A UNA IMAGEN, VIDEO, GIF PARA REALIZAR EL STICKERS USE* *${usedPrefix + command}*`
 
 let out
 try {
@@ -31,7 +31,7 @@ stiker = await sticker(false, out, global.packname, global.author)
 } else if (args[0]) {
 if (isUrl(args[0])) stiker = await sticker(false, args[0], global.packname, global.author)
 
-else return m.reply(`${mg}EL LINK O URL DEBE DE TERMINAR EN *.jpg*\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command}* https://i.imgur.com/8fK4h6F.jpg`)
+else return m.reply(`URL invalido`)
   
 }
 } catch (e) {
@@ -40,7 +40,7 @@ if (!stiker) stiker = e
 } finally {
 if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `h`, mediaType: 2, sourceUrl: nn, thumbnail: imagen1}}}, { quoted: m })
 
-else throw `y la imagen o video? responder a una imagen o video`
+else throw `╰⊱❗️⊱ *𝙇𝙊 𝙐𝙎𝙊́ 𝙈𝘼𝙇* ⊱❗️⊱╮\n\n*RESPONDE A UNA IMAGEN, VIDEO, GIF PARA REALIZAR EL STICKERS USE* *${usedPrefix + command}*`
 
 }}
 handler.help = ['stiker (caption|reply media)', 'stiker <url>', 'stikergif (caption|reply media)', 'stikergif <url>']
