@@ -77,13 +77,14 @@ let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardi
 
 let menu = `⌜ *${wm}* ⌟  
 
-◉ *Hola ${username}*
-   □ *Creador: Mario*
-   □ *Numero del creador: wa.me/5492266466080*
-   □ *Numero del bot ofc: wa.me/573183650526*
-   □ *Tiempos activos :* *${uptime}*
-   □ *Usuarios:* *${Object.keys(global.db.data.users).length}*
-   □ *Registrado: ${rtotalreg} de ${totalreg}* ${(conn.user.jid == global.conn.user.jid ? '' : `\n□ Soy un sub bot del: wa.me/${global.conn.user.jid.split`@`[0]}`) || ''}
+*Hola ${username}*
+
+□ *Creador: Mario*
+□ *Numero del creador: wa.me/5492266466080*
+□ *Numero del bot ofc: wa.me/573183650526*
+□ *Tiempos activos :* *${uptime}*
+□ *Usuarios:* *${Object.keys(global.db.data.users).length}*
+□ *Registrado: ${rtotalreg} de ${totalreg}* ${(conn.user.jid == global.conn.user.jid ? '' : `\n□ *Soy un sub bot del:* wa.me/${global.conn.user.jid.split`@`[0]}`) || ''}
     
 □ *COMO INSTALAR EL BOT*
 https://youtu.be/O_j2q5xCg3A
