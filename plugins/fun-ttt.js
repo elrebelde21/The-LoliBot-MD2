@@ -16,13 +16,13 @@ const fkontak = {
 }
 
 conn.game = conn.game ? conn.game : {}
-if (Object.values(conn.game).find(room => room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender))) throw `𝑻𝒐𝒅𝒂𝒗𝒊́𝒂 𝒂𝒍𝒈𝒖𝒊𝒆𝒏 𝒆𝒔𝒕𝒂́ 𝒋𝒖𝒈𝒂𝒅𝒐 𝒆𝒏 𝒍𝒂 𝒔𝒂𝒍𝒂 𝒔𝒊 𝒒𝒖𝒊𝒆𝒓𝒆 𝒂𝒃𝒂𝒏𝒅𝒐𝒏𝒂𝒓 𝒆𝒔𝒄𝒓𝒊𝒃𝒂 *salir*\n𝑻𝒂𝒎𝒃𝒊𝒆́𝒏 𝒑𝒖𝒆𝒅𝒆 𝒆𝒍𝒊𝒎𝒊𝒏𝒂𝒓 𝒍𝒂 𝒔𝒂𝒍𝒂 𝒖𝒔𝒂𝒅𝒐 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐*${usedPrefix}delttt*`
-if (!text) throw `𝘿𝙚𝙗𝙚 𝙙𝙚 𝙖𝙜𝙧𝙚𝙜𝙖 𝙪𝙣 𝙣𝙤𝙢𝙗𝙧𝙚 𝙖𝙡 𝙡𝙖 𝙨𝙖𝙡𝙖\n𝙀𝙟𝙚𝙢𝙥𝙡𝙤\n*${usedPrefix + command} Sala bot*`
+if (Object.values(conn.game).find(room => room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender))) throw `${lenguajeGB['smsAvisoAG']()}𝙏𝙤𝙙𝙖𝙫𝙞𝙖 𝙖𝙡𝙜𝙪𝙞𝙚𝙣 𝙚𝙨𝙩𝙖 𝙟𝙪𝙜𝙖𝙣𝙙𝙤 𝙚𝙣 𝙡𝙖 𝙨𝙖𝙡𝙖 𝙨𝙞 𝙦𝙪𝙞𝙚𝙧𝙚 𝙖𝙗𝙖𝙣𝙙𝙤𝙣𝙖𝙧 𝙚𝙨𝙘𝙧𝙞𝙗𝙖 *salir*\n𝙏𝙖𝙢𝙗𝙞𝙚𝙣 𝙥𝙪𝙚𝙙𝙚𝙨 𝙚𝙡𝙞𝙢𝙞𝙣𝙖𝙧 𝙡𝙖 𝙨𝙖𝙡𝙖 𝙪𝙨𝙖𝙣𝙙𝙤 𝙚𝙡 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 *${usedPrefix}delttt*`
+if (!text) throw `${lenguajeGB['smsAvisoFG']()}𝘿𝙚𝙗𝙚 𝙙𝙚 𝙖𝙜𝙧𝙚𝙜𝙖 𝙪𝙣 𝙣𝙤𝙢𝙗𝙧𝙚 𝙖 𝙡𝙖 𝙨𝙖𝙡𝙖\n𝙀𝙟𝙚𝙢𝙥𝙡𝙤\n*${usedPrefix + command} Sala bot`
 let room = Object.values(conn.game).find(room => room.state === 'WAITING' && (text ? room.name === text : true)) 
 if (room) {
-await conn.sendButton(m.chat, `𝑨𝒍𝒈𝒖𝒊𝒆𝒏 𝒔𝒆 𝒉𝒂𝒔 𝒖𝒏𝒊𝒅𝒐 𝒂𝒍 𝒍𝒂 𝒔𝒂𝒍𝒂 *${text}*\n𝒀𝒂 𝒑𝒖𝒆𝒅𝒆 𝒋𝒖𝒈𝒂𝒔!! 😼`, wm, null, [['𝑸𝒖𝒆 𝒈𝒂𝒏𝒆 𝒆𝒍 𝒎𝒆𝒋𝒐𝒓 🤝', '👻'] ], fkontak, m)
+await conn.sendButton(m.chat, `${lenguajeGB['smsAvisoEG']()}𝘼𝙡𝙜𝙪𝙞𝙚𝙣 𝙨𝙚 𝙝𝙖 𝙪𝙣𝙞𝙙𝙤 𝙖 𝙡𝙖 𝙨𝙖𝙡𝙖 *${text}*\n𝙔𝙖 𝙥𝙪𝙚𝙙𝙚𝙣 𝙟𝙪𝙜𝙖𝙧!! 😼`, wm, null, [['𝙌𝙪𝙚 𝙂𝙖𝙣𝙚 𝙚𝙡 𝙈𝙚𝙟𝙤𝙧 🤝', '👻'] ], fkontak, m)
 
-await conn.sendButton(m.chat, `${rg}⭕️ *𝑪𝒍𝒂́𝒔𝒊𝒄𝒐 𝑱𝒖𝒆𝒈𝒐 𝒅𝒆𝒍 𝑮𝒂𝒕𝒐,3 𝒆𝒏 𝒓𝒂𝒚𝒂 𝑶 𝒕𝒂𝒕𝒆𝒕𝒊* ❌\n\n*¿𝑪𝒐́𝒎𝒐 𝒋𝒖𝒈𝒂𝒓?*\𝑹𝒆𝒔𝒑𝒐𝒏𝒅𝒆 𝒂𝒍 𝑱𝒖𝒆𝒈𝒐 𝒄𝒐𝒏 𝒖𝒏 𝑵𝒖́𝒎𝒆𝒓𝒐, 𝒆𝒍 𝒎𝒆𝒏𝒔𝒂𝒋𝒆 𝒅𝒆𝒃𝒆 𝒄𝒐𝒏𝒕𝒆𝒏𝒆𝒓 𝒍𝒂 𝒑𝒐𝒔𝒊𝒔𝒄𝒊𝒐𝒏 𝒆𝒏 𝒍𝒂 𝒒𝒖𝒆 𝒒𝒖𝒊𝒆𝒓𝒂𝒔 𝒆𝒔𝒕𝒂𝒓 (1,2,3,4,5,6,7,8,9)_`, wm, null, [['😽 𝑶𝑲 𝒈𝒓𝒂𝒄𝒊𝒂𝒔', 'ok'] ], fkontak, m)
+await conn.sendButton(m.chat, `${lenguajeGB['smsAvisoRG']()}⭕️ *Clásico Juego del Gato o 3 en raya* ❌\n\n*¿Cómo jugar?*\n_Responde al Juego con un Número, el mensaje debe contener la posiscion en la que quieras estar (1,2,3,4,5,6,7,8,9)_`, wm, null, [['😽 𝙊𝙆', 'ok'] ], fkontak, m)
 
 room.o = m.chat
 room.game.playerO = m.sender
@@ -68,14 +68,13 @@ state: 'WAITING' }
         
 if (text) room.name = text     
 let imgplay = `https://img.freepik.com/vector-premium/juego-tres-raya-icono-contorno-lineal-neon_7280-2422.jpg`
-conn.sendButton(m.chat, `😼 𝑱𝒖𝒆𝒈𝒐 𝒕𝒂𝒕𝒆𝒕𝒊
+conn.sendButton(m.chat, `😼 𝙅𝙪𝙚𝙜𝙤𝙨 𝙏𝙖𝙩𝙚𝙩𝙞
 
-🐈 𝑬𝒔𝒑𝒆𝒓𝒂𝒅𝒐 𝒂𝒍 𝒔𝒆𝒈𝒖𝒏𝒅𝒐 𝒋𝒖𝒈𝒂𝒅𝒐𝒓 𝒑𝒖𝒆𝒅𝒆 𝒊𝒏𝒈𝒓𝒆𝒔𝒂𝒓  𝒄𝒐𝒏 𝒆𝒍 𝒃𝒐𝒕𝒐́𝒏 𝒅𝒆 𝒂𝒃𝒂𝒋𝒐 𝒐 𝒖𝒔𝒂𝒅𝒐 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐
+🐈 𝙀𝙨𝙥𝙚𝙧𝙖𝙣𝙙𝙤 𝙖𝙡 𝙨𝙚𝙜𝙪𝙣𝙙𝙤 𝙟𝙪𝙜𝙖𝙙𝙤𝙧 𝙥𝙪𝙚𝙙𝙚 𝙞𝙣𝙜𝙧𝙚𝙨𝙖 𝙘𝙤𝙣 𝙚𝙡 𝙗𝙤𝙩𝙤𝙣 𝙙𝙚 𝙖𝙗𝙖𝙟𝙤 𝙤 𝙪𝙨𝙖𝙣𝙙𝙤 𝙚𝙡 𝙘𝙤𝙢𝙖𝙣𝙙𝙤
 *${usedPrefix + command} ${text}*
 
-𝑺𝒊 𝒒𝒖𝒊𝒆𝒓𝒆 𝒂𝒃𝒂𝒏𝒅𝒐𝒏𝒂𝒓 𝒍𝒂 𝒔𝒂𝒍𝒂 𝒖𝒔𝒂 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 *${usedPrefix}delttt*
-
-`, wm, imgplay, [['😎 𝑼𝒏𝒊𝒓𝒎𝒆 𝒂𝒍 𝒋𝒖𝒆𝒈𝒐𝒔', `${usedPrefix + command} ${text}`]], fkontak, m, { mentions: conn.parseMention(text) })
+𝙎𝙞 𝙦𝙪𝙞𝙚𝙧𝙚𝙨 𝙖𝙗𝙖𝙣𝙙𝙤𝙣𝙖𝙧 𝙡𝙖 𝙨𝙖𝙡𝙖 𝙪𝙨𝙖 𝙚𝙡 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 
+*${usedPrefix}delttt*`, wm, imgplay, [['😎 𝙐𝙉𝙄𝙍𝙈𝙀 𝘼𝙇 𝙅𝙐𝙀𝙂𝙊', `${usedPrefix + command} ${text}`]], fkontak, m, { mentions: conn.parseMention(text) })
 conn.game[room.id] = room
 }}
 handler.command = /^(tictactoe|ttc|ttt|xo)$/i
