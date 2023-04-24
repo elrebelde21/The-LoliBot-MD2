@@ -49,7 +49,7 @@ let old = performance.now()
 
 let info = `┆┈〘 *Informacion del Bot* 〙 ┈
 ┆
-┆[🤴🏻] *CREADOR:* Mario
+┆[🤴🏻] *CREADOR:* elrebelde
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆[#️⃣] *CONTACTO:* *wa.me/5492266466080*
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
