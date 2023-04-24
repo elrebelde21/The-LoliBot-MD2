@@ -5,8 +5,7 @@ let pp = './src/apoyo.jpg'
 //await conn.sendButton(m.chat, wm, `https://paypal.me/OficialGD`, pp, m)
 await conn.sendButton(m.chat, ``, `https://paypal.me/OficialGD`, pp, [['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', `/menu`]], m) //[['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', `/menu`]]
   */
-let str = `
-*┏ ┅ ━━━━━━━━━ ┅ ━*
+ await conn.sendButton(m.chat, `*┏ ┅ ━━━━━━━━━ ┅ ━*
 *┇💖 𝙃𝙤𝙡𝙖!!*
 *┇ ᴛᴇ ᴀɢʀᴀᴅᴇᴢᴄᴏ, ᴘᴏʀ ᴀʏᴜᴅᴀʀᴍᴇ ʏ ᴘᴏʀ ᴜsᴀʀ ᴍɪ ʙᴏᴛ*
 *┇ ɢʀᴀᴄɪᴀs, ʏᴏ ɴᴏ ᴘɪᴅᴏ ᴅɪɴᴇʀᴏ.*
@@ -40,9 +39,7 @@ let str = `
 *┃* *ɢᴀᴛᴀʙᴏᴛ-ᴍᴅ*
 *┃* *https://github.com/GataNina-Li/GataBot-MD*
 *┃* *ɢʀᴀᴄɪᴀs!!!*
-*┗ ┅ ━━━━━━━━━ ┅ ━*
-`.trim()
- await conn.sendButton(m.chat, wm, str, `https://paypal.me/OficialGD`, pp, m)
+*┗ ┅ ━━━━━━━━━ ┅ ━*`, `https://paypal.me/OficialGD`, pp, [['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', `/menu`]], m) //[['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', `/menu`]]
 /*await conn.sendHydrated(m.chat, str, wm, media, 'https://github.com/elrebelde21/The-LoliBot-MD', 'ɢɪᴛʜᴜʙ', null, null, [
 ['𝙂𝙧𝙪𝙥𝙤𝙨 𝙊𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 🔰', '.grupos'],
 ['𝘾𝙧𝙚𝙖𝙙𝙤𝙧 💗', '#owner'],
