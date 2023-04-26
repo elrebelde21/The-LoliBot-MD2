@@ -1400,7 +1400,7 @@ export async function participantsUpdate({ id, participants, action }) {
                     } catch (e) {
                     } finally {
                     let apii = await this.getFile(pp)
-                    const antiArab = JSON.parse(fs.readFileSync('./src/antiArab.json'))
+                    const antiArab = JSON.parse(fs.readFileSync('./lib/antiArab.json'))
                     const userPrefix = antiArab.some(prefix => user.startsWith(prefix))                        
                     const botTt2 = groupMetadata.participants.find(u => this.decodeJid(u.id) == this.user.jid) || {} 
                     const isBotAdminNn = botTt2?.admin === "admin" || false
