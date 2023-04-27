@@ -19,7 +19,7 @@ let room = Object.values(conn.game).find(room => room.id.startsWith('tictactoe')
 if (room == undefined) return conn.sendButton(m.chat, `𝑵𝒐 𝒆𝒔𝒕𝒂 𝒆𝒏 𝒏𝒊𝒏𝒈𝒖𝒏𝒂 𝒑𝒂𝒓𝒕𝒊𝒅𝒂 𝒆𝒏 𝒆𝒍 𝒋𝒖𝒆𝒈𝒐𝒔 𝒕𝒂𝒕𝒆𝒕𝒊`, wm, null, [['💫 𝑰𝒏𝒊𝒄𝒊𝒂 𝒑𝒂𝒓𝒕𝒊𝒅𝒂', `${usedPrefix}ttt sala nueva`]], fkontak, m)
 delete conn.game[room.id]
 
-await conn.sendButton(m.chat, `𝑳𝒂 𝒔𝒂𝒍𝒂 𝒅𝒆𝒍 𝒕𝒂𝒕𝒆𝒕𝒊 𝒇𝒖𝒆 𝒆𝒍𝒊𝒎𝒊𝒏𝒂`, wm, null, [['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪 ☘️', '/menu'] ], fkontak, m)}  
+await conn.sendButton(m.chat, `ʟᴀ sᴀʟᴀ ᴅᴇʟ ᴛᴀᴛᴇᴛɪ ғᴜᴇ ᴇʟɪᴍɪɴᴀᴅᴀ`, wm, null, [['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪 ☘️', '/menu'] ], fkontak, m)}  
 handler.command = /^(delttt|deltt|delxo|deltictactoe)$/i
 handler.fail = null
 export default handler
