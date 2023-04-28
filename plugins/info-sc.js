@@ -52,7 +52,7 @@ conn.relayWAMessage(prep)
 
 handler.help = ['runtime']
 handler.tags = ['info']
-handler.command = /^(runtime|sc|activo)$/i
+handler.command = /^(runtime|sc|activo|github)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
