@@ -61,7 +61,7 @@ for (let reward of Object.keys(recompensas)) {
     user[reward] += recompensas[reward]
 texto += `+${recompensas[reward]} ${global.rpgshop.emoticon(reward)}\n`}
 let text = `*${premium ? '🎟️ Recompensa Premium' : '🆓 Recompensa Gratis'}*\n`
-conn.sendButton(m.chat, text, `*${minar}*\n*${money} ${global.rpgshop.emoticon('money')}*`, [
+conn.sendButton(m.chat, text, `*${minar}*\n*${money} ${global.rpgshop.emoticon('money')}*`, pp, [
 ['𝙈𝙞𝙣𝙖𝙧 𝙀𝙓𝙋 ⚡', `.minar`],
 ['𝙈𝙞𝙣𝙖𝙧 𝘿𝙞𝙖𝙢𝙖𝙣𝙩𝙚𝙨 💎', `.minar3`],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', `.menu`]], m)
