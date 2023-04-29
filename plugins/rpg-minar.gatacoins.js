@@ -72,9 +72,9 @@ conn.sendButton(m.chat, text, `*${minar}*\n*${money} ${global.rpgshop.emoticon('
 ], m,)*/
 user.lastcoins = new Date * 1  
 }
-handler.help = ['minar2']
+handler.help = ['minar4']
 handler.tags = ['gata']
-handler.command = ['minar2', 'miming2', 'mine2', 'minargatacoins', 'minarcoins', 'minargata'] 
+handler.command = ['minar4', 'miming2', 'mine2', 'minargatacoins', 'minarcoins', 'minargata'] 
 handler.fail = null
 handler.exp = 0
 export default handler
