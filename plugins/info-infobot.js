@@ -47,43 +47,25 @@ let old = performance.now()
   let totaljadibot = [...new Set([...global.conns.filter(conn => conn.user && conn.state !== 'close').map(conn => conn.user)])]
   let speed = neww - old
 
-let info = `┆┈〘 *Informacion del Bot* 〙 ┈
-┆
-┆[🤴🏻] *CREADOR:* elrebelde
-┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆[#️⃣] *CONTACTO:* *wa.me/5492266466080*
-┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆[✅] *VERSION ACTUAL:* ${vs}
-┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆ [🎳] *PREFIJO:* *${usedPrefix}*
-┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆[🔐] *CHATS PRIVADO:* *${chats.length - groups.length}*
-┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆[🦜] *CHATS DE GRUPOS:* *${groups.length}* 
-┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆[💡] *CHATS EN TOTAL:* *${chats.length}* 
-┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆[🚀] *ACTIVIDAD:* *${uptime}*
-┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆[🎩] *USUARIOS:* *${totalreg}* 
-┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆[🐢] *VELOCIDAD:* *${speed}*   
-┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆[🌎] *MODO:* ${global.db.data.settings[conn.user.jid].self ? '*Privado*' : '*Público*'}
-┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆[💬] *ANTIPRIVADO:* ${global.db.data.settings[conn.user.jid].antiprivado ? '*Activado ✔*' : '*Desactivado ✘*'}
-┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆[📵] *ANTILLAMADA:* ${global.db.data.settings[conn.user.jid].antiCall ? '*Activado ✔*' : '*Desactivado*'}
-┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆[🤖] *BOTEMPORAL:* *${global.db.data.settings[conn.user.jid].temporal ? 'Activado ✔' : 'Desactivado ✘'}*
-┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆[☑️] *AUTOREAD:*  ${autoread ? '*Activado ✔*' : '*Desactivado ✘*'}   
-┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆[🤖] *BOTS SECUNDARIOS ACTIVOS:* *${totaljadibot.length}*
-┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆[❗] *RESTRICT:* ${restrict ? '*Activado ✔*' : '*Desactivado ✘*'} 
-┆
-┆┈〘 *${wm}* 〙┈`.trim() 
+let info = `╭─────[ *INFO DEL BOT* ]────✧
+├ 🤴🏻 *CREADOR:* elrebelde
+├ #️⃣ *CONTACTO:* *wa.me/5492266466080*
+├ ✅ *VERSION ACTUAL:* ${vs}
+├ 🎳 *PREFIJO:* *${usedPrefix}*
+├ 🔐 *CHATS PRIVADO:* *${chats.length - groups.length}*
+├ 🦜 *CHATS DE GRUPOS:* *${groups.length}* 
+├ 💡 *CHATS EN TOTAL:* *${chats.length}* 
+├ 🚀 *ACTIVIDAD:* *${uptime}*
+┆ 🎩 *USUARIOS:* *${totalreg}*
+┆ 🐢 *VELOCIDAD:* *${speed}*   
+┆ 🌎 *MODO:* ${global.db.data.settings[conn.user.jid].self ? '*Privado*' : '*Público*'}
+┆ 💬 *ANTIPRIVADO:* ${global.db.data.settings[conn.user.jid].antiprivado ? '*Activado ✔*' : '*Desactivado ✘*'}
+┆ 📵 *ANTILLAMADA:* ${global.db.data.settings[conn.user.jid].antiCall ? '*Activado ✔*' : '*Desactivado*'}
+┆ 🤖 *BOTEMPORAL:* *${global.db.data.settings[conn.user.jid].temporal ? 'Activado ✔' : 'Desactivado ✘'}*
+┆ ☑️ *AUTOREAD:*  ${autoread ? '*Activado ✔*' : '*Desactivado ✘*'}   
+┆ 🤖 *BOTS SECUNDARIOS ACTIVOS:* *${totaljadibot.length}*
+┆ ⛔ *RESTRICT:* ${restrict ? '*Activado ✔*' : '*Desactivado ✘*'} 
+╰────────────···`.trim() 
 conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '𝙏𝙝𝙚-𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿', 'status@broadcast')
 conn.sendFile(m.chat, vn, 'infobot.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true })
 }
