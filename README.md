@@ -64,7 +64,7 @@
 termux-setup-storage
 ```
 ```bash
-pkg update -y && pkg upgrade -y && pkg install -y bash && pkg install -y wget && pkg install yarn
+pkg update -y && pkg upgrade -y && pkg install -y bash && pkg install -y wget && pkg install wget && pkg install yarn
 ```
 ```bash
 wget -O - https://raw.githubusercontent.com/elrebelde21/The-LoliBot-MD/master/install.sh | bash
