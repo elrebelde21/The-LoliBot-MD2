@@ -90,9 +90,9 @@ return { conversation: "hello, i'm The-LoliBot-MD" }},
 msgRetryCounterMap,
 logger: pino({ level: 'silent' }),
 auth: state,
-browser: ['The-LoliBot-MD','Edge','1.0.0'],
+browser: ['The-LoliBot-MD','Safari','9.7.0'],
 version   
-}       
+}
        
 //getMessage: async (key) => ( opts.store.loadMessage(/** @type {string} */(key.remoteJid), key.id) || opts.store.loadMessage(/** @type {string} */(key.id)) || {} ).message || { conversation: 'Please send messages again' },   
 /*msgRetryCounterMap,
