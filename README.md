@@ -189,7 +189,7 @@ grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https:/
 
 ```bash
 
-git clone https://github.com/GataNina-Li/GataBot-MD && cd GataBot-MD && npm install && npm update && node .
+git clone https://github.com/elrebelde21/The-LoliBot-MD && cd The-LoliBot-MD && npm install && npm update && node .
 
 ```
 
