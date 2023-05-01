@@ -1,15 +1,41 @@
+/*Créditos a https://github.com/Azami19*/
+
 import uploadFile from '../lib/uploadFile.js'
 import uploadImage from '../lib/uploadImage.js'
+import fetch from 'node-fetch'
+
 let handler = async (m) => {
-let q = m.quoted ? m.quoted : m
-let mime = (q.msg || q).mimetype || ''
-if (!mime) throw `𝑹𝒆𝒔𝒑𝒐𝒏𝒅𝒆 𝒂 𝒖𝒏 𝒗𝒊́𝒅𝒆𝒐 𝒐 𝒊𝒎𝒂𝒈𝒆𝒏 𝒑𝒂𝒓𝒂 𝒄𝒐𝒏𝒗𝒆𝒓𝒕𝒊𝒓 𝒆𝒏 𝒆𝒏𝒍𝒂𝒄𝒆 `
-let media = await q.download()
-let isTele = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime)
-let link = await (isTele ? uploadImage : uploadFile)(media)
-m.reply(`*𝒆𝒏𝒍𝒂𝒄𝒆* \n*${link}*`)
+let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+let pp = await conn.profilePictureUrl(who).catch(_ => hwaifu.getRandom())
+let name = await conn.getName(who)
+  let q = m.quoted ? m.quoted : m
+  let mime = (q.msg || q).mimetype || ''
+  if (!mime) throw '*⚠️ Responda a una imagen o vídeo*'
+  let media = await q.download()
+  let isTele = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime)
+  let link = await (isTele ? uploadImage : uploadFile)(media)
+  let caption = ` *📊 𝙀𝙉𝙇𝘼𝘾𝙀:*\n${link}
+  *🎁 𝙏𝙖𝙢𝙖𝙣̃𝙤:*\n${media.length} bytes\n
+  *📍 𝙀𝙭𝙥𝙞𝙧𝙖𝙘𝙞𝙤́𝙣:*\n ${isTele ? '✅ No expira' : '⚠️ Desconocido'}\n
+  *🔰 𝘼𝙘𝙤𝙧𝙩𝙖𝙙𝙤:*\n${await shortUrl(link)}`
+
+conn.reply(m.chat, caption, m, { contextInfo: {
+          externalAdReply :{
+    mediaUrl: md,
+    mediaType: 2,
+    title: wm,
+    body: botdate,
+    thumbnail: await(await fetch(link)).buffer(),
+    sourceUrl: link
+     }}
+  })
 }
-handler.help = ['tourl <reply image>']
-handler.tags = ['sticker']
-handler.command = /^(upload|tourl|toenlace)$/i
+handler.help = ['tourl']
+handler.tags = ['herramientas']
+handler.command = /^(tourl|upload)$/i
 export default handler
+
+async function shortUrl(url) {
+	let res = await fetch(`https://tinyurl.com/api-create.php?url=${url}`)
+	return await res.text()
+}
