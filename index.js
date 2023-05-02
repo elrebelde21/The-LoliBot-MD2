@@ -15,9 +15,9 @@ const { say } = cfonts
 const rl = createInterface(process.stdin, process.stdout)
 
 say('The Loli\nBot\nMD', {
-font: 'chrome',
+font: 'block',
 align: 'center',
-gradient: ['red', 'magenta']})
+colors: ['magenta']})
 say(`Por LoliBot`, {
 font: 'console',
 align: 'center',
