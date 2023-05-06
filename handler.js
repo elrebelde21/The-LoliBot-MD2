@@ -1176,10 +1176,10 @@ function _0x1ce7(){const _0xac1ac2=['212872fjshDh','17320yUXgkp','6019568oxJfgD'
 
 *👉 Puedes contactar a la propietaria del Bot si crees que se trata de un error (TENER PRUEBAS) para tratar el motivo de tú desbaneo*
 
-👉 ${global.asistencia}
+
 👉 wa.me/5492266466080
-👉 Wa.me/5214531173598
-👉 ${global.ig}
+👉 Wa.me/573183650526
+
 `.trim())
                         return
                 }
