@@ -9,7 +9,7 @@ global.db.data.users[m.sender].limit -= 4
 global.db.data.users[m.sender].exp -= 150
 global.db.data.users[m.sender].joincount -= 2
 user.registered = false
-m.reply(`${eg} 𝑼𝒔𝒕𝒆𝒅 𝒚𝒂 𝒏𝒐 𝒆𝒔𝒕𝒂́ 𝒓𝒆𝒈𝒊𝒔𝒕𝒓𝒂𝒅𝒐(𝘼)`)
+m.reply(`${eg} ᴜsᴛᴇᴅ ʏᴀ ɴᴏ ᴇsᴛᴀ ʀᴇɢɪsᴛʀᴀᴅᴏ ᴇʟ ᴍɪ ʙᴀsᴇ ᴅᴇʟ ᴅᴀᴛᴏs 😢`)
 }
 handler.help = ['', 'ister'].map(v => 'unreg' + v + ' <numero de serie>')
 handler.tags = ['xp']

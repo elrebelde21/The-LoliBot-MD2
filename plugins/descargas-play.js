@@ -29,7 +29,7 @@ conn.sendFile(m.chat, thumbnail, 'thumbnail.jpg', `
 *📆 Publicado:* ${published}
 *👉🏻Aguarde un momento en lo que envío su video*
 `.trim(), m)
-conn.sendMessage(m.chat, { video: { url: vid }, fileName: '${title}.mp4', mimetype: 'video/mp4', caption: `🔰 𝘼𝙦𝙪𝙞 𝙚𝙨𝙩𝙖 𝙩𝙪 𝙫𝙞𝙙𝙚𝙤 \n🔥 𝙏𝙞𝙩𝙪𝙡𝙤: ${title}`}, {quoted: m})
+conn.sendMessage(m.chat, { video: { url: vid }, fileName: '${title}.mp4', mimetype: 'video/mp4', caption: `*🔰 Aqui esta tu video*\n*🔥 Titulo:* ${title}`}, {quoted: m})
 }
 } catch (e) {
 }}

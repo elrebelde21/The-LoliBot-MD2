@@ -75,10 +75,10 @@ sections }
       const count = args[1] && args[1].length > 0 ? Math.min(99999999, Math.max(parseInt(args[1]), 1)) : !args[1] || args.length < 3 ? 1 : Math.min(1, count)
         switch (type) {
           case 'nomor':
-          conn.reply(m.chat, "The-LoliBot-MD", m, { contextInfo: { mentionedJid: [nowner] }})
+          conn.reply(m.chat, "LoliBot-MD", m, { contextInfo: { mentionedJid: [nowner] }})
            break
             case 'bio':
-          conn.sendButton(m.chat, teksbio, fkontak, pp, [`⋮☰ Menu`, `.menu`], m)
+          await conn.sendFile(m.chat, gataImg.getRandom(), 'gata.jpg', teksbio, fkontak)
             break
           default:
             return await conn.sendMessage(m.chat, listMessage, { quoted: m, contextInfo: { mentionedJid: [m.sender] }})
@@ -92,7 +92,7 @@ sections }
           break
 
         default:
-          return conn.sendButton( m.chat, caption, wm, null, [`⋮☰ Menu`, `.menu`], m)
+          return await conn.sendFile(m.chat, gataImg.getRandom(), 'gata.jpg', teksbio, fkontak)
       }
     }
   } catch (err) {

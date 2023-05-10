@@ -5,32 +5,17 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 let user = db.data.users[m.sender]
 let time = global.db.data.users[m.sender].prue + 60000
 if (new Date - global.db.data.users[m.sender].prue < 60000) throw `*ESPERA UNOS MINUTOS PARA USAR OTRO COMANDO*`
-if (!args[0]) throw `${mg}𝙄𝙣𝙜𝙧𝙚𝙨𝙚 𝙪𝙣 𝙚𝙣𝙡𝙖𝙘𝙚 𝙫𝙖𝙡𝙞𝙙𝙤 𝙙𝙚𝙡 𝙢𝙚𝙙𝙞𝙖𝙛𝙞𝙧𝙚\n𝙀𝙟𝙚𝙢𝙥𝙡𝙤\n ${usedPrefix + command} https://www.mediafire.com/file/cv64tns6co3272q/Lolibot.zip/file`
+if (!args[0]) throw `INGRESE UN ENLACE VALIDO DEL MEDIAFIRE\nEJEMPLO:\n ${usedPrefix + command} https://www.mediafire.com/file/cv64tns6co3272q/Lolibot.zip/file`
    try {  
       let res = await mediafireDl(args[0])
       let { name, size, date, mime, link } = res
-      let caption = `
-╭┄ ${eg}
-┆ 𓃠 ${wm}*    
-┆——————«•»——————
-┆ 💫 𝙉𝙤𝙢𝙗𝙧𝙚   
-┆ ${name}
-┆——————«•»——————
-┆ 💪 𝙋𝙚𝙨𝙤
-┆ ${size}
-┆——————«•»——————
-┆ 🚀 𝙏𝙞𝙥𝙤
-┆ ${mime}
-╰━━━⊰ 𓃠 ${vs} ⊱━━━━დ
-⏳ 𝐸𝑆𝑃𝐸𝑅𝐸 𝐸𝑁 𝐿𝑂 𝑄𝑈𝐸 𝐸𝑁𝑉𝐼𝑂 𝑆𝑈𝑆 𝐴𝑅𝐶𝐻𝐼𝑉𝑂. . . .`.trim()
+      let caption = `💫 NOMBRE: ${name}\n💪PESO: ${size}\n🚀 TIPO: ${mime}\n\n⏳ ESPERE UN MOMENTO EN LOS QUE EMVIO SUS ARCHIVOS. . . .`.trim()
 //let author = global.author
 //await conn.sendButton(m.chat, caption, `*⏳ 𝐸𝑆𝑃𝐸𝑅𝐸 𝐸𝑁 𝐿𝑂 𝑄𝑈𝐸 𝐸𝑁𝑉𝐼𝑂 𝑆𝑈𝑆 𝐴𝑅𝐶𝐻𝐼𝑉𝑂. . . .* `, [['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 ⚡', '.menu']], m)
    await conn.sendFile(m.chat, link, name, '', m, null, { mimetype: mime, asDocument: true })
    } catch {  
      let sticker = './src/stickers1.webp'
 conn.sendFile(m.chat, sticker, 'error.webp', '', m)}
-/* conn.sendFile(m.chat, vn, 'descarga.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true })
-*/
 global.db.data.users[m.sender].prue = new Date * 1
 }
 

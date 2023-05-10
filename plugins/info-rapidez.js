@@ -59,18 +59,15 @@ irq: 0
 }})
 
 let old = performance.now()
-await delay(5 * 5000)
-await conn.sendButton(m.chat, wm, `𝘾𝙤𝙢𝙚𝙣𝙯𝙖𝙣𝙙𝙤 𝙥𝙧𝙪𝙚𝙗𝙖 𝙙𝙚𝙡 𝙫𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙 🚀...`, null, [['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)  
+await conn.reply(m.chat, `𝘾𝙤𝙢𝙚𝙣𝙯𝙖𝙣𝙙𝙤 𝙥𝙧𝙪𝙚𝙗𝙖 𝙙𝙚𝙡 𝙫𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙 🚀...`, fkontak,  m)
 let neww = performance.now()
 let speed = neww - old
-let caption = `*${htki} 𝙫𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙 ${htka}*
+let caption = `*🚀 Velocidad 🚀*
 
 🚄 *${Math.round(neww - old)}* ms
 🚄 *${speed}* ms
 
-❇️ INFO BOT
-
-*${htjava}* 𝙏𝙄𝙀𝙈𝙋𝙊 𝘿𝙀 𝙀𝙅𝙀𝘾𝙐𝘾𝙄𝙊𝙉 : 𝙍𝙐𝙉𝙏𝙄𝙈𝙀 
+*${htjava}* *TIEMPO ACTIVOS*
 ${muptime}
 ${readMore}
 *${htjava} C H A T S*
@@ -96,8 +93,8 @@ ${cpus[0].model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type =>
 *CPU Core(s) Uso (${cpus.length} Core CPU)*
 ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}`).join('\n\n')}` : ''}
 `
-
-await conn.sendButton(m.chat, wm, caption, gata.getRandom(), [['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], m, dos.getRandom())
+await conn.sendFile(m.chat, gataImg.getRandom(), 'gata.jpg', caption, fkontak)
+///await conn.sendButton(m.chat, wm, caption, gata.getRandom(), [['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], m, dos.getRandom())
 } catch (e) {
 await conn.reply(m.chat, `${fg}*ALGO SALIÓ MAL.*\n\n\`\`\`REPORTE ESTE COMANDO ${usedPrefix + command} CON EL COMANDO ${usedPrefix}reporte\`\`\``, m)
 }}
@@ -105,7 +102,6 @@ handler.help = ['ping', 'speed']
 handler.tags = ['info', 'tools']
 handler.command = /^(ping|speed|velocidad|rapidez|velocity)$/i
 export default handler
-const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
