@@ -10,16 +10,28 @@ if (!args[0]) return conn.reply(m.chat, `${lenguajeGB['smsAvisoMG']()}*𝙄𝙉�
    try {  
       let res = await mediafireDl(args[0])
       let { name, size, date, mime, link } = res
-      let caption = `💫 𝙉𝙊𝙈𝘽𝙍𝙀: ${name}\n💪𝙋𝙀𝙎𝙊: ${size}\n🚀 𝙏𝙄𝙋𝙊: ${mime}\n\n⏳ ᴱˢᵖᵉʳᵉ ᵘⁿ ᵐᵒᵐᵉⁿᵗᵒ ᵉⁿ ˡᵒˢ ᵠᵘᵉ ᵉⁿᵛᶦᵒˢ ˢᵘˢ ᵃʳᶜʰᶦᵛᵒˢ. . . .`.trim()
-//let author = global.author
-//await conn.sendButton(m.chat, caption, `*⏳ 𝐸𝑆𝑃𝐸𝑅𝐸 𝐸𝑁 𝐿𝑂 𝑄𝑈𝐸 𝐸𝑁𝑉𝐼𝑂 𝑆𝑈𝑆 𝐴𝑅𝐶𝐻𝐼𝑉𝑂. . . .* `, [['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 ⚡', '.menu']], m)
+      let caption = `💫 𝙉𝙊𝙈𝘽𝙍𝙀: ${name}\n💪𝙋𝙀𝙎𝙊: ${size}\n🚀 𝙏𝙄𝙋𝙊: ${mime}\n\n⏳ ᴱˢᵖᵉʳᵉ ᵘⁿ ᵐᵒᵐᵉⁿᵗᵒ ᵉⁿ ˡᵒˢ ᵠᵘᵉ ᵉⁿᵛᶦᵒˢ ˢᵘˢ ᵃʳᶜʰᶦᵛᵒˢ`.trim()
+conn.reply(m.chat, caption, m, {
+contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
+title: '𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿',
+body: 'Super Bot WhatsApp',         
+previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
+sourceUrl: `https://github.com/elrebelde21/The-LoliBot-MD`}}})
+  
+/*let info = `𝙈𝘼𝙔𝙊𝙍 𝘼 150 𝙈𝘽 𝙀𝙎 𝙋𝙊𝙎𝙄𝘽𝙇𝙀 𝙌𝙐𝙀 𝙉𝙊 𝙎𝙀 𝙀𝙉𝙑𝙄𝙀..`.trim()  
+await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [
+['𝙈𝙚𝙣𝙪 𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙨 🌀', '#descargasmenu'],
+['𝙈𝙚𝙣𝙪 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 ✨', '.allmenu'],
+['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']
+], m,)  */
    await conn.sendFile(m.chat, link, name, '', m, null, { mimetype: mime, asDocument: true })
-   } catch {  
+} catch {  
      let sticker = './src/stickers1.webp'
 conn.sendFile(m.chat, sticker, 'error.webp', '', m)}
+/* conn.sendFile(m.chat, vn, 'descarga.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true })
+*/
 global.db.data.users[m.sender].prue = new Date * 1
 }
-
 handler.help = ['mediafire'].map(v => v + ' <url>')
 handler.tags = ['downloader']
 handler.command = /^(mediafire|mediafiredl|dlmediafire)$/i
@@ -41,7 +53,6 @@ seconds = (seconds < 10) ? "0" + seconds : seconds
 return minutes + " m y " + seconds + " s " 
 }
 
-
 async function mediafireDl(url) {
    const res = await axios.get(`https://www-mediafire-com.translate.goog/${url.replace('https://www.mediafire.com/','')}?_x_tr_sl=en&_x_tr_tl=fr&_x_tr_hl=en&_x_tr_pto=wapp`)
    const $ = cheerio.load(res.data)
@@ -54,3 +65,4 @@ async function mediafireDl(url) {
    mime = rese.headers['content-type']
    return { name, size, date, mime, link }
 }
+      
