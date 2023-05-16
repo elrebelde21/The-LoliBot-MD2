@@ -1,39 +1,49 @@
-import fetch from 'node-fetch'
-let handler = async (m, {command, conn, text}) => {
-if (!text) throw `*🤔Que esta buscado? 🤔*\n*Ingrese el nombre del la canción*\n\n*Ejemplo:*\n#play lgante bar`
+import { youtubeSearch, youtubedl, youtubedlv2, youtubedlv3 } from '@bochilteam/scraper' 
+import fetch from "node-fetch"
+import yts from 'yt-search'
+let handler = async (m, { conn, command, text, usedPrefix }) => {
+let q, v, yt, dl_url, ttl, size, lolhuman, lolh, n, n2, n3, n4, cap, qu, currentQuality
+	if (!text) throw `*🤔Que esta buscado? 🤔*\n*Ingrese el nombre del la canción*\n\n*Ejemplo:*\n#play lgante bar`
+	let vid = (await yts(text)).all[0]
+let { title, description, publishedTime, url, thumbnail, videoId, timestamp, views, published } = vid
 try {
-let vid2 = await (await fetch(`https://api.lolhuman.xyz/api/ytsearch?apikey=${lolkeysapi}&query=${text}`)).json()
-let { videoId, title, views, published, timestamp, durationH, thumbnail } = await vid2.result[0]
-const url = 'https://www.youtube.com/watch?v=' + videoId
-let ytLink = await fetch(`https://api.lolhuman.xyz/api/ytplay2?apikey=${lolkeysapi}&query=${text}`)
-if (command == 'play') {
-let jsonn = await ytLink.json()
-let aud = await jsonn.result.audio
+if (command == 'play') {	
 conn.sendFile(m.chat, thumbnail, 'thumbnail.jpg', `
 *${title}*
 *⇄ㅤ     ◁   ㅤ  ❚❚ㅤ     ▷ㅤ     ↻*
 
-*📆 Publicado:* ${published}
+*⏰ Duración:* ${timestamp}
 *👉🏻Aguarde un momento en lo que envío su audio*
 `.trim(), m)
-conn.sendMessage(m.chat, { audio: { url: aud }, mimetype: 'audio/mp4', fileName: `${title}.mp3`}, {quoted: m})
+q = '128kbps'
+v = url
+yt = await youtubedl(v).catch(async () => await youtubedlv2(v)).catch(async () => await youtubedlv3(v))
+dl_url = await yt.audio[q].download()
+title = await yt.title
+size = await yt.audio[q].fileSizeH
+await conn.sendFile(m.chat, dl_url, title + '.mp3', null, m, false, { mimetype: 'audio/mp4' })
 }
-
 if (command == 'play2') {
-let jsonn = await ytLink.json()
-let vid = await jsonn.result.video
 conn.sendFile(m.chat, thumbnail, 'thumbnail.jpg', `
 *${title}*
 *⇄ㅤ     ◁   ㅤ  ❚❚ㅤ     ▷ㅤ     ↻*
 
-*📆 Publicado:* ${published}
+*⏰ Duración:* ${timestamp}
 *👉🏻Aguarde un momento en lo que envío su video*
 `.trim(), m)
-conn.sendMessage(m.chat, { video: { url: vid }, fileName: '${title}.mp4', mimetype: 'video/mp4', caption: `*🔰 Aqui esta tu video*\n*🔥 Titulo:* ${title}`}, {quoted: m})
+let qu = args[1] || '360'
+let q = qu + 'p'
+let v = args[0]
+const yt = await youtubedl(v).catch(async _ => await youtubedlv2(v)).catch(async _ => await youtubedlv3(v))
+const dl_url = await yt.video[q].download()
+const ttl = await yt.title
+const size = await yt.video[q].fileSizeH
+await await conn.sendMessage(m.chat, { video: { url: dl_url }, fileName: `${ttl}.mp4`, mimetype: 'video/mp4', caption: `*🔰 Aqui esta tu video*\n*🔥 Titulo: ${ttl}`, thumbnail: await fetch(yt.thumbnail) }, { quoted: m })
 }
 } catch (e) {
 }}
 handler.help = ['play', 'play2'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']
 handler.command = ['play', 'play2']
+
 export default handler
