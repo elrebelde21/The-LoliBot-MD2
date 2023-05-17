@@ -1,7 +1,7 @@
 Arguments: 
   /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/share/yarn/bin/yarn.js
 
-PATH: 
+PATH:  
   /data/data/com.termux/files/usr/bin
 
 Yarn version: 
