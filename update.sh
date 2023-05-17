@@ -4,7 +4,7 @@
 BOT_DIR="The-LoliBot-MD"  
 BOT_REPO="https://github.com/elrebelde21/$BOT_DIR" 
 DB_FILE="database.json"
- 
+  
 GREEN='\033[32m' 
 BOLD='\033[1m' 
 RESET='\033[0m' 
