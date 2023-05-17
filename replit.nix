@@ -1,5 +1,5 @@
 { pkgs }: {
-    deps = [
+    deps = [ 
         pkgs.nodejs
         pkgs.nodePackages.typescript
         pkgs.ffmpeg
