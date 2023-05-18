@@ -27,8 +27,8 @@ export async function before(m, { conn }) {
 	} else {
 		console.log({
 			messageStubType: m.messageStubType,
-			messageStubParameters: m.messageStubParameters,
-			type: WAMessageStubType[m.messageStubType], 
+	    messageStubParameters: m.messageStubParameters,
+	    type: WAMessageStubType[m.messageStubType], 
 		});
 	}
 }
