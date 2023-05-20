@@ -16,6 +16,6 @@ conn.sendFile(m.chat, vn, 'Invocar.mp3', null, m, true, { type: 'audioMessage', 
 handler.help = ['tagall <mesaje>','invocar <mesaje>']
 handler.tags = ['group']
 handler.command = /^(tagall|invocar|invocacion|todos|invocación)$/i
-//handler.admin = true
+handler.admin = true
 handler.group = true
 export default handler
