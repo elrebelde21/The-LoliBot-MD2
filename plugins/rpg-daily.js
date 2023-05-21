@@ -1,18 +1,12 @@
+import fetch from 'node-fetch'
 let handler = async (m, { isPrems, conn }) => {
-const fkontak = {
-	"key": {
-    "participants":"0@s.whatsapp.net",
-		"remoteJid": "status@broadcast",
-		"fromMe": false,
-		"id": "Halo"
-	},
-	"message": {
-		"contactMessage": {
-			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
-		}
-	},
-	"participant": "0@s.whatsapp.net"
+let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" 
 }
+let grupos = [nna, nn, nnn, nnnt]
+let gata = [img5, img6, img7, img8, img9]
+let enlace = { contextInfo: { externalAdReply: {title: wm + ' 🐈', body: 'support group' , sourceUrl: grupos.getRandom(), thumbnail: await(await fetch(gata.getRandom())).buffer() }}}
+let enlace2 = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: yt, mediaType: 'VIDEO', description: '', title: wm, body: 'Bot', thumbnailUrl: await(await fetch(global.img)).buffer(), sourceUrl: yt }}}
+let dos = [enlace, enlace2]    
 
 let user = global.db.data.users[m.sender]
 let premium = user.premium
@@ -47,20 +41,23 @@ const recompensas = {
 }
 
 let time = user.lastclaim + 7200000 //2 Horas 7200000
-if (new Date - user.lastclaim < 7200000) throw `𝙔𝙖 𝙧𝙚𝙘𝙡𝙖𝙢𝙖𝙨𝙩𝙚 𝙩𝙪 𝙧𝙚𝙜𝙖𝙡𝙤 🎁\n𝙑𝙪𝙚𝙡𝙫𝙚 𝙚𝙣 *${msToTime(time - new Date())}* 𝙋𝙖𝙧𝙖 𝙫𝙤𝙡𝙫𝙚𝙧 𝙖 𝙧𝙚𝙘𝙡𝙖𝙢𝙖𝙧`
+if (new Date - user.lastclaim < 7200000) return await conn.reply(m.chat, `𝙔𝙖 𝙧𝙚𝙘𝙡𝙖𝙢𝙖𝙨𝙩𝙚 𝙩𝙪 𝙧𝙚𝙜𝙖𝙡𝙤 🎁\n𝙑𝙪𝙚𝙡𝙫𝙚 𝙚𝙣 *${msToTime(time - new Date())}* 𝙋𝙖𝙧𝙖 𝙫𝙤𝙡𝙫𝙚𝙧 𝙖 𝙧𝙚𝙘𝙡𝙖𝙢𝙖𝙧`, fkontak,  m)
+//await conn.sendButton(m.chat, `𝙔𝙖 𝙧𝙚𝙘𝙡𝙖𝙢𝙖𝙨𝙩𝙚 𝙩𝙪 𝙧𝙚𝙜𝙖𝙡𝙤 🎁\n𝙑𝙪𝙚𝙡𝙫𝙚 𝙚𝙣 *${msToTime(time - new Date())}* 𝙋𝙖𝙧𝙖 𝙫𝙤𝙡𝙫𝙚𝙧 𝙖 𝙧𝙚𝙘𝙡𝙖𝙢𝙖𝙧`, wm, null, [['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)
 let texto = ''
 for (let reward of Object.keys(recompensas)) {
     if (!(reward in user)) continue
     user[reward] += recompensas[reward]
-texto += `*+${recompensas[reward]}* ${global.rpgshop.emoticon(reward)}\n`}
-let text = `
-╭━━🎁━🎁━🎁━━⬣
+texto += `*+${recompensas[reward]}* ${global.rpgshop.emoticon(reward)}\n┃ `}
+let text = `╭━━🎁━🎁━🎁━━⬣
 ┃ ✨ 𝙊𝙗𝙩𝙞𝙚𝙣𝙚 𝙪𝙣 𝙧𝙚𝙜𝙖𝙡𝙤!!
 ┃ *${premium ? '🎟️ Recompensa Premium' : '🆓 Recompensa Gratis'}*
-╰━━🎁━🎁━🎁━━⬣`
-let img = 'https://img.freepik.com/vector-gratis/gente-diminuta-enormes-cajas-regalo-ilustracion-vectorial-plana-personas-que-celebran-cumpleanos-envian-o-reciben-regalos-lealtad-o-ideas-brillantes-recompensa-bonificacion-concepto-fiesta_74855-25016.jpg?w=2000'
+┃ ${texto}
+╰━━🎁━🎁━🎁━━⬣
 
-await conn.sendButton(m.chat, text, texto + `\n\n🎟️ 𝑷𝒓𝒆𝒎𝒊𝒖𝒎 ⇢ ${premium ? '✅' : '❌'}\n${wm}`, img, [['⛰️ 𝘼𝙗𝙧𝙞𝙧 𝙘𝙤𝙛𝙧𝙚  ⛰️', '/cofre'], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu'] ], fkontak, m)  
+🎟️ 𝑷𝒓𝒆𝒎𝒊𝒖𝒎 ⇢ ${premium ? '✅' : '❌'}\n${wm}`
+let img = 'https://img.freepik.com/vector-gratis/gente-diminuta-enormes-cajas-regalo-ilustracion-vectorial-plana-personas-que-celebran-cumpleanos-envian-o-reciben-regalos-lealtad-o-ideas-brillantes-recompensa-bonificacion-concepto-fiesta_74855-25016.jpg?w=2000'
+await conn.sendFile(m.chat, img, 'gata.jpg', text, fkontak)
+//await conn.sendButton(m.chat, text, texto + `\n\n🎟️ 𝑷𝒓𝒆𝒎𝒊𝒖𝒎 ⇢ ${premium ? '✅' : '❌'}\n${wm}`, img, [['⛰️ 𝘼𝙗𝙧𝙞𝙧 𝙘𝙤𝙛𝙧𝙚  ⛰️', '/cofre'], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu'] ], fkontak, m)  
 user.lastclaim = new Date * 1
 }
 handler.help = ['daily']

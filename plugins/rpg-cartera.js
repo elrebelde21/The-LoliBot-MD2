@@ -1,17 +1,35 @@
+import fetch from 'node-fetch'
 let handler = async (m, { usedPrefix, conn}) => {	
 let who
 if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
 else who = m.sender
 let name = conn.getName(who) 
-let caption = `╭━〔 *𝑪𝒂𝒏𝒕𝒆𝒓𝒂 👝* 〕━⬣
+let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+let grupos = [nna, nn, nnn, nnnt]
+let gata = [img5, img6, img7, img8, img9]
+let enlace = { contextInfo: { externalAdReply: {title: wm + ' 🐈', body: 'support group' , sourceUrl: grupos.getRandom(), thumbnail: await(await fetch(gata.getRandom())).buffer() }}}
+let enlace2 = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: yt, mediaType: 'VIDEO', description: '', title: wm, body: 'Bot ', thumbnailUrl: await(await fetch(img)).buffer(), sourceUrl: yt }}}
+let dos = [enlace, enlace2]
+
+let user = global.db.data.users[who]
+let premium = user.premium
+const cartera = {
+    economia: {
+    exp: true,
+    limit: true,
+    money: true,
+   joincount: true,
+  },
+}
+const recursos = Object.keys(cartera.economia).map(v => user[v] && `*${global.rpgshop.emoticon(v)} ⇢ ${user[v]}*`).filter(v => v).join('\n┃ ').trim()
+let cart = `╭━〔 *𝑪𝒂𝒏𝒕𝒆𝒓𝒂 👝* 〕━⬣
 ┃ ${name} 𝑬𝒏 𝒔𝒖 𝒄𝒂𝒓𝒕𝒆𝒓𝒂 𝒕𝒊𝒆𝒏𝒆...
-┃ *${global.db.data.users[who].limit} 𝑫𝒊𝒂𝒎𝒂𝒏𝒕𝒆(s)* 💎
-┃ *${global.db.data.users[who].money} 𝑳𝒐𝒍𝒊𝒄𝒐𝒊𝒏𝒔(s)* 🐈
-┃ *${global.db.data.users[who].exp} 𝑬𝑿𝑷* ⚡
-┃ *${global.db.data.users[who].joincount} 𝑻𝒐𝒌𝒆𝒏(s)* 🪙
+┃ ${recursos}
 ╰━━━━〔 *𓃠 ${vs}* 〕━━━⬣`
-//let author = global.author
-await conn.sendButton(m.chat, caption, `𝑷𝒖𝒆𝒅𝒆 𝒄𝒐𝒎𝒑𝒓𝒂𝒓 𝒎𝒂́𝒔 𝒓𝒆𝒄𝒖𝒆𝒓𝒅𝒐𝒔 𝒆𝒄𝒐𝒏𝒐́𝒎𝒊𝒄𝒐 𝒖𝒔𝒂𝒅𝒐 𝒆𝒔𝒕𝒐𝒔 𝒄𝒐𝒎𝒂𝒏𝒅𝒐\n\n𝑪𝒐𝒎𝒑𝒓𝒂 𝒅𝒊𝒂𝒎𝒂𝒏𝒕𝒆 𝒄𝒐𝒏 𝑬𝑿𝑷\n${usedPrefix}buy cantidad\n${usedPrefix}buyall cantidad\n\n𝑪𝒐𝒎𝒑𝒓𝒂 𝒅𝒊𝒂𝒎𝒂𝒏𝒕𝒆 𝒄𝒐𝒏 𝒍𝒐𝒍𝒊𝒄𝒐𝒊𝒏𝒔\n${usedPrefix}buy2 cantidad\n${usedPrefix}buyall2 cantidad\n\n𝑪𝒐𝒎𝒑𝒓𝒂 𝒅𝒊𝒂𝒎𝒂𝒏𝒕𝒆 𝒄𝒐𝒏 𝒕𝒐𝒌𝒆𝒏\n${usedPrefix}buy3 cantidad\n${usedPrefix}buyall3 cantidad`, [['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 ⚡', '.menu']], m)
+await conn.sendFile(m.chat, gata, 'gata.jpg', cart, fkontak )
+/*await conn.sendButton(m.chat, `🎟️ 𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 ⇢ ${premium ? '✅' : '❌'}\n${wm}`, `👝 ⇢ ${name}\n` + recursos + `\n\n*PARA VER MÁS RECURSOS VISITE EL INVENTARIO*\n*TO SEE MORE RESOURCES VISIT THE INVENTORY*`, img5, [
+['𝙄𝙣𝙫𝙚𝙣𝙩𝙖𝙧𝙞𝙤 | 𝙄𝙣𝙫𝙚𝙣𝙩𝙤𝙧𝙮 🎒', '/inventario'],
+['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m, enlace) */ 
 }
 handler.help = ['bal']
 handler.tags = ['xp']
