@@ -9,17 +9,16 @@ return !1
   let user = global.db.data.users[m.sender]
   let chat = global.db.data.chats[m.chat]
   let bot = global.db.data.settings[this.user.jid] || {}
-  let img = 'https://telegra.ph/file/635b82df8d7abb4792eab.jpg'
+  let img = 'https://i.imgur.com/5Q1MqGD.jpg'
  const isToxic = toxicRegex.exec(m.text)
     
 if (isToxic && chat.antitoxic && !isOwner && !isAdmin) {
 user.warn += 1
-/* if (!(user.warn >= 4)) await m.reply(`${user.warn == 1 ? `Hola *@${m.sender.split`@`[0]}*` : `*@${m.sender.split`@`[0]}*`},  ${lenguajeGB['smsToxic1']()} (${isToxic}) ${lenguajeGB['smsToxic2']()}*\n\n${lenguajeGB['smsToxic3']()} *${user.warn}/4*`, false, { mentions: [m.sender] })
-    }*/
-if (!(user.warn >= 4)) await conn.sendButton(m.chat,`${user.warn == 1 ? `*@${m.sender.split`@`[0]}*` : `*@${m.sender.split`@`[0]}*`} *${lenguajeGB['smsToxic1']()} (${isToxic}) ${lenguajeGB['smsToxic2']()}*`, `${lenguajeGB['smsToxic3']()} *${user.warn}/4*\n\n${wm}`, img, [
+if (!(user.warn >= 4)) await m.reply(`${user.warn == 1 ? `*@${m.sender.split`@`[0]}*` : `*@${m.sender.split`@`[0]}*`}, ${lenguajeGB['smsToxic1']()} (${isToxic}) ${lenguajeGB['smsToxic2']()} ${lenguajeGB['smsToxic3']()} *${user.warn}/4*\n\n${wm}`, false, { mentions: [m.sender] })}
+/*await conn.sendButton(m.chat,`${user.warn == 1 ? `*@${m.sender.split`@`[0]}*` : `*@${m.sender.split`@`[0]}*`} *${lenguajeGB['smsToxic1']()} (${isToxic}) ${lenguajeGB['smsToxic2']()}*`, `${lenguajeGB['smsToxic3']()} *${user.warn}/4*\n\n${wm}`, img, [
 [lenguajeGB.smsToxic4(), 'ok'],
 [lenguajeGB.smsToxic5(), '.off antitoxic'],
-[lenguajeGB.smsConMenu(), '/menu']], false, { mentions: [m.sender] })}
+[lenguajeGB.smsConMenu(), '/menu']], false, { mentions: [m.sender] })}*/
 
 if (user.warn >= 4) {
 user.warn = 0
