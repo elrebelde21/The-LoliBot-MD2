@@ -33,12 +33,12 @@ global.prems = ['972529277314'],
    
   
 //⊱ ━━━━━.⋅ IDIOMA : LENGUAJE ⋅.━━━━ ⊰ 
-//Agrega el Idioma que quieres que tenga The-LoliBot-MD 
+//Agrega el Idioma que quieres que tenga The-LoliBot-MD
 //  es = Español         id = Bahasa Indonesia
 //  en = English         pt = Português 
 //  ar = عرب  
 
-global.lenguajeGB = es  //Idioma de The-LoliBot-MD,Ejemplo: es | en | pt...
+global.lenguajeGB = es  //Idioma de The-LoliBot-MD, Ejemplo: es | en | pt...
 
 //━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
@@ -108,7 +108,7 @@ global.author = '𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿'
 
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
-global.vs = '1.4.5'
+global.vs = '1.4.9'
 global.lb = '𝙏𝙝𝙚 𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿'
 global.yt = 'https://www.youtube.com/@TheLoliBot-MD'
 global.ig = 'https://www.tiktok.com/@thelolibot_md'
@@ -250,7 +250,7 @@ global.fgif = {
 
 global.multiplier = 60 // Cuanto más alto, más difícil subir de nivel
 
-//Emojis RPG - Referencias
+//Emojis RPG
 global.rpg = {
   emoticon(string) {
     string = string.toLowerCase()
