@@ -120,8 +120,8 @@ global.nna = 'https://chat.whatsapp.com/JESaesjOEcB6wnGX0QYT9o' //Actualización
 global.nn = 'https://chat.whatsapp.com/LqNaWf43DE7JcANaaJczHL' //Grupo 1
 global.nnn = 'https://chat.whatsapp.com/GUlSx2eoanhBPssKzuA48c' //Grupo 2
 global.nnnt = 'https://chat.whatsapp.com/CcJKHrxGBWAAH3PiBL07JS' //Grupo del Colaboracion
-global.nnntt = 'https://chat.whatsapp.com/ErnXC51D9lWJtRWOD4stR2' //Grupo COL 2 
-global.nnnttt = 'https://chat.whatsapp.com/DjZMclVofPaHhw9E2ptunM' //enlace lolibot
+global.nnntt = 'https://chat.whatsapp.com/KLpYFsitkgzJ15YQxZrBqO' //Grupo COL 2 
+global.nnnttt = 'https://chat.whatsapp.com/DQzurVwUv6R1QC1rCK4QPb' //enlace lolibot
 global.nnntttt = 'https://chat.whatsapp.com/FRkr7jJHSJA5OjVtE64dDs' //Grupo ayuda sobre el bot
 global.asistencia = 'Wa.me/5492266466080' //Dudas? escríbeme...
 
