@@ -1,61 +1,66 @@
 global.math = global.math ? global.math : {}
 let handler  = async (m, { conn, args, usedPrefix, command }) => {
-await delay(6000)
-let mat =`${lenguajeGB['smsAvisoIIG']()}\n\n✨ 𝙋𝙪𝙚𝙙𝙚 𝙪𝙨𝙖𝙧 𝙡𝙤𝙨 𝙗𝙤𝙩𝙤𝙣𝙚𝙨 𝙤 𝙚𝙨𝙘𝙧𝙞𝙗𝙞́ 𝙡𝙖 𝙙𝙞𝙛𝙞𝙘𝙪𝙡𝙩𝙖𝙙
+let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }  
+// 60000 = 1 minuto // 30000 = 30 segundos // 15000 = 15 segundos // 10000 = 10 segundos
+let time = global.db.data.users[m.sender].wait + 60000
+if (new Date - global.db.data.users[m.sender].wait < 60000) return await conn.reply(m.chat, `*🕓 𝙀𝙎𝙋𝙀𝙍𝘼 ${Math.floor((time - new Date()) / 1000)} 𝙎𝙀𝙂𝙐𝙉𝘿𝙊𝙎 𝘼𝙉𝙏𝙀𝙎 𝘿𝙀 𝙑𝙊𝙇𝙑𝙀𝙍  𝘼 𝙅𝙐𝙂𝘼𝙍*`, fkontak, m)
+let mat =`${lenguajeGB['smsAvisoIIG']()}✨ 𝙋𝙪𝙚𝙙𝙚 𝙚𝙨𝙘𝙧𝙞𝙗𝙞 𝙡𝙖 𝙙𝙞𝙛𝙞𝙘𝙪𝙡𝙩𝙖𝙙
 
-𝑵𝒊𝒗𝒆𝒍 𝒅𝒆𝒍 𝒅𝒊𝒇𝒊𝒄𝒖𝒍𝒕𝒂𝒅
+*Nivel del dificultad*
 ${Object.keys(modes).join('  |  ')}
 
-𝑬𝒋𝒆𝒎𝒑𝒍𝒐
+*Ejemplo:*
 ${usedPrefix + command} noob
 ${usedPrefix + command} impossible2
 
-😼 𝑴𝒊𝒆𝒏𝒕𝒓𝒂𝒔 𝒎𝒂́𝒔 𝒅𝒊𝒇𝒊𝒄𝒖𝒍𝒕𝒂𝒅 𝒎𝒂𝒚𝒐𝒓 𝒓𝒆𝒄𝒐𝒎𝒑𝒆𝒏𝒔𝒂
+😼 *Mientras mas dificultad mayor recompensa*
 `.trim()
-if (args.length < 1) return conn.sendHydrated(m.chat, wm, mat, null, null, null, null, null, [
-['😋 𝙁𝙖𝙘𝙞𝙡', `${usedPrefix + command} easy`], 
-['😎 𝘿𝙞𝙛𝙞𝙘𝙞𝙡', `${usedPrefix + command} hard`], 
-['🤑 𝙀𝙭𝙩𝙧𝙚𝙢𝙤', `${usedPrefix + command} extreme`]], m)
+if (args.length < 1) return await conn.reply(m.chat, mat, m)
+/*conn.sendHydrated(m.chat, wm, mat, null, null, null, null, null, [
+['😋 𝙁𝙖𝙘𝙞𝙡 | 𝙀𝙖𝙨𝙮', `${usedPrefix + command} easy`], 
+['😎 𝘿𝙞𝙛𝙞𝙘𝙞𝙡 | 𝙃𝙖𝙧𝙙', `${usedPrefix + command} hard`], 
+['🤑 𝙀𝙭𝙩𝙧𝙚𝙢𝙤 | 𝙀𝙭𝙩𝙧𝙚𝙢𝙚', `${usedPrefix + command} extreme`]], m)*/
   
 let mode = args[0].toLowerCase()
-if (!(mode in modes)) return conn.sendHydrated(m.chat, wm, mat, null, null, null, null, null, [
-['😋 𝙁𝙖𝙘𝙞𝙡', `${usedPrefix + command} easy`], 
-['😎 𝘿𝙞𝙛𝙞𝙘𝙞𝙡', `${usedPrefix + command} hard`], 
-['🤑 𝙀𝙭𝙩𝙧𝙚𝙢𝙤', `${usedPrefix + command} extreme`]], m) 
+if (!(mode in modes)) return await conn.reply(m.chat, mat, m)
+/*conn.sendHydrated(m.chat, wm, mat, null, null, null, null, null, [
+['😋 𝙁𝙖𝙘𝙞𝙡 | 𝙀𝙖𝙨𝙮', `${usedPrefix + command} easy`], 
+['😎 𝘿𝙞𝙛𝙞𝙘𝙞𝙡 | 𝙃𝙖𝙧𝙙', `${usedPrefix + command} hard`], 
+['🤑 𝙀𝙭𝙩𝙧𝙚𝙢𝙤 | 𝙀𝙭𝙩𝙧𝙚𝙢𝙚', `${usedPrefix + command} extreme`]], m) */
   
 let id = m.chat
-if (id in global.math) return conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}𝑻𝒐𝒅𝒂𝒗𝒊́𝒂 𝒉𝒂𝒚 𝒑𝒓𝒆𝒈𝒖𝒏𝒕𝒂𝒔 𝒔𝒊𝒏 𝒓𝒆𝒔𝒑𝒐𝒏𝒅𝒆𝒓 𝒆𝒍 𝒆𝒔𝒕𝒆 𝒄𝒉𝒂𝒕!!`, global.math[id][0])
+if (id in global.math) return conn.reply(m.chat, `*${lenguajeGB['smsAvisoAG']()}ᴛᴏᴅᴀᴠɪᴀ ʜᴀʏ ᴘʀᴇɢᴜɴᴛᴀ sɪɴ ʀᴇsᴘᴏɴᴅᴇʀ ᴇʟ ᴇsᴛᴇ ᴄʜᴀᴛ*`, global.math[id][0])
 //let ii = global.db.data.users[m.sender].limit += 10 math.dia
 let math = genMath(mode)
 global.math[id] = [
 await conn.reply(m.chat, `╭┄〔 *${wm}* 〕┄⊱
-┆𝘾𝙪𝙖𝙡 𝙚𝙨 𝙧𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤 𝙙𝙚 *${math.str} = ?*
+┆𝘾𝙪𝙖𝙡 𝙚𝙨 𝙧𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤 𝙙𝙚: *${math.str} = ?*
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆𝙏𝙞𝙚𝙢𝙥𝙤
-┆🧭 *${(math.time / 1000).toFixed(0)} 𝚜 𝚜𝚎𝚐𝚞𝚗𝚍𝚘𝚜*
+┆🧭 𝙏𝙞𝙚𝙢𝙥𝙤: *${(math.time / 1000).toFixed(0)} segundos*
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆𝙍𝙚𝙨𝙥𝙤𝙣𝙙𝙚 𝙖 𝙚𝙨𝙩𝙚 𝙢𝙚𝙣𝙨𝙖𝙟𝙚 𝙮 𝙂𝙖𝙣𝙖 
-┆🏆 *${math.bonus} 𝙓𝙋*
+┆🏆 *${math.bonus}: XP*
 ╰━━━⊰ 𓃠 ${vs} ⊱━━━━დ`, m),
 math, 4,
   
-await conn.sendHydrated(m.chat, `⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️`, `ʀᴇsᴘᴏɴᴅᴇ ᴀʟ ᴍᴇɴsᴀᴊᴇ ᴅᴇʟ ᴀʀʀɪʙᴀ  ᴄᴏɴ ʟᴀ ʀᴇsᴘᴜᴇsᴛᴀ`, null, md, '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝒃𝒐𝒕-𝑴𝑫', null, null, [ 
+/*await conn.sendHydrated(m.chat, `⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️`, `ʀᴇsᴘᴏɴᴅᴇ ᴀʟ ᴍᴇɴsᴀᴊᴇ ᴅᴇʟ ᴀʀʀɪʙᴀ  ᴄᴏɴ ʟᴀ ʀᴇsᴘᴜᴇsᴛᴀ`, null, md, '𝑻𝒉𝒆 𝑳𝒐𝒍𝒊𝒃𝒐𝒕-𝑴𝑫', null, null, [ 
 ['𝙏𝙤𝙥𝙨 🏆', `${usedPrefix}top`],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪 ☘️', `${usedPrefix}menu`]
-], m), math, 4,
-
+], m),*/, math, 4,
+  
 setTimeout(() => { 
-if (global.math[id]) conn.sendButton(m.chat, `${lenguajeGB['smsAvisoAG']()}𝑺𝒆 𝒂𝒄𝒂𝒃𝒐 𝒆𝒍 𝒕𝒊𝒆𝒎𝒑𝒐!!\n𝑳𝒂 𝒓𝒆𝒔𝒑𝒖𝒆𝒔𝒕𝒂 𝒆𝒔 *${math.result}*`, wm, null, [['𝙄𝙣𝙩𝙚𝙣𝙩𝙖𝙧 𝙙𝙚 𝙣𝙪𝙚𝙫𝙤', `${usedPrefix + command} ${math.mode}`], ['𝙈𝙚𝙣𝙪 𝙅𝙪𝙚𝙜𝙤𝙨 🎡', `/juegosmenu`]], global.math[id][0])
+if (global.math[id]) conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}sᴇ ᴀᴄᴀʙᴏ ᴇʟ ᴛɪᴇᴍᴘᴏ ʟᴀ ʀᴇsᴘᴜᴇsᴛᴀ ᴇs: *${math.result}*`, m)
+//conn.sendButton(m.chat, `${lenguajeGB['smsAvisoAG']()}𝑺𝒆 𝒂𝒄𝒂𝒃𝒐 𝒆𝒍 𝒕𝒊𝒆𝒎𝒑𝒐!!\n𝑳𝒂 𝒓𝒆𝒔𝒑𝒖𝒆𝒔𝒕𝒂 𝒆𝒔 *${math.result}*`, wm, null, [['𝙄𝙣𝙩𝙚𝙣𝙩𝙖𝙧 𝙙𝙚 𝙣𝙪𝙚𝙫𝙤', `${usedPrefix + command} ${math.mode}`], ['𝙈𝙚𝙣𝙪 𝙅𝙪𝙚𝙜𝙤𝙨 🎡', `/juegosmenu`]], global.math[id][0])
 delete global.math[id]
 }, math.time)
-]}
+]
+global.db.data.users[m.sender].wait = new Date * 1
+}
 handler.help = ['math <mode>']
 handler.tags = ['game']
 handler.command = /^math|mates|matemáticas/i
-
 handler.register = true
 export default handler
-const delay = time => new Promise(res => setTimeout(res, time))
 
 let modes = {
 noob: [-3, 3,-3, 3, '+-', 15000, 30], 
