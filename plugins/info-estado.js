@@ -5,6 +5,8 @@ SI VAS A AÑADIR TUS DATOS O CRÉDITOS, ESTA BIEN. PERO NO QUITEN LOS QUE YA EST
 let handler = async (m, { conn, command, usedPrefix }) => {
 let picture = './media/menus/Menu1.jpg'
 let name = await conn.getName(m.sender)
+let usuario = `${m.sender.split("@")[0]}`
+let aa = usuario + '@s.whatsapp.net'
 let _uptime = process.uptime() * 1000
 let _muptime
 if (process.send) { process.send('uptime')
@@ -19,7 +21,7 @@ await conn.reply(m.chat, `┌───⊷ *ミ🤖 Estado del Bot 🤖彡*
 ┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┆=> 𝘼𝙘𝙩𝙞𝙫𝙤 𝙙𝙪𝙧𝙖𝙣𝙩𝙚
 ┆=> ${uptime} ✅
-╰──────────────────`, fkontak,  m)
+╰──────────────────`, fkontak, { mentions: [aa,] })
 /*let estado = `*💖 Hola  ${name} ✨*`
 conn.sendButton(m.chat, estado, `┌───⊷ *ミ🤖 Estado del Bot 🤖彡*
 ┆ *=> Bot activo ✅*

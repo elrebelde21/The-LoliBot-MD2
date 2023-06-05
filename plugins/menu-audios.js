@@ -62,6 +62,7 @@ let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? c
 let mentionedJid = [who]
 let username = conn.getName(who)
 let user = global.db.data.users[m.sender]
+let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 //user.registered = false
 
 let pp = gataVidMenu.getRandom()
@@ -70,7 +71,7 @@ let fsizedoc = '1'.repeat(10)
 let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: ig, description: 'Hola', previewType: 'PHOTO', thumbnail: await(await fetch(gataMenu.getRandom())).buffer(), sourceUrl: redesMenu.getRandom() }}}
 
 let str = `
-*_ミ💖 Hola ${username} 💖彡_*
+*_ミ💖 Hola ${taguser} 💖彡_*
 
 *<MENU DE AUDIOS/>*
 - Escribe las palabras/frases tal como estan, no hace falta poner ningun prefijo (#, ., *, etc) 
