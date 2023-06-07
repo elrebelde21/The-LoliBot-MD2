@@ -9,14 +9,8 @@ let chat = global.db.data.chats[m.chat]
 let user = global.db.data.users[m.sender]
 let bot = global.db.data.settings[this.user.jid] || {}
 if (bot.antiPrivate && !isOwner && !isROwner) {
-user.warn += 1
-if (!(user.warn >= 4)) await m.reply(`Hola *@${m.sender.split`@`[0]}*, Esta prohibido usar el bot el privado\n\n✴️solo si quiere hacerte un bot manda el comando .serbot\n\n🚫NO USAR LOS COMANDO DEL BOT AL PV🚫\n\nPara usar el bot unirte al grupo del oficial del el bot\n${nn}`, false, { mentions: [m.sender] })
-await conn.groupParticipantsUpdate(m.chat, [m.sender], 'banchat')}
-//await m.reply(`*${lenguajeGB['smsCreA']()}* *@${m.sender.split`@`[0]}*, ${lenguajeGB['smsprivado']()}\n${nn}`,mentions: [m.sender] }, { quoted: fkontak })
-if (user.warn >= 4) {
-user.warn = 0 
-await conn.groupParticipantsUpdate(m.chat, [m.sender], 'banchat') 
-}
+await m.reply(`Hola *@${m.sender.split`@`[0]}*, Esta prohibido usar el bot el privado\n\n✴️solo si quiere hacerte un bot manda el comando .serbot\n\n🚫NO USAR LOS COMANDO DEL BOT AL PV🚫\n\nPara usar el bot unirte al grupo del oficial del el bot\n${nn}`, false, { mentions: [m.sender] })
+await conn.groupParticipantsUpdate(m.chat, [m.sender], 'banchat')
 return !1
-}
+}}
 
