@@ -1,18 +1,17 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, command }) => {
-if (!db.data.chats[m.chat].modohorny && m.isGroup) throw '[ ⚠️ ] Los comandos +18 estan desactivados en este grupo, si es administrador de este grupo y desea activarlos escriba #enable nsfw'
-await delay(5000)
+if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `${lenguajeGB['smsContAdult']()}`
 let url = pies[Math.floor(Math.random() * pies.length)]
-conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, [['🔄 𝐬𝐢𝐠𝐮𝐢𝐞𝐧𝐭𝐞 🔄', `/${command}`]], m)
+conn.sendFile(m.chat, url, 'error.jpg', `🥵 ♥ PIES ♥  🥵`, m)
+//conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, [['𝙎𝙄𝙂𝙐𝙄𝙀𝙉𝙏𝙀 | 𝙉𝙀𝙓𝙏 🆕', `/${command}`]], m)
 }
 handler.help = ['pies']
 handler.tags = ['internet']
 handler.command = /^(pies)$/
 handler.exp = 50
 handler.level = 5
-handler.money = 25
 export default handler
-const delay = time => new Promise(res => setTimeout(res, time))
+
 
 global.pies = [
 "https://i.pinimg.com/originals/d9/e0/d4/d9e0d435743e9db03cf6b1b01627830f.jpg",

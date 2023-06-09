@@ -4,12 +4,10 @@ let handler = async(m, { conn, args, usedPrefix, command }) => {
 let res = await axios("https://meme-api.herokuapp.com/gimme/Itzy")
 let json = res.data
 let gata = json.url
-await delay(5000)
-conn.sendButton(m.chat, `_${command}_`, wm, gata, [['𝑺𝒊𝒈𝒖𝒊𝒆𝒏𝒕𝒆 🆕', `/${command}`]], m)
+conn.sendFile(m.chat, gata, 'error.jpg', `_${command}_`, m)
+//conn.sendButton(m.chat, `_${command}_`, wm, gata, [['𝙎𝙄𝙂𝙐𝙄𝙀𝙉𝙏𝙀 | 𝙉𝙀𝙓𝙏 🆕', `/${command}`]], m)
 }
 handler.help = ['itzy','kpopitzy']
 handler.tags = ['internet']
 handler.command = /^(itzy|kpopitzy)$/i
-handler.money = 25
 export default handler
-const delay = time => new Promise(res => setTimeout(res, time))
