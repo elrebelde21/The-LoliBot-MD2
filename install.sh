@@ -246,6 +246,7 @@ exit 1
 else
 echo -e "\033[01;32m\033[01mYarn se ha instalado correctamente.....\n\033[0m" 
 fi
+fi
 
 : <<'COMMENT'
 v="${b}\033[1;32m"
