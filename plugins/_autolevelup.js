@@ -1,11 +1,12 @@
 import { canLevelUp, xpRange } from '../lib/levelling.js'
 import { levelup } from '../lib/canvas.js'
 export function before(m, { conn }) {
-//if (!db.data.chats[m.chat].autonivel && m.isGroup) throw 
+//if (!db.data.chats[m.chat].autonivel && m.isGroup) throw
+let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 let username = conn.getName(who)
-
+	
 let user = global.db.data.users[m.sender]
 let chat = global.db.data.chats[m.chat]
 if (!chat.autolevelup)
@@ -15,18 +16,20 @@ let before = user.level * 1
 while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
  if (before !== user.level) {
 
-/*m.reply(`┌───⊷ FELICIDADES ${username} 👏 HAS ALCANZADO UN NUEVO NIVEL
-▢ ${lenguajeGB.smsAutoLv2()} ${before}
-▢ ${lenguajeGB.smsAutoLv3()} ${user.level}
-▢ ${lenguajeGB.smsAutoLv4()} ${user.role}
-└──────────────`)*/	  	 
-conn.sendButton(m.chat, ' ' + wm, `┌───⊷ ${username}
+ conn.reply(m.chat, `┌───⊷ ${username}
 ▢ ${lenguajeGB.smsAutoLv2()} ${before}
 ▢ ${lenguajeGB.smsAutoLv3()} ${user.level}
 ▢ ${lenguajeGB.smsAutoLv4()} ${user.role}
 └──────────────
 
-*_${lenguajeGB.smsAutoLv6()}_*`, null, [[lenguajeGB.smsConMenu(), `/menu`]], m)
+*_${lenguajeGB.smsAutoLv6()}_*`, fkontak, m)  		  	 
+/*conn.sendButton(m.chat, ' ' + wm, `┌───⊷ ${username}
+▢ ${lenguajeGB.smsAutoLv2()} ${before}
+▢ ${lenguajeGB.smsAutoLv3()} ${user.level}
+▢ ${lenguajeGB.smsAutoLv4()} ${user.role}
+└──────────────
+
+*_${lenguajeGB.smsAutoLv6()}_*`, null, [[lenguajeGB.smsConMenu(), `/menu`]], m)*/
 
 
 let especial = ['limit', 'diamond', 'joincount', 'emerald', 'berlian', 'kyubi', 'gold', 'money', 'tiketcoin', 'stamina'].getRandom()
