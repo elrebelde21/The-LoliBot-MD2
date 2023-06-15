@@ -41,9 +41,7 @@ ${md}
 
 🔸 termux-setup-storage
 
-🔸 pkg update -y && pkg upgrade -y && pkg install -y bash && pkg install -y wget && pkg install yarn
-
-🔸 wget -O - https://raw.githubusercontent.com/elrebelde21/The-LoliBot-MD/master/install.sh | bash
+🔸 apt update -y && yes | apt upgrade && pkg install -y bash wget mpv && wget -O - https://raw.githubusercontent.com/elrebelde21/The-LoliBot-MD/master/install.sh | bash
 
 📌 *𝙊𝙋𝘾𝙄𝙊𝙉: 2 𝘼𝙍𝘾𝙃𝙄𝙑𝙊*
 *https://youtu.be/i1xjB4bmYCc*
