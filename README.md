@@ -17,7 +17,7 @@
 <a href="http://wa.me/5492266466080" target="blank"><img src="https://img.shields.io/badge/Creador-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /> 
 
 <a href="http://wa.me/573183650526?text=.estado" target="blank"><img src="https://img.shields.io/badge/1️⃣_ 𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="http://wa.me/573106055136?text=.estado" target="blank"><img src="https://img.shields.io/badge/2️⃣_ 𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="http://wa.me/59894668250?text=.estado" target="blank"><img src="https://img.shields.io/badge/2️⃣_ 𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 <a href="http://wa.me/51955192184?text=.estado" target="blank"><img src="https://img.shields.io/badge/3️⃣_ 𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 </a>
 
