@@ -226,7 +226,7 @@ Si tiene éxito, le dará un mensaje como: `SUCCESS: specified value was saved`.
 ### 🌟 𝘾𝙤𝙡𝙖𝙗𝙤𝙧𝙖𝙙𝙤𝙧𝙚𝙨
 [![GataNina-Li](https://github.com/GataNina-Li.png?size=100)](https://github.com/GataNina-Li) 
 [![Yesenia57](https://github.com/Yesenia57.png?size=100)](https://github.com/Yesenia57) 
-[![Undefinido 17](https://github.com/Undefinido17.png?size=100)](https://github.com/Undefinido17) 
+[![Undefinido 17](https://github.com/undefined17.png?size=100)](https://github.com/Undefined17) 
 
 ### 🌟 𝐀𝐠𝐫𝐚𝐜𝐢𝐦𝐢𝐞𝐧𝐭𝐨
 [![TheShadowBrokers1](https://github.com/BrunoSobrino.png?size=60)](https://github.com/BrunoSobrino) 
