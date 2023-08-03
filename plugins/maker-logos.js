@@ -17,6 +17,8 @@ await conn.sendFile(m.chat, result.data, 'Error.jpg', `✅ *𝑨𝒒𝒖𝒊́ �
 handler.help = ['logos']
 handler.tags = ['nulis']
 handler.command = /^(logo|logos)$/i
+handler.limit = true
+handler.register = true
 export default handler
 
 import formData from 'form-data'

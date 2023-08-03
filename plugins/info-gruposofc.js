@@ -10,8 +10,11 @@ let info = `
 
 ➤ Grupo del Colaboracion LoliBot, GataBot-MD
  *${nnnt}*
- 
-➤ Grupo del col 2 (sin limite)
+
+➤ Grupo del colaboración LoliBot, DorratBot-MD
+*${nnnt2}*
+
+➤ Grupo del col 3 (sin limite)
 *${nnntt}*
 
 ➤ Infomarte sobre las nuevas actualizaciones del bot

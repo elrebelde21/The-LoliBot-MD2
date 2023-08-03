@@ -1,5 +1,4 @@
-let { MessageType } = (await import('@adiwajshing/baileys')).default
-
+let MessageType =  (await import(global.baileys)).default
 let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
   let chat = global.db.data.chats[m.chat]
 let user = global.db.data.users[m.sender]
