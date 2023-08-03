@@ -27,7 +27,6 @@ let res = await fetch(`https://api.lolhuman.xyz/api/ytplay2?apikey=${lolkeysapi}
 let json = await res.json()
 await conn.sendFile(m.chat, json.result.video, 'error.mp4', `_${wm}_`, m)}}
 } catch (e) {
-m.reply('*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾*')
 }}
 handler.help = ['play.1' , 'play.2'].map(v => v + ' <texto>')
 handler.tags = ['downloader']
