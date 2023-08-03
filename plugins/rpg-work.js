@@ -4,7 +4,7 @@ let hasil = Math.floor(Math.random() * 5000)
 let time = global.db.data.users[m.sender].lastwork + 600000
 if (new Date - global.db.data.users[m.sender].lastwork < 600000) throw `*ᴇsᴛᴀ ᴄᴀɴsᴀᴅᴏ, ᴅᴇʙᴇs ᴅᴇsᴄᴀɴsᴀʀ ᴄᴏᴍᴏ ᴍɪɴɪᴍᴏ ${msToTime(time - new Date())} ᴘᴀʀᴀ ᴠᴏʟᴠᴇʀ ᴀ ᴛʀᴀʙᴀᴊᴀʀ!*`
  
-await delay(3 * 3000)
+await delay(1 * 1000)
 m.reply(`${pickRandom(global.work)} *${hasil} XP*`)
 global.db.data.users[m.sender].lastwork = new Date * 1
 }

@@ -1,25 +1,26 @@
 import uploadImage from '../lib/uploadImage.js'
 import { sticker } from '../lib/sticker.js'
-import MessageType from '@adiwajshing/baileys'
+let MessageType = (await import(global.baileys)).default
 const effects = ['greyscale', 'invert', 'brightness', 'threshold', 'sepia', 'red', 'green', 'blue', 'blurple', 'pixelate', 'blur']
 
 let handler = async (m, { conn, usedPrefix, command, text }) => {
 let effect = text.trim().toLowerCase()
 if (!effects.includes(effect)) throw `
-𝑫𝒆𝒃𝒆 𝒅𝒆 𝒖𝒔𝒂𝒓 𝒆𝒍 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒅𝒆 𝒍𝒂 𝒔𝒊𝒈𝒖𝒊𝒆𝒏𝒕𝒆 𝒎𝒂𝒏𝒆𝒓𝒂
+${mg}𝘿𝙀𝘽𝙀 𝘿𝙀 𝙐𝙎𝘼𝙍 𝙀𝙇 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 𝘿𝙀 𝙇𝘼 𝙎𝙄𝙂𝙐𝙄𝙀𝙉𝙏𝙀 𝙁𝙊𝙍𝙈𝘼
+
 *${usedPrefix + command} efecto*
 
-𝑹𝒆𝒔𝒑𝒐𝒏𝒅𝒂 𝒂 𝒖𝒏𝒂 𝒊𝒎𝒂𝒈𝒆𝒏
-𝑬𝒋𝒆𝒎𝒑𝒍𝒐
+𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝘼 𝘼 𝙐𝙉𝘼 𝙄𝙈𝘼𝙂𝙀𝙉
+𝙀𝙅𝙀𝙈𝙋𝙇𝙊
 *${usedPrefix + command} blue*
 
-𝑬𝒇𝒆𝒄𝒕𝒐 𝒅𝒊𝒔𝒑𝒐𝒏𝒊𝒃𝒍𝒆
+𝙀𝙁𝙀𝘾𝙏𝙊𝙎 𝘿𝙄𝙎𝙋𝙊𝙉𝙄𝘽𝙇𝙀𝙎
 ${effects.map(effect => `_» ${effect}_`).join('\n')}
 `.trim()
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || ''
-if (!mime) throw `𝑵𝒐 𝒔𝒆 𝒆𝒏𝒄𝒐𝒏𝒕𝒓𝒐́ 𝒍𝒂 𝒊𝒎𝒂𝒈𝒆𝒏 𝒓𝒆𝒄𝒖𝒆𝒓𝒅𝒆 𝒓𝒆𝒔𝒑𝒐𝒏𝒅𝒆𝒓 𝒂𝒍 𝒖𝒏𝒂 𝒊𝒎𝒂𝒈𝒆𝒏`
-if (!/image\/(jpe?g|png)/.test(mime)) throw `𝑬𝒍 𝒇𝒐𝒓𝒎𝒂𝒕𝒐 𝒅𝒆𝒃𝒆 𝒔𝒆𝒓 *jpg o jpeg*`
+if (!mime) throw `${fg}𝙉𝙊 𝙎𝙀 𝙀𝙉𝘾𝙊𝙉𝙏𝙍𝙊 𝙇𝘼 𝙄𝙈𝘼𝙂𝙀𝙉, 𝙍𝙀𝘾𝙐𝙀𝙍𝘿𝙀 𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝙀𝙍 𝘼 𝙐𝙉𝘼 𝙄𝙈𝘼𝙂𝙀𝙉`
+if (!/image\/(jpe?g|png)/.test(mime)) throw `${ag}𝙀𝙇 𝙁𝙊𝙍𝙈𝘼𝙏𝙊 𝘿𝙀𝘽𝙀 𝘿𝙀 𝙎𝙀𝙍 *jpg or jpeg*`
 let img = await q.download()
 let url = await uploadImage(img)
 let apiUrl = global.API('https://some-random-api.ml/canvas/', encodeURIComponent(effect), {
@@ -27,15 +28,12 @@ avatar: url
 })
 try {
 let stiker = await sticker(null, apiUrl, global.packname, global.author)
-await delay(5 * 5000)
-if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `h`, mediaType: 2, sourceUrl: nnnttt, thumbnail: imagen1}}}, { quoted: m })
+conn.sendFile(m.chat, stiker, null, { asSticker: true })
 } catch (e) {
-m.reply(`𝑬𝒓𝒓𝒐𝒓, 𝒏𝒐 𝒔𝒆 𝒑𝒖𝒅𝒐 𝒉𝒂𝒄𝒆𝒓 𝒍𝒂 𝒄𝒐𝒏𝒗𝒆𝒓𝒔𝒊𝒐́𝒏, 𝒆𝒏 𝒔𝒖 𝒍𝒖𝒈𝒂𝒓 𝒆𝒏𝒗𝒊́𝒂 𝒖𝒏𝒂 𝒊𝒎𝒂𝒈𝒆𝒏`)
+m.reply(`${fg}𝙉𝙊 𝙎𝙀 𝙋𝙐𝘿𝙊 𝙃𝘼𝘾𝙀𝙍 𝙇𝘼 𝘾𝙊𝙉𝙑𝙀𝙍𝙎𝙄𝙊𝙉, 𝙀𝙉 𝙎𝙐 𝙇𝙐𝙂𝘼𝙍 𝙀𝙉𝙑𝙄𝘼𝙍 𝙐𝙉𝘼 𝙄𝙈𝘼𝙂𝙀𝙉`)
 await conn.sendFile(m.chat, apiUrl, 'image.png', null, m)
 }}
 handler.help = ['stickfilter (caption|reply media)']
 handler.tags = ['General']
 handler.command = /^(stickerfilter|stikerfilter|cs2|stickerefecto|efectosticker|filtrosticker|stickerfiltro)$/i
-handler.money = 40
 export default handler
-const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
