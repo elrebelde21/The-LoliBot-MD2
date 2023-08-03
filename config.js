@@ -23,7 +23,7 @@ global.owner = [
   ['51957041866'],
   ['5492266613038'],
   ['5214531106422'],
-  ['5519999394991'],
+  ['19393231057'],
   ['5214531173598']
 ]
 
@@ -31,6 +31,8 @@ global.owner = [
 
 global.mods = ['50495745934'] 
 global.prems = ['972529277314'],  
+//key de violetics
+global.Key360 = ['964f-0c75-7afc']
    
   
 //⊱ ━━━━━.⋅ IDIOMA : LENGUAJE ⋅.━━━━ ⊰ 
@@ -49,15 +51,15 @@ global.openai_key = 'sk-...OzYy'
 global.openai_org_id = 'HITjoN7H8pCwoncEB9e3fSyW'
 /* Consigue tu ID de organizacion en este enlace: https://platform.openai.com/account/org-settings */
 
-
 global.keysZens = ['LuOlangNgentot', 'c2459db922', '37CC845916', '6fb0eff124', 'hdiiofficial', 'fiktod', 'BF39D349845E', '675e34de8a', '0b917b905e6f']
 global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
 global.keysxteammm = ['29d4b59a4aa687ca', '5LTV57azwaid7dXfz5fzJu', 'cb15ed422c71a2fb', '5bd33b276d41d6b4', 'HIRO', 'kurrxd09', 'ebb6251cc00f9c63']
 global.keysxteam = keysxteammm[Math.floor(keysxteammm.length * Math.random())]
 global.keysneoxrrr = ['5VC9rvNx', 'cfALv5']
 global.keysneoxr = keysneoxrrr[Math.floor(keysneoxrrr.length * Math.random())]
-global.lolkeysapi = ['BrunoSobrino']
+global.lolkeysapi = 'GataDios'
 global.itsrose = ['4b146102c4d500809da9d1ff']
+global.baileys = '@whiskeysockets/baileys'
 
 global.APIs = { 
   xteam: 'https://api.xteam.xyz',
@@ -77,7 +79,7 @@ global.APIs = {
 },
 global.APIKeys = { 
   'https://api.xteam.xyz': `${keysxteam}`,
-  'https://api.lolhuman.xyz': '85faf717d0545d14074659ad',
+  'https://api.lolhuman.xyz': `${lolkeysapi}`,
   'https://api.neoxr.my.id': `${keysneoxr}`,	
   'https://violetics.pw': 'beta',
   'https://api.zahwazein.xyz': `${keysxxx}`,
@@ -117,10 +119,11 @@ global.md = 'https://github.com/elrebelde21/The-LoliBot-MD'
 global.fb = 'https://www.facebook.com/groups/872989990425789/'
 
 global.nna = 'https://chat.whatsapp.com/JESaesjOEcB6wnGX0QYT9o' //Actualización, información sobre el bot
-global.nn = 'https://chat.whatsapp.com/BkFKID3vATKKZuaPkOXJM5' //Grupo 1
+global.nn = 'https://chat.whatsapp.com/KaUD3lyKY14FODb7j7k2uT' //Grupo 1
 global.nnn = 'https://chat.whatsapp.com/GUlSx2eoanhBPssKzuA48c' //Grupo 2
 global.nnnt = 'https://chat.whatsapp.com/CcJKHrxGBWAAH3PiBL07JS' //Grupo del Colaboracion
-global.nnntt = 'https://chat.whatsapp.com/KLpYFsitkgzJ15YQxZrBqO' //Grupo COL 2 
+global.nnnt2 = 'https://chat.whatsapp.com/K7RzcVdxGqhGP5dCpVENSI' // Grupo COL 2
+global.nnntt = 'https://chat.whatsapp.com/KLpYFsitkgzJ15YQxZrBqO' //Grupo COL 3
 global.nnnttt = 'https://chat.whatsapp.com/DQzurVwUv6R1QC1rCK4QPb' //enlace lolibot
 global.nnntttt = 'https://chat.whatsapp.com/FRkr7jJHSJA5OjVtE64dDs' //Grupo ayuda sobre el bot
 global.asistencia = 'Wa.me/5492266466080' //Dudas? escríbeme...
@@ -251,7 +254,7 @@ global.fgif = {
 
 global.multiplier = 60 // Cuanto más alto, más difícil subir de nivel
 
-//Emojis RPG
+//Emojis RPG - Referencias
 global.rpg = {
   emoticon(string) {
     string = string.toLowerCase()
