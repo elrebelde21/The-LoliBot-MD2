@@ -1,10 +1,10 @@
 import fetch from 'node-fetch'
-let { MessageType } = (await import('@adiwajshing/baileys')).default
+let { MessageType } = (await import(global.baileys)).default
 let handler = async (m, { conn }) => {
 let grupos = [nna, nn, nnn, nnnt]
 let gata = [img5, img6, img7, img8, img9]
 let enlace = { contextInfo: { externalAdReply: {title: wm + ' 🐈', body: 'support group' , sourceUrl: grupos.getRandom(), thumbnail: await(await fetch(gata.getRandom())).buffer() }}}
-let enlace2 = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: yt, mediaType: 'VIDEO', description: '', title: wm, body: 'The LoliBot-MD', thumbnailUrl: await(await fetch(img)).buffer(), sourceUrl: yt }}}
+let enlace2 = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: yt, mediaType: 'VIDEO', description: '', title: wm, body: 'LoliBot ', thumbnailUrl: await(await fetch(img)).buffer(), sourceUrl: yt }}} 
 let dos = [enlace, enlace2]  
 
 let name = global.db.data.users[m.sender].name
@@ -23,7 +23,7 @@ let udang = global.db.data.users[m.sender].udang
 let ikan = global.db.data.users[m.sender].ikan
 let orca = global.db.data.users[m.sender].orca
 //let wm = global.wm 
-
+let pp = gataMenu.getRandom()
 let peces = `🌊🌊 𝗣𝗜𝗦𝗖𝗜𝗡𝗔 𝗗𝗘 𝗣𝗘𝗖𝗘𝗦 🌊🌊
 👤» *${name}*
 
@@ -44,18 +44,17 @@ let peces = `🌊🌊 𝗣𝗜𝗦𝗖𝗜𝗡𝗔 𝗗𝗘 𝗣𝗘𝗖𝗘𝗦
 ┃ 🦀 *Cangrejo : Crab » ${kepiting}*
 ╰━━━━━━━━━⬣
 🎏 *Total: ${paus + kepiting + gurita + cumi + buntal + dory + lumba + lobster + hiu + udang + ikan + orca}*`.trim()
-await conn.sendButton(m.chat, wm, peces, img5, [['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m, dos.getRandom())
+conn.sendMessage(m.chat, {image: {url: pp}, caption: peces, mentions: conn.parseMention(peces)}, {quoted: m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})
+//await conn.sendButton(m.chat, wm, peces, img5, [['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m, dos.getRandom())
 //conn.sendButton(m.chat, peces, `${wm}`, [['Pasar', '#pasar']], m)
-await delay(5 * 5000)
 }
 handler.help = ['kotakikan', 'kolam', 'kolamikan']
 handler.tags = ['rpg']
 handler.command = /^(picina|piscina|peces|kotak(ikan)?|kolam(ikan)?)$/i
-handler.money = 60
+handler.money = 80
 handler.level = 3
 handler.register = true
 export default handler 
-const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)

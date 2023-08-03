@@ -20,7 +20,6 @@ const id = groups[i];
 const infoGP = lenguajeGB.smsChatGP2(readMS, dia, mes, año, fecha, tiempo)
 const delay = i * 4000 //4 seg
 setTimeout(async () => {
-await delay(2 * 2000)
 await conn.reply(id, infoGP + teks2, { mentions: usersTag }, { quoted: fkontak });
 }, delay)}        
 let totalGP = groups.length
