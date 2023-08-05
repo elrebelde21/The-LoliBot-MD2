@@ -3,7 +3,7 @@ import path from 'path';
 const handler = async (m, { conn, usedPrefix }) => {
 const chatId = m.isGroup ? m.chat : m.sender;
 const uniqid = chatId.split('@')[0];
-const sessionPath = './GataBotSession/';
+const sessionPath = './BotSession/';
 try {
 const files = await fs.readdir(sessionPath);
 let filesDeleted = 0;
