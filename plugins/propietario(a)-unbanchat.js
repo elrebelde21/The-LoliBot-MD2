@@ -3,7 +3,7 @@ let handler = async (m, { conn }) => {
   let chat = global.db.data.chats[m.chat]
   if (!chat.isBanned) return m.reply('*Este chat no está baneado!!*')
   chat.isBanned = false
-  m.reply(`𝙀𝙨𝙩𝙚 𝙘𝙝𝙖𝙩 𝙛𝙪𝙚 𝙙𝙚𝙨𝙗𝙖𝙣𝙚𝙖𝙙𝙤 🥳\n𝙖𝙝𝙤𝙧𝙖 𝙚𝙨𝙩𝙤𝙮 𝙙𝙞𝙨𝙥𝙤𝙣𝙞𝙗𝙡𝙚...`)
+  m.reply(`*BOT ONLINE 🚀*`)
 }
 handler.command = /^unbanchat$/i
 handler.botAdmin = true
