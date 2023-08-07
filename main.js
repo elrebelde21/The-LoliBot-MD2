@@ -215,6 +215,13 @@ console.log(chalk.bold.red(`${lenguajeGB.smspurgeOldFiles3()} ${file} ${lenguaje
 } }) }) }) })
 }
 
+function waitTwoMinutes() {
+return new Promise(resolve => {
+setTimeout(() => {
+resolve();
+}, 2 * 60 * 1000); 
+})}
+
 async function connectionUpdate(update) {
 const {connection, lastDisconnect, isNewLogin} = update;
 global.stopped = connection;
@@ -237,11 +244,13 @@ await db.read();
 const chats = db.data.chats;
 let successfulBans = 0;
 for (const [key, value] of Object.entries(chats)) {
-if (value.isBanned === false) {
+if (value.isBanned = false) {
+if (chat.isWelcome = false) {
 value.isBanned = true;
+chat.isWelcome = true;
 //console.log('Baneando chat:', key);
 successfulBans++;
-}}
+}}}
 await db.write();
 if (successfulBans === 0) {
 throw new Error();
@@ -249,19 +258,19 @@ throw new Error();
 //console.log(`SE BANEARON ${successfulBans} CHATS CORRECTAMENTE`);
 }
 } catch (e) {
-console.log(`Error: ${e.message}`)} 
-const currentDateTime = new Date();
-// await waitTwoMinutes()         
+await waitTwoMinutes()}        
 try {
 await db.read();
 const chats = db.data.chats;
 let successfulUnbans = 0;
 for (const [key, value] of Object.entries(chats)) {
-if (value.isBanned === true) {
+if (value.isBanned = true) {
+if (chat.isWelcome = true) {
 value.isBanned = false;
+chat.isWelcome = false;
 //console.log('Desbaneando chat:', key);
 successfulUnbans++;
-}}
+}}}
 await db.write();
 if (successfulUnbans === 0) {
 throw new Error();
@@ -269,10 +278,11 @@ throw new Error();
 console.log(`SE DESBANEARON ${successfulUnbans} CHAT CORRECTAMENTE 😺`);
 }
 } catch (e) {
-console.log(`Error: ${e.message}`)}}
+//console.log(`Error: ${e.message}`)
+}}
        
 process.on('uncaughtException', console.error);
-//conn.ev.on('messages.update', console.log);
+// conn.ev.on('messages.update', console.log);
 
 let isInit = true;
 let handler = await import('./handler.js');
@@ -284,13 +294,11 @@ if (Object.keys(Handler || {}).length) handler = Handler;
 console.error(e);
 }
 if (restatConn) {
-const oldChats = global.conn.chats;
-try {
-global.conn.ws.close();
-} catch { }
-conn.ev.removeAllListeners();
-global.conn = makeWASocket(connectionOptions, {chats: oldChats});
-isInit = true;
+const oldChats = global.conn.chats
+try { global.conn.ws.close() } catch { }
+conn.ev.removeAllListeners()
+global.conn = makeWASocket(connectionOptions, { chats: oldChats })
+isInit = true
 }
 if (!isInit) {
 conn.ev.off('messages.upsert', conn.handler);
@@ -395,8 +403,7 @@ return Promise.race([
 new Promise((resolve) => {
 p.on('close', (code) => {
 resolve(code !== 127);
-});
-}),
+})}),
 new Promise((resolve) => {
 p.on('error', (_) => resolve(false));
 })]);
