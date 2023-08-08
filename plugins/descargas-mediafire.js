@@ -7,29 +7,22 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 let time = global.db.data.users[m.sender].prue + 60000
 if (new Date - global.db.data.users[m.sender].prue < 60000) throw `*ESPERA UNOS MINUTOS PARA USAR OTRO COMANDO*`
 if (!args[0]) return conn.reply(m.chat, `${lenguajeGB['smsAvisoMG']()}*𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝙑𝘼𝙇𝙄𝘿𝙊 𝘿𝙀𝙇 𝙈𝙀𝘿𝙄𝘼𝙁𝙄𝙍𝙀*\n*𝙀𝙅𝙀𝙈𝙋𝙇𝙊:*\n ${usedPrefix + command} https://www.mediafire.com/file/cv64tns6co3272q/Lolibot.zip/file`, fkontak, m)
-   try {  
-      let res = await mediafireDl(args[0])
-      let { name, size, date, mime, link } = res
-      let caption = `╭┄ ${wm}\n┆ 💫 𝙉𝙊𝙈𝘽𝙍𝙀:\n┆ ${name}\n┆——————«•»——————\n┆ 💪 𝙋𝙀𝙎𝙊:\n┆ ${size}\n┆——————«•»——————\n┆ 🚀 𝙏𝙄𝙋𝙊:\n┆ ${mime}\n╰━━━⊰ 𓃠 ${vs} ⊱━━━━დ\n\n⏳ ᴱˢᵖᵉʳᵉ ᵘⁿ ᵐᵒᵐᵉⁿᵗᵒ ᵉⁿ ˡᵒˢ ᵠᵘᵉ ᵉⁿᵛᶦᵒˢ ˢᵘˢ ᵃʳᶜʰᶦᵛᵒˢ`.trim()
+try {  
+let res = await mediafireDl(args[0])
+let { name, size, date, mime, link } = res
+let caption = `╭┄ ${wm}\n┆ 💫 𝙉𝙊𝙈𝘽𝙍𝙀:\n┆ ${name}\n┆——————«•»——————\n┆ 💪 𝙋𝙀𝙎𝙊:\n┆ ${size}\n┆——————«•»——————\n┆ 🚀 𝙏𝙄𝙋𝙊:\n┆ ${mime}\n╰━━━⊰ 𓃠 ${vs} ⊱━━━━დ\n\n⏳ ᴱˢᵖᵉʳᵉ ᵘⁿ ᵐᵒᵐᵉⁿᵗᵒ ᵉⁿ ˡᵒˢ ᵠᵘᵉ ᵉⁿᵛᶦᵒˢ ˢᵘˢ ᵃʳᶜʰᶦᵛᵒˢ`.trim()
 conn.reply(m.chat, caption, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 title: '𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿',
 body: 'Super Bot WhatsApp',         
 previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
 sourceUrl: `https://github.com/elrebelde21/The-LoliBot-MD`}}})
-  
-/*let info = `𝙈𝘼𝙔𝙊𝙍 𝘼 150 𝙈𝘽 𝙀𝙎 𝙋𝙊𝙎𝙄𝘽𝙇𝙀 𝙌𝙐𝙀 𝙉𝙊 𝙎𝙀 𝙀𝙉𝙑𝙄𝙀..`.trim()  
-await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [
-['𝙈𝙚𝙣𝙪 𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙨 🌀', '#descargasmenu'],
-['𝙈𝙚𝙣𝙪 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 ✨', '.allmenu'],
-['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']
-], m,)  */
-   await conn.sendFile(m.chat, link, name, '', m, null, { mimetype: mime, asDocument: true })
+await conn.sendFile(m.chat, link, name, '', m, null, { mimetype: mime, asDocument: true })
 } catch {  
-     let sticker = './src/stickers1.webp'
-conn.sendFile(m.chat, sticker, 'error.webp', '', m)}
-/* conn.sendFile(m.chat, vn, 'descarga.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true })
-*/
+let sticker = './src/stickers1.webp'
+conn.sendFile(m.chat, sticker, 'error.webp', '', m)
+handler.limit = false
+}
 global.db.data.users[m.sender].prue = new Date * 1
 }
 handler.help = ['mediafire'].map(v => v + ' <url>')

@@ -32,12 +32,12 @@ return `[${i + 1}]\n❤️꙰༻ *TÍTULO:*  ${v.title}
 conn.sendFile(m.chat, results.all[0].thumbnail, 'yts.jpeg', textoInfo + '\n\n' + teks, fkontak, m)
 global.videoList.push(vids_);
 } catch {    
+handler.limit = false
 }}
 handler.help = ['', 'earch'].map(v => 'yts' + v + ' <pencarian>')
 handler.tags = ['tools']
 handler.command = /^playlist|ytbuscar|yts(earch)?$/i
 handler.exp = 70
-handler.register = true
 handler.limit = 1
 handler.level = 4
 export default handler

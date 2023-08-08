@@ -39,14 +39,14 @@ await new Promise(resolve => setTimeout(resolve, 10000))}
 try {  
 const AA = await savefrom(args[0])    
 let shortUrl222 = await (await fetch(`https://tinyurl.com/api-create.php?url=${args[0]}`)).text()
-let txt222 = `✨ *ENLACE* ${shortUrl222}\n\n${wm}`.trim()
+let txt222 = `✨ *ENLACE:* ${shortUrl222}\n\n${wm}`.trim()
 await conn.sendFile(m.chat, AA.url[0].url, 'error.mp4', txt222, m)
 } catch {
 console.log('Error en el intento 1')  
 try {    
 const resultss = await instagramGetUrl(args[0]).url_list[0]    
 let shortUrl2 = await (await fetch(`https://tinyurl.com/api-create.php?url=${args[0]}`)).text()
-let txt2 = `✨ *ENLACE* ${shortUrl2}\n\n${wm}`.trim()
+let txt2 = `✨ *ENLACE:* ${shortUrl2}\n\n${wm}`.trim()
 await conn.sendFile(m.chat, resultss, 'error.mp4', txt2, m)
 } catch {  
 console.log('Error en el intento 2')  
@@ -67,7 +67,7 @@ await conn.sendFile(m.chat, videoig, 'error.mp4', txt1, m)
 } catch { 
 console.log('Error en el intento 4, sin resultados')  
 conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoFG']()} 𝙀𝙍𝙍𝙊𝙍 𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍 𝙑𝙐𝙀𝙇𝙑𝘼 𝘼 𝙄𝙉𝙏𝙀𝙉𝙏𝘼`, edit: key});
-//throw `${lenguajeGB['smsAvisoFG']()} 𝙀𝙍𝙍𝙊𝙍 𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍 𝙑𝙐𝙀𝙇𝙑𝘼 𝘼 𝙄𝙉𝙏𝙀𝙉𝙏𝘼`
+handler.limit = 0
 }}}}}}
 handler.help = ['instagram <link ig>']
 handler.tags = ['downloader']
