@@ -4,8 +4,6 @@ let handler  = async (m, { conn }) => {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 let texto = `*◄┢┅͜͡✇⟬↯ື ►ஜ۩💥۩ஜ◄ ↯ື⟭✇͜͡┅┧►*
 
-❕ 𝙔𝙖 𝙥𝙪𝙚𝙙𝙚 𝙞𝙣𝙨𝙩𝙖𝙡𝙖𝙧 𝙖 𝙏𝙝𝙚-𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿 ❕
-
 *𝙑𝙄𝘿𝙀𝙊 𝘿𝙀 𝙄𝙉𝙎𝙏𝘼𝙇𝘼𝘾𝙄𝙊𝙉*
 *https://youtu.be/gh5NajZOTA8*
 
@@ -59,6 +57,19 @@ ${md}
 
 ───────•••───────
 
+📌 𝗜𝗡𝗦𝗧𝗔𝗟𝗔𝗥 𝗘𝗡 𝗕𝗢𝗫𝗠𝗜𝗡𝗘
+
+*𝙏𝙝𝙚-𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿 : 𝘽𝙤𝙭𝙈𝙞𝙣𝙚*
+*_https://youtu.be/wWyBHtKzx9Q_*
+
+_Pagina Oficial_ 
+_https://boxmineworld.com_
+
+_Panel_
+_https://panel.boxmineworld.com_
+
+───────•••───────
+
 📌 𝗜𝗡𝗦𝗧𝗔𝗟𝗔𝗥 𝗘𝗡 𝙍𝙀𝙋𝙇𝙄𝙏 
 
 *𝙏𝙝𝙚-𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿 : 𝙍𝙀𝙋𝙇𝙄𝙏*
@@ -67,10 +78,15 @@ https://youtu.be/SMjCcfuyWQE
 _Pagina Oficial_ 
 https://replit.com/
 
-───────•••───────
+*◄┢┅͜͡✇⟬↯ື ►ஜ۩💥۩ஜ◄ ↯ື⟭✇͜͡┅┧►*
 
-
-*◄┢┅͜͡✇⟬↯ື ►ஜ۩💥۩ஜ◄ ↯ື⟭✇͜͡┅┧►*\n\n_💥 INFO EXTRA 💥_\n➤ _Se sugiere leer el archivo README.md_\n➤ _Bot compartible con WhatsApp multi device_\n➤ _Para habilitar el /añadir y el /sacar usa /enable restrict_\n _Puede ocasionar que el numero se vaya a soporte_\n\n➤ _Cualquier cosa hablame solo por tema del bot🔰🤖_\n_Saludos 🔰🤖_` 
+💥 INFO EXTRA 💥_
+➤ _Se sugiere leer el archivo README.md_
+➤ _Bot compartible con WhatsApp multi device_
+➤ _Para habilitar el /añadir y el /sacar usa /enable restrict_ _Puede ocasionar que el numero se vaya a soporte_
+➤ _Recomiendo que active el autoread con (#on autoread)_
+➤ _Cualquier cosa hablame solo por tema del bot🔰🤖_
+_Saludos 🔰🤖_` 
 let aa = { quoted: m, userJid: conn.user.jid }
 let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: texto, contextInfo: { externalAdReply: { title: 'ᴛʜᴇ-ʟᴏʟɪʙᴏᴛ-ᴍᴅ', body: null, thumbnail: imagen1, sourceUrl: 'https://youtu.be/gh5NajZOTA8' }, mentionedJid: [m.sender] }}}, aa)
 conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id, mentions: [m.sender] })  
