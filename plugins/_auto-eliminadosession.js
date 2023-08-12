@@ -10,7 +10,7 @@ if (/^$/i.test(m.text) ) {
 if (global.conn.user.jid !== conn.user.jid) {
 }}
 await delay(1000) // 600000 = 10 minutos
-const sessionPath = './GataBotSession/';
+const sessionPath = './BotSession/';
 try {
 if (!existsSync(sessionPath)) {
 }
@@ -24,7 +24,7 @@ filesDeleted++;
 if (filesDeleted === 0) {
 console.log("NO HAY NADA POR ELIMINAR")
 } else {
-console.log(`╭» 🟢 GataBotSession 🟢\n│☁ SE ELIMINADO ${filesDeleted} ARCHIVOS DE SESSION CON ÉXITO\n╰―――――――――――――――――――✤`)
+console.log(`╭» 🟢 BotSession 🟢\n│☁ SE ELIMINADO ${filesDeleted} ARCHIVOS DE SESSION CON ÉXITO\n╰―――――――――――――――――――✤`)
 }
 } catch (err) {
 console.error('Error al leer la carpeta o los archivos de sesión:', err);
