@@ -6,6 +6,7 @@ import path, { join } from 'path'
 import { unwatchFile, watchFile } from 'fs'
 import chalk from 'chalk'   
 import fetch from 'node-fetch' 
+import mddd5 from 'md5'
  
 /**
  * @type {import('@adiwajshing/baileys')}  
