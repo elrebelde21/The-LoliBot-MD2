@@ -54,7 +54,7 @@ global.loadDatabase = async function loadDatabase() {
 if (global.db.READ) {
 return new Promise((resolve) => setInterval(async function() {
 if (!global.db.READ) {
- clearInterval(this);
+clearInterval(this);
 resolve(global.db.data == null ? global.loadDatabase() : global.db.data);
 }}, 1 * 1000));
 }
@@ -85,7 +85,8 @@ setInterval(async function() {
 if (!global.chatgpt.READ) {
 clearInterval(this);
 resolve( global.chatgpt.data === null ? global.loadChatgptDB() : global.chatgpt.data );
-}}, 1 * 1000))
+}
+}, 1 * 1000));
 }
 if (global.chatgpt.data !== null) return;
 global.chatgpt.READ = true;
@@ -166,8 +167,7 @@ return file.startsWith('pre-key-') || file.startsWith('session-') || file.starts
 prekey = [...prekey, ...filesFolderPreKeys]
 filesFolderPreKeys.forEach(files => {
 unlinkSync(`./BotSession/${files}`)
-})
-} 
+})} 
 
 function purgeSessionSB() {
 try {
@@ -191,7 +191,7 @@ console.log(chalk.bold.red(lenguajeGB.smspurgeSessionSB3() + err))
 
 function purgeOldFiles() {
 const directories = ['./BotSession/', './jadibts/']
-const oneHourAgo = Date.now() - (1000 * 60 * 30) //30 min 
+const oneHourAgo = Date.now() - (60 * 60 * 1000)
 directories.forEach(dir => {
 readdirSync(dir, (err, files) => {
 if (err) throw err
@@ -223,9 +223,42 @@ if (update.qr != 0 && update.qr != undefined) {
 console.log(chalk.bold.yellow(lenguajeGB['smsCodigoQR']()))}
 if (connection == 'open') {
 console.log(chalk.bold.yellow(lenguajeGB['smsConexion']()))}
-if (connection == 'close') {
-console.log(chalk.bold.yellow(lenguajeGB['smsConexionOFF']()))
-}}
+let reason = new Boom(lastDisconnect?.error)?.output?.statusCode;
+if (connection === 'close') {
+if (reason === DisconnectReason.badSession) {
+conn.logger.error(lenguajeGB['smsConexionOFF']());
+//await connectionUpdate();
+//process.exit();
+} else if (reason === DisconnectReason.connectionClosed) {
+conn.logger.warn(`[ ⚠ ] Conexión cerrada, reconectando...`);
+//await connectionUpdate();
+//process.exit();
+} else if (reason === DisconnectReason.connectionLost) {
+conn.logger.warn(`[ ⚠ ] Conexión perdida con el servidor, reconectando...`);
+//await connectionUpdate();
+//process.exit();
+} else if (reason === DisconnectReason.connectionReplaced) {
+conn.logger.error(`[ ⚠ ] Conexión reemplazada, se ha abierto otra nueva sesión. Por favor, cierra la sesión actual primero.`);
+//await connectionUpdate();
+//process.exit();
+} else if (reason === DisconnectReason.loggedOut) {
+conn.logger.error(`[ ⚠ ] Conexion cerrada, por favor elimina la carpeta ${global.authFile} y escanea nuevamente.`);
+//await connectionUpdate();
+//process.exit();
+} else if (reason === DisconnectReason.restartRequired) {
+conn.logger.info(`[ ⚠ ] Reinicio necesario, reiniciando...`);
+//await connectionUpdate(); 
+//process.exit();
+//process.send('reset');
+} else if (reason === DisconnectReason.timedOut) {
+conn.logger.warn(`[ ⚠ ] Tiempo de conexión agotado, reconectando...`);
+//await connectionUpdate();
+//process.exit();
+} else {
+conn.logger.warn(`[ ⚠ ] Razón de desconexión desconocida. ${reason || ''}: ${connection || ''}`);
+//await connectionUpdate();
+//process.exit();
+}}}
 
 process.on('uncaughtException', console.error);
 
@@ -345,7 +378,7 @@ spawn('convert'),
 spawn('magick'),
 spawn('gm'),
 spawn('find', ['--version']),
-].map((p) => {
+  ].map((p) => {
 return Promise.race([
 new Promise((resolve) => {
 p.on('close', (code) => {
