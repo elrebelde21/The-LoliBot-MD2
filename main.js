@@ -223,10 +223,11 @@ if (update.qr != 0 && update.qr != undefined) {
 console.log(chalk.bold.yellow(lenguajeGB['smsCodigoQR']()))}
 if (connection == 'open') {
 console.log(chalk.bold.yellow(lenguajeGB['smsConexion']()))}
-let reason = new Boom(lastDisconnect?.error)?.output?.statusCode;
+const reason = (lastDisconnect?.error)?.output?.statusCode;
+//let reason = new Boom(lastDisconnect?.error)?.output?.statusCode;
 if (connection === 'close') {
  if (reason === DisconnectReason.badSession) {
-conn.logger.error(lenguajeGB['smsConexionOFF']());
+conn.logger.error(`[ ⚠ ] Sesión incorrecta, por favor elimina la carpeta ${global.authFile} y escanea nuevamente.`);
 //await connectionUpdate();
 //process.exit();
 } else if (reason === DisconnectReason.connectionClosed) {
@@ -242,7 +243,7 @@ conn.logger.error(`[ ⚠ ] Conexión reemplazada, se ha abierto otra nueva sesi�
 //await connectionUpdate();
 //process.exit();
 } else if (reason === DisconnectReason.loggedOut) {
-conn.logger.error(`[ ⚠ ] Conexion cerrada, por favor elimina la carpeta ${global.authFile} y escanea nuevamente.`);
+conn.logger.error(chalk.bold.yellow(lenguajeGB['smsConexionOFF']()));
 //await connectionUpdate();
 //process.exit();
 } else if (reason === DisconnectReason.restartRequired) {
