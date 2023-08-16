@@ -185,14 +185,17 @@ unlinkSync(`./jadibts/${directorio}/${fileInDir}`)
 })
 }
 })
-if (SBprekey.length === 0) console.log(chalk.bold.green(`${lenguajeGB.smspurgeOldFiles1()} ${file} ${lenguajeGB.smspurgeOldFiles2()}`))
-} catch (err) {
-console.log(chalk.bold.red(`${lenguajeGB.smspurgeOldFiles3()} ${file} ${lenguajeGB.smspurgeOldFiles4()}` + err))
+if (SBprekey.length === 0) {
+console.log(chalk.bold.green(lenguajeGB.smspurgeSessionSB1()))
+} else {
+console.log(chalk.bold.cyanBright(lenguajeGB.smspurgeSessionSB2()))
+}} catch (err){
+console.log(chalk.bold.red(lenguajeGB.smspurgeSessionSB3() + err))
 }}
 
 function purgeOldFiles() {
 const directories = ['./BotSession/', './jadibts/']
-const oneHourAgo = Date.now() - (60 * 60 * 1000)
+const oneHourAgo = Date.now() - (1000 * 60 * 30) //30 min 
 directories.forEach(dir => {
 readdirSync(dir, (err, files) => {
 if (err) throw err
@@ -224,23 +227,22 @@ if (update.qr != 0 && update.qr != undefined) {
 console.log(chalk.bold.yellow(lenguajeGB['smsCodigoQR']()))}
 if (connection == 'open') {
 console.log(chalk.bold.yellow(lenguajeGB['smsConexion']()))}
-//const reason = (lastDisconnect?.error)?.output?.statusCode;
 let reason = new Boom(lastDisconnect?.error)?.output?.statusCode;
 if (connection === 'close') {
  if (reason === DisconnectReason.badSession) {
-conn.logger.error(`[ ⚠ ] Sesión incorrecta, por favor elimina la carpeta ${global.authFile} y escanea nuevamente.`);
+conn.logger.error(chalk.bold.yellow(lenguajeGB['smsConexion']()));
 //await connectionUpdate();
 //process.exit();
 } else if (reason === DisconnectReason.connectionClosed) {
-conn.logger.warn(`[ ⚠ ] Conexión cerrada, reconectando...`);
+conn.logger.warn(lenguajeGB['smsConexioncerrar']());
 //await connectionUpdate();
 //process.exit();
 } else if (reason === DisconnectReason.connectionLost) {
-conn.logger.warn(`[ ⚠ ] Conexión perdida con el servidor, reconectando...`);
+conn.logger.warn(lenguajeGB['smsConexionperdida']());
 //await connectionUpdate();
 //process.exit();
 } else if (reason === DisconnectReason.connectionReplaced) {
-conn.logger.error(`[ ⚠ ] Conexión reemplazada, se ha abierto otra nueva sesión. Por favor, cierra la sesión actual primero.`);
+conn.logger.error(lenguajeGB['smsConexionreem']());
 //await connectionUpdate();
 //process.exit();
 } else if (reason === DisconnectReason.loggedOut) {
@@ -248,16 +250,16 @@ conn.logger.error(chalk.bold.yellow(lenguajeGB['smsConexionOFF']()));
 //await connectionUpdate();
 //process.exit();
 } else if (reason === DisconnectReason.restartRequired) {
-conn.logger.info(`[ ⚠ ] Reinicio necesario, reiniciando...`);
+conn.logger.info(lenguajeGB['smsConexionreinicio']());
 //await connectionUpdate(); 
 //process.exit();
 //process.send('reset');
 } else if (reason === DisconnectReason.timedOut) {
-conn.logger.warn(`[ ⚠ ] Tiempo de conexión agotado, reconectando...`);
+conn.logger.warn(lenguajeGB['smsConexiontiem']());
 //await connectionUpdate();
 //process.exit();
 } else {
-conn.logger.warn(`[ ⚠ ] Razón de desconexión desconocida. ${reason || ''}: ${connection || ''}`);
+conn.logger.warn(lenguajeGB['smsConexiondescon']());
 //await connectionUpdate();
 //process.exit();
 }}}
@@ -398,7 +400,7 @@ Object.freeze(global.support);
 setInterval(async () => {
 if (stopped === 'close' || !conn || !conn.user) return;
 const a = await clearTmp();
-console.log(chalk.bold.cyanBright(lenguajeGB.smsClearTmp()))}, 1000 * 60 * 4) 
+console.log(chalk.bold.cyanBright(lenguajeGB.smsClearTmp()))}, 1000 * 60 * 4)
 setInterval(async () => {
 if (stopped === 'close' || !conn || !conn.user) return;
 await purgeSession();
