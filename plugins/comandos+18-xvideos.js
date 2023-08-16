@@ -1,7 +1,7 @@
 //Creditos https://github.com/BrunoSobrino
 import fetch from 'node-fetch'
 let handler = async (m, { conn, args, command, usedPrefix }) => {
-if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `[ ⚠️ ] Los comandos +18 estan desactivados en este grupo, si es administrador de este grupo y desea activarlos escriba #enable modohorny para activar`
+if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `[ ⚠️ ] Los comandos +18 estan desactivados en este grupo, si es administrador de este grupo y desea activarlos escriba #enable modohorny para activar*`
 if (!args[0]) throw `${mg}𝙐𝙎𝙀 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀 𝙓𝙑𝙄𝘿𝙀𝙊𝙎\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n* ${usedPrefix + command} https://www.xvideos.com/video70389849/pequena_zorra_follada_duro*`
 try {
 await delay(6000)
@@ -13,8 +13,8 @@ conn.sendMessage(m.chat, { document: { url: json.result.files.high }, mimetype: 
 m.reply('*${fg}𝙉𝙊 𝙁𝙐𝙉𝘾𝙄𝙊𝙉𝙊, 𝙐𝙎𝙀 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀 𝙓𝙑𝙄𝘿𝙀𝙊𝙎, 𝙑𝙐𝙀𝙇𝙑𝘼 𝘼 𝙄𝙉𝙏𝙀𝙉𝙏𝘼𝙍*')
 }}
 handler.command = /^(xvideosdl)$/i
-handler.level = 6
-handler.limit = 4
+handler.level = 8
+handler.limit = 6
 handler.register = true
 export default handler
 const delay = time => new Promise(res => setTimeout(res, time))
