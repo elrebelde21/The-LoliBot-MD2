@@ -10,7 +10,9 @@ import { en, es, id, ar, pt } from './lib/idiomas/total-idiomas.js'
 
 //⊱ ━━━━━.⋅ Añada los numeros a ser Propietario/a ⋅.━━━━ ⊰  
 
-global.owner = [ 
+global.owner = [
+[`59164832948`]
+[`59163956473`] `𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿', true],
 ['595975740803', '𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿', true],
 ['573183650526', '𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿', true],
 ['593968585383'],
