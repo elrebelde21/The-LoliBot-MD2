@@ -44,7 +44,7 @@ global.moment = moment
 //------------------------[ Stickers ]-----------------------------
 
 global.packname = 'LoliBot'
-global.author = 'elrebelde21'
+global.author = 'elrebelde21' 
 
 //------------[ Versión | Nombre | cuentas ]------------
 
