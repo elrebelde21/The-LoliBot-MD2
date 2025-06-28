@@ -47,7 +47,7 @@ let textWel = chat.sWelcome ? chat.sWelcome
                 
 await this.sendMessage(m.chat, { text: textWel, 
 contextInfo:{
-forwardedNewsletterMessageInfo: { newsletterJid: channelRD.id || "120363355261011910@newsletter", serverMessageId: '', newsletterName: channelRD.name || wm },
+forwardedNewsletterMessageInfo: { newsletterJid: channelRD.id || "120363349916000764@newsletter", serverMessageId: '', newsletterName: channelRD.name || wm },
 forwardingScore: 9999999,
 isForwarded: true, 
 mentionedJid:[m.sender, m.messageStubParameters[0]],
@@ -70,7 +70,7 @@ let textBye = chat.sBye ? chat.sBye
 : defaultBye;
 await this.sendMessage(m.chat, { text: textBye, 
 contextInfo:{
-forwardedNewsletterMessageInfo: { newsletterJid: channelRD.id || "120363355261011910@newsletter", serverMessageId: '', newsletterName: channelRD.name || wm },
+forwardedNewsletterMessageInfo: { newsletterJid: channelRD.id || "120363349916000764@newsletter", serverMessageId: '', newsletterName: channelRD.name || wm },
 forwardingScore: 9999999,
 isForwarded: true, 
 mentionedJid:[m.sender, m.messageStubParameters[0]],
@@ -95,7 +95,7 @@ let textAdm = chat.sPromote ? chat.sPromote
 await this.sendMessage(m.chat, { text: textAdm,  
 contextInfo:{  
 forwardedNewsletterMessageInfo: { 
-newsletterJid: '120363355261011910@newsletter', 
+newsletterJid: '120363349916000764@newsletter', 
 serverMessageId: '', 
 newsletterName: 'LoliBot ✨️' },
 forwardingScore: 9999999,  
@@ -123,7 +123,7 @@ let textAdmin = chat.sDemote ? chat.sDemote
 await this.sendMessage(m.chat, { text: textAdmin,  
 contextInfo:{  
 forwardedNewsletterMessageInfo: { 
-newsletterJid: '120363355261011910@newsletter', 
+newsletterJid: '120363349916000764@newsletter', 
 serverMessageId: '', 
 newsletterName: 'LoliBot ✨️' },
 forwardingScore: 9999999,  

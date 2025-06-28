@@ -6,7 +6,7 @@ export async function before(m, { conn, text }) {
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? this.user.jid : m.sender
 let pp = await this.profilePictureUrl(who, 'image').catch(_ => "https://telegra.ph/file/33bed21a0eaa789852c30.jpg")
 		
-global.canalIdGB = ["120363160031023229@newsletter", "120363355261011910@newsletter"]
+global.canalIdGB = ["120363349916000764@newsletter", "120363160031023229@newsletter"]
 global.canalNombreGB = ["INFINITY-WA 💫", "LoliBot ✨"]
 global.channelRD = await getRandomChannel()
 

@@ -46,7 +46,7 @@ before: `「 %wm 」
 
 *• %msgRegUser:* %toUserReg de %toUsers
 
-${[`*\`✅ %msg2\`*\nhttps://youtu.be/z2kHwbu8e8s?si=M9iHLdVv7yXe_dvJ`, `%msg3\nhttps://whatsapp.com/channel/0029Vau57ykEwEk5CgosvU3v`, `❤ %msg4\nhttps://www.tiktok.com/@elrebelde.21`].getRandom()}
+${[`*\`✅ %msg2\`*\nhttps://youtu.be/z2kHwbu8e8s?si=M9iHLdVv7yXe_dvJ`, `%msg3\nhttps://whatsapp.com/channel/0029Vas9jIPFsn0fgdNCKO0V`, `❤ %msg4\nhttps://www.tiktok.com/@elrebelde.21`].getRandom()}
 
 `.trimStart(),
   header: ' `<[ %category ]>` ',
@@ -212,7 +212,7 @@ wm
 text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
 
 let pp = './Menu2.jpg'
-const menuMessage = await conn.sendMessage(m.chat, { text: text, contextInfo: { forwardedNewsletterMessageInfo: { newsletterJid: '120363355261011910@newsletter',serverMessageId: '', newsletterName: 'LoliBot ✨️' }, forwardingScore: 9999999, isForwarded: true, mentionedJid: [m.sender], externalAdReply: { showAdAttribution: true, renderLargerThumbnail: true, body: wm, containsAutoReply: true, mediaType: 1, thumbnail: imagen, sourceUrl: [nna, nna2, nnaa].getRandom()}}}, { quoted: m })
+const menuMessage = await conn.sendMessage(m.chat, { text: text, contextInfo: { forwardedNewsletterMessageInfo: { newsletterJid: '120363349916000764@newsletter',serverMessageId: '', newsletterName: 'LoliBot ✨️' }, forwardingScore: 9999999, isForwarded: true, mentionedJid: [m.sender], externalAdReply: { showAdAttribution: true, renderLargerThumbnail: true, body: wm, containsAutoReply: true, mediaType: 1, thumbnail: imagen, sourceUrl: [nna, nna2, nnaa].getRandom()}}}, { quoted: m })
 cooldowns.set(chatId, { lastUsed: now, menuMessage: menuMessage })
 m.react('🙌')
 } catch (e) {
